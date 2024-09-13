@@ -1,0 +1,36 @@
+
+state = { #Ayerawaddy
+	id = 288
+	name = "STATE_288"
+	resources = {
+		tungsten = 20
+		rubber = 3
+	}
+	history = {
+		add_core_of = BRM
+		owner = RAJ
+		victory_points = {
+			1330 5 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 1
+			1330 = {
+				naval_base = 4
+			}
+		}
+		1937.4.1 = {
+			owner = BRM
+			controller = BRM
+		}
+	}
+
+	provinces={
+		1330 1333 1417 1650 4059 7254 7382 7441 10154 10223 10267 10283 10344 12127 12197 12256 12267 12284 
+	}
+	manpower = 5151005
+	buildings_max_level_factor = 1.000
+	state_category = rural
+	local_supplies = 1.000
+}

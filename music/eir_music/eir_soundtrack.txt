@@ -1,0 +1,210 @@
+
+music_station = "indies_music"
+
+music = {
+	song = "mainthemerus"
+	chance = {
+		modifier = {
+			factor = 2
+			OR = {
+				has_government = communism
+				is_in_faction_with = SOT
+				is_in_faction_with = SOB
+				is_in_faction_with = SOS
+			}
+		}
+		modifier = {
+			factor = 0.05
+			NOT = {
+				OR = {
+					has_government = communism
+					is_in_faction_with = SOT
+					is_in_faction_with = SOB
+					is_in_faction_with = SOS
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			has_war = yes
+		}
+	}
+}
+
+music = {
+	song = "mainthemehol"
+	chance = {
+		modifier = {
+			factor = 2
+			OR = {
+				is_puppet_of = HOL
+				is_puppet_of = GER
+				has_completed_focus = INS_make_use_nsboi
+			}
+		}	
+		modifier = {
+			factor = 0
+			has_war = yes
+		}	
+	}
+}
+
+music = {
+	song = "mainthemeins"
+	chance = {
+		modifier = {
+			factor = 2
+			OR = {
+				has_completed_focus = INS_emerald_equator
+				has_completed_focus = INS_revive_spirit_1926
+			}
+		}
+		modifier = {
+			factor = 0.05
+			OR = {
+				is_puppet_of = HOL
+				is_puppet_of = GER
+				has_completed_focus = INS_make_use_nsboi
+			}
+		}
+		modifier = {
+			factor = 0
+			has_war = yes
+		}
+	}
+}
+
+music = {
+	song = "bengawansolo"
+	chance = {
+		modifier = {
+			factor = 5
+			OR = {
+				has_completed_focus = INS_merdeka
+				has_completed_focus = INS_expel_the_colonials
+				has_completed_focus = INS_free_nationalists
+			}
+			has_war = yes
+			date > 1940.12.05
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				date < 1940.12.05
+				has_completed_focus = INS_make_use_nsboi
+				has_completed_focus = INS_break_the_chains
+			}
+		}
+	}
+}
+
+music = {
+	song = "bengawansoloinstr"
+	chance = {
+		modifier = {
+			factor = 5
+			OR = {
+				has_completed_focus = INS_merdeka
+				has_completed_focus = INS_expel_the_colonials
+				has_completed_focus = INS_free_nationalists
+			}
+			date > 1940.12.05
+		}
+		modifier = {
+			factor = 0
+			date < 1940.12.05
+		}
+	}
+}
+
+music = {
+	song = "sorakbergembira"
+	chance = {
+		modifier = {
+			factor = 5
+			OR = {
+				has_completed_focus = INS_merdeka
+				has_completed_focus = INS_expel_the_colonials
+				has_completed_focus = INS_break_the_chains
+				has_completed_focus = INS_free_nationalists
+			}
+			has_war = yes
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				has_completed_focus = INS_make_use_nsboi
+				has_completed_focus = INS_indies_nation
+				has_completed_focus = INS_improve_dutch_relations
+				has_war = no
+			}
+		}
+	}
+}
+
+music = {
+	song = "ajoenajoeninstr"
+	chance = {
+		modifier = {
+			factor = 5
+			has_war = no
+		}
+		modifier = {
+			factor = 0
+			has_war = yes
+		}
+	}
+}
+
+music = {
+	song = "giyuguninstr"
+	chance = {
+		modifier = {
+			factor = 5
+			OR = {
+				AND = {
+					is_puppet_of = JAP
+					OR = {
+						compare_autonomy_state > autonomy_wtt_imperial_protectorate
+						compare_autonomy_state > autonomy_integrated_puppet
+					}
+				}
+				is_in_faction_with = JAP
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				is_in_faction_with = JAP
+			}
+		}
+	}
+}
+
+music = {
+	song = "terangboelan"
+	chance = {
+		modifier = {
+			factor = 5
+			has_war = no
+		}
+		modifier = {
+			factor = 0
+			has_war = yes
+		}
+	}
+}
+
+music = {
+	song = "niromclosingspeech"
+	chance = {
+		modifier = {
+			factor = 0
+			has_war = yes
+		}
+		modifier = {
+			factor = 0
+			has_war = no
+		}
+	}
+}

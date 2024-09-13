@@ -1,0 +1,15 @@
+version="Version 1.6.1 Seloema"
+tags={
+	"Alternative History"
+	"Events"
+	"Fixes"
+	"Historical"
+	"Map"
+	"National Focuses"
+	"Indonesia"
+	"Dutch East Indies"
+}
+name="Hollandia Historica: East Indies Reworked"
+picture="thumbnail.png"
+supported_version="1.14.*"
+remote_file_id="2898713030"

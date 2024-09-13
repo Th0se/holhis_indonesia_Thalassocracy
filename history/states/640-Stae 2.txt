@@ -1,0 +1,33 @@
+
+state = { #Mandalay
+	id = 640
+	name = "STATE_640"
+	resources = {
+		tungsten = 20
+	}
+
+	history = {
+		add_core_of = BRM
+		owner = RAJ
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+		}
+		victory_points = {
+			1492 2 
+		}
+		1937.4.1 = {
+			owner = BRM
+			controller = BRM
+		}
+	}
+
+	provinces = {
+		1492 4202 4585 4626 4654 7034 12404 12449
+	}
+
+	manpower = 1850368
+	buildings_max_level_factor = 1.000
+	state_category = rural
+	local_supplies = 1.000
+}

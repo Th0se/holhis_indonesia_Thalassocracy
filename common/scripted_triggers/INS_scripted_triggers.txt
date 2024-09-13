@@ -1,0 +1,188 @@
+#	Example:
+# 
+#	example_trigger = {
+#		tag = GER
+#		is_ai = no
+#	}
+#
+#
+#	In a script file:
+#
+#	trigger = {
+#		exampel_trigger = yes
+#	}
+#
+
+INS_name_should_change = {
+#Change name of States and VPs when appropriate. Expected to be used inside on_state_control_changed. FROM.FROM is state / ROOT is new controller / FROM is former controller
+	OR = {
+		AND = {
+			ROOT = {
+				OR = {
+					tag = DEI
+					original_tag = HOL
+				}
+			}
+			NOT = {
+				ROOT = { #Not civil wars
+					OR = {
+						tag = DEI
+						original_tag = HOL
+					}
+				}
+			}
+		}
+		AND = {
+			FROM = { tag = IDN }
+			NOT = { ROOT = { tag = IDN } }
+		}
+		AND = {
+			FROM = { original_tag = POR }
+			NOT = { ROOT = { original_tag = POR } }
+		}
+		AND = {
+			FROM = { original_tag = PPA }
+			NOT = { ROOT = { original_tag = PPA } }
+		}
+		AND = {
+			FROM = { original_tag = PNG }
+			NOT = { ROOT = { original_tag = PNG } }
+		}
+	}
+	OR = {
+		FROM.FROM = { state = 333 } # Brunei (Brunei Town / Bandar Seri Begawan)
+		FROM.FROM = { state = 335 } # Batavia (Batavia / Djajakarta)
+		FROM.FROM = { state = 336 } # Singapore/Singapura
+		FROM.FROM = { state = 721 } # Portuguese Timor / East Timor
+		FROM.FROM = { state = 974 } # Dutch Timor / West Timor
+		FROM.FROM = { state = 668 } # Moluccas (Amboina / Ambon )
+		FROM.FROM = { state = 669 } # Northwestern Papua (Hollandia / Numbai)
+		FROM.FROM = { state = 980 } # Vogelkop / Domberai
+		FROM.FROM = { state = 981 } # Southwestern Papua
+	}
+}
+
+INS_is_enough_built_east = {
+	infrastructure > 2
+	industrial_complex > 0
+	OR = {
+		has_dynamic_modifier = { modifier = advanced_develop_modif_middle }
+		has_dynamic_modifier = { modifier = advanced_develop_modif_east }
+	}
+}
+
+INS_is_enough_built_west = {
+	infrastructure > 3
+	OR = {
+		industrial_complex > 1
+		arms_factory > 1
+		AND = {
+			industrial_complex > 0
+			arms_factory > 0
+		}
+	}
+	OR = {
+		has_dynamic_modifier = { modifier = advanced_develop_modif_middle }
+		has_dynamic_modifier = { modifier = advanced_develop_modif_west }
+	}
+}
+
+INS_political_groupings_member = {
+	OR = {
+		has_character_flag = INS_pki_member_flag
+		has_character_flag = INS_gerindo_member_flag
+		has_character_flag = INS_stuwgroep_member_flag
+		has_character_flag = INS_pni_member_flag
+		has_character_flag = INS_parindra_member_flag
+		has_character_flag = INS_psii_member_flag
+		has_character_flag = INS_nip_member_flag
+		has_character_flag = INS_nsboi_member_flag
+	}
+}
+
+INS_political_grouping_allowed = {
+	OR = {
+		if = {
+			limit = {
+				has_character_flag = INS_stuwgroep_member_flag
+			}
+			INS = {
+				has_completed_focus = INS_reinstate_stuwgroep
+			}
+		}
+		else_if = {
+			limit = {
+				has_character_flag = INS_parindra_member_flag
+			}
+			INS = {
+				OR = {
+					has_completed_focus = INS_placate_nationalists
+					has_completed_focus = INS_appease_nationalists
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_character_flag = INS_psii_member_flag
+			}
+			INS = {
+				has_completed_focus = INS_invite_psii
+			}
+		}
+		else_if = {
+			limit = {
+				has_character_flag = INS_nip_member_flag
+			}
+			INS = {
+				has_completed_focus = INS_indies_nation
+			}
+		}
+		else_if = {
+			limit = {
+				has_character_flag = INS_gerindo_member_flag
+			}
+			INS = {
+				has_country_flag = INS_gerindo_allowed_flag
+			}
+		}
+		else_if = {
+			limit = {
+				has_character_flag = INS_ppbb_member_flag
+			}
+			INS = {
+				OR = {
+					has_completed_focus = INS_support_soetardjo
+					has_completed_focus = INS_reform_bb
+				}
+			}
+		}
+	}
+}
+
+INS_jailed_or_exiled = {
+	OR = {
+		has_character_flag = INS_imprisoned_flag
+		has_character_flag = INS_exiled_flag
+	}
+}
+
+INS_not_jailed_or_exiled = {
+	OR = {
+		if = {
+			limit = {
+				has_character_flag = INS_imprisoned_flag
+			}
+			NOT = {
+				has_character_flag = INS_imprisoned_flag
+			}
+		}
+		if = {
+			limit = {
+				has_character_flag = INS_exiled_flag
+			}
+			NOT = {
+				has_character_flag = INS_exiled_flag
+			}
+		}
+	}
+}

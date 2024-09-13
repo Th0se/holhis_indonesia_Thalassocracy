@@ -1,0 +1,92 @@
+﻿division_template = {
+	name = "Infantry Division"			# Represents organized Indian Infantry Divisions
+	division_names_group = BRM_INF_01
+										# Has older equipment, lower experience
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+       	engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "District Garrison"			# Represents precursors to Indian Infantry Divisions (district divisions)
+	division_names_group = BRM_GAR_01
+										# Has older equipment, lower experience
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+division_template = {
+	name = "Colonial Garrison"			# Represents local militias, garrisons
+	division_names_group = BRM_GAR_01
+										# Low experience, oldest equipment, mostly militias
+	template_counter = 6
+	regiments = {  
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	priority = 0
+}
+
+####### OOB #######
+units = {
+
+	### Burma Command (CO: ) ###
+	division= {	
+		name = "Rangoon Brigade"
+		location = 1330
+		division_template = "Colonial Garrison"			# Garrison force (older equipment, low experience)
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division= {	
+		name = "Mandalay Brigade"
+		location = 1492
+		division_template = "Colonial Garrison"			# Garrison force (older equipment, low experience)
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+}
+
+##### Starting Production #####
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "BRM"
+		}
+		requested_factories = 1
+		progress = 0.86
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "BRM"
+		}
+		requested_factories = 1
+		progress = 0.45
+		efficiency = 100
+	}
+}

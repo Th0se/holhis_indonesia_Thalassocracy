@@ -1,0 +1,31 @@
+state={
+	id=1006
+	name="STATE_1006"
+
+	history = {
+		add_core_of = BRM
+		owner = RAJ
+		victory_points = {
+			12090 1 
+		}
+		buildings = {
+			infrastructure = 1
+			12090 = {
+				naval_base = 1
+			}
+		}
+		1937.4.1 = {
+			owner = BRM
+			controller = BRM
+		}
+	}
+	
+	provinces={
+		1014 1142 3651 3999 4019 4147 4454 4541 7122 7163 7190 7534 10033 10182 11966 12090 
+	}
+
+	manpower = 2382778
+	buildings_max_level_factor = 1.000
+	state_category = pastoral
+	local_supplies = 0.000
+}

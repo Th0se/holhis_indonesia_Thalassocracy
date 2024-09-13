@@ -1,0 +1,354 @@
+#	Example:
+# 
+#	example_trigger = {
+#		tag = GER
+#		is_ai = no
+#	}
+#
+#
+#	In a script file:
+#
+#	trigger = {
+#		exampel_trigger = yes
+#	}
+#
+
+is_lon_mandate_territory = {
+	OR = {
+		state = 982 #Northeast Papua
+		state = 737 #Bismarck
+		state = 647 #Palau
+		state = 684 #Caroline Islands
+		state = 633 #Marshall Islands
+		state = 646 #Saipan
+		state = 725 #Nauru
+		state = 726 #Samoa
+	}
+}
+
+INS_state_is_southeast_asia = {
+	OR = {
+		state = 286
+		state = 288
+		state = 289
+		state = 325
+		state = 327
+		state = 333
+		state = 334
+		state = 335
+		state = 336
+		state = 623
+		state = 624
+		state = 625
+		state = 626
+		state = 627
+		state = 628
+		state = 640
+		state = 667
+		state = 668
+		state = 670
+		state = 671
+		state = 672
+		state = 673
+		state = 711
+		state = 712
+		state = 721
+		state = 724
+		state = 738
+		state = 741
+		state = 747
+		state = 868
+		state = 970
+		state = 971
+		state = 972
+		state = 973
+		state = 974
+		state = 975
+		state = 976
+		state = 978
+		state = 979
+		state = 983
+		state = 984
+		state = 985
+		state = 986
+		state = 987
+		state = 988
+		state = 989
+		state = 990
+		state = 991
+		state = 992
+		state = 993
+		state = 994
+		state = 995
+		state = 996
+		state = 997
+		state = 998
+		state = 999
+		state = 1000
+		state = 1001
+		state = 1002
+		state = 1003
+		state = 1004
+		state = 1005
+		state = 1006
+		state = 1007
+		state = 1008
+		state = 1009
+		state = 1010
+		state = 1014
+	}
+}
+
+is_asean_state = {
+	OR = {
+		original_tag = INS
+		original_tag = MAL
+		original_tag = SIA
+		original_tag = PHI
+		original_tag = BRM
+		original_tag = CAM
+		original_tag = LAO
+		original_tag = VIE
+		original_tag = ATJ
+		original_tag = KLM
+		original_tag = PPA
+		original_tag = MLK
+		original_tag = TLS
+		original_tag = SLU
+		AND = {
+			original_tag = YUN
+			NOT = {
+				OR = {
+					has_cosmetic_tag = CHI
+					has_cosmetic_tag = PRC
+					has_cosmetic_tag = CHI_warlord_leader
+					has_cosmetic_tag = CHI_warlord_PRC
+				}
+			}
+		}
+		AND = {
+			original_tag = GXC
+			NOT = {
+				OR = {
+					has_cosmetic_tag = CHI
+					has_cosmetic_tag = PRC
+					has_cosmetic_tag = CHI_warlord_leader
+					has_cosmetic_tag = CHI_warlord_PRC
+				}
+			}
+		}
+	}
+}
+
+is_southwest_pacific_state = {
+	OR = {
+		original_tag = PNG
+		original_tag = MLK
+		original_tag = PPA
+		original_tag = AST
+		original_tag = NZL
+		original_tag = FSM
+		original_tag = TAH
+		original_tag = GUM
+		original_tag = SOL
+		original_tag = FIJ
+		original_tag = SAM
+		original_tag = PHI
+		original_tag = INS
+		original_tag = MAL
+		original_tag = SIA
+		original_tag = BRM
+		original_tag = CAM
+		original_tag = LAO
+		original_tag = VIE
+		original_tag = ATJ
+		original_tag = KLM
+		original_tag = PPA
+		original_tag = MLK
+		original_tag = TLS
+		original_tag = SLU
+	}
+}
+
+is_south_asian_state = {
+	OR = {
+		original_tag = RAJ
+		original_tag = PAK
+		original_tag = BAN
+		original_tag = SRL
+		original_tag = MLD
+		original_tag = AFG
+		original_tag = NEP
+		original_tag = BHU
+		original_tag = TIB
+	}
+}
+
+is_east_asian_state = {
+	OR = {
+		original_tag = JAP
+		original_tag = CHI
+		original_tag = PRC
+		original_tag = KOR
+		original_tag = MON
+		original_tag = TAN
+		original_tag = GXC
+		original_tag = YUN
+		original_tag = MAN
+		original_tag = MEN
+		original_tag = TIB
+	}
+}
+
+is_muslim_nation = {
+	OR = {
+		original_tag = SLU
+		original_tag = KLM
+		AND = {
+			original_tag = MAL
+			is_subject = no
+		}
+		original_tag = BAN
+		original_tag = XSM
+		original_tag = PAK
+		original_tag = AZR
+		original_tag = BUK
+		original_tag = TMS
+		original_tag = UZB
+		original_tag = AFG
+		original_tag = PER
+		original_tag = IRQ
+		original_tag = SYR
+		original_tag = KUW
+		original_tag = UAQ
+		original_tag = QAT
+		original_tag = PAL
+		original_tag = LEB
+		original_tag = EGY
+		original_tag = SUD
+		original_tag = SAU
+		original_tag = YEM
+		original_tag = OMA
+		original_tag = DJI
+		original_tag = SOM
+		original_tag = HAR
+		original_tag = LBA
+		original_tag = TUN
+		original_tag = ALG
+		original_tag = MOR
+		original_tag = RIF
+		original_tag = WES
+		original_tag = CMR
+		original_tag = CHA
+		original_tag = SEN
+		original_tag = BOS
+		original_tag = HRZ
+		original_tag = ADU
+	}
+}
+
+is_monarchist = {
+	OR = {
+		AND = {
+			original_tag = ENG
+			OR = {
+				has_idea = george_v
+				has_idea = ENG_king_edward
+				has_idea = ENG_king_edward_fascism
+				has_idea = ENG_george_vi
+				has_completed_focus = ENG_the_kings_party
+			}
+		}
+		AND = {
+			original_tag = GER
+			has_completed_focus = GER_revive_the_kaiserreich
+		}
+		AND = {
+			original_tag = JAP
+			OR = {
+				has_idea = JAP_hirohito
+				has_country_leader = {
+					character = JAP_emperor_hirohito
+					ruling_only = yes
+				}
+			}
+		}
+		AND = {
+			original_tag = SOV
+			has_completed_focus = SOV_beaten_but_not_defeated
+		}
+		AND = {
+			original_tag = FRA
+			has_completed_focus = FRA_the_council_of_rambouillet
+		}
+		AND = {
+			original_tag = ITA
+			OR = {
+				has_idea = vittorio_emanuele
+				has_idea = vittorio_emanuele_emperor_of_ethiopia
+				has_idea = vittorio_emanuele_king_of_albania
+				has_idea = vittorio_emanuele_albania_ethiopia
+				has_country_leader = {
+					character = ITA_vittorio_emanuele_iii
+					ruling_only = yes
+				}
+				has_country_leader = {
+					character = ITA_prince_umberto
+					ruling_only = yes
+				}
+			}
+		}
+		AND = {
+			original_tag = GRE
+			OR = {
+				AND = {
+					NOT = { has_dlc = "Battle for the Bosporus" }
+					has_cosmetic_tag = GRE
+				}
+			}
+		}
+	}
+}
+
+suitable_communist_major_in_asia = {
+	any_other_country = {
+		is_major = yes
+		capital_scope = { is_on_continent = asia }
+		exists = yes
+		has_capitulated = no
+		has_government = communism
+		NOT = { has_war_with = ROOT }
+	}
+}
+
+suitable_communist_major_in_europe = {
+	any_other_country = {
+		is_major = yes
+		capital_scope = { is_on_continent = europe }
+		exists = yes
+		has_capitulated = no
+		has_government = communism
+		NOT = { has_war_with = ROOT }
+	}
+}
+
+suitable_communist_major_elsewhere = {
+	any_other_country = {
+		is_major = yes
+		exists = yes
+		has_capitulated = no
+		has_government = communism
+		NOT = { has_war_with = ROOT }
+	}
+}
+
+suitable_democratic_major_in_asia = {
+	any_other_country = {
+		is_major = yes
+		capital_scope = { is_on_continent = asia }
+		exists = yes 
+		has_capitulated = no 
+		has_government = democratic
+		NOT = { has_war_with = ROOT } 
+	}
+}

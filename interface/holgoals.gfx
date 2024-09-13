@@ -1,0 +1,317 @@
+spriteTypes = {	
+
+	SpriteType = { 
+		name = "GFX_focus_INS_engineers"
+		texturefile = "gfx/interface/goals/focus_INS_engineers.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_hol_pressure_france"
+		texturefile = "gfx/interface/goals/hol_pressure_france.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_hol_pressure_ven"
+		texturefile = "gfx/interface/goals/hol_pressure_ven.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_HOL_economic_benelux"
+		texturefile = "gfx/interface/goals/focus_HOL_economic_benelux.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_hol_benelux"
+		texturefile = "gfx/interface/goals/hol_benelux.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_hol_arm_the_people"
+		texturefile = "gfx/interface/goals/hol_arm_the_people.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_HOL_freedom"
+		texturefile = "gfx/interface/goals/focus_HOL_freedom.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_INS_approach_malaka"
+		texturefile = "gfx/interface/goals/focus_INS_approach_malaka.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_INS_approach_sjarifoeddin"
+		texturefile = "gfx/interface/goals/focus_INS_approach_sjarifoeddin.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_INS_approach_thamrin"
+		texturefile = "gfx/interface/goals/focus_INS_approach_thamrin.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_INS_merdeka_atau_mati"
+		texturefile = "gfx/interface/goals/focus_INS_merdeka_atau_mati.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_INS_support_abdoelkadir"
+		texturefile = "gfx/interface/goals/focus_INS_support_abdoelkadir.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_INS_support_oerip"
+		texturefile = "gfx/interface/goals/focus_INS_support_oerip.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_INS_support_soekarno"
+		texturefile = "gfx/interface/goals/focus_INS_support_soekarno.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_INS_support_soetardjo"
+		texturefile = "gfx/interface/goals/focus_INS_support_soetardjo.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_INS_support_soetomo"
+		texturefile = "gfx/interface/goals/focus_INS_support_soetomo.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_INS_support_thamrin"
+		texturefile = "gfx/interface/goals/focus_INS_support_thamrin.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_INS_support_tjarda"
+		texturefile = "gfx/interface/goals/focus_INS_support_tjarda.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_INS_support_van_mook"
+		texturefile = "gfx/interface/goals/focus_INS_support_van_mook.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_INS_crush_nationalism"
+		texturefile = "gfx/interface/goals/focus_INS_crush_nationalism.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_INS_proclaim_the_empire"
+		texturefile = "gfx/interface/goals/focus_INS_proclaim_the_empire.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_INS_challenge_dutch_elitism"
+		texturefile = "gfx/interface/goals/focus_INS_challenge_dutch_elitism.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_INS_officers"
+		texturefile = "gfx/interface/goals/focus_INS_officers.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_INS_motherland"
+		texturefile = "gfx/interface/goals/focus_INS_motherland.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_INS_vocflag"
+		texturefile = "gfx/interface/goals/focus_INS_vocflag.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_INS_knilreforms"
+		texturefile = "gfx/interface/goals/focus_INS_knilreforms.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_INS_javan_railways"
+		texturefile = "gfx/interface/goals/focus_INS_javan_railways.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_INS_sumatra_industry"
+		texturefile = "gfx/interface/goals/focus_INS_sumatra_industry.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_INS_holweapons"
+		texturefile = "gfx/interface/goals/focus_INS_holweapons.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_INS_australia"
+		texturefile = "gfx/interface/goals/focus_INS_australia.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_INS_parades"
+		texturefile = "gfx/interface/goals/focus_INS_parades.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_INS_discourage"
+		texturefile = "gfx/interface/goals/focus_INS_discourage.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_dutch_research"
+		texturefile = "gfx/interface/goals/focus_dutch_research.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_hol_political_effort"
+		texturefile = "gfx/interface/goals/hol_political_effort.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_hol_empire"
+		texturefile = "gfx/interface/goals/hol_empire.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_INS_NSB"
+		texturefile = "gfx/interface/goals/focus_INS_NSB.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_INS_PSII"
+		texturefile = "gfx/interface/goals/focus_INS_PSII.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_HOL_sphere"
+		texturefile = "gfx/interface/goals/focus_HOL_sphere.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_hol_pressure_france"
+		texturefile = "gfx/interface/goals/hol_pressure_france.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_hol_comresearch"
+		texturefile = "gfx/interface/goals/hol_comresearch.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_ins_swpa_initiative"
+		texturefile = "gfx/interface/goals/focus_INS_swpa_initiative.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_ins_abda_command"
+		texturefile = "gfx/interface/goals/focus_INS_abda_command.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_generic_attack_philippines"
+		texturefile = "gfx/interface/goals/focus_generic_attack_philippines.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_generic_attack_usa"
+		texturefile = "gfx/interface/goals/focus_generic_attack_usa.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_generic_attack_netherlands"
+		texturefile = "gfx/interface/goals/focus_generic_attack_netherlands.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_generic_befriend_australia"
+		texturefile = "gfx/interface/goals/focus_generic_befriend_australia.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_generic_befriend_raj"
+		texturefile = "gfx/interface/goals/focus_generic_befriend_raj.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_generic_befriend_indonesia"
+		texturefile = "gfx/interface/goals/focus_generic_befriend_indonesia.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_generic_befriend_philippines"
+		texturefile = "gfx/interface/goals/focus_generic_befriend_philippines.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_generic_befriend_netherlands"
+		texturefile = "gfx/interface/goals/focus_generic_befriend_netherlands.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_generic_east_indies"
+		texturefile = "gfx/interface/goals/focus_generic_east_indies.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_generic_voting"
+		texturefile = "gfx/interface/goals/focus_generic_voting.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_ins_wallacea_sunda"
+		texturefile = "gfx/interface/goals/focus_ins_wallacea_sunda.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_ins_wallacea_sahul"
+		texturefile = "gfx/interface/goals/focus_ins_wallacea_sahul.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_generic_philippines_archipelago"
+		texturefile = "gfx/interface/goals/focus_generic_philippines_archipelago.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_ins_sunda"
+		texturefile = "gfx/interface/goals/focus_ins_sunda.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_ins_wallacea"
+		texturefile = "gfx/interface/goals/focus_ins_wallacea.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_ins_sahul"
+		texturefile = "gfx/interface/goals/focus_ins_sahul.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_generic_java"
+		texturefile = "gfx/interface/goals/focus_generic_java.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_generic_sumatra"
+		texturefile = "gfx/interface/goals/focus_generic_sumatra.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_generic_borneo_celebes"
+		texturefile = "gfx/interface/goals/focus_generic_borneo_celebes.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_generic_west_papua"
+		texturefile = "gfx/interface/goals/focus_generic_west_papua.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_focus_indonesia_stands"
+		texturefile = "gfx/interface/goals/focus_indonesia_stands.dds"
+	}
+}
