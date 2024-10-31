@@ -190,11 +190,11 @@ ASEAN_malacca_strait_security = {
 
 		fire_only_once = yes
 
-		icon = GFX_decision_infiltrate_state
-
 		highlight_states = {
 			highlight_state_targets = { state = 724 } 
 		}
+
+		icon = GFX_decision_infiltrate_state
 
 		allowed = {
 			is_asean_state = no
@@ -221,7 +221,7 @@ ASEAN_malacca_strait_security = {
 
 		days_remove = 28
 
-		complete_effect = {
+		remove_effect = {
 
 			# Eastern Kalimantan
 			MAL = {
@@ -283,7 +283,7 @@ ASEAN_malacca_strait_security = {
 
 		days_remove = 28
 
-		complete_effect = {
+		remove_effect = {
 
 			# Atjeh
 			MAL = {
@@ -307,7 +307,7 @@ ASEAN_malacca_strait_security = {
 		fire_only_once = yes
 
 		icon = GFX_decision_infiltrate_state
-		
+
 		highlight_states = {
 			highlight_state_targets = { state = 672 } 
 		}
@@ -345,7 +345,7 @@ ASEAN_malacca_strait_security = {
 
 		days_remove = 28
 
-		complete_effect = {
+		remove_effect = {
 
 			# Northern Sumatra
 			MAL = {
@@ -407,7 +407,7 @@ ASEAN_malacca_strait_security = {
 
 		days_remove = 28
 
-		complete_effect = {
+		remove_effect = {
 
 			# Riau Islands
 			MAL = {
@@ -469,7 +469,7 @@ ASEAN_malacca_strait_security = {
 
 		days_remove = 28
 
-		complete_effect = {
+		remove_effect = {
 
 			# Southern Sumatra
 			MAL = {
@@ -531,7 +531,7 @@ ASEAN_malacca_strait_security = {
 
 		days_remove = 28
 
-		complete_effect = {
+		remove_effect = {
 
 			# Western Kalimantan
 			MAL = {
@@ -593,7 +593,7 @@ ASEAN_malacca_strait_security = {
 
 		days_remove = 28
 
-		complete_effect = {
+		remove_effect = {
 
 			# Eastern Kalimantan
 			MAL = {
@@ -658,7 +658,7 @@ ASEAN_malacca_strait_security = {
 
 		days_remove = 28
 
-		complete_effect = {
+		remove_effect = {
 
 			# Western Kalimantan
 			KLM = {
@@ -723,7 +723,7 @@ ASEAN_malacca_strait_security = {
 
 		days_remove = 28
 
-		complete_effect = {
+		remove_effect = {
 
 			# Eastern Kalimantan
 			KLM = {

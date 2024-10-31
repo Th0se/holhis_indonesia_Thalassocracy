@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
  #SOVIET UNION
  SOV_iosif_stalin:0 "Iosif Stalin"
  SOV_konstantin_rodzayevsky:0 "Konstantin Rodzayevsky"
@@ -920,6 +920,7 @@
  INS_abdoelkadir_widjojoatmodjo:0 "Abdoelkadir Widjojoatmodjo" #1904, 32 yo in 1936, wartime in KNIL
  INS_abdoel_wachid_hasjim:0 "Abdoel Wachid Hasjim" #1914, 22 yo in 1936, first Indonesian Religious Minister
  INS_abikoesno_tjokrosoejoso:0 "Abikoesno Tjokrosoejoso" #1897, 38 yo in 1936, leader of PSII, conservative non-violent, Tjokroaminoto's eldest younger brother
+ INS_achmad_djajadiningrat:0 "Achmad Djajadiningrat" #1877, 59 yo in 1936
  INS_achmad_soebardjo:0 "Achmad Soebardjo" #1896, 40 yo in 1936, first Indonesian Foreign Minister
  INS_achmad_jani:0 "Achmad Jani" #1922, 14 yo in 1936, PETA volunteer in 1943
  INS_adnan_gani:0 "Adnan Kapaoe Gani" #1905, 30 yo in 1936, activist and movie actor, smuggler during NatRev
@@ -937,7 +938,7 @@
  INS_ignatius_kasimo:0 "Ignatius Joseph Kasimo" #1900, 30 yo in 1936, first Indonesian Economic Minister
  INS_iwa_koesoemasoemantri:0 "Iwa Koesoemasoemantri" #1899, 37 yo in 1936, first Indonesian Social Minister
  INS_kh_dewantara:0 "Ki Hadjar Dewantara" #1889, 47 yo in 1936, first Indonesian Education Minister
- INS_koesoemo_oetoyo:0 "Koesoemo Oetoyo" #1871, 65 yo in 1936, Volksraad Deputy since 1935
+ INS_koesoemo_oetojo:0 "Koesoemo Oetojo" #1871, 65 yo in 1936, Volksraad Deputy since 1935
  INS_mas_pardi:0 "Mas Pardi" #1901, 34 yo in 1936, Koninklijke Marine, 1st CoS of ALRI
  INS_mangkoenegara_seventh:0 "Mangkoenegara VII" #1855, 51 yo in 1936, 7th Duke of Mangkoenegaran Duchy
  INS_mangkoenegara_eighth:0 "Mangkoenegara VIII" #1920, 16 yo in 1936, 8th Duke of Mangkoenegaran Duchy
@@ -947,6 +948,7 @@
  INS_mohammad_mangoendiprodjo:0 "Mohammad Mangoendiprodjo" #1905, 31 yo in 1936, PETA
  INS_mohammad_natsir:0 "Mohammad Natsir" #1908, 27 yo in 1936, PSII
  INS_mohammad_nazir:0 "Mohammad Nazir" #1910, 15 yo in 1936, ALRI
+ INS_mohammad_tabrani:0 "Mohammad Tabrani Soerjowitjirto" #1904, 31 yo in 1936
  INS_oerip_soemohardjo:0 "Oerip Soemohardjo" #1893, 43 yo in 1936, KNIL
  INS_oto_iskandar_di_nata:0 "Oto Iskandar Di Nata" #1897, 39 yo in 1936, leader of Pagoejoeban Pasoendan, a Sundanese civil organization
  INS_roehana_koeddoes:0 "Roehana Koeddoes" #1884, 52 yo in 1936, first Indonesian female journalist
@@ -956,7 +958,7 @@
  INS_sjafroeddin_prawiranegara:0 "Sjafroeddin Prawiranegara" #1911, 25 yo in 1936, fifth Indonesian Finance Minister
  INS_sk_trimoerti:0 "Soerastri Karma Trimoerti" #1912, 24 yo in 1936
  INS_soebijakto:0 "Raden Soebijakto" #1917, 18 yo in 1936, 3rd CoS of ALRI
- INS_soeharto:0 "Soeharto Prawirohardjo" #1921, 15 yo in 1936, KNIL
+ INS_soeharto:0 "Soeharto Prawirohardjo" #1921, 15 yo in 1936, KNIL soldier
  INS_soedirman:0 "Soedirman Kartawiradji" #1916, 20 yo in 1936, PETA
  INS_soekardjo_wirjopranoto:0 "Soekardjo Wirjopranoto" #1903, 32 yo in 1936, Parindra member
  INS_soerjadarma:0 "Soerjadi Soerjadarma" #1912, 23 yo in 1936, first CoS of AURI
@@ -967,9 +969,11 @@
  INS_soekiman_wirjosandjojo:0 "Soekiman Wirjosandjojo" #1898, 37 yo in 1936, PSII member
  INS_soepomo:0 "Soepomo" #1903, 32 yo in 1936, father's name is Wignyodipoero, first Indonesian Justice Minister
  INS_soetomo:0 "Soetomo" #1888, 47 yo in 1936, the leader of Boedi Oetomo and Parindra
+ INS_tb_simatoepang:0 "Tahi Bonar Simatoepang" #1920, 16 yo in 1936, KNIL soldier
  INS_tjipto_mangoenkoesoemo:0 "Tjipto Mangoenkoesoemo" #1886, 50 yo in 1936, early nationalist figure, dealing with the Malang Plague in 1910s
  INS_wiranatakoesoema:0 "Raden Wiranatakoesoema V" #1888, 47 yo in 1936, Regent of Bandoeng, first Indonesian Interior Minister
  INS_woerjaningrat:0 "Woerjaningrat" #1883, 52 yo in 1936, Parindra vice-leader
+ INS_zulkifli_lubis:0 "Zoelkifli Loebis" #1923, 12 yo in 1936, BAIS creator in 1945
 
  INS_group_gapi:0 "Gaboengan Politiek Indonesia" #1939
  INS_group_indische_partij:0 "Indische Partij"
