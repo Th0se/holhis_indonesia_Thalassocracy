@@ -93,7 +93,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			INS_malaise_step_down = yes
@@ -148,6 +148,8 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
+		
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			add_political_power = -50
@@ -208,7 +210,7 @@ focus_tree = {
 
 		available_if_capitulated = no
 		
-		search_filters = { FOCUS_FILTER_INDUSTRY }
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			add_war_support = 0.05
@@ -287,7 +289,7 @@ focus_tree = {
 		bypass = {
 		}
 
-		search_filters = { FOCUS_FILTER_RESEARCH }
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_HISTORICAL }
 
 		available_if_capitulated = no
 		completion_reward = {
@@ -428,7 +430,7 @@ focus_tree = {
 
 		available_if_capitulated = no
 		
-		search_filters = { FOCUS_FILTER_INDUSTRY }
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			667 = {
@@ -493,7 +495,7 @@ focus_tree = {
 
 		available_if_capitulated = no
 		
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			672 = {
@@ -591,7 +593,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		
-		search_filters = { FOCUS_FILTER_INDUSTRY }
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			add_equipment_to_stockpile = { type = convoy_1 amount = 60 }
@@ -656,7 +658,7 @@ focus_tree = {
 
 		cancel_if_invalid = no
 
-		search_filters = { FOCUS_FILTER_INDUSTRY }
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			INS_malaise_step_down = yes
@@ -864,7 +866,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		
-		search_filters = { FOCUS_FILTER_INDUSTRY }
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER }
 
 		completion_reward = {
 			every_state = {
@@ -1836,7 +1838,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		
-		search_filters = { FOCUS_FILTER_INDUSTRY }
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			custom_effect_tooltip = INS_develop_center_tt
@@ -1987,7 +1989,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		
-		search_filters = { FOCUS_FILTER_INDUSTRY }
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			add_stability = 0.025
@@ -2211,7 +2213,7 @@ focus_tree = {
 			}
 		}
 		
-		search_filters = { FOCUS_FILTER_INDUSTRY }
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			custom_effect_tooltip = INS_develop_east_tt
@@ -2520,7 +2522,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		
-		search_filters = { FOCUS_FILTER_INDUSTRY }
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			add_stability = 0.025
@@ -2952,7 +2954,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		
-		search_filters = { FOCUS_FILTER_INDUSTRY }
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			add_ideas = INS_unity
@@ -3338,7 +3340,7 @@ focus_tree = {
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_RESEARCH }
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			add_research_slot = 1
@@ -3996,7 +3998,9 @@ focus_tree = {
 		bypass = {
 		}
 
-		available_if_capitulated = yes
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
 			country_event = { id = holhis_indonesia.12 }
@@ -4131,7 +4135,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
-		search_filters = { FOCUS_FILTER_ARMY_XP }
+		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			add_political_power = 20
@@ -4158,7 +4162,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		
-		search_filters = { FOCUS_FILTER_ARMY_XP }
+		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			army_experience = 25
@@ -4332,6 +4336,30 @@ focus_tree = {
 				}
 				set_country_flag = INS_pardi_admiral_flag
 			}
+			if = {
+				limit = {
+					OR = {
+						has_completed_focus = INS_cas_bombers
+						has_completed_focus = INS_tac_bombers
+					}
+					NOT = {
+						has_country_flag = INS_wardiman_officer_flag
+					}
+				}
+				add_advisor_role = {
+					character = INS_wardiman
+					advisor = {
+						slot = air_chief
+						idea_token = INS_wardiman
+						ledger = air
+						traits = {
+							air_chief_reform_1
+						}
+						cost = 100
+					}
+				}
+				set_country_flag = INS_wardiman_officer_flag
+			}
 		}
 	}
 
@@ -4410,6 +4438,8 @@ focus_tree = {
 		bypass = {
 		}
 
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -4462,6 +4492,41 @@ focus_tree = {
 			swap_ideas = {
 				remove_idea = INS_knil_incompetence_locals_3
 				add_idea = INS_knil_incompetence_commie_1
+			}
+			every_army_leader = {
+				random_list = {
+					10 = {
+						modifier = {
+							factor = 0
+							has_trait = ranger
+						}
+						add_trait = { trait = ranger }
+					}
+					10 = {
+						modifier = {
+							factor = 0
+							has_trait = jungle_rat
+						}
+						add_trait = { trait = jungle_rat }
+					}
+					10 = {
+						modifier = {
+							factor = 0
+							has_trait = trait_mountaineer 
+						}
+						add_trait = { trait = trait_mountaineer  }
+					}
+					10 = {
+						modifier = {
+							factor = 0
+							has_trait = hill_fighter
+						}
+						add_trait = { trait = hill_fighter }
+					}
+					40 = {
+						#do nothing
+					}
+				}
 			}
 		}
 	}
@@ -4658,7 +4723,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		
-		search_filters = { FOCUS_FILTER_INDUSTRY }
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			add_ideas = INS_quantity_over_quality
@@ -4685,7 +4750,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
-		search_filters = { FOCUS_FILTER_MANPOWER }
+		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			if = {
@@ -4783,6 +4848,41 @@ focus_tree = {
 					add_idea = INS_knil_incompetence_parades_4
 				}
 			}
+			every_army_leader = {
+				random_list = {
+					10 = {
+						modifier = {
+							factor = 0
+							has_trait = ranger
+						}
+						add_trait = { trait = ranger }
+					}
+					10 = {
+						modifier = {
+							factor = 0
+							has_trait = jungle_rat
+						}
+						add_trait = { trait = jungle_rat }
+					}
+					10 = {
+						modifier = {
+							factor = 0
+							has_trait = trait_mountaineer 
+						}
+						add_trait = { trait = trait_mountaineer  }
+					}
+					10 = {
+						modifier = {
+							factor = 0
+							has_trait = hill_fighter
+						}
+						add_trait = { trait = hill_fighter }
+					}
+					40 = {
+						#do nothing
+					}
+				}
+			}
 		}
 	}
 
@@ -4805,7 +4905,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		
-		search_filters = { FOCUS_FILTER_RESEARCH }
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			set_rule = {
@@ -4845,7 +4945,7 @@ focus_tree = {
 		bypass = {
 		}
 
-		search_filters = { FOCUS_FILTER_MANPOWER }
+		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_HISTORICAL }
 
 		available_if_capitulated = yes
 
@@ -4964,6 +5064,8 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = special_forces_bonus
@@ -5007,7 +5109,7 @@ focus_tree = {
 		bypass = {
 		}
 
-		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT }
+		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_HISTORICAL }
 
 		available_if_capitulated = yes
 
@@ -5045,7 +5147,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		
-		search_filters = { FOCUS_FILTER_MANPOWER }
+		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			swap_ideas = {
@@ -5142,7 +5244,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		
-		search_filters = { FOCUS_FILTER_MANPOWER }
+		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			custom_effect_tooltip = available_theorist
@@ -5199,6 +5301,8 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
+		
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			if = {
@@ -5338,6 +5442,34 @@ focus_tree = {
 				}
 				INS_maurer = {
 					set_character_flag = INS_appointed_general_flag
+				}
+			}
+			every_army_leader = {
+				random_list = {
+					10 = {
+						modifier = {
+							factor = 0
+							has_trait = jungle_rat
+						}
+						add_trait = { trait = jungle_rat }
+					}
+					10 = {
+						modifier = {
+							factor = 0
+							has_trait = trait_mountaineer 
+						}
+						add_trait = { trait = trait_mountaineer  }
+					}
+					10 = {
+						modifier = {
+							factor = 0
+							has_trait = hill_fighter
+						}
+						add_trait = { trait = hill_fighter }
+					}
+					40 = {
+						#do nothing
+					}
 				}
 			}
 		}
@@ -5789,7 +5921,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			add_stability = 0.05
@@ -7190,6 +7322,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
+
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 
 		completion_reward = {
@@ -7219,6 +7352,8 @@ focus_tree = {
 				has_war_with = JAP
 			}
 		}
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		cost = 10
 
@@ -7318,7 +7453,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			swap_ideas = {
@@ -7408,7 +7543,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			every_other_country = {
@@ -7610,7 +7745,7 @@ focus_tree = {
 		bypass = {
 		}
 		
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			add_political_power = 75
@@ -7678,7 +7813,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			add_political_power = 50
@@ -7718,7 +7853,7 @@ focus_tree = {
 			has_country_flag = INS_neutral_china_war_flag
 		}
 		
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			add_stability = -0.05
@@ -7855,7 +7990,7 @@ focus_tree = {
 
 		available_if_capitulated = no
 
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			if = {
@@ -7904,7 +8039,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			add_war_support = 0.1
@@ -7962,7 +8097,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_RESEARCH }
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -7997,7 +8132,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			custom_effect_tooltip = INS_invest_coastal_defenses
@@ -8059,7 +8194,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			add_ideas = INS_staat_van_oorlog_en_van_beleg_idea
@@ -8233,6 +8368,8 @@ focus_tree = {
 
 		bypass = {}
 
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
 		completion_reward = {
 			if = {
 				limit = {
@@ -8279,7 +8416,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			INS_burden_step_down = yes
@@ -8446,7 +8583,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_TFV_AUTONOMY }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_TFV_AUTONOMY FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			INS_burden_step_down = yes
@@ -8680,7 +8817,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_MANPOWER }
+		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			add_ideas = INS_home_defence
@@ -8715,7 +8852,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			unlock_decision_category_tooltip = INS_category_armament_procurement
@@ -8766,7 +8903,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_ARMY_XP }
+		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			AST = {		
@@ -9294,6 +9431,8 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
 		completion_reward = {
 			add_autonomy_ratio = {
 				value = 0.2
@@ -9810,7 +9949,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = INS_de_jeugdstorm
+		id = INS_new_marechaussee
 		prerequisite = { focus = INS_home_defence2 }
 		icon = GFX_focus_INS_motherland
 
@@ -9832,7 +9971,7 @@ focus_tree = {
 				popularity = 0.05
 			}
 			add_war_support = 0.05
-			add_ideas = HOL_de_jeugdstorm
+			add_ideas = INS_new_marechaussee
 			if = {
 				limit = {
 					has_idea = extensive_conscription
@@ -15585,7 +15724,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
-		search_filters = { FOCUS_FILTER_NAVY_XP FOCUS_FILTER_INDUSTRY }
+		search_filters = { FOCUS_FILTER_NAVY_XP FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			navy_experience = 30
@@ -15685,6 +15824,8 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
+		search_filters = { FOCUS_FILTER_NAVY_XP FOCUS_FILTER_POLITICAL }
+
 		completion_reward = {
 			HOL = {
 				country_event = { id = holhis_navair.1 days = 1 }
@@ -15758,7 +15899,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		
-		search_filters = { FOCUS_FILTER_NAVY_XP }
+		search_filters = { FOCUS_FILTER_NAVY_XP FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			navy_experience = 10
@@ -15859,7 +16000,7 @@ focus_tree = {
 
 		available_if_capitulated = no
 		
-		search_filters = { FOCUS_FILTER_NAVY_XP FOCUS_FILTER_INDUSTRY }
+		search_filters = { FOCUS_FILTER_NAVY_XP FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			navy_experience = 10
@@ -15969,7 +16110,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		
-		search_filters = { FOCUS_FILTER_NAVY_XP }
+		search_filters = { FOCUS_FILTER_NAVY_XP FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			navy_experience = 10
@@ -16088,7 +16229,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
-		search_filters = { FOCUS_FILTER_NAVY_XP }
+		search_filters = { FOCUS_FILTER_NAVY_XP FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			navy_experience = 10
@@ -16215,7 +16356,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		
-		search_filters = { FOCUS_FILTER_NAVY_XP }
+		search_filters = { FOCUS_FILTER_NAVY_XP FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			navy_experience = 25
@@ -16257,7 +16398,7 @@ focus_tree = {
 			}
 		}
 		
-		search_filters = { FOCUS_FILTER_NAVY_XP FOCUS_FILTER_AIR_XP }
+		search_filters = { FOCUS_FILTER_NAVY_XP FOCUS_FILTER_AIR_XP FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			navy_experience = 10
@@ -16501,7 +16642,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		
-		search_filters = { FOCUS_FILTER_AIR_XP }
+		search_filters = { FOCUS_FILTER_AIR_XP FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			custom_effect_tooltip = available_designer
@@ -16541,6 +16682,8 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			HOL = {
@@ -16627,7 +16770,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		
-		search_filters = { FOCUS_FILTER_AIR_XP }
+		search_filters = { FOCUS_FILTER_AIR_XP FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			air_experience = 10
@@ -16683,7 +16826,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		
-		search_filters = { FOCUS_FILTER_AIR_XP }
+		search_filters = { FOCUS_FILTER_AIR_XP FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			air_experience = 10
@@ -16812,7 +16955,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		
-		search_filters = { FOCUS_FILTER_AIR_XP }
+		search_filters = { FOCUS_FILTER_AIR_XP FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			air_experience = 10
@@ -16833,6 +16976,27 @@ focus_tree = {
 					remove_idea = INS_airforce_4_defense_fighter
 					add_idea = INS_airforce_5_defense_fighter
 				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = INS_train_indonesian_officers
+					NOT = {
+						has_country_flag = INS_wardiman_officer_flag
+					}
+				}
+				add_advisor_role = {
+					character = INS_wardiman
+					advisor = {
+						slot = air_chief
+						idea_token = INS_wardiman
+						ledger = air
+						traits = {
+							air_chief_reform_1
+						}
+						cost = 100
+					}
+				}
+				set_country_flag = INS_wardiman_officer_flag
 			}
 			add_tech_bonus = {
 				name = CAS_bonus
@@ -16886,6 +17050,27 @@ focus_tree = {
 					add_idea = INS_airforce_5_defense_bomber
 				}
 			}
+			if = {
+				limit = {
+					has_completed_focus = INS_train_indonesian_officers
+					NOT = {
+						has_country_flag = INS_wardiman_officer_flag
+					}
+				}
+				add_advisor_role = {
+					character = INS_wardiman
+					advisor = {
+						slot = air_chief
+						idea_token = INS_wardiman
+						ledger = air
+						traits = {
+							air_chief_reform_1
+						}
+						cost = 100
+					}
+				}
+				set_country_flag = INS_wardiman_officer_flag
+			}
 			add_tech_bonus = {
 				name = bomber_bonus
 				bonus = 0.5
@@ -16916,7 +17101,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		
-		search_filters = { FOCUS_FILTER_AIR_XP }
+		search_filters = { FOCUS_FILTER_AIR_XP FOCUS_FILTER_HISTORICAL }
 
 		complete_tooltip = {
 			air_experience = 25
@@ -16945,8 +17130,6 @@ focus_tree = {
 				category = air_doctrine
 			}
 		}
-		
-		search_filters = { FOCUS_FILTER_AIR_XP }
 
 		completion_reward = {
 			air_experience = 25
@@ -17044,7 +17227,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		
-		search_filters = { FOCUS_FILTER_AIR_XP }
+		search_filters = { FOCUS_FILTER_AIR_XP FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			air_experience = 10
@@ -17064,7 +17247,7 @@ focus_tree = {
 		prerequisite = { focus = INS_aviation_effort }
 
 		relative_position_id = INS_aviation_effort
-		x = -2
+		x = 0
 		y = 1
 
 		cost = 10
@@ -17090,7 +17273,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		
-		search_filters = { FOCUS_FILTER_AIR_XP }
+		search_filters = { FOCUS_FILTER_AIR_XP FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			air_experience = 10
@@ -17124,7 +17307,7 @@ focus_tree = {
 		prerequisite = { focus = INS_aviation_effort }
 
 		relative_position_id = INS_aviation_effort
-		x = 0
+		x = -2
 		y = 1
 
 		cost = 10
@@ -17214,6 +17397,8 @@ focus_tree = {
 
 		bypass = {
 		}
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH } 
 
 		available_if_capitulated = yes
 
@@ -17364,7 +17549,7 @@ focus_tree = {
 		bypass = {
 		}
 		
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			custom_effect_tooltip = available_political_advisor
@@ -17400,6 +17585,8 @@ focus_tree = {
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 
 		complete_tooltip = {
 		}
@@ -17442,6 +17629,8 @@ focus_tree = {
 		}
 
 		bypass = {}
+		
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			if = {
@@ -17490,6 +17679,8 @@ focus_tree = {
 				surrender_progress > 0
 			}
 		}
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
 			if = {
@@ -17574,7 +17765,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = no
 		
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH }
 
 		complete_tooltip = {
 		}
@@ -17647,7 +17838,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = no
 		
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 
 		complete_tooltip = {
 		}
@@ -17724,7 +17915,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = no
 		
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 
 		complete_tooltip = {
 
@@ -17783,6 +17974,8 @@ focus_tree = {
 		}
 
 		bypass = {}
+		
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			custom_effect_tooltip = INS_relay_news_tt
@@ -17811,6 +18004,8 @@ focus_tree = {
 		}
 
 		bypass = {}
+		
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			add_naval_commander_role = {
@@ -17884,6 +18079,8 @@ focus_tree = {
 		}
 
 		bypass = {}
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
 			HOL = {
@@ -17924,6 +18121,8 @@ focus_tree = {
 		}
 
 		bypass = {}
+		
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			add_legitimacy = 10
@@ -17978,7 +18177,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = no
 		
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 
 		complete_tooltip = {
 		}
@@ -18019,7 +18218,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = no
 		
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 
 		complete_tooltip = {
 		}
@@ -18180,7 +18379,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = no
 		
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 
 		complete_tooltip = {
 		}

@@ -890,3 +890,575 @@ defined_text = { # Country
 	}
 }
 
+defined_text = { # Country
+	name = GetIrrigationNumber
+	text = {
+		trigger = {
+			original_tag = INS
+			check_variable = {
+				var = INS_irrigation_upgrade
+				value = 0
+				compare = equals
+			}
+		}
+		localization_key = INS_ethical_policy_0
+	}
+	text = {
+		trigger = {
+			original_tag = INS
+			check_variable = {
+				var = INS_irrigation_upgrade
+				value = 1
+				compare = equals
+			}
+		}
+		localization_key = INS_ethical_policy_1
+	}
+	text = {
+		trigger = {
+			original_tag = INS
+			check_variable = {
+				var = INS_irrigation_upgrade
+				value = 2
+				compare = equals
+			}
+		}
+		localization_key = INS_ethical_policy_2
+	}
+	text = {
+		trigger = {
+			original_tag = INS
+			check_variable = {
+				var = INS_irrigation_upgrade
+				value = 3
+				compare = equals
+			}
+		}
+		localization_key = INS_ethical_policy_3
+	}
+	text = {
+		trigger = {
+			original_tag = INS
+			check_variable = {
+				var = INS_irrigation_upgrade
+				value = 4
+				compare = equals
+			}
+		}
+		localization_key = INS_ethical_policy_4
+	}
+	text = {
+		trigger = {
+			original_tag = INS
+			check_variable = {
+				var = INS_irrigation_upgrade
+				value = 5
+				compare = equals
+			}
+		}
+		localization_key = INS_ethical_policy_5
+	}
+	text = {
+		trigger = {
+			original_tag = INS
+			check_variable = {
+				var = INS_irrigation_upgrade
+				value = 6
+				compare = equals
+			}
+		}
+		localization_key = INS_ethical_policy_6
+	}
+	text = {
+		trigger = {
+			original_tag = INS
+			check_variable = {
+				var = INS_irrigation_upgrade
+				value = 7
+				compare = equals
+			}
+		}
+		localization_key = INS_ethical_policy_7
+	}
+	text = {
+		trigger = {
+			original_tag = INS
+			check_variable = {
+				var = INS_irrigation_upgrade
+				value = 8
+				compare = equals
+			}
+		}
+		localization_key = INS_ethical_policy_8
+	}
+	text = {
+		trigger = {
+			original_tag = INS
+			check_variable = {
+				var = INS_irrigation_upgrade
+				value = 9
+				compare = equals
+			}
+		}
+		localization_key = INS_ethical_policy_9
+	}
+	text = {
+		trigger = {
+			original_tag = INS
+			check_variable = {
+				var = INS_irrigation_upgrade
+				value = 10
+				compare = equals
+			}
+		}
+		localization_key = INS_ethical_policy_10
+	}
+	text = {
+		trigger = {
+			original_tag = INS
+			check_variable = {
+				var = INS_irrigation_upgrade
+				value = 11
+				compare = equals
+			}
+		}
+		localization_key = INS_ethical_policy_11
+	}
+	text = {
+		trigger = {
+			original_tag = INS
+			check_variable = {
+				var = INS_irrigation_upgrade
+				value = 12
+				compare = equals
+			}
+		}
+		localization_key = INS_ethical_policy_12
+	}
+	text = {
+		trigger = {
+			original_tag = INS
+			check_variable = {
+				var = INS_irrigation_upgrade
+				value = 13
+				compare = equals
+			}
+		}
+		localization_key = INS_ethical_policy_13
+	}
+	text = {
+		trigger = {
+			original_tag = INS
+			check_variable = {
+				var = INS_irrigation_upgrade
+				value = 14
+				compare = equals
+			}
+		}
+		localization_key = INS_ethical_policy_14
+	}
+	text = {
+		trigger = {
+			original_tag = INS
+			check_variable = {
+				var = INS_irrigation_upgrade
+				value = 15
+				compare = equals
+			}
+		}
+		localization_key = INS_ethical_policy_15
+	}
+	text = {
+		trigger = {
+			original_tag = INS
+			check_variable = {
+				var = INS_irrigation_upgrade
+				value = 16
+				compare = equals
+			}
+		}
+		localization_key = INS_ethical_policy_16
+	}
+}
+
+defined_text = { # Country
+	name = GetEducationNumber
+	text = {
+		trigger = {
+			original_tag = INS
+			check_variable = {
+				var = INS_education_upgrade
+				value = 0
+				compare = equals
+			}
+		}
+		localization_key = INS_ethical_policy_0
+	}
+	text = {
+		trigger = {
+			original_tag = INS
+			check_variable = {
+				var = INS_education_upgrade
+				value = 1
+				compare = equals
+			}
+		}
+		localization_key = INS_ethical_policy_1
+	}
+	text = {
+		trigger = {
+			original_tag = INS
+			check_variable = {
+				var = INS_education_upgrade
+				value = 2
+				compare = equals
+			}
+		}
+		localization_key = INS_ethical_policy_2
+	}
+	text = {
+		trigger = {
+			original_tag = INS
+			check_variable = {
+				var = INS_education_upgrade
+				value = 3
+				compare = equals
+			}
+		}
+		localization_key = INS_ethical_policy_3
+	}
+	text = {
+		trigger = {
+			original_tag = INS
+			check_variable = {
+				var = INS_education_upgrade
+				value = 4
+				compare = equals
+			}
+		}
+		localization_key = INS_ethical_policy_4
+	}
+	text = {
+		trigger = {
+			original_tag = INS
+			check_variable = {
+				var = INS_education_upgrade
+				value = 5
+				compare = equals
+			}
+		}
+		localization_key = INS_ethical_policy_5
+	}
+	text = {
+		trigger = {
+			original_tag = INS
+			check_variable = {
+				var = INS_education_upgrade
+				value = 6
+				compare = equals
+			}
+		}
+		localization_key = INS_ethical_policy_6
+	}
+	text = {
+		trigger = {
+			original_tag = INS
+			check_variable = {
+				var = INS_education_upgrade
+				value = 7
+				compare = equals
+			}
+		}
+		localization_key = INS_ethical_policy_7
+	}
+	text = {
+		trigger = {
+			original_tag = INS
+			check_variable = {
+				var = INS_education_upgrade
+				value = 8
+				compare = equals
+			}
+		}
+		localization_key = INS_ethical_policy_8
+	}
+	text = {
+		trigger = {
+			original_tag = INS
+			check_variable = {
+				var = INS_education_upgrade
+				value = 9
+				compare = equals
+			}
+		}
+		localization_key = INS_ethical_policy_9
+	}
+	text = {
+		trigger = {
+			original_tag = INS
+			check_variable = {
+				var = INS_education_upgrade
+				value = 10
+				compare = equals
+			}
+		}
+		localization_key = INS_ethical_policy_10
+	}
+	text = {
+		trigger = {
+			original_tag = INS
+			check_variable = {
+				var = INS_education_upgrade
+				value = 11
+				compare = equals
+			}
+		}
+		localization_key = INS_ethical_policy_11
+	}
+	text = {
+		trigger = {
+			original_tag = INS
+			check_variable = {
+				var = INS_education_upgrade
+				value = 12
+				compare = equals
+			}
+		}
+		localization_key = INS_ethical_policy_12
+	}
+	text = {
+		trigger = {
+			original_tag = INS
+			check_variable = {
+				var = INS_education_upgrade
+				value = 13
+				compare = equals
+			}
+		}
+		localization_key = INS_ethical_policy_13
+	}
+	text = {
+		trigger = {
+			original_tag = INS
+			check_variable = {
+				var = INS_education_upgrade
+				value = 14
+				compare = equals
+			}
+		}
+		localization_key = INS_ethical_policy_14
+	}
+	text = {
+		trigger = {
+			original_tag = INS
+			check_variable = {
+				var = INS_education_upgrade
+				value = 15
+				compare = equals
+			}
+		}
+		localization_key = INS_ethical_policy_15
+	}
+	text = {
+		trigger = {
+			original_tag = INS
+			check_variable = {
+				var = INS_education_upgrade
+				value = 16
+				compare = equals
+			}
+		}
+		localization_key = INS_ethical_policy_16
+	}
+}
+
+defined_text = { # Country
+	name = GetTransmigrationNumber
+	text = {
+		trigger = {
+			original_tag = INS
+			check_variable = {
+				var = INS_transmigration_upgrade
+				value = 0
+				compare = equals
+			}
+		}
+		localization_key = INS_ethical_policy_0
+	}
+	text = {
+		trigger = {
+			original_tag = INS
+			check_variable = {
+				var = INS_transmigration_upgrade
+				value = 1
+				compare = equals
+			}
+		}
+		localization_key = INS_ethical_policy_1
+	}
+	text = {
+		trigger = {
+			original_tag = INS
+			check_variable = {
+				var = INS_transmigration_upgrade
+				value = 2
+				compare = equals
+			}
+		}
+		localization_key = INS_ethical_policy_2
+	}
+	text = {
+		trigger = {
+			original_tag = INS
+			check_variable = {
+				var = INS_transmigration_upgrade
+				value = 3
+				compare = equals
+			}
+		}
+		localization_key = INS_ethical_policy_3
+	}
+	text = {
+		trigger = {
+			original_tag = INS
+			check_variable = {
+				var = INS_transmigration_upgrade
+				value = 4
+				compare = equals
+			}
+		}
+		localization_key = INS_ethical_policy_4
+	}
+	text = {
+		trigger = {
+			original_tag = INS
+			check_variable = {
+				var = INS_transmigration_upgrade
+				value = 5
+				compare = equals
+			}
+		}
+		localization_key = INS_ethical_policy_5
+	}
+	text = {
+		trigger = {
+			original_tag = INS
+			check_variable = {
+				var = INS_transmigration_upgrade
+				value = 6
+				compare = equals
+			}
+		}
+		localization_key = INS_ethical_policy_6
+	}
+	text = {
+		trigger = {
+			original_tag = INS
+			check_variable = {
+				var = INS_transmigration_upgrade
+				value = 7
+				compare = equals
+			}
+		}
+		localization_key = INS_ethical_policy_7
+	}
+	text = {
+		trigger = {
+			original_tag = INS
+			check_variable = {
+				var = INS_transmigration_upgrade
+				value = 8
+				compare = equals
+			}
+		}
+		localization_key = INS_ethical_policy_8
+	}
+	text = {
+		trigger = {
+			original_tag = INS
+			check_variable = {
+				var = INS_transmigration_upgrade
+				value = 9
+				compare = equals
+			}
+		}
+		localization_key = INS_ethical_policy_9
+	}
+	text = {
+		trigger = {
+			original_tag = INS
+			check_variable = {
+				var = INS_transmigration_upgrade
+				value = 10
+				compare = equals
+			}
+		}
+		localization_key = INS_ethical_policy_10
+	}
+	text = {
+		trigger = {
+			original_tag = INS
+			check_variable = {
+				var = INS_transmigration_upgrade
+				value = 11
+				compare = equals
+			}
+		}
+		localization_key = INS_ethical_policy_11
+	}
+	text = {
+		trigger = {
+			original_tag = INS
+			check_variable = {
+				var = INS_transmigration_upgrade
+				value = 12
+				compare = equals
+			}
+		}
+		localization_key = INS_ethical_policy_12
+	}
+	text = {
+		trigger = {
+			original_tag = INS
+			check_variable = {
+				var = INS_transmigration_upgrade
+				value = 13
+				compare = equals
+			}
+		}
+		localization_key = INS_ethical_policy_13
+	}
+	text = {
+		trigger = {
+			original_tag = INS
+			check_variable = {
+				var = INS_transmigration_upgrade
+				value = 14
+				compare = equals
+			}
+		}
+		localization_key = INS_ethical_policy_14
+	}
+	text = {
+		trigger = {
+			original_tag = INS
+			check_variable = {
+				var = INS_transmigration_upgrade
+				value = 15
+				compare = equals
+			}
+		}
+		localization_key = INS_ethical_policy_15
+	}
+	text = {
+		trigger = {
+			original_tag = INS
+			check_variable = {
+				var = INS_transmigration_upgrade
+				value = 16
+				compare = equals
+			}
+		}
+		localization_key = INS_ethical_policy_16
+	}
+}

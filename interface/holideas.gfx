@@ -644,7 +644,7 @@ spriteTypes = {
 		name = "GFX_idea_indonesia_roehana_koeddoes"
 		texturefile = "gfx/ideas/INS/idea_ins_rohanna.dds"
 	}
-
+	
 	spriteType = {
 		name = "GFX_idea_indonesia_rosenow"
 		texturefile = "gfx/ideas/INS/idea_ins_rosenow.dds"
@@ -863,6 +863,16 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_indonesia_walraven"
 		texturefile = "gfx/ideas/INS/idea_ins_walraven.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_wardiman"
+		texturefile = "gfx/ideas/INS/idea_ins_wardiman.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_wardiman_knil"
+		texturefile = "gfx/ideas/INS/idea_ins_wardiman_knil.dds"
 	}
 
 	spriteType = {

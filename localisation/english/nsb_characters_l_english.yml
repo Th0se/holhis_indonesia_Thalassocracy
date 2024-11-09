@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
  #SOVIET UNION
  SOV_iosif_stalin:0 "Iosif Stalin"
  SOV_konstantin_rodzayevsky:0 "Konstantin Rodzayevsky"
@@ -971,6 +971,7 @@ l_english:
  INS_soetomo:0 "Soetomo" #1888, 47 yo in 1936, the leader of Boedi Oetomo and Parindra
  INS_tb_simatoepang:0 "Tahi Bonar Simatoepang" #1920, 16 yo in 1936, KNIL soldier
  INS_tjipto_mangoenkoesoemo:0 "Tjipto Mangoenkoesoemo" #1886, 50 yo in 1936, early nationalist figure, dealing with the Malang Plague in 1910s
+ INS_wardiman:0 "Wardiman Wirjosapoetro" #KNIL, first Boemipoetra navigator
  INS_wiranatakoesoema:0 "Raden Wiranatakoesoema V" #1888, 47 yo in 1936, Regent of Bandoeng, first Indonesian Interior Minister
  INS_woerjaningrat:0 "Woerjaningrat" #1883, 52 yo in 1936, Parindra vice-leader
  INS_zulkifli_lubis:0 "Zoelkifli Loebis" #1923, 12 yo in 1936, BAIS creator in 1945

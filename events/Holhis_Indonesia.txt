@@ -2958,14 +2958,14 @@ country_event = { #58 - Language matters
 	}
 }
 
-country_event = { #Navair 1 - Asking the Dutch to transfer the East Indies Fleet
+country_event = { #Navair 1 - Asking the Dutch to transfer the East Indies Fleet (1 CA + 2 CL + 12 DD + 12 SS)
 	id = holhis_navair.1
 	title = holhis_navair.1.t
 	desc = holhis_navair.1.d
 
 	is_triggered_only = yes
 
-	option = {
+	option = { #1 heavy cruiser + 2 light cruisers + 8 destroyers + 8 submarines. Soerabaja + De Ruyter + Van Galen + Prins van Oranje + 09 Class
 		name = holhis_navair.1.a
 		transfer_ship = { prefer_name = "HrMs Soerabaja" type = heavy_cruiser target = DEI }
 		transfer_ship = { prefer_name = "HrMs Java" type = light_cruiser target = DEI }
@@ -3021,7 +3021,7 @@ country_event = { #Navair 1 - Asking the Dutch to transfer the East Indies Fleet
 		}
 	}
 
-	option = {
+	option = { #2 light cruisers + 5 destroyers + 5 submarines. De Ruyter + Van Galen + Prins van Oranje + 09 Class
 		name = holhis_navair.1.b
 		transfer_ship = { prefer_name = "HrMs Java" type = light_cruiser target = DEI }
 		transfer_ship = { prefer_name = "HrMs De Ruyter" type = light_cruiser target = DEI }
@@ -3073,7 +3073,7 @@ country_event = { #Navair 1 - Asking the Dutch to transfer the East Indies Fleet
 		}
 	}
 
-	option = {
+	option = { #1 light cruiser + 3 destroyers + 3 submarines. Prins van Oranje + 09 Class
 		name = holhis_navair.1.c
 		transfer_ship = { prefer_name = "HrMs Java" type = light_cruiser target = DEI }
 		transfer_ship = { prefer_name = "HrMs Piet Hein" type = destroyer target = DEI }
@@ -3111,7 +3111,7 @@ country_event = { #Navair 2 - The Dutch gives Soerabaja (De Zeven Provincien) to
 
 	fire_only_once = no
 
-	option = {
+	option = { #Soerabaja + De Ruyter + Van Galen + Prins van Oranje + 09 Class
 		name = holhis_navair.2.a
 		navy_experience = 10
 		add_doctrine_cost_reduction = {
@@ -3221,7 +3221,7 @@ country_event = { #Navair 3 - The Dutch gives Java and less
 
 	fire_only_once = no
 
-	option = {
+	option = { #De Ruyter + Van Galen + Prins van Oranje + 09 Class
 		name = holhis_navair.3.a
 		INS = {
 			navy_experience = 30
@@ -6195,6 +6195,33 @@ country_event = { #Nationalists 4 - PNI Uprising
 			if = {
 				limit = {
 					NOT = {
+						has_country_flag = INS_wardiman_officer_flag
+					}
+				}
+				add_advisor_role = {
+					character = INS_wardiman
+					advisor = {
+						slot = air_chief
+						idea_token = INS_wardiman
+						ledger = air
+						traits = {
+							air_chief_reform_1
+						}
+						cost = 100
+					}
+				}
+				INS_wardiman = {
+					set_portraits = {
+						army = {
+							small = GFX_idea_indonesia_wardiman
+						}
+					}
+				}
+				set_country_flag = INS_wardiman_officer_flag
+			}
+			if = {
+				limit = {
+					NOT = {
 						has_country_flag = INS_soerjadarma_officer_flag
 					}
 				}
@@ -6392,6 +6419,63 @@ country_event = { #Nationalists 7 - Death of Soekarno
 			}
 			911 = {
 				add_manpower = 3
+			}
+		}
+	}
+}
+
+country_event = { #Nationalists 8 - Dispatcher for uprisings
+	id = holhis_nationalists.8
+	title = holhis_nationalists.8.t
+	desc = holhis_nationalists.8.d
+
+	hidden = yes
+	is_triggered_only = yes
+
+	option = { #They have risen up
+		name = holhis_nationalists.8.a
+		IF = {
+			limit = { has_global_flag = INS_civil_war_ongoing } # No point in kicking off if war has ended already
+			random_list = {
+				75 = { } # Nothing happens 
+				# the "Western" Front
+				15 = { # Atjeh uprising
+					modifier = {
+						add = INS_civil_war_weeks
+						always = yes
+					}
+					modifier = {
+						factor = 1.5 # To keep Atjeh uprising always slightly more likely than the others
+						always = yes
+					}
+					modifier = {
+						factor = 0
+						OR = { 
+							has_country_flag = atj_uprising_flag
+							ATJ = { exists = yes }
+						}
+					}
+					set_variable = { INS_nationalist_country = ATJ }
+					set_country_flag = atj_uprising_flag
+					INS = { country_event = holhis_nationalists.9 }
+				}
+				# the "Eastern" Front
+				10 = { # Molukker uprising
+					modifier = {
+						add = INS_civil_war_weeks
+						always = yes
+					}
+					modifier = {
+						factor = 0
+						OR = { 
+							has_country_flag = mlk_uprising_flag
+							MLK = { exists = yes }
+						}
+					}
+					set_variable = { INS_nationalist_country = MLK }
+					set_country_flag = mlk_uprising_flag
+					INS = { country_event = holhis_nationalists.9 }
+				}
 			}
 		}
 	}
@@ -7687,6 +7771,33 @@ country_event = { #Commies 11 - Communist Uprising
 					}
 				}
 				set_country_flag = INS_pardi_admiral_flag
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = INS_wardiman_officer_flag
+					}
+				}
+				add_advisor_role = {
+					character = INS_wardiman
+					advisor = {
+						slot = air_chief
+						idea_token = INS_wardiman
+						ledger = air
+						traits = {
+							air_chief_reform_1
+						}
+						cost = 100
+					}
+				}
+				INS_wardiman = {
+					set_portraits = {
+						army = {
+							small = GFX_idea_indonesia_wardiman
+						}
+					}
+				}
+				set_country_flag = INS_wardiman_officer_flag
 			}
 			if = {
 				limit = {
@@ -11862,6 +11973,33 @@ country_event = { #NSB 5 - NSB Uprising
 				if = {
 					limit = {
 						NOT = {
+							has_country_flag = INS_wardiman_officer_flag
+						}
+					}
+					add_advisor_role = {
+						character = INS_wardiman
+						advisor = {
+							slot = air_chief
+							idea_token = INS_wardiman
+							ledger = air
+							traits = {
+								air_chief_reform_1
+							}
+							cost = 100
+						}
+					}
+					INS_wardiman = {
+						set_portraits = {
+							army = {
+								small = GFX_idea_indonesia_wardiman
+							}
+						}
+					}
+					set_country_flag = INS_wardiman_officer_flag
+				}
+				if = {
+					limit = {
+						NOT = {
 							has_country_flag = INS_soerjadarma_officer_flag
 						}
 					}
@@ -13265,6 +13403,33 @@ country_event = { #Volskraad 10 - Parindra Uprising
 					}
 				}
 				set_country_flag = INS_pardi_admiral_flag
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = INS_wardiman_officer_flag
+					}
+				}
+				add_advisor_role = {
+					character = INS_wardiman
+					advisor = {
+						slot = air_chief
+						idea_token = INS_wardiman
+						ledger = air
+						traits = {
+							air_chief_reform_1
+						}
+						cost = 100
+					}
+				}
+				INS_wardiman = {
+					set_portraits = {
+						army = {
+							small = GFX_idea_indonesia_wardiman
+						}
+					}
+				}
+				set_country_flag = INS_wardiman_officer_flag
 			}
 			if = {
 				limit = {
@@ -16945,3 +17110,4 @@ country_event = {
 		}
 	}
 }
+
