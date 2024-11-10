@@ -836,6 +836,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_idea_indonesia_van_dulm"
+		texturefile = "gfx/ideas/INS/idea_ins_van_dulm.dds"
+	}
+
+	spriteType = {
 		name = "GFX_idea_indonesia_van_mook"
 		texturefile = "gfx/ideas/INS/idea_ins_van_mook.dds"
 	}
@@ -1476,6 +1481,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_portrait_indonesia_sam_ratulangi_army"
+		texturefile = "gfx/leaders/INS/portrait_ins_sam_ratulangi_army.dds"
+	}
+
+	spriteType = {
 		name = "GFX_portrait_indonesia_sardjono"
 		texturefile = "gfx/leaders/INS/portrait_ins_sardjono.dds"
 	}
@@ -1573,6 +1583,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_portrait_indonesia_tjalling"
 		texturefile = "gfx/leaders/INS/portrait_ins_tjalling.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_indonesia_van_dulm"
+		texturefile = "gfx/leaders/INS/portrait_ins_van_dulm.dds"
 	}
 
 	spriteType = {

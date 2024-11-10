@@ -2599,6 +2599,7 @@ characters = {
 		portraits = {
 			army = {
 				small = GFX_idea_indonesia_sam_ratulangi
+				large = GFX_portrait_indonesia_sam_ratulangi_army
 			}
 			civilian = {
 				large = GFX_portrait_indonesia_sam_ratulangi
@@ -4162,7 +4163,7 @@ characters = {
 		name = INS_maarten_van_dulm
 		portraits = {
 			army = {
-				large = GFX_portrait_indonesia_maarten_van_dulm
+				large = GFX_portrait_indonesia_van_dulm
 				small = GFX_idea_indonesia_van_dulm
 			}
 		}
@@ -4428,6 +4429,16 @@ characters = {
 		}
 	}
 
+	INS_tb_simatoepang = {
+		name = INS_tb_simatoepang
+		portraits = {
+			army = {
+				large = GFX_portrait_indonesia_simatoepang
+				small = GFX_idea_indonesia_simatoepang
+			}
+		}
+	}
+
 	INS_soeharto = {
 		name = INS_soeharto
 		portraits = {
@@ -4477,8 +4488,17 @@ characters = {
 		}
 	}
 
+	INS_wardiman = {
+		name = INS_wardiman
+		portraits = {
+			army = {
+				small = GFX_idea_indonesia_wardiman_knil
+			}
+		}
+	}
+
 	INS_leon_trotsky={
-		name = MEX_leon_trotsky
+		name = INS_leon_trotsky
 		portraits={
 			civilian = {
 				large = GFX_portrait_SOV_lev_trotsky
