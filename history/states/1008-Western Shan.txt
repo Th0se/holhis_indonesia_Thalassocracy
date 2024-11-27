@@ -1,10 +1,10 @@
 state={
 	id=1008
 	name="STATE_1008"
+
 	resources = {
 		tungsten = 36
 	}
-
 	history = {
 		add_core_of = BRM
 		owner = RAJ
