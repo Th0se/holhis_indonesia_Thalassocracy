@@ -1,0 +1,31 @@
+﻿
+
+air_wings = {
+	### Philippine Army Air Corps ###
+	327 = {
+		# Fighter Squadron -- Curtis P-26A's
+		small_plane_airframe_0 =  {
+			owner = "PHI" 
+			amount = 14
+			creator = "USA"
+			version_name = "P-26A"
+		}
+		small_plane_airframe_1 =  {
+			owner = "PHI" 
+			amount = 36
+			creator = "USA"
+			version_name = "P-35A"
+		}
+		medium_plane_airframe_0 = {
+			owner = "PHI"
+			amount = 4
+			creator = "USA"
+			version_name = "B-10"
+		}
+		transport_plane_equipment_1 = {
+			owner = "PHI"
+			creator = "USA"
+			amount = 4
+		}
+	}
+}

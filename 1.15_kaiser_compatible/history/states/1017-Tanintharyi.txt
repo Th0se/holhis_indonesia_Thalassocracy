@@ -1,0 +1,31 @@
+state={
+	id=1017
+	name="STATE_1017"
+
+	resources = {
+		tungsten = 80
+	}
+	history = {
+		add_core_of = BRM
+		owner = RAJ
+		victory_points = {
+			1403 1 
+		}
+		buildings = {
+			infrastructure = 1
+		}
+		1937.4.1 = {
+			owner = BRM
+			controller = BRM
+		}
+	}
+
+	provinces={
+		1296 1315 1385 1403 4275 4293 4336 4408 7295 10217 12125 12238 12292 
+	}
+	
+	manpower = 2733186
+	buildings_max_level_factor = 1.000
+	state_category = pastoral
+	local_supplies = 1.000
+}

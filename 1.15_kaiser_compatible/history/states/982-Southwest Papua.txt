@@ -1,0 +1,29 @@
+state={
+	id=982
+	name="STATE_982"
+
+	history = {
+		owner = INS
+		add_core_of = PPA
+		victory_points = {
+			10505 2 
+		}
+		victory_points = {
+			1602 1 
+		}
+		buildings = {
+			infrastructure = 1
+			10505 = {
+				naval_base = 1
+			}
+		}
+	}
+	provinces={ #10
+		1602 1617 1629 4593 7269 7627 8235 8250 10505 12457 
+	}
+
+	manpower = 98780
+	buildings_max_level_factor = 1.000
+	state_category = pastoral
+	local_supplies = 1.000
+}

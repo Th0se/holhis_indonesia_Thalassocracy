@@ -1,0 +1,572 @@
+﻿l_english:
+#industrial concerns and designers
+INS_bpm_shell:0 "Bataafsche Petroleum Maatschappij"
+INS_bpm_shell_desc:0 "Established at Batavia on 1907"
+INS_koolhoven:0 "Koolhoven - East Indies Division"
+INS_fokker:0 "Fokker - East Indies Division"
+INS_permina:0 "Permina"
+INS_permina_desc:0 "Perusahaan Minyak Nasional, assets acquired from nationalization of BPM at period of 1945-1957"
+INS_soerabaja_dm:0 "Soerabaja Droogdok Maatschappij"
+INS_soerabaja_dm_desc:0 "Historically established at Soerabaja on 1910 with several drydocks are operating there since 1913, including a 14.000 tonne drydock installed in 1916."
+INS_pal_soerabaja:0 "Penataran Angkatan Laoet - Soerabaja"
+INS_pal_soerabaja_desc:0 "The first Indonesian shipbuilding dry dock, assets acquired from nationalization of Soerabaja DM at various point through a time period of 1945-1957."
+INS_ptdi:0 "Aeronautical Planning and Construction Bureau"
+INS_ptdi_desc:0 "Established from scratch in 1946 at Madioen, East Java."
+INS_sstw:0 "Staatspoor en Tramwegen"
+INS_sstw_desc:0 "Established in 1875 at Bandoeng, the State Railways and Tramways Service is the government counterpart of the private Netherlands Indies Railway Company."
+INS_dkai:0 "Djawatan Kereta Api Indonesia"
+INS_dkai_desc:0 "Established during the National Revolution, assets acquired from both SSTW and NISM."
+INS_gm_java:0 "General Motors - Java Trading Company"
+INS_toyota:0 "Toyota"
+INS_daf:0 "Doorne's Aanhangwagen Fabriek - East Indies Division"
+INS_gm_java_desc:0 "Established in 1927 at Tandjoeng Priok, the first truck factory opened in 1938."
+INS_acf:0 "American Car and Foundry Company - East Indies Division"
+INS_acf_desc:0 "Producing the famous M4 Sherman Tanks that would be used in the East Indies in late 1940s."
+INS_artilerie_inrichtingen:0 "Artilerie Inrichtingen Bandoeng"
+INS_artilerie_inrichtingen_desc:0 "Established at Bandoeng on 1923"
+INS_pabrik_sendjata_mesioe:0 "Pabrik Sendjata dan Mesioe"
+INS_pabrik_sendjata_mesioe_desc:0 "The first Indonesian armament factory, acquired from nationalization of AI Bandoeng at 1949"
+INS_aniem:0 "Algemeene Nederlandsch-Indische Electriciteis Maatschappij"
+INS_aniem_desc:0 "Established at Soerabaja on 1909"
+INS_perusahaan_listrik_negara:0 "Perusahaan Listrik Negara"
+INS_perusahaan_listrik_negara_desc:0 "The first Indonesian electricity company, acquired from nationalization of ANIEM at period of 1945-1954"
+INS_nakajima:0 "Nakajima Hikouki Kaisha"
+INS_sumitomo:0 "Sumitomo Shouji"
+INS_kawasaki:0 "Kawasaki Juukougyou"
+INS_bank_java:0 "De Javasche Bank"
+INS_bank_indonesia:0 "Bank Indonesia"
+INS_gouvernmentsmarine:0 "Gouvernmentsmarine"
+INS_pelni:0 "Pelayaran Nasional Indonesia"
+
+#military industrial organizations
+INS_koolhoven_organization:0 "Koolhoven - East Indies Division" #Medium Aircraft
+INS_fokker_organization:0 "Fokker - East Indies Division" #General Aircraft
+INS_ptdi_organization:0 "Aeronautica Planning and Construction Bureau" #General Aircraft
+INS_nakajima_organization:0 "Nakajima Hikouki Kaisha" #Heavy Aircraft
+INS_soerabaja_dm_organization:0 "Soerabaja Droogdok Maatschappij" #Raiding Fleet
+INS_pal_soerabaja_organization:0 "Penataran Angkatan Laoet - Soerabaja" #Raiding Fleet
+INS_acf_organization:0 "American Car and Foundry Company - East Indies Division" #Medium Armor
+INS_artilerie_inrichtingen_organization:0 "Artilerie Inrichtingen Bandoeng" #Artillery
+INS_pabrik_sendjata_mesioe_organization:0 "Pabrik Sendjata dan Mesioe" #Artillery
+INS_daf_organization:0 "Doorne's Aanhangwagen Fabriek - East Indies Division" #Motorized
+INS_gm_java_organization:0 "General Motors - Java Trading Company" #Motorized
+INS_toyota_organization:0 "Toyota" #Motorized
+INS_govmarine_organization:0 "Gouvernmentsmarine"
+INS_pelni_organization:0 "Pelayaran Nasional Indonesia"
+
+#national spirits
+
+#princely states
+INS_princely_states_normal:0 "Vorstenlanden"
+INS_princely_states_normal_desc:0 "Our rule in the Indies would not be possible without our cooperation with the local feudal kingdoms here. But often, those kingdoms were reduced to a mere symbolic role or disappeared entirely because of their rebellion towards the Dutch authorities.\n\nThe continued cooperation of the Mataram Sultanates with us would ensure their own rule and their people's well-being in Central Java."
+INS_princely_states_placated:0 "Feudalism Restored"
+INS_princely_states_placated_desc:0 "Our rule in the Indies would not be possible without our cooperation with the local feudal kingdoms here. With more and more local kingdoms were given back their original responsibilities, our own burden has been lessened significantly."
+INS_princely_states_annoyed:0 "Vorstenlanden"
+INS_princely_states_annoyed_desc:0 "The remaining four Mataram Kingdoms has their assets reappropriated, and also their subjects used for our own use. After all they should know where they are belong, with the rest of those subjugated royals of course!"
+INS_national_awakening:0 "The National Awakening"
+
+#reforms
+INS_reforms:0 "The Volksraad"
+INS_reforms_desc:0 "Following the end of the Great War, the Volksraad (People's Council) was established to advise the Governor-General on managing the colony. While it has been basically powerless following the 1926 Rebellion, the democratic reforms still continues even now with the help of our fellow loyal subjects of The Queen."
+INS_reforms_democratic:0 "Democratic Reforms"
+INS_reforms_democratic_desc:0 "The next phase of the colonial reform is to democratize the civil servant system, as currently the upper echelons are reserved for the Dutch only. Any competent officials, no matter from which ethnic or religious group, can serve on all echelons of the civil servant services in the Indies."
+INS_loyalty:0 "Loyalty towards our Fatherland"
+INS_loyalty_desc:0 "The recent efforts by the colonial government to combat the effects of the Malaise has proved that despite numerous hindrances faced, our government would not leave the populace suffering from it. It would be the right choice for them to keep supporting the colonial government during these arduous times."
+INS_loyalty_conditional:0 "Conditional Loyalty"
+INS_loyalty_conditional_desc:0 "Representatives from Boemipoetra elites has expressed their support towards our rapproachment efforts towards them after the debacle of the last decade. While the more hardened Indonesian nationalists has remained adamant in their opposition towards us, they too, would relent soon enough."
+INS_loyalty_nationalists:0 "Loyal Nationalists"
+INS_loyalty_nationalists_desc:0 "With both local elite officials, which represents their own region, and also the recently released moderate figure in the Indonesian nationalist circles, which are united with their common nationhood bond, working together to advance the progress of the colony, surely we can overcome the previously insurmountable challenges ahead!"
+INS_loyalty_unquestionable:0 "Door de Eeuwen Trouw"
+INS_loyalty_unquestionable_desc:0 ""Loyalty Through the Ages", that was the motto of the city of Amboina, the first city in which the Dutch influence has changing the region for the better. Like the Ambonese whose loyalty has been rewarded with safety and prosperity, our own loyalty towards our Fatherland must not waver too."
+INS_indies_dominion_act:0 "Indies Dominion Act"
+INS_indonesian_mobilization_act:0 "Indonesian Mobilization Act"
+
+#nationalism
+INS_nationalism_suppressed:0 "Suppressed Nationalism"
+INS_nationalism_suppressed_desc:0 "Following the 1926 Rebellion, extensive measures has been taken, with important nationalists and communists are either jailed on the Eastern Islands, exiled to the Netherlands, or are abroad, still on the run. Despite of that, many of their sympathizers remained on hide here for the time being, waiting for another upset on the Peace and Order to reveal themselves."
+INS_nationalism_reemergence_1:0 "Nationalist Reemergence"
+INS_nationalism_reemergence_1_desc:0 "With support from the known Dutch progressive circles such as 'De Stuw'-ists and even from the Indische-Europannen Verbond has poured to the Nationalists, "
+INS_nationalism_reemergence_2:0 "Encouraged Nationalism"
+INS_nationalism_reemergence_2_desc:0 "With our recent laxing of political suppression, the Indonesians has shown to be more actively partaking in our political life. While it would strenghten our cooperation and ease the administration burdens, we still need to keep an eye on the radicals."
+INS_nationalism_rally:0 "Widespread Nationalist Rallies"
+INS_nationalism_rally_desc:0 "Recent political upheavals has made the Indonesian Nationalists more and more bold on their rallies."
+INS_nationalism_covert:0 "Covert Nationalist Propagandas"
+INS_soerja_wirawan:0 "Soerja Wirawan"
+INS_soerja_wirawan_desc:0 "With the fascist paramilitaries are organizing themselves, we ought to organize our own paramilitaries to counter them, as the government would do nothing to stop either of us after all."
+INS_nationalist_revolution_1:0 "The National Revolution"
+INS_nationalist_revolution_1_desc:0 ""
+
+#elitism
+INS_challenge_elitism_1:0 "Challenge Dutch Elitism"
+INS_challenge_elitism_1_desc:0 "Emboldened by the support of the likeminded Dutch, the influential Indonesian bureaucrats has becoming more and more outspoken about their disdain towards the stratification of the society and centralization of power."
+INS_challenge_elitism_2:0 "Crackdown on Radical Movements"
+INS_challenge_elitism_2_desc:0 "With the political reform is still fragile, we need to root out any radical movements who seeks to deestablish our mutual coexistence, whether it is from the Dutch or even the Indonesians themselves."
+
+#revolution
+INS_reforms_halted:0 "Reforms Halted"
+INS_reforms_halted_desc:0 "The closure of the Volksraad by Governor-General Bonifacius Cornelis de Jonge was claimed to be done to further restore the political stability after the twin shocks of the Indonesian Rebellion and the Malaise. But it seems that this move only further exacerbate the underlying tensions remained beneath notice."
+INS_revolution_at_home_1:0 "Grow the Revolution"
+INS_revolution_at_home_1_desc:0 "The closure of Volksraad by reactionary forces has inevitably closing down the legal path of the Indonesian independence movement, and thus, a revival of communist movement has begun to take form once more!"
+INS_revolution_at_home_2_desc:0 "Our revolutionary cells has interconnected with several nationalist organizations and disgraced nobles to extend our reach in Sulawesi and Kalimantan as a part of our mutual struggle against the Dutch!"
+INS_revolution_at_home_3_desc:0 "Our revolutionary cells has spread far enough to reach even the largest cities in the Western Indonesia to gather support from both the dismayed factory workers and humble farmers in the villages."
+INS_means_production_seized:0 "Foreign Assets Seized"
+INS_economic_aid:0 "Economic Aid"
+INS_economic_aid_desc:0 "An economic aid from the industrialized member of our faction would surely helped us to overcome the industrialization challenges after the Revolution. It is natural to repay it with our abundant natural resources."
+INS_reappropriation_idea:0 "Royal Assets Seized"
+INS_reappropriation_idea_desc:0 "With the royals' assets seized by the local communes, we hope that it would support our industrialization efforts after the Revolution. Everyone must do their part together to overcome our shared hurdle!"
+INS_uphold_secularism:0 "Uphold Secularism"
+INS_religious_communism:0 "Religious Communism"
+INS_gerindo_militias_historical:0 "Gerindo Militias"
+INS_gerindo_militias_historical_desc:0 ""
+INS_gerindo_militias_negative:0 "Gerindo Militias"
+INS_gerindo_militias_negative_desc:0 ""
+INS_gerindo_militias_positive:0 "Gerindo Militias"
+INS_gerindo_militias_positive_desc:0 ""
+
+#capital
+INS_build_capital_1:0 "Building the New Capital"
+INS_build_capital_1_desc:0 "The existing settlement has undergoing a refurbishment and land clearing for the site of the new capital"
+INS_build_capital_2_desc:0 "New roads and utilities are being build according to the plan to ensure comfortability for its new residents"
+INS_build_capital_3_desc:0 "Vital government buildings and foreign consulates and embasssiess are being built as we speak."
+INS_build_capital_4_desc:0 "As the government began to move to our new capital, airports, railway stations, and other public transport hubs are being built to improve connectability with other regions in our country."
+INS_build_capital_5_desc:0 "Final utilities and decorations are being placed to improve the new capital!"
+
+#industrial
+INS_imperial_burden_1:0 "Imperial Burden-Sharing"
+INS_imperial_burden_1_desc:0 "Since the beginning of De Crisisjaren, our profits are largely spent on paying the Imperial Defenses costs, in which three-fifth of it are being placed on our responsibility."
+INS_imperial_burden_2_desc:0 "Since the beginning of De Crisisjaren, our profits are largely spent on paying the Imperial Defenses costs, in which three-fifth of it are being placed on our responsibility."
+INS_imperial_burden_3_desc:0 "Since the beginning of De Crisisjaren, our profits are largely spent on paying the Imperial Defenses costs, in which two-fifth of it are being placed on our responsibility."
+INS_imperial_burden_4_desc:0 "Since the beginning of De Crisisjaren, our profits are largely spent on paying the Imperial Defenses costs, in which two-fifth of it are being placed on our responsibility."
+INS_imperial_burden_5_desc:0 "Since the beginning of De Crisisjaren, our profits are largely spent on paying the Imperial Defenses costs, in which now our share has been lessened to be just one-fifth of it."
+INS_japanese_investment_1:0 "Economic Dependence on the Japanese"
+INS_japanese_investment_1_desc:0 "The Malaise largely affects the European and American markets and would deprieve us from our much-needed cash if not for a new source of investment, the rising power of the Japanese Empire.\n\nUnless the Western powers managed to counteract the Japanese enroachment into our economy, our clear economic disavantage means that we would need to abide by the Japanese demands for the time being, lest they would disrupt the peace by taking this land for themselves.\n\n§RThis national spirit would cease either upon war declaration between us or our faction member and the Japanese, or directly supporting a country at war with Japan.§!"
+INS_japanese_investment_2_desc:0 "The Malaise largely affects the European and American markets and would deprieve us from our much-needed cash if not for a new source of investment, the rising power of the Japanese Empire.\n\nUnless the Western powers managed to counteract the Japanese enroachment into our economy, our clear economic disavantage means that we would need to abide by the Japanese demands for the time being, lest they would disrupt the peace by taking this land for themselves.\n\n§RThis national spirit would cease either upon war declaration between us or our faction member and the Japanese, or directly supporting a country at war with Japan.§!"
+INS_japanese_investment_3_desc:0 "The Malaise largely affects the European and American markets and would deprieve us from our much-needed cash if not for a new source of investment, the rising power of the Japanese Empire.\n\nUnless the Western powers managed to counteract the Japanese enroachment into our economy, our clear economic disavantage means that we would need to abide by the Japanese demands for the time being, lest they would disrupt the peace by taking this land for themselves.\n\n§RThis national spirit would cease either upon war declaration between us or our faction member and the Japanese, or directly supporting a country at war with Japan.§!"
+INS_japanese_surprise_1:0 "Japanese Surpise Attack!"
+INS_japanese_surprise_1_desc:0 "The perfidious Japanese has finally revealed their true colors and attacked us! Despite of that, years of Japanese enroachment into our economy would meant that they has a clear advantage compared to ours. An effort has been undertaken to mitigate it for the time being."
+INS_japanese_surprise_2_desc:0 "The perfidious Japanese has finally revealed their true colors and attacked us! Despite of that, years of Japanese enroachment into our economy would meant that they has a clear advantage compared to ours. An effort has been undertaken to mitigate it for the time being."
+INS_japanese_surprise_3_desc:0 "The perfidious Japanese has finally revealed their true colors and attacked us! Despite of that, years of Japanese enroachment into our economy would meant that they has a clear advantage compared to ours. An effort has been undertaken to mitigate it."
+INS_malaise_1:0 "The Malaise"
+INS_malaise_1_desc:0 "The Great Depression, or as they called here as The Malaise, has shocked our economy much, evenmore than the aftermath of 1926 Rebellion. Whilst the worst effects has been contained, thanks for the Japanese and investments from Den Haag, our industry is still pretty much stagnant until further investments are drawn to stimulate it again.\n\n§GCompleting national focus "End the Malaise" would remove completely the remaining effects of the Malaise.§!"
+INS_malaise_2:0 "Economic Recovery"
+INS_malaise_2_desc:0 "Our government has began to address the Malaise by reforming several economic laws regarding trade flexibility.\n\n§GCompleting national focus "End the Malaise" would remove completely the remaining effects of the Malaise.§!"
+INS_malaise_3:0 "Internal Strengthening"
+INS_malaise_3_desc:0 "With factories built in our own territory, our economy would not be depended as much to the foreign markets, as millions of our people would be the first and foremost beneficiaries of it.\n\n§GCompleting national focus "End the Malaise" would remove completely the remaining effects of the Malaise.§!"
+INS_malaise_4:0 "Return to Normalcy"
+INS_malaise_4_desc:0 "Our economy has largely devoid of any post-Malaise stagnations, and the time is near for us to officialy proclaim the end of The Malaise!\n\n§GCompleting national focus "End the Malaise" would remove completely the remaining effects of the Malaise.§!"
+INS_luxury_goods:0 "Luxury Goods Export"
+INS_luxury_goods_desc:0 "Sugarcanes! Tea leaves! Coffee beans! Indigo leaves! What splendor that the East Indies has for the world. While it is not much compared to the Indian products, our own has its qualities too that is worth to be exported on.\n\n§RThe loss of Sumatra and Java would render this national spirit moot.§!"
+INS_strength:0 "Strengthened Economy"
+INS_strength_desc:0 "Our position is vital and our economy is important. It would be stupid for our future enemies to disrupt world trade by attacking us!"
+INS_unity:0 "United We Stands"
+INS_unity_desc:0 "Whoever the enemy is, no matter what strong they are, our spirit remains unbreakable and we are ready to fight them down to the smallest villages!"
+INS_attract_foreign_industry:0 "Attract Foreign Industry"
+INS_attract_foreign_industry_desc:0 "The central government has decided to sign a short-term contract with foreign industrial magnates to helped us with our development in the Indies, lightening up our financial burden and allow us to dedicate our resources elsewhere."
+INS_attract_foreign_investors:0 "Attract Foreign Investors"
+INS_attract_foreign_investors_desc:0 "The central government has decided to sign a short-term contract with foreign industrial magnates to helped us with our development in the Indies, lightening up our financial burden and allow us to dedicate our resources elsewhere."
+
+#foreign investment
+INS_JAP_investment:0 "Japanese Investment in the East Indies"
+INS_ENG_investment:0 "British Investment in the East Indies"
+INS_USA_investment:0 "American Investment in the East Indies"
+INS_FROM_investment:0 "[ROOT.GetAdjective] Investment in the East Indies"
+INS_JAP_hart_ishizawa_agreement:0 "Hart - Ishizawa Agreement"
+INS_JAP_van_mook_kotani_agreement:0 "Van Mook - Kotani Agreement"
+INS_JAP_van_mook_kobayashi_agreement:0 "Van Mook - Kobayashi Agreement"
+
+#Army ideas
+INS_jungle_warfare:0 "Jungle Warfare"
+INS_knil_incompetence_1:0 "[Root.getinsarmyspiritlow]"
+INS_knil_incompetence_1_desc:0 "[Root.getinsarmyspiritlowdesc]"
+INS_knil_incompetence_2:0 "[Root.getinsarmyspiritlow]"
+INS_knil_incompetence_2_desc:0 "[Root.getinsarmyspiritlowdesc]"
+INS_army_knil_low:0 "KNIL Incompetence"
+INS_army_knil_low_desc:0 "The KNIL (Royal Netherlands Indies Army) are lacking manpower since they only allowed Europeans and Indos citizens to serve. They are also suffering from heavy funding shortages and their tactics aren't suitable for the terrain of the East Indies.\n\n§GProgressing down the army branch would gradually improve this national spirit§!"
+INS_army_tni_low:0 "Army Incompetence"
+INS_army_tni_low_desc:0 "The nascent TNI (National Army of Indonesia) is very weak, having just been organized from youth, irregular militias to embattle the fascist paramilitaries and their colonialist allies. While there are no shortages of patriots, there is a shortage of able-bodied patriots who can properly able to serve the nation and the people. We must rectify this quickly before we are hopelessly outmached in our future conflicts.\n\n§GProgressing down the army branch would gradually improve this national spirit§!"
+INS_knil_incompetence_commie_1:0 "Indonesian National Army"
+INS_knil_incompetence_commie_1_desc:0 ""
+INS_knil_incompetence_commie_2:0 "Indonesian Workers' Army"
+INS_knil_incompetence_commie_2_desc:0 ""
+INS_knil_incompetence_commie_3:0 "Indonesian Workers' Army"
+INS_knil_incompetence_commie_3_desc:0 ""
+INS_knil_incompetence_parades_1:0 "KNIL Incompetence"
+INS_knil_incompetence_parades_1_desc:0 "The KNIL (Royal Netherlands Indies Army) are lacking manpower since they only allowed Europeans and Indos citizens to serve. They are also suffering from heavy funding shortages and their tactics aren't suitable for the terrain of East Indies.\n\n§GProgressing down the army branch would gradually improve this national spirit§!"
+INS_knil_incompetence_parades_2:0 "KNIL Incompetence"
+INS_knil_incompetence_parades_2_desc:0 "The KNIL (Royal Netherlands Indies Army) are lacking manpower since they only allowed Europeans and Indos citizens to serve. They are also suffering from heavy funding shortages and their tactics aren't suitable for the terrain of East Indies.\n\n§GProgressing down the army branch would gradually improve this national spirit§!"
+INS_knil_incompetence_parades_3:0 "KNIL Incompetence"
+INS_knil_incompetence_parades_3_desc:0 "The KNIL (Royal Netherlands Indies Army) are lacking manpower since they only allowed Europeans and Indos citizens to serve. They are also suffering from heavy funding shortages and their tactics aren't suitable for the terrain of East Indies.\n\n§GProgressing down the army branch would gradually improve this national spirit§!"
+INS_knil_incompetence_parades_4:0 "Koninklijk Nederlandsch-Indisch Leger"
+INS_knil_incompetence_parades_4_desc:0 "The KNIL (Royal Netherlands Indies Army) are lacking manpower since they only allowed Europeans and Indos citizens to serve. They are also suffering from heavy funding shortages and their tactics aren't suitable for the terrain of East Indies.\n\n§GProgressing down the army branch would gradually improve this national spirit§!"
+INS_knil_incompetence_parades_5:0 "Koninklijk Nederlandsch-Indisch Leger"
+INS_knil_incompetence_locals_1:0 "[Root.getinsarmyspiritlow]"
+INS_knil_incompetence_locals_1_desc:0 "The KNIL (Royal Netherlands Indies Army) are lacking manpower since they only allowed Europeans and Indos citizens to serve. They are also suffering from heavy funding shortages and their tactics aren't suitable for the terrain of East Indies.\n\n§GProgressing down the army branch would gradually improve this national spirit§!"
+INS_knil_incompetence_locals_2:0 "KNIL Incompetence"
+INS_knil_incompetence_locals_3:0 "Indonesian National Army"
+INS_knil_incompetence_locals_4:0 "Indonesian National Army"
+INS_knil_incompetence_locals_5:0 "Kartika Eka Paksi"
+INS_knil_incompetence_locals_5_desc:0 "Unmatchable and With Noble Goals, our army is always ready to protect our homeland and our people!"
+INS_attack_japan:0 "Anti-Japanese Measures"
+
+#Naval ideas
+INS_sea_connections_desc:0 "Further refinments of our convoy building management would reduces its costs and ensure that every island in our archipelago is connected by them."
+INS_navy_4:0 "Jalesveva Jayamahe"
+INS_jalesveva_jayamahe_desc:0 "Our glory is at the seas, the desire to travel the seas shall not be quenchable!"
+INS_streamlined_transport_planes:0 "Streamlined Transport Plane Production"
+INS_navy_1:0 "[Root.getinsnavyspirit]"
+INS_navy_dutch:0 "Indische Militaire Marine"
+INS_navy_indo:0 "Indonesian Navy"
+INS_navy_1_desc:0 "While we has the required knowledge and capabilities to repair naval vessels as large as light cruisers, it would take further expansion for our port and dry docks to accomodate capital ships such as battleships and even the renowned American carriers."
+INS_navy_2_desc:0 "While our expanded ports in the key naval bases can accomodate capital ships, our precarious situation demanded us to whether focused on power projection or on archipelagic defense for the time being."
+INS_navy_3_green_desc:0 "While not much, our lighter fleet would be more advantageous on the shallower sea in our archipelago. Their smaller bodies can easily move around the enemy's capital ships, but with the risk of easier destruction should their guns hit our ships."
+INS_navy_3_blue_desc:0 "With our ships are specialized on oceanic operations, they should be our first line of defense of the archipelago. We shall sank them all before they even entering our seas, but should the worst has come, we must be ready for that too."
+INS_navy_4_green_desc:0 "While not much, our lighter fleet would be more advantageous on the shallower sea in our archipelago. Their smaller bodies can easily move around the enemy's capital ships, but with the risk of easier destruction should their guns hit our ships."
+INS_navy_4_blue_desc:0 "With our ships are specialized on oceanic operations, they should be our first line of defense of the archipelago. We shall sank them all before they even entering our seas, but should the worst has come, we must be ready for that too."
+INS_navy_5:0 "Jalesveva Jayamahe"
+INS_navy_5_desc:0 "Our Glory is at The Seas, the desire to travel the seas like our forefathers shall not be quenchable, and our will to protect this vast archipelago shall be unbeatable!"
+
+#Air ideas
+INS_airforce_1:0 "Outdated Airforce"
+INS_airforce_1_desc:0 "We have a complete lack of aircraft tradition, being completely dependent on aircrafts and officers from our Homeland and generally lags behind airborne powers. This would not change anytime soon, unless we can establish a local division to at least mitigate some of the effects.\n\n§RNot progressing enough on this branch would lead into some unforeseen consequences....§!"
+INS_airforce_2:0 "Luchtvaartafdeling"
+INS_airforce_2_desc:0 "Establishment of a separate armed forces branch for our aeronautical forces is just the beginning. We need to further improve our capabilities by training our own officers and adopting new aircraft technologies to close the development gap with the rest of the world.\n\n§RNot progressing enough on this branch would lead into some unforeseen consequences....§!"
+INS_airforce_3_offense:0 "Luchtvaartafdeling"
+INS_airforce_3_offense_desc:0 "Establishment of a separate armed forces branch for our aeronautical forces is just the beginning. We need to further improve our capabilities by training our own officers and adopting new aircraft technologies to close the development gap with the rest of the world.\n\n§RNot progressing enough on this branch would lead into some unforeseen consequences....§!"
+INS_airforce_3_defense:0 "Luchtvaartafdeling"
+INS_airforce_3_defense_desc:0 "Establishment of a separate armed forces branch for our aeronautical forces is just the beginning. We need to further improve our capabilities by training our own officers and adopting new aircraft technologies to close the development gap with the rest of the world.\n\n§RNot progressing enough on this branch would lead into some unforeseen consequences....§!"
+INS_airforce_4_offense_bomber:0 "Luchtvaartafdeling"
+INS_airforce_4_offense_bomber_desc:0 "Establishment of a separate armed forces branch for our aeronautical forces is just the beginning. We need to further improve our capabilities by training our own officers and adopting new aircraft technologies to close the development gap with the rest of the world."
+INS_airforce_4_defense_bomber:0 "Luchtvaartafdeling"
+INS_airforce_4_defense_bomber_desc:0 "Establishment of a separate armed forces branch for our aeronautical forces is just the beginning. We need to further improve our capabilities by training our own officers and adopting new aircraft technologies to close the development gap with the rest of the world."
+INS_airforce_4_offense_fighter:0 "Luchtvaartafdeling"
+INS_airforce_4_offense_fighter_desc:0 "Establishment of a separate armed forces branch for our aeronautical forces is just the beginning. We need to further improve our capabilities by training our own officers and adopting new aircraft technologies to close the development gap with the rest of the world."
+INS_airforce_4_defense_fighter:0 "Luchtvaartafdeling"
+INS_airforce_4_defense_fighter_desc:0 "Establishment of a separate armed forces branch for our aeronautical forces is just the beginning. We need to further improve our capabilities by training our own officers and adopting new aircraft technologies to close the development gap with the rest of the world."
+INS_airforce_5_offense_bomber:0 "Koninklijk Nederlandsch-Indisch Militaire Luchtvaart"
+INS_airforce_5_offense_bomber_desc:0 "The Air Service of the KNIL has been modernized, being specialized in naval and air destruction capabilities towards enemy's bases far behind the front"
+INS_airforce_5_defense_bomber:0 "Koninklijk Nederlandsch-Indisch Militaire Luchtvaart"
+INS_airforce_5_defense_bomber_desc:0 "The Air Service of the KNIL has been modernized, being specialized in naval and air destruction capabilities towards enemy's forces who are threathening our territories"
+INS_airforce_5_offense_fighter:0 "Koninklijk Nederlandsch-Indisch Militaire Luchtvaart"
+INS_airforce_5_offense_fighter_desc:0 "The Air Service of the KNIL has been modernized, being specialized in naval and air destruction capabilities towards enemy's forces who are threathening our territories"
+INS_airforce_5_defense_fighter:0 "Koninklijk Nederlandsch-Indisch Militaire Luchtvaart"
+INS_airforce_5_defense_fighter_desc:0 "The Air Service of the KNIL has been modernized, being specialized in naval and air destruction capabilities towards enemy's bases far behind the front"
+INS_airforce_6:0 "Swa Bhuwana Paksya"
+INS_airforce_6_desc:0 "The Wings of Our Homeland, shall protect our vast nation from any form of aggression in the skies!"
+
+#SWPA
+INS_swpa_initiative_1:0 "Southwest Pacific Area Initiative"
+INS_swpa_initiative_1_desc:0 "The establishment of SWPA is meant to be defending our homeland from foreign invaders, we will fight tooth and nail to preserve it!"
+INS_swpa_initiative_2_desc:0 "The establishment of SWPA is meant to be defending our homeland from foreign invaders, we will fight tooth and nail to preserve it!"
+INS_swpa_initiative_3_desc:0 "The establishment of SWPA is meant to be defending our homeland from foreign invaders, we will fight tooth and nail to preserve it!"
+
+#Ethical Policy
+INS_agrarian_society_1:0 "Agrarian Society"
+INS_agrarian_society_1_desc:0 "Outside of the Europeans, Indos, and Orientals, there are the Boemipoetras whose agrarian way of life were still left untouched and has managed to provide for their fellow displaced factory workers after the Malaise.\n\nWhile it has quelled further resentments for now, their subsistence farming methods leaves little for them to further improve their own well-beings... and also our own capabilities to recruit capable men to defend our lands too.\n\n§GEnacting agrarian reforms-related decisions unlocked by national focus "Reinstate the Ethical Policies" or "Build New Schools" would gradually decrease the effect.§!\n\n§YIrrigation Projects§! required: 1 \n§YTransmigration Projects§! required: 1 \n§YEducational Projects§! required: 1 \n\n§YTotal Projects§! required: 4"
+INS_agrarian_society_2:0 "Traditional Society"
+INS_agrarian_society_2_desc:0 "Outside of the Europeans, Indos, and Orientals, there are the Boemipoetras whose agrarian way of life were still left untouched and has managed to provide for their fellow displaced factory workers after the Malaise.\n\nWhile it has quelled further resentments for now, their subsistence farming methods leaves little for them to further improve their own well-beings... and also our own capabilities to recruit capable men to defend our lands too.\n\n§GEnacting agrarian reforms-related decisions unlocked by national focus "Reinstate the Ethical Policies" or "Build New Schools" would gradually decrease the effect.§!\n\n§YIrrigation Projects§! required: 2 \n§YTransmigration Projects§! required: 2 \n§YEducational Projects§! required: 2 \n\n§YTotal Projects§! required: 8"
+INS_agrarian_society_3:0 "Developing Society"
+INS_agrarian_society_3_desc:0 "Outside of the Europeans, Indos, and Orientals, there are the Boemipoetras whose agrarian way of life were still left untouched and has managed to provide for their fellow displaced factory workers after the Malaise.\n\nWhile it has quelled further resentments for now, their subsistence farming methods leaves little for them to further improve their own well-beings... and also our own capabilities to recruit capable men to defend our lands too.\n\n§GEnacting agrarian reforms-related decisions unlocked by national focus "Reinstate the Ethical Policies" or "Build New Schools" would gradually decrease the effect.§! \n§YTotal Projects§! required: 14"
+INS_agrarian_society_4:0 "Developed Society"
+INS_agrarian_society_4_desc:0 "With most of our citizens are currently properly educated and are capable to be conscripted in our time of need, there are still some agricultural villages and tribes that are largely autonomous from our governace and mostly secluded from the outside world such as the Badui villages in West Java, Saminist villages in East Java, and the hunter-gatherers in New Guinea. For the time being, there is nothing much we can do for them, but eventually they would find the way to open themselves."
+INS_education_elitist:0 "Elitist Educational Program"
+INS_education_elitist_desc:0 "Formulated by Dr. Christiaan Snouck Hurgronje and Jacques Henrij Abendanon and implemented in the first five years of the First Ethical Policy era, this method of education was aimed to create a new class of intellectual Boemipoetras who would helped the colonial administrators to manage the colony until a sufficient size has achieved and they would eventually lead it."
+INS_education_nationalist:0 "Broad Educational Program"
+INS_education_nationalist_desc:0 "Formulated by Governor-General Johannes Benedictus van Heustz and Alexander Willem Frederik Idenburg and implemented from 1905 to 1930, this method of education was aimed to improve the overall welfare of the whole populace on this colony by giving necessary tehnical, engineering, and scientific educations for the aspirants and eventually opening work opportunities for the others."
+INS_education_tamansiswa:0 "Tamansiswa Educational Program"
+INS_education_tamansiswa_desc:0 "Formulated by Ki Hadjar Dewantara, formerly known as Raden Mas Soewardi, and implemented in his Taman Siswa schools since 1922, this method of education was aimed to properly educate the masses, with not just preparing them for any technical-related jobs in the future, but also to develop their inherent talents with the available means around them. Inspired by renowned educational pioneers such as Maria Montessori, Friedrich Frobel, and Rabindranath Tagore, Taman Siswa is purely aimed to develop the native society and adapted them into the modern age."
+ASEAN_agrarian_society_1:0 "Agrarian Society"
+ASEAN_agrarian_society_2:0 "Traditional Society"
+ASEAN_agrarian_society_3:0 "Developing Society"
+INS_dual_language:0 "Dutch-Indonesian Official Languages"
+INS_indonesian_language:0 "Indonesian Official Language"
+INS_dutch_language:0 "Dutch Official Language"
+
+#Colonial War
+INS_wilhelmina_here:0 "Queen Wilhelmina"
+INS_pen_and_paper:0 "Pen and Paper"
+INS_pen_and_paper_desc:0 "Instead of another bloodshed or pointless argument in the council, we have shown our worth as a part of the Dutch Commonwealth in our duty to protect our Fatherland so far, and so it is natural that eventually we can take more responsibility to self-sufficiently govern the East Indies."
+INS_staat_van_oorlog_en_van_beleg_idea:0 "State of War and Siege"
+INS_staat_van_oorlog_en_van_beleg_idea_desc:0 "Our government is at war, and we will ensure our victory by any means."
+
+#misc
+INS_improved_healthcare:0 "Improved Healthcare"
+INS_improved_healthcare_desc:0 "By ensuring that our people are well-fed and able-bodied, they would be able to improve and adapt more quickly, also can be ready for duty when needed."
+INS_tear_down:0 "Destruction of Dutch Properties"
+INS_independence_mess:0 "Revolutionary Mess"
+INS_independence_mess_desc:0 "The breakdown of general Law and Order has brought chaos upon our population, with thugs and gangs seized upon the opportunity provided by the revolution, often claiming themselves as part of our government. Unless we stabilizes our government, this condition would persists until then.\n\n§GThis national spirit would cease either upon consolidation of our government or our stability has reached at least 80%.§!"
+INS_expand_empire:0 "Expansionist Agenda"
+INS_STATUE_MODIFIER:0 "Tear Down Dutch Statues"
+INS_two_state:0 "Island Overlord"
+INS_one_state:0 "One State"
+INS_communist_volunteers:0 "Communist Volunteers"
+INS_economic_planning:0 "Economic Planning"
+INS_china_own:0 "Expansion To China"
+INS_farm_funds:0 "Farming Subsidies"
+INS_rapid_industrialization:0 "Expanding Industry"
+INS_recruit_our_people:0 "National Mobilization"
+INS_alarm_systems:0 "Improved Alarm Systems"
+INS_queen_support:0 "Her Majesty's Support"
+INS_queen_support_desc:0 "Her Majesty Queen Wilhelmina has expressed her support towards our continued efforts to support the Fatherland.\n\n§RThis national spirit would be removed upon peacetime.§!"
+INS_asian_liberation:0 "Support the Hakko Ichiu"
+
+#Regional Modifiers
+early_develop_modif_west:0 "Early Development"
+early_develop_modif_middle:0 "Early Development"
+early_develop_modif_east:0 "Early Development"
+advanced_develop_modif_west:0 "Advanced Development"
+advanced_develop_modif_middle:0 "Advanced Development"
+advanced_develop_modif_east:0 "Advanced Development"
+INS_rebellion:0 "Rebellious Populace"
+INS_pacification:0 "Pacificated Populace"
+INS_pacification_desc:0 "The populace has now subdued after a long campaign of pacification. Despite concerns about the bloodshed occured, the peace gained is worth the effort."
+INS_west_java_di_nata_modifier:0 "Placated Populace"
+INS_west_java_di_nata_modifier_desc:0 "The people of West Java are now placated, with their representative being included in the day-to-day governance by the central government."
+INS_central_java_soetardjo_modifier:0 "Placated Populace"
+INS_central_java_soetardjo_modifier_desc:0 "The people of Central Java are now placated, with their representative being included in the day-to-day governance by the central government."
+INS_north_sulawesi_ratulangi_modifier:0 "Placated Populace"
+INS_north_sulawesi_ratulangi_modifier_desc:0 "The people of Minahasa are now placated, with their representative being included in the day-to-day governance by the central government."
+INS_west_kalimantan_alkadrie_modifier:0 "Placated Populace"
+INS_west_kalimantan_alkadrie_modifier_desc:0 "The people of West Borneo are now placated, with their representative being included in the day-to-day governance by the central government."
+INS_batavia_thamrin_modifier:0 "Placated Populace"
+INS_batavia_thamrin_modifier_desc:0 "The people of Batavia are now placated, with their representative being included in the day-to-day governance by the central government."
+INS_mollucas_latuharhary_modifier:0 "Placated Populace"
+INS_mollucas_latuharhary_modifier_desc:0 "The people of South Moluccas are now placated, with their representative being included in the day-to-day governance by the central government."
+INS_atjeh_ibrahim_modifier:0 "Placated Populace"
+INS_atjeh_ibrahim_modifier_desc:0 "The people of Atjeh are now placated, with their Sultan has now being put back to the throne after a long absence and being included in the day-to-day governance by the colonial government."
+
+#Exile
+INS_anti_nationalist_police:0 "Algemene Recherche Dienst"
+INS_anti_nationalist_police_desc:0 "The General Investigation Service has been serving from the inception of the Volksraad to inspect any disruption of peace and order throughout the archipelago. The ARD has been credited with the massive crackdown efforts in the aftermath of the 1926 Rebellion, including the eventual exile of Soekarno, Hatta, and Sjahrir to the Great East."
+INS_anti_nationalist_police_lar_desc:0 "The General Investigation Service has been serving from the inception of the Volksraad to inspect any disruption of peace and order throughout the archipelago. The ARD has been credited with the massive crackdown efforts in the aftermath of the 1926 Rebellion, including the eventual exile of Soekarno, Hatta, and Sjahrir to the Great East."
+INS_nigis:0 "Netherlands Indies Government Information Service"
+INS_nefis:0 "Netherlands Indies Forces Intelligence Service"
+INS_defeatism:0 "Defeatism"
+
+#Dutch Free State ideas
+INS_weapons_payment:0 "Weapons Payment"
+INS_weapons_payment_desc:0 "A small price to pay compared to our eventual reconquest of the East Indies...."
+INS_cheap_weapons:0 "Cheap Weapons"
+INS_cheap_weapons_desc:0 "Lack of armaments industry forced us to produce less-than-stellar quality of guns. Fortunately, we can make plenty of them for the time being and arming everyone, until we are managed to reestablish our own armaments departement."
+INS_dutch_nationalism:0 "Dutch Nationalism"
+INS_oppressed_natives:0 "Oppressed Natives"
+INS_oppressed_natives_desc:0 "'The capable administrators on the top, the merchants and bussinessmen on the middle, and everyone else below them.'\n \n With these arrangements, the society has been worked perfectly so far, and it should be kept that way, even if it means that the Boemipoetras would gain little from it."
+INS_labour_camps:0 "Indonesian Labour Camps"
+INS_cultivation_system_idea:0 "Cultivation System"
+INS_foreign_policy:0 "Hostile Foreign Policy"
+INS_hostile_foreign_policies:0 "Hostile Foreign Policy"
+INS_foreign_policies:0 "Hostile Foreign Policy"
+INS_look_north:0 "Look North"
+INS_hate_japan:0 "Hostile Foreign Policy"
+INS_colonial_bastion:0 "Bastion of Colonialism"
+INS_sea_conquerors:0 "Sea Conquerors"
+INS_jgr:0 "Japanese Government Railways - East Indies Division"
+
+#Japanese Occupation ideas
+INS_indojapan_3:0 "Passive Indonesian Resistance"
+INS_indojapan_3_desc:0 "While welcomed by most Indonesians, there are some Indonesians who are not wholly accepted our government."
+INS_indojapan_2:0 "Low Indonesian Resistance"
+INS_indojapan_2_desc:0 "There are rumors about an Indonesian resistance movement, lurking beneath our watchful eyes. Moreover, there has been a rising occurence of unpaid leaves from the local administrators."
+INS_indojapan_1:0 "High Indonesian Resistance"
+INS_indojapan_1_desc:0 "Civil disobedience is pervasive throughout the archipelago."
+
+##### factions
+INS_indopac_faction:0 "Indo-Pacific League"
+INS_asian_commune_faction:0 "Nusantara Accord"
+INS_aslia_faction:0 "Asian-Oceanian Anti-Imperialist Front"
+INS_dutch_commonwealth_faction:0 "Djajakarta-Den Haag Axis"
+
+##### research group
+INS_AST_research_group:0 "Indies-Australian Military Research Group"
+INS_HOL_research_navair:0 "Royal Aeronautica Research Group"
+INS_JAP_naval_cooperation_idea:0 "Japanese-Indonesian Naval Research Group"
+INS_NUS_research_group:0 "Nusantara Accord Research Group"
+
+##### tooltips
+INS_TFV_ONLY:0 "§ROnly available with Together For Victory §!\n"
+INS_QUEEN_VISIT:0 "The Queen will be invited for a state visit.\n"
+HOL_PROMISE_IND:0 "§YWe will promise independence to Indonesia§!\n"
+DFS_DEFEND_LAND:0 "§YWe will gain 3 KNIL divisions§!\n"
+
+##### names
+
+##### flags
+INS_has_queen:0 "Wilhelmina Rules the Indies"
+HOL_support_decol:0 "§RThe Netherlands Promised Decolonisation§!\n"
+
+INS_exiled_flag:0 "Is currently in exile (§Gcharacters cannot be executed while in exile§!)"
+INS_imprisoned_flag:0 "Is currently in prison (§Rcharacters can be executed while in prison§!)"
+INS_evacuated_flag:0 "Is currently evacuated (§Rcharacters can't be serving in our government while evacuated§!)"
+
+INS_stuwgroep_flag:0 "Member of the §CStuwgroep§!"
+INS_pki_member_flag:0 "Member of the §RCommunist Party of Indonesia§!"
+INS_pni_member_flag:0 "Member of the §gNational Party of Indonesia§!"
+INS_psii_member_flag:0 "Member of the §GSarekat Islam Party of Indonesia§!"
+INS_nip_member_flag:0 "Member of the §0National Indische Partij§!"
+INS_nsboi_member_flag:0 "Member of the East Indies Branch of §ONational-Socialistiche Beweging§!"
+INS_parindra_member_flag:0 "Member of the §BGreat Indonesia Party§!"
+INS_gerindo_member_flag:0 "Member of the §tIndonesian People's Movement§!"
+INS_ppbb_member_flag:0 "Member of the §TPerhimpoenan Pegawai Bestuur Boemipoetra§!"
+
+##### traits
+trained_commando:0 "Trained Commando" #Westerling
+knil_veteran:0 "KNIL Veteran" #Rhemrev, Becking, and Westerling
+strongman_indies:0 "Strongman of the Indies" #Governor General Bonifacius de Jonge
+lieutenant_govgen_starkenborgh:0 "Lieutenant Governor-General"
+lieutenant_govgen_van_mook:0 "Lieutenant Governor-General"
+binnenlands_bestuurder:0 "Binnenlands Bestuurder" #Tjarda
+colonial_reformer:0 "Colonial Reformer" #Ranneft stays
+colonial_reformer2:0 "Colonial Reformer" #Visman
+skilled_negotiator:0 "Skilled Negotiator" #Van Mook
+sultan_of_yogyakarta_8:0 "Sultan of Djogdjakarta" #HB VIII
+sultan_of_yogyakarta_9:0 "Sultan of Djogdjakarta" #HB IX
+independent_journalist:0 "Independence Agitator" #SK Trimurti
+poetra_sang_fadjar:0 "Poetra Sang Fadjar" #Resistance Leader Soekarno
+overzealous_idealist:0 "Overzealous Idealist" #President Soekarno
+nasakomist_1:0 "Nasakomist"
+nasakomist_2:0 "Nasakomist"
+vice_president_hatta:0 "Vice President"
+vice_president_sjahrir:0 "Vice President"
+vice_president_sjarifoeddin:0 "Vice President"
+raad_indie_bussche:0 "Vice President of the Indies Council"
+raad_indie_jonkman:0 "Vice President of the Indies Council"
+raad_indie_ranneft:0 "Vice President of the Indies Council"
+raad_indie_spit:0 "Vice President of the Indies Council"
+raad_indie_visman:0 "Vice President of the Indies Council"
+coi_hart:0 "Director of Economic Affairs" #Hart overworked
+coi_mook:0 "Director of Economic Affairs" #Van Mook
+coi_verboom:0 "Director of Economic Affairs" #Jan Verboom
+INS_has_a_coi_tt:0 "Did not already has an advisor with trait §YDirector of Economic Affairs§! or §YCaptain of Industry§!"
+indonesian_expertise:0 "Indonesian Expert" #Charles van der Plas
+indonesian_expertise_no_lar:0 "Indonesian Expert"
+indologist:0 "Indologist" #Abdulkadir Widjojoatmodjo
+parindra_leader:0 "Leader of Parindra" #Soetomo
+conservative_amongst_radicals:0 "Conservative Amongst Radicals"
+conservative_amongst_radicals_f:0 "Conservative Amongst Radicals"
+volksraad_oetoyo:0 "Nationalist Faction Leader" #Koesoemo Oetoyo
+volksraad_thamrin:0 "Nationalist Faction Leader" #MH Thamrin
+volksraad_hoog:0 "Leader of the IEV" #Frederik de Hoog
+volksraad_blaauw:0 "Leader of the IEV" #Paul Alex Blaauw
+balinese_noble:0 "Balinese Noble" #Tjokorda Gde Raka Soekawati
+minahasan_autonomist:0 "Minahasan Autonomist" #GSSJ Ratulangi
+red_armament:0 "Revolutionary Militarist"
+regional_autonomist:0 "Regional Autonomist"
+javanese_bestuurder:0 "Javanese Civil Servant Representation" #Soetardjo
+java_bode_rightwing:0 "Owner of Java Bode" #Zentgraaff
+hou_zee_editor:0 "Editor of Indie Hou Zee" #Zentgraaff fascist
+pasundan_representative:0 "Pagoejoeban Pasoendan Representation" #Iskandar di Nata
+moluccan_representative:0 "Moluccan Representative" #Johannes Latuharhary
+marshal_of_thailand:0 "Marshal of Thailand" #Plaek Phibunsongkhram
+secular_nationalist:0 "Secular Nationalist" #Jawaharlal Nehru
+justice_official:0 "Justice Official"
+agricultural_modernizer:0 "Agricultural Modernizer"
+socialist_democrat:0 "Socialist Democrat" #Iwa Koesoemasoemantri
+staunch_integralist:0 "Staunch Integralist" #Vallabhbhai Patel
+doubtful_loyalty:0 "The Acting Governor-General"
+questionable_loyalty:0 "The 'Acting' Governor-General"
+dislikes_japan:0 "Dislikes Japan" #pretty much every anti-Japanese figures
+cautious_japan:0 "Wary of Japanese Intentions"
+dislikes_stalin:0 "Aversion Towards Stalinism" #Tan Malaka
+indies_nationalist:0 "Indies Nationalist" #Ernst Douwes Dekker
+indies_nationalist_leader:0 "Indies Nationalist" #President Ernst Douwes Dekker
+tamansiswa_educationer:0 "Bumiputra Educationer" #Ki Hajar Dewantara
+progressive_doctor:0 "Progressive Doctor" #Tjipto Mangoenkoesoemo
+former_railroad_union_leader:0 "Former Railroad Union Leader" #Semaoen
+defender_of_islamic_workers:0 "Defender of Islamic Workers" #Soekiman
+psii_leader:0 "Leader of PSII" #Abikoesno
+shadow_of_tjokroaminoto:0 "Shadow of Tjokroaminoto" #President Abikoesno
+shadow_of_tjokroaminoto_n:0 "Shadow of Tjokroaminoto" #President Abikoesno
+shadow_of_tjokroaminoto_f:0 "Shadow of Tjokroaminoto" #President Abikoesno
+de_stuwgroep_trait:0 "The Indies Liberalists" #Stuwgroep
+indische_partij_trait:0 "The Indies Nationalists" #IP/NIP
+pni_group_trait:0 "The Indonesian Nationalists" #PNI
+psii_group_trait:0 "The Indonesian Islamists" #PSII
+gapi_trait:0 "The Indonesian Political Federation" #GAPI
+propaganda_novice:0 "Novice Propagandizer"
+is_hired:0 "Has been hired as an advisor"
+german_planter:0 "German Planter"
+minister_public_works:0 "Minister of Public Works"
+GER_diplomat:0 "Diplomat" #Hewel
+italophile:0 "Italophile"
+aircraft_architect:0 "Aircraft Architect" #Laurens Walraven
+the_man_from_gianjar:0 "The Man from Gianjar" #Ida Anak Agoeng Gde Agoeng
+islamist_scholar:0 "Islamist Scholar" #Kartosoewirjo
+reactionary_professor:0 "Reactionary Professor" #Gerretson
+raj_of_sarawak:0 "Raj of Sarawak" #Vyner Brooke
+
+##### Politics Desc
+INS_abikoesno_tjokrosoejoso_desc:0 "Born in 1897 at Madioen, East Java, Abikoesno Tjokrosoeroso was the oldest younger brother of the famed nationalist Tjokroaminoto.\n\nA direct descendant of Hamengkoeboewono I, he studied architecture at Queen Emma's Middle School at Soerabaja. During these time, he also followed his brother's campaign in Sarekat Islam, in which the organization has grown from a strictly religious-economic organization into a prominent anti-colonialist political one.\n\nHe followed Agoes Salim's lead on expelling the Socialist-aligned 'Red' faction within the organization led by Semaoen until 1934, when both Tjokrosoeroso and Salim parted ways over their difference on their ways on dealing with the Colonial Government. He also expelled the Ultra-Radical 'Black' Faction led by Kartosoewirjo who advocates outright violence towards the Dutch.\n\nNow leading the reformed Sarekat Islam of Indonesia Party, Tjokrosoeroso remained commited on both his non-cooperation stance towards the government and his adherence to non-violent means to achieve greater autonomy for Indonesia."
+INS_achmad_soebardjo_desc:0 "Born in 1896 at West Java, Achmad Soebardjo has been working as a lawyer since 1934. Beyond that, his participation in Perhimpoenan Indonesia and also the Comintern-backed World Anti-Imperialist League has drawn suspicions from the Dutch authorities."
+INS_ak_gani_desc:0 ""
+INS_agoes_salim_desc:0 "Born in 1884 at Agam, West Sumatra, Agoes Salim has distinguished himself by serving under tutelage of the famoust Indologist Snouck Hurgronje in Jeddah, Saudi Arabia from 1906 to 1911.\n\nDuring the Great War, he was a member of Sarekat Islam on behalf of the Dutch on investigation regarding a disproven German plot to turn the organization against the Government. In turn, Salim has proved himself as a force to be reckoned within the organization and also ultimately caused the breakup of the Religious Puritans ('White') Faction led by Tjokroaminoto from the Religious Socialists ('Red') Faction led by Semaoen.\n\nHe also serving on the Volksraad fron 1922 to 1925 on behalf of SI, delivering his speech in Malay language and frequently traded insults with both the European members and the Puritans within SI.\n\nCurrently, Agoes Salim has largely shunned himself from politics, but circumstances permitted, he would find himself involved again in the future."
+INS_a_t_van_starkenborgh_stachouwer_desc:0 "Aldius Warmoldus Lambertus, Tjarda van Starkenborgh Stachouwer was born in 1888 at Groningen as a son of the Queen's Commissioner of his city of birth.\n\nAfter graduating with a law degree from University of Gronigen, he volunteered into diplomatic service, eventually becoming the general secretary of the Dutch delegation in the 1922 Washington Naval Conference. He also followed his father Edzard's footstep as Queen's Commissioner from 1925 until 1933 when he was appointed as Dutch envoy to Belgium until June 1936 when the Queen personally appointed him to his current position.\n\nA capable administrator, his skills perfectly fits the bureaucratic and political jungle of the East Indies administration."
+INS_amir_sjarifoeddin_desc:0 "Born in 1907 at Medan, East Sumatra, Amir Sjarifoeddin Harahap is one of the prominent younger generation of Indonesian left-influenced nationalists.\n\nSon of a Batak nobleman and an affluent Malay, he was sent to study at Leiden and became involved in Mohammad Hatta's Perhimpoenan Indonesia, and also influenced by French revolutionaries such as Robespierre.\n\nA few years after his return, Sjarifoeddin's journalistic activities at "Panorama" newspaper drew attention from the Dutch authorities, and he was arrested in mid-1933 for two years after publishing an inflammatory essay. It has been almost six months after his release, a long path awaits for him."
+INS_anton_van_der_laaken_desc:0 "Born in 1890 at Kendal, Central Java, Anton Ludovicus van der Laaken is the leader of the East Indies branch of National-Socialistiche Beweging."
+INS_bambang_soegeng_desc:0 "Born in 1913 at Magelang, Central Java, Bambang Soegeng has previously served as a governmental secretary at nearby Temanggoeng."
+INS_bonifacius_de_jonge_desc:0 "Born in 1875 at Den Haag, the old Governor-General has enforced the Queen's rule over the East Indies for almost five years.\n\nHe oversaw the incarceration of prominent Indonesian independence figures such as Soekarno, Mohammad Hatta, and Soetan Sjahrir into the Great East following the failed Indonesian Uprising of 1926.\n\nOther than that, he also rolled back the progressive reforms enacted during the first Ethical Policies era, including dismissing the Stuwgroep, a clique of Dutch intellectuals seeking to reform the colony in a more democratic approach led by Hubertus Johannes van Mook."
+INS_cornelis_bussche_desc:0 "Born in 1884 at Bergen, Brabant, Cornelis van den Bussche has previously served as the first secretary of the Netherlands East Indies Association for Nature Conservation in 1912. He later joined Raad van Indie in 1933 after previously served at the Volksraad."
+INS_ernst_douwes_dekker_desc:0 "Born in 1879 at Pasoeroean, East Java, Ernst Douwes Dekker is a nephew of the famous Dutch anti-colonialist writer Eduard Douwes Dekker, also known as Multatuli.\n\nAt turn of the century, he volunteered as a soldier for the Boers in the Second Boer War, believing that the Boers there are the victims of British imperialism. After his internment at Ceylon, he returned to the Indies in 1903 and working as a journalist who strives for greater autonomy for the East Indies. Partly influenced by his uncle's works, and also the discrimination he experienced for both standing up for his fellow Boemipoetras and being not a full-blooded Dutch, Douwes Dekker supported the establishment of the Javanese autonomist organization Boedi Oetomo in 1908, and finally with Raden Mas Soewardi and Tjipto Mangoenkoesoemo established the Indische Partij in late 1912.\n\nDespite of a setback caused by his exile to the Netherlands until 1919 following the closure of Indische Partij, Douwes Dekker followed Soewardi's example and managing a junior highschool at Bandoeng, later renamed as Ksatriyan Instituut. He also became acquaintances with other prominent Indonesian nationalists including Soekarno and Thamrin, despite his differences from them regarding their own brand of nationalism."
+INS_frans_visman_desc:0 "Born in 1888 at Koetaradja, Atjeh, Frans Herman Visman has recently served as a member of the Raad van Indie after three years of service as the Resident of Menado, Northern Celebes."
+INS_frederik_de_hoog_desc:0 "Born in 1881 at Amboina, Frederik Hermanus de Hoog is the leader of Indo-Europeesch Verbond (Indo-European League), an Indo interest association emerging in the aftermath of the Great War.\n\nPreviously, he worked as a Staatspoorwegen warehouse director at Soerabaja, and after a brief period of study at Leiden he became a prominent civil servant in Departement of Transportation and Commerical Affairs at Batavia and Bandoeng in 1925.\n\nPolitically, he was elected to the Volksraad in 1923 on behalf of the IEV. He advocates for a non-discriminatory treatment for both Boemipoetra elites and Indo group, but still preferred a more widespread autonomy than an outright independence like the Indonesian nationalists advocates for. In the 1935 Volksraad Election, he was elected as the second Deputy Speaker for the Parliament."
+INS_gatot_soebroto_desc:0 ""
+INS_george_hart_desc:0 "Born in 1893 at Amsterdam, George Henry Charles Hart is currently the Director of Economic Affairs since 1934 following the sudden death of his predecessor, E.P. Wellenstein.\n\nPreviously the president of Agricultural Syndicate and a major proponent of the Vaterlandische Club, his experience during the first years of the Malaise has brought immense changes on his views regarding the Indies' role in the Empire.\n\nNow employing Hubertus van Mook, the leader of the now-defunct Stuwgroep, as the vice-director, Director Hart oversaw the continuation of pro-Indies economic reforms laid by Wellenstein since 1934 which involves heavy governmental involvement in the economic affairs, public ownership of vital communications and finance facilities, and also land grants for cooperative farmers and village-oriented fruit planters."
+INS_hamengkoeboewono_eighth_desc:0 "Born Raden Mas Soejadi in 1880 at Djogdjakarta, the reigning Sultan of Djogdjakarta has brought immense modernization to his realm in both economic and social fronts.\n\nOn the former part, he once enlisted the young Hubertus van Mook as his advisor, on the latter part, the brightest sons and daughters of Djogdjakarta were brought to the Netherlands for further educations, including the heir of the throne Raden Mas Dorodjatoen."
+INS_hamengkoeboewono_ninth_desc:0 "Born Raden Mas Dorodjatoen in 1912 at Djogdjakarta, the young prince was just arrived from Leiden and on the way home when his father has passed away.\n\nNow, treading between a nation-wide political reforms from the Dutch, the modernization of Djogdjakarta, and another reemergence of the Indonesian nationalism, the young Sultan must carefully treaded between them for the upcoming times, both for the sake of his monarchy, and his beloved people."
+INS_henricus_spit_desc:0 "Born in 1886 at Den Haag, Henricus Johannes Spit has been appointed as the Vice-President of the Council of the Indies after serving on the Volksraad since 1933."
+INS_hubertus_van_mook_desc:0 "Born in 1894 at Semarang, Central Java, Hubertus Johannes van Mook has became famously known for leading the 1917 Student Congress of the Indies at Leiden University, advocating for greater autonomy for the Boemipoetras.\n\nOther than that, he is also a capable economic administrator and frequently sided with the more moderate left group during his time as a member of the Volksraad."
+INS_van_mook_acting_govgen_desc:0 "Born in 1894 at Semarang, Central Java, Hubertus Johannes van Mook has became famously known for leading the 1917 Student Congress of the Indies at Leiden University, advocating for greater autonomy for the Boemipoetras. Other than that, he is also a capable economic administrator and frequently sided with the more moderate left group during his time as a member of the Volksraad.\n\nAfter years of rising prominence following the negotiations with the Japanese Empire, widely regarded as a successful attempt to stall the fall of the East Indies as much as possible despite the eventual state of war, Hubertus Johannes van Mook is now de-facto leader of the East Indies government following the capture of Governor-General Tjarda van Starkenborgh-Stachouwer who decided to stayed behind.\n\nAn arduous task awaits him to bring back peace and order to his homeland, and battling adversaries both within and without. Despite of that, a dream of him remains, for a free and happy Indies nation."
+INS_van_mook_transition_govgen_desc:0 "Born in 1894 at Semarang, Central Java, Hubertus Johannes van Mook has became famously known for leading the 1917 Student Congress of the Indies at Leiden University, advocating for greater autonomy for the Boemipoetras. Other than that, he is also a capable economic administrator and frequently sided with the more moderate left group during his time as a member of the Volksraad.\n\nAfter years of rising prominence following the reinstation of De Stuwgroep and successfully established a working cooperation with the prominent Bumiputra politicians, Hubertus van Mook has been appointed as the Governor-General to head a 5-year transitional government following the official establishment of the United States of the Indies.\n\nA dream of 'Free and Happy Indonesia' has never been so close to be realized, and Van Mook wanted to ensure that his lifelong dream since 1917 is finally achieved."
+INS_iwa_koesoemasoemantri_desc:0 "Born in 1899 at Tjiamis, West Java, Iwa Koesoemasoemantri was meant to be one of the civil servants on the government, before his distaste at the rampant Westernization turned him to a law school instead.\n\nWhen he continued his study at Leiden University in 1921, he joined Perhimpoenan Indonesia, the Bumiputra student association, and also began attracted to non-cooperative stance espoused by the Marxist-oriented students. Following his graduation in 1925, he moved to the Soviet Union and participated in the Far East University alongside Semaoen. In 1927, he returned to the Indies and joined the Indonesian National Party, advocating for workers' rights in Dutch plantations in East Sumatra.\n\nFollowing the failed Communist Rebellion earlier that year, eventually he was arrested by the colonial police in 1929 and exiled to Banda Island, in the Moluccas. Now it has been six years after the start of his rather lax exile, he still writing about the Indonesian peasantry and workers' movements and their suffering during the Malaise."
+INS_jan_jonkman_desc:0 "Born in 1891 at Utrecht, Jan Anne Jonkman has been appointed as the Vice-President of the Council of the Indies after serving on the Volksraad from 1927 to 1931.\n\nDuring his study at Leiden University, he participated in the 1917 Student Congress of the Indies on which Hubertus van Mook was the leading organizer. After arriving at the East Indies in 1921, Jonkman quickly gained prominence, he was appointed as a member of the Volksraad in 1927. He also was a leading member on the Stuwgroep, often served as Van Mook's right-hand man.\n\nJonkman's contribution at Java did not lasted long, with both the 1929 Malaise, political crackdowns following the 1926 Rebellion, and further restrictive measures from Governor-General Bonifacius de Jonge has largely halted the political reforms in the Indies. Following the 'promotion' of Van Mook at Departement of Economic Affairs, Jan Jonkman was transferred to serve as a public prosecutor at Makassar."
+INS_kh_dewantara_desc:0 "Born Raden Mas Soewardi Soerjaningrat in 1889 at Djogdjakarta, his family is one of the Javanese nobles, with himself being one of the sons of Pakoealam III of the Duchy of Pakoealam.\n\nAfter failing to complete his medical education at STOVIA due to illness, Soewardi began to work as a journalist in several prominent Javanese newspaper at that time, including Tjahaja Timoer and Kebangoenan. Before reaching his 20th birthday, Soewardi was a leading propagandist in Boedi Oetomo and directly organizing its first meeting at Djogdjakarta, he also became acquaintance with a prominent member at Insulinde, Ernst Douwes Dekker, and together with Tjipto Mangoenkoesoemo established Indische Partij in late 1912. After the banning of IP in December 1913 following the publishing of a satirical critic written by Soewardi, both three men were exiled to the Netherlands until 1919.\n\nBack in Djogdjakarta, Soewardi established the Taman Siswa, a privately-funded school aimed to both educate the Boemipoetras and realize his dream of an independent Indonesia. Later, he also changed his name to "Ki Hadjar Dewantara", discarding his noble title as part of his strife towards social equality."
+INS_mas_pardi_desc:0 "Born in 1901 at Ambarawa, Central Java, Mas Pardi was a first-class officer aboard Fommelhaut, a prison ship which has been serving the Colonial Government to transport political prisoners from Java to Boven Digoel and Banda Neira since 1927."
+INS_meyer_ranneft_desc:0 "Born in 1887 at Magelang, Central Java, Jan Willem Ranneft is the current Vice-President of the Council of the Indies since 1933 after serving in the Volksraad since 1924.\n\nAfter completing his studies at the University of Leiden in 1906, Meyer Ranneft has deeply involved himself on the affairs of the East Indies by serving as an agricultural officer from 1918 to 1925, the aforementioned contribution at the Volksraad, and also serving as the resident of Semarang from 1928 to 1929.\n\nRanneft has been known in the Indies with his many disagreements with Governor-General Bonifacius de Jonge regarding the share of Imperial Defence costs and generally advocating greater autonomy for the Indies, albeit not as broad as the Stuwgroep and Indonesian Nationalists has hoped so far."
+INS_moesso_moenawar_desc:0 "Born in 1897 at Kediri, East Java, Moesso Moenawar is one of the disciples of the famed nationalist Tjokroaminoto, and was one of Soekarno's peers.\n\nHe was one of the main instigators of the 1926 PKI Rebellion and since then has fled away abroad, with his latest whereabouts are possibly residing in the Soviet Union."
+INS_moesso_moenawar_leader_desc:0 "Born in 1897 at Kediri, East Java, Moesso Moenawar is one of the disciples of the famed nationalist Tjokroaminoto, and was one of Soekarno's peers. He also was one of the main instigators of the failed PKI Rebellion in 1926 and has managed to escape to the Soviet Union.\n\nNow, with the Indonesian nation has been liberated from colonialism and the Central Commitee has chosen him to lead the Revolution, Moesso Moenawar is willing to cooperate with the existing International to achieve World Communism."
+INS_mohammad_hatta_desc:0 "Born in 1902 at Boekittinggi, West Sumatra, Mohammad Hatta was known as a prominent student intellectual among his peers within Perhimpoenan Indonesia during his study at Rotterdam.\n\nHis activities in the Indies are noteworthy for being more troublesome than Soekarno's, even after the latter's incarceration at Bandoeng in 1930. But now, with his exile along with Sjahrir at Boven Digoel since 1933, his political activities has been much subdued."
+INS_mohammad_hoesni_thamrin_desc:0 "Born in 1894 at Batavia, Mohammad Hoesni Thamrin is a prominent member of the Volksraad since 1927.\n\nA son of a government officer, Thamrin has shown an exceptional humility with his fellow Betawi peers, and excellence towards his peers at the Volksraad. Thamrin was the one who suggested the Kampoeng Verbetering program, a series of improvement for the Batavian slums after an outbreak of cholera following the Great Flood of Batavia in 1918."
+INS_murk_boerstra_desc:0 "Born in 1883 at Sneek, Friesland, Murk Boerstra arrived in the Indies in 1905 after completing his education at Breda the year before.\n\nDistinguished himself as an expert of artillery, Boerstra quickly climbed through the officer ranks in the East Indies and promoted as a captain in 1918. He also served as a military attache in Japan and China at Tokyo, observing the strategic planning of both nations and concluded that the importance of East Kalimantan oilfields has become known there.\n\nAfter returning to the Indies in 1922, Boerstra serves as part of the General Staffs at Bandoeng and played a part in the (albeit slow) modernization of the KNIL, he was finally promoted to Lieutenant-General in July 1935, replacing Johannes Koster as the Commander of the KNIL."
+INS_oto_iskandar_di_nata_desc:0 "Born in 1897 at Bandoeng, West Java, Oto Iskandar Di Nata is a son of a village chief near the city. As a student, he often got in trouble with his Dutch teacher because of his westernized attire.\n\nAfter completing his secondary education, he joined Boedi Oetomo in late 1910s, but quitted after the organization took a more Javanese turn and chastising the Indies nationalists. Iskandar Di Nata then joined Pagoejoeban Pasoendan, a Sundanese civil organization established in 1913, and later became its leader in 1930 and its representative in the Volksraad since 1931.\n\nHe earned the moniker 'Si Jalak Haroepat', The Brave Rooster, due to his steadfast opinions in defending the livelihood for his fellow Sundanese Boemipoetras at the Volksraad."
+INS_rhemrev_desc:0 "Born in 1878 at Batavia, Willem Vermehr-Rhemrev has infamously distinguished himself by leading the brutal crackdown of the PKI Rebellion in 1926.\n\nHis career as an Indo-European officer began in 1902 when he attended the Koninklijk Militaire Academie at Breda, and after graduating he served on the bloody pacification of Atjeh in 1904. Twenty-two years after that, another bloody incident in West Sumatra has finally put him in a honorable discharge.\n\nHis later activities including managing an association of Dutch trade fair, Japanese-owned plantation, and recently took leadership on the East Java branch of National-Socialistiche Beweging."
+INS_samuel_ratulangi_desc:0 "Born in 1890 at Tondano, Northern Celebes, Geroengan Saul Samuel Jacob Ratoelangie has been advocating for self-autonomy for his homeland since his doctorate studies at Zurich, Switzerland.\n\nBorn in a noble Minahasan family, Ratoelangie is notable for being one of the few Indonesians who has earned his postgraduate studies. While studying at Amsterdam, he frequently met with the exiled Indische Partij members and even participates in Perhimpoenan Indonesia, supporting the likeminded Indonesians for their demands of a greater autonomy for the East Indies.\n\nAfter arriving from Switzerland, he worked on numerous jobs at Batavia and Bandoeng, earned himself numerous interactions with the newly Indonesian intellectuals including Soekarno. Serving as a member of the Volskraad representing the Minahasan Union, Ratoelangi's campaigns almost always putting the interest of the East Indies in general, and his homeland in particular, advocating greater autonomy from the Dutch Crown including self-sufficiency in both economic and political fronts."
+INS_semaoen_desc:0 "Born in 1899 at Djombang, East Java, Semaoen Prawiroatmodjo has been known as a politician despite his young age.\n\nDuring the early days of ISDV, his connections with Henk Sneevliet made him known as a railroad labour organizer. He is also the founder of the Indonesian Communist Party on May 1921 along with Alimin. Now being exiled in the Soviet Union since 1923 following a strikebreaking, not much known about Semaoen's whereabouts."
+INS_sk_trimoerti_desc:0 "Born in 1912 at Soerakarta, Soerastri Karma Trimoerti is a member of Sartono's Partindo, a nationalist party and an offshoot of Soekarno's PNI following the latter's arrest in 1929.\n\nHer nationalist activities as a journalist in "Bedoeg" magazine has drawn attention from the local PID branch in Semarang, but for now, she does not pose any immediate threats even when compared to Sjahrir."
+INS_soeharto_desc:0 "Born in 1921 at Sedajoe, near Yogyakarta, Colonel Soeharto has began his service at KNIL since 1940. Nothing ordinary for sure."
+INS_soedirman_desc:0 "Born in 1926 at Poerbalingga, Central Java, Soedirman Tjokrosoenarjo has serving as a teacher on his local Mohammadijah school."
+INS_soekarno_desc:0 "Born in 1901 at Soerabaja, East Java, Soekarno has made himself known with his activities at Jong Java, a Javanese youth association since his highshool days.\n\nFollowing the footsteps of his mentor, the late Oemar Said Tjokroaminoto, former leader of Sarekat Islam, Soekarno also involved himself with the nascent Indonesian nationalist movement, especially after he studied at Technische Hoogeschool te Bandoeng since 1921. In 1926, he organizes a local general study club, which would become the Indonesian Nationalist Party just the year after. Following the politial crackdowns after the failed 1926 Rebellion, Soekarno's nationalist activities remained at large but after an anti-colonial gathering in late 1929 at Djogdjakarta, Soekarno was apprehended by the Politieke Inlichtingen Dienst and jailed in Bandoeng.\n\nAlthough he was sentenced to a four-year imprisonment, he was released just after one year of serving on account of a good conduct and opened an architectural firm before turning it into a means to supporting the weakened PNI. In August 1933 under the governorship of Bonifacius Cornelis de Jonge, Soekarno was arrested for the second time and immediately sentenced to exile at Ende in the island of Flores, Lesser Sunda Island.\n\nNow preoccupied himself with writing and teaching the local schoolkids about the East Indies, Soekarno is away from any political machinations in Java, for now...."
+INS_soekarno_minister_desc:0 "Born in 1901 at Soerabaja, East Java, Soekarno has made himself known with his activities at Jong Java, a Javanese youth association since his highshool days.\n\nFollowing the footsteps of his mentor, the late Oemar Said Tjokroaminoto, former leader of Sarekat Islam, Soekarno also involved himself with the nascent Indonesian nationalist movement, and in 1926 he organizes a local general study club, which would become the Indonesian Nationalist Party just the year after. Following the politial crackdowns after the failed 1926 Rebellion, Soekarno was arrested twice, and even exiled to Ende in the island of Flores, Lesser Sunda Islands in 1933.\n\nAfter released by the current government, Soekarno returned to the political stage and reestablished PNI, using it to launched himself towards prime-ministership which he won in the end of the Transitional Period.\n\nLeading a free and united Indonesian Commonwealth under the Dutch, his dream has been finally achieved. Questions remained about the path he would partake to lead his nation in this ever-changing world...."
+INS_soepomo_desc:0 "Born in 1903 at Soerakarta, Central Java, Raden Soepomo is a staff member of the Batavian Departement of Justice."
+INS_soetomo_desc:0 "Born in 1888 at Ngandjoek, East Java, Soetomo is one of the oldest and remaining Indies nationalists who are still loyal to the Crown, compared to the more radical nationalists who are either on the run such as Tan Malaka, or exiled such as Soekarno and Tjipto Mangoenkoesoemo.\n\nHis first experience with the nationalist movement comes in 1907 when he was studying in STOVIA at Batavia. He met with Wahidin Soedirohoesodo, a retired doctor and a Javanese revivalist who seeked a modernization within the Javanese society, beginning with gathering enough funds for a scholarship initiative for the Javanese Boemipoetras. Together, they co-founded a socio-economic organization, the Boedi Oetomo (Noble Virtues) in May 20th, 1908, and the organization quickly gathered followers amongst the Javanese elites, intellectuals, and civil servants.\n\nThe conservative turn of Boedi Oetomo has turned away many of the more radically-engaged members such as Mangoenkoesoemo and Soerjaningrat who established Indische Partij in 1913. Receiving a scholarship in 1919, he went to the University of Amsterdam and also leading the Indonesische Vereniging, and after returning in 1923 he dismissed the now-outdated approaches of Boedi Oetomo and also denouncing the more radical Sarekat Islam, establishing Indonesische Studieclub in 1924. After turning it into Persatoean Bangsa Indonesia in 1930, Soetomo organized a merger with Boedi Oetomo into Partai Indonesia Raja (Parindra) in late 1935."
+INS_soetan_sjahrir_desc:0 "Born in 1909 at Padangpandjang, West Sumatra, Soetan Sjahrir is a force to be reckoned with.\n\nHis nationalist activities began when he attended Leiden University in 1929, and became involved in several socialist labour unions there and also a member of Hatta's Indonesische Vereniging. Despite of that, he remained a steadfast left nationalist and admonished the more radcial communists.\n\nAfter Soekarno's incarceration, Sjahrir was sent home to reorganize the PNI, but the more cadre-based approach of Hatta-Sjahrir's PNI soon led to a breakup with Sartono who favors Soekarno's mass-based approach. Nevertheless, in 1932 both Hatta and Sjahrir was interned by the Dutch authorities and exiled to Boven Digoel since 1934."
+INS_tan_malaka_desc:0 "Born in 1897 at Limapoeloeh Kota, West Sumatra, the man has assumed numerous names during his exile since 1922. Elias Fuentes, Ossorio, Ahmad Gozali, and maybe a few more.\n\nIbrahim, Datuk Sutan Malaka was a leading figure for the Indonesian communists during the early days of ISDV on the onset of the Great War, his influence on the current nationalist and communist exiles is far-reaching, even when the man is still hiding from the Dutch authorities.\n\nBut one thing for certain, he seek nothing but complete liberation for the Indonesian Archipelago."
+INS_tan_malaka_leader_desc:0 "Born in 1897 at Limapoeloeh Kota, West Sumatra, Ibrahim, Datuk Sutan Malaka was a leading figure for the Indonesian communists during the early days of ISDV on the onset of the Great War. His influence on the current nationalist and communist exiles is far-reaching, even when the man was still hiding from the Dutch authorities.\n\nNow with the Indonesian nation has been liberated from colonialism, and the Central Commitee has chosen him to lead the Revolution, Tan Malaka looks forward to spread the Revolution to not only the Southeast Asia, but also the whole Asian and Australian continents."
+INS_tjipto_mangoenkoesoemo_desc:0 "Born in 1886 at Djepara, Central Java, Tjipto Mangoenkoesoemo hailed from a peasantry background, unlike his compatriots at Indische Partij.\n\nDuring his study at STOVIA, Mangoenkoesoemo often expressed his dissatisfaction towards both the enforced feodalist culture for its Boemipoetra students and arrogance of the Dutch officials. He participates in the establishment of Boedi Oetomo in 1908, but later his Indies-nationalism view often clashes with Radjiman Wedyoningrat's Javanese Nationalism. Mangoenkoesoemo also credited with his efforts at combating the 1910-11 Plague Epidemic at Malang, East Java.\n\nAfter Boedi Oetomo's turn into a non-political approach, Mangoenkoesoemo established Indische Partij with both Raden Mas Soewardi and Ernst Douwes Dekker in late 1912 and later exiled to the Netherlands following a crackdown by the Dutch officials in 1913. After his return in 1916 because of his illness, Mangoenkoesoemo joined a social circle, Insulinde and transforming it into Nationaal-Indische Partij which aimed for greater autonomy in the Indies. Later, he also participates in the newly-formed Volksraad in 1919, mentoring the young Soekarno in 1923 at Bandoeng, and also indicted as a collaborator in the failed 1926 Rebellion, for which he is exiled to Banda Neira at Moluccas since late 1927."
+GER_walther_hewel_desc:0 "Born in 1094 at Cologne, Germany, Walther Hewel is a close confidant of the German leader, Adolf Hitler. Accompanying him from the early days of the NSDAP, Hewel also participated in the failed Beer Hall's Putsch in 1923, resulted in his imprisonment. But after an early release due to his young age, Hewel went to Hamburg and served in a trading association, before moved to the East Indies in 1927.\n\nFollowing the failed Communist Rebellion just months before, he helped organize several German communities in numerous cities throughout the archipelago while also working at a coffee plantation near Soerabaja, which earned him a moniker "Soerabaja Wally". He is currently considered as a respectable leader of the local German community in the East Indies."
+INS_group_stuwgroep_desc:0 "De Stuwgroep is a political clique formed in mid-1930 by Hubertus Johannes van Mook and consisted of his fellow Dutch reformists in the Indies."
+INS_group_partai_nasional_desc:0 "Partai Nasional Indonesia (Indonesian National Party) or the PNI is an extraparliamentary political party formed by Soekarno at Bandoeng in 1926."
+INS_group_indische_partij_desc:0 "Nationaal-Indische Partij (Indies National Party) is a extraparliamentary political party formed by Ernst Douwes Dekker, Ki Hadjar Dewantara, and Tjipto Mangoenkoesoemo in 1916 as the continuation of earlier Indische Partij established in 1911."
+
+##### Other Ideas
+USA_tydings_mcduffles_act:0 "Tydings-McDuffles Act"
+SIA_rama_viii_desc:0 "The young king is now studying at Switzerland."
+SIA_rama_viii_king_desc:0 "The king has reached adult age and began to take more responsibilities from his regents."
+JAP_jgr:0 "Japanese Government Railways"
+HOL_maring_indonesia:0 "Maring's Visit to Indonesia"
+HOL_indies_burden_sharing_1:0 "Colonial Economic Support"
+HOL_indies_burden_sharing_1_desc:0 "The impact of De Crisisjaren would be so much worse if not for our crown jewel colony, the East Indies. While the policy has drawn much protests from both the Boemipoetras and the likeminded Dutch, a change of this policy without a strong economic support would ruined the fragile balance of our economy so far."
+HOL_indies_burden_sharing_2_desc:0 "The impact of De Crisisjaren would be so much worse if not for our crown jewel colony, the East Indies. While the policy has drawn much protests from both the Boemipoetras and the likeminded Dutch, a change of this policy without a strong economic support would ruined the fragile balance of our economy so far."
+HOL_indies_burden_sharing_3_desc:0 "The impact of De Crisisjaren would be so much worse if not for our crown jewel colony, the East Indies. While the policy has drawn much protests from both the Boemipoetras and the likeminded Dutch, a change of this policy without a strong economic support would ruined the fragile balance of our economy so far."
+INS_state_is_southeast_asia_tt:0 "State is in the Southeast Asia"
+MAL_sarawak_brooke_modifier:0 "Placated Populace"
+MAL_sarawak_brooke_modifier_desc:0 "The people of Sarawak are now placated with their representative being included in the day-to-day governance by the central government"
+INS_leon_trotsky:1 "Lev Trotsky"
+INS_leon_trotsky_desc:0 "Responsible for creating the Red Army almost from scratch during the Russian Civil War, the exiled International Communist League leader will help organize our army."
+
+##### Unused Decisions
+INS_rename:0 "Indonesianize Dutch Settlements"
+INS_rename_jakarta:0 "Rename Batavia To Jakarta"
+hol_rename_namur:0 "Rename Namur To Namen"
+hol_rename_liege:0 "Rename Liége To Luik"
+INS_national_defence:0 "National Defence"
+INS_national_defence_desc:0 "We must focus on defending our country from the foreign forces trying to invade it."
+INS_dec_alarm_sytems:0 "Improve The Alarm Systems"
+gw_artillery:0 "Great War-Era Artillery"

@@ -1,0 +1,124 @@
+characters = {
+
+	MAL_onn_jaafar = {
+		name = "Onn Jaafar"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_malaysia_onn_jaafar
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1953.3.1.1"
+			id = -1
+		}
+	}
+
+	MAL_shenton_thomas = {
+		name = "Shenton Thomas"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_malaya_shenton_thomas"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1953.3.1.1"
+			id = -1
+		}
+	}
+
+	MAL_lai_teck = {
+		name = "Lai Teck"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Lai_Teck
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			expire = "1953.3.1.1"
+			id = -1
+		}
+	}
+
+	MAL_ibrahim_hj_yaacob = {
+		name = "Ibrahim Hj Yaacob"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_malaysia_ibrahim_yaacob
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			expire = "1953.3.1.1"
+			id = -1
+		}
+	}
+
+	MAL_tuanku_abdul_rahman = {
+		name = "Tuanku Abdul Rahman"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_malaysia_abdul_rahman
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1953.3.1.1"
+			id=-1
+		}
+	}
+
+	MAL_charles_brooke = {
+		name = MAL_charles_brooke
+		portraits = {
+			army = {
+				small = GFX_idea_malaysia_charles_brooke
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MAL_charles_brooke
+			allowed = {
+				OR = {
+					original_tag = MAL
+					original_tag = KLM
+				}
+			}
+			available = {
+				NOT = {
+					OR = {
+						has_government = communism
+						has_government = fascism
+					}
+				}
+				controls_state = 988
+			}
+			traits = {
+				raj_of_sarawak 
+			}
+			on_add = {
+				if = {
+					limit = {
+						MAL = {
+							controls_state = 988
+						}
+					}
+					988 = {
+						add_dynamic_modifier = {
+							modifier = MAL_sarawak_brooke_modifier
+						}
+					}
+				}
+			}
+			on_remove = {
+				988 = {
+					remove_dynamic_modifier = {
+						modifier = MAL_sarawak_brooke_modifier
+					}
+				}
+			}
+		}
+	}
+}

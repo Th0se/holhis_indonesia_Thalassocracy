@@ -1,0 +1,25 @@
+state={
+	id=994
+	name="STATE_994"
+
+	history = {
+		owner = PHI
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			1421 1 
+		}
+		add_core_of = PHI
+		add_claim_by = SLU
+	}
+
+	provinces = {
+		1234 1421 4266 4399 4427 7360 7389 7417 10243 10300 12116 12158 
+	}
+
+	manpower = 627567
+	buildings_max_level_factor = 1.000
+	state_category = pastoral
+	local_supplies = 1.000
+}

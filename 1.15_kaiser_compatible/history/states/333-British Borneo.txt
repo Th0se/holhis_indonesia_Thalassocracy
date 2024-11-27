@@ -1,0 +1,29 @@
+state={
+	id=333
+	name="STATE_333"
+	resources={
+		oil=12.000
+	}
+	history={
+		owner = MAL
+		victory_points = {
+			7387 3
+		}
+		buildings = {
+			infrastructure = 2
+			7387 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = MAL
+		add_core_of = KLM
+	}
+
+	provinces={
+		7387 
+	}
+	manpower=12250
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=1.000
+}

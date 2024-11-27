@@ -1,0 +1,26 @@
+state={
+	id = 724
+	name = "STATE_724" #Pattani
+	history = {
+		owner = SIA
+		buildings = {
+			infrastructure = 1
+			7236 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			7236 1 
+		}
+		add_core_of = SIA
+	}
+
+	provinces = { #5
+		1279 4297 7236 10156 12131 
+	}
+
+	manpower = 510425
+	buildings_max_level_factor = 1.000
+	state_category = rural
+	local_supplies = 1.000
+}

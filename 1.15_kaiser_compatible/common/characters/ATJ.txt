@@ -1,0 +1,51 @@
+characters = {
+
+	ATJ_daoed_beoereoeh = {
+		name = ATJ_daoed_beoereoeh
+		portraits = {
+			civilian = {
+				large = GFX_portrait_aceh_daud_beureueh
+			}
+			army = {
+				small = GFX_idea_aceh_daud_beureueh
+			}
+		}
+		country_leader = {
+			desc = INS_daoed_beoereoeh_desc
+			ideology = fascism_ideology
+			traits = {
+			}
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		field_marshal = {
+			traits = { scavenger jungle_rat }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+
+	ATJ_toeankoe_radja_ibrahim = {
+		name = ATJ_toeankoe_radja_ibrahim
+		portraits = {
+			civilian = {
+				large = GFX_portrait_aceh_tuanku_ibrahim
+			}
+			army = {
+				small = GFX_idea_aceh_tuanku_radja_ibrahim
+			}
+		}
+		country_leader = {
+			desc = INS_tuanku_radja_ibrahim_desc
+			ideology = despotism
+			traits = {
+			}
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+}

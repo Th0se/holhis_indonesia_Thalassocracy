@@ -1,0 +1,138 @@
+add_namespace = holhis_philippines
+
+country_event = { #Philippines 1 - Rise of Ganap
+	id = holhis_philippines.1
+	title = holhis_philippines.1.t
+	desc = holhis_philippines.1.d
+	
+	picture = GFX_report_event_phi_soriano
+	
+	is_triggered_only = no
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = PHI
+		date > 1938.8.27
+		has_start_date < 1936.01.02
+	}
+
+	mean_time_to_happen = { days = 1 }
+
+	option = { #Close eye on them
+		name = holhis_philippines.1.a
+		set_party_name = {
+			ideology = fascism
+			long_name = PHI_fascism_party_ganap_long
+			name = PHI_fascism_party_ganap
+		}
+		set_party_name = {
+			ideology = neutrality
+			long_name = PHI_neutrality_party_nationalist_long
+			name = PHI_neutrality_party_nationalist
+		}
+		hidden_effect = {
+			add_country_leader_role = {
+				character = PHI_benigno_ramos
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = {
+					}
+				}
+				promote_leader = yes
+			}
+			add_country_leader_role = {
+				character = PHI_jose_laurel
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = centrism
+					traits = {
+					}
+				}
+				promote_leader = yes
+			}
+			PHI_benigno_ramos = {
+				remove_country_leader_role = {
+					ideology = centrism
+				}
+			}
+			PHI_andres_soriano = {
+				remove_country_leader_role = {
+					ideology = falangism
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Philippines 2 - Soriano Citizenship
+	id = holhis_philippines.2
+	title = holhis_philippines.2.t
+	desc = holhis_philippines.2.d
+	
+	picture = GFX_report_event_phi_soriano
+	
+	is_triggered_only = no
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = PHI
+		date > 1939.10.1
+	}
+	
+	mean_time_to_happen = { days = 21 }
+
+	option = { #Granted
+		name = holhis_philippines.2.a
+		add_political_power = -75
+		PHI_andres_soriano = {
+			add_trait = {
+				slot = political_advisor
+				trait = captain_of_industry
+			}
+			remove_trait = {
+				slot = political_advisor
+				trait = falangist_industrialist
+			}
+		}
+	}
+
+	option = { #No
+		name = holhis_philippines.2.b
+		add_political_power = 25
+		ai_chance = {
+			base = 20
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}
+
+country_event = { #Philippines 3 - Aglipay's passing
+	id = holhis_philippines.3
+	title = holhis_philippines.3.t
+	desc = holhis_philippines.3.d
+	picture = GFX_report_event_phi_aglipay
+
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = PHI
+		date > 1940.9.1
+	}
+
+	option = {
+		name = holhis_philippines.3.a
+		retire_character = PHI_gregorio_aglipay
+		hidden_effect = {
+			623 = {
+				add_manpower = -1
+			}
+		}
+		ai_chance = {
+			base = 20
+		}
+	}
+}

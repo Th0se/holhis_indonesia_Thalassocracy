@@ -1,0 +1,92 @@
+﻿
+units = {
+
+	##### NAVAL UNITS #####
+	##### PACIFIC FLEET #####
+	fleet = {
+		name = "Offshore Fleet"			
+		naval_base = 10265 # Manila
+		### Destroyer Flotilla 1 ###				
+		task_force = {					
+			name = "Offshore Fleet"				
+			location = 10265 # Manila
+			ship = {
+				name = "Q-111"
+				definition = destroyer
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = PHI
+						version_name = "Torpedo Boats"
+					}
+				}
+			}
+			ship = {
+				name = "Q-112"
+				definition = destroyer
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = PHI
+						version_name = "Torpedo Boats"
+					}
+				}
+			}
+			ship = {
+				name = "Q-113"
+				definition = destroyer
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = PHI
+						version_name = "Torpedo Boats"
+					}
+				}
+			}
+			ship = {
+				name = "Q-114"
+				definition = destroyer
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = PHI
+						version_name = "Torpedo Boats"
+					}
+				}
+			}
+			ship = {
+				name = "Q-115"
+				definition = destroyer
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = PHI
+						version_name = "Torpedo Boats"
+					}
+				}
+			}
+		}
+	}
+} 
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+
+	### Under Construction Notes ###
+	# DD: Q-116
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_1
+			creator = "PHI"
+			version_name = "Torpedo Boats"
+		}
+		name = "Q-116" 
+		requested_factories = 1
+		progress = 0.80
+		amount = 1
+	}
+}
+
+#####################

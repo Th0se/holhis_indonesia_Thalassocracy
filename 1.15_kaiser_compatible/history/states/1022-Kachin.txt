@@ -1,0 +1,28 @@
+state={
+	id=1022
+	name="STATE_1022"
+
+	history = {
+		add_core_of = BRM
+		owner = RAJ
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			4425 1 
+		}
+		1937.4.1 = {
+			owner = BRM
+			controller = BRM
+		}
+	}
+	
+	provinces={
+		1082 1197 1934 4318 4425 4996 8063 10920 
+	}
+
+	manpower = 1160176
+	buildings_max_level_factor = 1.000
+	state_category = pastoral
+	local_supplies = 0.000
+}

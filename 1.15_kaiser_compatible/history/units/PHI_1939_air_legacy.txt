@@ -1,0 +1,27 @@
+﻿
+
+air_wings = {
+	### Philippine Army Air Corps ###
+	327 = {										#Manila
+		fighter_equipment_0 =  {				# Fighter Squadron -- Curtis P-26A's
+			owner = "PHI" 
+			creator = "USA"
+			amount = 14
+		}
+		fighter_equipment_1 =  {
+			owner = "PHI"
+			creator = "USA"
+			amount = 36
+		}
+		tac_bomber_equipment_0 = {
+			owner = "PHI"
+			creator = "USA"
+			amount = 4
+		}
+		transport_plane_equipment_1 = {
+			owner = "PHI"
+			creator = "USA"
+			amount = 4
+		}
+	}
+}
