@@ -921,6 +921,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_idea_aceh_daud_beureueh_army"
+		texturefile = "gfx/ideas/INS/idea_ins_daud_beureueh_army.dds"
+	}
+
+	spriteType = {
 		name = "GFX_idea_aceh_toeankoe_radja_ibrahim"
 		texturefile = "gfx/ideas/INS/idea_ins_toeankoe_radja_ibrahim.dds"
 	}
