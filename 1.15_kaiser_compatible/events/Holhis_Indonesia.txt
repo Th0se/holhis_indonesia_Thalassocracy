@@ -3203,12 +3203,12 @@ country_event = { #Navair 2 - The Dutch gives Soerabaja (De Zeven Provincien) to
 				fixed_ship_torpedo_slot = empty
 				fixed_ship_role_slot = dd_role
 				fixed_ship_extra_secondaries_slot = empty
-				front_1_custom_slot = ship_mine_layer_1
+				front_1_custom_slot = empty
 				front_2_custom_slot = empty
 				mid_1_custom_slot = ship_depth_charge_1
 				mid_2_custom_slot = empty
 				rear_1_custom_slot = ship_anti_air_1
-				rear_2_custom_slot = empty
+				rear_2_custom_slot = ship_mine_layer_1
 			}
 		}
 		create_equipment_variant = {
@@ -3331,12 +3331,12 @@ country_event = { #Navair 3 - The Dutch gives Java and less
 				fixed_ship_torpedo_slot = empty
 				fixed_ship_role_slot = dd_role
 				fixed_ship_extra_secondaries_slot = empty
-				front_1_custom_slot = ship_mine_layer_1
+				front_1_custom_slot = empty
 				front_2_custom_slot = empty
 				mid_1_custom_slot = ship_depth_charge_1
 				mid_2_custom_slot = empty
 				rear_1_custom_slot = ship_anti_air_1
-				rear_2_custom_slot = empty
+				rear_2_custom_slot = ship_mine-Layer_1
 			}
 		}
 		create_equipment_variant = {
