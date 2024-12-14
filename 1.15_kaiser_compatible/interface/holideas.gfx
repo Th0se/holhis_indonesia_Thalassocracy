@@ -237,7 +237,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_indonesia_abikoesno"
-		texturefile = "gfx/ideas/INS/idea_ins_abikoesno_tjokrosoeroso.dds"
+		texturefile = "gfx/ideas/INS/idea_ins_abikoesno_tjokrosoejoso.dds"
 	}
 
 	spriteType = {
