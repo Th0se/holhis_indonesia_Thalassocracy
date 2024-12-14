@@ -931,6 +931,16 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_idea_maluku_manusama"
+		texturefile = "gfx/ideas/MLK/idea_mlk_manusama.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_maluku_soumokil_army"
+		texturefile = "gfx/ideas/MLK/idea_mlk_soumokil_army.dds"
+	}
+
+	spriteType = {
 		name = "GFX_idea_netherlands_abraham_vromans"
 		texturefile = "gfx/ideas/HOL/idea_hol_abraham_vromans.dds"
 	}
