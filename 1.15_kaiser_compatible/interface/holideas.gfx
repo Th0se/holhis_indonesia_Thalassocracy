@@ -237,7 +237,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_indonesia_abikoesno"
-		texturefile = "gfx/ideas/INS/idea_ins_abikoesno_tjokrosoeroso.dds"
+		texturefile = "gfx/ideas/INS/idea_ins_abikoesno_tjokrosoejoso.dds"
 	}
 
 	spriteType = {
@@ -928,6 +928,16 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_aceh_toeankoe_radja_ibrahim"
 		texturefile = "gfx/ideas/INS/idea_ins_toeankoe_radja_ibrahim.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_maluku_manusama"
+		texturefile = "gfx/ideas/MLK/idea_mlk_manusama.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_maluku_soumokil_army"
+		texturefile = "gfx/ideas/MLK/idea_mlk_soumokil_army.dds"
 	}
 
 	spriteType = {
