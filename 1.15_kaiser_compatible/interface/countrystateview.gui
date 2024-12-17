@@ -89,12 +89,12 @@ guiTypes = {
 			iconType ={
 				name ="victory_points_bg"
 				spriteType = "GFX_victorypoint_stateview_bg"
-				position = { x = 403 y = 456 }
+				position = { x = 373 y = 461 }
 			}
 			
 			instantTextboxType = {
 				name = "victory_points"
-				position = { x = 373 y = 460 }
+				position = { x = 343 y = 465 }
 				textureFile = ""
 				font = "hoi_18mbs"
 				text = ""
