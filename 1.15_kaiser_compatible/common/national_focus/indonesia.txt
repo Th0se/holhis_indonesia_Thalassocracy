@@ -154,6 +154,8 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = -50
 			add_stability = -0.05
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = available_designer
 			if = {
 				limit = {
@@ -180,6 +182,8 @@ focus_tree = {
 				}
 				show_ideas_tooltip = INS_bank_indonesia
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			INS_malaise_step_down = yes
 		}
 	}
@@ -214,6 +218,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_war_support = 0.05
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			991 = {
 				if = {
 					limit = {
@@ -314,6 +320,8 @@ focus_tree = {
 				custom_effect_tooltip = available_designer
 				show_ideas_tooltip = INS_dkai
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_equipment_to_stockpile = {
 				type = train_equipment
 				amount = 5
@@ -325,6 +333,8 @@ focus_tree = {
 				uses = 1
 				category = train_tech
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			991 = {
 				if = {
 					limit = {
@@ -465,6 +475,8 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			INS_malaise_step_down = yes
 		}
 	}
@@ -498,6 +510,14 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			672 = {
 				if = {
 					limit = {
@@ -560,12 +580,6 @@ focus_tree = {
 					}
 				}
 			}
-			add_tech_bonus = {
-				name = industrial_bonus
-				bonus = 0.5
-				uses = 1
-				category = industry
-			}
 		}
 	}
 
@@ -597,6 +611,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_equipment_to_stockpile = { type = convoy_1 amount = 60 }
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = available_designer
 			if = {
 				limit = {
@@ -784,6 +800,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = 0.025
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			625 = {
 				add_compliance = 10
 				add_extra_state_shared_building_slots = 2
@@ -1179,6 +1197,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = 0.025
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = INS_new_west_towns_tt
 			hidden_effect = {
 				add_victory_points = {
@@ -1314,6 +1334,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = 0.025
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = INS_further_develop_west_tt
 			hidden_effect = {
 				335 = {
@@ -1568,6 +1590,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = INS_strength
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			every_state = {
 				limit = {
 					is_owned_by = INS
@@ -1993,6 +2017,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = 0.025
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
 					NOT = {
@@ -2526,6 +2552,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = 0.025
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = INS_further_develop_east_tt
 			hidden_effect = {
 				984 = {
@@ -2833,6 +2861,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = 0.025
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = INS_new_east_towns_tt
 			hidden_effect = {
 				add_victory_points = {
@@ -2958,6 +2988,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = INS_unity
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			every_state = {
 				limit = {
 					controller = {
@@ -3344,6 +3376,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_research_slot = 1
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
 					NOT = {
@@ -3401,6 +3435,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			army_experience = 15
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			every_owned_state = {
 				limit = {
 					is_in_home_area = yes
@@ -3435,7 +3472,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			army_experience = 15
 		}
 	}
 
@@ -3474,6 +3510,8 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.1
 			add_war_support = -0.1
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = INS
@@ -4048,12 +4086,23 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = nuclear_bonus
-				ahead_reduction = 0.5
-				bonus = 0.5
-				uses = 2
-				category = nuclear
+			add_breakthrough_progress = {
+				specialization = specialization_nuclear
+				value = 0.5
+			}
+			IF = {
+				limit = {
+					NOT = {
+						has_tech = atomic_research
+					}
+				}
+				add_tech_bonus = {
+					name = nuclear_bonus
+					ahead_reduction = 0.5
+					bonus = 0.5
+					uses = 2
+					category = nuclear
+				}
 			}
 		}
 	}
@@ -4085,12 +4134,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = nuclear_bonus
-				ahead_reduction = 0.5
-				bonus = 0.5
-				uses = 1
-				category = nuclear
+			add_breakthrough_progress = {
+				specialization = specialization_nuclear
+				value = 0.5
 			}
 		}
 	}
@@ -4166,6 +4212,8 @@ focus_tree = {
 
 		completion_reward = {
 			army_experience = 25
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = INS_knil_incompetence_1
 				add_idea = INS_knil_incompetence_2
@@ -4219,6 +4267,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = -0.05
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = INS_knil_incompetence_2
 				add_idea = INS_knil_incompetence_locals_1
@@ -4307,7 +4357,7 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					has_completed_focus = INS_pave_the_way_for_a_navy
+					has_completed_focus = INS_expand_javan_dockyards
 					NOT = {
 						has_country_flag = INS_pardi_admiral_flag
 					}
@@ -4564,6 +4614,8 @@ focus_tree = {
 				uses = 2
 				category = cat_mass_assault
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = INS_knil_incompetence_commie_1
 				add_idea = INS_knil_incompetence_commie_2
@@ -4599,12 +4651,16 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = 0.05
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			hidden_effect = {
 				set_rule = {
 					can_use_kamikaze_pilots = yes
 				}
 			}
 			custom_effect_tooltip = kamikaze_focus_tooltip
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = INS_knil_incompetence_commie_2
 				add_idea = INS_knil_incompetence_commie_3
@@ -4693,6 +4749,8 @@ focus_tree = {
 		completion_reward = {
 			add_stability = -0.05
 			add_political_power = -75
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = INS_knil_incompetence_locals_2
 				add_idea = INS_knil_incompetence_locals_3
@@ -4908,17 +4966,21 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
+			add_political_power = 10
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			set_rule = {
 				can_send_volunteers = yes 
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = foreign_expeditions_focus
 			add_tech_bonus = {
 				name = armor_bonus
 				bonus = 0.5
 				uses = 2
 				category = armor
-			}
-			add_political_power = 10	
+			}	
 		}
 	}
 
@@ -4950,6 +5012,14 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
 					NOT = {
@@ -5036,12 +5106,6 @@ focus_tree = {
 				remove_idea = INS_knil_incompetence_locals_4
 				add_idea = INS_knil_incompetence_locals_5
 			}
-			add_doctrine_cost_reduction = {
-				name = land_doc_bonus
-				cost_reduction = 0.5
-				uses = 1
-				category = land_doctrine
-			}
 		}
 	}
 
@@ -5115,6 +5179,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_war_support = 0.075
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = INS_knil_incompetence_2
 				add_idea = INS_knil_incompetence_parades_1
@@ -5247,9 +5313,13 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
+			add_political_power = -50
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = available_theorist
 			show_ideas_tooltip = INS_simon_spoor_theorist
-			add_political_power = -50
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = INS_knil_incompetence_parades_2
 				add_idea = INS_knil_incompetence_parades_3
@@ -5406,15 +5476,17 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = -0.05
-			swap_ideas = {
-				remove_idea = INS_knil_incompetence_parades_3
-				add_idea = INS_knil_incompetence_parades_4
-			}
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
 				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
+			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
+			swap_ideas = {
+				remove_idea = INS_knil_incompetence_parades_3
+				add_idea = INS_knil_incompetence_parades_4
 			}
 			add_corps_commander_role = {
 				character = INS_pesman
@@ -5501,13 +5573,15 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			add_political_power = 10
 			add_tech_bonus = {
 				name = armor_bonus
 				bonus = 0.5
 				uses = 1
 				category = armor
 			}
-			add_political_power = 10
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			HOL = {
 				give_fascist_tank_licences = yes
 			}
@@ -5591,15 +5665,17 @@ focus_tree = {
 		completion_reward = {
 			add_stability = -0.05
 			add_war_support = 0.075
-			swap_ideas = {
-				remove_idea = INS_knil_incompetence_parades_4
-				add_idea = INS_knil_incompetence_parades_5 
-			}
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
 				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
+			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
+			swap_ideas = {
+				remove_idea = INS_knil_incompetence_parades_4
+				add_idea = INS_knil_incompetence_parades_5 
 			}
 			add_corps_commander_role = {
 				character = INS_bakkers
@@ -5673,6 +5749,8 @@ focus_tree = {
 					}
 				}
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			set_rule = {
 				can_send_volunteers = yes 
 			}
@@ -5724,6 +5802,8 @@ focus_tree = {
 				}
 			}
 			add_manpower = 14000
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			division_template = {
 				name = "Dutch Exile Legions"
 				priority = 1
@@ -5926,8 +6006,12 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.05
 			add_political_power = 50
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = INS_daf
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			random_owned_controlled_state = {
 				limit = {
 					is_in_home_area = yes
@@ -6020,6 +6104,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = -0.075
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = INS_challenge_elitism_1
 			INS_burden_step_down = yes
 			HOL = {
@@ -6079,6 +6165,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = -0.05
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = INS_stuwgroep_available_tt
 			show_ideas_tooltip = INS_hubertus_van_mook
 			show_ideas_tooltip = INS_jan_jonkman
@@ -6088,6 +6176,8 @@ focus_tree = {
 				}
 				show_ideas_tooltip = INS_charles_van_der_plas
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			HOL = {
 				if = {
 					limit = {
@@ -6149,6 +6239,8 @@ focus_tree = {
 			add_autonomy_ratio = {
 				value = 0.2
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			hidden_effect = {
 				KLM = {
 					INS_mohammad_jusuf_alqadri = {
@@ -6181,6 +6273,8 @@ focus_tree = {
 			}
 			show_ideas_tooltip = INS_mohammad_jusuf_alqadri_indonesia
 			show_ideas_tooltip = INS_tuanku_radja_ibrahim_indonesia
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = INS_princely_states_normal
 				add_idea = INS_princely_states_placated
@@ -6194,6 +6288,8 @@ focus_tree = {
 					modifier = large_increase
 				}
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
 					has_completed_focus = INS_train_indonesian_officers
@@ -6286,15 +6382,21 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = -0.05
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = INS_princely_states_normal
 				add_idea = INS_national_awakening
 			}
 			custom_effect_tooltip = INS_parindra_available_tt
-			custom_effect_tooltip = INS_gerindo_available_tt
 			show_ideas_tooltip = INS_soetomo
 			show_ideas_tooltip = INS_mohammad_hoesni_thamrin
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = INS_gerindo_available_tt
 			show_ideas_tooltip = INS_amir_sjarifoeddin
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			every_other_country = {
 				limit = {
 					has_government = democratic
@@ -6340,10 +6442,14 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = -0.05
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = INS_islamists_available_tt
 			show_ideas_tooltip = INS_abikoesno_tjokrosoejoso
 			show_ideas_tooltip = INS_agoes_salim
 			show_ideas_tooltip = INS_soekiman_wirjosandjojo
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			every_other_country = {
 				limit = {
 					is_muslim_nation = yes
@@ -6386,6 +6492,12 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = -0.075
+			set_rule = { can_decline_call_to_war = yes }
+			add_autonomy_ratio = {
+				value = 0.2
+			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = INS_soetardjo_kartohadikoesoemo
 			if = {
@@ -6394,10 +6506,8 @@ focus_tree = {
 				}
 				show_ideas_tooltip = INS_ignatius_kasimo
 			}
-			set_rule = { can_decline_call_to_war = yes }
-			add_autonomy_ratio = {
-				value = 0.2
-			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			INS_burden_step_down = yes
 			HOL = {
 				HOL_burden_step_down = yes
@@ -6451,6 +6561,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = -0.075
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = INS_soekarno
 			INS_soekarno = {
@@ -6554,6 +6666,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = 0.025
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			hidden_effect = {
 				HOL = {
 					INS_nicodemus_palar = {
@@ -6574,9 +6688,17 @@ focus_tree = {
 			show_ideas_tooltip = INS_samuel_ratulangi
 			show_ideas_tooltip = INS_oto_iskandar_di_nata
 			show_ideas_tooltip = INS_nicodemus_palar_indonesia
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				show_ideas_tooltip = INS_abdoelkadir_widjojoatmodjo
+			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = INS_nip_available_tt
+			show_ideas_tooltip = INS_ernest_douwes_dekker
 			show_ideas_tooltip = INS_kh_dewantara
-			show_ideas_tooltip = INS_ernst_douwes_dekker
 			show_ideas_tooltip = INS_tjipto_mangoenkoesoemo
 			hidden_effect = {
 				INS = {
@@ -6589,12 +6711,6 @@ focus_tree = {
 						}
 					}
 				}
-			}
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				show_ideas_tooltip = INS_abdoelkadir_widjojoatmodjo
 			}
 		}
 	}
@@ -6644,6 +6760,8 @@ focus_tree = {
 				limit = {
 					has_completed_focus = INS_reinstate_stuwgroep
 				}
+			
+				custom_effect_tooltip = generic_skip_one_line_tt
 				promote_character = INS_hubertus_van_mook
 				hidden_effect = {
 					set_country_flag = INS_van_mook_minister_candidate
@@ -6719,6 +6837,8 @@ focus_tree = {
 					}
 				}
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			INS_burden_step_down = yes
 			HOL = {
 				HOL_burden_step_down = yes
@@ -7110,6 +7230,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = 0.05
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			set_rule = {
 				can_create_factions = yes
 			}
@@ -7180,6 +7302,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = -0.025
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			every_country = {
 				limit = {
 					is_league_of_nations_member = yes
@@ -7242,6 +7366,8 @@ focus_tree = {
 				ideology = communism
 				popularity = 0.075
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			every_other_country = {
 				limit = {
 					OR = {
@@ -7367,6 +7493,8 @@ focus_tree = {
 					modifier = large_increase
 				}
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
 					SIA = {
@@ -7568,12 +7696,17 @@ focus_tree = {
 					modifier = medium_increase
 				}
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = INS_loyalty
 				add_idea = INS_loyalty_unquestionable
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = INS_henri_zentgraaff
+			show_ideas_tooltip = GER_walther_hewel
 		}
 	}
 
@@ -7669,10 +7802,14 @@ focus_tree = {
 				}
 			}
 			add_war_support = 0.05
+
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = INS_parindra_available_tt
-			custom_effect_tooltip = INS_gerindo_available_tt
 			show_ideas_tooltip = INS_soetomo
 			show_ideas_tooltip = INS_mohammad_hoesni_thamrin
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = INS_gerindo_available_tt
 			show_ideas_tooltip = INS_amir_sjarifoeddin
 			if = {
 				limit = {
@@ -7680,6 +7817,8 @@ focus_tree = {
 				}
 				show_ideas_tooltip = INS_sk_trimoerti
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = INS_loyalty_conditional
 				add_idea = INS_loyalty_nationalists
@@ -7749,6 +7888,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 75
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			unlock_decision_category_tooltip = INS_category_ethical_policies
 			custom_effect_tooltip = INS_reinstate_ethical_policies_tt
 		}
@@ -7817,8 +7958,12 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 50
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			unlock_decision_category_tooltip = INS_category_invite_foreign_investors
 			custom_effect_tooltip = INS_invite_foreign_investors_tt
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_offsite_building = { type = industrial_complex level = 2 }
 			add_offsite_building = { type = arms_factory level = 1 }
 		}
@@ -7858,6 +8003,8 @@ focus_tree = {
 		completion_reward = {
 			add_stability = -0.05
 			add_war_support = -0.05
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			every_country = {
 				limit = {
 					is_literally_china = yes
@@ -7918,6 +8065,8 @@ focus_tree = {
 		completion_reward = {
 			add_stability = -0.1
 			add_war_support = 0.05
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			every_country = {
 				limit = {
 					is_literally_china = yes
@@ -7950,6 +8099,8 @@ focus_tree = {
 			JAP = {
 				clr_country_flag = JAP_declare_war_indies_banned
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
 					has_idea = INS_japanese_investment_1
@@ -8002,6 +8153,8 @@ focus_tree = {
 				}
 			}
 			add_stability = 0.05
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_timed_idea = {
 				idea = INS_dutch_engineers
 				days = 1095
@@ -8198,6 +8351,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = INS_staat_van_oorlog_en_van_beleg_idea
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_naval_commander_role = {
 				character = INS_johan_van_staveren
 				traits = { fleet_protector }
@@ -8275,6 +8430,8 @@ focus_tree = {
 					value = 0.2
 				}
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
 					HOL = {
@@ -8326,6 +8483,8 @@ focus_tree = {
 					}
 				}
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_naval_commander_role = {
 				character = INS_johan_van_staveren
 				traits = { fleet_protector }
@@ -8378,6 +8537,8 @@ focus_tree = {
 				custom_effect_tooltip = available_political_advisor
 				show_ideas_tooltip = INS_charles_van_der_plas
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_timed_idea = {
 				idea = INS_until_the_end
 				days = 1825
@@ -8784,6 +8945,8 @@ focus_tree = {
 					}
 				}
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = HOL_prepare_for_our_return
 				bonus = 1.0
@@ -9302,6 +9465,15 @@ focus_tree = {
 					has_war_with = SPR
 				}
 			}
+			else = {
+				721 = {
+					controller = {
+						NOT = {
+							has_war_with = INS
+						}
+					}
+				}
+			}
 		}
 
 		bypass = {
@@ -9530,15 +9702,19 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			hidden_effect = {
-				set_country_flag = INS_dutch_empire
-			}
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = INS_anton_van_der_laaken
-			show_ideas_tooltip = INS_jan_hogewind
 			add_autonomy_ratio = {
 				value = 0.1
 			}
+			hidden_effect = {
+				set_country_flag = INS_dutch_empire
+			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = INS_anton_van_der_laaken
+			show_ideas_tooltip = INS_jan_hogewind
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = INS_reforms_halted
 				add_idea = INS_dutch_nationalism
@@ -9577,6 +9753,8 @@ focus_tree = {
 			add_autonomy_ratio = {
 				value = 0.5
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
 					has_idea = INS_imperial_burden_1
@@ -9595,6 +9773,8 @@ focus_tree = {
 				}
 				remove_ideas = INS_imperial_burden_3
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			HOL = {
 				add_opinion_modifier = {
 					target = INS
@@ -9643,14 +9823,18 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_autonomy_ratio = {
+				value = 0.5
+			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = INS_henri_zentgraaff
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = INS_agrarian_society_1
 				add_idea = INS_oppressed_natives
-			}
-			add_autonomy_ratio = {
-				value = 0.5
 			}
 		}
 	}
@@ -9704,6 +9888,8 @@ focus_tree = {
 				country_event = { id = holhis_nsb.5 hours = 8 }
 			}
 			set_cosmetic_tag = INS_DUTCH
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
 					HOL = {
@@ -9719,12 +9905,16 @@ focus_tree = {
 					}
 				}
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
 					NOT = { has_idea = INS_independence_mess }
 				}
 				add_ideas = INS_independence_mess
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
 					is_subject = yes
@@ -9771,6 +9961,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = 0.05
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			AST = {
 				add_opinion_modifier = {
 					target = ROOT
@@ -9789,6 +9981,8 @@ focus_tree = {
 					modifier = INS_foreign_policies
 				}
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = INS_hostile_foreign_policies
 		}
 	}
@@ -9831,6 +10025,8 @@ focus_tree = {
 				limit = { has_dlc = "By Blood Alone" }
 				send_embargo = JAP
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = INS_anti_japanese_sentiments
 		}
 	}
@@ -9865,6 +10061,8 @@ focus_tree = {
 		completion_reward = {
 			add_stability = -0.1
 			add_war_support = 0.05
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			remove_ideas = INS_nationalism_rally
 		}
 	}
@@ -9894,7 +10092,11 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = -0.05
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			remove_ideas = INS_independence_mess
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = remove_political_advisor
 			show_ideas_tooltip = INS_hubertus_van_mook
 			show_ideas_tooltip = INS_jan_jonkman
@@ -9971,7 +10173,11 @@ focus_tree = {
 				popularity = 0.05
 			}
 			add_war_support = 0.05
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = INS_new_marechaussee
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
 					has_idea = extensive_conscription
@@ -10045,6 +10251,8 @@ focus_tree = {
 		completion_reward = {
 			add_war_support = 0.15
 			add_stability = -0.05
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = INS_oppressed_natives
 				add_idea = INS_labour_camps
@@ -10090,6 +10298,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = -0.05
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = INS_labour_camps
 				add_idea = INS_cultivation_system_idea
@@ -10125,6 +10335,8 @@ focus_tree = {
 			add_state_claim = 428
 			add_state_claim = 422
 			add_state_claim = 423
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			unlock_decision_category_tooltip = INS_pacification_campaigns
 			custom_effect_tooltip = INS_pacificate_asia_tt
 		}
@@ -10151,10 +10363,14 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_political_power = 50
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_state_claim = 333
 			add_state_claim = 988
 			add_state_claim = 987
-			add_political_power = 50
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			JAP = {
 				add_opinion_modifier = {
 					target = ROOT
@@ -10366,6 +10582,8 @@ focus_tree = {
 			add_state_claim = 7
 			add_state_claim = 35
 			add_state_claim = 36
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			create_wargoal = {
 				type = puppet_wargoal_focus
 				target = HOL
@@ -10395,8 +10613,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = INS_sea_conquerors
 			set_rule = { can_join_factions = no }
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas = INS_sea_conquerors
 		}
 	}
 
@@ -10471,6 +10691,14 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			every_state = {
+				limit = {
+					is_core_of = SIA
+				}
+				add_claim_by = INS
+			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			create_wargoal = {
 				type = annex_everything
 				target = SIA
@@ -10524,7 +10752,6 @@ focus_tree = {
 			every_state = {
 				limit = {
 					OR = {
-						is_core_of = SIA
 						is_core_of = CAM
 						is_core_of = LAO
 						is_core_of = VIN
@@ -10532,6 +10759,8 @@ focus_tree = {
 				}
 				add_claim_by = INS
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
 					CAM = {
@@ -10633,6 +10862,8 @@ focus_tree = {
 			add_state_claim = 729
 			add_state_claim = 326
 			add_state_claim = 524
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			592 = {
 				owner = {
 					ROOT = {
@@ -10703,12 +10934,16 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_political_power = 50
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_state_claim = 711
 			add_state_claim = 712
 			add_state_claim = 721
 			add_state_claim = 522
 			add_state_claim = 710
-			add_political_power = 50
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			AST = {
 				add_opinion_modifier = {
 					target = ROOT
@@ -10759,6 +10994,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_war_support = 0.05
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_state_claim = 870
 			add_state_claim = 522
 			add_state_claim = 871
@@ -10766,6 +11003,8 @@ focus_tree = {
 			add_state_claim = 519
 			add_state_claim = 979
 			add_state_claim = 523
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			create_wargoal = {
 				type = take_state_focus
 				generator = { 870 522 871 520 519 }
@@ -10809,6 +11048,8 @@ focus_tree = {
 				}
 				add_claim_by = ROOT
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			create_wargoal = {
 				type = annex_everything
 				target = PHI
@@ -10904,6 +11145,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_war_support = 0.1
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
 					274 = {
@@ -11005,6 +11248,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = HOL_imperial_ambitions
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_state_claim = 357
 			add_state_claim = 358
 			add_state_claim = 359
@@ -11017,6 +11262,8 @@ focus_tree = {
 			add_state_claim = 497
 			add_state_claim = 498
 			add_state_claim = 499
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			create_wargoal = {
 				type = take_state_focus
 				generator = { 694 310 }
@@ -11292,11 +11539,14 @@ focus_tree = {
 			add_autonomy_ratio = {
 				value = 0.2
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			hidden_effect = {
 				set_rule = { can_decline_call_to_war = yes }
-				news_event = { id = insnews.9 }
 			}
 			add_ideas = INS_tear_down
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			HOL = {
 				add_opinion_modifier = {
 					target = ROOT
@@ -11414,10 +11664,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			remove_ideas = INS_reforms_halted
 			add_autonomy_ratio = {
 				value = 0.2
 			}
+			remove_ideas = INS_reforms_halted
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = INS_nationalism_suppressed
 				add_idea = INS_nationalism_reemergence_2
@@ -11451,6 +11703,8 @@ focus_tree = {
 			add_autonomy_ratio = {
 				value = 0.3
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = INS_nationalism_reemergence_2
 				add_idea = INS_nationalism_covert
@@ -11482,6 +11736,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = INS_soerja_wirawan
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = INS_nationalism_reemergence_2
 				add_idea = INS_nationalism_rally
@@ -11554,6 +11810,8 @@ focus_tree = {
 			add_autonomy_ratio = {
 				value = 0.1
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			JAP = {
 				country_event = { id = holhis_volksraad.15 hours = 8 }
 				add_opinion_modifier = {
@@ -11590,6 +11848,8 @@ focus_tree = {
 				ideology = democratic
 				popularity = 0.05
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = INS_befriend_stuwgroep_tt
 		}
 	}
@@ -11647,6 +11907,8 @@ focus_tree = {
 				}
 				country_event = { id = holhis_volksraad.10 hours = 12 }
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
 					is_subject = yes
@@ -11668,18 +11930,24 @@ focus_tree = {
 					}
 				}
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
 					has_idea = INS_nationalism_rally
 				}
 				remove_ideas = INS_nationalism_rally
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
 					has_idea = INS_nationalism_covert
 				}
 				remove_ideas = INS_nationalism_covert
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
 					NOT = { has_idea = INS_independence_mess }
@@ -11865,6 +12133,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = INS_china_own
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_state_claim = 599
 			add_state_claim = 594
 			add_state_claim = 593
@@ -11908,6 +12178,8 @@ focus_tree = {
 			INS = {
 				add_to_tech_sharing_group = INS_JAP_naval_cooperation_idea
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			random_owned_controlled_state = {
 				prioritize = { 335 }
 				limit = {
@@ -11999,6 +12271,8 @@ focus_tree = {
 				}
 				add_claim_by = ROOT
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			create_wargoal = {
 				type = annex_everything
 				target = PHI
@@ -12048,7 +12322,11 @@ focus_tree = {
 					add_stability = 0.05
 				}
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = INS_expand_empire
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			AST = {
 				add_opinion_modifier = {
 					target = ROOT
@@ -12090,11 +12368,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_state_core = 333
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			create_wargoal = {
 				type = annex_everything
 				target = MAL
 			}
-			add_state_core = 333
 		}
 	}
 
@@ -12317,6 +12597,8 @@ focus_tree = {
 				}
 				add_state_claim = 737
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
 					721 = {
@@ -12627,61 +12909,63 @@ focus_tree = {
 		completion_reward = {
 			add_war_support = 0.05
 			add_stability = 0.05
-			random_owned_controlled_state = {
-				limit = {
-					is_in_home_area = yes
-					is_core_of = INS
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_in_home_area = yes
-					is_core_of = INS
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_in_home_area = yes
-					is_core_of = INS
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
 			army_experience = 10
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					is_core_of = INS
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					is_core_of = INS
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					is_core_of = INS
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -12786,6 +13070,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 75
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			unlock_decision_category_tooltip = INS_category_ethical_policies
 			custom_effect_tooltip = INS_restart_ethical_policies_tt
 		}
@@ -12848,6 +13134,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = 0.05
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
 					HOL = {
@@ -13529,10 +13817,14 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			remove_ideas = INS_reforms_halted
 			add_autonomy_ratio = {
 				value = 0.2
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
+			remove_ideas = INS_reforms_halted
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = INS_nationalism_suppressed
 				add_idea = INS_revolution_at_home_1
@@ -13572,10 +13864,14 @@ focus_tree = {
 				ideology = communism
 				popularity = 0.05
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = INS_revolution_at_home_1
 				add_idea = INS_revolution_at_home_2
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = INS_soekarno
 			INS_soekarno = {
@@ -13632,6 +13928,8 @@ focus_tree = {
 				ideology = communism
 				popularity = 0.1
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = INS_revolution_at_home_1
 				add_idea = INS_revolution_at_home_3
@@ -13662,13 +13960,15 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_autonomy_ratio = {
+				value = 0.1
+			}
 			add_popularity = {
 				ideology = communism
 				popularity = 0.05
 			}
-			add_autonomy_ratio = {
-				value = 0.1
-			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			every_country = {
 				limit = {
 					OR = {
@@ -13712,6 +14012,8 @@ focus_tree = {
 			add_autonomy_ratio = {
 				value = 0.1
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			every_country = {
 				limit = {
 					NOT = { original_tag = HOL }
@@ -13760,6 +14062,8 @@ focus_tree = {
 				election_frequency = 60
 				elections_allowed = yes
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			hidden_effect = {
 				retire_character = INS_meyer_ranneft
 				set_can_be_fired_in_advisor_role = {
@@ -13828,24 +14132,32 @@ focus_tree = {
 				limit = {
 					has_idea = INS_revolution_at_home_1
 				}
+			
+				custom_effect_tooltip = generic_skip_one_line_tt
 				remove_ideas = INS_revolution_at_home_1
 			}
 			if = {
 				limit = {
 					has_idea = INS_revolution_at_home_2
 				}
+			
+				custom_effect_tooltip = generic_skip_one_line_tt
 				remove_ideas = INS_revolution_at_home_2
 			}
 			if = {
 				limit = {
 					has_idea = INS_revolution_at_home_3
 				}
+			
+				custom_effect_tooltip = generic_skip_one_line_tt
 				remove_ideas = INS_revolution_at_home_3
 			}
 			if = {
 				limit = {
 					NOT = { has_idea = INS_independence_mess }
 				}
+			
+				custom_effect_tooltip = generic_skip_one_line_tt
 				add_ideas = INS_independence_mess
 			}
 			hidden_effect = {
@@ -14182,6 +14494,8 @@ focus_tree = {
 					}
 				}
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = remove_political_advisor
 			show_ideas_tooltip = INS_ignatius_kasimo
 		}
@@ -14205,6 +14519,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = INS_economic_aid
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = INS_mutual_aid_tt
 			every_other_country = {
 				limit = {
@@ -14269,6 +14585,8 @@ focus_tree = {
 				}
 				set_country_flag = received_INS_agitation_flag
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			every_other_country = {
 				limit = {
 					any_owned_state = {
@@ -14480,6 +14798,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = -0.1
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_timed_idea = {
 				idea = INS_means_production_seized
 				days = 365
@@ -14530,6 +14850,8 @@ focus_tree = {
 
 		completion_reward = {
 			remove_ideas = INS_princely_states_normal
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_timed_idea = {
 				idea = INS_reappropriation_idea
 				days = 365
@@ -14585,6 +14907,8 @@ focus_tree = {
 					remove_state_core = 982
 				}
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
 					NOT = {
@@ -14617,9 +14941,13 @@ focus_tree = {
 				}
 				add_state_claim = 333
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = INS_mohammad_jamin
-			show_ideas_tooltip = INS_ernst_douwes_dekker
+			show_ideas_tooltip = INS_ernest_douwes_dekker
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = INS_one_state
 		}
 	}
@@ -14676,7 +15004,12 @@ focus_tree = {
 					}
 				}
 			}
+			add_stability = 0.15
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = INS_multi_state
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = INS_mohammad_hatta
 			show_ideas_tooltip = INS_kh_dewantara
@@ -14692,6 +15025,8 @@ focus_tree = {
 					}
 				}
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			release = TIM
 			release = SLW
 			release = EIS
@@ -14717,7 +15052,8 @@ focus_tree = {
 				target = PPA
 				autonomy_state = autonomy_dominion
 			}
-			add_stability = 0.15
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			991 = {
 				add_extra_state_shared_building_slots = 2
 			}
@@ -15293,6 +15629,8 @@ focus_tree = {
 					days = 1095
 				}
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			unlock_decision_tooltip = INS_spark_indian_revolution
 		}
 	}
@@ -15338,7 +15676,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			unlock_decision_tooltip = INS_intervene_china
 			add_manpower = -10000
 			if = {
 				limit = {
@@ -15366,6 +15703,8 @@ focus_tree = {
 					target = PRC
 				}
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
 					any_other_country = {
@@ -15385,10 +15724,12 @@ focus_tree = {
 							has_government = communism
 						}
 					}
-					create_wargoal = {
-						target = PREV
-						type = puppet_wargoal_focus
+					ROOT = {
+						create_wargoal = {
+							type = puppet_wargoal_focus
+							target = PREV
 						expire = 0
+						}
 					}
 					add_ai_strategy = {
 						type = conquer
@@ -15402,6 +15743,9 @@ focus_tree = {
 					}
 				}
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
+			unlock_decision_tooltip = INS_intervene_china
 		}
 	}
 
@@ -15429,6 +15773,8 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = INS_promote_ideology_rallies_middle_east_tt
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
 					country_exists = IRQ
@@ -15728,6 +16074,8 @@ focus_tree = {
 
 		completion_reward = {
 			navy_experience = 30
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = INS_navy_1
 				add_idea = INS_navy_2
@@ -15769,37 +16117,6 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
-			}
-			if = {
-				limit = {
-					has_completed_focus = INS_train_indonesian_officers
-					NOT = {
-						has_country_flag = INS_pardi_admiral_flag
-					}
-				}
-				add_naval_commander_role = {
-					character = INS_mas_pardi
-					traits = { bold }
-					skill = 1
-					attack_skill = 2
-					defense_skill = 1
-					maneuvering_skill = 1
-					coordination_skill = 1
-					legacy_id = -1
-				}
-				add_advisor_role = {
-					character = INS_mas_pardi
-					advisor = {
-						slot = navy_chief
-						idea_token = INS_mas_pardi
-						ledger = navy
-						traits = {
-							navy_chief_maneuver_1
-						}
-						cost = 75
-					}
-				}
-				set_country_flag = INS_pardi_admiral_flag
 			}
 		}
 	}
@@ -15903,6 +16220,8 @@ focus_tree = {
 
 		completion_reward = {
 			navy_experience = 10
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = INS_navy_2
 				add_idea = INS_navy_3_green
@@ -15915,6 +16234,8 @@ focus_tree = {
 				category = dd_tech
 				category = cl_tech
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			673 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -15951,6 +16272,8 @@ focus_tree = {
 
 		completion_reward = {
 			navy_experience = 10
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = INS_navy_2
 				add_idea = INS_navy_3_blue
@@ -15964,6 +16287,8 @@ focus_tree = {
 				category = bb_tech
 				category = cv_tech
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			991 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -16004,6 +16329,8 @@ focus_tree = {
 
 		completion_reward = {
 			navy_experience = 10
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = INS_javan_dockyards_tt
 			hidden_effect = {
 				if = {
@@ -16033,6 +16360,8 @@ focus_tree = {
 					add_mio_funds = 500
 				}
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			335 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -16049,6 +16378,8 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
 					is_subject = no
@@ -16114,6 +16445,8 @@ focus_tree = {
 
 		completion_reward = {
 			navy_experience = 10
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = INS_navy_3_green
 				add_idea = INS_navy_4_green
@@ -16125,6 +16458,8 @@ focus_tree = {
 				uses = 2
 				category = ss_tech
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_doctrine_cost_reduction = {
 				name = ti_bonus
 				name = GER_trade_interdiction
@@ -16159,6 +16494,8 @@ focus_tree = {
 
 		completion_reward = {
 			navy_experience = 10
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = INS_navy_3_blue
 				add_idea = INS_navy_4_blue
@@ -16403,6 +16740,8 @@ focus_tree = {
 		completion_reward = {
 			navy_experience = 10
 			air_experience = 10
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			335 = {			
 				add_building_construction = {
 					type = air_base
@@ -16503,6 +16842,39 @@ focus_tree = {
 					remove_idea = INS_navy_4_blue
 					add_idea = INS_navy_5
 				}
+				add_doctrine_cost_reduction = {
+					name = naval_doc_bonus
+					cost_reduction = 0.5
+					uses = 2
+					category = naval_doctrine
+				}
+				random_owned_controlled_state = {
+					prioritize = { 335 }
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					prioritize = { 990 }
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					prioritize = { 672 }
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+				}
 			}
 			else_if = {
 				limit = {
@@ -16525,6 +16897,39 @@ focus_tree = {
 					remove_idea = INS_navy_4_green
 					add_idea = INS_navy_5
 				}
+				add_doctrine_cost_reduction = {
+					name = naval_doc_bonus
+					cost_reduction = 0.5
+					uses = 2
+					category = naval_doctrine
+				}
+				random_owned_controlled_state = {
+					prioritize = { 335 }
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					prioritize = { 990 }
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					prioritize = { 672 }
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+				}
 			}
 			else_if = {
 				limit = {
@@ -16541,8 +16946,23 @@ focus_tree = {
 				add_tech_bonus = {
 					name = INS_JUNGS_ELSE
 					bonus = 1
-					uses = 3
+					uses = 2
 					category = naval_air
+				}
+				random_owned_controlled_state = {
+					prioritize = { 990 }
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+				}
+				add_doctrine_cost_reduction = {
+					name = naval_doc_bonus
+					cost_reduction = 0.5
+					uses = 1
+					category = naval_doctrine
 				}
 			}
 		}
@@ -16572,12 +16992,16 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = INS_fokker
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			HOL = {
 				add_to_tech_sharing_group = INS_HOL_research_navair
 			}
 			INS = {
 				add_to_tech_sharing_group = INS_HOL_research_navair
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			random_owned_controlled_state = {
 				prioritize = { 990 }
 				add_extra_state_shared_building_slots = 1
@@ -16612,6 +17036,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = INS_streamlined_transport_planes
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			random_owned_controlled_state = {
 				prioritize = { 991 }
 				add_extra_state_shared_building_slots = 1
@@ -16645,20 +17071,22 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_AIR_XP FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = INS_koolhoven
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = INS_laurens_walraven
 			air_experience = 50
-			swap_ideas = {
-				remove_idea = INS_airforce_1
-				add_idea = INS_airforce_2
-			}
 			add_doctrine_cost_reduction = {
 				name = air_doc_bonus
 				cost_reduction = 0.5
 				uses = 2
 				category = air_doctrine
+			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = INS_koolhoven
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
+			swap_ideas = {
+				remove_idea = INS_airforce_1
+				add_idea = INS_airforce_2
 			}
 		}
 	}
@@ -16718,12 +17146,16 @@ focus_tree = {
 
 		completion_reward = {
 			air_experience = 10
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = INS_airforce_2
 				add_idea = INS_airforce_3_offense
 			}
 			custom_effect_tooltip = available_chief_of_airforce
 			show_ideas_tooltip = INS_jan_hilgers
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
 					NOT = {
@@ -16737,8 +17169,6 @@ focus_tree = {
 				custom_effect_tooltip = available_designer
 				show_ideas_tooltip = INS_ptdi
 			}
-			custom_effect_tooltip = available_chief_of_airforce
-			show_ideas_tooltip = INS_jan_hilgers
 		}
 	}
 
@@ -16774,12 +17204,16 @@ focus_tree = {
 
 		completion_reward = {
 			air_experience = 10
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = INS_airforce_2
 				add_idea = INS_airforce_3_defense
 			}
 			custom_effect_tooltip = available_chief_of_airforce
 			show_ideas_tooltip = INS_jan_hilgers
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
 					NOT = {
@@ -16793,8 +17227,6 @@ focus_tree = {
 				custom_effect_tooltip = available_designer
 				show_ideas_tooltip = INS_ptdi
 			}
-			custom_effect_tooltip = available_chief_of_airforce
-			show_ideas_tooltip = INS_jan_hilgers
 		}
 	}
 
@@ -16830,6 +17262,8 @@ focus_tree = {
 
 		completion_reward = {
 			air_experience = 10
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
 					has_idea = INS_airforce_3_offense
@@ -16868,6 +17302,8 @@ focus_tree = {
 				uses = 2
 				category = cat_heavy_fighter
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = available_military_high_command
 			show_ideas_tooltip = INS_jacob_zomer 
 		}
@@ -16897,6 +17333,8 @@ focus_tree = {
 
 		completion_reward = {
 			air_experience = 10
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
 					has_idea = INS_airforce_3_offense
@@ -16929,6 +17367,8 @@ focus_tree = {
 				uses = 2
 				category = cat_strategic_bomber
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = available_military_high_command
 			show_ideas_tooltip = INS_jacob_zomer 
 		}
@@ -17277,6 +17717,8 @@ focus_tree = {
 
 		completion_reward = {
 			air_experience = 10
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			673 = {
 				add_building_construction = {
 					type = air_base
@@ -17330,6 +17772,8 @@ focus_tree = {
 
 		completion_reward = {
 			air_experience = 10
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = special_forces_bonus
 				bonus = 0.5
@@ -17547,6 +17991,7 @@ focus_tree = {
 		}
 
 		bypass = {
+			has_capitulated = yes
 		}
 		
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
@@ -17555,6 +18000,8 @@ focus_tree = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = INS_charles_van_der_plas
 			show_ideas_tooltip = INS_abdoelkadir_widjojoatmodjo
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			country_event = { id = holhis_indonesia.28 }
 		}
 	}
@@ -17578,8 +18025,9 @@ focus_tree = {
 			has_war = yes
 			surrender_progress > 0
 		}
-		
+
 		bypass = {
+			has_capitulated = yes
 		}
 
 		cancel_if_invalid = no
@@ -17597,6 +18045,8 @@ focus_tree = {
 				amount = 50
 				producer = INS
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			991 = {
 				add_building_construction = {
 					type = naval_base
@@ -17628,7 +18078,9 @@ focus_tree = {
 		available = {
 		}
 
-		bypass = {}
+		bypass = {
+			has_capitulated = yes
+		}
 		
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 
@@ -17926,6 +18378,8 @@ focus_tree = {
 				ideology = communism
 				popularity = 0.05
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = INS_sardjono
 			if = {
@@ -17938,7 +18392,6 @@ focus_tree = {
 				character = INS_sardjono
 				ideology = marxism
 			}
-			custom_effect_tooltip = INS_pki_shenanigans_tt
 			custom_effect_tooltip = INS_support_pki_exile_tooltip
 			if = {
 				limit = {
@@ -17954,6 +18407,9 @@ focus_tree = {
 					nationalities = { INS }
 				}
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = INS_pki_shenanigans_tt
 		}
 	}
 
@@ -18057,6 +18513,8 @@ focus_tree = {
 					set_character_flag = INS_appointed_general_flag
 				}
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = INS_fight_abroad_tt
 		}
 	}
@@ -18083,6 +18541,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
+			add_stability = 0.05
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			HOL = {
 				add_opinion_modifier = {
 					target = ROOT
@@ -18099,7 +18560,6 @@ focus_tree = {
 				}
 				remove_country_leader_trait = doubtful_loyalty
 			}
-			add_stability = 0.05
 		}
 	}
 
@@ -18126,6 +18586,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_legitimacy = 10
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			every_country = {
 				limit = {
 					is_in_faction_with = INS
@@ -18184,6 +18646,8 @@ focus_tree = {
 
 		completion_reward = {
 			remove_ideas = INS_defeatism
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = INS_promote_cause_tt
 		}
 	}
@@ -18236,8 +18700,8 @@ focus_tree = {
 								has_state_category = enclave
 							}
 						}
-						NOT = { region = 158 } #Not Java or Sumatra
-						NOT = { region = 187 }
+						NOT = { region = 158 } #Not Java
+						NOT = { region = 187 } #Not Sumatra
 					}
 					set_variable = { ROOT.INS_stepping_stone_state = THIS }
 					set_state_flag = INS_stepping_stone_state_flag
@@ -18338,37 +18802,43 @@ focus_tree = {
 
 		available = {
 			has_legitimacy > 75
-			if = {
-				limit = {
-					OR = {
-						has_country_flag = INS_renew_batavia
-						has_country_flag = INS_choose_bandoeng
+			custom_trigger_tooltip = {
+				tooltip = INS_control_capital_island_tt
+				if = {
+					limit = {
+						OR = {
+							has_country_flag = INS_renew_batavia
+							has_country_flag = INS_choose_bandoeng
+						}
+					}
+					custom_trigger_tooltip = {
+						tooltip = INS_control_java
+						controls_state = 335
+						controls_state = 991
+						controls_state = 990
 					}
 				}
-				has_full_control_of_state = 335
-				has_full_control_of_state = 991
-				has_full_control_of_state = 990
-			}
-			else_if = {
-				limit = {
-					has_country_flag = INS_choose_banjarmasin
+				else_if = {
+					limit = {
+						has_country_flag = INS_choose_banjarmasin
+					}
+					has_full_control_of_state = 334
+					has_full_control_of_state = 989
 				}
-				has_full_control_of_state = 334
-				has_full_control_of_state = 989
-			}
-			else_if = {
-				limit = {
-					has_country_flag = INS_choose_makassar
+				else_if = {
+					limit = {
+						has_country_flag = INS_choose_makassar
+					}
+					has_full_control_of_state = 673
+					has_full_control_of_state = 986
 				}
-				has_full_control_of_state = 673
-				has_full_control_of_state = 986
-			}
-			else_if = {
-				limit = {
-					has_country_flag = INS_choose_palembang
+				else_if = {
+					limit = {
+						has_country_flag = INS_choose_palembang
+					}
+					has_full_control_of_state = 992
+					has_full_control_of_state = 672
 				}
-				has_full_control_of_state = 992
-				has_full_control_of_state = 672
 			}
 		}
 		
@@ -18385,6 +18855,14 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_stability = 0.075
+			add_war_support = 0.03
+			add_autonomy_ratio = {
+				value = 0.25
+				localization = INS_homecoming
+			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
 					has_country_flag = INS_choose_bandoeng
@@ -18412,16 +18890,12 @@ focus_tree = {
 			else = {
 				set_capital = { state = 335 }
 			}
-			add_stability = 0.075
-			add_war_support = 0.03
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_equipment_to_stockpile = {
 			    type = infantry_equipment
 			    amount = 2500
 			    producer = INS
-			}
-			add_autonomy_ratio = {
-				value = 0.25
-				localization = INS_homecoming
 			}
 		}
 	}
