@@ -44,6 +44,12 @@
  INS_emergency_seizure_desc:0 "While it is regrettable, time has changed and our own lands are threatened by the enemy. Any resource concessions must be rebuked and used fully for our defense for the time being."
 
  INS_category_national_projects:0 "National Projects"
+ INS_establish_nv_merbaboe:0 "Establish the §YNV Merbaboe Plane Factory§!"
+ INS_merbaboe_established_flag:0 "§YNV Merbaboe Plane Factory§! has been established"
+ INS_expand_ai_bandoeng:0 "Expand the §Y[Root.getinsarmsfactory]§!"
+ INS_expand_soerabaja_dm:0 "Expand the §Y[Root.getinsdockyard]§!"
+ INS_bandoeng_tt:0 "Controls §YBandoeng§! (at §Y[991.GetName]§!)"
+ INS_soerabaja_tt:0 "Controls §YSoerabaja§! (at §Y[990.GetName]§!)"
  INS_nationalize_soerabaja_dm:0 "Nationalize Soerabaja Droogdok Maatschappij"
  INS_nationalize_soerabaja_dm_flag:0 "§YSoerabaja Droogdok Maatschappij§! has been nationalized"
  INS_nationalize_artillerie_inrichtingen_bandoeng:0 "Nationalize Artillerie Inrichtingen Bandoeng"
