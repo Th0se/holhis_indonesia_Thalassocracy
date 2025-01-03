@@ -1311,6 +1311,13 @@ JAP_southern_expansion = {
 		available = {
 			is_subject = no
 			has_completed_focus = JAP_strike_on_the_southern_resource_area
+			OR = { #Shanghai
+				JAP = { has_full_control_of_state = 613 }
+				any_other_country = {
+					is_in_faction_with = JAP
+					has_full_control_of_state = 613
+				}
+			}
 			OR = { #Delhi
 				JAP = { has_full_control_of_state = 439 }
 				any_other_country = {
@@ -1388,7 +1395,6 @@ JAP_northern_expansion = {
 
 
 		modifier = {
-
 		}
 
 		days_remove = 0
@@ -1397,7 +1403,11 @@ JAP_northern_expansion = {
 		cost = 25
 
 		ai_will_do = {
-			factor = 0
+			factor = 100
+			modifier = {
+				factor = 0
+				GER = { NOT = { has_war_with = SOV } }
+			}
 		}
 
 		remove_effect = {
@@ -1519,7 +1529,15 @@ JAP_northern_expansion = {
 		cost = 25
 
 		ai_will_do = {
-			factor = 0
+			factor = 100
+			modifier = {
+				factor = 0
+				OR = {
+					has_war_with = USA
+					has_war_with = ENG
+					has_war_with = FRA
+				}
+			}
 		}
 
 		remove_effect = {
@@ -1768,6 +1786,13 @@ JAP_northern_expansion = {
 				any_other_country = {
 					is_in_faction_with = JAP
 					has_full_control_of_state = 408
+				}
+			}
+			OR = { #Ulan Baatar
+				JAP = { has_full_control_of_state = 330 }
+				any_other_country = {
+					is_in_faction_with = JAP
+					has_full_control_of_state = 330
 				}
 			}
 			OR = { #Irkutsk
