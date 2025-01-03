@@ -61,6 +61,11 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_idea_INS_nv_merbaboe"
+		texturefile = "gfx/interface/ideas/idea_ins_merbaboe.dds"
+	}
+	
+	spriteType = {
 		name = "GFX_idea_INS_nakajima"
 		texturefile = "gfx/interface/ideas/idea_ins_nakajima.dds"
 	}
