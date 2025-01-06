@@ -172,7 +172,7 @@
  holhis_indonesia.14.c:0 "Lambertus Nicodemus Palar, a compromise figure"
  holhis_indonesia.14.d:0 "Mohammad Hoesni Thamrin, the leader of Volksraad"
  holhis_indonesia.14.e:0 "Hubertus Johannes van Mook shall become the Prime Minister!"
- holhis_indonesia.14.f:0 "Abikoesno Tjokrosoeroso, the leader of PSII"
+ holhis_indonesia.14.f:0 "Abikoesno Tjokrosoejoso, the leader of PSII"
 
  holhis_indonesia.15.t:0 "Murk Boerstra Retires"
  holhis_indonesia.15.d:0 "The Commander of Koninklijk Nederlandsch-Indisch Leger, Murk Boerstra, has announced his intention to retire today due to health reasons, as he was a few months past his 55th birthday as for now. The choice for now is on the Governor-General's hand to pick up Boerstra's successor."
@@ -462,7 +462,7 @@
 
  holhis_volksraad.14.t:0 "Death of President Soetomo"
  holhis_volksraad.14.d:0 "Reports has arrived from Soerabaja about the recent death of President Soetomo, leader of our nation and our party Parindra, last night due to liver cancer.\n\n While Woerjaningrat has succeeded him as the party leader, a special convention is being held to elect the next President of [INS.GetNameDef]. By acclamation, we have elected:"
- holhis_volksraad.14.a:0 "Ernst Douwes Dekker"
+ holhis_volksraad.14.a:0 "Ernest Douwes Dekker"
  holhis_volksraad.14.b:0 "Mohammad Hoesni Thamrin"
 
  holhis_volksraad.15.t:0 "Indonesian Rebels Requests Support"
@@ -635,6 +635,7 @@
  holhis_japindo.1.d:0 "With fall of Java, the whole [INS.GetFactionName] effort on this area is shattered completely, and the Indian Ocean is completely open for our continued advance. Several member of Indonesian nationalists groups has presented themselves before the leading invasion forces, clearly seeking collaboration with us, in exchange for us to freely export their riches to fuel our war effort, exactly like what has been our aim since the start."
  holhis_japindo.1.a:0 "Very well, then"
  holhis_japindo.1.b:0 "We must keep our direct control"
+ establishing_japanese_east_indies_tt:0 "§YSouthern Resource Area§! will be established in Java and Sumatra, with Borneo and Eastern Indonesia remained in the Imperial Navy Administration \n§YSouthern Resource Area§! will gain a percentage of [INS.GetAdjective] equipment\n (§YSouthern Resource Area§!):\n Imperial Japanese Navy and Army Joint Government becomes the ruling party.\n§YHitoshi Imamura§! becomes leader for the §YFascist§! party.\n Gains National Spirit §YMinimal Indonesian Resistance§!, which grants (Consumer Goods Factories: §Y5%§!)"
 
  holhis_japindo.2.t:0 "Establishment of Military Occupational Government"
  holhis_japindo.2.d:0 ""
@@ -1048,6 +1049,12 @@
  holhis_navair.6.t:0 "Den Haag refuses to help us"
  holhis_navair.6.d:0 "Our government has refuses to provide us any blueprints to help us establish our own air branch. Despite of that, they has supported us to managed it on our own."
  holhis_navair.6.a:0 "At least they would not hamper our effort"
+
+ holhis_navair.7.t:0 "The Question of NV Merbaboe"
+ holhis_navair.7.d:0 "The recent conflict in China has brought intense conflict in our emerging aircraft industry. It has been an open secret that Khouw Khe Hien, the main funder of Merbaboe Venootschap, is supporting the ruling KMT government against Japan. In the other hand, the vast investments the Japanese made into our economy has make some officials in the government reluctant to cut them out. What shall we do?"
+ holhis_navair.7.a:0 "We can hire another aviation industry"
+ holhis_navair.7.b:0 "We will buy them"
+ INS_merbaboe_quits_flag:0 "§YMerbaboe Venootschap§! has been closed"
 
  holhis_sabotage.1.t:0 "Arms Factory Sabotaged"
  holhis_sabotage.1.d:0 "Reports have come in from one of our factories, reporting that a major fire broke out last night. Local firefighters are still tackling the blaze, but are confident that they will have the fire under control by the end of the day. The damage to the factory appears to be significant, as the fire appears to have started in the storage area for highly flammable chemicals.\n\nMilitary Intelligence has started a thorough investigation to find out how the fire could break out despite the strictest safety measures. First leads indicate arson as a strong possibility."

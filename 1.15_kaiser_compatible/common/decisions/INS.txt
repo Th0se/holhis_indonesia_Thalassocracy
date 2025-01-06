@@ -509,7 +509,14 @@ INS_category_national_projects = {
 		available = {
 			controls_state = 990
 			has_completed_focus = INS_copy_dutch_navair
+			NOT = {
+				has_country_flag = INS_merbaboe_quits_flag
+			}
 			num_of_civilian_factories_available_for_projects > 8
+			custom_trigger_tooltip = {
+				tooltip = INS_controls_bandoeng_tt
+				controls_province = 4608
+			}
 		}
 
 		cost = 135
@@ -524,16 +531,17 @@ INS_category_national_projects = {
 		remove_trigger = {
 			NOT = {
 				custom_trigger_tooltip = {
-					tooltip = INS_bandoeng_tt
+					tooltip = INS_controls_bandoeng_tt
 					controls_province = 4608
 				}
 			}
 		}
 
 		remove_effect = {
+			set_country_flag = INS_merbaboe_established_flag
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = INS_nv_merbaboe
-			
+
 			custom_effect_tooltip = generic_skip_one_line_tt
 			991 = {
 				add_building_construction = {
@@ -566,7 +574,7 @@ INS_category_national_projects = {
 		remove_trigger = {
 			NOT = {
 				custom_trigger_tooltip = {
-					tooltip = INS_bandoeng_tt
+					tooltip = INS_controls_bandoeng_tt
 					controls_province = 7421
 				}
 			}
@@ -604,7 +612,7 @@ INS_category_national_projects = {
 		remove_trigger = {
 			NOT = {
 				custom_trigger_tooltip = {
-					tooltip = INS_soerabaja_tt
+					tooltip = INS_controls_soerabaja_tt
 					controls_province = 4608
 				}
 			}

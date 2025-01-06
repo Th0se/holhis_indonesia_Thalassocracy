@@ -3616,6 +3616,10 @@ focus_tree = {
 					}
 				}
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
+			unlock_decision_tooltip = INS_expand_ai_bandoeng
+
 			add_breakthrough_progress = {
 				specialization = specialization_land
 				value = 0.25
@@ -6120,16 +6124,16 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = -0.075
+			swap_ideas = {
+				remove_idea = INS_nationalism_suppressed
+				add_idea = INS_nationalism_reemergence_1
+			}
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = INS_challenge_elitism_1
 			INS_burden_step_down = yes
 			HOL = {
 				HOL_burden_step_down = yes
-			}
-			swap_ideas = {
-				remove_idea = INS_nationalism_suppressed
-				add_idea = INS_nationalism_reemergence_1
 			}
 			hidden_effect = {
 				if = {
@@ -8044,6 +8048,7 @@ focus_tree = {
 				mission = INS_mission_japanese_aid
 				days = 240
 			}
+			country_event = { id = holhis_navair.7 days = 14 }
 		}
 	}
 
@@ -8273,16 +8278,16 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
-			add_breakthrough_progress = {
-				specialization = specialization_air
-				value = 0.15
-			}
 			add_tech_bonus = {
 				name = Radar_Bonus
 				bonus = 0.5
 				ahead_reduction = 0.5
 				uses = 2
 				category = radar_tech
+			}
+			add_breakthrough_progress = {
+				specialization = specialization_air
+				value = 0.15
 			}
 		}
 	}
@@ -16105,7 +16110,6 @@ focus_tree = {
 			add_breakthrough_progress = {
 				specialization = specialization_naval
 				value = 0.05
-				}					
 			}
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -16270,7 +16274,6 @@ focus_tree = {
 			add_breakthrough_progress = {
 				specialization = specialization_naval
 				value = 0.1
-				}					
 			}
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -16328,7 +16331,6 @@ focus_tree = {
 			add_breakthrough_progress = {
 				specialization = specialization_naval
 				value = 0.1
-				}					
 			}
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -16406,7 +16408,6 @@ focus_tree = {
 			add_breakthrough_progress = {
 				specialization = specialization_naval
 				value = 0.15
-				}					
 			}
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -16459,6 +16460,9 @@ focus_tree = {
 				}
 				set_country_flag = INS_pardi_admiral_flag
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
+			unlock_decision_tooltip = INS_expand_soerabaja_dm
 		}
 	}
 
@@ -16509,7 +16513,6 @@ focus_tree = {
 			add_breakthrough_progress = {
 				specialization = specialization_naval
 				value = 0.1
-				}					
 			}
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -16564,7 +16567,6 @@ focus_tree = {
 			add_breakthrough_progress = {
 				specialization = specialization_naval
 				value = 0.1
-				}					
 			}
 		}
 	}
@@ -16764,7 +16766,6 @@ focus_tree = {
 			add_breakthrough_progress = {
 				specialization = specialization_naval
 				value = 0.1
-				}					
 			}
 		}
 	}
@@ -16904,7 +16905,6 @@ focus_tree = {
 				add_breakthrough_progress = {
 					specialization = specialization_naval
 					value = 0.25
-					}					
 				}
 				swap_ideas = {
 					remove_idea = INS_navy_4_blue
@@ -16961,14 +16961,13 @@ focus_tree = {
 					uses = 3
 					category = naval_air
 				}
-				swap_ideas = {
-					remove_idea = INS_navy_4_green
-					add_idea = INS_navy_5
-				}
 				add_breakthrough_progress = {
 					specialization = specialization_naval
 					value = 0.25
-					}					
+				}
+				swap_ideas = {
+					remove_idea = INS_navy_4_green
+					add_idea = INS_navy_5
 				}
 				add_doctrine_cost_reduction = {
 					name = naval_doc_bonus
@@ -17025,7 +17024,6 @@ focus_tree = {
 				add_breakthrough_progress = {
 					specialization = specialization_naval
 					value = 0.25
-					}					
 				}
 				random_owned_controlled_state = {
 					prioritize = { 990 }
@@ -17092,7 +17090,6 @@ focus_tree = {
 			add_breakthrough_progress = {
 				specialization = specialization_naval
 				value = 0.25
-				}
 			}
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -17483,7 +17480,7 @@ focus_tree = {
 				uses = 2
 				category = cat_strategic_bomber
 			}
-
+			
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_breakthrough_progress = {
 				specialization = specialization_air
@@ -17566,7 +17563,7 @@ focus_tree = {
 				uses = 2
 				category = cas_bomber
 			}
-
+			
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_breakthrough_progress = {
 				specialization = specialization_air
@@ -17645,7 +17642,7 @@ focus_tree = {
 				uses = 2
 				category = tactical_bomber
 			}
-
+			
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_breakthrough_progress = {
 				specialization = specialization_air
@@ -17702,6 +17699,12 @@ focus_tree = {
 				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
+			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_breakthrough_progress = {
+				specialization = specialization_air
+				value = 0.15
 			}
 		}
 
@@ -17770,7 +17773,7 @@ focus_tree = {
 				uses = 1
 				category = air_doctrine
 			}
-
+			
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_breakthrough_progress = {
 				specialization = specialization_air
@@ -17818,7 +17821,7 @@ focus_tree = {
 				uses = 1
 				category = naval_bomber
 			}
-
+			
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_breakthrough_progress = {
 				specialization = specialization_air
@@ -17962,7 +17965,7 @@ focus_tree = {
 				uses = 2
 				category = jet_technology
 			}
-
+			
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_breakthrough_progress = {
 				specialization = specialization_air
@@ -18054,7 +18057,7 @@ focus_tree = {
 					add_mio_funds = 750
 				}
 			}
-
+			
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_breakthrough_progress = {
 				specialization = specialization_air
