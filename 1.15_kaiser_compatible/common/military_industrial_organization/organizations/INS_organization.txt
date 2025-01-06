@@ -46,7 +46,7 @@ INS_soerabaja_dm_organization = {
 	}
 	available = {
 		owner = {
-			controls_state = 973
+			controls_state = 990
 			if = {
 				limit = {
 					OR = {
@@ -131,7 +131,7 @@ INS_koolhoven_organization = {
 	}
 	available = {
 		owner = {
-			controls_state = 972
+			controls_state = 991
 			has_completed_focus = INS_expand_the_airforce
 			OR = {
 				is_subject_of = HOL
@@ -193,7 +193,7 @@ INS_ptdi_organization = {
 	available = {
 		owner = {
 			is_subject = no
-			controls_state = 972
+			controls_state = 991
 		}
 	}
 	visible = {
@@ -312,7 +312,7 @@ INS_artillerie_inrichtingen_organization = {
 	}
 	available = {
 		owner = {
-			controls_state = 972
+			controls_state = 991
 		}
 	}
 	visible = {
