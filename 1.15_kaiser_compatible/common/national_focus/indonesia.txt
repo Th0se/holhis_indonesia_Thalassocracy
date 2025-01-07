@@ -16340,7 +16340,7 @@ focus_tree = {
 				; Fast, lightly armoured BC designed for affordability and firepower.
 				; Probably a CB in some designation.
 				; Designed to outrun and outnumber other heavy capital ships.
-				; What if it's hit? Don't. It's speed and air defence should lower its chance of being struck.
+				; What if it's hit? Don't. Its speed and air defence should lower its chance of being struck.
 				; Otherwise it's the Hood.
 				; This BC is heavy firepower support of the fleet. 
 				; Taking hits and protecting the back line is for cheap, expendable ships.
