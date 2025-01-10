@@ -16345,7 +16345,7 @@ focus_tree = {
 				; This BC is heavy firepower support of the fleet. 
 				; Taking hits and protecting the back line is for cheap, expendable ships.
 				create_equipment_variant = {
-					name = "Jong Class - Pedator Variant"				
+					name = "Jawa Class"				
 					type = ship_hull_heavy_3
 					parent_version = 0
 					modules = {
@@ -16368,7 +16368,7 @@ focus_tree = {
 				; Relatively high air defence to compensate for lack of armour.
 				; Recommendation: bring no fighter. Just bring bombers to end the battle as soon as possible.
 				create_equipment_variant = {
-					name = "Jong Class - Striker Variant."
+					name = "Surabaya Class"
 					type = ship_hull_carrier_2
 					modules = {
 						fixed_ship_deck_slot_1 = ship_deck_space
