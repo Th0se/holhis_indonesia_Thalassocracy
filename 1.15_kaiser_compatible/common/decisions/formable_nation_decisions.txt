@@ -9040,6 +9040,60 @@ form_majapahit_empire_category = {
 				news_event = { id = wtt_news.68 hours = 6 }
 				set_global_flag = form_majapahit_empire_flag
 			}
+
+			if = {
+				limit = {
+					has_completed_focus = INS_dominant_navy
+				}
+				; Fast, lightly armoured BC designed for affordability and firepower.
+				; Probably a CB in some designation.
+				; Designed to outrun and outnumber other heavy capital ships.
+				; What if it's hit? Don't. Its speed and air defence should lower its chance of being struck.
+				; Otherwise it's the Hood.
+				; This BC is heavy firepower support of the fleet. 
+				; Taking hits and protecting the back line is for cheap, expendable ships.
+				create_equipment_variant = {
+					name = "Jawa Class"				
+					type = ship_hull_heavy_3
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = ship_heavy_battery_3  
+						fixed_ship_anti_air_slot = ship_anti_air_3
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+						fixed_ship_radar_slot = ship_radar_3
+						fixed_ship_engine_slot = heavy_ship_engine_3  
+						fixed_ship_armor_slot = ship_armor_bc_1  
+						fixed_ship_secondaries_slot = dp_ship_secondaries_2
+						front_1_custom_slot = ship_heavy_battery_3  
+						mid_1_custom_slot = ship_anti_air_3
+						mid_2_custom_slot = ship_anti_air_3
+						mid_3_custom_slot = ship_anti_air_3  
+						rear_1_custom_slot = ship_heavy_battery_3 
+					}
+				}
+				; Cheap CVL for air support.
+				; Unarmoured because in a well-composed fleet, only aircraft can reach the back line.
+				; Relatively high air defence to compensate for lack of armour.
+				; Recommendation: bring no fighter. Just bring bombers to end the battle as soon as possible.
+				create_equipment_variant = {
+					name = "Surabaya."
+					type = ship_hull_carrier_2
+					modules = {
+						fixed_ship_deck_slot_1 = ship_deck_space
+						fixed_ship_deck_slot_2 = ship_deck_space
+						fixed_ship_anti_air_slot = ship_anti_air_3
+						fixed_ship_engine_slot = carrier_ship_engine_3
+						fixed_ship_secondaries_slot = dp_ship_secondaries_3
+						front_1_custom_slot = ship_anti_air_3
+						mid_1_custom_slot = dp_ship_secondaries_3
+						mid_2_custom_slot = dp_ship_secondaries_2
+						rear_1_custom_slot = dp_ship_secondaries_2
+					}
+				}
+			}
+
+			
+			
 		}
 
 		ai_will_do = {
