@@ -75,7 +75,7 @@ focus_tree = {
 
 	focus = {
 		id = INS_address_malaise
-		icon = GFX_focus_generic_self_management
+		icon = GFX_focus_generic_economic_recovery
 		
 		x = 0
 		y = 0
@@ -589,7 +589,7 @@ focus_tree = {
 
 	focus = {
 		id = INS_expand_merchant_fleet
-		icon = GFX_goal_generic_amphibious_assault
+		icon = GFX_focus_generic_merchant_fleet
 		prerequisite = { focus = INS_increase_sufficiency }
 		prerequisite = { focus = INS_expand_sumatran_industry }
 		
@@ -1152,6 +1152,8 @@ focus_tree = {
 					add_dynamic_modifier = { modifier = early_develop_modif_west }
 				}
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = INS_capital_alternative_available_tt
 		}
 	}
@@ -3677,6 +3679,14 @@ focus_tree = {
 					}
 				}
 			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_tech_bonus = {
+				name = INS_oil_fields
+				bonus = 1.0
+				uses = 1
+				category = synth_resources
+			}
 		}
 	}
 
@@ -3708,6 +3718,14 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = INS_mining_companies
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_tech_bonus = {
+				name = INS_mining_companies
+				bonus = 1.0
+				uses = 2
+				category = excavation_tech
+			}
 		}
 	}
 
@@ -7017,10 +7035,14 @@ focus_tree = {
 				}
 			}
 			INS = {
+				add_ideas = INS_nusantara_accord_ins
+			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
+			INS = {
 				release = EIS
 				release = MLK
 				release = PPA
-				add_ideas = INS_nusantara_accord_ins
 			}
 			if = {
 				limit = {
@@ -7071,6 +7093,8 @@ focus_tree = {
 					}
 				}
 			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_to_tech_sharing_group = INS_NUS_research_group
 			EIS = {
 				add_to_tech_sharing_group = INS_NUS_research_group
@@ -16332,57 +16356,6 @@ focus_tree = {
 				specialization = specialization_naval
 				value = 0.1
 			}
-
-			if = {
-				limit = {
-					has_decision = form_majapahit_empire
-				}
-				; Fast, lightly armoured BC designed for affordability and firepower.
-				; Probably a CB in some designation.
-				; Designed to outrun and outnumber other heavy capital ships.
-				; What if it's hit? Don't. Its speed and air defence should lower its chance of being struck.
-				; Otherwise it's the Hood.
-				; This BC is heavy firepower support of the fleet. 
-				; Taking hits and protecting the back line is for cheap, expendable ships.
-				create_equipment_variant = {
-					name = "Jawa Class"				
-					type = ship_hull_heavy_3
-					parent_version = 0
-					modules = {
-						fixed_ship_battery_slot = ship_heavy_battery_3  
-						fixed_ship_anti_air_slot = ship_anti_air_3
-						fixed_ship_fire_control_system_slot = ship_fire_control_system_2
-						fixed_ship_radar_slot = ship_radar_3
-						fixed_ship_engine_slot = heavy_ship_engine_3  
-						fixed_ship_armor_slot = ship_armor_bc_1  
-						fixed_ship_secondaries_slot = dp_ship_secondaries_2
-						front_1_custom_slot = ship_heavy_battery_3  
-						mid_1_custom_slot = ship_anti_air_3
-						mid_2_custom_slot = ship_anti_air_3
-						mid_3_custom_slot = ship_anti_air_3  
-						rear_1_custom_slot = ship_heavy_battery_3 
-					}
-				}
-				; Cheap CVL for air support.
-				; Unarmoured because in a well-composed fleet, only aircraft can reach the back line.
-				; Relatively high air defence to compensate for lack of armour.
-				; Recommendation: bring no fighter. Just bring bombers to end the battle as soon as possible.
-				create_equipment_variant = {
-					name = "Surabaya Class"
-					type = ship_hull_carrier_2
-					modules = {
-						fixed_ship_deck_slot_1 = ship_deck_space
-						fixed_ship_deck_slot_2 = ship_deck_space
-						fixed_ship_anti_air_slot = ship_anti_air_3
-						fixed_ship_engine_slot = carrier_ship_engine_3
-						fixed_ship_secondaries_slot = dp_ship_secondaries_3
-						front_1_custom_slot = ship_anti_air_3
-						mid_1_custom_slot = dp_ship_secondaries_3
-						mid_2_custom_slot = dp_ship_secondaries_2
-						rear_1_custom_slot = dp_ship_secondaries_2
-					}
-				}
-			}
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
 			991 = {
@@ -16938,88 +16911,42 @@ focus_tree = {
 			navy_experience = 20
 			if = {
 				limit = {
-					has_global_flag = form_majapahit_empire_flag
-					has_idea = INS_navy_4_blue
-				}
-				add_tech_bonus = {
-					name = INS_JUNGS_MAJ
-					bonus = 1
-					uses = 2
-					category = cv_tech
-				}
-				add_tech_bonus = {
-					name = INS_JUNGS_MAJ
-					bonus = 1
-					uses = 3
-					category = naval_air
-				}
-				add_breakthrough_progress = {
-					specialization = specialization_naval
-					value = 0.25
-				}
-				swap_ideas = {
-					remove_idea = INS_navy_4_blue
-					add_idea = INS_navy_5
-				}
-				add_doctrine_cost_reduction = {
-					name = naval_doc_bonus
-					cost_reduction = 0.5
-					uses = 2
-					category = naval_doctrine
-				}
-				random_owned_controlled_state = {
-					prioritize = { 335 }
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = dockyard
-						level = 1
-						instant_build = yes
-					}
-				}
-				random_owned_controlled_state = {
-					prioritize = { 990 }
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = dockyard
-						level = 1
-						instant_build = yes
-					}
-				}
-				random_owned_controlled_state = {
-					prioritize = { 672 }
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = dockyard
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					has_global_flag = form_majapahit_empire_flag
 					has_idea = INS_navy_4_green
-				}
-				add_tech_bonus = {
-					name = INS_JUNGS_MAJ
-					bonus = 1
-					uses = 2
-					category = cv_tech
-				}
-				add_tech_bonus = {
-					name = INS_JUNGS_MAJ
-					bonus = 1
-					uses = 3
-					category = naval_air
-				}
-				add_breakthrough_progress = {
-					specialization = specialization_naval
-					value = 0.25
 				}
 				swap_ideas = {
 					remove_idea = INS_navy_4_green
 					add_idea = INS_navy_5
 				}
+			}
+			else_if = {
+				limit = {
+					has_idea = INS_navy_4_blue
+				}
+				swap_ideas = {
+					remove_idea = INS_navy_4_blue
+					add_idea = INS_navy_5
+				}
+			}
+			if = {
+				limit = {
+					has_global_flag = form_majapahit_empire_flag
+				}
+				add_tech_bonus = {
+					name = INS_JUNGS_MAJ
+					bonus = 1
+					uses = 2
+					category = cv_tech
+				}
+				add_tech_bonus = {
+					name = INS_JUNGS_MAJ
+					bonus = 1
+					uses = 3
+					category = naval_air
+				}
+				add_breakthrough_progress = {
+					specialization = specialization_naval
+					value = 0.25
+				}
 				add_doctrine_cost_reduction = {
 					name = naval_doc_bonus
 					cost_reduction = 0.5
@@ -17051,6 +16978,40 @@ focus_tree = {
 						type = dockyard
 						level = 1
 						instant_build = yes
+					}
+				}
+				create_equipment_variant = {		
+					name = "Soerabaja Class"		
+					type = ship_hull_heavy_3
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = ship_heavy_battery_3  
+						fixed_ship_anti_air_slot = ship_anti_air_3
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+						fixed_ship_radar_slot = ship_radar_3
+						fixed_ship_engine_slot = heavy_ship_engine_3  
+						fixed_ship_armor_slot = ship_armor_bc_1  
+						fixed_ship_secondaries_slot = dp_ship_secondaries_2
+						front_1_custom_slot = ship_heavy_battery_3  
+						mid_1_custom_slot = ship_anti_air_3
+						mid_2_custom_slot = ship_anti_air_3
+						mid_3_custom_slot = ship_anti_air_3  
+						rear_1_custom_slot = ship_heavy_battery_3 
+					}
+				}
+				create_equipment_variant = {
+					name = "Jawa Class"
+					type = ship_hull_carrier_2
+					modules = {
+						fixed_ship_deck_slot_1 = ship_deck_space
+						fixed_ship_deck_slot_2 = ship_deck_space
+						fixed_ship_anti_air_slot = ship_anti_air_3
+						fixed_ship_engine_slot = carrier_ship_engine_3
+						fixed_ship_secondaries_slot = dp_ship_secondaries_3
+						front_1_custom_slot = ship_anti_air_3
+						mid_1_custom_slot = dp_ship_secondaries_3
+						mid_2_custom_slot = dp_ship_secondaries_2
+						rear_1_custom_slot = dp_ship_secondaries_2
 					}
 				}
 			}
@@ -17455,7 +17416,7 @@ focus_tree = {
 				category = light_fighter
 			}
 			add_tech_bonus = {
-				name = hevay_fighter_bonus
+				name = heavy_fighter_bonus
 				bonus = 0.5
 				uses = 2
 				category = cat_heavy_fighter
@@ -17569,6 +17530,8 @@ focus_tree = {
 
 		completion_reward = {
 			air_experience = 10
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
 					has_idea = INS_airforce_4_offense_fighter
@@ -17648,6 +17611,8 @@ focus_tree = {
 
 		completion_reward = {
 			air_experience = 10
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
 					has_idea = INS_airforce_4_offense_bomber
@@ -18132,7 +18097,7 @@ focus_tree = {
 		icon = GFX_goal_generic_intelligence_exchange
 
 		relative_position_id = INS_continue_reform
-		x = 7
+		x = 8
 		y = 0
 
 		offset = {
@@ -18278,7 +18243,7 @@ focus_tree = {
 
 	focus = {
 		id = INS_evacuation
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_focus_generic_government_in_exile
 		prerequisite = { focus = INS_build_exile_port }
 		
 		relative_position_id = INS_build_exile_port
@@ -18586,9 +18551,15 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			set_party_name = {
+				ideology = communism
+				long_name = INS_sibar_long
+				name = INS_sibar
+			}
+			add_manpower = 10000
 			add_popularity = {
 				ideology = communism
-				popularity = 0.05
+				popularity = 0.1
 			}
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -19108,6 +19079,92 @@ focus_tree = {
 			    type = infantry_equipment
 			    amount = 2500
 			    producer = INS
+			}
+		}
+	}
+
+	focus = {
+		id = INS_papuan_auxiliaries
+		icon = GFX_focus_ins_sahul
+		prerequisite = { focus = INS_support_pki_exile }
+		
+		relative_position_id = INS_support_pki_exile
+		x = -1
+		y = 1
+
+		cost = 5
+
+		available = {
+			has_legitimacy > 60
+			OR = {
+				669 = {
+					controller = {
+						OR = {
+							tag = ROOT
+							is_subject_of = ROOT
+						}
+						has_full_control_of_state = PREV
+					}
+				}
+				983 = {
+					controller = {
+						OR = {
+							tag = ROOT
+							is_subject_of = ROOT
+						}
+						has_full_control_of_state = PREV
+					}
+				}
+				982 = {
+					controller = {
+						OR = {
+							tag = ROOT
+							is_subject_of = ROOT
+						}
+						has_full_control_of_state = PREV
+					}
+				}
+			}
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			add_stability = -0.05
+			add_ideas = HOL_expand_the_colonial_army
+			if = {
+				limit = {
+					has_full_control_of_state = 669
+				}
+				669 = {
+					add_dynamic_modifier = { modifier = INS_expand_recruitment }
+				}
+			}
+			if = {
+				limit = {
+					has_full_control_of_state = 983
+				}
+				983 = {
+					add_dynamic_modifier = { modifier = INS_expand_recruitment }
+				}
+			}
+			if = {
+				limit = {
+					has_full_control_of_state = 982
+				}
+				982 = {
+					add_dynamic_modifier = { modifier = INS_expand_recruitment }
+				}
 			}
 		}
 	}

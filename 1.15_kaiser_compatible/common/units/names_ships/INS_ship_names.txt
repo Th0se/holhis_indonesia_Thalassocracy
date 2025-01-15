@@ -127,7 +127,7 @@ INS_CA_HISTORICAL = {
 	fallback_name = "KRI 6%d"
 
 	unique = { #Volcanoes with VEI 4 and above
-		"Toeba" "Krakataoe" "Tambora" "Samalas" "Agoeng" "Galoenggoeng" "Keloed" "Merapi" "Colo"
+		"Toba" "Krakataoe" "Tambora" "Samalas" "Agoeng" "Galoenggoeng" "Keloed" "Merapi" "Tjolo"
 	}
 }
 
@@ -196,8 +196,8 @@ INS_HEROES = {
 	fallback_name = "KRI 2%d"					
 
 	unique = { #National Heroes, cutting the post-1930s national heroes
-		"Diponegoro" "Soeltan Hasanoeddin" "Iskandar Moeda" "Fatahillah" "Malahajati" "Lemboe Nala" "Kapitan Pattimura" "Antasari" 
-		"Oentoeng Soeropati" "Soeltan Noekoe" "Lamboeng Mangkoerat" "Tjoet Njak Dien" "Thaha Sjaifoedin" "Imam Bondjol" "Teoekoe Oemar"
+		"Pangeran Diponegoro" "Sultan Hasanoeddin" "Sultan Iskandar Moeda" "Sultan Fatahillah" "Malahajati" "Lemboe Nala" "Kapitan Pattimura" "Pangeran Antasari" 
+		"Oentoeng Soeropati" "Sultan Noekoe" "Lamboeng Mangkoerat" "Tjoet Njak Dien" "Thaha Sjaifoedin" "Imam Bondjol" "Teoekoe Oemar"
 	}
 }
 

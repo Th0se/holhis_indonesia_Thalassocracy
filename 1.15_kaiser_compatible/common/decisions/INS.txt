@@ -85,10 +85,10 @@ INS_category_volksraad = {
 		available = {
 			has_war = yes
 			compare_autonomy_state > autonomy_integrated_puppet
-			has_idea = INS_hubertus_van_mook
 		}
 
 		visible = {
+			has_idea = INS_hubertus_van_mook
 			INS_hubertus_van_mook = {
 				NOT = {
 					has_trait = lieutenant_govgen_van_mook
@@ -320,7 +320,6 @@ INS_category_volksraad = {
 
 		available = {
 			num_of_civilian_factories_available_for_projects > 2
-			has_war_support > 0.1
 			has_war_support > 0.35
 		}
 
@@ -2697,6 +2696,18 @@ INS_category_ethical_policies = {
 		}
 
 		complete_effect = {
+			random_owned_state = { #reduce population at Java
+				limit = {
+					is_core_of = ROOT
+					is_fully_controlled_by = ROOT
+					OR = {
+						state = 335
+						state = 991
+						state = 990
+					}
+				}
+				add_manpower = -7500
+			}
 			if = {
 				limit = {
 					NOT = {
@@ -2719,18 +2730,6 @@ INS_category_ethical_policies = {
 		}
 
 		remove_effect = {
-			random_owned_state = { #reduce population at Java
-				limit = {
-					is_core_of = ROOT
-					is_fully_controlled_by = ROOT
-					OR = {
-						state = 335
-						state = 991
-						state = 990
-					}
-				}
-				add_manpower = -7500
-			}
 			random_owned_state = {
 				limit = {
 					is_fully_controlled_by = ROOT
@@ -2982,6 +2981,7 @@ INS_category_ethical_policies = {
 				}
 				custom_trigger_tooltip = {
 					tooltip = INS_agrarian_reforms_1
+					has_country_flag = INS_agrarian_reforms_1_flag
 					has_country_flag = INS_education_1_done_flag
 					has_country_flag = INS_agriculture_1_done_flag
 					has_country_flag = INS_transmigration_1_done_flag
@@ -2993,6 +2993,7 @@ INS_category_ethical_policies = {
 					}
 					custom_trigger_tooltip = {
 						tooltip = INS_agrarian_reforms_2
+						has_country_flag = INS_agrarian_reforms_2_flag
 						has_country_flag = INS_education_2_done_flag
 						has_country_flag = INS_agriculture_2_done_flag
 						has_country_flag = INS_transmigration_2_done_flag
@@ -3032,24 +3033,24 @@ INS_category_ethical_policies = {
 			if = {
 				limit = {
 					has_idea = INS_agrarian_society_1
-					has_country_flag = INS_agrarian_reforms_1
+					has_country_flag = INS_agrarian_reforms_1_flag
 				}
 				swap_ideas = {
 					remove_idea = INS_agrarian_society_1
 					add_idea = INS_agrarian_society_2
 				}
-				clr_country_flag = INS_agrarian_reforms_1
+				clr_country_flag = INS_agrarian_reforms_1_flag
 			}
 			if = {
 				limit = {
 					has_idea = INS_agrarian_society_2
-					has_country_flag = INS_agrarian_reforms_2
+					has_country_flag = INS_agrarian_reforms_2_flag
 				}
 				swap_ideas = {
 					remove_idea = INS_agrarian_society_2
 					add_idea = INS_agrarian_society_3
 				}
-				clr_country_flag = INS_agrarian_reforms_2
+				clr_country_flag = INS_agrarian_reforms_2_flag
 			}
 		}
 	}
@@ -4194,20 +4195,11 @@ INS_pacification_campaigns = {
 		target_trigger = {
 			FROM = {
 				OR = {
-					state = 286
-					state = 1008
-					state = 741
-					state = 1007
-					state = 1009
-					state = 1012
-					state = 1013
-					state = 1010
-					state = 1011
-					state = 1014
-					state = 670
-					state = 1015
-					state = 671
-					state = 1016
+					is_core_of = SIA
+					is_core_of = BRM
+					is_core_of = VIN
+					is_core_of = LAO
+					is_core_of = CAM
 				}
 			}
 		}
@@ -5280,7 +5272,7 @@ INS_category_armament_procurement = {
 		icon = generic_tank
 
 		allowed = { original_tag = INS } #Activated from effect
-
+		
 		available = {
 			USA = {
 				has_opinion = {
@@ -5299,7 +5291,7 @@ INS_category_armament_procurement = {
 			NOT = { has_war_with = USA }
 			NOT = { is_justifying_wargoal_against = USA }
 		}
-
+		
 		visible = {
 			country_exists = USA
 			NOT = { has_war_with = USA }
@@ -5324,7 +5316,7 @@ INS_category_armament_procurement = {
 		days_remove = 75
 		days_re_enable = 75
 		fire_only_once = no
-
+		
 		ai_will_do = {
 			factor = 0.1
 			modifier = {
@@ -6052,6 +6044,61 @@ INS_category_netherlands_indies_intelligence_service = {
 				factor = 0
 				has_legitimacy > 90
 			}
+		}
+	}
+
+	INS_papuan_auxiliaries = {
+
+		icon = eng_blackshirt_march
+
+		allowed = {
+			original_tag = HOL
+		}
+
+		state_target = yes
+
+		target_trigger = {
+			FROM = {
+				region = 167
+				is_fully_controlled_by = ROOT
+			}
+		}
+
+		available = {
+		}
+
+		visible = {
+			has_completed_focus = INS_papuan_auxiliaries
+			FROM = {
+				NOT = {
+					has_dynamic_modifier = { modifier = INS_expand_recruitment }
+				}
+			}
+		}
+
+		on_map_mode = map_only
+
+		days_remove = 60
+
+		complete_effect = {
+			random_list = {
+				25 = {
+					add_stability = -0.01
+					add_popularity = { ideology = communism popularity = 0.03 }
+				}
+				50 = {
+					add_stability = -0.025
+					add_popularity = { ideology = communism popularity = 0.02 }
+				}
+				25 = {
+					add_stability = -0.03
+					add_popularity = { ideology = communism popularity = 0.01 }
+				}
+			}
+		}
+
+		remove_effect = {
+			FROM = { add_dynamic_modifier = { modifier = INS_expand_recruitment } }
 		}
 	}
 }
