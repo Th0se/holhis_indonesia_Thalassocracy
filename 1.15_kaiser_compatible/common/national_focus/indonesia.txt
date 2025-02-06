@@ -75,7 +75,7 @@ focus_tree = {
 
 	focus = {
 		id = INS_address_malaise
-		icon = GFX_focus_generic_economic_recovery
+		icon = GFX_focus_generic_self_management
 		
 		x = 0
 		y = 0
@@ -648,7 +648,7 @@ focus_tree = {
 
 	focus = {
 		id = INS_end_malaise
-		icon = GFX_focus_generic_east_indies
+		icon = GFX_focus_generic_economic_recovery
 		prerequisite = { focus = INS_increase_sufficiency }
 		prerequisite = { focus = INS_expand_javan_railroads }
 		prerequisite = { focus = INS_expand_sumatran_industry }
@@ -4132,9 +4132,8 @@ focus_tree = {
 				}
 				add_tech_bonus = {
 					name = nuclear_bonus
-					ahead_reduction = 0.5
-					bonus = 0.5
-					uses = 2
+					bonus = 0.75
+					uses = 1
 					category = nuclear
 				}
 			}
@@ -4336,6 +4335,8 @@ focus_tree = {
 				remove_idea = INS_knil_incompetence_locals_1
 				add_idea = INS_knil_incompetence_locals_2
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
 					has_completed_focus = INS_reestablish_royal_houses
@@ -4515,8 +4516,6 @@ focus_tree = {
 					ruling_only = yes
 				}
 			}
-			has_global_flag = trotsky_exile_mexico
-			has_global_flag = AAT_trotsky_in_mexico
 		}
 
 		bypass = {
@@ -4577,6 +4576,8 @@ focus_tree = {
 				remove_idea = INS_knil_incompetence_locals_3
 				add_idea = INS_knil_incompetence_commie_1
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			every_army_leader = {
 				random_list = {
 					10 = {
@@ -4789,6 +4790,14 @@ focus_tree = {
 			add_political_power = -75
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
+			add_doctrine_cost_reduction = {
+				name = Focus
+				cost_reduction = 0.5
+				uses = 2
+				category = cat_mass_assault
+			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = INS_knil_incompetence_locals_2
 				add_idea = INS_knil_incompetence_locals_3
@@ -4823,6 +4832,14 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = INS_quantity_over_quality
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_doctrine_cost_reduction = {
+				name = Focus
+				cost_reduction = 0.5
+				uses = 1
+				category = cat_mass_assault
+			}
 		}
 	}
 
@@ -4930,6 +4947,8 @@ focus_tree = {
 					}
 				}
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = { has_idea = INS_knil_incompetence_locals_3 }
 				swap_ideas = {
@@ -5258,6 +5277,8 @@ focus_tree = {
 				remove_idea = INS_knil_incompetence_parades_1
 				add_idea = INS_knil_incompetence_parades_2
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_corps_commander_role = {
 				character = INS_statius_muller
 				traits = { }
@@ -5526,6 +5547,8 @@ focus_tree = {
 				remove_idea = INS_knil_incompetence_parades_3
 				add_idea = INS_knil_incompetence_parades_4
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_corps_commander_role = {
 				character = INS_pesman
 				traits = { }
@@ -6771,8 +6794,8 @@ focus_tree = {
 			}
 			compare_autonomy_progress_ratio > 0.4
 			democratic > 0.35
-			fascism < 0.05
-			communism < 0.05
+			fascism < 0.1
+			communism < 0.1
 			OR = {
 				AND = {
 					has_war = no
@@ -7482,7 +7505,7 @@ focus_tree = {
 				has_war_with = JAP
 				JAP = { exists = no }
 				JAP = { has_government = democratic }
-			}	
+			}
 			NOT = {
 				OR = {
 					has_government = communism
@@ -7643,6 +7666,8 @@ focus_tree = {
 					value = 100
 				}
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			random_owned_controlled_state = {
 				limit = {
 					is_in_home_area = yes
@@ -7671,6 +7696,8 @@ focus_tree = {
 					mark_focus_tree_layout_dirty = yes
 				}
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = INS_frederik_de_hoog
 		}
@@ -7801,6 +7828,8 @@ focus_tree = {
 				remove_idea = INS_loyalty
 				add_idea = INS_loyalty_conditional
 			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = INS_soetardjo_kartohadikoesoemo
 			show_ideas_tooltip = INS_samuel_ratulangi
@@ -8241,6 +8270,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_war_support = 0.1
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			991 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -8273,6 +8304,8 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_breakthrough_progress = {
 				specialization = specialization_land
 				value = 0.2
@@ -8637,6 +8670,8 @@ focus_tree = {
 			HOL = {
 				HOL_burden_step_down = yes
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
 					is_subject_of = HOL
@@ -8645,6 +8680,8 @@ focus_tree = {
 					value = -0.1
 				}
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_resource = {
 				type = steel
 				amount = 8
@@ -8800,11 +8837,13 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_TFV_AUTONOMY FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
+			add_stability = 0.075
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			INS_burden_step_down = yes
 			HOL = {
 				HOL_burden_step_down = yes
 			}
-			add_stability = 0.075
 			set_party_name = {
 				ideology = neutrality
 				long_name = DFS_neutrality_party_long
@@ -8814,6 +8853,8 @@ focus_tree = {
 				set_country_flag = INS_pen_and_paper
 				news_event = { id = insnews.5 }
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = INS_reforms
 				add_idea = INS_reforms_democratic
@@ -8855,11 +8896,15 @@ focus_tree = {
 
 		completion_reward = {
 			add_war_support = 0.05
+			add_political_power = 50
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			INS_burden_step_down = yes
 			HOL = {
 				HOL_burden_step_down = yes
 			}
-			add_political_power = 50
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = INS_into_future_tt
 			if = {
 				limit = {
@@ -8938,7 +8983,7 @@ focus_tree = {
 
 		cost = 5
 		
-		search_filters = { FOCUS_FILTER_INDUSTRY }
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
 			335 = {
@@ -9662,6 +9707,8 @@ focus_tree = {
 			add_autonomy_ratio = {
 				value = 0.2
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = INS_reforms
 				add_idea = INS_reforms_halted
@@ -10255,6 +10302,8 @@ focus_tree = {
 				}
 				add_ideas = volunteer_only
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
 					has_idea = partial_economic_mobilisation
@@ -14809,6 +14858,24 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					is_core_of = INS
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -15678,6 +15745,7 @@ focus_tree = {
 						original_tag = BHU
 						original_tag = PAK
 						original_tag = DRV
+						original_tag = SRL
 					}
 					exists = yes
 				}
@@ -16830,56 +16898,56 @@ focus_tree = {
 			air_experience = 10
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
-			335 = {			
+			335 = {
 				add_building_construction = {
 					type = air_base
 					level = 2
 					instant_build = yes
 				}
 			}
-			672 = {			
+			672 = {
 				add_building_construction = {
 					type = air_base
 					level = 2
 					instant_build = yes
 				}
 			}
-			673 = {			
+			673 = {
 				add_building_construction = {
 					type = air_base
 					level = 2
 					instant_build = yes
 				}
 			}
-			334 = {			
+			334 = {
 				add_building_construction = {
 					type = air_base
 					level = 1
 					instant_build = yes
 				}
 			}
-			667 = {			
+			667 = {
 				add_building_construction = {
 					type = air_base
 					level = 1
 					instant_build = yes
 				}
 			}
-			668 = {			
+			668 = {
 				add_building_construction = {
 					type = air_base
 					level = 1
 					instant_build = yes
 				}
 			}
-			738 = {			
+			738 = {
 				add_building_construction = {
 					type = air_base
 					level = 1
 					instant_build = yes
 				}
 			}
-			669 = {			
+			669 = {
 				add_building_construction = {
 					type = air_base
 					level = 1
@@ -17225,7 +17293,6 @@ focus_tree = {
 				country_event = { id = holhis_navair.4 days = 1 }
 				custom_effect_tooltip = needs_approval
 			}
-			
 		}
 	}
 
@@ -17692,6 +17759,8 @@ focus_tree = {
 
 		complete_tooltip = {
 			air_experience = 25
+
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
 					has_country_flag = aviation_effort_2_AB
@@ -17726,6 +17795,8 @@ focus_tree = {
 
 		completion_reward = {
 			air_experience = 25
+
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
 					capital_scope = {
