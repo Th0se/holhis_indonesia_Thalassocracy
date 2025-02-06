@@ -862,7 +862,7 @@ characters = {
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = INS_soekardjo
+			idea_token = INS_soekardjo_wirjopranoto
 			allowed = {
 				original_tag = INS
 			}
@@ -873,10 +873,9 @@ characters = {
 				}
 			}
 			visible = {
-				has_country_flag = INS_thamrin_died
 			}
 			traits = {
-				parindra_leader
+				national_propagandist
 			}
 			ai_will_do = {
 				base = 20

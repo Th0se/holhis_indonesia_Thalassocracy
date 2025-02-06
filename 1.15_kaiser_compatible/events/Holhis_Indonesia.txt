@@ -4910,25 +4910,14 @@ country_event = { #290 - Hidden effect to setup the historical Japanese occupati
 		is_in_faction_with = HOL
 		HOL = { has_war_with = JAP }
 		surrender_progress > 0.7
-		JAP = { #only fascism or neutrality
+		JAP = { #only fascism or neutrality, don't fire if Japan is almost capitulated
 			has_country_leader = {
-				name = "Hirohito"
+				character = JAP_hirohito
 				ruling_only = yes
 			}
+			surrender_progress < 0.4
 		}
-		has_civil_war = no
-		#Don't fire if Japan is almost capitulated
-		NOT = {
-			any_state = {
-				is_on_continent = asia
-				NOT = { state = 282 }
-				NOT = { state = 528 }
-				NOT = { state = 529 }
-				NOT = { state = 531 }
-				is_controlled_by = ROOT
-				is_owned_by = JAP
-			}
-		}		
+		has_civil_war = no	
 
 		#Don't fire if Surabaya, Medan, Manado, and Balikpapan are still secured
 		NOT = {
@@ -4997,7 +4986,7 @@ country_event = { #29 - Fall of the East Indies
 				is_historical_focus_on = yes
 			}
 		}
-		trigger = { has_war_support > 0.7 }
+		trigger = { has_war_support > 0.9 }
 		add_stability = -0.05
 	}
 }
