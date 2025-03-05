@@ -1,0 +1,772 @@
+characters={
+	INS_bonifacius_de_jonge = {
+		name = INS_bonifacius_de_jonge
+		portraits = {
+			civilian = {
+				large= "gfx/leaders/INS/portrait_ins_bonifacius_de_jonge.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = {
+				disdain_for_politicians_1
+			}
+			expire="1958.1.1.1"
+			id=-1
+		}
+	}
+
+	INS_a_t_van_starkenborgh_stachouwer = {
+		name = INS_a_t_van_starkenborgh_stachouwer
+		portraits = {
+			army = {
+				small = "gfx/ideas/INS/idea_ins_tjarda_stachouwer.dds"
+			}
+			civilian = {
+				large = "GFX_portrait_indonesia_at_van_starkenborgh"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = INS_a_t_van_starkenborgh_stachouwer_lieutenant
+			available = {
+				OR = {
+					has_government = neutrality 
+					has_government = democratic
+				}
+				has_country_leader = {
+					name = "Hubertus van Mook"
+					ruling_only = yes 
+				}
+			}
+			visible = {
+				has_country_leader = {
+					name = "Hubertus van Mook"
+					ruling_only = yes 
+				}
+			}
+			allowed  = {
+				original_tag = INS
+				has_dlc = "Man the Guns"
+			}
+			traits  = {
+				smooth_talking_charmer
+			}
+		}
+		country_leader={
+			ideology = moderatism
+			traits = {
+				binnenlands_bestuurder
+			}
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	INS_hubertus_van_mook = {
+		name = INS_hubertus_van_mook
+		portraits = {
+			army = {
+				small = "gfx/ideas/INS/idea_ins_van_mook.dds"
+			}
+			civilian = {
+				large = "gfx/leaders/INS/portrait_ins_hubertus_van_mook.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = INS_hubertus_van_mook_lieutenant
+			available  = {
+				OR = {
+					has_government = neutrality 
+					has_government = democratic
+				}
+				has_country_leader = {
+					name = "A. T. van Starkenborgh Stachouwer"
+					ruling_only  = yes 
+				}
+			}
+			visible = {
+				has_country_leader = {
+					name = "A. T. van Starkenborgh Stachouwer"
+					ruling_only = yes 
+				}
+			}
+			allowed = {
+				original_tag = INS
+				has_dlc = "Man the Guns"
+			}
+			traits = {
+				economic_organizer
+			}
+		}
+		country_leader={
+			ideology = centrism
+			traits = {
+				tenacious_negotiator
+			}
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+
+	INS_soekarno = {
+		name = INS_soekarno
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/INS/portrait_ins_soekarno.dds"
+			}
+		}
+		country_leader = {
+			ideology = socialism
+			traits = {
+				nationalist_symbol
+			}
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+
+	INS_tan_malaka = {
+		name = INS_tan_malaka
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/INS/portrait_ins_tan_malaka.dds"
+			}
+		}
+		country_leader = {
+			ideology = leninism
+			traits = {
+				marxist_philosopher
+			}
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	INS_muso_munawar = {
+		name = INS_muso_munawar
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/INS/portrait_ins_muso_munawar.dds"
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			traits = {
+				staunch_stalinist
+			}
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	INS_amir_syarifuddin = {
+		name = "Amir Syarifuddin Harahap"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/INS/portrait_ins_amir_syarifuddin.dds"
+			}
+			army = {
+				small = "gfx/ideas/INS/idea_ins_amir_syarifuddin.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = {
+				patriotic_socialist
+			}
+			expire="1965.1.1.1"
+			id=-1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = "Amir Syarifuddin Harahap"
+			allowed = {
+				original_tag = INS
+			}
+			available = {
+				INS = {
+					NOT = {
+						has_autonomy_state = autonomy_supervised_state
+					}
+				}
+			}
+			traits = {
+				communist_revolutionary
+			}
+		}
+	}
+
+	INS_mohammad_husni_thamrin = {
+		name = INS_mohammad_husni_thamrin
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/INS/portrait_ins_thamrin.dds"
+			}
+			army = {
+				small = "gfx/ideas/INS/idea_ins_thamrin.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = INS_mohammad_husni_thamrin
+			allowed = {
+				original_tag = INS
+			}
+			available  = {
+				NOT = {
+					has_autonomy_state = autonomy_supervised_state
+				}
+			}
+			traits = {
+				democratic_reformer
+			}
+			ai_will_do  = {
+				base = 20
+				modifier = {
+					has_country_leader = {
+						name = "Sukarno"
+						ruling_only = yes 
+					}
+					factor  = 10
+				}
+			}
+		}
+	}
+
+	INS_soepomo = {
+		name = INS_soepomo
+		portraits = {
+			army = {
+				small = "gfx/ideas/INS/idea_ins_supomo.dds"
+			}
+			civilian = {
+				large = "gfx/leaders/INS/portrait_ins_soepomo.dds"
+			}
+		}
+		country_leader = {
+			ideology = rexism
+			traits = {
+				headstrong
+			}
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = INS_soepomo
+			allowed = {
+				original_tag = INS
+			}
+			available  = {
+				NOT = {
+					has_autonomy_state = autonomy_supervised_state
+				}
+			}
+			traits = {
+				fascist_demagogue
+				the_statist
+			}
+			ai_will_do  = {
+				base = 20
+				modifier = {
+					has_country_leader = {
+						name = "Sukarno"
+						ruling_only = yes 
+					}
+					factor  = 10
+				}
+			}
+		}
+	}
+
+	INS_mohammad_hatta = {
+		name = INS_mohammad_hatta
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/INS/portrait_ins_mohammad_hatta.dds"
+			}
+		}
+		country_leader = {
+			ideology = centrism
+			traits = {
+				economic_reformer
+			}
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+
+	INS_george_hart = {
+		name = INS_george_hart
+		portraits = {
+			army = {
+				small = "gfx/ideas/INS/idea_ins_george_hart.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = INS_george_hart
+			allowed = {
+				OR = {
+					original_tag = INS
+					original_tag = HOL
+				}
+			}
+			available  = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			visible = {
+			}
+			traits = {
+				captain_of_industry
+			}
+			ai_will_do  = {
+				base = 20
+			}
+			cost = 125
+		}
+	}
+
+	INS_nicodemus_palar = {
+		name = "Lambertus Nicodemus Palar"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/INS/portrait_ins_nicodemus_palar.dds"
+			}
+			army = {
+				small = "gfx/ideas/INS/idea_ins_nicodemus_palar.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = INS_nicodemus_palar
+			allowed = {
+				OR = {
+					original_tag = HOL #Palar starts here
+					original_tag = EIS
+				}
+				has_dlc = "Man the Guns"
+			}
+			available = {
+				if = {
+					limit = { tag = INS }
+					OR = {
+						HOL = {
+							has_completed_focus = HOL_liberation
+						}
+						is_subject = no
+					}
+				}
+				if = {
+					limit = { tag = HOL }
+					has_completed_focus = HOL_continue_the_war_in_batavia
+					NOT = {
+						INS = { is_subject_of = HOL }
+					}
+				}
+			}
+			traits = {
+				compassionate_gentleman 
+			}
+			ai_will_do  = {
+				base = 20
+				modifier = {
+					has_country_leader = {
+						name = "Soekarno"
+						ruling_only = yes 
+					}
+					factor  = 10
+				}
+			}
+		}
+		country_leader = {
+			ideology = socialism
+			expire = "1981.2.13"
+			traits = {
+				headstrong
+			}
+		}
+	}
+
+	INS_sk_trimurti = {
+		name = INS_sk_trimurti
+		portraits = {
+			army = {
+				small = "gfx/ideas/INS/idea_ins_sk_trimurti.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = INS_sk_trimurti
+			allowed = {
+				original_tag = INS
+				has_dlc = "Man the Guns"
+			}
+			available  = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			visible = {
+				has_country_flag = INS_de_jonge_resigned
+			}
+			traits = {
+				independent_journalist
+			}
+			ai_will_do = {
+				factor = 0.000
+			}
+		}
+	}
+
+	INS_hamengkubuwono_eighth = {
+		name = INS_hamengkubuwono_eighth
+		portraits = {
+			army = {
+				small = "gfx/ideas/INS/idea_ins_hamengkubuwono_eighth.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = INS_hamengkubuwono_eighth
+			allowed = {
+				original_tag = INS
+				has_dlc = "Man the Guns"
+			}
+			available  = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			visible = {
+				has_country_leader = {
+					name = "Hubertus van Mook"
+					ruling_only = yes 
+				}
+				NOT = {
+					has_country_flag = INS_hamengkubuwono_viii_passed
+				}
+			}
+			traits = {
+				sultan_of_yogyakarta_1
+			}
+		}
+	}
+	
+	INS_hamengkubuwono_ninth = {
+		name = INS_hamengkubuwono_ninth
+		portraits = {
+			army = {
+				small = "gfx/ideas/INS/idea_ins_hamengkubuwono_ninth.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = INS_hamengkubuwono_ninth
+			allowed = {
+				original_tag = INS
+				has_dlc = "Man the Guns"
+			}
+			available  = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			visible = {
+				has_country_flag = INS_hamengkubuwono_viii_passed
+			}
+			traits = {
+				sultan_of_yogyakarta_2
+			}
+		}
+	}
+
+	INS_murk_boerstra = {
+		name = "Murk Boerstra"
+		portraits = {
+			army = {
+				large = "gfx/leaders/INS/portrait_ins_murk_boerstra.dds"
+				small = "gfx/ideas/INS/idea_ins_murk_boerstra.dds"
+			}
+		}
+		field_marshal = {
+			traits = { logistics_wizard inspirational_leader }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+		advisor = {
+			slot = high_command
+			idea_token = "Murk Boerstra"
+			ledger = army
+			allowed = {
+				original_tag = INS
+			}
+			traits = {
+				army_logistics_2
+			}
+			cost = 100
+		}
+	}
+
+	INS_ferwerda = {
+		name = INS_ferwerda
+		portraits = {
+			army = {
+				large = "gfx/leaders/INS/portrait_ins_ferwerda.dds"
+				small = "gfx/ideas/INS/idea_ins_ferwerda.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = INS_ferwerda
+			ledger = navy
+			allowed = {
+				original_tag = INS
+			}
+			traits = {
+				navy_naval_air_defense_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.100
+			}
+		}
+		navy_leader = {
+			traits = { blockade_runner fly_swatter }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			maneuvering_skill = 3
+			coordination_skill = 2
+			legacy_id = -1
+		}
+	}
+
+	INS_berenschot = {
+		name = "Gerardus Berenschot"
+		portraits = {
+			army = {
+				large = "gfx/leaders/INS/portrait_ins_berenschot.dds"
+				small = "gfx/ideas/INS/idea_ins_berenschot.dds"
+			}
+		}
+		corps_commander = {
+			traits = { logistics_wizard }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+		}
+		advisor={
+			slot = army_chief
+			idea_token = "Gerardus Berenschot"
+			allowed = {
+				original_tag = INS
+			}
+			traits = {
+				army_chief_organizational_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	INS_hein_ter_poorten={
+		name = HOL_hein_ter_poorten
+		portraits = {
+			army = {
+				large="GFX_portrait_hol_hein_ter_poorten"
+				small="GFX_idea_HOL_hein_ter_poorten"
+			}
+		}
+		corps_commander = {
+			traits = { logistics_wizard }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+
+	INS_ilgen = {
+		name = INS_ilgen
+		portraits = {
+			army = {
+				large = "gfx/leaders/INS/portrait_ins_ilgen.dds"
+				small = "gfx/ideas/INS/idea_ins_ilgen.dds"
+			}
+		}
+		corps_commander = {
+			traits = { }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = INS_ilgen_chief
+			ledger = air
+			allowed = {
+				OR = {
+					original_tag = INS
+					original_tag = HOL
+				}
+			}
+			available = {
+				NOT = {
+					has_idea = INS_ilgen_theorist
+				}
+			}
+			traits = {
+				air_chief_ground_support_1
+			}
+			cost = 100
+		}
+		advisor = {
+			slot = theorist
+			idea_token = INS_ilgen_theorist
+			allowed = {
+				OR = {
+					original_tag = INS
+					original_tag = HOL
+				}
+			}
+			available = {
+				NOT = {
+					has_idea = INS_ilgen_chief
+				}
+			}
+			traits = {
+				air_warfare_theorist
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	INS_jan_hilgers = {
+		name = INS_jan_hilgers
+		portraits = {
+			army = {
+				small = "gfx/ideas/INS/idea_ins_jan_hilgers.dds"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = INS_jan_hilgers
+			allowed = {
+				OR = {
+					original_tag = INS
+					original_tag = HOL
+				}
+			}
+			available = {
+			}
+			traits = {
+				air_chief_reform_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 20
+			}
+		}
+	}
+
+	INS_simon_spoor = {
+		name = INS_simon_spoor
+		portraits = {
+			army = {
+				large = "gfx/leaders/INS/portrait_ins_simon_spoor.dds"
+				small = "gfx/ideas/INS/idea_ins_simon_spoor.dds"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = INS_simon_spoor_theorist
+			allowed = {
+				OR = {
+					original_tag = INS
+					original_tag = HOL
+				}
+			}
+			available = {
+				if = {
+					limit = {
+						has_dlc = "La Resistance"
+					}
+					NOT = {
+						has_idea = INS_simon_spoor_operative
+					}
+				}
+			}
+			traits = {
+				military_theorist
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = INS_simon_spoor_operative
+			available  = {
+			}
+			allowed  = {
+				OR = {
+					original_tag = INS
+					original_tag = HOL
+				}
+				has_dlc = "La Resistance"
+			}
+			available = {
+				NOT = {
+					has_idea = INS_simon_spoor_theorist
+				}
+			}
+			traits = {
+				head_of_intelligence 
+			}
+		}
+	}
+
+	INS_pesman = {
+		name = INS_pesman
+		portraits = {
+			army = {
+				large = "gfx/leaders/INS/portrait_ins_pesman.dds"
+				small = "gfx/ideas/INS/idea_ins_pesman.dds"
+			}
+		}
+	}
+
+	INS_bakkers = {
+		name = INS_bakkers
+		portraits = {
+			army = {
+				large = "gfx/leaders/INS/portrait_ins_bakkers.dds"
+				small = "gfx/ideas/INS/idea_ins_bakkers.dds"
+			}
+		}
+	}
+}

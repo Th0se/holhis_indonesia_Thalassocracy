@@ -1,0 +1,319 @@
+﻿capital = 335 #Jakarta
+
+oob = "INS_1936"
+
+set_research_slots = 2
+			
+add_equipment_to_stockpile = {
+	type = train_equipment
+	amount = 3
+	producer = GER
+}
+
+set_stability = 0.38
+set_war_support = 0.42
+
+# Starting tech
+# clone of Holland
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_trucks = 1
+	early_submarine = 1
+	basic_destroyer = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	basic_light_cruiser = 1
+	early_heavy_cruiser = 1
+	fuel_silos = 1
+}
+
+if = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+	set_air_oob = "INS_1936_air_bba"
+	set_technology = {
+		aa_lmg = 1
+		engines_1 = 1
+		aircraft_construction = 1
+		iw_small_airframe = 1
+		iw_medium_airframe = 1
+		early_bombs = 1
+	}
+	else = {
+		set_air_oob = "INS_1936_air_legacy"
+		set_technology = {
+			early_fighter = 1
+		}
+	}
+}
+
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		transport = 1
+		early_submarine = 1
+		basic_destroyer = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+	}
+	else = {
+		set_technology = {
+			mtg_transport = 1
+			early_ship_hull_submarine = 1
+			basic_ship_hull_submarine = 1
+			early_ship_hull_light = 1
+			basic_ship_hull_light = 1
+			early_ship_hull_cruiser = 1
+			basic_ship_hull_cruiser = 1
+			basic_battery = 1
+			coastal_defense_ships = 1
+		}
+	}
+}
+
+set_convoys = 100
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1935.11.14"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 20
+	fascism = 15
+	communism = 15
+	neutrality = 50
+}
+
+recruit_character = INS_bonifacius_de_jonge
+recruit_character = INS_a_t_van_starkenborgh_stachouwer
+recruit_character = INS_hubertus_van_mook
+recruit_character = INS_soekarno
+recruit_character = INS_george_hart #
+recruit_character = INS_amir_syarifuddin
+recruit_character = INS_tan_malaka
+recruit_character = INS_muso_munawar
+recruit_character = INS_soepomo #
+recruit_character = INS_mohammad_hatta
+recruit_character = INS_hamengkubuwono_ninth
+recruit_character = INS_murk_boerstra
+recruit_character = INS_berenschot
+recruit_character = HOL_conrad_helfrich
+recruit_character = INS_pesman #
+recruit_character = INS_bakkers #
+recruit_character = INS_jan_hilgers #
+recruit_character = INS_simon_spoor #
+
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	recruit_character = INS_ferwerda #
+	recruit_character = INS_hein_ter_poorten
+	recruit_character = INS_ilgen #
+	recruit_character = INS_sk_trimurti
+	recruit_character = INS_hamengkubuwono_eighth
+	recruit_character = INS_mohammad_husni_thamrin
+}
+
+set_cosmetic_tag = INS_HOL # Netherlands East Indies
+
+1939.1.1 = {
+	add_political_power = 1030
+	add_command_power = 100
+
+	oob = "INS_1939" #straight copy of INS 1936
+
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = flexible_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	set_party_name = {
+		ideology = neutrality
+		long_name = INS_neutrality_party_volksraad_long
+		name = INS_neutrality_party_volksraad
+	}
+	set_party_name = {
+		ideology = democratic
+		long_name = INS_democratic_party_united_front_long
+		name = INS_democratic_party_united_front
+	}
+	set_party_name = {
+		ideology = fascism
+		long_name = INS_democratic_party_long
+		name = INS_democratic_party
+	}
+	add_country_leader_role = {
+		character = INS_soekarno
+		country_leader = {
+			expire = "1965.1.1"
+			ideology = fascism_ideology
+			traits = {
+				nationalist_symbol
+			}
+		}
+		promote_leader = yes
+	}
+	add_country_leader_role = {
+		character = INS_mohammad_hoesni_thamrin
+		country_leader = {
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+				
+			}
+		}
+		promote_leader = yes
+	}
+	INS_soekarno = {
+		remove_country_leader_role = {
+			ideology = socialism
+		}
+	}
+	if = {
+		limit = {
+			has_dlc = "Together for Victory"
+		}
+		INS = {
+			add_autonomy_ratio = {
+				value = 0.25
+			}
+		}
+	}
+
+	set_technology = {
+		tech_engineers = 1
+		motorised_infantry = 1
+		fighter1 = 1
+		tactical_bomber1 = 1
+		naval_bomber1 = 1
+		gw_artillery = 1
+		interwar_artillery = 1
+		interwar_antitank = 1
+		infantry_weapons1 = 1
+		infantry_weapons2 = 1
+		support_weapons = 1
+		marines = 1
+		basic_train = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		oil_processing = 1
+		fuel_refining = 1
+		fuel_refining2 = 1
+		construction1 = 1
+		construction2 = 1
+		construction3 = 1
+		concentrated_industry = 1
+		concentrated_industry2 = 1
+		concentrated_industry3 = 1
+	}
+
+	if = {
+		limit = { not = { has_dlc = "Man the Guns" } }
+		set_technology = {
+			basic_submarine = 1
+			improved_light_cruiser = 1
+		}
+	}
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		set_technology = {
+			basic_ship_hull_submarine = 1
+			basic_ship_hull_light = 1
+			basic_light_battery = 1
+			basic_medium_battery = 1
+		}
+	}
+
+	if = {
+		limit = {
+			NOT = {
+				has_dlc = "No Step Back"
+			}
+		}
+		set_technology = {
+			gwtank = 1
+			basic_light_tank = 1
+		}
+	}
+
+	if = {
+		limit = {
+			has_dlc = "No Step Back"
+		}
+		set_technology = {
+			gwtank_chassis = 1
+			basic_light_tank_chassis = 1
+		}
+	}
+
+	if = {
+		limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "INS_1939_air_bba"
+		set_technology = {
+			engines_2 = 1
+			basic_medium_airframe = 1
+			basic_small_airframe = 1
+			aa_cannon_1 = 1
+			early_bombs = 1
+		}
+		else = {
+			set_air_oob = "INS_1939_air_legacy"
+			set_technology = {
+				fighter1 = 1
+				tactical_bomber1 = 1
+				naval_bomber1 = 1
+			}
+		}
+	}
+
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1935.11.14"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 40
+		fascism = 5
+		communism = 15
+		neutrality = 40
+	}
+}

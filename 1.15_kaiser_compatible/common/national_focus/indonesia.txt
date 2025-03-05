@@ -5966,7 +5966,7 @@ focus_tree = {
 		icon = GFX_focus_INS_vocflag
 		
 		relative_position_id = INS_address_malaise
-		x = 45
+		x = 46
 		y = 0
 
 		cost = 5
@@ -5976,14 +5976,6 @@ focus_tree = {
 			y = 0
 			trigger = {
 				has_country_flag = INS_hatta_bangka
-			}
-		}
-
-		offset = {
-			x = 1
-			y = 0
-			trigger = {
-				has_dlc = "Together for Victory"
 			}
 		}
 
@@ -6020,20 +6012,6 @@ focus_tree = {
 					option = HIDE
 				}
 				has_completed_focus = INS_improve_dutch_relations
-			}
-		}
-
-		offset = {
-			x = -34
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				NOT = {
-					has_dlc = "Together for Victory"
-				}
 			}
 		}
 
@@ -7597,7 +7575,7 @@ focus_tree = {
 		prerequisite = { focus = INS_continue_reform }
 		
 		relative_position_id = INS_continue_reform
-		x = 0
+		x = 3
 		y = 1
 
 		allow_branch = {
@@ -7710,7 +7688,7 @@ focus_tree = {
 		prerequisite = { focus = INS_improve_dutch_relations }
 		
 		relative_position_id = INS_improve_dutch_relations
-		x = -1
+		x = -2
 		y = 1
 
 		offset = {
@@ -7788,7 +7766,7 @@ focus_tree = {
 		prerequisite = { focus = INS_improve_dutch_relations }
 		
 		relative_position_id = INS_improve_dutch_relations
-		x = 1
+		x = 0
 		y = 1
 
 		offset = {
@@ -7905,7 +7883,7 @@ focus_tree = {
 		prerequisite = { focus = INS_improve_dutch_relations focus = INS_challenge_dutch_elitism }
 		
 		relative_position_id = INS_continue_reform
-		x = 0
+		x = 2
 		y = 2
 
 		cost = 10
@@ -15957,7 +15935,7 @@ focus_tree = {
 		cost = 10
 
 		relative_position_id = INS_address_malaise
-		x = 23
+		x = 17
 		y = 0
 
 		offset = {
