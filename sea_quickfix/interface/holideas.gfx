@@ -1,0 +1,1408 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_idea_INS_KNIL_incompetence"
+		texturefile = "gfx/interface/ideas/idea_ins_KNIL_incompetence.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_INS_suppression"
+		texturefile = "gfx/interface/ideas/idea_ins_suppression.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_INS_goods_red"
+		texturefile = "gfx/interface/ideas/idea_ins_goods_red.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_INS_imports"
+		texturefile = "gfx/interface/ideas/idea_ins_imports.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_INS_exports"
+		texturefile = "gfx/interface/ideas/idea_ins_exports.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_INS_goods_green"
+		texturefile = "gfx/interface/ideas/idea_ins_goods_green.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_hol_prinsenvlag"
+		texturefile = "gfx/interface/ideas/idea_hol_prinsenvlag.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_INS_flag"
+		texturefile = "gfx/interface/ideas/idea_ins_flag.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_INS_dutch_indonesian_agreement"
+		texturefile = "gfx/interface/ideas/idea_ins_dutch_indonesian_agreement.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_hol_wilhelmina2"
+		texturefile = "gfx/interface/ideas/idea_hol_wilhelmina2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_INS_govmarine"
+		texturefile = "gfx/interface/ideas/idea_ins_govmarine.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_INS_pelni"
+		texturefile = "gfx/interface/ideas/idea_ins_pelni.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_INS_nv_merbaboe"
+		texturefile = "gfx/interface/ideas/idea_ins_merbaboe.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_INS_nakajima"
+		texturefile = "gfx/interface/ideas/idea_ins_nakajima.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_INS_soerabaja_dm"
+		texturefile = "gfx/interface/ideas/idea_ins_soerabaja_dm.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_INS_soerabaja_dm_improved"
+		texturefile = "gfx/interface/ideas/idea_ins_soerabaja_dm.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_INS_aniem"
+		texturefile = "gfx/interface/ideas/idea_ins_aniem.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_INS_pln"
+		texturefile = "gfx/interface/ideas/idea_INS_pln.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_INS_bank_indonesia"
+		texturefile = "gfx/interface/ideas/idea_ins_bank_indonesia.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_INS_bank_java"
+		texturefile = "gfx/interface/ideas/idea_ins_bank_java.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_INS_pal_soerabaja"
+		texturefile = "gfx/interface/ideas/idea_INS_pal_soerabaja.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_INS_psm"
+		texturefile = "gfx/interface/ideas/idea_INS_psm.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_INS_ptdi"
+		texturefile = "gfx/interface/ideas/idea_INS_ptdi.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_INS_ai_bandoeng"
+		texturefile = "gfx/interface/ideas/idea_ins_ai_bandoeng.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_INS_nism"
+		texturefile = "gfx/interface/ideas/idea_INS_nism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_INS_caltex"
+		texturefile = "gfx/interface/ideas/idea_INS_caltex.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_INS_sstw"
+		texturefile = "gfx/interface/ideas/idea_INS_sstw.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_INS_dkai"
+		texturefile = "gfx/interface/ideas/idea_INS_dkai.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_INS_acf"
+		texturefile = "gfx/interface/ideas/idea_INS_acf.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_INS_toyota"
+		texturefile = "gfx/interface/ideas/idea_INS_toyota.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_INS_nakajima"
+		texturefile = "gfx/interface/ideas/idea_INS_nakajima.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_INS_swpa_initiative_idea"
+		texturefile = "gfx/interface/ideas/idea_INS_swpa_initiative.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_JAP_jgr"
+		texturefile = "gfx/interface/ideas/idea_JAP_jgr.dds"
+	}
+
+	spriteType = {
+		name = "GFX_modifier_advanced_development"
+		texturefile = "gfx/state_modifiers/advanced_development.dds"
+	}
+
+	spriteType = {
+		name = "GFX_modifier_basic_development"
+		texturefile = "gfx/state_modifiers/basic_development.dds"
+	}
+
+	spriteType = {
+		name = "GFX_modifier_regional_atjeh"
+		texturefile = "gfx/state_modifiers/INS_atjeh_modifier.dds"
+	}
+
+	spriteType = {
+		name = "GFX_modifier_regional_batavia"
+		texturefile = "gfx/state_modifiers/INS_batavia_modifier.dds"
+	}
+
+	spriteType = {
+		name = "GFX_modifier_regional_central_java"
+		texturefile = "gfx/state_modifiers/INS_central_java_modifier.dds"
+	}
+
+	spriteType = {
+		name = "GFX_modifier_regional_moluccas"
+		texturefile = "gfx/state_modifiers/INS_moluccas_modifier.dds"
+	}
+
+	spriteType = {
+		name = "GFX_modifier_regional_north_sulawesi"
+		texturefile = "gfx/state_modifiers/INS_north_sulawesi_modifier.dds"
+	}
+
+	spriteType = {
+		name = "GFX_modifier_regional_north_sumatra"
+		texturefile = "gfx/state_modifiers/INS_north_sumatra_modifier.dds"
+	}
+
+	spriteType = {
+		name = "GFX_modifier_regional_south_sulawesi"
+		texturefile = "gfx/state_modifiers/INS_south_sulawesi_modifier.dds"
+	}
+
+	spriteType = {
+		name = "GFX_modifier_regional_south_sumatra"
+		texturefile = "gfx/state_modifiers/INS_south_sumatra_modifier.dds"
+	}
+
+	spriteType = {
+		name = "GFX_modifier_regional_west_java"
+		texturefile = "gfx/state_modifiers/INS_west_java_modifier.dds"
+	}
+
+	spriteType = {
+		name = "GFX_modifier_regional_west_sumatra"
+		texturefile = "gfx/state_modifiers/INS_west_sumatra_modifier.dds"
+	}
+
+	spriteType = {
+		name = "GFX_modifier_regional_sarawak"
+		texturefile = "gfx/state_modifiers/MAL_sarawak_modifier.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_abdoel_haris_nasoetion"
+		texturefile = "gfx/ideas/INS/idea_ins_abdoel_haris_nasoetion.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_abdoelkadir"
+		texturefile = "gfx/ideas/INS/idea_ins_abdoelkadir_widjojoatmodjo.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_abikoesno"
+		texturefile = "gfx/ideas/INS/idea_ins_abikoesno_tjokrosoejoso.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_achmad_soebardjo"
+		texturefile = "gfx/ideas/INS/idea_ins_achmad_soebardjo.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_adnan_gani"
+		texturefile = "gfx/ideas/INS/idea_ins_adnan_gani.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_agoes_salim"
+		texturefile = "gfx/ideas/INS/idea_ins_agoes_salim.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_aleid_van_tricht"
+		texturefile = "gfx/ideas/INS/idea_ins_aleid_van_tricht.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_alimin"
+		texturefile = "gfx/ideas/INS/idea_ins_alimin.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_amir_sjarifoeddin"
+		texturefile = "gfx/ideas/INS/idea_ins_amir_sjarifoeddin.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_amir_jailed"
+		texturefile = "gfx/ideas/INS/idea_ins_amir_jailed.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_anak_agoeng"
+		texturefile = "gfx/ideas/INS/idea_ins_anak_agoeng.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_anton_van_der_laaken"
+		texturefile = "gfx/ideas/INS/idea_ins_anton_van_der_laaken.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_bagoes_hadikoesoemo"
+		texturefile = "gfx/ideas/INS/idea_ins_bagoes_hadikoesoemo.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_bakkers"
+		texturefile = "gfx/ideas/INS/idea_ins_bakkers.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_becking_civ"
+		texturefile = "gfx/ideas/INS/idea_ins_becking_civ.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_becking_mil"
+		texturefile = "gfx/ideas/INS/idea_ins_becking_mil.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_berenschot"
+		texturefile = "gfx/ideas/INS/idea_ins_berenschot.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_bernard_lapian"
+		texturefile = "gfx/ideas/INS/idea_ins_bernard_lapian.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_charles_van_der_plas"
+		texturefile = "gfx/ideas/INS/idea_ins_van_der_plas.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_cornelis_bussche"
+		texturefile = "gfx/ideas/INS/idea_ins_bussche.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_daeng_malewa"
+		texturefile = "gfx/ideas/INS/idea_ins_daeng_malewa.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_didi_kartasasmita"
+		texturefile = "gfx/ideas/INS/idea_ins_didi_kartasasmita.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_dipa_nusantara"
+		texturefile = "gfx/ideas/INS/idea_ins_dipa_nusantara.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_douwes_dekker"
+		texturefile = "gfx/ideas/INS/idea_ins_douwes_dekker.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_douwes_dekker_army"
+		texturefile = "gfx/ideas/INS/idea_ins_douwes_dekker_army.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_edgard_du_perron"
+		texturefile = "gfx/ideas/INS/idea_ins_edgard_du_perron.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_elshout"
+		texturefile = "gfx/ideas/INS/idea_ins_elshout.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_ferdinand_lumbantobing"
+		texturefile = "gfx/ideas/INS/idea_ins_ferdinand_lumbantobing.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_ferwerda"
+		texturefile = "gfx/ideas/INS/idea_ins_ferwerda.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_frans_visman"
+		texturefile = "gfx/ideas/INS/idea_ins_frans_visman.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_frederik_hoog"
+		texturefile = "gfx/ideas/INS/idea_ins_frederik_hoog.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_george_hart"
+		texturefile = "gfx/ideas/INS/idea_ins_george_hart.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_gijsbertus_vonk"
+		texturefile = "gfx/ideas/INS/idea_ins_gijsbertus_vonk.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_hamengkoeboewono_eighth"
+		texturefile = "gfx/ideas/INS/idea_ins_hamengkoeboewono_eighth.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_hamengkoeboewono_ninth"
+		texturefile = "gfx/ideas/INS/idea_ins_hamengkoeboewono_ninth.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_dorodjatoen"
+		texturefile = "gfx/ideas/INS/idea_ins_dorodjatoen.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_hamid_alkadrie_civ"
+		texturefile = "gfx/ideas/INS/idea_ins_hamid_alkadrie_civ.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_hamid_alkadrie_army"
+		texturefile = "gfx/ideas/INS/idea_ins_hamid_alkadrie_army.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_henri_zentgraaff"
+		texturefile = "gfx/ideas/INS/idea_ins_zentgraaff.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_henricus_spit"
+		texturefile = "gfx/ideas/INS/idea_ins_henricus_spit.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_hewel"
+		texturefile = "gfx/ideas/INS/idea_ins_hewel.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_hoogstraten"
+		texturefile = "gfx/ideas/INS/idea_ins_hoogstraten.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_idenburg"
+		texturefile = "gfx/ideas/INS/idea_ins_idenburg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_ilgen"
+		texturefile = "gfx/ideas/INS/idea_ins_ilgen.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_iskandar_di_nata"
+		texturefile = "gfx/ideas/INS/idea_ins_iskandar_di_nata.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_iwa_koesoemasoemantri"
+		texturefile = "gfx/ideas/INS/idea_ins_iwa_koesoemasoemantri.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_iwa_jailed"
+		texturefile = "gfx/ideas/INS/idea_ins_iwa_jailed.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_jacob_zomer"
+		texturefile = "gfx/ideas/INS/idea_ins_jacob_zomer.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_jan_hilgers"
+		texturefile = "gfx/ideas/INS/idea_ins_jan_hilgers.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_jan_hogewind"
+		texturefile = "gfx/ideas/INS/idea_ins_jan_hogewind.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_jan_jonkman"
+		texturefile = "gfx/ideas/INS/idea_ins_jonkman.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_jan_verboom"
+		texturefile = "gfx/ideas/INS/idea_ins_jan_verboom.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_joesoef_alkadrie"
+		texturefile = "gfx/ideas/INS/idea_ins_joesoef_alkadrie.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_johan_uhl"
+		texturefile = "gfx/ideas/INS/idea_ins_johan_uhl.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_johannes_leimena"
+		texturefile = "gfx/ideas/INS/idea_ins_johannes_leimena.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_kasimo"
+		texturefile = "gfx/ideas/INS/idea_ins_kasimo.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_kh_dewantara"
+		texturefile = "gfx/ideas/INS/idea_ins_kh_dewantara.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_koenraad"
+		texturefile = "gfx/ideas/INS/idea_ins_koenraad.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_koesoemo_oetojo"
+		texturefile = "gfx/ideas/INS/idea_ins_koesoemo_oetojo.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_latuharhary"
+		texturefile = "gfx/ideas/INS/idea_ins_latuharhary.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_mangkoenegara_seventh_army"
+		texturefile = "gfx/ideas/INS/idea_ins_mangkoenegara_seventh_army.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_mas_mansoer"
+		texturefile = "gfx/ideas/INS/idea_ins_mas_mansoer.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_mas_pardi"
+		texturefile = "gfx/ideas/INS/idea_ins_mas_pardi.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_maurer"
+		texturefile = "gfx/ideas/INS/idea_ins_maurer.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_meyer_ranneft"
+		texturefile = "gfx/ideas/INS/idea_ins_meyer_ranneft.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_moesso_moenawar"
+		texturefile = "gfx/ideas/INS/idea_ins_moesso_moenawar.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_mohammad_hatta"
+		texturefile = "gfx/ideas/INS/idea_ins_mohammad_hatta.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_mohammad_jamin"
+		texturefile = "gfx/ideas/INS/idea_ins_mohammad_jamin.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_mohammad_tabrani"
+		texturefile = "gfx/ideas/INS/idea_ins_mohammad_tabrani.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_murk_boerstra"
+		texturefile = "gfx/ideas/INS/idea_ins_murk_boerstra.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_natsir"
+		texturefile = "gfx/ideas/INS/idea_ins_natsir.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_nazir"
+		texturefile = "gfx/ideas/INS/idea_ins_nazir.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_nicodemus_palar"
+		texturefile = "gfx/ideas/INS/idea_ins_nicodemus_palar.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_nicolaas_blom"
+		texturefile = "gfx/ideas/INS/idea_ins_nicolaas_blom.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_oerip"
+		texturefile = "gfx/ideas/INS/idea_ins_oerip.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_overakker"
+		texturefile = "gfx/ideas/INS/idea_ins_overakker.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_paul_alex_blaauw"
+		texturefile = "gfx/ideas/INS/idea_ins_paul_alex_blaauw.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_pesman"
+		texturefile = "gfx/ideas/INS/idea_ins_pesman.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_pierre_cox"
+		texturefile = "gfx/ideas/INS/idea_ins_pierre_cox.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_purbonegoro"
+		texturefile = "gfx/ideas/INS/idea_ins_purbonegoro.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_radjiman"
+		texturefile = "gfx/ideas/INS/idea_ins_radjiman.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_rhemrev"
+		texturefile = "gfx/ideas/INS/idea_ins_rhemrhev.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_roehana_koeddoes"
+		texturefile = "gfx/ideas/INS/idea_ins_rohanna.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_indonesia_rosenow"
+		texturefile = "gfx/ideas/INS/idea_ins_rosenow.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_sam_ratulangi"
+		texturefile = "gfx/ideas/INS/idea_ins_sam_ratulangi.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_sardjono"
+		texturefile = "gfx/ideas/INS/idea_ins_sardjono.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_sardjono_jailed"
+		texturefile = "gfx/ideas/INS/idea_ins_sardjono_jailed.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_sekarmadji_maridjan"
+		texturefile = "gfx/ideas/INS/idea_ins_sekarmadji_maridjan.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_semaoen"
+		texturefile = "gfx/ideas/INS/idea_ins_semaoen.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_simon_spoor"
+		texturefile = "gfx/ideas/INS/idea_ins_simon_spoor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_sjafroeddin"
+		texturefile = "gfx/ideas/INS/idea_ins_sjafroeddin.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_sjahrir"
+		texturefile = "gfx/ideas/INS/idea_ins_sjahrir.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_sjahrir_jailed"
+		texturefile = "gfx/ideas/INS/idea_ins_sjahrir_jailed.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_sk_trimoerti"
+		texturefile = "gfx/ideas/INS/idea_ins_sk_trimoerti.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_soebijakto"
+		texturefile = "gfx/ideas/INS/idea_ins_soebijakto.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_soebroto"
+		texturefile = "gfx/ideas/INS/idea_ins_soebroto.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_soedirman"
+		texturefile = "gfx/ideas/INS/idea_ins_soedirman.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_soejono"
+		texturefile = "gfx/ideas/INS/idea_ins_soejono.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_soekardjo"
+		texturefile = "gfx/ideas/INS/idea_ins_soekardjo.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_soekarno"
+		texturefile = "gfx/ideas/INS/idea_ins_soekarno.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_soekarno_jailed"
+		texturefile = "gfx/ideas/INS/idea_ins_soekarno_jailed.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_soekawati"
+		texturefile = "gfx/ideas/INS/idea_ins_soekawati.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_soekiman"
+		texturefile = "gfx/ideas/INS/idea_ins_soekiman.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_soepomo"
+		texturefile = "gfx/ideas/INS/idea_ins_soepomo.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_soeria_santoso"
+		texturefile = "gfx/ideas/INS/idea_ins_soeria_santoso.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_soerjadarma"
+		texturefile = "gfx/ideas/INS/idea_ins_soerjadarma.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_soetan_sjahrir"
+		texturefile = "gfx/ideas/INS/idea_ins_soetan_sjahrir.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_soetardjo"
+		texturefile = "gfx/ideas/INS/idea_ins_soetardjo_kartohadikoesoemo.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_soetomo"
+		texturefile = "gfx/ideas/INS/idea_ins_soetomo.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_statius_muller"
+		texturefile = "gfx/ideas/INS/idea_ins_statius_muller.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_tan_malaka_civ"
+		texturefile = "gfx/ideas/INS/idea_ins_tan_malaka_civ.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_tan_malaka_mil"
+		texturefile = "gfx/ideas/INS/idea_ins_tan_malaka_mil.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_thamrin"
+		texturefile = "gfx/ideas/INS/idea_ins_thamrin.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_thamrin_jailed"
+		texturefile = "gfx/ideas/INS/idea_ins_thamrin_jailed.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_thomas_najoan"
+		texturefile = "gfx/ideas/INS/idea_ins_thomas_najoan.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_thomas_najoan_jailed"
+		texturefile = "gfx/ideas/INS/idea_ins_thomas_najoan_jailed.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_tjalling"
+		texturefile = "gfx/ideas/INS/idea_ins_tjalling.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_tjarda_stachouwer"
+		texturefile = "gfx/ideas/INS/idea_ins_tjarda_stachouwer.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_tjipto_mangoenkoesoemo"
+		texturefile = "gfx/ideas/INS/idea_ins_tjipto_mangoenkoesoemo.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_tjipto_jailed"
+		texturefile = "gfx/ideas/INS/idea_ins_tjipto_jailed.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_van_dulm"
+		texturefile = "gfx/ideas/INS/idea_ins_van_dulm.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_van_mook"
+		texturefile = "gfx/ideas/INS/idea_ins_van_mook.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_van_mook_ltgg"
+		texturefile = "gfx/ideas/INS/idea_ins_van_mook_ltgg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_van_rees"
+		texturefile = "gfx/ideas/INS/idea_ins_van_rees.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_van_staveren"
+		texturefile = "gfx/ideas/INS/idea_ins_van_staveren.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_wachid_hasjim"
+		texturefile = "gfx/ideas/INS/idea_ins_wachid_hasjim.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_walraven"
+		texturefile = "gfx/ideas/INS/idea_ins_walraven.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_wardiman"
+		texturefile = "gfx/ideas/INS/idea_ins_wardiman.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_wesseling"
+		texturefile = "gfx/ideas/INS/idea_ins_wesseling.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_wiranatakoesoemah"
+		texturefile = "gfx/ideas/INS/idea_ins_wiranatakoesoemah.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_gapi"
+		texturefile = "gfx/ideas/INS/idea_ins_gapi.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_indische_partij"
+		texturefile = "gfx/ideas/INS/idea_ins_indische_partij.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_partai_nasional"
+		texturefile = "gfx/ideas/INS/idea_ins_partai_nasional.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_psii"
+		texturefile = "gfx/ideas/INS/idea_ins_psii.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_stuwgroep"
+		texturefile = "gfx/ideas/INS/idea_ins_stuwgroep.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_aceh_daud_beureueh"
+		texturefile = "gfx/ideas/INS/idea_ins_daud_beureueh.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_aceh_toeankoe_radja_ibrahim"
+		texturefile = "gfx/ideas/INS/idea_ins_toeankoe_radja_ibrahim.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_netherlands_abraham_vromans"
+		texturefile = "gfx/ideas/HOL/idea_hol_abraham_vromans.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_netherlands_fanny_schoonheyt"
+		texturefile = "gfx/ideas/HOL/idea_hol_fanny_schoonheyt.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_netherlands_frederik_gerretson"
+		texturefile = "gfx/ideas/HOL/idea_hol_frederik_gerretson.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_netherlands_hendrikus_sneevliet"
+		texturefile = "gfx/ideas/HOL/idea_hol_sneevliet.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_netherlands_maring"
+		texturefile = "gfx/ideas/HOL/idea_hol_maring.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_netherlands_de_kadt"
+		texturefile = "gfx/ideas/HOL/idea_hol_de_kadt.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_netherlands_juliana"
+		texturefile = "gfx/ideas/HOL/idea_hol_juliana.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_netherlands_louis_visser"
+		texturefile = "gfx/ideas/HOL/idea_hol_visser.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_siam_plaek_phibun"
+		texturefile = "gfx/ideas/SIA/idea_sia_plaek_phibunsongkhram.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_siam_ananda_mahidol"
+		texturefile = "gfx/ideas/SIA/idea_sia_ananda_mahidol.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_siam_ananda_mahidol_civilian"
+		texturefile = "gfx/ideas/SIA/idea_sia_ananda_mahidol_civilian.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_siam_ananda_mahidol_king"
+		texturefile = "gfx/ideas/SIA/idea_sia_ananda_mahidol_king.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_siam_athuek_thewadej"
+		texturefile = "gfx/ideas/SIA/idea_sia_athuek_thewadej.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_siam_khuang_aphaiwongse"
+		texturefile = "gfx/ideas/SIA/idea_sia_khuang_aphaiwongse.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_siam_mangkorn_phromyothi"
+		texturefile = "gfx/ideas/SIA/idea_sia_mangkorn_phromyothi.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_siam_pichit_kriangsak"
+		texturefile = "gfx/ideas/SIA/idea_sia_pichit_kriangsak.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_siam_pianlert_boripanyutthakit"
+		texturefile = "gfx/ideas/SIA/idea_sia_pianlert_boripanyutthakit.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_siam_pridi_banomyong"
+		texturefile = "gfx/ideas/SIA/idea_sia_pridi_banomyong.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_siam_pridi_banomyong_naval"
+		texturefile = "gfx/ideas/SIA/idea_sia_pridi_banomyong_naval.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_siam_rattanakul"
+		texturefile = "gfx/ideas/SIA/idea_sia_rattanakul.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_siam_sindhu_kamalanavin"
+		texturefile = "gfx/ideas/SIA/idea_sia_sindhu_kamalanavin.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_siam_thamrong_nawasawat"
+		texturefile = "gfx/ideas/SIA/idea_sia_thamrong_nawasawat.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_siam_thamrong_nawasawat_naval"
+		texturefile = "gfx/ideas/SIA/idea_sia_thamrong_nawasawat_naval.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_siam_thawee_bunyaket"
+		texturefile = "gfx/ideas/SIA/idea_sia_thawee_bunyaket.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_siam_tua_lapanukrom"
+		texturefile = "gfx/ideas/SIA/idea_sia_tua_lapanukrom.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_siam_vejyan_trangsarit"
+		texturefile = "gfx/ideas/SIA/idea_sia_vejyan_trangsarit.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_siam_wichitwathakan"
+		texturefile = "gfx/ideas/SIA/idea_sia_wichit.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_philippines_andres_soriano"
+		texturefile = "gfx/ideas/PHI/idea_phi_andres_soriano.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_philippines_artemio_ricarte"
+		texturefile = "gfx/ideas/PHI/idea_phi_artemio_ricarte.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_philippines_basilio_valdez"
+		texturefile = "gfx/ideas/PHI/idea_phi_basilio_valdez.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_philippines_celerino_tiongco"
+		texturefile = "gfx/ideas/PHI/idea_phi_celerino_tiongco.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_philippines_elpidio_quirino"
+		texturefile = "gfx/ideas/PHI/idea_phi_elpidio_quirino.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_philippines_emilio_aguinaldo"
+		texturefile = "gfx/ideas/PHI/idea_phi_emilio_aguinaldo.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_philippines_enrique_jorado"
+		texturefile = "gfx/ideas/PHI/idea_phi_enrique_jorado.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_philippines_eulogio_rodriguez"
+		texturefile = "gfx/ideas/PHI/idea_phi_eulogio_rodriguez.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_philippines_frank_murphy"
+		texturefile = "gfx/ideas/PHI/idea_phi_frank_murphy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_philippines_gregorio_aglipay"
+		texturefile = "gfx/ideas/PHI/idea_phi_gregorio_aglipay.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_philippines_guillermo_capadocia"
+		texturefile = "gfx/ideas/PHI/idea_phi_guillermo_capadocia.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_philippines_james_jones"
+		texturefile = "gfx/ideas/PHI/idea_phi_james_jones.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_philippines_jose_andrada"
+		texturefile = "gfx/ideas/PHI/idea_phi_jose_andrada.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_philippines_jose_avelino"
+		texturefile = "gfx/ideas/PHI/idea_phi_jose_avelino.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_philippines_jose_de_los_reyes"
+		texturefile = "gfx/ideas/PHI/idea_phi_jose_de_los_reyes.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_philippines_jose_laurel"
+		texturefile = "gfx/ideas/PHI/idea_phi_jose_laurel.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_philippines_jose_yulo"
+		texturefile = "gfx/ideas/PHI/idea_phi_jose_yulo.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_philippines_juan_sumulong"
+		texturefile = "gfx/ideas/PHI/idea_phi_juan_sumulong.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_philippines_mariano_cuenco"
+		texturefile = "gfx/ideas/PHI/idea_phi_mariano_cuenco.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_philippines_manuel_roxas"
+		texturefile = "gfx/ideas/PHI/idea_phi_manuel_roxas.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_philippines_paul_mcnutt"
+		texturefile = "gfx/ideas/PHI/idea_phi_paul_mcnutt.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_philippines_paulino_santos"
+		texturefile = "gfx/ideas/PHI/idea_phi_paulino_santos.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_philippines_pedro_abad_santos"
+		texturefile = "gfx/ideas/PHI/idea_phi_pedro_abad_santos.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_philippines_pelagio_cruz"
+		texturefile = "gfx/ideas/PHI/idea_phi_pelagio_cruz.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_philippines_santiago_nuval"
+		texturefile = "gfx/ideas/PHI/idea_phi_santiago_nuval.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_philippines_sergio_osmena"
+		texturefile = "gfx/ideas/PHI/idea_phi_sergio_osmena.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_philippines_vicente_lim"
+		texturefile = "gfx/ideas/PHI/idea_phi_vicente_lim.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_malaysia_charles_brooke"
+		texturefile = "gfx/ideas/MAL/idea_mal_charles_brooke.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_raj_patel"
+		texturefile = "gfx/ideas/RAJ/idea_raj_patel.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_raj_sitaramayya"
+		texturefile = "gfx/ideas/RAJ/idea_raj_sitarmayya.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_siam_plaek_phibun"
+		texturefile = "gfx/ideas/SIA/idea_sia_plaek_phibunsongkhram.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_siam_ananda_mahidol"
+		texturefile = "gfx/ideas/SIA/idea_sia_ananda_mahidol.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_indonesia_abikoesno"
+		texturefile = "gfx/leaders/INS/portrait_ins_abikoesno_tjokrosoejoso.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_indonesia_amir_sjarifoeddin"
+		texturefile = "gfx/leaders/INS/portrait_ins_amir_sjarifoeddin.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_indonesia_bakkers"
+		texturefile = "gfx/leaders/INS/portrait_ins_bakkers.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_indonesia_berenschot"
+		texturefile = "gfx/leaders/INS/portrait_ins_berenschot.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_indonesia_bonifacius_de_jonge"
+		texturefile = "gfx/leaders/INS/portrait_ins_bonifacius_de_jonge.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_indonesia_didi_kartasasmita"
+		texturefile = "gfx/leaders/INS/portrait_ins_didi_kartasasmita.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_indonesia_ferwerda"
+		texturefile = "gfx/leaders/INS/portrait_ins_ferwerda.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_indonesia_hubertus_van_mook"
+		texturefile = "gfx/leaders/INS/portrait_ins_hubertus_van_mook.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_indonesia_ilgen"
+		texturefile = "gfx/leaders/INS/portrait_ins_ilgen.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_indonesia_mas_pardi"
+		texturefile = "gfx/leaders/INS/portrait_ins_mas_pardi.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_indonesia_moesso_moenawar"
+		texturefile = "gfx/leaders/INS/portrait_ins_moesso_moenawar.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_indonesia_mohammad_hatta"
+		texturefile = "gfx/leaders/INS/portrait_ins_mohammad_hatta.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_indonesia_murk_boerstra"
+		texturefile = "gfx/leaders/INS/portrait_ins_murk_boerstra.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_indonesia_nazir"
+		texturefile = "gfx/leaders/INS/portrait_ins_nazir.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_indonesia_nicodemus_palar"
+		texturefile = "gfx/leaders/INS/portrait_ins_nicodemus_palar.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_indonesia_oerip"
+		texturefile = "gfx/leaders/INS/portrait_ins_oerip.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_indonesia_pakoeboewono_tenth"
+		texturefile = "gfx/leaders/INS/portrait_ins_pakubuwono_tenth.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_indonesia_pakoeboewono_eleventh"
+		texturefile = "gfx/leaders/INS/portrait_ins_pakubuwono_eleventh.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_indonesia_pesman"
+		texturefile = "gfx/leaders/INS/portrait_ins_pesman.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_indonesia_simon_spoor"
+		texturefile = "gfx/leaders/INS/portrait_ins_simon_spoor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_indonesia_soekarno"
+		texturefile = "gfx/leaders/INS/portrait_ins_soekarno.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_indonesia_soetomo"
+		texturefile = "gfx/leaders/INS/portrait_ins_soetomo.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_indonesia_tan_malaka"
+		texturefile = "gfx/leaders/INS/portrait_ins_tan_malaka.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_indonesia_thamrin"
+		texturefile = "gfx/leaders/INS/portrait_ins_thamrin.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_brm_aung_san"
+		texturefile = "gfx/leaders/BRM/portrait_brm_aung_san.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_BRM_archibald_cochrane"
+		texturefile = "gfx/leaders/BRM/portrait_brm_cochrane.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_malaysia_abdul_rahman"
+		texturefile = "gfx/leaders/MAL/portrait_mal_tuanku_abdul_rahman.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_malaysia_ibrahim_yaacob"
+		texturefile = "gfx/leaders/MAL/portrait_mal_ibrahim_yaacob.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_malaysia_onn_jaafar"
+		texturefile = "gfx/leaders/MAL/portrait_mal_onn_jaafar.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_phi_basilio_valdez"
+		texturefile = "gfx/leaders/PHI/portrait_phi_basilio_valdez.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_phi_benigno_ramos"
+		texturefile = "gfx/leaders/PHI/portrait_phi_benigno_ramos.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_phi_crisanto_evangelista"
+		texturefile = "gfx/leaders/PHI/portrait_phi_crisanto_evangelista.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_phi_jose_andrada"
+		texturefile = "gfx/leaders/PHI/portrait_phi_jose_andrada.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_phi_jose_laurel"
+		texturefile = "gfx/leaders/PHI/portrait_phi_jose_laurel.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_phi_paulino_santos"
+		texturefile = "gfx/leaders/PHI/portrait_phi_paulino_santos.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_india_jawaharlal_nehru"
+		texturefile = "gfx/leaders/RAJ/portrait_raj_jawaharlal_nehru.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_sia_plaek_phibun"
+		texturefile = "gfx/leaders/SIA/portrait_sia_plaek_phibunsongkhram.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_sia_pridi_banomyong"
+		texturefile = "gfx/leaders/SIA/portrait_sia_pridi_banomyong.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_sia_sindhu_kamalanavin"
+		texturefile = "gfx/leaders/SIA/portrait_sia_sindhu_kamalanavin.dds"
+	}
+
+}

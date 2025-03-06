@@ -98,33 +98,44 @@ set_popularities = {
 recruit_character = INS_bonifacius_de_jonge
 recruit_character = INS_a_t_van_starkenborgh_stachouwer
 recruit_character = INS_hubertus_van_mook
+recruit_character = INS_abikoesno_tjokrosoejoso
+recruit_character = INS_soetomo
 recruit_character = INS_soekarno
-recruit_character = INS_george_hart #
-recruit_character = INS_amir_syarifuddin
-recruit_character = INS_tan_malaka
-recruit_character = INS_muso_munawar
-recruit_character = INS_soepomo #
 recruit_character = INS_mohammad_hatta
+recruit_character = INS_george_hart
 recruit_character = INS_hamengkubuwono_ninth
+recruit_character = INS_amir_sjarifoeddin
+recruit_character = INS_tan_malaka
+recruit_character = INS_moesso_moenawar
+recruit_character = INS_mohammad_hoesni_thamrin
+
 recruit_character = INS_murk_boerstra
 recruit_character = INS_berenschot
+recruit_character = INS_pesman
+recruit_character = INS_bakkers
+recruit_character = INS_simon_spoor
 recruit_character = HOL_conrad_helfrich
-recruit_character = INS_pesman #
-recruit_character = INS_bakkers #
-recruit_character = INS_jan_hilgers #
-recruit_character = INS_simon_spoor #
+recruit_character = INS_ferwerda
+recruit_character = INS_jan_hilgers
+recruit_character = INS_laurens_walraven
 
+recruit_character = INS_oerip_soemohardjo
+recruit_character = INS_didi_kartasasmita
+recruit_character = INS_mas_pardi
+recruit_character = INS_mohammad_nazir
+recruit_character = INS_wardiman
+recruit_character = INS_soerjadarma
 
 if = {
 	limit = {
 		has_dlc = "Man the Guns"
 	}
-	recruit_character = INS_ferwerda #
 	recruit_character = INS_hein_ter_poorten
-	recruit_character = INS_ilgen #
+	recruit_character = INS_ilgen
 	recruit_character = INS_sk_trimurti
 	recruit_character = INS_hamengkubuwono_eighth
-	recruit_character = INS_mohammad_husni_thamrin
+	recruit_character = INS_agoes_salim
+	recruit_character = INS_natsir
 }
 
 set_cosmetic_tag = INS_HOL # Netherlands East Indies
@@ -146,23 +157,8 @@ set_cosmetic_tag = INS_HOL # Netherlands East Indies
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
 	
-	set_party_name = {
-		ideology = neutrality
-		long_name = INS_neutrality_party_volksraad_long
-		name = INS_neutrality_party_volksraad
-	}
-	set_party_name = {
-		ideology = democratic
-		long_name = INS_democratic_party_united_front_long
-		name = INS_democratic_party_united_front
-	}
-	set_party_name = {
-		ideology = fascism
-		long_name = INS_democratic_party_long
-		name = INS_democratic_party
-	}
 	add_country_leader_role = {
-		character = INS_soekarno
+		character = INS_mohammad_hoesni_thamrin
 		country_leader = {
 			expire = "1965.1.1"
 			ideology = fascism_ideology
@@ -171,22 +167,6 @@ set_cosmetic_tag = INS_HOL # Netherlands East Indies
 			}
 		}
 		promote_leader = yes
-	}
-	add_country_leader_role = {
-		character = INS_mohammad_hoesni_thamrin
-		country_leader = {
-			expire = "1965.1.1"
-			ideology = conservatism
-			traits = {
-				
-			}
-		}
-		promote_leader = yes
-	}
-	INS_soekarno = {
-		remove_country_leader_role = {
-			ideology = socialism
-		}
 	}
 	if = {
 		limit = {
