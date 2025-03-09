@@ -1,9 +1,9 @@
 characters={
 	MAL_onn_jaafar={
-		name="Onn Jaafar"
+		name= MAL_onn_jaafar
 		portraits={
 			civilian={
-				large="gfx/leaders/Asia/Portrait_Asia_Generic_democracy.dds"
+				large=GFX_portrait_malaysia_onn_jaafar
 			}
 		}
 		country_leader={
@@ -13,7 +13,7 @@ characters={
 		}
 	}
 	MAL_shenton_thomas={
-		name="Shenton Thomas"
+		name= MAL_shenton_thomas
 		portraits={
 			civilian={
 				large="GFX_portrait_malaya_shenton_thomas"
@@ -26,7 +26,7 @@ characters={
 		}
 	}
 	MAL_lai_teck={
-		name="Lai Teck"
+		name= MAL_lai_teck
 		portraits={
 			civilian={
 				large="gfx/leaders/Asia/Portrait_Asia_Generic_1.dds"
@@ -39,10 +39,10 @@ characters={
 		}
 	}
 	MAL_ibrahim_hj_yaacob={
-		name="Ibrahim Hj Yaacob"
+		name= MAL_ibrahim_hj_yaacob
 		portraits={
 			civilian={
-				large="gfx/leaders/MAL/portrait_mal_ibrahim_hj_yaacob.dds"
+				large= GFX_portrait_malaysia_ibrahim_yaacob
 			}
 		}
 		country_leader={
@@ -52,10 +52,10 @@ characters={
 		}
 	}
 	MAL_tuanku_abdul_rahman = {
-		name="Tuanku Abdul Rahman"
+		name= MAL_tuanku_abdul_rahman
 		portraits={
 			civilian={
-				large="gfx/leaders/MAL/portrait_mal_tuanku_abdul_rahman.dds"
+				large= GFX_portrait_malaysia_abdul_rahman
 			}
 		}
 		country_leader={

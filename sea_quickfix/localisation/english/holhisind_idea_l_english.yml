@@ -468,3 +468,5 @@ hol_rename_liege:0 "Rename Liége To Luik"
 INS_national_defence:0 "National Defence"
 INS_national_defence_desc:0 "We must focus on defending our country from the foreign forces trying to invade it."
 INS_dec_alarm_sytems:0 "Improve The Alarm Systems"
+
+INS_de_jonge_resigned:0 "§YGovernor-General De Jonge§! has been retired"

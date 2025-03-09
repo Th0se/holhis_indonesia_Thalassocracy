@@ -126,6 +126,11 @@ characters = {
 			allowed = {
 				original_tag = PHI
 			}
+			available = {
+				NOT = {
+					has_autonomy_state = autonomy_supervised_state
+				}
+			}
 			traits = {
 				fascist_demagogue
 			}
@@ -317,7 +322,7 @@ characters = {
 				original_tag = PHI 
 			}
 			traits = {
-				minister_public_works
+				JUNO_minister_of_public_works
 			}
 		}
 	}
@@ -488,12 +493,8 @@ characters = {
 	PHI_enrique_jurado = {
 		name = PHI_enrique_jurado
 		portraits = {
-			army = {
-				large = GFX_portrait_phi_enrique_jurado
-				small = GFX_idea_philippines_enrique_jorado
-			}
 			navy = {
-				large = GFX_portrait_phi_enrique_jurado
+				large = GFX_portrait_phi_enrique_jorado
 				small = GFX_idea_philippines_enrique_jorado
 			}
 		}

@@ -103,7 +103,7 @@ recruit_character = INS_soetomo
 recruit_character = INS_soekarno
 recruit_character = INS_mohammad_hatta
 recruit_character = INS_george_hart
-recruit_character = INS_hamengkubuwono_ninth
+recruit_character = INS_hamengkoeboewono_ninth
 recruit_character = INS_amir_sjarifoeddin
 recruit_character = INS_tan_malaka
 recruit_character = INS_moesso_moenawar
@@ -132,10 +132,9 @@ if = {
 	}
 	recruit_character = INS_hein_ter_poorten
 	recruit_character = INS_ilgen
-	recruit_character = INS_sk_trimurti
-	recruit_character = INS_hamengkubuwono_eighth
+	recruit_character = INS_sk_trimoerti
+	recruit_character = INS_hamengkoeboewono_eighth
 	recruit_character = INS_agoes_salim
-	recruit_character = INS_natsir
 }
 
 set_cosmetic_tag = INS_HOL # Netherlands East Indies
@@ -168,6 +167,33 @@ set_cosmetic_tag = INS_HOL # Netherlands East Indies
 		}
 		promote_leader = yes
 	}
+	INS_hubertus_van_mook = {
+		add_trait = {
+			slot = political_advisor
+					trait = captain_of_industry
+				}
+				remove_trait = {
+					slot = political_advisor
+					trait = economic_organizer
+				}
+			}
+		}
+	}
+	INS_berenschot = {
+		promote_leader = yes
+	}
+	INS = {
+		HOL_conrad_helfrich = {
+			set_nationality = HOL
+		}
+	}
+
+	promote_character = INS_a_t_van_starkenborgh_stachouwer
+	retire_character = INS_soetomo
+	retire_character = INS_bonifacius_de_jonge
+	retire_character = INS_george_hart
+	retire_character = INS_murk_boerstra
+
 	if = {
 		limit = {
 			has_dlc = "Together for Victory"

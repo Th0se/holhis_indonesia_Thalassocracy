@@ -35,13 +35,13 @@ characters={
 					has_government = democratic
 				}
 				has_country_leader = {
-					name = "Hubertus van Mook"
+					character = INS_hubertus_van_mook
 					ruling_only = yes 
 				}
 			}
 			visible = {
 				has_country_leader = {
-					name = "Hubertus van Mook"
+					character = INS_hubertus_van_mook
 					ruling_only = yes 
 				}
 			}
@@ -81,16 +81,9 @@ characters={
 					has_government = neutrality 
 					has_government = democratic
 				}
-				has_country_leader = {
-					name = "A. T. van Starkenborgh Stachouwer"
-					ruling_only  = yes 
-				}
+				has_country_flag = INS_de_jonge_resigned
 			}
 			visible = {
-				has_country_leader = {
-					name = "A. T. van Starkenborgh Stachouwer"
-					ruling_only = yes 
-				}
 			}
 			allowed = {
 				original_tag = INS
@@ -191,6 +184,7 @@ characters={
 						has_autonomy_state = autonomy_supervised_state
 					}
 				}
+				has_country_flag = INS_de_jonge_resigned
 			}
 			traits = {
 				communist_revolutionary
@@ -284,26 +278,18 @@ characters={
 			available = {
 				NOT = {
 					has_country_leader = {
-						name = "Abikoesno Tjokrosoejoso"
+						character = INS_abikoesno_tjokrosoejoso
 						ruling_only = yes 
 					}
 				}
 			}
 			visible = {
-				if = {
-					limit = {
-						tag = INS
-					}
-					NOT = {
-						has_completed_focus = INS_make_use_nsboi
-					}
-				}
 				NOT = {
 					has_government = communism
 				}
 			}
 			traits = {
-				psii_leader
+				democratic_reformer
 			}
 		}
 	}
@@ -397,7 +383,7 @@ characters={
 			}
 			visible = {
 				has_country_leader = {
-					name = "Hubertus van Mook"
+					character = INS_hubertus_van_mook
 					ruling_only = yes 
 				}
 				NOT = {
@@ -511,7 +497,7 @@ characters={
 				base = 20
 				modifier = {
 					has_country_leader = {
-						name = "Soekarno"
+						character = INS_soekarno
 						ruling_only = yes 
 					}
 					factor  = 10
@@ -537,18 +523,18 @@ characters={
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = INS_sk_trimurti
+			idea_token = INS_sk_trimoerti
 			allowed = {
 				original_tag = INS
 				has_dlc = "Man the Guns"
 			}
 			available  = {
+				has_country_flag = INS_de_jonge_resigned
 				NOT = {
 					has_government = fascism
 				}
 			}
 			visible = {
-				has_country_flag = INS_de_jonge_resigned
 				date > 1937.5.11
 			}
 			traits = {
@@ -768,8 +754,8 @@ characters={
 		name = INS_ferwerda
 		portraits = {
 			army = {
-				large = "gfx/leaders/INS/portrait_ins_ferwerda.dds"
-				small = "gfx/ideas/INS/idea_ins_ferwerda.dds"
+				large = GFX_portrait_indonesia_ferwerda
+				small = GFX_idea_indonesia_ferwerda
 			}
 		}
 		advisor={
@@ -863,7 +849,7 @@ characters={
 		name = INS_jan_hilgers
 		portraits = {
 			army = {
-				small = "gfx/ideas/INS/idea_ins_jan_hilgers.dds"
+				small = GFX_idea_indonesia_jan_hilgers
 			}
 		}
 		advisor = {
@@ -943,6 +929,35 @@ characters={
 		portraits = {
 			army = {
 				small = GFX_idea_indonesia_wardiman
+			}
+		}
+	}
+
+  #####                                                              
+ #     #   ####   #  ######  #    #  #####  #   ####   #####   ####  
+ #        #    #  #  #       ##   #    #    #  #         #    #      
+  #####   #       #  #####   # #  #    #    #   ####     #     ####  
+       #  #       #  #       #  # #    #    #       #    #         # 
+ #     #  #    #  #  #       #   ##    #    #  #    #    #    #    # 
+  #####    ####   #  ######  #    #    #    #   ####     #     ####  
+
+
+	INS_laurens_walraven = {
+
+		name = INS_laurens_walraven
+		portraits = {
+			army = {
+				large = GFX_portrait_indonesia_laurens_walraven
+				small = GFX_idea_indonesia_walraven
+			}
+		}
+
+		scientist = {
+
+			traits = { scientist_trait_aircraft_specialist }
+
+			skills = {
+				specialization_air = 1
 			}
 		}
 	}

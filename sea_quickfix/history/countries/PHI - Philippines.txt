@@ -60,7 +60,6 @@ set_convoys = 10
 }
 
 add_ideas = {
-	ASEAN_agrarian_society_3
 }
 
 recruit_character = PHI_manuel_luis_quezon
@@ -75,7 +74,6 @@ recruit_character = PHI_emilio_aguinaldo
 recruit_character = PHI_eulogio_rodriguez
 recruit_character = PHI_gregorio_aglipay
 recruit_character = PHI_guillermo_capadocia
-recruit_character = PHI_jose_avelino
 recruit_character = PHI_jose_yulo
 recruit_character = PHI_juan_sumulong
 recruit_character = PHI_manuel_roxas
@@ -138,6 +136,8 @@ recruit_character = PHI_vicente_p_lim
 			ideology = falangism
 		}
 	}
+	retire_character = PHI_mariano_cuenco
+	recruit_character = PHI_jose_avelino
 
 	set_popularities = {
 		democratic = 75

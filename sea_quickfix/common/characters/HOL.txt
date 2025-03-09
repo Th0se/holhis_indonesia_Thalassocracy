@@ -245,7 +245,7 @@ characters={
 				small="GFX_portrait_HOL_johannes_theodorus_furstner_small"
 			}
 			civilian={
-				large = "gfx/leaders/INS/portrait_ins_furstner.dds"
+				large = "GFX_portrait_HOL_johannes_theodorus_furstner"
 				small="GFX_portrait_HOL_johannes_theodorus_furstner_small"
 			}
 		}
@@ -307,21 +307,92 @@ characters={
 			coordination_skill=2
 			legacy_id=981
 		}
-		advisor={
-			slot = navy_chief
-			idea_token = HOL_conrad_helfrich
+		advisor = {
+			cost = 100
+			slot = theorist
+			idea_token = HOL_conrad_helfrich_theorist
+			ledger = navy
 			allowed = {
+				OR = {
 					original_tag = HOL
+					original_tag = INS
 				}
-				traits = {
-					navy_chief_commerce_raiding_3
+			}
+			available = {
+				NOT = {
+					has_idea = HOL_conrad_helfrich_chief
 				}
-				cost = 200
-				ai_will_do = {
-					factor = 1.000
+			}
+			traits = {
+				submarine_specialist
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = HOL_conrad_helfrich_chief
+			allowed = {
+				OR = {
+					original_tag = HOL
+					original_tag = INS #he starts here
 				}
+			}
+			available = {
+				NOT = {
+					has_idea = HOL_conrad_helfrich_theorist
+				}
+			}
+			traits = {
+				navy_chief_commerce_raiding_3
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
+
+	HOL_fanny_schoonheyt = {
+		name = HOL_fanny_schoonheyt
+		portraits = {
+			army = {
+				large = GFX_HOL_fanny_schoonheyt
+				small = GFX_HOL_fanny_schoonheyt_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = HOL_fanny_schoonheyt
+			allowed = {
+				original_tag = HOL
+				has_dlc = "Man the Guns"
+			}
+			available = {
+				has_completed_focus = HOL_legacy_of_the_de_zeven_provincien_mutiny
+				NOT = { has_completed_focus = HOL_affirm_loyalty_to_moscow }
+			}
+			visible = {
+				has_global_flag = scw_over
+			}
+			traits = {
+				socialist_journalist 
+			}
+			cost = 125
+		}
+		corps_commander = {
+			traits = { brilliant_strategist trickster commando }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id = -1
+			visible = {
+				has_government = communism
+				has_global_flag = scw_over
+			}
+		}
+	}
+	
 	HOL_karel_doorman={
 		name=HOL_karel_doorman
 		portraits={
@@ -635,7 +706,7 @@ characters={
 		name = HOL_hendrikus_sneevliet
 		portraits = {
 			army = {
-				small = "gfx/ideas/HOL/idea_hol_sneevliet.dds"
+				small = GFX_idea_netherlands_hendrikus_sneevliet
 			}
 		}
 		advisor = {
@@ -855,6 +926,31 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_HOL_meinout_rost_van_tonningen"
+			}
+		}
+	}
+
+  #####                                                              
+ #     #   ####   #  ######  #    #  #####  #   ####   #####   ####  
+ #        #    #  #  #       ##   #    #    #  #         #    #      
+  #####   #       #  #####   # #  #    #    #   ####     #     ####  
+       #  #       #  #       #  # #    #    #       #    #         # 
+ #     #  #    #  #  #       #   ##    #    #  #    #    #    #    # 
+  #####    ####   #  ######  #    #    #    #   ####     #     ####  
+
+
+  HOL_anthony_fokker = {
+		name = HOL_anthony_fokker
+		portraits = {
+			army = {
+				large = GFX_portrait_HOL_anthony_fokker
+			}
+		}
+
+		scientist = {
+			traits = { scientist_trait_aircraft_specialist scientist_trait_gifted_engineer }
+			skills = {
+				specialization_air = 2
 			}
 		}
 	}

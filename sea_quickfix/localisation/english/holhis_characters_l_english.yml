@@ -2,7 +2,6 @@
  #DUTCH EAST INDIES - Indonesia
  INS_hein_ter_poorten:0 "Hein Ter Poorten" #1887, 48yo in 1936, KNIL
  INS_bonifacius_de_jonge:0 "Bonifacius Cornelis de Jonge" #1875, 60 yo in 1936
- INS_a_t_van_starkenborgh_stachouwer:0 "Tjarda van Starkenborgh" #1888, 48 yo in 1936
  INS_hubertus_van_mook:0 "Hubertus van Mook" #1894, 42 yo in 1936, Economic Minister
  INS_anton_van_der_laaken:0 "Anton van der Laaken" #1890, 46yo in 1936, NSB-OI Leader
  INS_rhemrev:0 "Willem Vermehr-Rhemrev" #1878, 58 yo in 1936, KNIL Veteran
@@ -79,3 +78,55 @@
  
  #BURMA
  BRM_aung_san:0 "Aung San"
+ BRM_u_saw:0 "U Saw"
+
+ #PHILIPPINES
+ PHI_manuel_luis_quezon:0 "Manuel Luis Quezón"
+ PHI_crisanto_evangelista:0 "Crisanto Evangelista"
+ PHI_andres_soriano:0 "Andrés Soriano"
+ PHI_jose_laurel:0 "Jose Paciano Laurel"
+ PHI_benigno_ramos:0 "Benigno Ramos"
+ PHI_enrique_jurado:0 "Enrique Jurado"
+ PHI_jose_de_los_reyes:0 "Jose de los Reyes"
+ PHI_paulino_santos:0 "Paulino Santos"
+ PHI_pedro_santos:0 "Pedro Abad Santos"
+ PHI_artemio_ricarte:0 "Artemio Ricarte"
+ PHI_celerino_tiongco:0 "Celerino Tiongco"
+ PHI_elpidio_quirino:0 "Elpidio Quirino"
+ PHI_eulogio_rodriguez:0 "Eulogio Rodriguez"
+ PHI_guillermo_capadocia:0 "Guillermo Capadocia"
+ PHI_gregorio_aglipay:0 "Gregorio Aglipay"
+ PHI_jose_avelino:0 "José Avelino"
+ PHI_jose_yulo:0 "Jose Yulo"
+ PHI_manuel_roxas:0 "Manuel Roxas"
+ PHI_mariano_cuenco:0 "Mariano Jesús Cuenco"
+
+ #MALAYSIA
+ MAL_tuanku_abdul_rahman:0 "Tuanku Abdul Rahman"
+ MAL_ibrahim_hj_yaacob:0 "Ibrahim Yaacob"
+ MAL_lai_teck:0 "Lai Teck"
+ MAL_onn_jaafar:0 "Onn Jaafar"
+ MAL_shenton_thomas:0 "Shenton Thomas"
+ MAL_charles_brooke:0 "Charles Vyner Brooke"
+
+ #SIAM
+ SIA_borophan_yuthakit:0 "Powpianlert Borophan Yuthakit"
+ SIA_chalermkiat_wattanangkul:0 "Chalermkiat Wattanangkul"
+ SIA_khuang_aphaiwongse:0 "Khuang Aphaiwongse"
+ SIA_mangkorn_phromyothi:0 "Mangkorn Phromyothi"
+ SIA_pianlert_boripanyutthakit:0 "Pianlert Boripanyutthakit" #Minister of Commerce
+ SIA_phraya_phahon:0 "Phraya Phahon"
+ SIA_plaek_phibunsongkhram:0 "Plaek Phibunsongkhram"
+ SIA_pridi_banomyong:0 "Pridi Banomyong"
+ SIA_rama_viii:0 "Rama VIII"
+ SIA_rama_viii_civil:0 "Ananda Mahidol"
+ SIA_rama_vii:0 "Rama VII"
+ SIA_rama_vii_civil:0 "Prajadiphok Sakdidej"
+ SIA_rattanakul:0 "Charun Rattanakul"
+ SIA_sinthusongkhramchai:0 "Sindhu Kamolnawin" #Navy Chief and Minister of Justice
+ SIA_thawee_bunyaket:0 "Thawee Bunyaket"
+ SIA_thawan_thamrongnawasawat:0 "Thawan Thamrongnawasawat"
+ SIA_tua_lapanukrom:0 "Tua Lapanukrom"
+ SIA_vejyan_trangsarit:0 "Vejyan Trangsarit" #Air Chief
+ SIA_wichcitcholathai:0 "Phraya Wichcitcholathai"
+ SIA_wichitwathakan:0 "Wichit Wichitwathakan"

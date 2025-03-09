@@ -86,6 +86,11 @@ set_popularities = {
 	communism = 14
 	neutrality = 72
 }
+set_party_name = {
+	ideology = neutrality
+	long_name = BRM_colonial_party
+	name = BRM_colonial_party
+}
 
 recruit_character = BRM_archibald_cochrane
 recruit_character = BRM_aung_san
