@@ -1,0 +1,71 @@
+technology_sharing_group = {
+
+	id = INS_AST_research_group
+	name = INS_AST_research_group
+	picture = GFX_technology_sharing_default
+
+    categories = { land_doctrine infantry_weapons radar_tech naval_doctrine naval_equipment air_equipment }
+    
+	research_sharing_per_country_bonus = 0.10
+
+    available = {
+        OR = {
+            tag = AST
+            tag = INS
+        }
+    }
+}
+
+technology_sharing_group = {
+
+    id = INS_HOL_research_navair
+    name = INS_HOL_research_navair
+    picture = GFX_technology_sharing_default
+
+    categories = { naval_doctrine naval_equipment air_doctrine air_equipment }
+    
+    research_sharing_per_country_bonus = 0.10
+
+    available = {
+        OR = {
+            tag = HOL
+            tag = INS
+        }
+    }
+}
+
+technology_sharing_group = {
+
+    id = INS_NUS_research_group
+    name = INS_nusantara_accord
+    picture = GFX_technology_sharing_default
+    
+    research_sharing_per_country_bonus = 0.10
+
+    available = {
+        OR = {
+            tag = INS
+            tag = PPA
+            tag = MLK
+            tag = EIS
+        }
+    }
+}
+
+technology_sharing_group = {
+
+    id = INS_JAP_naval_cooperation_idea
+    name = INS_JAP_naval_cooperation
+    picture = GFX_technology_sharing_default
+    
+    research_sharing_per_country_bonus = 0.10
+
+    categories = { naval_doctrine naval_equipment  }
+
+    available = {
+        OR = {
+            tag = HOL
+            tag = JAP
+        }
+    }
+}

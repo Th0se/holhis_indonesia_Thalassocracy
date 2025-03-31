@@ -1,0 +1,512 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_event_hol_bikes"
+		texturefile = "gfx/event_pictures/event_hol_bikes.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_hol_guns"
+		texturefile = "gfx/event_pictures/event_hol_guns.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_hol_knil_march"
+		texturefile = "gfx/event_pictures/event_hol_knil_march.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_hol_march"
+		texturefile = "gfx/event_pictures/event_hol_march.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_hol_queen"
+		texturefile = "gfx/event_pictures/event_hol_queen.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_hol_queen2"
+		texturefile = "gfx/event_pictures/event_hol_queen2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_hol_maastricht"
+		texturefile = "gfx/event_pictures/event_hol_maastricht.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_hol_willem_drees"
+		texturefile = "gfx/event_pictures/event_hol_willem_drees.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_ins_gapi"
+		texturefile = "gfx/event_pictures/event_ins_gapi.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_ins_hatta"
+		texturefile = "gfx/event_pictures/event_ins_hatta.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_ins_independence_riots"
+		texturefile = "gfx/event_pictures/event_ins_independence_riots.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_ins_pieterszoon"
+		texturefile = "gfx/event_pictures/event_ins_pieterszoon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_ins_paper"
+		texturefile = "gfx/event_pictures/event_ins_paper.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_ins_pen_and_paper"
+		texturefile = "gfx/event_pictures/event_ins_pen_and_paper.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_ins_soekarno"
+		texturefile = "gfx/event_pictures/event_ins_soekarno.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_ins_soekarno_hatta"
+		texturefile = "gfx/event_pictures/event_ins_soekarno_hatta.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_ins_van_mook"
+		texturefile = "gfx/event_pictures/event_ins_van_mook.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_hol_bevrijding"
+		texturefile = "gfx/event_pictures/report_event_hol_bevrijding.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_hol_gerbrandy_cabinet"
+		texturefile = "gfx/event_pictures/report_event_hol_gerbrandy_cabinet.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_hol_juliana_ascendant"
+		texturefile = "gfx/event_pictures/report_event_hol_juliana_ascendant.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_hol_royal_marriage"
+		texturefile = "gfx/event_pictures/report_event_hol_juliana_marriage.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_hol_wilhelmina_speech"
+		texturefile = "gfx/event_pictures/report_event_hol_wilhelmina_speech.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_amir_sjarifoeddin"
+		texturefile = "gfx/event_pictures/report_event_ins_amir_sjarifoeddin.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_bandoeng"
+		texturefile = "gfx/event_pictures/report_event_ins_bandoeng.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_batavia_parade"
+		texturefile = "gfx/event_pictures/report_event_ins_batavia_parade.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_berenschot_crash"
+		texturefile = "gfx/event_pictures/report_event_ins_berenschot_crash.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_coffee"
+		texturefile = "gfx/event_pictures/report_event_ins_coffee.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_crown_jewel"
+		texturefile = "gfx/event_pictures/report_event_ins_crown_jewel.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_de_jonge_aging"
+		texturefile = "gfx/event_pictures/report_event_ins_de_jonge_aging.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_des_indies"
+		texturefile = "gfx/event_pictures/report_event_ins_des_indies.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_edgard_du_perron"
+		texturefile = "gfx/event_pictures/report_event_ins_edgard_du_perron.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_frederik_hoog"
+		texturefile = "gfx/event_pictures/report_event_ins_frederik_hoog.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_gapi_formed"
+		texturefile = "gfx/event_pictures/report_event_ins_gapi_formed.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_hamengkoeboewono_ninth_coronation"
+		texturefile = "gfx/event_pictures/report_event_ins_hamengkoeboewono_ninth_coronation.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_hart"
+		texturefile = "gfx/event_pictures/report_event_ins_hart.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_hatta_prisoner"
+		texturefile = "gfx/event_pictures/report_event_ins_hatta_prisoner.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_hatta_van_mook"
+		texturefile = "gfx/event_pictures/report_event_ins_hatta_van_mook.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_helsdingen_book"
+		texturefile = "gfx/event_pictures/report_event_ins_helsdingen_book.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_indonesian_masses"
+		texturefile = "gfx/event_pictures/report_event_ins_indonesian_masses.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_indonesian_meeting"
+		texturefile = "gfx/event_pictures/report_event_ins_indonesian_meeting.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_juliana_married"
+		texturefile = "gfx/event_pictures/report_event_ins_juliana_married.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_lodestar"
+		texturefile = "gfx/event_pictures/report_event_ins_lodestar.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_mangkunegara_seventh"
+		texturefile = "gfx/event_pictures/report_event_ins_mangkunegara_seventh.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_mangkunegaran_family"
+		texturefile = "gfx/event_pictures/report_event_ins_mangkunegaran_family.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_noeroel_dance"
+		texturefile = "gfx/event_pictures/report_event_ins_noeroel_dance.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_nsb_1"
+		texturefile = "gfx/event_pictures/report_event_ins_anton_van_der_laaken.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_overview_thumbnail"
+		texturefile = "gfx/event_pictures/report_event_ins_overview_thumbnail.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_overview_majapahit"
+		texturefile = "gfx/event_pictures/report_event_ins_overview_majapahit.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_overview_borobudur"
+		texturefile = "gfx/event_pictures/report_event_ins_overview_borobudur.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_parade1"
+		texturefile = "gfx/event_pictures/report_event_ins_parade1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_parade2"
+		texturefile = "gfx/event_pictures/report_event_ins_parade2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_parindra"
+		texturefile = "gfx/event_pictures/report_event_ins_parindra.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_pen_and_paper"
+		texturefile = "gfx/event_pictures/report_event_ins_pen_and_paper.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_pki"
+		texturefile = "gfx/event_pictures/report_event_ins_pki.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_pki2"
+		texturefile = "gfx/event_pictures/report_event_ins_pki2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_pki_soviet"
+		texturefile = "gfx/event_pictures/report_event_ins_pki_soviet.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_raad_van_indie"
+		texturefile = "gfx/event_pictures/report_event_ins_raad_van_indie.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_sarekat_islam"
+		texturefile = "gfx/event_pictures/report_event_ins_sarekat_islam.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_ship_java"
+		texturefile = "gfx/event_pictures/report_event_ins_ship_java.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_sinpo"
+		texturefile = "gfx/event_pictures/report_event_ins_sinpo.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_sjahrir_prisoner"
+		texturefile = "gfx/event_pictures/report_event_ins_sjahrir_prisoner.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_snouck_hurgronje"
+		texturefile = "gfx/event_pictures/report_event_ins_snouck_hurgronje.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_soekarno_bengkoeloe"
+		texturefile = "gfx/event_pictures/report_event_ins_soekarno_bengkoeloe.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_soekarno_ende"
+		texturefile = "gfx/event_pictures/report_event_ins_soekarno_ende.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_soekarno_prosecuted"
+		texturefile = "gfx/event_pictures/report_event_ins_soekarno_prosecuted.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_soekarno_speech"
+		texturefile = "gfx/event_pictures/report_event_ins_soekarno_speech.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_soekarno_tojo"
+		texturefile = "gfx/event_pictures/report_event_ins_soekarno_tojo.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_soerabaja"
+		texturefile = "gfx/event_pictures/report_event_ins_soerabaja.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_soetomo"
+		texturefile = "gfx/event_pictures/report_event_ins_soetomo.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_sugarcane"
+		texturefile = "gfx/event_pictures/report_event_ins_sugarcane.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_sultan_javanese"
+		texturefile = "gfx/event_pictures/report_event_ins_sultan_japanese.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_swantoro"
+		texturefile = "gfx/event_pictures/report_event_ins_swantoro.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_thamrin_funeral"
+		texturefile = "gfx/event_pictures/report_event_ins_thamrin_funeral.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_thamrin_tabrani"
+		texturefile = "gfx/event_pictures/report_event_ins_thamrin_tabrani.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_tjarda_captured"
+		texturefile = "gfx/event_pictures/report_event_ins_tjarda_captured.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_tjarda_jonge_handover"
+		texturefile = "gfx/event_pictures/report_event_ins_tjarda_jonge_handover.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_tjarda_school"
+		texturefile = "gfx/event_pictures/report_event_ins_tjarda_school.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_transmigration"
+		texturefile = "gfx/event_pictures/report_event_ins_transmigration.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_transmigration2"
+		texturefile = "gfx/event_pictures/report_event_ins_transmigration2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_van_mook_ascendant"
+		texturefile = "gfx/event_pictures/report_event_ins_van_mook_ascendant.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_van_mook_flight"
+		texturefile = "gfx/event_pictures/report_event_ins_van_mook_flight.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_van_mook_malino"
+		texturefile = "gfx/event_pictures/report_event_ins_van_mook_malino.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_voc"
+		texturefile = "gfx/event_pictures/report_event_ins_voc.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_volksraad_debate"
+		texturefile = "gfx/event_pictures/report_event_ins_volksraad_debate.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_volksraad_session"
+		texturefile = "gfx/event_pictures/report_event_ins_volksraad_session.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_volksraad_session2"
+		texturefile = "gfx/event_pictures/report_event_ins_volksraad_session2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_volksraad_soetardjo"
+		texturefile = "gfx/event_pictures/report_event_ins_volksraad_soetardjo.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_wilhelmina_here"
+		texturefile = "gfx/event_pictures/report_event_ins_wilhelmina_here.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ins_zeven_provincien"
+		texturefile = "gfx/event_pictures/report_event_ins_zeven_provincien.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_phi_aglipay"
+		texturefile = "gfx/event_pictures/report_event_phi_aglipay.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_phi_soriano"
+		texturefile = "gfx/event_pictures/report_event_phi_soriano.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_sia_rama_viii"
+		texturefile = "gfx/event_pictures/report_event_sia_rama_viii.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_ins_japan_bandoeng"
+		texturefile = "gfx/event_pictures/event_ins_japan_bandoeng.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_ins_japan_batavia"
+		texturefile = "gfx/event_pictures/event_ins_japan_batavia.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_ins_japan_manado"
+		texturefile = "gfx/event_pictures/event_ins_japan_manado.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_ins_japan_soerabaja"
+		texturefile = "gfx/event_pictures/event_ins_japan_soerabaja.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_ins_japan_tarakan"
+		texturefile = "gfx/event_pictures/event_ins_japan_tarakan.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_cat_generic_mesopotamia"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_mesopotamia.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_cat_generic_indochina"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_indochina.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_cat_hol_war_java"
+		texturefile = "gfx/interface/decisions/decision_cat_hol_war_java.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_cat_picture_volksraad"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_volksraad.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_cat_picture_malacca"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_malacca.dds"
+	}
+}
