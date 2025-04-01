@@ -521,25 +521,25 @@ INS_jacob_zomer = {
 	set_character_flag = INS_dutch_officer_flag
 }
 
-935 = {
+1017 = { #Atjeh
 	start_resistance = yes
 	set_compliance = 32
 	set_resistance = 30
 	set_garrison_strength = 1.0
 }
-946 = {
+1029 = { #SW Papua
 	start_resistance = yes
 	set_compliance = 16
 	set_resistance = 20
 	set_garrison_strength = 0.75
 }
-669 = {
+669 = { #NW Papua
 	start_resistance = yes
 	set_compliance = 20
 	set_resistance = 15
 	set_garrison_strength = 0.75
 }
-945 = {
+1028 = { #Volgekop
 	start_resistance = yes
 	set_compliance = 10
 	set_resistance = 25
@@ -570,11 +570,11 @@ set_cosmetic_tag = INS_HOL # Netherlands East Indies
 	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
 }
 
-937 = { #Western Java
+1020 = { #Western Java
 	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
 }
 
-938 = { #East Java (pretty much everything outside Soerabaja)
+1021 = { #East Java (pretty much everything outside Soerabaja)
 	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
 }
 

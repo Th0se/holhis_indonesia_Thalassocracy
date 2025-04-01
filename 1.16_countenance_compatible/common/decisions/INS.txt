@@ -60,7 +60,7 @@ INS_category_volksraad = {
 				province = 7421
 				value = 10
 			}
-			set_capital = { state = 991 }
+			set_capital = { state = 1020 }
 		}
 
 		ai_will_do = {
@@ -215,8 +215,8 @@ INS_category_volksraad = {
 			FROM = {
 				OR = {
 					state = 335
-					state = 991
-					state = 990
+					state = 1020
+					state = 1021
 				}
 				is_fully_controlled_by = ROOT
 			}
@@ -448,7 +448,7 @@ INS_category_volksraad = {
 
 		complete_effect = {
 			add_stability = -0.1
-			982 = {
+			1029 = {
 				add_manpower = -629
 			}
 		}
@@ -506,7 +506,7 @@ INS_category_national_projects = {
 	INS_establish_nv_merbaboe = {
 
 		available = {
-			controls_state = 990
+			controls_state = 1021
 			has_completed_focus = INS_copy_dutch_navair
 			NOT = {
 				has_country_flag = INS_merbaboe_quits_flag
@@ -542,7 +542,7 @@ INS_category_national_projects = {
 			show_ideas_tooltip = INS_nv_merbaboe
 
 			custom_effect_tooltip = generic_skip_one_line_tt
-			991 = {
+			1020 = {
 				add_building_construction = {
 					type = air_facility
 					level = 1
@@ -556,7 +556,7 @@ INS_category_national_projects = {
 	INS_expand_ai_bandoeng = {
 
 		available = {
-			controls_state = 990
+			controls_state = 1021
 			has_completed_focus = INS_state_weapons
 			num_of_civilian_factories_available_for_projects > 8
 		}
@@ -580,7 +580,7 @@ INS_category_national_projects = {
 		}
 
 		remove_effect = {
-			991 = {
+			1020 = {
 				add_building_construction = {
 					type = land_facility
 					level = 1
@@ -594,7 +594,7 @@ INS_category_national_projects = {
 	INS_expand_soerabaja_dm = {
 
 		available = {
-			controls_state = 990
+			controls_state = 1021
 			has_completed_focus = INS_expand_javan_dockyards
 			num_of_civilian_factories_available_for_projects > 8
 		}
@@ -618,7 +618,7 @@ INS_category_national_projects = {
 		}
 
 		remove_effect = {
-			990 = {
+			1021 = {
 				add_building_construction = {
 					type = naval_facility
 					level = 1
@@ -640,7 +640,7 @@ INS_category_national_projects = {
 
 		available = {
 			is_subject = no
-			controls_state = 990
+			controls_state = 1021
 			OR = {
 				has_completed_focus = INS_expel_the_colonials
 				has_completed_focus = INS_merdeka
@@ -703,7 +703,7 @@ INS_category_national_projects = {
 
 		available = {
 			is_subject = no
-			controls_state = 991
+			controls_state = 1020
 			OR = {
 				has_completed_focus = INS_expel_the_colonials
 				has_completed_focus = INS_merdeka
@@ -1378,7 +1378,7 @@ INS_category_pki_decisions = {
 		days_remove = 183
 
 		complete_effect = {
-			982 = {
+			1029 = {
 				add_manpower = -629
 			}
 		}
@@ -1441,12 +1441,12 @@ INS_category_pki_decisions = {
 				INS = {
 					controls_state = 286
 					controls_state = 741
-					controls_state = 1007
-					controls_state = 1011
-					controls_state = 1012
+					controls_state = 1042
+					controls_state = 1046
+					controls_state = 1047
 					controls_state = 671
 					controls_state = 670
-					controls_state = 1016
+					controls_state = 1051
 				}
 				VIN = { exists = no }
 			}
@@ -1491,7 +1491,7 @@ INS_category_pki_decisions = {
 			AND = {
 				INS = {
 					controls_state = 286
-					controls_state = 1011
+					controls_state = 1046
 					controls_state = 671
 				}
 				VIN = { exists = no }
@@ -1531,8 +1531,8 @@ INS_category_pki_decisions = {
 			AND = {
 				INS = {
 					controls_state = 741
-					controls_state = 1007
-					controls_state = 1008
+					controls_state = 1042
+					controls_state = 1043
 				}
 				CAM = { exists = no }
 			}
@@ -1570,10 +1570,10 @@ INS_category_pki_decisions = {
 			has_completed_focus = INS_southeast_asian_liberation
 			AND = {
 				INS = {
-					controls_state = 1012
-					controls_state = 1014
+					controls_state = 1047
+					controls_state = 1049
 					controls_state = 670
-					controls_state = 1016
+					controls_state = 1051
 				}
 				LAO = { exists = no }
 			}
@@ -2702,8 +2702,8 @@ INS_category_ethical_policies = {
 					is_fully_controlled_by = ROOT
 					OR = {
 						state = 335
-						state = 991
-						state = 990
+						state = 1020
+						state = 1021
 					}
 				}
 				add_manpower = -7500
@@ -2737,8 +2737,8 @@ INS_category_ethical_policies = {
 						NOT = { #Don't give it back to Java
 							OR = {
 								state = 335
-								state = 991 
-								state = 990
+								state = 1020 
+								state = 1021
 							}
 						}
 						AND = {
@@ -2748,7 +2748,7 @@ INS_category_ethical_policies = {
 							}
 						}
 						AND = {
-							state = 985 #Dutch Timor
+							state = 1026 #Dutch Timor
 							NOT = {
 								has_state_flag = INS_transmigration_2
 							}
@@ -2760,7 +2760,7 @@ INS_category_ethical_policies = {
 							}
 						}
 						AND = {
-							state = 984 #North Maluku
+							state = 1027 #North Maluku
 							NOT = {
 								has_state_flag = INS_transmigration_3
 							}
@@ -2772,13 +2772,13 @@ INS_category_ethical_policies = {
 							}
 						}
 						AND = {
-							state = 989 #West Kalimantan
+							state = 1022 #West Kalimantan
 							NOT = {
 								has_state_flag = INS_transmigration_4
 							}
 						}
 						AND = {
-							state = 983 #Vogelkop
+							state = 1028 #Vogelkop
 							NOT = {
 								has_state_flag = INS_transmigration_4
 							}
@@ -2805,7 +2805,7 @@ INS_category_ethical_policies = {
 				if = {
 					limit = {
 						has_state_flag = INS_transmigration_4
-						NOT = { state = 989 }
+						NOT = { state = 1022 }
 					}
 					clr_state_flag = INS_transmigration_4
 					set_state_flag = INS_transmigration_5
@@ -2813,7 +2813,7 @@ INS_category_ethical_policies = {
 				if = {
 					limit = {
 						has_state_flag = INS_transmigration_4
-						NOT = { state = 983 }
+						NOT = { state = 1028 }
 					}
 					clr_state_flag = INS_transmigration_4
 					set_state_flag = INS_transmigration_5
@@ -2830,7 +2830,7 @@ INS_category_ethical_policies = {
 				if = {
 					limit = {
 						has_state_flag = INS_transmigration_3
-						NOT = { state = 984 }
+						NOT = { state = 1027 }
 					}
 					add_extra_state_shared_building_slots = 1
 					clr_state_flag = INS_transmigration_3
@@ -2839,7 +2839,7 @@ INS_category_ethical_policies = {
 				if = {
 					limit = {
 						has_state_flag = INS_transmigration_2
-						NOT = { state = 985 }
+						NOT = { state = 1026 }
 					}
 					clr_state_flag = INS_transmigration_2
 					set_state_flag = INS_transmigration_3
@@ -3106,7 +3106,7 @@ INS_category_ethical_policies = {
 
 		available = {
 			num_of_civilian_factories_available_for_projects > 4
-			993 = {
+			1017 = {
 				is_fully_controlled_by = ROOT
 				compliance > 50
 				infrastructure > 3
@@ -3121,7 +3121,7 @@ INS_category_ethical_policies = {
 					has_idea = INS_agrarian_society_2
 				}
 			}
-			993 = {
+			1017 = {
 				NOT = {
 					is_core_of = INS
 				}
@@ -3139,7 +3139,7 @@ INS_category_ethical_policies = {
 		}
 
 		remove_effect = {
-			993 = {
+			1017 = {
 				add_core_of = INS
 			}
 		}
@@ -3163,13 +3163,13 @@ INS_category_ethical_policies = {
 				infrastructure > 2
 				arms_factory > 0
 			}
-			983 = {
+			1028 = {
 				is_fully_controlled_by = ROOT
 				compliance > 40
 				infrastructure > 2
 				industrial_complex > 0
 			}
-			982 = {
+			1029 = {
 				is_fully_controlled_by = ROOT
 				compliance > 40
 				infrastructure > 2
@@ -3187,12 +3187,12 @@ INS_category_ethical_policies = {
 						is_core_of = INS
 					}
 				}
-				983 = {
+				1028 = {
 					NOT = {
 						is_core_of = INS
 					}
 				}
-				982 = {
+				1029 = {
 					NOT = {
 						is_core_of = INS
 					}
@@ -3214,10 +3214,10 @@ INS_category_ethical_policies = {
 			669 = {
 				add_core_of = INS
 			}
-			983 = {
+			1028 = {
 				add_core_of = INS
 			}
-			982 = {
+			1029 = {
 				add_core_of = INS
 			}
 		}
@@ -3445,7 +3445,7 @@ INS_category_new_capital = {
 					province = 7421
 					value = 4
 				}
-				991 = {
+				1020 = {
 					add_building_construction = {
 						type = supply_node
 						level = 1
@@ -3868,7 +3868,7 @@ INS_category_new_capital = {
 					province = 2184
 					value = 4
 				}
-				989 = {
+				1022 = {
 					add_building_construction = {
 						type = supply_node
 						level = 1
@@ -3932,7 +3932,7 @@ INS_category_new_capital = {
 					id = holhis_indonesia.13
 					hours = 6
 				}
-				992 = {
+				1018 = {
 					add_building_construction = {
 						type = naval_base
 						level = 1
@@ -3955,7 +3955,7 @@ INS_category_new_capital = {
 					province = 12268
 					value = 4
 				}
-				992 = {
+				1018 = {
 					add_building_construction = {
 						type = naval_base
 						level = 1
@@ -3978,7 +3978,7 @@ INS_category_new_capital = {
 					province = 12268
 					value = 4
 				}
-				992 = {
+				1018 = {
 					add_building_construction = {
 						type = naval_base
 						level = 1
@@ -4001,7 +4001,7 @@ INS_category_new_capital = {
 					province = 12268
 					value = 4
 				}
-				992 = {
+				1018 = {
 					add_building_construction = {
 						type = naval_base
 						level = 1
@@ -4024,7 +4024,7 @@ INS_category_new_capital = {
 					province = 12268
 					value = 4
 				}
-				992 = {
+				1018 = {
 					add_building_construction = {
 						type = supply_node
 						level = 1
@@ -4126,7 +4126,7 @@ INS_pacification_campaigns = {
 		target_trigger = {
 			FROM = {
 				OR = {
-					state = 1001
+					state = 1036
 					state = 524
 					state = 428
 					state = 422
@@ -6116,11 +6116,11 @@ INS_category_civil_war_missions = {
 		available = {
 			OR = {
 				NOT = { controls_state = 335 }
-				NOT = { controls_state = 991 }
-				NOT = { controls_state = 990 }
-				NOT = { controls_state = 993 }
+				NOT = { controls_state = 1020 }
+				NOT = { controls_state = 1021 }
+				NOT = { controls_state = 1017 }
 				NOT = { controls_state = 672 }
-				NOT = { controls_state = 992 }
+				NOT = { controls_state = 1018 }
 			}
 		}
 
@@ -6131,14 +6131,14 @@ INS_category_civil_war_missions = {
 			custom_trigger_tooltip = {
 				tooltip = INS_control_java
 				controls_state = 335
-				controls_state = 991
-				controls_state = 990
+				controls_state = 1020
+				controls_state = 1021
 			}
 			custom_trigger_tooltip = {
 				tooltip = INS_control_sumatra
-				controls_state = 993
+				controls_state = 1017
 				controls_state = 672
-				controls_state = 992
+				controls_state = 1018
 			}
 		}
 

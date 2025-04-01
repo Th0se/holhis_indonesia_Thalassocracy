@@ -397,7 +397,7 @@ form_mountainous_republic_category = {
 
 	icon = generic_formable_nations
 
-	#picture = GFX_decision_cat_picture_form_mountainous_republic
+	picture = GFX_decision_cat_picture_form_mountainous_republic
 	
 	allowed = {
 		has_dlc = "No Step Back"
@@ -408,7 +408,7 @@ form_transcaucasus_category = {
 
 	icon = generic_formable_nations
 
-	#picture = GFX_decision_cat_picture_form_transcaucasian_republic
+	picture = GFX_decision_cat_picture_form_transcaucasian_republic
 	
 	allowed = {
 		has_dlc = "No Step Back"
@@ -419,7 +419,7 @@ form_siberia_category = {
 
 	icon = generic_formable_nations
 
-	#picture = GFX_decision_cat_picture_form_siberian_republic
+	picture = GFX_decision_cat_picture_form_siberian_republic
 	
 	allowed = {
 		has_dlc = "No Step Back"
@@ -430,7 +430,7 @@ form_idel_ural_category = {
 
 	icon = generic_formable_nations
 
-	#picture = GFX_decision_cat_picture_form_idel_uralic_republic
+	picture = GFX_decision_cat_picture_form_idel_uralic_republic
 	
 	allowed = {
 		has_dlc = "No Step Back"
@@ -441,7 +441,7 @@ form_ethiopian_empire_category = {
 
 	icon = generic_formable_nations
 
-	#picture = GFX_decision_cat_picture_form_ethiopian_empire
+	picture = GFX_decision_cat_picture_form_ethiopian_empire
 	
 	allowed = {
 		has_dlc = "By Blood Alone"
@@ -452,7 +452,7 @@ form_east_africa_category = {
 
 	icon = generic_formable_nations
 
-	#picture = GFX_decision_cat_picture_form_east_africa
+	picture = GFX_decision_cat_picture_form_east_africa
 	
 	allowed = {
 		OR = {
@@ -470,7 +470,7 @@ form_horn_of_africa_africa_category = {
 
 	icon = generic_formable_nations
 
-	#picture = GFX_decision_cat_picture_form_the_horn_of_africa
+	picture = GFX_decision_cat_picture_form_the_horn_of_africa
 	
 	allowed = {
 		has_dlc = "By Blood Alone"

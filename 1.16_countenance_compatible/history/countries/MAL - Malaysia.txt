@@ -133,11 +133,11 @@ add_ideas = {
 
 set_cosmetic_tag = MAL_UK # British Malaya
 
-951 = { #Johor
+1033 = { #Johor
 	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
 }
 
-952 = { #Malaya
+1034 = { #Malaya
 	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
 }
 

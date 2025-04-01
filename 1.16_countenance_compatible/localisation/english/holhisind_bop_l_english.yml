@@ -1,0 +1,28 @@
+﻿l_english:
+
+ INS_centralization_balance:0 "Balance of Power"
+ INS_council_side:0 "Council side" #Left
+ INS_governor_side:0 "Governor-General side" #Right
+ INS_communist_side:0 "Communist side" #Left alt
+ INS_nationalist_side:0 "Nationalist side" #Right alt
+
+ INS_council_influence_range:0 "Minimally Empowered Council"
+ INS_council_dominant_range:0 "Empowered Council"
+ INS_council_power_range:0 "Strongly Empowered Council"
+ INS_council_total_range:0 "Rule by a Few"
+
+ INS_governor_influence_range:0 "Empowered Governor-General"
+ INS_governor_dominant_range:0 "Governor-General's Veto Power"
+ INS_governor_power_range:0 "Near-dictatorial Power"
+ INS_governor_total_range:0 "Strongman of the Indies"
+
+ INS_communist_influence_range:0 "Communists Influencing Politics"
+ INS_communist_dominant_range:0 "Communists Dominating Politics"
+ INS_communist_power_range:0 "Communists in Power"
+ INS_communist_total_control_range:0 "Communist Total Control of Politics"
+
+ INS_nationalist_influence_range:0 "Nationalists Influencing Politics"
+ INS_nationalist_dominant_range:0 "Nationalists Dominating Politics"
+ INS_nationalist_power_range:0 "Nationalist in Power"
+ INS_nationalist_total_range:0 "Nationalist Total Control of Politics"
+ 

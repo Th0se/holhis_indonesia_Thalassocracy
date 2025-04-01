@@ -52,7 +52,7 @@ set_technology = {
 
 set_convoys = 10
 
-948 = {
+1030 = { #Sulu
 	start_resistance = yes
 	set_compliance = 60
 	set_resistance = 15
