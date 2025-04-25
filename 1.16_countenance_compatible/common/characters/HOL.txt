@@ -1,0 +1,1176 @@
+characters = {
+	HOL_hendrikus_colijn = {
+		name = HOL_hendrikus_colijn
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_holland_hendrikus_colijn"
+			}
+		}
+		country_leader = {
+			ideology=conservatism
+			traits = { strict_austerity_adherent }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+	}
+
+	HOL_anton_mussert = {
+		name = HOL_anton_mussert
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_hol_anton_mussert"
+			}
+		}
+		country_leader = {
+			ideology=fascism_ideology
+			traits = { leider }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+	}
+
+	HOL_lou_de_visser = {
+		name = HOL_lou_de_visser
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_HOL_lou_de_visser"
+			}
+			army = {
+				small = GFX_idea_netherlands_louis_visser
+			}
+		}
+		country_leader = {
+			ideology=leninism
+			traits = { veteran_communist }
+			expire = "1965.1.1.1"
+			id=-1
+		}
+	}
+
+	HOL_dirk_jan_de_geer = {
+		name = HOL_dirk_jan_de_geer
+		country_leader = {
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+				defeatist
+			}
+		}
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_Netherlands_Dirk_Jan_de_Geer"
+			}
+		}
+	}
+
+	HOL_pieter_sjoerds_gerbrandy = {
+		name = HOL_pieter_sjoerds_gerbrandy
+		country_leader = {
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+				little_churchill
+			}
+		}
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_HOL_pieter_sjoerds_gerbrandy"
+			}
+		}
+	}
+
+	HOL_wilhelmina = {
+		name = HOL_wilhelmina
+		gender = female 
+		country_leader = {
+			expire = "1965.1.1"
+			ideology = centrism
+			traits = {
+				wilhelmina
+				disdain_for_politicians_1
+				queen_of_the_people
+			}
+		}
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_HOL_wilhelmina"
+			}
+		}
+	}
+
+	HOL_juliana = {
+		name = HOL_juliana
+		gender = female
+		country_leader = {
+			expire = "2004.03.20"
+			ideology = centrism
+			traits = {
+				queen_of_the_people
+			}
+		}
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_hol_juliana"
+			}
+		}
+	}
+	
+	HOL_willem_schermerhorn = {
+		name = HOL_willem_schermerhorn
+		portraits = {
+			army = {
+				small = "GFX_idea_HOL_willem_schermerhorn"
+			}
+			civilian = {
+				large = "GFX_portrait_hol_wim_schermerhorn"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = HOL_willem_schermerhorn
+			allowed = {
+				original_tag = HOL
+			}
+			available = {
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					has_completed_focus = HOL_unity_through_democracy 
+					}
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					not = {
+						has_autonomy_state = autonomy_supervised_state
+					}
+				}
+			}
+			traits = {
+				democratic_reformer 
+			}
+			visible = {
+				NOT = {
+					has_country_leader = {
+						name = "Willem Schermerhorn"
+						ruling_only = yes 
+					}
+				}
+			}
+		}
+		country_leader = {
+			ideology = centrism
+			traits = {
+				tenacious_negotiator
+			}
+			expire = "1965.1.1.1"
+			id=-1
+		}
+	}
+
+	HOL_izaak_reijnders = {
+		name = HOL_izaak_reijnders
+		portraits = {
+			army = {
+				large = "GFX_portrait_hol_izaak_reijnders"
+				small = "GFX_idea_HOL_izaak_reijnders"
+			}
+		}
+		field_marshal = {
+			traits = { old_guard inflexible_strategist trait_reckless }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 3
+			legacy_id=980
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = HOL_izaak_reijnders
+			allowed = {
+					original_tag = HOL
+				}
+				available = {
+					if = {
+						limit = {
+							has_dlc = "Man the Guns"
+						}
+						not = {
+							has_completed_focus = HOL_appoint_new_supreme_commander
+						}
+					}
+				}
+				traits = {
+					army_chief_maneuver_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+	}
+
+	HOL_petrus_wilhelmus_best = {
+		name = HOL_petrus_wilhelmus_best
+		portraits = {
+			army = {
+				large = "GFX_portrait_hol_petrus_wilhelmus_best"
+				small = "GFX_idea_HOL_petrus_wilhelmus_best"
+			}
+		}
+		corps_commander = {
+			traits = { organizer skilled_staffer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id=-1
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = HOL_petrus_wilhelmus_best
+			allowed = {
+				original_tag = HOL
+			}
+			traits = {
+				air_chief_night_operations_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	HOL_godfried_van_voorst_tot_voorst = {
+		name = HOL_godfried_van_voorst_tot_voorst
+		portraits = {
+			army = {
+				large = "GFX_portrait_hol_godfried_van_voorst_tot_voorst"
+				small = "GFX_idea_HOL_godfried_van_voorst_tot_voorst"
+			}
+		}
+		corps_commander = {
+			traits = { brilliant_strategist career_officer armor_officer politically_connected }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+			legacy_id=-1
+		}
+		advisor = {
+			cost = 100
+			slot = theorist
+			idea_token = HOL_godfried_van_voorst_tot_voorst
+			ledger = army
+			allowed = {
+				original_tag = HOL
+			}			
+			traits = {
+				military_theorist
+			}
+		}
+	}
+
+	HOL_johannes_theodorus_furstner = {
+		name = HOL_johannes_theodorus_furstner
+		portraits = {
+			army = {
+				large = "GFX_portrait_HOL_johannes_theodorus_furstner"
+				small = "GFX_portrait_HOL_johannes_theodorus_furstner_small"
+			}
+			civilian = {
+				large = GFX_portrait_indonesia_furstner
+				small = "GFX_portrait_HOL_johannes_theodorus_furstner_small"
+			}
+		}
+		country_leader = {
+			ideology = rexism
+			traits = {
+				hawk
+			}
+			expire = "1958.1.1.1"
+			id = -1
+		}
+		advisor = {
+			cost = 100
+			slot = theorist
+			idea_token = HOL_johan_furstner
+			ledger = navy
+			allowed = {
+				OR = {
+					original_tag = HOL #he starts here
+					original_tag = INS
+				}
+			}
+			available = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			visible = {
+				if = {
+					limit = { tag = HOL }
+					NOT = {
+						INS = {
+							has_country_flag = INS_furstner_stay
+						}
+					}
+				}
+				if = {
+					limit = { original_tag = INS }
+					has_country_flag = INS_furstner_stay
+				}
+			}
+			traits = {
+				naval_theorist
+			}
+		}
+		navy_leader = {
+			traits = { caustic_personality blockade_runner fly_swatter }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			maneuvering_skill = 3
+			coordination_skill = 2
+			legacy_id = -1
+		}
+	}
+
+	HOL_conrad_helfrich = {
+		name = HOL_conrad_helfrich
+		portraits = {
+			army = {
+				large = "GFX_portrait_hol_conrad_helfrich"
+				small = GFX_portrait_HOL_conrad_helfrich_small
+			}
+		}
+		navy_leader = {
+			traits = { bold navy_career_officer seawolf superior_tactician }
+			skill = 4
+			attack_skill = 5
+			defense_skill = 2
+			maneuvering_skill = 3
+			coordination_skill = 2
+			legacy_id = 981
+		}
+		advisor = {
+			cost = 100
+			slot = theorist
+			idea_token = HOL_conrad_helfrich_theorist
+			ledger = navy
+			allowed = {
+				OR = {
+					original_tag = HOL
+					original_tag = INS
+				}
+			}
+			available = {
+				NOT = {
+					has_idea = HOL_conrad_helfrich_chief
+				}
+			}
+			traits = {
+				submarine_specialist
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = HOL_conrad_helfrich_chief
+			allowed = {
+				OR = {
+					original_tag = HOL
+					original_tag = INS #he starts here
+				}
+			}
+			available = {
+				NOT = {
+					has_idea = HOL_conrad_helfrich_theorist
+				}
+			}
+			traits = {
+				navy_chief_commerce_raiding_3
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	HOL_karel_doorman = {
+		name = HOL_karel_doorman
+		portraits = {
+			army = {
+				large = "GFX_portrait_hol_karel_doorman"
+				small = "GFX_idea_HOL_karel_doorman"
+			}
+		}
+		navy_leader = {
+			traits = { bold naval_lineage fleet_protector }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 3
+			coordination_skill = 2
+			legacy_id=-1
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = HOL_karel_doorman
+			allowed = {
+				original_tag = HOL
+			}
+			traits = {
+				navy_chief_decisive_battle_1
+			}
+			cost = 50
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	HOL_charles_douw_van_der_krap = {
+		advisor = {
+			slot = high_command
+			idea_token = HOL_charles_douw_van_der_krap
+			ledger = navy
+			allowed = {
+				original_tag = HOL
+			}
+			traits = {
+				air_naval_strike_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		name = HOL_charles_douw_van_der_krap
+		portraits = {
+			army = {
+				small = "GFX_idea_HOL_charles_douw_van_der_krap"
+			}
+		}
+	}
+
+	HOL_nico_van_straten = {
+		advisor = {
+			slot = high_command
+			idea_token = HOL_nico_van_straten
+			ledger = army
+			allowed = {
+				original_tag = HOL
+			}
+			traits = {
+				army_cavalry_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		name = HOL_nico_van_straten
+		portraits = {
+			army = {
+				small = "GFX_idea_HOL_nico_van_straten"
+			}
+		}
+	}
+
+	HOL_adrianus_rudolphus_van_den_bent = {
+		advisor = {
+			slot = high_command
+			idea_token = HOL_adrianus_rudolphus_van_den_bent
+			ledger = army
+			allowed = {
+				original_tag = HOL
+			}
+			traits = {
+				army_infantry_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		name = HOL_adrianus_rudolphus_van_den_bent
+		portraits = {
+			army = {
+				small = "GFX_idea_HOL_adrianus_rudolphus_van_den_bent"
+			}
+		}
+	}
+
+	HOL_hendrik_van_oyen = {
+		advisor = {
+			slot = air_chief
+			idea_token = HOL_hendrik_van_oyen
+			allowed = {
+				original_tag = HOL
+			}
+			traits = {
+				air_chief_reform_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		name = HOL_hendrik_van_oyen
+		portraits = {
+			army = {
+				small = "GFX_idea_HOL_hendrik_van_oyen"
+			}
+		}
+	}
+
+	HOL_hendrik_seyffardt = {
+		advisor = {
+			slot = army_chief
+			idea_token = HOL_hendrik_seyffardt
+			allowed = {
+				original_tag = HOL
+				has_dlc = "Man the Guns"
+			}
+			available = {
+				has_government = fascism
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		name = HOL_hendrik_seyffardt
+		portraits = {
+			army = {
+				small = "GFX_idea_HOL_hendrik_seyffardt"
+			}
+		}
+	}
+
+	HOL_henri_winkelman = {
+		advisor = {	
+			slot = army_chief
+			idea_token = HOL_henri_winkelman
+			allowed = {
+				original_tag = HOL
+			}
+			available = {
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					has_completed_focus = HOL_appoint_new_supreme_commander
+				}
+			}
+			traits = {
+				army_chief_defensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander = {
+			traits = { 
+				defensive_doctrine 
+				trait_cautious 
+				unyielding_defender 
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+			legacy_id=-1
+		}
+		name = HOL_henri_winkelman
+		portraits = {
+			army = {
+				small = "GFX_idea_HOL_henri_winkelman"
+				large = "GFX_portrait_hol_henri_winkelman"
+			}
+		}
+	}
+
+	HOL_maarten_belzer = {
+		advisor = {
+			slot = high_command
+			idea_token = HOL_maarten_belzer
+			ledger = army
+				allowed = {
+					original_tag = HOL
+				}
+				traits = {
+					army_concealment_1
+				}
+				cost = 50
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name = HOL_maarten_belzer
+		portraits = {
+			army = {
+				small = "GFX_idea_HOL_maarten_belzer"
+			}
+		}
+	}
+
+	HOL_marius_raaijmakers = {
+		advisor = {
+			cost = 100
+			
+			slot = theorist
+			idea_token = HOL_marius_raaijmakers
+			ledger = air
+				allowed = {
+					original_tag = HOL
+				}
+				
+				traits = {
+					air_warfare_theorist
+				}
+		}
+		name = HOL_marius_raaijmakers
+		portraits = {
+			army = {
+				small = "GFX_idea_HOL_marius_raaijmakers"
+			}
+		}
+	}
+
+	HOL_saul_de_groot = {
+		name = HOL_saul_de_groot
+		
+		portraits = {
+			civilian = {
+				large = GFX_portrait_hol_saul_de_groot
+			}
+			army = {
+				small = "GFX_idea_HOL_saul_de_groot"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = HOL_saul_de_groot
+			allowed = {
+				original_tag = HOL
+			}
+			available = {
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					has_completed_focus = HOL_legacy_of_the_de_zeven_provincien_mutiny
+					NOT = {
+						has_autonomy_state = autonomy_supervised_state
+					}
+				}
+				NOT = {
+					has_country_leader = {
+						name = "Saul de Groot"
+						ruling_only = yes 
+					}
+				}
+			}
+			visible = {
+				NOT = {
+					has_completed_focus = HOL_affirm_loyalty_to_moscow
+				}
+			}
+			traits = {
+				communist_revolutionary 
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			traits = { staunch_stalinist }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+
+	HOL_antonie_pannekoek = {
+		advisor = {
+			slot = political_advisor
+			idea_token = HOL_antonie_pannekoek
+			allowed = {
+				original_tag = HOL
+				has_dlc = "Man the Guns"
+			}
+			available = {
+				has_government = communism 
+			}
+			traits = {
+				council_communist 
+			}
+		}
+		name = HOL_antonie_pannekoek
+		portraits = {
+			army = {
+				small = "GFX_idea_HOL_antonie_pannekoek"
+			}
+		}
+	}
+
+	HOL_walraven_van_hall = {
+		advisor = {
+			slot = political_advisor
+			idea_token = HOL_walraven_van_hall
+			allowed = {
+				original_tag = HOL
+				has_dlc = "Man the Guns"
+			}
+			available = {
+				has_capitulated = yes 
+				or = {
+					has_government = democratic 
+					has_government = neutrality 
+				}
+			}
+			traits = {
+				resistance_banker 
+			}
+		}
+		name = HOL_walraven_van_hall
+		portraits = {
+			army = {
+				small = "GFX_idea_HOL_walraven_van_hall"
+			}
+		}
+	}
+
+	HOL_jacob_adriaan_de_wilde = {
+		advisor = {
+			slot = political_advisor
+			idea_token = HOL_jacob_adriaan_de_wilde
+			allowed = {
+					original_tag = HOL
+				}
+				available = {
+					or = {
+						has_government = democratic 
+						has_government = neutrality 
+					}
+				}
+				traits = {
+					genial_anti_revolutionary 
+				}
+		}
+		name = HOL_jacob_adriaan_de_wilde
+		portraits = {
+			army = {
+				small = "GFX_idea_HOL_jacob_adriaan_de_wilde"
+			}
+		}
+	}
+
+	HOL_anton_de_kom = {
+		advisor = {
+			slot = political_advisor
+			idea_token = HOL_anton_de_kom
+			allowed = {
+					original_tag = HOL
+					has_dlc = "Man the Guns"
+				}
+				available = {
+					has_government = communism 
+					has_completed_focus = HOL_decolonization 
+				}
+				traits = {
+					colonial_communist 
+				}
+		}
+		name = HOL_anton_de_kom
+		portraits = {
+			army = {
+				small = "GFX_idea_HOL_anton_de_kom"
+			}
+		}
+	}
+
+	HOL_jan_goudriaan = {
+		advisor = {
+			slot = political_advisor
+			idea_token = HOL_jan_goudriaan
+			allowed = {
+					original_tag = HOL
+				}
+				traits = {
+					captain_of_industry 
+				}
+		}
+		name = HOL_jan_goudriaan
+		portraits = {
+			army = {
+				small = "GFX_idea_HOL_jan_goudriaan"
+			}
+		}
+	}
+
+	HOL_adriaan_dijxhoorn = {
+		advisor = {
+			slot = political_advisor
+			idea_token = HOL_adriaan_dijxhoorn
+			allowed = {
+					original_tag = HOL
+				}
+				available = {
+					or = {
+						has_government = democratic 
+						has_government = neutrality 
+					}
+				}
+				traits = {
+					war_industrialist 
+				}
+		}
+		name = HOL_adriaan_dijxhoorn
+		portraits = {
+			army = {
+				small = "GFX_idea_HOL_adriaan_dijxhoorn"
+			}
+		}
+	}
+
+	HOL_prince_bernhard = {
+		advisor = {
+			slot = political_advisor
+			idea_token = HOL_prince_bernhard
+			cost = 100.000
+				allowed = {
+					original_tag = HOL
+					has_dlc = "Man the Guns"
+				}
+				available = {
+					has_completed_focus = HOL_the_only_man_in_the_dutch_government 
+				}
+				traits = {
+					adventurous_daredevil 
+				}
+		}
+		name = HOL_prince_bernhard
+		portraits = {
+			army = {
+				small = "GFX_idea_HOL_prince_bernhard"
+				large = "GFX_portrait_hol_prins_bernhard"
+			}
+		}
+	}
+
+	HOL_cornelis_van_geelkerken = {
+	
+		advisor = {
+			slot = political_advisor
+			idea_token = HOL_cornelis_van_geelkerken
+			allowed = {
+					original_tag = HOL
+				}
+				available = {
+					has_government = fascism 
+				}
+				traits = {
+					prince_of_terror 
+				}
+		}
+
+		name = HOL_cornelis_van_geelkerken
+
+		portraits = {
+			army = {
+				small = "GFX_idea_HOL_cornelis_van_geelkerken"
+			}
+		}
+	}
+
+	HOL_meinout_rost_van_tonningen = {
+		advisor = {
+			slot = political_advisor
+			idea_token = HOL_meinout_rost_van_tonningen
+			allowed = {
+					original_tag = HOL
+				}
+				available = {
+					if = {
+						limit = {
+							has_dlc = "Man the Guns"
+						}
+						has_completed_focus = HOL_volk_en_vaderland 
+					}
+					if = {
+						limit = {
+							has_dlc = "Man the Guns"
+						}
+						not = {
+							has_autonomy_state = autonomy_supervised_state
+						}
+					}
+				}
+				traits = {
+					fascist_demagogue 
+				}
+		}
+		name = HOL_meinout_rost_van_tonningen
+		portraits = {
+			army = {
+				small = "GFX_idea_HOL_meinout_rost_van_tonningen"
+			}
+		}
+	}
+
+	HOL_fanny_schoonheyt = {
+		name = HOL_fanny_schoonheyt
+		gender = female
+		portraits = {
+			army = {
+				small = GFX_idea_netherlands_fanny_schoonheyt
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = HOL_fanny_schoonheyt
+			allowed = {
+				original_tag = HOL
+				has_dlc = "Man the Guns"
+			}
+			available = {
+				has_completed_focus = HOL_legacy_of_the_de_zeven_provincien_mutiny
+				NOT = { has_completed_focus = HOL_affirm_loyalty_to_moscow }
+			}
+			visible = {
+				has_global_flag = scw_over
+			}
+			traits = {
+				socialist_journalist 
+			}
+			cost = 125
+		}
+		corps_commander = {
+			traits = { brilliant_strategist trickster commando }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id = -1
+			visible = {
+				has_government = communism
+				has_global_flag = scw_over
+			}
+		}
+	}
+
+	HOL_frederik_gerretson = {
+		name = HOL_frederik_gerretson
+		portraits = {
+			army = {
+				small = GFX_idea_netherlands_frederik_gerretson
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = HOL_frederik_gerretson
+			allowed = {
+				OR = {
+					original_tag = INS
+					original_tag = HOL
+				}
+			}
+			available = {
+				NOT = {
+					has_government = communism
+				}
+				if = {
+					limit = {
+						tag = HOL
+					}
+					OR = {
+						has_completed_focus = HOL_volk_en_vaderland
+						has_completed_focus = HOL_curtail_colonial_autonomy
+					}
+				}
+				num_subjects > 0
+			}
+			visible = {
+			}
+			traits = {
+				reactionary_professor
+			}
+		}
+	}
+
+	HOL_hendrikus_sneevliet = {
+		name = HOL_hendrikus_sneevliet
+		portraits = {
+			army = {
+				small = GFX_idea_netherlands_hendrikus_sneevliet
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = HOL_hendrikus_sneevliet
+			allowed = {
+				original_tag = HOL
+				has_dlc = "Man the Guns"
+			}
+			available = {
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					has_completed_focus = HOL_legacy_of_the_de_zeven_provincien_mutiny
+					NOT = { has_completed_focus = HOL_affirm_loyalty_to_moscow }
+				}
+			}
+			traits = {
+				red_armament
+			}
+		}
+	}
+
+	HOL_jacques_de_kadt = {
+		name = HOL_jacques_de_kadt
+		portraits = {
+			army = {
+				small = GFX_idea_netherlands_de_kadt
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = HOL_jacques_de_kadt
+			allowed  = {
+				OR = {
+					original_tag = INS
+					original_tag = HOL
+				}
+			}
+			available = {
+				if = {
+					limit = {
+						has_character_flag = INS_imprisoned_flag
+					}
+					NOT = {
+						has_character_flag = INS_imprisoned_flag
+					}
+				}
+				if = {
+					limit = { tag = HOL }
+					OR = {
+						has_completed_focus = HOL_lead_the_minor_democracies
+						AND = {
+							has_completed_focus = HOL_legacy_of_the_de_zeven_provincien_mutiny
+							NOT = { has_completed_focus = HOL_affirm_loyalty_to_moscow }
+						}
+					}
+				}
+				if = {
+					limit = { tag = INS }
+					has_character_flag = INS_de_kadt_accepted
+				}
+				NOT = {
+					has_government = fascism
+				}
+			}
+			traits = {
+				socialist_democrat
+			}
+			cost = 125
+		}
+	}
+
+	HOL_abraham_vromans = {
+		name = HOL_abraham_vromans
+		portraits = {
+			army = {
+				large = GFX_portrait_hol_abraham_vromans
+				small = GFX_idea_netherlands_abraham_vromans
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = HOL_abraham_vromans_command
+			ledger = navy
+			allowed = {
+				OR = {
+					original_tag = INS
+					original_tag = HOL
+				}
+			}
+			available = {
+				NOT = {
+					has_idea = HOL_abraham_vromans_chief
+				}
+			}
+			traits = {
+				navy_chief_maneuver_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 20
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = HOL_abraham_vromans_chief
+			allowed = {
+				original_tag = INS
+			}
+			available = {
+				NOT = {
+					has_idea = HOL_abraham_vromans_command
+				}
+			}
+			traits = {
+				navy_fleet_logistics_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		navy_leader = {
+			traits = { fleet_protector }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 1
+			legacy_id=-1
+		}
+	}
+
+  #####                                                              
+ #     #   ####   #  ######  #    #  #####  #   ####   #####   ####  
+ #        #    #  #  #       ##   #    #    #  #         #    #      
+  #####   #       #  #####   # #  #    #    #   ####     #     ####  
+       #  #       #  #       #  # #    #    #       #    #         # 
+ #     #  #    #  #  #       #   ##    #    #  #    #    #    #    # 
+  #####    ####   #  ######  #    #    #    #   ####     #     ####  
+
+
+  HOL_anthony_fokker = {
+		name = HOL_anthony_fokker
+		portraits = {
+			army = {
+				large = GFX_portrait_HOL_anthony_fokker
+			}
+		}
+
+		scientist = {
+			traits = { scientist_trait_aircraft_specialist scientist_trait_gifted_engineer }
+			skills = {
+				specialization_air = 2
+			}
+		}
+	}
+}

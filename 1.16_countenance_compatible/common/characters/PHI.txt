@@ -1,0 +1,843 @@
+characters = {
+
+	# Leaders
+
+	PHI_manuel_luis_quezon = {
+		name = PHI_manuel_luis_quezon
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Manuel_Luis_Quezon
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+	
+	PHI_andres_soriano = {
+		name = PHI_andres_soriano
+		portraits = {
+			civilian = {
+				large = GFX_portrait_phi_andres_soriano
+			}
+			army = {
+				small = GFX_idea_philippines_andres_soriano
+			}
+		}
+		country_leader = {
+			ideology = falangism
+			expire = "1941.1.1.12"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = PHI_andres_soriano
+			allowed = {
+				original_tag = PHI
+			}
+			available = {
+				NOT = {
+					has_country_leader = {
+						name = "Andrés Soriano"
+						ruling_only = yes
+					}
+				}
+			}
+			traits = {
+				falangist_industrialist
+			}
+		}
+	}
+	
+	PHI_crisanto_evangelista = {
+		name = PHI_crisanto_evangelista
+		portraits = {
+			civilian = {
+				large = GFX_portrait_phi_crisanto_evangelista
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+	
+	PHI_jose_laurel = {
+		name = PHI_jose_laurel
+		portraits = {
+			civilian = {
+				large = GFX_portrait_phi_jose_laurel
+			}
+			army = {
+				small = GFX_idea_philippines_jose_laurel
+			}
+		}
+	}
+	
+	PHI_benigno_ramos = {
+		name = PHI_benigno_ramos
+		portraits = {
+			civilian = {
+				large = GFX_portrait_phi_benigno_ramos
+			}
+		}
+		country_leader = {
+			ideology = centrism
+			traits = { headstrong }
+			expire = "1954.1.1.12"
+			id = -1
+		}
+	}
+
+	# Advisors
+
+	PHI_artemio_ricarte = { #Not included
+		name = PHI_artemio_ricarte
+		portraits = {
+			army = {
+				small = GFX_idea_philippines_artemio_ricarte
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = PHI_artemio_ricarte
+			allowed = {
+				original_tag = PHI
+			}
+			traits = {
+				silent_workhorse
+			}
+		}
+	}
+
+	PHI_celerino_tiongco = {
+		name = PHI_celerino_tiongco
+		portraits = {
+			army = {
+				small = GFX_idea_philippines_celerino_tiongco
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = PHI_celerino_tiongco
+			allowed = {
+				original_tag = PHI
+			}
+			traits = {
+				fascist_demagogue
+			}
+		}
+	}
+
+	PHI_elpidio_quirino = {
+		name = PHI_elpidio_quirino
+		portraits = {
+			civilian = {
+				large = GFX_portrait_phi_elpidio_quirino
+			}
+			army = {
+				small = GFX_idea_philippines_elpidio_quirino
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = PHI_elpidio_quirino
+			allowed = {
+				original_tag = PHI
+			}
+			traits = {
+				minister_of_the_interior_aregai_no_lar
+			}
+		}
+	}
+
+	PHI_emilio_aguinaldo = {
+		name = PHI_emilio_aguinaldo
+		portraits = {
+			civilian = {
+				large = GFX_portrait_phi_emilio_aguinaldo
+			}
+			army = {
+				small = GFX_idea_philippines_emilio_aguinaldo
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = PHI_emilio_aguinaldo
+			allowed = {
+				original_tag = PHI
+			}
+			traits = {
+				backroom_backstabber
+			}
+		}
+	}
+
+	PHI_eulogio_rodriguez = {
+		name = PHI_eulogio_rodriguez
+		portraits = {
+			army = {
+				small = GFX_idea_philippines_eulogio_rodriguez
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = PHI_eulogio_rodriguez
+			allowed = {
+				original_tag = PHI
+			}
+			traits = {
+				JUNO_miniter_of_economy_and_commerce
+			}
+		}
+	}
+
+	PHI_gregorio_aglipay = {
+		name = PHI_gregorio_aglipay
+		portraits = {
+			army = {
+				small = GFX_idea_philippines_gregorio_aglipay
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = PHI_gregorio_aglipay
+			allowed = {
+				original_tag = PHI
+			}
+			available = {
+				NOT = {
+					is_subject_of = SPA
+				}
+			}
+			traits = {
+				popular_figurehead 
+			}
+		}
+	}
+
+	PHI_guillermo_capadocia = {
+		name = PHI_guillermo_capadocia
+		portraits = {
+			civilian = {
+				large = GFX_portrait_phi_guillermo_capadocia
+			}
+			army = {
+				small = GFX_idea_philippines_guillermo_capadocia
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = PHI_guillermo_capadocia
+			allowed = {
+				original_tag = PHI
+			}
+			available = {
+				NOT = {
+					has_autonomy_state = autonomy_supervised_state
+				}
+			}
+			traits = {
+				communist_revolutionary
+			}
+		}
+	}
+
+	PHI_jose_avelino = {
+		name = PHI_jose_avelino
+		portraits = {
+			army = {
+				small = GFX_idea_philippines_jose_avelino
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = PHI_jose_avelino
+			allowed = {
+				original_tag = PHI
+			}
+			traits = {
+				JUNO_minister_of_public_works
+			}
+		}
+	}
+
+	PHI_jose_yulo = {
+		name = PHI_jose_yulo
+		portraits = {
+			army = {
+				small = GFX_idea_philippines_jose_yulo
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = PHI_jose_yulo
+			allowed = {
+				original_tag = PHI
+			}
+			traits = {
+				SWE_minister_of_justice
+			}
+		}
+	}
+	
+	PHI_juan_sumulong = {
+		name = PHI_juan_sumulong
+		portraits = {
+			army = {
+				small = GFX_idea_philippines_juan_sumulong
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = PHI_juan_sumulong
+			allowed = {
+				original_tag = PHI
+			}
+			traits = {
+				prince_of_terror 
+			}
+		}
+	}
+	
+	PHI_mariano_cuenco = {
+		name = PHI_mariano_cuenco
+		portraits = {
+			civilian = {
+				small = GFX_idea_philippines_mariano_cuenco
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = PHI_mariano_cuenco
+			allowed = {
+				original_tag = PHI 
+			}
+			traits = {
+				minister_public_works
+			}
+		}
+	}
+
+	PHI_manuel_roxas = {
+		name = PHI_manuel_roxas
+		portraits = {
+			civilian = {
+				large = GFX_portrait_phi_manuel_roxas
+			}
+			army = {
+				small = GFX_idea_philippines_manuel_roxas
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = PHI_manuel_roxas
+			allowed = {
+				original_tag = PHI
+			}
+			traits = {
+				silent_workhorse
+			}
+		}
+	}
+	
+	PHI_sergio_osmena = {
+		name = PHI_sergio_osmena
+		portraits = {
+			civilian = {
+				large = GFX_portrait_phi_sergio_osmena
+			}
+			army = {
+				small = GFX_idea_philippines_sergio_osmena
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = PHI_sergio_osmena
+			allowed = {
+				original_tag = PHI 
+			}
+			traits = {
+				JUNO_minister_of_public_health 
+			}
+		}
+	}
+	
+	#Military Leaders
+
+	PHI_basilio_j_valdez = {
+		name = PHI_basilio_j_valdez
+		portraits = {
+			army = {
+				small = GFX_idea_philippines_basilio_valdez
+				large = GFX_portrait_phi_basilio_valdez
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = PHI_basilio_j_valdez
+			allowed = {
+				original_tag = PHI
+			}
+			traits = {
+				army_chief_defensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	
+	PHI_paulino_santos = {
+		name = PHI_paulino_santos
+		portraits = {
+			army = {
+				small = GFX_idea_philippines_paulino_santos
+				large = GFX_portrait_phi_paulino_santos
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = PHI_paulino_santos_army_chief
+			allowed = {
+				original_tag = PHI
+			}
+			available = {
+				NOT = { has_idea = PHI_paulino_santos_high_command }
+			}
+			traits = {
+				army_chief_organizational_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = PHI_paulino_santos_high_command
+			ledger = army
+			allowed = {
+				original_tag = PHI
+			}
+			available = {
+				NOT = { has_idea = PHI_paulino_santos_army_chief }
+			}
+			traits = {
+				army_logistics_2
+			}
+			cost = 100
+				ai_will_do = {
+				factor = 1.000
+			}
+		}
+		field_marshal = {
+			traits = { infantry_officer }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	
+	PHI_jose_de_los_reyes = {
+		name = PHI_jose_de_los_reyes
+		portraits = {
+			army = {
+				small = GFX_idea_philippines_jose_de_los_reyes
+				large = GFX_portrait_phi_jose_de_los_reyes
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = PHI_jose_de_los_reyes
+			allowed = {
+				original_tag = PHI
+			}
+			traits = {
+				army_chief_old_guard
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	
+	PHI_enrique_jurado = {
+		name = PHI_enrique_jurado
+		portraits = {
+			army = {
+				large = GFX_portrait_phi_enrique_jurado
+				small = GFX_idea_philippines_enrique_jorado
+			}
+			navy = {
+				large = GFX_portrait_phi_enrique_jurado
+				small = GFX_idea_philippines_enrique_jorado
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = PHI_enrique_jurado
+			allowed = {
+				original_tag = PHI
+			}
+			traits = {
+				navy_chief_maneuver_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		navy_leader={
+			traits = { navy_career_officer blockade_runner spotter blue_water_expert }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 1
+		}
+	}
+	
+	PHI_jose_v_andrada = {
+		name = PHI_jose_v_andrada
+		portraits = {
+			army = {
+				large = GFX_portrait_phi_jose_andrada
+				small = GFX_idea_philippines_jose_andrada
+			}
+			navy = {
+				large = GFX_portrait_phi_jose_andrada
+				small = GFX_idea_philippines_jose_andrada
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = PHI_jose_v_andrada
+			ledger = navy
+			allowed = {
+				original_tag = PHI
+			}
+			traits = {
+				navy_chief_commerce_raiding_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		navy_leader={
+			traits = { spotter blue_water_expert }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 2
+		}
+	}
+	
+	PHI_pelagio_cruz = {
+		name = PHI_pelagio_cruz
+		portraits = {
+			army = {
+				small = GFX_idea_philippines_pelagio_cruz
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = PHI_pelagio_cruz
+			allowed = {
+				original_tag = PHI
+			}
+			traits = {
+				air_chief_all_weather_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	PHI_edwin_andrews = {
+		# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		name = "Edwin Andrews"
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_air_asia_3"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = PHI_edwin_andrews
+			allowed = {
+				original_tag = PHI
+			}
+			traits = {
+				air_chief_reform_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	PHI_vicente_p_lim = {
+		name = PHI_vicente_p_lim
+		portraits = {
+			army = {
+				small = GFX_idea_philippines_vicente_lim
+				large = GFX_portrait_phi_vicente_lim
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = PHI_vicente_p_lim
+			ledger = army
+			allowed = {
+				original_tag = PHI
+			}
+			traits = {
+				army_regrouping_2
+			}
+			cost = 100
+				ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander = {
+			traits = { offensive_doctrine }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	
+	PHI_heraclio_alano = {
+		# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		name = PHI_heraclio_alano
+		portraits = {
+			army = {
+				large = GFX_portrait_FRA_jean_de_laborde
+			}
+			navy = {
+				small = "GFX_idea_generic_army_asia_1"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = PHI_heraclio_alano
+			ledger = navy
+			allowed = {
+				original_tag = PHI
+			}
+			traits = {
+				navy_naval_air_defense_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		navy_leader = {
+			traits = { spotter aviation_enthusiast }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 2
+		}
+	}
+	
+	PHI_basilio_fernando = {
+		# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		name = PHI_basilio_fernando
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_air_asia_3"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = PHI_basilio_fernando
+			ledger = air
+			allowed = {
+				original_tag = PHI
+			}
+			traits = {
+				air_air_combat_training_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	#Unused charas
+	
+	PHI_leoncio_s_tan = {
+		# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		name = "Leoncio S. Tan"
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_army_asia_2"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = PHI_leoncio_s_tan
+			allowed = {
+				original_tag = PHI
+			}
+			traits = {
+				army_chief_morale_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	PHI_benito_n_ebuen = {
+		# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		name = "Benito N. Ebuen"
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_army_asia_5"
+			}
+		}
+		advisor = {
+			cost = 100
+			
+			slot = theorist
+			idea_token = PHI_benito_n_ebuen
+			ledger = army
+			allowed = {
+				original_tag = PHI
+			}
+			traits = {
+				military_theorist
+			}
+		}
+	}
+	
+	PHI_santiago_nuval = {
+		# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		name = "Santiago Nuval"
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_navy_asia_1"
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = PHI_santiago_nuval
+			allowed = {
+				original_tag = PHI
+			}
+			traits = {
+				navy_chief_maneuver_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	PHI_ramon_a_alcaraz = {
+		# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		name = "Ramon A. Alcaraz"
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_air_asia_3"
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = theorist
+			idea_token = PHI_ramon_a_alcaraz
+			ledger = air
+			allowed = {
+				original_tag = PHI
+			}
+			traits = {
+				air_warfare_theorist
+			}
+		}
+	}
+	
+	PHI_victor_h_dizon = {
+		# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		name = "Victor H. Dizon"
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_navy_asia_3"
+			}
+		}
+		advisor = {
+			cost = 100
+			
+			slot = theorist
+			idea_token = PHI_victor_h_dizon
+			ledger = navy
+			allowed = {
+				original_tag = PHI
+			}
+			traits = {
+				naval_theorist
+			}
+		}
+	}
+	
+	PHI_eustacio_orobia = {
+		# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		name = "Eustacio Orobia"
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_navy_asia_3"
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = PHI_eustacio_orobia
+			allowed = {
+				original_tag = PHI
+			}
+			traits = {
+				navy_chief_commerce_raiding_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+}

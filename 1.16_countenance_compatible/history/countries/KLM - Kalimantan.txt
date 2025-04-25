@@ -1,0 +1,42 @@
+﻿capital = 333 #Brunei Town
+
+oob = "KLM_1936"
+
+set_research_slots = 2
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_trucks = 1
+	basic_destroyer = 1
+	transport = 1
+}
+
+set_cosmetic_tag = BRN #Brunei
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1934.4.26"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 10
+	fascism = 10
+	communism = 30
+	neutrality = 50
+}
+
+add_ideas = {
+	ASEAN_agrarian_society_1
+}
+
+set_convoys = 30
+set_stability = 0.46
+set_war_support = 0.35
+
+recruit_character = INS_mohammad_jusuf_alqadri
+recruit_character = INS_hamid_mohammad_alqadri
+recruit_character = INS_mohammad_noor
+recruit_character = KLM_ahmad_tajuddin_waddien

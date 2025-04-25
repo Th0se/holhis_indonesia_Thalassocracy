@@ -1,0 +1,67 @@
+characters={
+	MAL_onn_jaafar={
+		name= MAL_onn_jaafar
+		portraits={
+			civilian={
+				large=GFX_portrait_malaysia_onn_jaafar
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1953.3.1.1"
+			id=-1
+		}
+	}
+	MAL_shenton_thomas={
+		name= MAL_shenton_thomas
+		portraits={
+			civilian={
+				large="GFX_portrait_malaya_shenton_thomas"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1953.3.1.1"
+			id=-1
+		}
+	}
+	MAL_lai_teck={
+		name= MAL_lai_teck
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia/Portrait_Asia_Generic_1.dds"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			expire="1953.3.1.1"
+			id=-1
+		}
+	}
+	MAL_ibrahim_hj_yaacob={
+		name= MAL_ibrahim_hj_yaacob
+		portraits={
+			civilian={
+				large= GFX_portrait_malaysia_ibrahim_yaacob
+			}
+		}
+		country_leader={
+			ideology=rexism
+			expire="1953.3.1.1"
+			id=-1
+		}
+	}
+	MAL_tuanku_abdul_rahman = {
+		name= MAL_tuanku_abdul_rahman
+		portraits={
+			civilian={
+				large= GFX_portrait_malaysia_abdul_rahman
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1953.3.1.1"
+			id=-1
+		}
+	}
+}

@@ -1,0 +1,94 @@
+INS = {
+	army = {
+		male = {
+			"GFX_Portrait_Southeast_Asia_Generic_land_1"
+			"GFX_Portrait_Asia_Generic_land_5"
+			"GFX_portrait_asia_generic_land_10"
+			"GFX_portrait_asia_generic_land_12"
+		}
+	}
+
+	navy = {
+		male = {
+			"GFX_Portrait_Southeast_Asia_Generic_navy_1"
+			"GFX_Portrait_Asia_Generic_navy_1"
+			"GFX_portrait_asia_generic_navy_8"
+		}
+	}
+}
+
+ATJ = {
+	army = {
+		male = {
+			"GFX_Portrait_Southeast_Asia_Generic_land_1"
+			"GFX_Portrait_Asia_Generic_land_5"
+			"GFX_portrait_asia_generic_land_10"
+			"GFX_portrait_asia_generic_land_12"
+		}
+	}
+
+	navy = {
+		male = {
+			"GFX_Portrait_Southeast_Asia_Generic_navy_1"
+			"GFX_Portrait_Asia_Generic_navy_1"
+			"GFX_portrait_asia_generic_navy_8"
+		}
+	}
+}
+
+MAL = {
+	army = {
+		male = {
+			"GFX_Portrait_Southeast_Asia_Generic_land_1"
+			"GFX_Portrait_Asia_Generic_land_5"
+			"GFX_portrait_asia_generic_land_10"
+			"GFX_portrait_asia_generic_land_12"
+		}
+	}
+
+	navy = {
+		male = {
+			"GFX_Portrait_Southeast_Asia_Generic_navy_1"
+			"GFX_Portrait_Asia_Generic_navy_1"
+			"GFX_portrait_asia_generic_navy_8"
+		}
+	}
+}
+
+BRN = {
+	army = {
+		male = {
+			"GFX_Portrait_Southeast_Asia_Generic_land_1"
+			"GFX_Portrait_Asia_Generic_land_5"
+			"GFX_portrait_asia_generic_land_10"
+			"GFX_portrait_asia_generic_land_12"
+		}
+	}
+
+	navy = {
+		male = {
+			"GFX_Portrait_Southeast_Asia_Generic_navy_1"
+			"GFX_Portrait_Asia_Generic_navy_1"
+			"GFX_portrait_asia_generic_navy_8"
+		}
+	}
+}
+
+SLU = {
+	army = {
+		male = {
+			"GFX_Portrait_Southeast_Asia_Generic_land_1"
+			"GFX_Portrait_Asia_Generic_land_5"
+			"GFX_portrait_asia_generic_land_10"
+			"GFX_portrait_asia_generic_land_12"
+		}
+	}
+
+	navy = {
+		male = {
+			"GFX_Portrait_Southeast_Asia_Generic_navy_1"
+			"GFX_Portrait_Asia_Generic_navy_1"
+			"GFX_portrait_asia_generic_navy_8"
+		}
+	}
+}

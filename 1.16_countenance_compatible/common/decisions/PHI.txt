@@ -1,0 +1,96 @@
+political_actions = {
+
+	PHI_integrate_sulu = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = PHI
+		}
+
+		cost = 75
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 3
+			996 = {
+				is_fully_controlled_by = ROOT
+				compliance > 70
+				infrastructure > 2
+				industrial_complex > 0
+			}
+		}
+
+		visible = {
+			996 = {
+				NOT = {
+					is_core_of = ROOT
+				}
+			}
+		}
+
+		days_remove = 180
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		complete_effect = {
+			add_stability = -0.1
+		}
+
+		remove_effect = {
+			996 = {
+				add_core_of = PHI
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	PHI_integrate_sabah = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = PHI
+		}
+
+		cost = 75
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+			987 = {
+				is_fully_controlled_by = ROOT
+				compliance > 70
+				infrastructure > 3
+				industrial_complex > 1
+			}
+		}
+
+		visible = {
+			987 = {
+				NOT = {
+					is_core_of = ROOT
+				}
+			}
+		}
+
+		days_remove = 180
+
+		modifier = {
+			civilian_factory_use = 4
+		}
+
+		complete_effect = {
+			add_stability = -0.1
+		}
+
+		remove_effect = {
+			987 = {
+				add_core_of = PHI
+			}
+		}
+	}
+}

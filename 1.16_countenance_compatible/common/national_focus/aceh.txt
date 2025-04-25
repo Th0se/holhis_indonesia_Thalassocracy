@@ -1,0 +1,114 @@
+focus_tree = {
+	id = aceh_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = ATJ
+		}
+	}
+	
+	default = no
+
+	initial_show_position = {
+		focus = ATJ_freedom
+	}
+
+	continuous_focus_position = { x = 55 y = 1000 }
+
+
+#	modifier = {
+#		factor = 0
+#		is_historical_focus_on = yes
+#		date < 1939.1.1
+#	}
+
+#	focus = {
+#		id = INJ_
+#		icon = GFX_
+#		prerequisite = { focus = INS_ }
+#		mutually_exclusive = { focus = INS_ }
+#		
+#		relative_position_id = INS_
+#		x = 
+#		y =
+#
+#		cost = 10
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#
+#		available = {
+#
+#		}
+#		
+#		bypass = {
+#
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
+#
+#		complete_tooltip = {
+#
+#		}
+#
+#		completion_reward = {
+#
+#		}
+#	}
+
+	focus = {
+		id = ATJ_freedom
+		icon = GFX_focus_jap_manchurian_project
+
+		cost = 5
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.075
+		}
+	}
+
+	focus = {
+		id = ATJ_independence_war
+		icon = GFX_focus_jap_manchurian_project
+
+		relative_position_id = ATJ_freedom
+		x = -6
+		y = 0
+
+		cost = 2
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.075
+		}
+	}
+}

@@ -1,0 +1,86 @@
+ideas = {
+
+	country = {
+
+		SIA_rama_viii = {
+			allowed = {
+				original_tag = SIA
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			picture = siam_ananda_mahidol
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+				NOT = {
+					any_other_country = {
+						original_tag = SIA
+						has_government = democratic 
+						NOT = {
+							tag = ROOT
+						}
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+			traits = { popular_figurehead2 }
+		}
+
+		SIA_rama_viii_king = {	
+			allowed = {
+				original_tag = SIA
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			picture = siam_ananda_mahidol_king
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+				NOT = {
+					any_other_country = {
+						original_tag = SIA
+						has_government = democratic 
+						NOT = {
+							tag = ROOT
+						}
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+			traits = { popular_figurehead }
+		}
+
+		idea_SIA_army_of_siam = {
+		
+			picture = MEX_politicised_army_2
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = SIA
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				supply_consumption_factor = -0.1
+				supply_node_range = 0.15
+			}
+		}
+	}
+}
