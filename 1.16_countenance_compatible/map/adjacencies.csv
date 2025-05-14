@@ -24,7 +24,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 6891;3838;sea;5579;-1;-1;-1;-1;;Sardinia-Corsica
 9990;4159;sea;5681;-1;-1;-1;-1;;Calabria-Sicily
 9793;9845;sea;8871;-1;-1;-1;-1;;Menorca-Mallorca
-12299;12113;sea;5539;-1;-1;-1;-1;;Singapore-Batam
+12184;12113;sea;5539;-1;-1;-1;-1;;Siak-Batam
 7396;1401;sea;5615;-1;-1;-1;-1;;Bangka Belitung-Sumatra
 1342;10279;sea;2737;-1;-1;-1;-1;;Java-Sumatra
 7396;4211;sea;4225;-1;-1;-1;-1;;Bangka-Belitung
@@ -135,7 +135,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 7304;4360;sea;8614;-1;-1;-1;-1;;New Foundland-Strait
 5407;5382;;-1;-1;-1;-1;-1;GIBRALTAR_STRAIT;Gibraltar North
 5407;2400;;-1;-1;-1;-1;-1;GIBRALTAR_STRAIT;Gibraltar South
-2455;2431;;-1;-1;-1;-1;-1;DANISH_BELTS_STRAIT;Ã˜resund
+2455;2431;;-1;-1;-1;-1;-1;DANISH_BELTS_STRAIT;Øresund
 5412;7678;;-1;-1;-1;-1;-1;BOSPHORUS_STRAIT;Bosphorus
 2919;2943;;-1;-1;-1;-1;-1;HORMUZ_STRAIT;hormuz
 10825;1991;impassable;-1;-1;-1;-1;-1;;Himalayas
@@ -204,6 +204,194 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 6691;6687;impassable;-1;-1;-1;-1;-1;;austrian alps
 6691;9650;impassable;-1;-1;-1;-1;-1;;austrian alps
 9650;3684;impassable;-1;-1;-1;-1;-1;;austrian alps
+12315;7487;impassable;-1;-1;-1;-1;-1;;tamrau and arfak mts
+10436;7269;impassable;-1;-1;-1;-1;-1;;weyland mts
+10436;4593;impassable;-1;-1;-1;-1;-1;;weyland mts
+10436;8235;impassable;-1;-1;-1;-1;-1;;weyland mts
+7570;8235;impassable;-1;-1;-1;-1;-1;;maoke mts
+7570;8250;impassable;-1;-1;-1;-1;-1;;maoke mts
+10990;8250;impassable;-1;-1;-1;-1;-1;;maoke mts
+10990;11004;impassable;-1;-1;-1;-1;-1;;maoke mts
+10423;11004;impassable;-1;-1;-1;-1;-1;;maoke mts
+11018;11004;impassable;-1;-1;-1;-1;-1;;bismarck range
+10954;11018;impassable;-1;-1;-1;-1;-1;;bismarck range
+11018;2129;impassable;-1;-1;-1;-1;-1;;bismarck range
+10954;12428;impassable;-1;-1;-1;-1;-1;;bismarck range
+10954;5135;impassable;-1;-1;-1;-1;-1;;bismarck range
+1222;5135;impassable;-1;-1;-1;-1;-1;;bismarck range
+5135;12931;impassable;-1;-1;-1;-1;-1;;bismarck range
+12193;12931;impassable;-1;-1;-1;-1;-1;;bismarck range
+12237;12931;impassable;-1;-1;-1;-1;-1;;bismarck range
+4418;12931;impassable;-1;-1;-1;-1;-1;;bismarck range
+7409;4418;impassable;-1;-1;-1;-1;-1;;owen stanley range
+7409;10974;impassable;-1;-1;-1;-1;-1;;owen stanley range
+4317;10974;impassable;-1;-1;-1;-1;-1;;owen stanley range
+4317;7305;impassable;-1;-1;-1;-1;-1;;owen stanley range
+7349;7378;impassable;-1;-1;-1;-1;-1;;owen stanley range
+4346;7378;impassable;-1;-1;-1;-1;-1;;owen stanley range
+4346;7333;impassable;-1;-1;-1;-1;-1;;owen stanley range
+12995;7333;impassable;-1;-1;-1;-1;-1;;owen stanley range
+12995;10231;impassable;-1;-1;-1;-1;-1;;owen stanley range
+2222;4216;impassable;-1;-1;-1;-1;-1;;mueller range
+2222;7443;impassable;-1;-1;-1;-1;-1;;mueller range
+7424;7443;impassable;-1;-1;-1;-1;-1;;mueller range
+7424;2117;impassable;-1;-1;-1;-1;-1;;mueller range
+5226;2117;impassable;-1;-1;-1;-1;-1;;mueller range
+2047;2117;impassable;-1;-1;-1;-1;-1;;mueller range
+2047;8091;impassable;-1;-1;-1;-1;-1;;mueller range
+2047;10269;impassable;-1;-1;-1;-1;-1;;mueller range
+2047;1335;impassable;-1;-1;-1;-1;-1;;mueller range
+12243;1335;impassable;-1;-1;-1;-1;-1;;mueller range
+12243;4338;impassable;-1;-1;-1;-1;-1;;mueller range
+12330;7598;impassable;-1;-1;-1;-1;-1;;poso highlands
+12330;4308;impassable;-1;-1;-1;-1;-1;;poso highlands
+12330;1561;impassable;-1;-1;-1;-1;-1;;poso highlands
+1561;7336;impassable;-1;-1;-1;-1;-1;;poso highlands
+4308;1561;impassable;-1;-1;-1;-1;-1;;poso highlands
+12209;1313;impassable;-1;-1;-1;-1;-1;;barisan range
+12209;1274;impassable;-1;-1;-1;-1;-1;;barisan range
+7308;1274;impassable;-1;-1;-1;-1;-1;;barisan range
+7308;10150;impassable;-1;-1;-1;-1;-1;;barisan range
+12138;10294;impassable;-1;-1;-1;-1;-1;;barisan range
+7440;10294;impassable;-1;-1;-1;-1;-1;;barisan range
+12415;10294;impassable;-1;-1;-1;-1;-1;;barisan range
+12415;1373;impassable;-1;-1;-1;-1;-1;;barisan range
+12415;1533;impassable;-1;-1;-1;-1;-1;;barisan range
+7368;1533;impassable;-1;-1;-1;-1;-1;;barisan range
+10382;1533;impassable;-1;-1;-1;-1;-1;;barisan range
+10354;12343;impassable;-1;-1;-1;-1;-1;;barisan range
+10354;12181;impassable;-1;-1;-1;-1;-1;;barisan range
+10354;7327;impassable;-1;-1;-1;-1;-1;;barisan range
+1460;7327;impassable;-1;-1;-1;-1;-1;;barisan range
+10522;12302;impassable;-1;-1;-1;-1;-1;;barisan range
+10522;7673;impassable;-1;-1;-1;-1;-1;;barisan range
+8360;1648;impassable;-1;-1;-1;-1;-1;;barisan range
+12488;1648;impassable;-1;-1;-1;-1;-1;;barisan range
+12488;10509;impassable;-1;-1;-1;-1;-1;;barisan range
+10297;4384;impassable;-1;-1;-1;-1;-1;;titiwangsa range
+1376;4384;impassable;-1;-1;-1;-1;-1;;titiwangsa range
+1364;4384;impassable;-1;-1;-1;-1;-1;;titiwangsa range
+1364;10227;impassable;-1;-1;-1;-1;-1;;titiwangsa range
+4310;10227;impassable;-1;-1;-1;-1;-1;;titiwangsa range
+10217;4388;impassable;-1;-1;-1;-1;-1;;tennaserim range
+4275;4388;impassable;-1;-1;-1;-1;-1;;tennaserim range
+1296;12122;impassable;-1;-1;-1;-1;-1;;tennaserim range
+1296;4392;impassable;-1;-1;-1;-1;-1;;tennaserim range
+12292;4392;impassable;-1;-1;-1;-1;-1;;tennaserim range
+1385;4392;impassable;-1;-1;-1;-1;-1;;tennaserim range
+1385;4348;impassable;-1;-1;-1;-1;-1;;tennaserim range
+1315;4348;impassable;-1;-1;-1;-1;-1;;tennaserim range
+7295;4348;impassable;-1;-1;-1;-1;-1;;tennaserim range
+7295;10193;impassable;-1;-1;-1;-1;-1;;tennaserim range
+12125;10193;impassable;-1;-1;-1;-1;-1;;tennaserim range
+12125;4566;impassable;-1;-1;-1;-1;-1;;tennaserim range
+4408;4566;impassable;-1;-1;-1;-1;-1;;tennaserim range
+4408;7312;impassable;-1;-1;-1;-1;-1;;tennaserim range
+12238;7312;impassable;-1;-1;-1;-1;-1;;tennaserim range
+12238;1253;impassable;-1;-1;-1;-1;-1;;tennaserim range
+4293;1253;impassable;-1;-1;-1;-1;-1;;shan hills
+7441;1253;impassable;-1;-1;-1;-1;-1;;shan hills
+12317;1253;impassable;-1;-1;-1;-1;-1;;shan hills
+12317;7675;impassable;-1;-1;-1;-1;-1;;shan hills
+7647;7675;impassable;-1;-1;-1;-1;-1;;shan hills
+7647;10371;impassable;-1;-1;-1;-1;-1;;shan hills
+7647;1990;impassable;-1;-1;-1;-1;-1;;shan hills
+4175;1990;impassable;-1;-1;-1;-1;-1;;shan hills
+4654;7647;impassable;-1;-1;-1;-1;-1;;shan hills
+1607;7647;impassable;-1;-1;-1;-1;-1;;shan hills
+7603;4175;impassable;-1;-1;-1;-1;-1;;shan hills
+2061;4175;impassable;-1;-1;-1;-1;-1;;shan hills
+7909;4568;impassable;-1;-1;-1;-1;-1;;shan hills
+7909;10776;impassable;-1;-1;-1;-1;-1;;shan hills
+7400;10413;impassable;-1;-1;-1;-1;-1;;shan hills
+4210;10413;impassable;-1;-1;-1;-1;-1;;shan hills
+4210;5009;impassable;-1;-1;-1;-1;-1;;shan hills
+4210;7976;impassable;-1;-1;-1;-1;-1;;shan hills
+4210;10863;impassable;-1;-1;-1;-1;-1;;shan hills
+4210;1170;impassable;-1;-1;-1;-1;-1;;shan hills
+4210;2061;impassable;-1;-1;-1;-1;-1;;shan hills
+1990;10456;impassable;-1;-1;-1;-1;-1;;daen lao range
+4496;10456;impassable;-1;-1;-1;-1;-1;;daen lao range
+8045;10330;impassable;-1;-1;-1;-1;-1;;daen lao range
+8045;10356;impassable;-1;-1;-1;-1;-1;;daen lao range
+12345;10356;impassable;-1;-1;-1;-1;-1;;daen lao range
+12195;12224;impassable;-1;-1;-1;-1;-1;;chantaburi range
+12264;4251;impassable;-1;-1;-1;-1;-1;;dangrek range
+12264;10467;impassable;-1;-1;-1;-1;-1;;dangrek range
+12417;12460;impassable;-1;-1;-1;-1;-1;;dangrek range
+1577;12167;impassable;-1;-1;-1;-1;-1;;annamite range
+1577;4596;impassable;-1;-1;-1;-1;-1;;annamite range
+1577;1248;impassable;-1;-1;-1;-1;-1;;annamite range
+4554;1248;impassable;-1;-1;-1;-1;-1;;annamite range
+4554;7229;impassable;-1;-1;-1;-1;-1;;annamite range
+7426;7229;impassable;-1;-1;-1;-1;-1;;annamite range
+7426;4379;impassable;-1;-1;-1;-1;-1;;annamite range
+12210;1302;impassable;-1;-1;-1;-1;-1;;annamite range
+10195;1302;impassable;-1;-1;-1;-1;-1;;annamite range
+4260;7280;impassable;-1;-1;-1;-1;-1;;annamite range
+4260;12297;impassable;-1;-1;-1;-1;-1;;annamite range
+10326;12297;impassable;-1;-1;-1;-1;-1;;annamite range
+10326;4397;impassable;-1;-1;-1;-1;-1;;annamite range
+1362;9988;impassable;-1;-1;-1;-1;-1;;annamite range
+12332;9988;impassable;-1;-1;-1;-1;-1;;annamite range
+9961;9988;impassable;-1;-1;-1;-1;-1;;annamite range
+9961;11909;impassable;-1;-1;-1;-1;-1;;annamite range
+7218;10103;impassable;-1;-1;-1;-1;-1;;annamite range
+7218;4529;impassable;-1;-1;-1;-1;-1;;annamite range
+12392;4529;impassable;-1;-1;-1;-1;-1;;annamite range
+12392;12319;impassable;-1;-1;-1;-1;-1;;annamite range
+12392;1522;impassable;-1;-1;-1;-1;-1;;annamite range
+12392;10776;impassable;-1;-1;-1;-1;-1;;annamite range
+7518;1196;impassable;-1;-1;-1;-1;-1;;annamite range
+7518;1172;impassable;-1;-1;-1;-1;-1;;annamite range
+7518;4656;impassable;-1;-1;-1;-1;-1;;annamite range
+10920;10863;impassable;-1;-1;-1;-1;-1;;kachin hills
+4425;10863;impassable;-1;-1;-1;-1;-1;;kachin hills
+4996;10863;impassable;-1;-1;-1;-1;-1;;kachin hills
+4996;12898;impassable;-1;-1;-1;-1;-1;;kachin hills
+4996;12789;impassable;-1;-1;-1;-1;-1;;kachin hills
+4318;12789;impassable;-1;-1;-1;-1;-1;;kachin hills
+1996;4318;impassable;-1;-1;-1;-1;-1;;patkai range
+1996;1197;impassable;-1;-1;-1;-1;-1;;patkai range
+12322;1197;impassable;-1;-1;-1;-1;-1;;patkai range
+12322;4087;impassable;-1;-1;-1;-1;-1;;patkai range
+1553;4087;impassable;-1;-1;-1;-1;-1;;patkai range
+1581;4087;impassable;-1;-1;-1;-1;-1;;patkai range
+1581;4588;impassable;-1;-1;-1;-1;-1;;patkai range
+1581;4454;impassable;-1;-1;-1;-1;-1;;patkai range
+10090;3999;impassable;-1;-1;-1;-1;-1;;patkai range
+997;3999;impassable;-1;-1;-1;-1;-1;;patkai range
+997;11966;impassable;-1;-1;-1;-1;-1;;patkai range
+997;7122;impassable;-1;-1;-1;-1;-1;;patkai range
+9991;7122;impassable;-1;-1;-1;-1;-1;;patkai range
+11966;7534;impassable;-1;-1;-1;-1;-1;;arakan range
+11966;7163;impassable;-1;-1;-1;-1;-1;;arakan range
+10033;7163;impassable;-1;-1;-1;-1;-1;;arakan range
+10033;7190;impassable;-1;-1;-1;-1;-1;;arakan range
+4147;7190;impassable;-1;-1;-1;-1;-1;;arakan range
+4147;4019;impassable;-1;-1;-1;-1;-1;;arakan range
+1014;4019;impassable;-1;-1;-1;-1;-1;;arakan range
+3651;1333;impassable;-1;-1;-1;-1;-1;;arakan range
+10182;12284;impassable;-1;-1;-1;-1;-1;;arakan range
+4368;12213;impassable;-1;-1;-1;-1;-1;;central cordillera
+4368;10298;impassable;-1;-1;-1;-1;-1;;central cordillera
+4368;10167;impassable;-1;-1;-1;-1;-1;;central cordillera
+4350;10167;impassable;-1;-1;-1;-1;-1;;central cordillera
+12253;10167;impassable;-1;-1;-1;-1;-1;;central cordillera
+12253;4423;impassable;-1;-1;-1;-1;-1;;central cordillera
+12217;12160;impassable;-1;-1;-1;-1;-1;;mindanao cordillera
+12217;12245;impassable;-1;-1;-1;-1;-1;;mindanao cordillera
+12217;7445;impassable;-1;-1;-1;-1;-1;;mindanao cordillera
+12273;7445;impassable;-1;-1;-1;-1;-1;;mindanao cordillera
+1234;7445;impassable;-1;-1;-1;-1;-1;;mindanao cordillera
+5539;5960;;-1;-1;-1;-1;-1;MALACCA_STRAIT;Malacca Strait
+2737;2714;;-1;-1;-1;-1;-1;SUNDA_STRAIT;Sunda Strait
+2265;2239;;-1;-1;-1;-1;-1;LOMBOK_STRAITS;Lombok and Alas Straits
+2440;2239;;-1;-1;-1;-1;-1;LOMBOK_STRAITS;Bali Strait
+2124;2291;;-1;-1;-1;-1;-1;SAPE_STRAIT;Sape Strait
+8822;2833;;-1;-1;-1;-1;-1;MAKASSAR_STRAIT;Makassar Strait
+5414;4676;;-1;-1;-1;-1;-1;OMBAI_STRAIT;Ombai Southern
+5414;2291;;-1;-1;-1;-1;-1;OMBAI_STRAIT;Ombai Northern
 3314;6336;sea;2752;2885;1578;2890;1581;;Afsluitdijk
 13058;10245;impassable;-1;-1;-1;-1;-1;;Greenland Glacier
 13058;12512;impassable;-1;-1;-1;-1;-1;;Greenland Glacier
@@ -232,7 +420,5 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 5064;2078;impassable;-1;-1;-1;-1;-1;;South Afghanistan
 1421;10184;sea;2899;-1;-1;-1;-1;;Sulu-Mindanao
 5864;5838;;-1;-1;-1;-1;-1;OTRANTO_STRAIT;Otranto Strait
--1;-1;;-1;-1;-1;-1;-1;-1 
+-1;-1;;-1;-1;-1;-1;-1;-1;
 #Start province ID;End province ID;Adjacency type;Through province ID;Starting X position;Starting Y position;Ending X position;Ending Y position;Adjacency rule;Comment
-
-

@@ -410,3 +410,231 @@ adjacency_rule = {
 	icon = 6979
 	offset = { 9 0 6 }
 }
+
+#Malacca Strait
+adjacency_rule = {
+	name = "MALACCA_STRAIT"
+
+	contested = {
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+
+	enemy = {
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	 
+	friend = {
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+
+	neutral = {
+		army = yes
+		navy = yes
+		submarine = no
+		trade = yes
+	}
+	
+	required_provinces = { 7463 7427 }
+		
+	icon = 7463
+	offset = { 10 0 7 }
+}
+
+#Sunda Strait
+adjacency_rule = {
+	name = "SUNDA_STRAIT"
+
+	contested = {
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+
+	enemy = {
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	
+	friend = {
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+
+	neutral = {
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 1342 10279 }
+		
+	icon = 10279
+	offset = { -4 0 7 }
+}
+
+#Makassar Strait
+adjacency_rule = {
+	name = "MAKASSAR_STRAIT"
+
+	contested = {
+		army = no
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+
+	enemy = {
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	
+	friend = {
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+
+	neutral = {
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 10181 1098 }
+		
+	icon = 10181
+	offset = { 10 0 -3 }
+}
+
+#Lombok Straits
+adjacency_rule = {
+	name = "LOMBOK_STRAITS"
+
+	contested = {
+		army = no
+		navy = no
+		submarine = yes
+		trade = yes
+	}
+
+	enemy = {
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	
+	friend = {
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+
+	neutral = {
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 7654 4273 7293 10191 }
+		
+	icon = 7293
+	offset = { 0 0 -4 }
+}
+
+#Sape Strait
+adjacency_rule = {
+	name = "SAPE_STRAIT"
+
+	contested = {
+		army = no
+		navy = no
+		submarine = yes
+		trade = yes
+	}
+
+	enemy = {
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	
+	friend = {
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+
+	neutral = {
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 12162 1298 }
+		
+	icon = 1298
+	offset = { -8 0 0 }
+}
+
+#Ombai Strait
+adjacency_rule = {
+	name = "OMBAI_STRAIT"
+
+	contested = {
+		army = no
+		navy = no
+		submarine = yes
+		trade = yes
+	}
+
+	enemy = {
+		army = no
+		navy = no
+		submarine = yes
+		trade = yes
+	}
+	
+	friend = {
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+
+	neutral = {
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 1355 7321 }
+		
+	icon = 1355
+	offset = { -4 0 10 }
+}
