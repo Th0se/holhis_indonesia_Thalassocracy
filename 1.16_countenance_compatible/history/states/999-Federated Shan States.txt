@@ -8,7 +8,9 @@ state = {
 	history = {
 		owner = BRM
 		add_core_of = BRM
-
+		victory_points = {
+			1607 1 
+		}
 		buildings = {
 			infrastructure = 1
 		}

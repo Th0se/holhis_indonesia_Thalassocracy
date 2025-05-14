@@ -1,4 +1,4 @@
-﻿capital = 288
+﻿capital = 995
 
 #oob = ""
 
@@ -94,7 +94,7 @@ recruit_character = BRM_u_saw
 		communism = 2
 		neutrality = 56
 	}
-	set_cosmetic_tag = BRM_UK #British Burma
+	set_cosmetic_tag = BRM_british #British Burma
 }
 
 set_politics = {
