@@ -12511,7 +12511,12 @@ form_polynesia_category = {
 					has_idea = INS_mohammad_jamin
 				}
 			}
-			NOT = { has_global_flag = form_polynesia_flag }
+			if = {
+				limit = {
+					NOT = { original_tag = INS }
+				}
+				NOT = { has_global_flag = form_polynesia_flag }
+			}
 		}
 
 		complete_effect = {
@@ -12522,6 +12527,7 @@ form_polynesia_category = {
 				set_cosmetic_tag = united_polynesia
 				hidden_effect = {
 					set_global_flag = form_polynesia_flag
+					news_event = { id = lar_news.291 hours = 6 }
 				}
 			}
 			# Polynesia
@@ -12555,9 +12561,6 @@ form_polynesia_category = {
 				270 = { add_core_of = ROOT } # Pitcairn
 				948 = { add_core_of = ROOT } # Easter Island
 			}
-			hidden_effect = {
-				news_event = { id = lar_news.291 hours = 6 }
-			}
 		}
 
 		ai_will_do = {
@@ -12565,6 +12568,9 @@ form_polynesia_category = {
 			modifier = {
 				factor = 0
 				is_historical_focus_on = yes
+				NOT = {
+					original_tag = INS
+				}
 			}
 		}
 	}
