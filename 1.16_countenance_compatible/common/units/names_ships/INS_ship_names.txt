@@ -13,7 +13,7 @@ INS_CV_HISTORICAL = {
 	fallback_name = "KRI 1%d"		
 
 	unique = { #use major islands since Indonesian Presidents hasn't existed yet in 1930s
-		"Jawa" "Soematra" "Kalimantan" "Soelawesi" "Papoea" "Bali" "Bangka" "Halmahera" "Madoera" "Lombok" "Seram"
+		"Jawa" "Soematra" "Kalimantan" "Soelawesi" "Irian" "Bali" "Bangka" "Halmahera" "Madoera" "Lombok" "Seram"
 	}
 }
 
@@ -107,7 +107,7 @@ INS_BB_HISTORICAL = {
 	ship_types = { ship_hull_heavy battleship battle_cruiser }
 	
 	prefix = "KRI "							
-	fallback_name = "KRI 5%d"		
+	fallback_name = "KRI 5%d"
 
 	unique = { #Major cities
  		"Djakarta" "Amboina" "Bandoeng" "Medan" "Semarang" "Padang" "Soerabaja" "Makassar" "Malang" "Pontianak" "Djogdjakarta" "Pakanbaroe" "Bogor" "Manado" "Palembang" "Balikpapan"
@@ -165,7 +165,7 @@ INS_VOLCANOES = {
 	}
 }
 
-## THEME: INDONESIAN VOLCANOES ###
+## THEME: INDONESIAN WAYANG WEAPONS ###
 INS_SUBMARINES = {
 	name = NAME_THEME_INS_SUBMARINES
 

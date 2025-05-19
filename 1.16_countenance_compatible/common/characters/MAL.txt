@@ -57,10 +57,59 @@ characters = {
 	}
 
 	MAL_tuanku_abdul_rahman = {
-		name = "Tuanku Abdul Rahman"
+		name = MAL_tuanku_abdul_rahman
 		portraits = {
 			civilian = {
 				large = GFX_portrait_malaysia_abdul_rahman
+			}
+			army = {
+				small = GFX_idea_malaysia_tuanku_abdul_rahman
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MAL_tuanku_abdul_rahman
+			allowed = {
+				original_tag = MAL
+			}
+			available = {
+				NOT = {
+					OR = {
+						has_government = communism
+						has_government = fascism
+					}
+				}
+				controls_state = 1034
+				NOT = {
+					has_country_leader = {
+						character = MAL_tuanku_abdul_rahman
+						ruling_only = yes
+					}
+				}
+			}
+			traits = {
+				negeri_sembilan_monarch 
+			}
+			on_add = {
+				if = {
+					limit = {
+						MAL = {
+							controls_state = 1034
+						}
+					}
+					1034 = {
+						add_dynamic_modifier = {
+							modifier = MAL_tuanku_sembilan_modifier
+						}
+					}
+				}
+			}
+			on_remove = {
+				1034 = {
+					remove_dynamic_modifier = {
+						modifier = MAL_tuanku_sembilan_modifier
+					}
+				}
 			}
 		}
 		country_leader={

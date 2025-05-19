@@ -1014,7 +1014,7 @@
  KLM_ahmad_tajuddin_waddien:0 "Ahmad Tajuddin Waddien" #1913, 23 yo in 1936, Brunei Sultan since 1924
 
  #MALAYSIA
- MAL_abdul_rahman:0 "Tuanku Abdul Rahman"
+ MAL_tuanku_abdul_rahman:0 "Tuanku Abdul Rahman"
  MAL_ibrahim_yaacob:0 "Ibrahim Yaacob"
  MAL_lai_teck:0 "Lai Teck"
  MAL_onn_jaafar:0 "Onn Jaafar"
@@ -1044,8 +1044,6 @@
  
  #BURMA
  BRM_aung_san:0 "Aung San"
- BRM_cochrane:0 "Archibald Cochrane"
- BRM_ba_maw:0 "Ba Maw"
  BRM_u_saw:0 "U Saw"
 
  #SIAM

@@ -642,6 +642,16 @@ leader_traits = {
 		democratic_drift = 0.03
 	}
 
+	negeri_sembilan_monarch = { #Tuanku Abdul Rahman
+		sprite = 13
+		random = no
+
+		autonomy_gain = 0.5
+		neutrality_drift = 0.04
+		democratic_drift = 0.06
+		political_power_factor = -0.05
+	}
+
 	marshal_of_thailand = { #Plaek Phibunsongkhram
 		sprite = 18
 		random = no
