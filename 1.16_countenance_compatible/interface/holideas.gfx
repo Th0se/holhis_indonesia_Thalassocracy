@@ -536,6 +536,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_idea_indonesia_margono"
+		texturefile = "gfx/ideas/INS/idea_ins_margono_djojohadikoesoemo.dds"
+	}
+
+	spriteType = {
 		name = "GFX_idea_indonesia_mas_mansoer"
 		texturefile = "gfx/ideas/INS/idea_ins_mas_mansoer.dds"
 	}

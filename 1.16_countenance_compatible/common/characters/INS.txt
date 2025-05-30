@@ -2313,6 +2313,41 @@ characters = {
 		}
 	}
 
+	INS_margono_djojohadikoesoemo = {
+		name = INS_margono_djojohadikoesoemo
+		portraits = {
+			army = {
+				small = GFX_idea_indonesia_margono
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = INS_margono_djojohadikoesoemo
+			allowed = {
+				original_tag = INS
+			}
+			available = {
+				NOT = {
+					has_government = communism
+				}
+				has_completed_focus = INS_economic_independence
+			}
+			visible = {
+				has_completed_focus = INS_kebangkitan
+			}
+			traits = {
+				banking_magnate
+			}
+			ai_will_do = {
+				base = 20
+				modifier = {
+					factor = 10
+					has_completed_focus = INS_economic_independence
+				}
+			}
+		}
+	}
+
 	INS_meyer_ranneft = {
 		name = INS_meyer_ranneft
 		portraits = {

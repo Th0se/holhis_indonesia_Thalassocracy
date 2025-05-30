@@ -138,6 +138,7 @@ recruit_character = INS_ernest_douwes_dekker
 recruit_character = INS_tjipto_mangoenkoesoemo
 recruit_character = INS_kh_dewantara
 recruit_character = INS_group_gapi
+recruit_character = INS_margono_djojohadikoesoemo
 recruit_character = INS_mohammad_hoesni_thamrin
 recruit_character = INS_mohammad_hoesni_thamrin_volksraad
 recruit_character = INS_soekardjo_wirjopranoto
