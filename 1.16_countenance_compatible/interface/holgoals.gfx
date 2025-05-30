@@ -51,8 +51,33 @@ spriteTypes = {
 	}
 
 	SpriteType = { 
+		name = "GFX_focus_INS_army_air_force"
+		texturefile = "gfx/interface/goals/focus_INS_army_air_force.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_INS_colonial_navy"
+		texturefile = "gfx/interface/goals/focus_INS_colonial_navy.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_INS_knil"
+		texturefile = "gfx/interface/goals/focus_INS_knil.dds"
+	}
+
+	SpriteType = { 
 		name = "GFX_focus_INS_merdeka_atau_mati"
 		texturefile = "gfx/interface/goals/focus_INS_merdeka_atau_mati.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_INS_PKI"
+		texturefile = "gfx/interface/goals/focus_INS_PKI.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_focus_INS_PNI"
+		texturefile = "gfx/interface/goals/focus_INS_PNI.dds"
 	}
 
 	SpriteType = { 

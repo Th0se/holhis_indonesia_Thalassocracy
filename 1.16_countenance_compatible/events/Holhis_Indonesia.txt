@@ -6118,7 +6118,7 @@ country_event = { #Nationalists 4 - PNI Uprising
 				character = INS_ernest_douwes_dekker
 				advisor = {
 					slot = high_command
-					idea_token = INS_ernest_douwes_dekker
+					idea_token = INS_ernest_douwes_dekker_command
 					traits = {
 						army_regrouping_1
 					}
@@ -13336,7 +13336,7 @@ country_event = { #Volskraad 10 - Parindra Uprising
 				character = INS_ernest_douwes_dekker
 				advisor = {
 					slot = high_command
-					idea_token = INS_ernest_douwes_dekker
+					idea_token = INS_ernest_douwes_dekker_command
 					traits = {
 						army_regrouping_1
 					}

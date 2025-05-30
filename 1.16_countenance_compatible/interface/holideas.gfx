@@ -61,11 +61,6 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_idea_INS_nv_merbaboe"
-		texturefile = "gfx/interface/ideas/idea_ins_merbaboe.dds"
-	}
-	
-	spriteType = {
 		name = "GFX_idea_INS_nakajima"
 		texturefile = "gfx/interface/ideas/idea_ins_nakajima.dds"
 	}
@@ -228,6 +223,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_modifier_regional_sarawak"
 		texturefile = "gfx/state_modifiers/MAL_sarawak_modifier.dds"
+	}
+
+	spriteType = {
+		name = "GFX_modifier_regional_negeri_sembilan"
+		texturefile = "gfx/state_modifiers/MAL_sembilan_modifier.dds"
 	}
 
 	spriteType = {
@@ -418,6 +418,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_indonesia_hamid_alkadrie_army"
 		texturefile = "gfx/ideas/INS/idea_ins_hamid_alkadrie_army.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_indonesia_hendrik_van_oijen"
+		texturefile = "gfx/ideas/INS/idea_ins_hendrik_van_oijen.dds"
 	}
 
 	spriteType = {
@@ -936,6 +941,16 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_idea_maluku_manusama"
+		texturefile = "gfx/ideas/MLK/idea_mlk_manusama.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_maluku_soumokil_army"
+		texturefile = "gfx/ideas/MLK/idea_mlk_soumokil_army.dds"
+	}
+
+	spriteType = {
 		name = "GFX_idea_netherlands_abraham_vromans"
 		texturefile = "gfx/ideas/HOL/idea_hol_abraham_vromans.dds"
 	}
@@ -1208,11 +1223,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_malaysia_charles_brooke"
 		texturefile = "gfx/ideas/MAL/idea_mal_charles_brooke.dds"
-	}
-
-	spriteType = {
-		name = "GFX_idea_malaysia_tuanku_abdul_rahman"
-		texturefile = "gfx/ideas/MAL/idea_mal_tunku_abdul_rahman.dds"
 	}
 
 	spriteType = {

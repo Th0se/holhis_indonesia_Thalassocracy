@@ -75,7 +75,7 @@ focus_tree = {
 
 	focus = {
 		id = INS_address_malaise
-		icon = GFX_focus_generic_self_management
+		icon = GFX_focus_generic_economic_recovery
 		
 		x = 0
 		y = 0
@@ -128,7 +128,7 @@ focus_tree = {
 
 	focus = {
 		id = INS_limit_exports
-		icon = GFX_goal_generic_trade
+		icon = GFX_focus_GER_integrated_economies
 		prerequisite = { focus = INS_address_malaise }
 		
 		relative_position_id = INS_address_malaise
@@ -190,7 +190,7 @@ focus_tree = {
 
 	focus = {
 		id = INS_self_sufficient_weapon_production
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_focus_generic_military_industry
 		prerequisite = { focus = INS_address_malaise }
 		
 		relative_position_id = INS_address_malaise
@@ -648,7 +648,7 @@ focus_tree = {
 
 	focus = {
 		id = INS_end_malaise
-		icon = GFX_focus_generic_economic_recovery
+		icon = GFX_focus_generic_currency_reforms
 		prerequisite = { focus = INS_increase_sufficiency }
 		prerequisite = { focus = INS_expand_javan_railroads }
 		prerequisite = { focus = INS_expand_sumatran_industry }
@@ -3487,7 +3487,7 @@ focus_tree = {
 
 	focus = {
 		id = INS_focus_on_the_peace
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_focus_generic_monetary_union
 		prerequisite = { focus = INS_finalize_develop_east focus = INS_finalize_develop_west }
 		prerequisite = { focus = INS_new_schools }
 		mutually_exclusive = { focus = INS_focus_on_the_war }
@@ -5168,7 +5168,7 @@ focus_tree = {
 
 	focus = {
 		id = INS_study_the_terrain
-		icon = GFX_goal_generic_special_forces
+		icon = GFX_focus_generic_jungle_training
 		prerequisite = { focus = INS_indonesian_high_command focus = INS_final_knil_reform focus = INS_ideological_devotion }
 
 		relative_position_id = INS_indonesian_high_command
@@ -5247,7 +5247,7 @@ focus_tree = {
 
 	focus = {
 		id = INS_reform_the_knil
-		icon = GFX_goal_tripartite_pact
+		icon = GFX_focus_INS_knil
 		prerequisite = { focus = INS_trust_on_the_east }
 		
 		relative_position_id = INS_trust_on_the_east
@@ -5610,7 +5610,7 @@ focus_tree = {
 
 	focus = {
 		id = INS_import_tanks
-		icon = GFX_focus_generic_license_production
+		icon = GFX_focus_generic_tank_assembly
 		prerequisite = { focus = INS_knil_leadership_reforms }
 		
 		relative_position_id = INS_knil_leadership_reforms
@@ -6758,7 +6758,7 @@ focus_tree = {
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = INS_nip_available_tt
-			show_ideas_tooltip = INS_ernest_douwes_dekker
+			show_ideas_tooltip = INS_ernest_douwes_dekker_minister
 			show_ideas_tooltip = INS_kh_dewantara
 			show_ideas_tooltip = INS_tjipto_mangoenkoesoemo
 			hidden_effect = {
@@ -7259,7 +7259,7 @@ focus_tree = {
 
 	focus = {
 		id = INS_form_indopac_league
-		icon = GFX_goal_generic_alliance
+		icon = GFX_focus_GER_sentinels_of_the_pacific
 		prerequisite = { focus = INS_nusantara_accord }
 		prerequisite = { focus = INS_decolonisation_policies }
 		
@@ -7317,8 +7317,35 @@ focus_tree = {
 			}
 			every_country = {
 				limit = {
-					has_country_flag = INS_marked_for_asian_league_flag
+					OR = {
+						has_country_flag = INS_marked_for_asian_league_flag
+						is_southwest_pacific_state = yes
+						is_east_asian_state = yes
+						original_tag = FER
+						original_tag = VLA
+						original_tag = CHU
+						original_tag = CAN
+						original_tag = USA
+						original_tag = MEX
+						original_tag = GUA
+						original_tag = ELS
+						original_tag = HON
+						original_tag = NIC
+						original_tag = COS
+						original_tag = PAN
+						original_tag = COL
+						original_tag = ECU
+						original_tag = PER
+						original_tag = CHL
+						original_tag = RAP
+					}
+					OR = {
+						has_government = democratic
+						has_country_leader_ideology = centrism
+						has_country_leader_ideology = moderatism
+					}
 					is_subject = no
+					is_in_faction = no
 				}
 				country_event = { id = generic.5 }
 				add_opinion_modifier = {
@@ -7408,7 +7435,7 @@ focus_tree = {
 
 	focus = {
 		id = INS_decolonisation_policies
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_focus_eng_decolonization
 		prerequisite = { focus = INS_lon_mandates_self_rule }
 		
 		relative_position_id = INS_lon_mandates_self_rule
@@ -9904,7 +9931,7 @@ focus_tree = {
 
 	focus = {
 		id = INS_enforce_stratification
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_focus_RAJ_union_busting
 		prerequisite = { focus = INS_end_burden_sharing }
 
 		relative_position_id = INS_end_burden_sharing
@@ -12599,7 +12626,7 @@ focus_tree = {
 
 	focus = {
 		id = INS_secure_eastern_indonesia
-		icon = GFX_goal_demand_sudetenland
+		icon = GFX_focus_ins_wallacea_sahul
 		prerequisite = { focus = INS_liberate_malaya }
 		mutually_exclusive = { focus = INS_claims_in_the_indian }
 
@@ -13506,7 +13533,7 @@ focus_tree = {
 
 	focus = {
 		id = INS_united_free_indonesia
-		icon = GFX_goal_generic_dangerous_deal
+		icon = GFX_focus_INS_PNI
 		prerequisite = { focus = INS_secret_weapon_production focus = INS_our_path_forward }
 		mutually_exclusive = { focus = INS_support_nationalists focus = INS_support_communists }
 
@@ -13886,7 +13913,7 @@ focus_tree = {
 
 	focus = {
 		id = INS_support_communists
-		icon = GFX_goal_support_communism
+		icon = GFX_focus_INS_PKI
 		prerequisite = { focus = INS_secret_weapon_production focus = INS_our_path_forward }
 		mutually_exclusive = { focus = INS_support_nationalists focus = INS_united_free_indonesia }
 
@@ -15069,7 +15096,7 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = INS_mohammad_jamin
-			show_ideas_tooltip = INS_ernest_douwes_dekker
+			show_ideas_tooltip = INS_ernest_douwes_dekker_minister
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = INS_one_state
@@ -15078,7 +15105,7 @@ focus_tree = {
 
 	focus = {
 		id = INS_multi_state
-		icon = GFX_goal_generic_dangerous_deal
+		icon = GFX_focus_generic_east_indies
 		prerequisite = { focus = INS_seize_means_production }
 		prerequisite = { focus = INS_reappropriation }
 		prerequisite = { focus = INS_question_religion }
@@ -16171,7 +16198,7 @@ focus_tree = {
 
 	focus = {
 		id = INS_pave_the_way_for_a_navy
-		icon = GFX_goal_generic_navy_battleship
+		icon = GFX_focus_INS_colonial_navy
 
 		relative_position_id = INS_address_malaise
 		x = -13
@@ -17223,7 +17250,7 @@ focus_tree = {
 
 	focus = {
 		id = INS_expand_the_airforce
-		icon = GFX_goal_continuous_air_production
+		icon = GFX_focus_INS_army_air_force
 
 		relative_position_id = INS_pave_the_way_for_a_navy
 		x = 6
@@ -17919,7 +17946,7 @@ focus_tree = {
 
 	focus = {
 		id = INS_expand_airbases
-		icon = GFX_goal_continuous_non_factory_construct
+		icon = GFX_focus_generic_air_bases
 		prerequisite = { focus = INS_aviation_effort }
 
 		relative_position_id = INS_aviation_effort
@@ -18023,7 +18050,7 @@ focus_tree = {
 
 	focus = {
 		id = INS_jet_effort
-		icon = GFX_goal_generic_build_airforce
+		icon = GFX_focus_generic_jet_planes
 		prerequisite = { focus = INS_aviation_effort }
 
 		relative_position_id = INS_aviation_effort
@@ -18872,7 +18899,7 @@ focus_tree = {
 
 	focus = {
 		id = INS_promote_cause
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = INS_appease_dutch focus = INS_appease_americans }
 		
 		relative_position_id = INS_appease_dutch
