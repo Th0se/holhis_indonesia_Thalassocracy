@@ -2330,19 +2330,19 @@ characters = {
 				NOT = {
 					has_government = communism
 				}
-				has_completed_focus = INS_economic_independence
+				has_completed_focus = INS_expel_the_colonials
 			}
 			visible = {
-				has_completed_focus = INS_kebangkitan
+				has_completed_focus = INS_discourage_democratic_reforms
 			}
 			traits = {
-				banking_magnate
+				JUNO_president_of_the_central_bank
 			}
 			ai_will_do = {
 				base = 20
 				modifier = {
 					factor = 10
-					has_completed_focus = INS_economic_independence
+					has_completed_focus = INS_expel_the_colonials
 				}
 			}
 		}
