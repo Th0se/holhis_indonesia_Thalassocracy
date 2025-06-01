@@ -2447,6 +2447,7 @@ country_event = { #49 - Dr. Soetomo's passing
 			has_completed_focus = INS_break_the_chains
 		}
 		date > 1938.3.31
+		has_start_date < 1936.01.02
 	}
 
 	mean_time_to_happen = { days = 60 }

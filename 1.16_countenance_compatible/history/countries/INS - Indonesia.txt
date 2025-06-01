@@ -781,6 +781,7 @@ if = {
 	set_country_flag = INS_hoog_death_flag
 	set_country_flag = INS_wesseling_retired_flag
 	set_country_flag = INS_gerindo_allowed_flag
+	set_country_flag = INS_merbaboe_quits_flag
 
 	set_variable = {
 		var = INS_education_upgrade

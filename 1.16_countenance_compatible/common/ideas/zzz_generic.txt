@@ -2187,8 +2187,8 @@ ideas = {
 				NOT = {
 					AND = {
 						tag = CHL
+						has_dlc = "Trial of Allegiance"
 					}
-					has_dlc = "Trial of Allegiance"
 				}
 				NOT = {
 					AND = {
