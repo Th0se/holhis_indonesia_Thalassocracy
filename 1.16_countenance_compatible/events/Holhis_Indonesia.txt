@@ -2447,6 +2447,7 @@ country_event = { #49 - Dr. Soetomo's passing
 			has_completed_focus = INS_break_the_chains
 		}
 		date > 1938.3.31
+		has_start_date < 1936.01.02
 	}
 
 	mean_time_to_happen = { days = 60 }
@@ -6118,7 +6119,7 @@ country_event = { #Nationalists 4 - PNI Uprising
 				character = INS_ernest_douwes_dekker
 				advisor = {
 					slot = high_command
-					idea_token = INS_ernest_douwes_dekker
+					idea_token = INS_ernest_douwes_dekker_command
 					traits = {
 						army_regrouping_1
 					}
@@ -13336,7 +13337,7 @@ country_event = { #Volskraad 10 - Parindra Uprising
 				character = INS_ernest_douwes_dekker
 				advisor = {
 					slot = high_command
-					idea_token = INS_ernest_douwes_dekker
+					idea_token = INS_ernest_douwes_dekker_command
 					traits = {
 						army_regrouping_1
 					}

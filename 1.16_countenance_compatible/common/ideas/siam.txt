@@ -6,9 +6,11 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-
 			allowed = {
 				original_tag = SIA
+				NOT = {
+					has_government = communism
+				}
 			}
 			removal_cost = -1
 			modifier = {

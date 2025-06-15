@@ -4788,6 +4788,8 @@ ideas = {
 	}
 
 	tank_manufacturer = {
+	
+		designer = yes
 		
 		INS_acf = {
 			

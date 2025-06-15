@@ -39,6 +39,8 @@ set_war_support = 0.35
 
 recruit_character = ATJ_toeankoe_radja_ibrahim
 recruit_character = ATJ_daoed_beoereoeh
+recruit_character = ATJ_natar_zainuddin
+recruit_character = ATJ_abdoelxarim
 
 add_ideas = {
 	ASEAN_agrarian_society_2

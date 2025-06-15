@@ -48,6 +48,7 @@ recruit_character = SIA_phichit_kriangsak
 add_ideas = {
 	SIA_rama_viii
 	ASEAN_agrarian_society_2
+	idea_SIA_army_of_siam
 }
 
 set_stability = 0.46
