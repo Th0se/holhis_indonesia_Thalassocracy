@@ -5077,36 +5077,37 @@ focus_tree = {
 			}
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
+
 			if = {
 				limit = {
 					NOT = {
-						has_country_flag = INS_gatot_general
+						has_country_flag = INS_didi_general
 					}
 				}
-				set_country_flag = INS_gatot_general
+				set_country_flag = INS_didi_general
 				add_corps_commander_role = {
-					character = INS_gatot_soebroto
-					traits = { defensive_doctrine jungle_rat }
+					character = INS_didi_kartasasmita
+					traits = { jungle_rat }
 					skill = 1
 					attack_skill = 1
-					defense_skill = 2
-					planning_skill = 1
+					defense_skill = 1
+					planning_skill = 2
 					logistics_skill = 2
 				}
 				add_advisor_role = {
-					character = INS_gatot_soebroto
+					character = INS_didi_kartasasmita
 					advisor = {
 						slot = army_chief
-						idea_token = INS_gatot_soebroto
+						idea_token = INS_didi_kartasasmita
 						ledger = army
 						traits = {
-							army_chief_defensive_1
+							army_chief_maneuver_1
 						}
 						cost = 50
 					}
 				}
 				hidden_effect = {
-					INS_gatot_soebroto = {
+					INS_didi_kartasasmita = {
 						set_character_flag = INS_appointed_general_flag
 					}
 				}
