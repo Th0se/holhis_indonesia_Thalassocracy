@@ -490,11 +490,11 @@ characters = {
 		portraits = {
 			army = {
 				large = GFX_portrait_phi_enrique_jurado
-				small = GFX_idea_philippines_enrique_jorado
+				small = GFX_idea_philippines_enrique_jurado
 			}
 			navy = {
 				large = GFX_portrait_phi_enrique_jurado
-				small = GFX_idea_philippines_enrique_jorado
+				small = GFX_idea_philippines_enrique_jurado
 			}
 		}
 		advisor = {

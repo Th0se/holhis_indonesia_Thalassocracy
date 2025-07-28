@@ -2844,6 +2844,24 @@ AFG_ai_behavior = {
 		allow_achievements = no
 	}
 	option = {
+		name = CALIPHATE
+		text = "RULE_OPTION_CALIPHATE_AFG"
+		desc = "RULE_OPTION_CALIPHATE_AFG_AI_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = EMPIRE
+		text = "RULE_OPTION_EMPIRE_AFG"
+		desc = "RULE_OPTION_EMPIRE_AFG_AI_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = MUGHALS
+		text = "RULE_OPTION_MUGHAL_AFG"
+		desc = "RULE_OPTION_MUGHAL_AFG_AI_DESC"
+		allow_achievements = no
+	}
+	option = {
 		name = RANDOM
 		text = "RULE_OPTION_RANDOM"
 		desc = "RULE_OPTION_RANDOM_AI_DESC"

@@ -4866,39 +4866,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
-			if = {
-				limit = {
-					NOT = {
-						has_country_flag = INS_oerip_general
-					}
-				}
-				set_country_flag = INS_oerip_general
-				add_corps_commander_role = {
-					character = INS_oerip_soemohardjo
-					traits = { defensive_doctrine unyielding_defender jungle_rat guerilla_fighter inflexible_strategist }
-					skill = 2
-					attack_skill = 2
-					defense_skill = 2
-					planning_skill = 1
-					logistics_skill = 2
-				}
-				add_advisor_role = {
-					character = INS_oerip_soemohardjo
-					advisor = {
-						slot = high_command
-						idea_token = INS_oerip_soemohardjo
-						traits = {
-							army_logistics_2
-						}
-						cost = 50
-					}
-				}
-				hidden_effect = {
-					INS_oerip_soemohardjo = {
-						set_character_flag = INS_appointed_general_flag
-					}
-				}
-			}
 			add_corps_commander_role = {
 				character = INS_pesman
 				traits = { }
@@ -4943,6 +4910,41 @@ focus_tree = {
 				}
 				hidden_effect = {
 					INS_pierre_cox = {
+						set_character_flag = INS_appointed_general_flag
+					}
+				}
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = INS_oerip_general
+					}
+				}
+				set_country_flag = INS_oerip_general
+				add_corps_commander_role = {
+					character = INS_oerip_soemohardjo
+					traits = { defensive_doctrine unyielding_defender jungle_rat guerilla_fighter inflexible_strategist }
+					skill = 2
+					attack_skill = 2
+					defense_skill = 2
+					planning_skill = 1
+					logistics_skill = 2
+				}
+				add_advisor_role = {
+					character = INS_oerip_soemohardjo
+					advisor = {
+						slot = high_command
+						idea_token = INS_oerip_soemohardjo
+						traits = {
+							army_logistics_2
+						}
+						cost = 50
+					}
+				}
+				hidden_effect = {
+					INS_oerip_soemohardjo = {
 						set_character_flag = INS_appointed_general_flag
 					}
 				}
@@ -5077,41 +5079,6 @@ focus_tree = {
 			}
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
-
-			if = {
-				limit = {
-					NOT = {
-						has_country_flag = INS_didi_general
-					}
-				}
-				set_country_flag = INS_didi_general
-				add_corps_commander_role = {
-					character = INS_didi_kartasasmita
-					traits = { jungle_rat }
-					skill = 1
-					attack_skill = 1
-					defense_skill = 1
-					planning_skill = 2
-					logistics_skill = 2
-				}
-				add_advisor_role = {
-					character = INS_didi_kartasasmita
-					advisor = {
-						slot = army_chief
-						idea_token = INS_didi_kartasasmita
-						ledger = army
-						traits = {
-							army_chief_maneuver_1
-						}
-						cost = 50
-					}
-				}
-				hidden_effect = {
-					INS_didi_kartasasmita = {
-						set_character_flag = INS_appointed_general_flag
-					}
-				}
-			}
 			add_corps_commander_role = {
 				character = INS_bakkers
 				traits = { }
@@ -5160,6 +5127,44 @@ focus_tree = {
 					}
 				}
 			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = INS_didi_general
+					}
+				}
+				set_country_flag = INS_didi_general
+				add_corps_commander_role = {
+					character = INS_didi_kartasasmita
+					traits = { jungle_rat }
+					skill = 1
+					attack_skill = 1
+					defense_skill = 1
+					planning_skill = 2
+					logistics_skill = 2
+				}
+				add_advisor_role = {
+					character = INS_didi_kartasasmita
+					advisor = {
+						slot = army_chief
+						idea_token = INS_didi_kartasasmita
+						ledger = army
+						traits = {
+							army_chief_maneuver_1
+						}
+						cost = 50
+					}
+				}
+				hidden_effect = {
+					INS_didi_kartasasmita = {
+						set_character_flag = INS_appointed_general_flag
+					}
+				}
+			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = INS_knil_incompetence_locals_4
 				add_idea = INS_knil_incompetence_locals_5
@@ -5447,6 +5452,8 @@ focus_tree = {
 			else = {
 				add_ideas = INS_anti_nationalist_police
 			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
 					has_idea = INS_nationalism_suppressed

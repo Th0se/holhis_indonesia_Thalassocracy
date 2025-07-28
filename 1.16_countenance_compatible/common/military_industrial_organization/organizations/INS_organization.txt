@@ -10,7 +10,7 @@
 
 INS_acf_organization = {
 	include = generic_medium_tank_organization
-	icon = INS_acf
+	icon = GFX_idea_INS_acf
 	allowed = { 
 		tag = INS
 	}
@@ -106,7 +106,7 @@ INS_govmarine_organization = {
 
 INS_fokker_organization = {
 	include = generic_general_aircraft_organization
-	icon = fokker
+	icon = GFX_idea_fokker
 	allowed = {
 		tag = INS
 		has_dlc = "Arms Against Tyranny"
@@ -124,7 +124,7 @@ INS_fokker_organization = {
 
 INS_koolhoven_organization = {
 	include = generic_medium_aircraft_organization
-	icon = koolhoven
+	icon = GFX_idea_koolhoven
 	allowed = {
 		tag = INS
 		has_dlc = "Arms Against Tyranny"
@@ -154,7 +154,7 @@ INS_koolhoven_organization = {
 
 INS_nakajima_organization = {
 	include = generic_heavy_aircraft_organization
-	icon = nakajima
+	icon = GFX_idea_nakajima
 	allowed = {
 		tag = INS
 		has_dlc = "Arms Against Tyranny"
@@ -164,21 +164,8 @@ INS_nakajima_organization = {
 			NOT = {
 				has_war_with = JAP
 			}
-			if = {
-				limit = {
-					has_completed_focus = INS_invite_foreign_investors
-				}
-				has_country_flag = INSJAP_trade_agreement_1
-			}
-		}
-	}
-	visible = {
-		owner = {
-			OR = {
-				has_completed_focus = INS_invite_foreign_investors
-				has_completed_focus = INS_commit_hakko_ichiu
-				has_completed_focus = INJ_invite_zaibatsus
-			}
+			has_completed_focus = INS_invite_foreign_investors
+			has_country_flag = INSJAP_trade_agreement_1
 		}
 	}
 }
@@ -226,7 +213,7 @@ INS_ptdi_organization = {
 
 INS_daf_organization = {
 	include = generic_motorized_mechanized_organization
-	icon = HOL_daf
+	icon = GFX_idea_HOL_daf
 	allowed = {
 		tag = INS
 		has_dlc = "Arms Against Tyranny"
@@ -243,7 +230,7 @@ INS_daf_organization = {
 
 INS_gm_java_organization = {
 	include = generic_motorized_mechanized_organization
-	icon = usa_general_motors
+	icon = GFX_idea_usa_general_motors
 	allowed = {
 		tag = INS
 		has_dlc = "Arms Against Tyranny"
@@ -257,15 +244,10 @@ INS_gm_java_organization = {
 			}
 			USA = {
 				controls_state = 393
-			}
-		}
-	}
-	visible = {
-		owner = {
-			OR = {
-				has_completed_focus = INS_invite_foreign_investors
-				has_completed_focus = INS_commit_hakko_ichiu
-				has_completed_focus = INJ_invite_zaibatsus
+				NOT = {
+					has_war_with = INS
+					has_opinion = { target = INS value < -10 }
+				}
 			}
 		}
 	}
@@ -305,7 +287,7 @@ INS_toyota_organization = {
 
 INS_artillerie_inrichtingen_organization = {
 	include = generic_artillery_organization
-	icon = artillerie_inrichtingen
+	icon = GFX_idea_artillerie_inrichtingen
 	allowed = {
 		tag = INS
 		has_dlc = "Arms Against Tyranny"
