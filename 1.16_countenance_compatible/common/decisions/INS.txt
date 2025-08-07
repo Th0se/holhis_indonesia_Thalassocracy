@@ -16,6 +16,22 @@ INS_category_volksraad = {
 		}
 	}
 
+	INS_path_guides = {
+
+		icon = eng_install_government
+
+		allowed = {
+			original_tag = INS
+		}
+
+		complete_effect = {
+			country_event = {
+				id = holhis_history.11
+			}
+		}
+
+	}
+
 	INS_emergency_relocation = {
 
 		icon = eng_install_government

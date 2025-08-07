@@ -15137,7 +15137,7 @@ country_event = { #Sabotage 5 - Event for DEI - Bridge blown
 	}
 }
 
-country_event = {
+country_event = { #Mod Overview - Initial
 	id = holhis_history.1
 	title = holhis_history.1.t
 	desc = holhis_history.1.desc
@@ -15176,7 +15176,7 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = { #Mod Overview - History
 	id = holhis_history.2
 	title = holhis_history.2.t
 	desc = holhis_history.2.desc
@@ -15216,7 +15216,7 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = { #Mod Overview - History pt2
 	id = holhis_history.3
 	title = holhis_history.3.t
 	desc = holhis_history.3.desc
@@ -15256,7 +15256,7 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = { #Mod Overview - History pt3
 	id = holhis_history.4
 	title = holhis_history.4.t
 	desc = holhis_history.4.d
@@ -15288,7 +15288,7 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = { #Mod Overview - Economic
 	id = holhis_history.5
 	title = holhis_history.5.t
 	desc = holhis_history.5.d
@@ -15312,7 +15312,7 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = { #Mod Overview - State division
 	id = holhis_history.6
 	title = holhis_history.6.t
 	desc = holhis_history.6.d
@@ -17207,7 +17207,7 @@ country_event = { # ROM becomes ROM again
 	}
 }
 
-country_event = {
+country_event = { #A thank you post
 	id = holhis_history.10
 	title = holhis_history.10.t
 	desc = holhis_history.10.desc
@@ -17238,5 +17238,84 @@ country_event = {
 		country_event = {
 			id = holhis_history.1
 		}
+	}
+}
+
+country_event = { #Path Guides - Common Leaders
+	id = holhis_history.11
+	title = holhis_history.11.t
+	desc = holhis_history.11.desc
+
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {
+		name = holhis_history.11.a
+
+		country_event = {
+			id = holhis_history.12
+		}
+	}
+
+	option = {
+		name = holhis_history.11.b
+
+		country_event = {
+			id = holhis_history.13
+		}
+	}
+
+	option = {
+		name = holhis_history.11.c
+	}
+}
+
+country_event = { #Path Guides - Hidden Leaders
+	id = holhis_history.12
+	title = holhis_history.12.t
+	desc = holhis_history.12.desc
+
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {
+		name = holhis_history.12.a
+
+		country_event = {
+			id = holhis_history.13
+		}
+	}
+
+	option = {
+		name = holhis_history.12.b
+
+		country_event = {
+			id = holhis_history.11
+		}
+	}
+
+	option = {
+		name = holhis_history.12.c
+	}
+}
+
+country_event = { #Path Guides - Easter Egg Leaders
+	id = holhis_history.13
+	title = holhis_history.13.t
+	desc = holhis_history.13.desc
+
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {
+		name = holhis_history.13.a
+
+		country_event = {
+			id = holhis_history.12
+		}
+	}
+
+	option = {
+		name = holhis_history.13.b
 	}
 }
