@@ -563,7 +563,157 @@ on_actions = {
 					has_completed_focus = MEX_focus_nationalize_the_oil_fields
 				}
 				set_cosmetic_tag = ENG_MEX_dominion
-			}	
+			}
+			if = { #White fascists puppets Indonesia
+				limit = {
+					original_tag = INS
+					has_government = fascism
+					NOT = {
+						has_country_leader = { ruling_only = yes character = INS_anton_van_der_laaken }
+					}
+					any_country = {
+						OR = {
+							capital_scope = {
+								OR = {
+									is_on_continent = europe
+									is_on_continent = north_america
+									is_on_continent = south_america
+									is_on_continent = australia
+								}
+							}
+							original_tag = SAF
+						}
+						NOT = {
+							OR = {
+								original_tag = ALB
+								original_tag = BOS
+							}
+						}
+						NOT = {
+							has_country_leader_ideology = rexism
+						}
+						has_government = fascism
+						has_subject = INS
+					}
+				}
+				INS = {
+					promote_character = INS_anton_van_der_laaken
+					set_cosmetic_tag = INS_DUTCH
+					set_party_name = {
+						ideology = fascism
+						long_name = INS_fascism_party_long
+						name = INS_fascism_party
+					}
+				}
+			}
+			if = { #Non-European fascists puppets Indonesia
+				limit = {
+					original_tag = INS
+					has_government = fascism
+					OR = {
+						has_country_leader = { ruling_only = yes character = INS_anton_van_der_laaken }
+						has_country_leader = { ruling_only = yes character = GER_walther_hewel }
+						has_country_leader = { ruling_only = yes character = HOL_johannes_theodorus_furstner }
+					}
+					any_country = {
+						OR = {
+							capital_scope = {
+								OR = {
+									is_on_continent = asia
+									is_on_continent = middle_east
+									is_on_continent = africa
+								}
+							}
+							original_tag = ALB
+							original_tag = BOS
+						}
+						NOT = { original_tag = SAF }
+						has_government = fascism
+						has_subject = INS
+					}
+				}
+				INS = {
+					promote_character = INS_mohammad_hoesni_thamrin
+					set_cosmetic_tag = INS
+					set_party_name = {
+						ideology = fascism
+						long_name = INS_democratic_party_long
+						name = INS_democratic_party
+					}
+				}
+			}
+			if = { #Stalinists puppets Indonesia
+				limit = {
+					original_tag = INS
+					is_subject = yes
+					has_government = communism
+					NOT = {
+						has_country_leader = { ruling_only = yes character = INS_moesso_moenawar }
+					}
+					any_country = {
+						has_country_leader_ideology = stalinism
+						has_subject = INS
+					}
+				}
+				INS = { 
+					promote_character = INS_moesso_moenawar
+					set_cosmetic_tag = INS_SOV
+					set_party_name = {
+						ideology = communism
+						long_name = INS_communism_party_long
+						name = INS_communism_party
+					}
+				}
+			}
+			if = { #Muslims puppeted Indonesia
+				limit = {
+					any_country = {
+						is_muslim_nation = yes
+						OR = {
+							has_government = fascism
+							has_government = neutrality
+						}
+						has_subject = INS
+					}
+				}
+				INS = {
+					add_country_leader_role = {
+						character = INS_abikoesno_tjokrosoejoso
+						country_leader = {
+							desc = INS_abikoesno_tjokrosoejoso_desc
+							expire = "1965.1.1"
+							ideology = moderatism
+							traits = {
+								shadow_of_tjokroaminoto_n
+							}
+						}
+						promote_leader = yes
+					}
+					add_country_leader_role = {
+						character = INS_sekarmadji_maridjan
+						country_leader = {
+							desc = INS_sekarmadji_maridjan_desc
+							expire = "1965.1.1"
+							ideology = rexism
+							traits = {
+								islamic_scholar
+							}
+						}
+						promote_leader = yes
+					}
+					set_cosmetic_tag = INS_ISLAM
+					set_party_name = {
+						ideology = neutrality
+						long_name = INS_neutrality_party_islam_long
+						name = INS_neutrality_party_islam
+					}
+					set_party_name = {
+						ideology = fascism
+						long_name = INS_fascism_party_islam_long
+						name = INS_fascism_party_islam
+					}
+				}
+			}
 		}
 	}
 	on_subject_free = { #Guarantee PHI on independence

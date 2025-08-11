@@ -12,7 +12,7 @@ political_actions = {
 
 		available = {
 			num_of_civilian_factories_available_for_projects > 3
-			996 = {
+			1030 = {
 				is_fully_controlled_by = ROOT
 				compliance > 70
 				infrastructure > 2
@@ -21,7 +21,7 @@ political_actions = {
 		}
 
 		visible = {
-			996 = {
+			1030 = {
 				NOT = {
 					is_core_of = ROOT
 				}
@@ -39,7 +39,7 @@ political_actions = {
 		}
 
 		remove_effect = {
-			996 = {
+			1030 = {
 				add_core_of = PHI
 			}
 		}
@@ -61,7 +61,7 @@ political_actions = {
 
 		available = {
 			num_of_civilian_factories_available_for_projects > 4
-			987 = {
+			1024 = {
 				is_fully_controlled_by = ROOT
 				compliance > 70
 				infrastructure > 3
@@ -70,7 +70,7 @@ political_actions = {
 		}
 
 		visible = {
-			987 = {
+			1024 = {
 				NOT = {
 					is_core_of = ROOT
 				}
@@ -88,7 +88,7 @@ political_actions = {
 		}
 
 		remove_effect = {
-			987 = {
+			1024 = {
 				add_core_of = PHI
 			}
 		}
