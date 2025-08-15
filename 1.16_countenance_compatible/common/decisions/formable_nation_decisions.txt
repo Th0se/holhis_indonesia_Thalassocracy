@@ -12456,6 +12456,111 @@ form_andalusia_category = {
 	}
 }
 
+maghreb_formable_category = {
+	
+	unite_maghreb = { 
+
+		icon = generic_form_nation
+
+		allowed = {
+		}
+
+		visible = {
+			NOT = { has_global_flag = maghreb_formed_flag }
+		}
+
+		available = {
+			
+			controls_state = 290
+			controls_state = 461
+			controls_state = 462
+			controls_state = 783
+			controls_state = 699
+			controls_state = 557
+			controls_state = 513
+			controls_state = 459
+			controls_state = 460
+			controls_state = 458
+			controls_state = 665
+			controls_state = 448
+			controls_state = 661
+			controls_state = 449
+			controls_state = 662
+			controls_state = 450
+			controls_state = 663
+			controls_state = 451
+
+		}
+
+		on_map_mode = decision_view_only
+
+		highlight_states = { 
+			highlight_state_targets = {
+				state = 290
+				state = 461
+				state = 462
+				state = 783
+				state = 699
+				state = 557
+				state = 513
+				state = 459
+				state = 460
+				state = 458
+				state = 665
+				state = 448
+				state = 661
+				state = 449
+				state = 662
+				state = 450
+				state = 663
+				state = 451
+				state = 786
+				state = 514
+				state = 273
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				drop_cosmetic_tag = yes
+			}
+			set_cosmetic_tag = united_mahgreb 
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
+			add_state_core = 290
+			add_state_core = 461
+			add_state_core = 462
+			add_state_core = 783
+			add_state_core = 699
+			add_state_core = 557
+			add_state_core = 513
+			add_state_core = 459
+			add_state_core = 460
+			add_state_core = 458
+			add_state_core = 665
+			add_state_core = 448
+			add_state_core = 661
+			add_state_core = 449
+			add_state_core = 662
+			add_state_core = 450
+			add_state_core = 663
+			add_state_core = 451
+			add_state_core = 786
+			add_state_core = 514
+			add_state_core = 273
+
+			hidden_effect = {
+				set_global_flag = maghreb_formed_flag
+			}
+		}
+
+		ai_will_do = {
+			base = 2000
+		}
+	}
+}
+
 form_polynesia_category = {
 	
 	form_polynesia = {

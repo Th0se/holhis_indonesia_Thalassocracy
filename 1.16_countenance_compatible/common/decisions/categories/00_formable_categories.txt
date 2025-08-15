@@ -585,6 +585,25 @@ latin_africa_category = {
 	}
 }
 
+maghreb_formable_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_picture_form_maghreb
+	
+	allowed = {
+		OR = {
+			original_tag = ALG # Algeria
+			original_tag = TUN # Tunisia
+			original_tag = LBA # Libya
+			original_tag = MOR # Morocco
+			original_tag = RIF # The Rif
+			original_tag = WES # West Sahara
+			original_tag = MRT # Mauretania
+		}
+	}
+}
+
 germany_formable_category = {
 
 	icon = generic_formable_nations
