@@ -1226,6 +1226,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_idea_malaysia_tuanku_abdul_rahman"
+		texturefile = "gfx/ideas/MAL/idea_mal_tuanku_abdul_rahman.dds"
+	}
+
+	spriteType = {
 		name = "GFX_idea_raj_patel"
 		texturefile = "gfx/ideas/RAJ/idea_raj_patel.dds"
 	}

@@ -8598,8 +8598,8 @@ form_majapahit_empire_category = {
 				original_tag = EIS
 				original_tag = TIM
 				original_tag = INS
+				original_tag = MAL
 			}
-			has_dlc = "Waking the Tiger"
 		}
 
 		highlight_states = { 
@@ -8640,6 +8640,12 @@ form_majapahit_empire_category = {
 				669 = { is_core_of = INS }
 				1029 = { is_core_of = INS }
 				has_idea = INS_mohammad_jamin
+			}
+			if = {
+				limit = {
+					original_tag = MAL
+				}
+				has_global_flag = form_majapahit_empire_flag
 			}
 			if = {
 				limit = {
@@ -8697,6 +8703,7 @@ form_majapahit_empire_category = {
 			has_dlc = "Waking the Tiger"
 			OR = {
 				original_tag = INS
+				original_tag = MAL
 				original_tag = KLM
 				original_tag = ATJ
 				original_tag = MLK
@@ -8707,13 +8714,11 @@ form_majapahit_empire_category = {
 
 		highlight_states = { 
 			highlight_state_targets = {
-				state = 336 
+				state = 336
 				state = 1036
 				state = 1035
 				state = 1034
-				state = 333
-				state = 1023
-				state = 1024
+				state = 1033
 				state = 1037
 			}
 		}
@@ -8726,9 +8731,6 @@ form_majapahit_empire_category = {
 				controls_state = 1036
 				controls_state = 1035
 				controls_state = 1034
-				controls_state = 333
-				controls_state = 1023
-				controls_state = 1024
 				controls_state = 1037
 			}
 		}
@@ -8741,6 +8743,7 @@ form_majapahit_empire_category = {
 				}
 				original_tag = KLM
 				original_tag = ATJ
+				original_tag = MAL
 				AND = {
 					original_tag = MLK
 					has_cosmetic_tag = MAJ_UNIFIED
@@ -8842,6 +8845,7 @@ form_majapahit_empire_category = {
 				state = 1036
 				state = 1035
 				state = 1034
+				state = 1033
 				state = 333
 				state = 1023
 				state = 1024
@@ -8876,6 +8880,7 @@ form_majapahit_empire_category = {
 				controls_state = 1036
 				controls_state = 1035
 				controls_state = 1034
+				controls_state = 1033
 				controls_state = 333
 				controls_state = 1023
 				controls_state = 1024
@@ -8930,6 +8935,7 @@ form_majapahit_empire_category = {
 				1036 = { add_core_of = ROOT }
 				1035 = { add_core_of = ROOT }
 				1034 = { add_core_of = ROOT }
+				1033 = { add_core_of = ROOT }
 				333 = { add_core_of = ROOT }
 				1023 = { add_core_of = ROOT }
 				1024 = { add_core_of = ROOT }
@@ -8938,7 +8944,7 @@ form_majapahit_empire_category = {
 			721 = { add_core_of = ROOT }
 			711 = { add_core_of = ROOT }
 			712 = { add_core_of = ROOT }
-			1032 = { add_core_of = ROOT }
+			1030 = { add_core_of = ROOT }
 			# Philippines
 			custom_effect_tooltip = form_country_philippines_claim_states_tt
 			hidden_effect = {
@@ -8949,8 +8955,12 @@ form_majapahit_empire_category = {
 				628 = { add_claim_by = ROOT }
 				627 = { add_claim_by = ROOT }
 				1031 = { add_claim_by = ROOT }
-				1030 = { add_claim_by = ROOT }
+				1032 = { add_claim_by = ROOT }
 				626 = { add_claim_by = ROOT }
+			}
+			set_province_name = {
+				id = 12299
+				name = "Singapura"
 			}
 			add_ideas = INS_sea_conquerors
 			hidden_effect = {
@@ -9081,6 +9091,10 @@ form_majapahit_empire_category = {
 			add_named_threat = {
 				threat = 2
 				name = INS_done_claim_indian
+			}
+			set_province_name = {
+				id = 12299
+				name = "Temasek"
 			}
 			add_stability = -0.075
 			add_state_claim = 543

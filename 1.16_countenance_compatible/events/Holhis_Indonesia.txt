@@ -17244,7 +17244,7 @@ country_event = { #A thank you post
 country_event = { #Path Guides - Common Leaders
 	id = holhis_history.11
 	title = holhis_history.11.t
-	desc = holhis_history.11.desc
+	desc = holhis_history.11.d
 
 	is_triggered_only = yes
 	fire_only_once = no
@@ -17273,7 +17273,7 @@ country_event = { #Path Guides - Common Leaders
 country_event = { #Path Guides - Hidden Leaders
 	id = holhis_history.12
 	title = holhis_history.12.t
-	desc = holhis_history.12.desc
+	desc = holhis_history.12.d
 
 	is_triggered_only = yes
 	fire_only_once = no
@@ -17302,7 +17302,7 @@ country_event = { #Path Guides - Hidden Leaders
 country_event = { #Path Guides - Easter Egg Leaders
 	id = holhis_history.13
 	title = holhis_history.13.t
-	desc = holhis_history.13.desc
+	desc = holhis_history.13.d
 
 	is_triggered_only = yes
 	fire_only_once = no

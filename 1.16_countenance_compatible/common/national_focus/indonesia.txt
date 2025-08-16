@@ -6012,7 +6012,7 @@ focus_tree = {
 		}
 
 		offset = {
-			x = -1
+			x = -2
 			y = 0
 			trigger = {
 				has_game_rule = {
@@ -8878,8 +8878,7 @@ focus_tree = {
 			HOL = {
 				HOL_burden_step_down = yes
 			}
-			
-			custom_effect_tooltip = generic_skip_one_line_tt
+
 			custom_effect_tooltip = INS_into_future_tt
 			if = {
 				limit = {

@@ -190,7 +190,7 @@ INS_knil_incompetence_commie_1:0 "Indonesian National Army"
 INS_knil_incompetence_commie_1_desc:0 ""
 INS_knil_incompetence_commie_2:0 "Indonesian Workers' Army"
 INS_knil_incompetence_commie_2_desc:0 ""
-INS_knil_incompetence_commie_3:0 "Indonesian Workers' Army"
+INS_knil_incompetence_commie_3:0 "Tentara Pekerja Indonesia"
 INS_knil_incompetence_commie_3_desc:0 ""
 INS_knil_incompetence_parades_1:0 "KNIL Incompetence"
 INS_knil_incompetence_parades_1_desc:0 "The KNIL (Royal Netherlands Indies Army) are lacking manpower since they only allowed Europeans and Indos citizens to serve. They are also suffering from heavy funding shortages and their tactics aren't suitable for the terrain of East Indies.\n\n§GProgressing down the army branch would gradually improve this national spirit§!"
@@ -205,7 +205,7 @@ INS_knil_incompetence_locals_1:0 "[Root.getinsarmyspiritlow]"
 INS_knil_incompetence_locals_1_desc:0 "The KNIL (Royal Netherlands Indies Army) are lacking manpower since they only allowed Europeans and Indos citizens to serve. They are also suffering from heavy funding shortages and their tactics aren't suitable for the terrain of East Indies.\n\n§GProgressing down the army branch would gradually improve this national spirit§!"
 INS_knil_incompetence_locals_2:0 "KNIL Incompetence"
 INS_knil_incompetence_locals_3:0 "Indonesian National Army"
-INS_knil_incompetence_locals_4:0 "Indonesian National Army"
+INS_knil_incompetence_locals_4:0 "Tentara Nasional Indonesia"
 INS_knil_incompetence_locals_5:0 "Kartika Eka Paksi"
 INS_knil_incompetence_locals_5_desc:0 "Unmatchable and With Noble Goals, our army is always ready to protect our homeland and our people!"
 INS_attack_japan:0 "Anti-Japanese Measures"
@@ -497,6 +497,7 @@ the_man_from_gianjar:0 "The Man from Gianjar" #Ida Anak Agoeng Gde Agoeng
 islamist_scholar:0 "Islamist Scholar" #Kartosoewirjo
 reactionary_professor:0 "Reactionary Professor" #Gerretson
 raj_of_sarawak:0 "Raj of Sarawak" #Vyner Brooke
+negeri_sembilan_monarch:0 "Yang Dipertuan Agong" #Tuanku Abdul Rahman
 
 ##### Politics Desc
 INS_abikoesno_tjokrosoejoso_desc:0 "Born in 1897 at Madioen, East Java, Abikoesno Tjokrosoejoso was the oldest younger brother of the famed nationalist Tjokroaminoto.\n\nA direct descendant of Hamengkoeboewono I, he studied architecture at Queen Emma's Middle School at Soerabaja. During these time, he also followed his brother's campaign in Sarekat Islam, in which the organization has grown from a strictly religious-economic organization into a prominent anti-colonialist political one.\n\nHe followed Agoes Salim's lead on expelling the Socialist-aligned 'Red' faction within the organization led by Semaoen until 1934, when both Tjokrosoejoso and Salim parted ways over their difference on their ways on dealing with the Colonial Government. He also expelled the Ultra-Radical 'Black' Faction led by Kartosoewirjo who advocates outright violence towards the Dutch.\n\nNow leading the reformed Sarekat Islam of Indonesia Party, Tjokrosoejoso remained commited on both his non-cooperation stance towards the government and his adherence to non-violent means to achieve greater autonomy for Indonesia."
@@ -563,6 +564,8 @@ HOL_indies_burden_sharing_3_desc:0 "The impact of De Crisisjaren would be so muc
 INS_state_is_southeast_asia_tt:0 "State is in the Southeast Asia"
 MAL_sarawak_brooke_modifier:0 "Placated Populace"
 MAL_sarawak_brooke_modifier_desc:0 "The people of Sarawak are now placated with their representative being included in the day-to-day governance by the central government"
+MAL_tuanku_sembilan_modifier:0 "Placated Populace"
+MAL_tuanku_sembilan_modifier_desc:0 "The people of Negeri Sembilan are now placated with their representative being included in the day-to-day governance by the central government"
 INS_leon_trotsky:1 "Lev Trotsky"
 INS_leon_trotsky_desc:0 "Responsible for creating the Red Army almost from scratch during the Russian Civil War, the exiled International Communist League leader will help organize our army."
 
