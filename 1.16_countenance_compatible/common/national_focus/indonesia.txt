@@ -11978,6 +11978,7 @@ focus_tree = {
 			}
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
+			set_cosmetic_tag = INS
 			if = {
 				limit = {
 					has_idea = INS_nationalism_rally

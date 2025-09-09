@@ -711,7 +711,7 @@ INS_change_names = {
 			}
 			set_province_name = {
 				id = 12371
-				name = VICTORY_POINTS_12371_PPA
+				name = PPA_VICTORY_POINTS_12371
 			}
 			FROM.FROM = {
 				set_state_name = STATE_669_PNG
@@ -762,7 +762,7 @@ INS_change_names = {
 				}
 			}
 			FROM.FROM = {
-				set_state_name = STATE_1028_PPA
+				set_state_name = PPA_STATE_1028
 			}
 		}
 		else_if = { #OTHER CONTROLLER
@@ -792,10 +792,10 @@ INS_change_names = {
 			}
 			set_province_name = {
 				id = 1602
-				name = VICTORY_POINTS_1602_PPA
+				name = PPA_VICTORY_POINTS_1602
 			}
 			FROM.FROM = {
-				set_state_name = STATE_1029_PPA
+				set_state_name = PPA_STATE_1029
 			}
 		}
 		else_if = { #OTHER CONTROLLER
@@ -836,7 +836,7 @@ INS_change_names = {
 			}
 			set_province_name = {
 				id = 1574
-				name = VICTORY_POINTS_1574_POR
+				name = POR_VICTORY_POINTS_1574
 			}
 		}
 		else_if = { #OTHER CONTROLLER
@@ -866,7 +866,7 @@ INS_change_names = {
 			}
 			set_province_name = {
 				id = 7387
-				name = VICTORY_POINTS_7387_INS
+				name = INS_VICTORY_POINTS_7387
 			}
 		}
 		else_if = {
@@ -877,7 +877,7 @@ INS_change_names = {
 			}
 			set_province_name = {
 				id = 7387
-				name = VICTORY_POINTS_7387_BRN
+				name = BRN_VICTORY_POINTS_7387
 			}
 		}
 		else_if = { #OTHER CONTROLLER
