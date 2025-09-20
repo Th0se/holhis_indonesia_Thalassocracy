@@ -5232,24 +5232,6 @@ country_event = { #Japindo 1 - Japan setting up Indonesian occupation
 					set_nationality = INJ
 				}
 			}
-			INS_soekarno = {
-				effect_tooltip = {
-					swap_country_leader_traits = {
-						remove = overzealous_idealist
-						add = national_integralist
-					}
-				}
-				hidden_effect = {
-					add_trait = {
-						slot = political_advisor
-						trait = national_integralist
-					}
-					remove_trait = {
-						slot = political_advisor
-						trait = overzealous_idealist
-					}
-				}
-			}
 		}
 	}
 	option = { # Conquer everything!
@@ -5474,22 +5456,6 @@ country_event = { #Japindo 1 - Japan setting up Indonesian occupation
 					}
 					INS_soekarno = {
 						set_nationality = INJ
-						effect_tooltip = {
-							swap_country_leader_traits = {
-								remove = overzealous_idealist
-								add = national_integralist
-							}
-						}
-						hidden_effect = {
-							add_trait = {
-								slot = political_advisor
-								trait = national_integralist
-							}
-							remove_trait = {
-								slot = political_advisor
-								trait = overzealous_idealist
-							}
-						}
 					}
 				}
 				INS_mohammad_hatta = {
@@ -5786,22 +5752,6 @@ country_event = { #Nationalists 3 - Soekarno got malaria
 					set_portraits = {
 						army = {
 							small = GFX_idea_indonesia_soekarno
-						}
-					}
-					effect_tooltip = {
-						swap_country_leader_traits = {
-							remove = overzealous_idealist
-							add = national_integralist
-						}
-					}
-					hidden_effect = {
-						add_trait = {
-							slot = political_advisor
-							trait = national_integralist
-						}
-						remove_trait = {
-							slot = political_advisor
-							trait = overzealous_idealist
 						}
 					}
 				}
@@ -7297,14 +7247,14 @@ country_event = { #Commies 11 - Communist Uprising
 						trait = independent_journalist
 					}
 				}
-				INS_soekarno = {
+				INS_kh_dewantara = {
 					add_trait = {
 						slot = political_advisor
-						trait = national_integralist
+						trait = ICE_revolutionary_educator
 					}
 					remove_trait = {
 						slot = political_advisor
-						trait = overzealous_idealist
+						trait = tamansiswa_educationer
 					}
 				}
 				GER_walther_hewel = {
@@ -13028,14 +12978,14 @@ country_event = { #Volskraad 10 - Parindra Uprising
 						trait = independent_journalist
 					}
 				}
-				INS_soekarno = {
+				INS_kh_dewantara = {
 					add_trait = {
 						slot = political_advisor
-						trait = national_integralist
+						trait = ICE_revolutionary_educator
 					}
 					remove_trait = {
 						slot = political_advisor
-						trait = overzealous_idealist
+						trait = tamansiswa_educationer
 					}
 				}
 				GER_walther_hewel = {

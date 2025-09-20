@@ -305,7 +305,7 @@ characters = {
 				}
 			}
 			traits = {
-				overzealous_idealist
+				national_integralist
 			}
 		}
 	}
@@ -1977,7 +1977,7 @@ characters = {
 				NOT = {
 					OR = {
 						AND = {
-							has_idea_with_trait = captain_of_industry
+							has_idea_with_trait = lieutenant_of_industry
 							NOT = { has_idea = INS_ignatius_kasimo }
 						}
 						custom_trigger_tooltip = {
@@ -1986,7 +1986,7 @@ characters = {
 							has_idea_with_trait = coi_mook
 							has_idea_with_trait = coi_verboom
 						}
-						has_idea_with_trait = lieutenant_of_industry
+						has_idea_with_trait = captain_of_industry
 					}
 				}
 			}
