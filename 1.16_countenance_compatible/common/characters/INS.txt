@@ -1976,7 +1976,10 @@ characters = {
 				has_completed_focus = INS_address_malaise
 				NOT = {
 					OR = {
-						has_idea_with_trait = captain_of_industry
+						AND = {
+							has_idea_with_trait = captain_of_industry
+							NOT = { has_idea = INS_ignatius_kasimo }
+						}
 						custom_trigger_tooltip = {
 							tooltip = INS_has_coi_trait_tt
 							has_idea_with_trait = coi_hart
