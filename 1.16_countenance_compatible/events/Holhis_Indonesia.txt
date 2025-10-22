@@ -1180,6 +1180,7 @@ country_event = { #14 - Indonesian Election
 			elections_allowed = yes
 			election_frequency = 60
 		}
+		set_cosmetic_tag = INS
 		hidden_effect = {
 			add_country_leader_role = {
 				character = INS_mohammad_hoesni_thamrin
@@ -1193,6 +1194,7 @@ country_event = { #14 - Indonesian Election
 				}
 				promote_leader = yes
 			}
+			set_cosmetic_tag = INS_GAPI
 			set_country_flag = INS_minister_soekarno
 			country_event = { id = holhis_indonesia.14 days = 1826 }
 		}
@@ -1234,6 +1236,7 @@ country_event = { #14 - Indonesian Election
 			long_name = INS_democratic_party_long
 			name = INS_democratic_party
 		}
+		set_cosmetic_tag = INS
 		hidden_effect = {
 			add_country_leader_role = {
 				character = INS_mohammad_hoesni_thamrin
@@ -1247,6 +1250,7 @@ country_event = { #14 - Indonesian Election
 				}
 				promote_leader = yes
 			}
+			set_cosmetic_tag = INS_GAPI
 			set_country_flag = INS_minister_hatta
 			country_event = { id = holhis_indonesia.14 days = 1826 }
 		}
@@ -1346,6 +1350,7 @@ country_event = { #14 - Indonesian Election
 			long_name = INS_neutrality_party_islam_long
 			name = INS_neutrality_party_islam
 		}
+		set_cosmetic_tag = INS
 		hidden_effect = {
 			add_country_leader_role = {
 				character = INS_abikoesno_tjokrosoejoso
@@ -1359,6 +1364,7 @@ country_event = { #14 - Indonesian Election
 				}
 				promote_leader = yes
 			}
+			set_cosmetic_tag = INS_GAPI
 			set_country_flag = INS_minister_thamrin
 			country_event = { id = holhis_indonesia.14 days = 1826 }
 		}
@@ -1404,6 +1410,7 @@ country_event = { #14 - Indonesian Election
 			long_name = INS_democratic_party_long
 			name = INS_democratic_party
 		}
+		set_cosmetic_tag = INS_ISLAM
 		hidden_effect = {
 			add_country_leader_role = {
 				character = INS_mohammad_hoesni_thamrin
@@ -1489,7 +1496,10 @@ country_event = { #15 - Boerstra Retires
 			has_character = INS_murk_boerstra
 			OR = {
 				has_character = INS_berenschot
-				has_character = INS_hein_ter_poorten
+				AND = {
+					has_character = INS_hein_ter_poorten
+					has_completed_focus = INS_reform_the_knil
+				}
 				has_character = INS_aleid_van_tricht
 			}
 		}
@@ -1542,7 +1552,10 @@ country_event = { #15 - Boerstra Retires
 	option = { #Hein ter Poorten
 		name = holhis_indonesia.15.c
 		trigger = {
-			has_character = INS_hein_ter_poorten
+			AND = {
+				has_character = INS_hein_ter_poorten
+				has_completed_focus = INS_reform_the_knil
+			}
 		}
 		retire_character = INS_murk_boerstra
 		INS_hein_ter_poorten = {
@@ -2173,7 +2186,10 @@ country_event = { #24 - The Plane Crash (inferno)
 	option = { #Welcome, Ter Poorten!
 		name = holhis_indonesia.24.a
 		trigger = {
-			has_character = INS_hein_ter_poorten
+			AND = {
+				has_character = INS_hein_ter_poorten
+				has_completed_focus = INS_reform_the_knil
+			}
 		}
 		ai_chance = {
 			base = 95
@@ -16307,7 +16323,10 @@ country_event = { #Aging 15 - Poorten
 	trigger = {
 		original_tag = INS
 		date > 1943.01.01
-		has_character = INS_hein_ter_poorten
+		AND = {
+			has_character = INS_hein_ter_poorten
+			has_completed_focus = INS_reform_the_knil
+		}
 		INS_hein_ter_poorten = {
 			has_character_flag = {
 				flag = INS_appointed_general_flag
