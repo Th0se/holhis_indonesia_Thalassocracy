@@ -18141,6 +18141,7 @@ focus_tree = {
 		allow_branch = {
 			has_dlc = "Man the Guns"
 			NOT = { has_completed_focus = INS_discourage_democratic_reforms }
+			NOT = { has_completed_focus = INS_first_election }
 		}
 
 		available = {
