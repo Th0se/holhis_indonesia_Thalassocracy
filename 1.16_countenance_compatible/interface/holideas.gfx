@@ -1881,6 +1881,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_portrait_Ho_Chi_Minh"
+		texturefile = "gfx/leaders/VIN/portrait_vin_ho_chi_minh.dds"
+	}
+
+	spriteType = {
 		name = "GFX_portrait_cam_tou_samouth"
 		texturefile = "gfx/leaders/CAM/portrait_cam_tou_samouth.dds"
 	}
