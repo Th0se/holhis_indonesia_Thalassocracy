@@ -6468,7 +6468,7 @@ country_event = { #Nationalists 8 - Dispatcher for uprisings
 	}
 }
 
-country_event = { #Commies 1 - Who shall lead PKI?
+country_event = { #Commies 1 - Who shall lead PKI? 3rd PKI National Congress - 1935-1940
 	id = holhis_commies.1
 	title = holhis_commies.1.t
 	desc = holhis_commies.1.desc
@@ -6505,7 +6505,12 @@ country_event = { #Commies 1 - Who shall lead PKI?
 
 	option = { #Muso
 		name = holhis_commies.1.a
-		set_cosmetic_tag = INS_RED3
+		if = {
+			limit = {
+				NOT = { has_global_flag = form_majapahit_empire_flag }
+			}
+			set_cosmetic_tag = INS_RED3
+		}
 		promote_character = INS_moesso_moenawar
 		add_war_support = 0.075
 		INS_amir_sjarifoeddin = {
@@ -6541,7 +6546,12 @@ country_event = { #Commies 1 - Who shall lead PKI?
 
 	option = { #Tan Malaka
 		name = holhis_commies.1.b
-		set_cosmetic_tag = INS_RED2
+		if = {
+			limit = {
+				NOT = { has_global_flag = form_majapahit_empire_flag }
+			}
+			set_cosmetic_tag = INS_RED2
+		}
 		promote_character = INS_tan_malaka
 		add_stability = 0.075
 		INS_amir_sjarifoeddin = {
@@ -8085,7 +8095,12 @@ country_event = { #Commies 16 - Faction leader demanded us to reorient our party
 			}
 		}
 		retire_country_leader = yes
-		set_cosmetic_tag = INS_RED3
+		if = {
+			limit = {
+				NOT = { has_global_flag = form_majapahit_empire_flag }
+			}
+			set_cosmetic_tag = INS_RED3
+		}
 		promote_character = INS_moesso_moenawar
 		add_popularity = {
 			ideology = communism
@@ -8120,7 +8135,12 @@ country_event = { #Commies 16 - Faction leader demanded us to reorient our party
 			}
 		}
 		retire_country_leader = yes
-		set_cosmetic_tag = INS_RED2
+		if = {
+			limit = {
+				NOT = { has_global_flag = form_majapahit_empire_flag }
+			}
+			set_cosmetic_tag = INS_RED2
+		}
 		promote_character = INS_tan_malaka
 		add_popularity = {
 			ideology = communism
@@ -8138,7 +8158,12 @@ country_event = { #Commies 16 - Faction leader demanded us to reorient our party
 	}
 	option = { #Denounce their alliance, create our own
 		name = holhis_commies.16.c
-		set_cosmetic_tag = INS_RED2
+		if = {
+			limit = {
+				NOT = { has_global_flag = form_majapahit_empire_flag }
+			}
+			set_cosmetic_tag = INS_RED2
+		}
 		hidden_effect = {
 			uncomplete_national_focus = {
 				focus = INS_a_distant_ally
@@ -9656,7 +9681,12 @@ country_event = { #Commies 35 - 4th PKI National Congress - 1940-1945
 				add_war_support = 0.05
 			}
 		}
-		set_cosmetic_tag = INS_RED3
+		if = {
+			limit = {
+				NOT = { has_global_flag = form_majapahit_empire_flag }
+			}
+			set_cosmetic_tag = INS_RED3
+		}
 		promote_character = INS_moesso_moenawar
 		add_war_support = 0.075
 		add_field_marshal_role = {
@@ -9740,7 +9770,12 @@ country_event = { #Commies 35 - 4th PKI National Congress - 1940-1945
 				add_war_support = 0.05
 			}
 		}
-		set_cosmetic_tag = INS_RED2
+		if = {
+			limit = {
+				NOT = { has_global_flag = form_majapahit_empire_flag }
+			}
+			set_cosmetic_tag = INS_RED2
+		}
 		promote_character = INS_tan_malaka
 		add_field_marshal_role = {
 			character = INS_tan_malaka
@@ -9796,7 +9831,12 @@ country_event = { #Commies 35 - 4th PKI National Congress - 1940-1945
 			remove_ideas = INS_gerindo_militias_positive
 		}
 		hidden_effect = {
-			set_cosmetic_tag = INS_RED2
+			if = {
+				limit = {
+					NOT = { has_global_flag = form_majapahit_empire_flag }
+				}
+				set_cosmetic_tag = INS_RED2
+			}
 			INS_tan_malaka = {
 				set_character_flag = INS_second_term_flag
 			}
@@ -9879,7 +9919,12 @@ country_event = { #Commies 35 - 4th PKI National Congress - 1940-1945
 
 	option = { #Alimin
 		name = holhis_commies.35.g
-		set_cosmetic_tag = INS
+		if = {
+			limit = {
+				NOT = { has_global_flag = form_majapahit_empire_flag }
+			}
+			set_cosmetic_tag = INS
+		}
 		promote_character = INS_alimin
 
 		add_political_power = 50
@@ -9932,7 +9977,12 @@ country_event = { #Commies 36 - 5th PKI National Congress - 1945-1950
 				add_war_support = 0.05
 			}
 		}
-		set_cosmetic_tag = INS_RED3
+		if = {
+			limit = {
+				NOT = { has_global_flag = form_majapahit_empire_flag }
+			}
+			set_cosmetic_tag = INS_RED3
+		}
 		promote_character = INS_moesso_moenawar
 		add_war_support = 0.075
 		add_field_marshal_role = {
@@ -10021,7 +10071,12 @@ country_event = { #Commies 36 - 5th PKI National Congress - 1945-1950
 				add_war_support = 0.05
 			}
 		}
-		set_cosmetic_tag = INS_RED2
+		if = {
+			limit = {
+				NOT = { has_global_flag = form_majapahit_empire_flag }
+			}
+			set_cosmetic_tag = INS_RED2
+		}
 		promote_character = INS_tan_malaka
 		add_field_marshal_role = {
 			character = INS_tan_malaka
@@ -10077,7 +10132,12 @@ country_event = { #Commies 36 - 5th PKI National Congress - 1945-1950
 			remove_ideas = INS_gerindo_militias_positive
 		}
 		hidden_effect = {
-			set_cosmetic_tag = INS_RED2
+			if = {
+				limit = {
+					NOT = { has_global_flag = form_majapahit_empire_flag }
+				}
+				set_cosmetic_tag = INS_RED2
+			}
 			INS_tan_malaka = {
 				set_character_flag = INS_second_term_flag
 			}
@@ -10154,8 +10214,12 @@ country_event = { #Commies 36 - 5th PKI National Congress - 1945-1950
 				NOT = { has_character_flag = INS_second_term_flag }
 			}
 		}
-
-		set_cosmetic_tag = INS
+		if = {
+			limit = {
+				NOT = { has_global_flag = form_majapahit_empire_flag }
+			}
+			set_cosmetic_tag = INS
+		}
 		promote_character = INS_alimin
 		add_political_power = 50
 		if = {
@@ -10207,7 +10271,12 @@ country_event = { #Commies 37 - 6th PKI National Congress - 1950-1955
 				add_war_support = 0.05
 			}
 		}
-		set_cosmetic_tag = INS_RED3
+		if = {
+			limit = {
+				NOT = { has_global_flag = form_majapahit_empire_flag }
+			}
+			set_cosmetic_tag = INS_RED3
+		}
 		promote_character = INS_moesso_moenawar
 		add_war_support = 0.075
 		add_field_marshal_role = {
@@ -10296,7 +10365,12 @@ country_event = { #Commies 37 - 6th PKI National Congress - 1950-1955
 				add_war_support = 0.05
 			}
 		}
-		set_cosmetic_tag = INS_RED2
+		if = {
+			limit = {
+				NOT = { has_global_flag = form_majapahit_empire_flag }
+			}
+			set_cosmetic_tag = INS_RED2
+		}
 		promote_character = INS_tan_malaka
 		add_field_marshal_role = {
 			character = INS_tan_malaka
@@ -10352,7 +10426,12 @@ country_event = { #Commies 37 - 6th PKI National Congress - 1950-1955
 			remove_ideas = INS_gerindo_militias_positive
 		}
 		hidden_effect = {
-			set_cosmetic_tag = INS_RED2
+			if = {
+				limit = {
+					NOT = { has_global_flag = form_majapahit_empire_flag }
+				}
+				set_cosmetic_tag = INS_RED2
+			}
 			INS_tan_malaka = {
 				set_character_flag = INS_second_term_flag
 			}
@@ -10482,6 +10561,7 @@ country_event = { #Commies 38 - 7th PKI National Congress - 1955-1960
 					}
 				}
 			}
+			date < 1957.07.01
 		}
 
 		if = {
@@ -10496,7 +10576,12 @@ country_event = { #Commies 38 - 7th PKI National Congress - 1955-1960
 				add_war_support = 0.05
 			}
 		}
-		set_cosmetic_tag = INS_RED3
+		if = {
+			limit = {
+				NOT = { has_global_flag = form_majapahit_empire_flag }
+			}
+			set_cosmetic_tag = INS_RED3
+		}
 		promote_character = INS_moesso_moenawar
 		add_war_support = 0.075
 		add_field_marshal_role = {
@@ -10528,6 +10613,7 @@ country_event = { #Commies 38 - 7th PKI National Congress - 1955-1960
 			INS_moesso_moenawar = {
 				NOT = { has_character_flag = INS_second_term_flag }
 			}
+			date < 1957.07.01
 		}
 
 		if = {
@@ -10569,6 +10655,7 @@ country_event = { #Commies 38 - 7th PKI National Congress - 1955-1960
 					}
 				}
 			}
+			date < 1957.06.02
 		}
 
 		if = {
@@ -10583,7 +10670,12 @@ country_event = { #Commies 38 - 7th PKI National Congress - 1955-1960
 				add_war_support = 0.05
 			}
 		}
-		set_cosmetic_tag = INS_RED2
+		if = {
+			limit = {
+				NOT = { has_global_flag = form_majapahit_empire_flag }
+			}
+			set_cosmetic_tag = INS_RED2
+		}
 		promote_character = INS_tan_malaka
 		add_field_marshal_role = {
 			character = INS_tan_malaka
@@ -10617,6 +10709,7 @@ country_event = { #Commies 38 - 7th PKI National Congress - 1955-1960
 			INS_tan_malaka = {
 				NOT = { has_character_flag = INS_second_term_flag }
 			}
+			date < 1957.06.02
 		}
 
 		if = {
@@ -10633,7 +10726,12 @@ country_event = { #Commies 38 - 7th PKI National Congress - 1955-1960
 		}
 
 		hidden_effect = {
-			set_cosmetic_tag = INS_RED2
+			if = {
+				limit = {
+					NOT = { has_global_flag = form_majapahit_empire_flag }
+				}
+				set_cosmetic_tag = INS_RED2
+			}
 			INS_tan_malaka = {
 				set_character_flag = INS_second_term_flag
 			}
@@ -10731,7 +10829,6 @@ country_event = { #Commies 38 - 7th PKI National Congress - 1955-1960
 					ruling_only = yes
 				}
 			}
-			date > 1953.07.30
 		}
 
 		if = {
