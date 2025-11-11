@@ -2105,35 +2105,35 @@ focus_tree = {
 				}
 			}
 			hidden_effect = {
-				add_victory_points = {
+				add_victory_points = { #Makassar to be 5
 					province = 10263
 					value = 3
 				}
-				add_victory_points = {
+				add_victory_points = { #Kendari to be 1
 					province = 4564
 					value = 1
 				}
-				add_victory_points = {
+				add_victory_points = { #Manado to be 2
 					province = 10153
 					value = 1
 				}
-				add_victory_points = {
+				add_victory_points = { #Wangiapoe to be 1
 					province = 12234
 					value = 1
 				}
-				add_victory_points = {
+				add_victory_points = { #Bima to be 1
 					province = 12162
 					value = 1
 				}
-				add_victory_points = {
+				add_victory_points = { #Donggala to be 1
 					province = 1098
 					value = 1
 				}
-				add_victory_points = {
+				add_victory_points = { #Maoemere to be 1
 					province = 7321
 					value = 1
 				}
-				add_victory_points = {
+				add_victory_points = { #Singaradja to be 1
 					province = 4273
 					value = 1
 				}
@@ -2149,12 +2149,12 @@ focus_tree = {
 							}
 						}
 					}
-					add_victory_points = {
+					add_victory_points = { #Pantemacassar to be 1
 						province = 12206
 						value = 1
 					}
-					add_victory_points = {
-						province = 1326
+					add_victory_points = { #Dili to be 2
+						province = 12190
 						value = 1
 					}
 				}
