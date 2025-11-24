@@ -7917,7 +7917,7 @@ country_event = { #Commies 13 - End of the Revolution
 	id = holhis_commies.13
 	title = holhis_commies.13.t
 	desc = holhis_commies.13.d
-	picture = GFX_report_event_fascists_posing
+	picture = GFX_report_event_ins_pki
 
 	is_triggered_only = yes
 
