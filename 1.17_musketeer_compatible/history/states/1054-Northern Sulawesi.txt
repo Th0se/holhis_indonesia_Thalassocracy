@@ -1,0 +1,35 @@
+state={
+	id=1054
+	name="STATE_1054"
+
+	resources = {
+		rubber=5.000
+	}
+
+	history = {
+		owner = INS
+		add_core_of = INS
+		victory_points = {
+			10153 1 
+		}
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+			10153 = {
+				naval_base = 3
+			}
+			1351 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={
+		1098 1289 1351 1484 1505 1518 1561 4262 4307 4493 7311 10153 10169 10197 12358 
+	}
+
+	manpower = 1840000
+	buildings_max_level_factor = 1.000
+	state_category = rural
+	local_supplies = 1.000
+}

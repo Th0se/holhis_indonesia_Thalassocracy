@@ -1,0 +1,24 @@
+state={
+	id=1072
+	name="STATE_1072"
+
+	history = {
+		owner = FRA
+		add_core_of = LAO
+		victory_points = {
+			1563 1 
+		}
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces={
+		1374 1563 1577 4554 7426 10453 12210 
+	}
+	
+	manpower = 256000
+	buildings_max_level_factor = 1.000
+	state_category = pastoral
+	local_supplies = 1.000
+}

@@ -1,0 +1,24 @@
+state={
+	id=1076
+	name="STATE_1076"
+
+	history = {
+		add_core_of = BRM
+		owner = BRM
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			4425 1 
+		}
+	}
+
+	provinces={
+		1082 1197 1934 4318 4425 4996 8063 10920 
+	}
+
+	manpower = 1160176
+	buildings_max_level_factor = 1.000
+	state_category = pastoral
+	local_supplies = 1.000
+}
