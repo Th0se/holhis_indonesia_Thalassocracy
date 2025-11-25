@@ -21,12 +21,12 @@ state={
 		}
 	}
 
-	provinces = {
+	provinces={
 		1589 4308 4349 4537 4564 7336 7598 10222 10263 10450 10464 12330 12444 
 	}
 
 	manpower = 3128000
 	buildings_max_level_factor = 1.000
 	state_category = rural
-	local_supplies=1.000
+	local_supplies = 1.000
 }

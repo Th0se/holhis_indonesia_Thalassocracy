@@ -99,15 +99,18 @@
  INS_ISLAM_neutrality_DEF:0 "the Indonesian Islamic Republic"
  INS_ISLAM_ADJ:0 "Indonesian"
 
- ATJ_fascism:0 "Caliphate of Atjeh"
- ATJ_fascism_DEF:0 "the Caliphate of Atjeh"
+ ATJ_fascism:0 "Nanggroe Atjeh Daroessalam"
+ ATJ_fascism_DEF:0 "the State of Atjeh"
  ATJ_democratic:0 "Republic of Atjeh"
  ATJ_democratic_DEF:0 "the Atjehnese Republic"
  ATJ_communism:0 "Islamic Commune of Atjeh"
  ATJ_communism_DEF:0 "the Atjeh Commune"
- ATJ_neutrality:0 "Free Atjeh"
- ATJ_neutrality_DEF:0 "the Free Atjeh"
+ ATJ_neutrality:0 "Sultanate of Atjeh"
+ ATJ_neutrality_DEF:0 "the Atjehnese Sultanate"
  ATJ_ADJ:0 "Atjehnese"
+
+ ATJ_FREE:0 "Free Atjeh"
+ ATJ_FREE_DEF:0 "the Atjehnese Sultanate"
 
  SMT_fascism:0 "State of Andalas"
  SMT_fascism_DEF:0 "the Andalas State"

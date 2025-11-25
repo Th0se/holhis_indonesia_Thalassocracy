@@ -90,7 +90,7 @@ characters = {
 		name = MLK_johannes_leimena
 		portraits = {
 			civilian = {
-				large = GFX_idea_indonesia_johannes_leimena
+				large = GFX_portrait_maluku_leimena
 				small = GFX_idea_indonesia_johannes_leimena
 			}
 		}

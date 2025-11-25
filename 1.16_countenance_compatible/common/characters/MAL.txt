@@ -142,7 +142,7 @@ characters = {
 						has_government = fascism
 					}
 				}
-				controls_state = 988
+				controls_state = 1023
 			}
 			traits = {
 				raj_of_sarawak 
@@ -151,10 +151,10 @@ characters = {
 				if = {
 					limit = {
 						MAL = {
-							controls_state = 988
+							controls_state = 1023
 						}
 					}
-					988 = {
+					1023 = {
 						add_dynamic_modifier = {
 							modifier = MAL_sarawak_brooke_modifier
 						}
@@ -162,7 +162,7 @@ characters = {
 				}
 			}
 			on_remove = {
-				988 = {
+				1023 = {
 					remove_dynamic_modifier = {
 						modifier = MAL_sarawak_brooke_modifier
 					}

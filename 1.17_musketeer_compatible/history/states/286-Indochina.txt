@@ -1,6 +1,7 @@
-state={
+state={ #Mekong Delta / Cochinchina
 	id=286
-	name="STATE_286" #Cochinchina
+	name="STATE_286"
+
 	resources={
 		rubber=40
 	}

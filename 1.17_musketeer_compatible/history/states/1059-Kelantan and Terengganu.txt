@@ -1,0 +1,31 @@
+state={
+	id=1059
+	name="STATE_1059"
+	resources = {
+		aluminium = 15
+		rubber = 72
+	}
+
+	history = {
+		owner = MAL
+		victory_points = {
+			7329 1 
+		}
+		buildings = {
+			infrastructure = 2
+			7329 = {
+				naval_base = 1
+
+			}
+		}
+		add_core_of = MAL
+	}
+	provinces={
+		1348 4355 7329 10227 12199 
+	}
+
+	manpower = 467363
+	buildings_max_level_factor = 1.000
+	state_category = rural
+	local_supplies = 1.000
+}

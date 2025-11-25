@@ -38,11 +38,12 @@ recruit_character = BRM_acd2
 recruit_character = BRM_nt
 recruit_character = BRM_ar
 recruit_character = BRM_fascist_guy
-recruit_character = BRM_cochrane
+recruit_character = BRM_archibald_cochrane
 recruit_character = BRM_ba_maw
 recruit_character = BRM_aung_san
 recruit_character = BRM_u_saw
-
+recruit_character = BRM_u_nu
+recruit_character = BRM_myat_phaya_lat
 
 1939.1.1 = {
 	#generic focuses
@@ -94,8 +95,9 @@ recruit_character = BRM_u_saw
 		communism = 2
 		neutrality = 56
 	}
-	set_cosmetic_tag = BRM_british #British Burma
 }
+
+set_cosmetic_tag = BRM_british #British Burma
 
 set_politics = {
 	ruling_party = neutrality

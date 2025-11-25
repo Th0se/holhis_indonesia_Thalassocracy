@@ -1,13 +1,9 @@
-version="Version 1.6.4 Pagar Alam"
+version="1.7"
 tags={
-	"Alternative History"
-	"Events"
-	"Fixes"
-	"Historical"
 	"Map"
+	"Alternative History"
 	"National Focuses"
-	"Indonesia"
-	"Dutch East Indies"
+	"Historical"
 }
-name="Hollandia Historica: East Indies Reworked"
-supported_version="1.16.*"
+name="East Indies Reworked"
+supported_version="1.17.0"

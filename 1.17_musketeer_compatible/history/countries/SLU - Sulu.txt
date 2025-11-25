@@ -1,4 +1,4 @@
-﻿capital = 983 #Sulu
+﻿capital = 948 #Sulu
 
 set_research_slots = 2
 

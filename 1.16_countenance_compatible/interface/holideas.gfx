@@ -1226,6 +1226,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_idea_malaysia_tuanku_abdul_rahman"
+		texturefile = "gfx/ideas/MAL/idea_mal_tuanku_abdul_rahman.dds"
+	}
+
+	spriteType = {
 		name = "GFX_idea_raj_patel"
 		texturefile = "gfx/ideas/RAJ/idea_raj_patel.dds"
 	}
@@ -1873,6 +1878,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_portrait_idc_jules_brevie"
 		texturefile = "gfx/leaders/VIN/portrait_idc_jules_brevie.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_Ho_Chi_Minh"
+		texturefile = "gfx/leaders/VIN/portrait_vin_ho_chi_minh.dds"
 	}
 
 	spriteType = {
