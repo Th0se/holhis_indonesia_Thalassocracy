@@ -1,0 +1,29 @@
+state={
+	id=1070
+	name="STATE_1070"
+
+	resources = {
+		rubber = 4.000
+	}
+	history = {
+		add_core_of = VIN
+		owner = FRA
+		victory_points = {
+			4379 1 
+		}
+		buildings = {
+			infrastructure = 2
+			4379 = {
+				naval_base = 1
+			}
+		}
+	}
+	provinces={
+		4255 4379 7229 10137 10309 
+	}
+
+	manpower = 1862672
+	buildings_max_level_factor = 1.000
+	state_category = rural
+	local_supplies = 1.000
+}

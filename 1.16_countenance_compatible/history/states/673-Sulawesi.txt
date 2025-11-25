@@ -9,7 +9,7 @@ state={
 		owner = INS
 		add_core_of = INS
 		victory_points = {
-			10263 2 
+			10263 2
 		}
 		buildings = {
 			infrastructure = 2
@@ -25,7 +25,7 @@ state={
 		1589 4308 4349 4537 4564 7336 7598 10222 10263 10450 10464 12330 12444 
 	}
 
-	manpower = 3128000
+	manpower = 3088216
 	buildings_max_level_factor = 1.000
 	state_category = rural
 	local_supplies=1.000

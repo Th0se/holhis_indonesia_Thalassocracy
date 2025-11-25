@@ -255,7 +255,7 @@ INS_gm_java_organization = {
 
 INS_toyota_organization = {
 	include = generic_motorized_mechanized_organization
-	icon = INS_toyota
+	icon = GFX_idea_INS_toyota
 	allowed = {
 		tag = INS
 		has_dlc = "Arms Against Tyranny"

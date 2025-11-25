@@ -1,0 +1,28 @@
+state={
+	id=1055
+	name="STATE_1055"
+
+	history = {
+		owner = INS
+		add_core_of = INS
+		add_core_of = MLK
+		victory_points = {
+			1419 1 
+		}
+		buildings = {
+			infrastructure = 1
+			1419 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={
+		1419 1437 7413 10141 10342 
+	}
+
+	manpower = 337808
+	buildings_max_level_factor = 1.000
+	state_category = pastoral
+	local_supplies = 1.000
+}

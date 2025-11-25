@@ -1180,6 +1180,7 @@ country_event = { #14 - Indonesian Election
 			elections_allowed = yes
 			election_frequency = 60
 		}
+		set_cosmetic_tag = INS
 		hidden_effect = {
 			add_country_leader_role = {
 				character = INS_mohammad_hoesni_thamrin
@@ -1193,6 +1194,7 @@ country_event = { #14 - Indonesian Election
 				}
 				promote_leader = yes
 			}
+			set_cosmetic_tag = INS_GAPI
 			set_country_flag = INS_minister_soekarno
 			country_event = { id = holhis_indonesia.14 days = 1826 }
 		}
@@ -1234,6 +1236,7 @@ country_event = { #14 - Indonesian Election
 			long_name = INS_democratic_party_long
 			name = INS_democratic_party
 		}
+		set_cosmetic_tag = INS
 		hidden_effect = {
 			add_country_leader_role = {
 				character = INS_mohammad_hoesni_thamrin
@@ -1247,6 +1250,7 @@ country_event = { #14 - Indonesian Election
 				}
 				promote_leader = yes
 			}
+			set_cosmetic_tag = INS_GAPI
 			set_country_flag = INS_minister_hatta
 			country_event = { id = holhis_indonesia.14 days = 1826 }
 		}
@@ -1346,6 +1350,7 @@ country_event = { #14 - Indonesian Election
 			long_name = INS_neutrality_party_islam_long
 			name = INS_neutrality_party_islam
 		}
+		set_cosmetic_tag = INS
 		hidden_effect = {
 			add_country_leader_role = {
 				character = INS_abikoesno_tjokrosoejoso
@@ -1359,6 +1364,7 @@ country_event = { #14 - Indonesian Election
 				}
 				promote_leader = yes
 			}
+			set_cosmetic_tag = INS_GAPI
 			set_country_flag = INS_minister_thamrin
 			country_event = { id = holhis_indonesia.14 days = 1826 }
 		}
@@ -1404,6 +1410,7 @@ country_event = { #14 - Indonesian Election
 			long_name = INS_democratic_party_long
 			name = INS_democratic_party
 		}
+		set_cosmetic_tag = INS_ISLAM
 		hidden_effect = {
 			add_country_leader_role = {
 				character = INS_mohammad_hoesni_thamrin
@@ -1489,7 +1496,10 @@ country_event = { #15 - Boerstra Retires
 			has_character = INS_murk_boerstra
 			OR = {
 				has_character = INS_berenschot
-				has_character = INS_hein_ter_poorten
+				AND = {
+					has_character = INS_hein_ter_poorten
+					has_completed_focus = INS_reform_the_knil
+				}
 				has_character = INS_aleid_van_tricht
 			}
 		}
@@ -1542,7 +1552,10 @@ country_event = { #15 - Boerstra Retires
 	option = { #Hein ter Poorten
 		name = holhis_indonesia.15.c
 		trigger = {
-			has_character = INS_hein_ter_poorten
+			AND = {
+				has_character = INS_hein_ter_poorten
+				has_completed_focus = INS_reform_the_knil
+			}
 		}
 		retire_character = INS_murk_boerstra
 		INS_hein_ter_poorten = {
@@ -2173,7 +2186,10 @@ country_event = { #24 - The Plane Crash (inferno)
 	option = { #Welcome, Ter Poorten!
 		name = holhis_indonesia.24.a
 		trigger = {
-			has_character = INS_hein_ter_poorten
+			AND = {
+				has_character = INS_hein_ter_poorten
+				has_completed_focus = INS_reform_the_knil
+			}
 		}
 		ai_chance = {
 			base = 95
@@ -5264,24 +5280,6 @@ country_event = { #Japindo 1 - Japan setting up Indonesian occupation
 					set_nationality = INJ
 				}
 			}
-			INS_soekarno = {
-				effect_tooltip = {
-					swap_country_leader_traits = {
-						remove = overzealous_idealist
-						add = national_integralist
-					}
-				}
-				hidden_effect = {
-					add_trait = {
-						slot = political_advisor
-						trait = national_integralist
-					}
-					remove_trait = {
-						slot = political_advisor
-						trait = overzealous_idealist
-					}
-				}
-			}
 		}
 	}
 	option = { # Conquer everything!
@@ -5506,22 +5504,6 @@ country_event = { #Japindo 1 - Japan setting up Indonesian occupation
 					}
 					INS_soekarno = {
 						set_nationality = INJ
-						effect_tooltip = {
-							swap_country_leader_traits = {
-								remove = overzealous_idealist
-								add = national_integralist
-							}
-						}
-						hidden_effect = {
-							add_trait = {
-								slot = political_advisor
-								trait = national_integralist
-							}
-							remove_trait = {
-								slot = political_advisor
-								trait = overzealous_idealist
-							}
-						}
 					}
 				}
 				INS_mohammad_hatta = {
@@ -5818,22 +5800,6 @@ country_event = { #Nationalists 3 - Soekarno got malaria
 					set_portraits = {
 						army = {
 							small = GFX_idea_indonesia_soekarno
-						}
-					}
-					effect_tooltip = {
-						swap_country_leader_traits = {
-							remove = overzealous_idealist
-							add = national_integralist
-						}
-					}
-					hidden_effect = {
-						add_trait = {
-							slot = political_advisor
-							trait = national_integralist
-						}
-						remove_trait = {
-							slot = political_advisor
-							trait = overzealous_idealist
 						}
 					}
 				}
@@ -6534,7 +6500,7 @@ country_event = { #Nationalists 8 - Dispatcher for uprisings
 	}
 }
 
-country_event = { #Commies 1 - Who shall lead PKI?
+country_event = { #Commies 1 - Who shall lead PKI? 3rd PKI National Congress - 1935-1940
 	id = holhis_commies.1
 	title = holhis_commies.1.t
 	desc = holhis_commies.1.desc
@@ -6571,7 +6537,12 @@ country_event = { #Commies 1 - Who shall lead PKI?
 
 	option = { #Muso
 		name = holhis_commies.1.a
-		set_cosmetic_tag = INS_RED3
+		if = {
+			limit = {
+				NOT = { has_global_flag = form_majapahit_empire_flag }
+			}
+			set_cosmetic_tag = INS_RED3
+		}
 		promote_character = INS_moesso_moenawar
 		add_war_support = 0.075
 		INS_amir_sjarifoeddin = {
@@ -6607,7 +6578,12 @@ country_event = { #Commies 1 - Who shall lead PKI?
 
 	option = { #Tan Malaka
 		name = holhis_commies.1.b
-		set_cosmetic_tag = INS_RED2
+		if = {
+			limit = {
+				NOT = { has_global_flag = form_majapahit_empire_flag }
+			}
+			set_cosmetic_tag = INS_RED2
+		}
 		promote_character = INS_tan_malaka
 		add_stability = 0.075
 		INS_amir_sjarifoeddin = {
@@ -7329,14 +7305,14 @@ country_event = { #Commies 11 - Communist Uprising
 						trait = independent_journalist
 					}
 				}
-				INS_soekarno = {
+				INS_kh_dewantara = {
 					add_trait = {
 						slot = political_advisor
-						trait = national_integralist
+						trait = ICE_revolutionary_educator
 					}
 					remove_trait = {
 						slot = political_advisor
-						trait = overzealous_idealist
+						trait = tamansiswa_educationer
 					}
 				}
 				GER_walther_hewel = {
@@ -7973,7 +7949,7 @@ country_event = { #Commies 13 - End of the Revolution
 	id = holhis_commies.13
 	title = holhis_commies.13.t
 	desc = holhis_commies.13.d
-	picture = GFX_report_event_fascists_posing
+	picture = GFX_report_event_ins_pki
 
 	is_triggered_only = yes
 
@@ -8151,7 +8127,12 @@ country_event = { #Commies 16 - Faction leader demanded us to reorient our party
 			}
 		}
 		retire_country_leader = yes
-		set_cosmetic_tag = INS_RED3
+		if = {
+			limit = {
+				NOT = { has_global_flag = form_majapahit_empire_flag }
+			}
+			set_cosmetic_tag = INS_RED3
+		}
 		promote_character = INS_moesso_moenawar
 		add_popularity = {
 			ideology = communism
@@ -8186,7 +8167,12 @@ country_event = { #Commies 16 - Faction leader demanded us to reorient our party
 			}
 		}
 		retire_country_leader = yes
-		set_cosmetic_tag = INS_RED2
+		if = {
+			limit = {
+				NOT = { has_global_flag = form_majapahit_empire_flag }
+			}
+			set_cosmetic_tag = INS_RED2
+		}
 		promote_character = INS_tan_malaka
 		add_popularity = {
 			ideology = communism
@@ -8204,7 +8190,12 @@ country_event = { #Commies 16 - Faction leader demanded us to reorient our party
 	}
 	option = { #Denounce their alliance, create our own
 		name = holhis_commies.16.c
-		set_cosmetic_tag = INS_RED2
+		if = {
+			limit = {
+				NOT = { has_global_flag = form_majapahit_empire_flag }
+			}
+			set_cosmetic_tag = INS_RED2
+		}
 		hidden_effect = {
 			uncomplete_national_focus = {
 				focus = INS_a_distant_ally
@@ -9722,7 +9713,12 @@ country_event = { #Commies 35 - 4th PKI National Congress - 1940-1945
 				add_war_support = 0.05
 			}
 		}
-		set_cosmetic_tag = INS_RED3
+		if = {
+			limit = {
+				NOT = { has_global_flag = form_majapahit_empire_flag }
+			}
+			set_cosmetic_tag = INS_RED3
+		}
 		promote_character = INS_moesso_moenawar
 		add_war_support = 0.075
 		add_field_marshal_role = {
@@ -9806,7 +9802,12 @@ country_event = { #Commies 35 - 4th PKI National Congress - 1940-1945
 				add_war_support = 0.05
 			}
 		}
-		set_cosmetic_tag = INS_RED2
+		if = {
+			limit = {
+				NOT = { has_global_flag = form_majapahit_empire_flag }
+			}
+			set_cosmetic_tag = INS_RED2
+		}
 		promote_character = INS_tan_malaka
 		add_field_marshal_role = {
 			character = INS_tan_malaka
@@ -9862,7 +9863,12 @@ country_event = { #Commies 35 - 4th PKI National Congress - 1940-1945
 			remove_ideas = INS_gerindo_militias_positive
 		}
 		hidden_effect = {
-			set_cosmetic_tag = INS_RED2
+			if = {
+				limit = {
+					NOT = { has_global_flag = form_majapahit_empire_flag }
+				}
+				set_cosmetic_tag = INS_RED2
+			}
 			INS_tan_malaka = {
 				set_character_flag = INS_second_term_flag
 			}
@@ -9945,7 +9951,12 @@ country_event = { #Commies 35 - 4th PKI National Congress - 1940-1945
 
 	option = { #Alimin
 		name = holhis_commies.35.g
-		set_cosmetic_tag = INS
+		if = {
+			limit = {
+				NOT = { has_global_flag = form_majapahit_empire_flag }
+			}
+			set_cosmetic_tag = INS
+		}
 		promote_character = INS_alimin
 
 		add_political_power = 50
@@ -9998,7 +10009,12 @@ country_event = { #Commies 36 - 5th PKI National Congress - 1945-1950
 				add_war_support = 0.05
 			}
 		}
-		set_cosmetic_tag = INS_RED3
+		if = {
+			limit = {
+				NOT = { has_global_flag = form_majapahit_empire_flag }
+			}
+			set_cosmetic_tag = INS_RED3
+		}
 		promote_character = INS_moesso_moenawar
 		add_war_support = 0.075
 		add_field_marshal_role = {
@@ -10087,7 +10103,12 @@ country_event = { #Commies 36 - 5th PKI National Congress - 1945-1950
 				add_war_support = 0.05
 			}
 		}
-		set_cosmetic_tag = INS_RED2
+		if = {
+			limit = {
+				NOT = { has_global_flag = form_majapahit_empire_flag }
+			}
+			set_cosmetic_tag = INS_RED2
+		}
 		promote_character = INS_tan_malaka
 		add_field_marshal_role = {
 			character = INS_tan_malaka
@@ -10143,7 +10164,12 @@ country_event = { #Commies 36 - 5th PKI National Congress - 1945-1950
 			remove_ideas = INS_gerindo_militias_positive
 		}
 		hidden_effect = {
-			set_cosmetic_tag = INS_RED2
+			if = {
+				limit = {
+					NOT = { has_global_flag = form_majapahit_empire_flag }
+				}
+				set_cosmetic_tag = INS_RED2
+			}
 			INS_tan_malaka = {
 				set_character_flag = INS_second_term_flag
 			}
@@ -10220,8 +10246,12 @@ country_event = { #Commies 36 - 5th PKI National Congress - 1945-1950
 				NOT = { has_character_flag = INS_second_term_flag }
 			}
 		}
-
-		set_cosmetic_tag = INS
+		if = {
+			limit = {
+				NOT = { has_global_flag = form_majapahit_empire_flag }
+			}
+			set_cosmetic_tag = INS
+		}
 		promote_character = INS_alimin
 		add_political_power = 50
 		if = {
@@ -10273,7 +10303,12 @@ country_event = { #Commies 37 - 6th PKI National Congress - 1950-1955
 				add_war_support = 0.05
 			}
 		}
-		set_cosmetic_tag = INS_RED3
+		if = {
+			limit = {
+				NOT = { has_global_flag = form_majapahit_empire_flag }
+			}
+			set_cosmetic_tag = INS_RED3
+		}
 		promote_character = INS_moesso_moenawar
 		add_war_support = 0.075
 		add_field_marshal_role = {
@@ -10362,7 +10397,12 @@ country_event = { #Commies 37 - 6th PKI National Congress - 1950-1955
 				add_war_support = 0.05
 			}
 		}
-		set_cosmetic_tag = INS_RED2
+		if = {
+			limit = {
+				NOT = { has_global_flag = form_majapahit_empire_flag }
+			}
+			set_cosmetic_tag = INS_RED2
+		}
 		promote_character = INS_tan_malaka
 		add_field_marshal_role = {
 			character = INS_tan_malaka
@@ -10418,7 +10458,12 @@ country_event = { #Commies 37 - 6th PKI National Congress - 1950-1955
 			remove_ideas = INS_gerindo_militias_positive
 		}
 		hidden_effect = {
-			set_cosmetic_tag = INS_RED2
+			if = {
+				limit = {
+					NOT = { has_global_flag = form_majapahit_empire_flag }
+				}
+				set_cosmetic_tag = INS_RED2
+			}
 			INS_tan_malaka = {
 				set_character_flag = INS_second_term_flag
 			}
@@ -10548,6 +10593,7 @@ country_event = { #Commies 38 - 7th PKI National Congress - 1955-1960
 					}
 				}
 			}
+			date < 1957.07.01
 		}
 
 		if = {
@@ -10562,7 +10608,12 @@ country_event = { #Commies 38 - 7th PKI National Congress - 1955-1960
 				add_war_support = 0.05
 			}
 		}
-		set_cosmetic_tag = INS_RED3
+		if = {
+			limit = {
+				NOT = { has_global_flag = form_majapahit_empire_flag }
+			}
+			set_cosmetic_tag = INS_RED3
+		}
 		promote_character = INS_moesso_moenawar
 		add_war_support = 0.075
 		add_field_marshal_role = {
@@ -10594,6 +10645,7 @@ country_event = { #Commies 38 - 7th PKI National Congress - 1955-1960
 			INS_moesso_moenawar = {
 				NOT = { has_character_flag = INS_second_term_flag }
 			}
+			date < 1957.07.01
 		}
 
 		if = {
@@ -10635,6 +10687,7 @@ country_event = { #Commies 38 - 7th PKI National Congress - 1955-1960
 					}
 				}
 			}
+			date < 1957.06.02
 		}
 
 		if = {
@@ -10649,7 +10702,12 @@ country_event = { #Commies 38 - 7th PKI National Congress - 1955-1960
 				add_war_support = 0.05
 			}
 		}
-		set_cosmetic_tag = INS_RED2
+		if = {
+			limit = {
+				NOT = { has_global_flag = form_majapahit_empire_flag }
+			}
+			set_cosmetic_tag = INS_RED2
+		}
 		promote_character = INS_tan_malaka
 		add_field_marshal_role = {
 			character = INS_tan_malaka
@@ -10683,6 +10741,7 @@ country_event = { #Commies 38 - 7th PKI National Congress - 1955-1960
 			INS_tan_malaka = {
 				NOT = { has_character_flag = INS_second_term_flag }
 			}
+			date < 1957.06.02
 		}
 
 		if = {
@@ -10699,7 +10758,12 @@ country_event = { #Commies 38 - 7th PKI National Congress - 1955-1960
 		}
 
 		hidden_effect = {
-			set_cosmetic_tag = INS_RED2
+			if = {
+				limit = {
+					NOT = { has_global_flag = form_majapahit_empire_flag }
+				}
+				set_cosmetic_tag = INS_RED2
+			}
 			INS_tan_malaka = {
 				set_character_flag = INS_second_term_flag
 			}
@@ -10797,7 +10861,6 @@ country_event = { #Commies 38 - 7th PKI National Congress - 1955-1960
 					ruling_only = yes
 				}
 			}
-			date > 1953.07.30
 		}
 
 		if = {
@@ -13060,14 +13123,14 @@ country_event = { #Volskraad 10 - Parindra Uprising
 						trait = independent_journalist
 					}
 				}
-				INS_soekarno = {
+				INS_kh_dewantara = {
 					add_trait = {
 						slot = political_advisor
-						trait = national_integralist
+						trait = ICE_revolutionary_educator
 					}
 					remove_trait = {
 						slot = political_advisor
-						trait = overzealous_idealist
+						trait = tamansiswa_educationer
 					}
 				}
 				GER_walther_hewel = {
@@ -16389,7 +16452,10 @@ country_event = { #Aging 15 - Poorten
 	trigger = {
 		original_tag = INS
 		date > 1943.01.01
-		has_character = INS_hein_ter_poorten
+		AND = {
+			has_character = INS_hein_ter_poorten
+			has_completed_focus = INS_reform_the_knil
+		}
 		INS_hein_ter_poorten = {
 			has_character_flag = {
 				flag = INS_appointed_general_flag
@@ -17276,7 +17342,7 @@ country_event = { #A thank you post
 country_event = { #Path Guides - Common Leaders
 	id = holhis_history.11
 	title = holhis_history.11.t
-	desc = holhis_history.11.desc
+	desc = holhis_history.11.d
 
 	is_triggered_only = yes
 	fire_only_once = no
@@ -17305,7 +17371,7 @@ country_event = { #Path Guides - Common Leaders
 country_event = { #Path Guides - Hidden Leaders
 	id = holhis_history.12
 	title = holhis_history.12.t
-	desc = holhis_history.12.desc
+	desc = holhis_history.12.d
 
 	is_triggered_only = yes
 	fire_only_once = no
@@ -17334,7 +17400,7 @@ country_event = { #Path Guides - Hidden Leaders
 country_event = { #Path Guides - Easter Egg Leaders
 	id = holhis_history.13
 	title = holhis_history.13.t
-	desc = holhis_history.13.desc
+	desc = holhis_history.13.d
 
 	is_triggered_only = yes
 	fire_only_once = no

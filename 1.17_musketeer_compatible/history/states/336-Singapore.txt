@@ -1,0 +1,33 @@
+state={ #Malaya
+	id=336
+	name="STATE_336"
+
+	resources = {
+		steel = 8
+		rubber = 228
+		tungsten = 126
+	}
+
+	history = {
+		owner = MAL
+		victory_points = {
+			10297 5 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 6
+			10297 = {
+				naval_base = 5
+			}
+		}
+		add_core_of = MAL
+	}
+	provinces={
+		1364 1376 1392 4310 4384 4412 7399 10297 12215 12255 12271 
+	}
+	manpower=1090514
+	buildings_max_level_factor=1
+	state_category=town
+	local_supplies = 2.000
+}

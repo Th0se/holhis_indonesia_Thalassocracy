@@ -2105,35 +2105,35 @@ focus_tree = {
 				}
 			}
 			hidden_effect = {
-				add_victory_points = {
+				add_victory_points = { #Makassar to be 5
 					province = 10263
 					value = 3
 				}
-				add_victory_points = {
+				add_victory_points = { #Kendari to be 1
 					province = 4564
 					value = 1
 				}
-				add_victory_points = {
+				add_victory_points = { #Manado to be 2
 					province = 10153
 					value = 1
 				}
-				add_victory_points = {
+				add_victory_points = { #Wangiapoe to be 1
 					province = 12234
 					value = 1
 				}
-				add_victory_points = {
+				add_victory_points = { #Bima to be 1
 					province = 12162
 					value = 1
 				}
-				add_victory_points = {
+				add_victory_points = { #Donggala to be 1
 					province = 1098
 					value = 1
 				}
-				add_victory_points = {
+				add_victory_points = { #Maoemere to be 1
 					province = 7321
 					value = 1
 				}
-				add_victory_points = {
+				add_victory_points = { #Singaradja to be 1
 					province = 4273
 					value = 1
 				}
@@ -2149,12 +2149,12 @@ focus_tree = {
 							}
 						}
 					}
-					add_victory_points = {
+					add_victory_points = { #Pantemacassar to be 1
 						province = 12206
 						value = 1
 					}
-					add_victory_points = {
-						province = 1326
+					add_victory_points = { #Dili to be 2
+						province = 12190
 						value = 1
 					}
 				}
@@ -4189,14 +4189,14 @@ focus_tree = {
 		icon = GFX_focus_generic_treaty
 
 		relative_position_id = INS_address_malaise
-		x = -19
+		x = -21
 		y = 0
 
 		offset = {
-			x = -2
+			x = 2
 			y = 0
 			trigger = {
-				has_global_flag = form_majapahit_empire_flag
+				NOT = { has_global_flag = form_majapahit_empire_flag }
 			}
 		}
 
@@ -5974,7 +5974,7 @@ focus_tree = {
 		icon = GFX_focus_INS_vocflag
 		
 		relative_position_id = INS_address_malaise
-		x = 45
+		x = 47
 		y = 0
 
 		cost = 5
@@ -5984,14 +5984,6 @@ focus_tree = {
 			y = 0
 			trigger = {
 				has_country_flag = INS_hatta_bangka
-			}
-		}
-
-		offset = {
-			x = 1
-			y = 0
-			trigger = {
-				has_dlc = "Together for Victory"
 			}
 		}
 
@@ -6020,7 +6012,7 @@ focus_tree = {
 		}
 
 		offset = {
-			x = -1
+			x = -2
 			y = 0
 			trigger = {
 				has_game_rule = {
@@ -6028,20 +6020,6 @@ focus_tree = {
 					option = HIDE
 				}
 				has_completed_focus = INS_improve_dutch_relations
-			}
-		}
-
-		offset = {
-			x = -34
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				NOT = {
-					has_dlc = "Together for Victory"
-				}
 			}
 		}
 
@@ -7632,7 +7610,7 @@ focus_tree = {
 		prerequisite = { focus = INS_continue_reform }
 		
 		relative_position_id = INS_continue_reform
-		x = 0
+		x = 3
 		y = 1
 
 		allow_branch = {
@@ -7650,14 +7628,6 @@ focus_tree = {
 						has_completed_focus = INS_support_decol
 					}
 				}
-			}
-		}
-
-		offset = {
-			x = 3
-			y = 0
-			trigger = {
-				has_dlc = "Together for Victory"
 			}
 		}
 
@@ -7752,16 +7722,6 @@ focus_tree = {
 			x = 1
 			y = 0
 			trigger = {
-				NOT = {
-					has_dlc = "Together for Victory"
-				}
-			}
-		}
-
-		offset = {
-			x = 1
-			y = 0
-			trigger = {
 				has_completed_focus = INS_improve_dutch_relations
 			}
 		}
@@ -7825,16 +7785,6 @@ focus_tree = {
 		relative_position_id = INS_improve_dutch_relations
 		x = 1
 		y = 1
-
-		offset = {
-			x = 1
-			y = 0
-			trigger = {
-				NOT = {
-					has_dlc = "Together for Victory"
-				}
-			}
-		}
 
 		offset = {
 			x = 1
@@ -7966,16 +7916,6 @@ focus_tree = {
 					option = HIDE
 				}
 				has_completed_focus = INS_improve_dutch_relations
-			}
-		}
-
-		offset = {
-			x = -2
-			y = 0
-			trigger = {
-				NOT = {
-					has_dlc = "Together for Victory"
-				}
 			}
 		}
 
@@ -8938,8 +8878,7 @@ focus_tree = {
 			HOL = {
 				HOL_burden_step_down = yes
 			}
-			
-			custom_effect_tooltip = generic_skip_one_line_tt
+
 			custom_effect_tooltip = INS_into_future_tt
 			if = {
 				limit = {
@@ -9344,16 +9283,6 @@ focus_tree = {
 			x = 2
 			y = 0
 			trigger = {
-				NOT = {
-					has_dlc = "Together for Victory"
-				}
-			}
-		}
-
-		offset = {
-			x = 2
-			y = 0
-			trigger = {
 				has_completed_focus = INS_improve_dutch_relations
 			}
 		}
@@ -9482,16 +9411,6 @@ focus_tree = {
 			x = -2
 			y = 0
 			trigger = {
-				NOT = {
-					has_dlc = "Together for Victory"
-				}
-			}
-		}
-
-		offset = {
-			x = -2
-			y = 0
-			trigger = {
 				has_completed_focus = INS_improve_dutch_relations
 			}
 		}
@@ -9560,16 +9479,6 @@ focus_tree = {
 		relative_position_id = INS_invite_swpa_philippines
 		x = -1
 		y = 1
-
-		offset = {
-			x = 1
-			y = 0
-			trigger = {
-				NOT = {
-					has_dlc = "Together for Victory"
-				}
-			}
-		}
 
 		offset = {
 			x = 1
@@ -12069,6 +11978,7 @@ focus_tree = {
 			}
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
+			set_cosmetic_tag = INS
 			if = {
 				limit = {
 					has_idea = INS_nationalism_rally
@@ -13546,19 +13456,11 @@ focus_tree = {
 		mutually_exclusive = { focus = INS_support_nationalists focus = INS_support_communists }
 
 		relative_position_id = INS_address_malaise
-		x = 15
+		x = 16
 		y = 3
 
 		offset = {
-			x = 1
-			y = 0
-			trigger = {
-				has_country_flag = INS_hatta_bangka
-			}
-		}
-
-		offset = {
-			x = 6
+			x = 5
 			y = 0
 			trigger = {
 				has_game_rule = {
@@ -16209,16 +16111,16 @@ focus_tree = {
 		icon = GFX_focus_INS_colonial_navy
 
 		relative_position_id = INS_address_malaise
-		x = -13
+		x = -15
 		y = 0
 
 		cost = 10
 
 		offset = {
-			x = -2
+			x = 2
 			y = 0
 			trigger = {
-				has_global_flag = form_majapahit_empire_flag
+				NOT = { has_global_flag = form_majapahit_empire_flag }
 			}
 		}
 
@@ -18101,7 +18003,7 @@ focus_tree = {
 		icon = GFX_focus_SOV_flying_clubs
 		prerequisite = { focus = INS_expand_airbases focus = INS_paratroopers focus = INS_jet_effort }
 
-		relative_position_id = INS_paratroopers
+		relative_position_id = INS_expand_airbases
 		x = 0
 		y = 1
 
@@ -18203,16 +18105,8 @@ focus_tree = {
 		icon = GFX_goal_generic_intelligence_exchange
 
 		relative_position_id = INS_continue_reform
-		x = 8
+		x = 11
 		y = 0
-
-		offset = {
-			x = 3
-			y = 0
-			trigger = {
-				has_dlc = "Together for Victory"
-			}
-		}
 
 		offset = {
 			x = -1
@@ -18247,6 +18141,7 @@ focus_tree = {
 		allow_branch = {
 			has_dlc = "Man the Guns"
 			NOT = { has_completed_focus = INS_discourage_democratic_reforms }
+			NOT = { has_completed_focus = INS_first_election }
 		}
 
 		available = {

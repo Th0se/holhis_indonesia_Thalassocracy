@@ -1,0 +1,283 @@
+﻿capital = 327
+
+oob = "PHI_1936"
+
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "PHI_1936_air_bba"
+	else = {
+		set_air_oob = "PHI_1936_air_legacy"
+		set_technology = {
+			early_fighter = 1
+			early_bomber = 1
+		}
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		basic_torpedo = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_depth_charges = 1
+	}
+}
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+	}
+}
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	tech_trucks = 1
+}
+
+set_convoys = 10
+
+948 = {
+	start_resistance = yes
+	set_compliance = 60
+	set_resistance = 15
+	set_garrison_strength = 1
+}
+
+add_ideas = {
+	ASEAN_agrarian_society_3
+}
+
+recruit_character = PHI_manuel_luis_quezon
+recruit_character = PHI_crisanto_evangelista
+recruit_character = PHI_andres_soriano
+recruit_character = PHI_jose_laurel
+recruit_character = PHI_benigno_ramos
+
+recruit_character = PHI_celerino_tiongco
+recruit_character = PHI_elpidio_quirino
+recruit_character = PHI_emilio_aguinaldo
+recruit_character = PHI_eulogio_rodriguez
+recruit_character = PHI_gregorio_aglipay
+recruit_character = PHI_guillermo_capadocia
+recruit_character = PHI_jose_avelino
+recruit_character = PHI_jose_yulo
+recruit_character = PHI_juan_sumulong
+recruit_character = PHI_manuel_roxas
+recruit_character = PHI_mariano_cuenco
+recruit_character = PHI_sergio_osmena
+
+recruit_character = PHI_basilio_fernando
+recruit_character = PHI_basilio_j_valdez
+recruit_character = PHI_edwin_andrews
+recruit_character = PHI_enrique_jurado
+recruit_character = PHI_heraclio_alano
+recruit_character = PHI_jose_de_los_reyes
+recruit_character = PHI_jose_v_andrada
+recruit_character = PHI_paulino_santos
+recruit_character = PHI_pelagio_cruz
+recruit_character = PHI_vicente_p_lim
+
+1939.1.1 = {
+
+	add_political_power = 1198
+	add_command_power = 100
+
+	set_party_name = {
+		ideology = fascism
+		long_name = PHI_fascism_party_ganap_long
+		name = PHI_fascism_party_ganap
+	}
+	set_party_name = {
+		ideology = neutrality
+		long_name = PHI_neutrality_party_nationalist_long
+		name = PHI_neutrality_party_nationalist
+	}
+	add_country_leader_role = {
+		character = PHI_jose_laurel
+		country_leader = {
+			expire = "1965.1.1"
+			ideology = centrism
+			traits = {
+			}
+		}
+		promote_leader = yes
+	}
+	add_country_leader_role = {
+		character = PHI_benigno_ramos
+		country_leader = {
+			expire = "1965.1.1"
+			ideology = fascism_ideology
+			traits = {
+			}
+		}
+		promote_leader = yes
+	}
+	PHI_benigno_ramos = {
+		remove_country_leader_role = {
+			ideology = centrism
+		}
+	}
+	PHI_andres_soriano = {
+		remove_country_leader_role = {
+			ideology = falangism
+		}
+	}
+
+	set_popularities = {
+		democratic = 75
+		fascism = 15
+		communism = 5
+		neutrality = 5
+	}
+
+	add_autonomy_ratio = {
+		value = -0.4
+		localization = USA_tydings_mcduffles_act
+	}
+	
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = flexible_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	oob = "PHI_1939"
+	if = {
+		limit = { has_dlc = "By Blood Alone" }
+			set_air_oob = "PHI_1936_air_bba" #no difference between 36 and 39 airforces
+		else = {
+			set_air_oob = "PHI_1936_air_legacy"
+		}
+	}
+	set_technology = {
+		interwar_artillery = 1
+		interwar_antiair = 1
+		tech_recon = 1
+		infantry_weapons2 = 1
+		support_weapons = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		fuel_silos = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_dlc = "No Step Back"
+			}
+		}
+		set_technology = {
+			gwtank = 1
+			basic_light_tank = 1
+		}
+	}
+	if = {
+		limit = {
+			has_dlc = "No Step Back"
+		}
+		set_technology = {
+			gwtank_chassis = 1
+			basic_light_tank_chassis = 1
+		}
+	}
+	if = {
+		limit = {
+			has_dlc = "Man the Guns"
+		}
+		set_technology = {
+			basic_ship_hull_light = 1
+			basic_ship_hull_submarine = 1
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_dlc = "Man the Guns"
+			}
+		}
+		set_technology = {
+			basic_submarine = 1
+			basic_destroyer = 1
+		}
+	}
+	if = {
+		limit = {
+			has_dlc = "By Blood Alone"
+		}
+		set_air_oob = "PHI_1939_air_bba"
+		set_technology = {
+			engines_1 = 1
+			basic_medium_airframe = 1
+			basic_small_airframe = 1
+			aa_cannon_1 = 1
+			early_bombs = 1
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_dlc = "By Blood Alone"
+			}
+		}
+		set_air_oob = "PHI_1939_air_legacy"
+		set_technology = {
+			fighter1 = 1
+			early_bomber = 1
+			naval_bomber1 = 1
+		}
+	}
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1935.9.15"
+	election_frequency = 72
+	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 82
+	fascism = 9
+	communism = 9
+}
