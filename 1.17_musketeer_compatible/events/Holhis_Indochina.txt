@@ -1,0 +1,2741 @@
+add_namespace = holhis_burma
+add_namespace = holhis_siam
+
+country_event = { #Burma 1 - British Burma? for Britain
+	id = holhis_burma.1
+	title = holhis_burma.1.t
+	desc = holhis_burma.1.d
+	
+	picture = GFX_report_event_generic_sign_treaty_2
+	
+	is_triggered_only = no
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = ENG
+		date > 1937.03.29
+		has_start_date < 1936.01.02
+	}
+	
+	mean_time_to_happen = { days = 1 }
+
+	option = { #Yes, tell the Indians
+		name = holhis_burma.1.a
+		RAJ = {
+			country_event = { id = holhis_burma.2 hours = 6 }
+			custom_effect_tooltip = needs_approval
+		}
+		effect_tooltip = {
+			set_autonomy = {
+				target = BRM
+				autonomy_state = autonomy_colony
+			}
+		}
+	}
+
+	option = { #No
+		name = holhis_burma.1.b
+
+		add_political_power = -75
+		ai_chance = {
+			base = 20
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}
+
+country_event = { #Burma 2 - Release Burma? for Indians
+	id = holhis_burma.2
+	title = holhis_burma.2.t
+	desc = holhis_burma.2.d
+	
+	picture = GFX_report_event_generic_sign_treaty_2
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #Yes
+		name = holhis_burma.2.a
+		ENG = {
+			set_autonomy = {
+				target = BRM
+				autonomy_state = autonomy_colony
+			}
+		}
+		hidden_effect = {
+			BRM = {
+				set_politics = {
+					ruling_party = neutrality
+					last_election = "1936.1.1"
+					election_frequency = 48
+					elections_allowed = no
+				}
+			}
+			every_other_country = {
+				limit = {
+					has_war_with = ENG
+				}
+				BRM = {
+					add_to_war = {
+						targeted_alliance = ENG
+						enemy = PREV
+						hostility_reason = asked_to_join
+					}
+				}
+			}
+		}
+	}
+
+	option = { #No
+		name = holhis_burma.2.b
+
+		add_political_power = -75
+		ai_chance = {
+			base = 20
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}
+
+country_event = { #Siam 1 - Siam launches attack on Cambodia
+	id = holhis_siam.1
+	title = holhis_siam.1.t
+	desc = holhis_siam.1.d
+	
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	is_triggered_only = yes
+
+	option = {
+		name = holhis_siam.1.a
+	}
+}
+
+country_event = { #Siam 2 - Siam won - for Siam
+	id = holhis_siam.2
+	title = holhis_siam.2.t
+	desc = holhis_siam.2.d
+	
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	is_triggered_only = yes
+
+	option = {
+		name = holhis_siam.2.a
+		
+		transfer_state = 1042
+		transfer_state = 1050
+		transfer_state = 1047
+
+		add_war_support = 0.03
+
+		army_experience = 10
+	}
+}
+
+country_event = { #Siam 3 - Siam won - for owner of Battambang
+	id = holhis_siam.3
+	title = holhis_siam.3.t
+	desc = holhis_siam.3.d
+	
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	is_triggered_only = yes
+	
+	option = { #Ignore
+		name = holhis_siam.3.a
+				
+		army_experience = 10
+
+		add_political_power = 50
+		
+		add_opinion_modifier = {
+			target = SIA
+			modifier = embargo
+		}
+		
+		SIA = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = embargo
+			}
+		}
+		
+		set_global_flag = flag_france_ignores_siam
+
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	option = { #War!
+		name = holhis_siam.3.b
+		
+		army_experience = 25
+		add_state_claim = 1042
+		add_state_claim = 1050
+		add_state_claim = 1047
+		add_war_support = 0.05
+		
+		if = {
+			limit = {
+				is_subject = no
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SIA
+			}
+			else = {
+				every_country = {
+					limit = {
+						has_subject = ROOT
+					}
+					create_wargoal = {
+						type = puppet_wargoal_focus
+						target = SIA
+					}
+				}
+			}
+		}
+		
+		add_opinion_modifier = {
+			target = SIA
+			modifier = embargo
+		}
+		
+		SIA = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = embargo
+			}
+		}
+		
+		set_global_flag = flag_france_retaliates_against_siam
+
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.25
+				any_enemy_country = {
+					is_major = yes
+				}
+			}
+			modifier = {
+				factor = 0.5
+				compare_autonomy_state < autonomy_dominion
+			}
+			modifier = {
+				factor = 0.5
+				SIA = {
+					has_added_tension_amount < 5
+				}
+			}
+			modifier = {
+				factor = 10
+				SIA = {
+					has_added_tension_amount > 6
+				}
+			}
+			modifier = {
+				factor = 0
+				original_tag = FRA
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}
+
+country_event = { #Siam 4 - Siam lost - for Siam
+	id = holhis_siam.4
+	title = holhis_siam.4.t
+	desc = holhis_siam.4.d
+	
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	is_triggered_only = yes
+
+	option = { #Ah well
+		name = holhis_siam.4.a
+
+		add_war_support = -0.05
+		add_stability = -0.05
+		army_experience = 10
+
+		if = {
+			limit = {
+				has_government = fascism
+			}
+			add_popularity = {
+				ideology = fascism 
+				popularity = -0.2
+			}
+		}
+		if = {
+			limit = {
+				has_government = neutrality
+			}
+			add_popularity = {
+				ideology = neutrality 
+				popularity = -0.2
+			}
+		}
+	}
+}
+
+country_event = { #Siam 5 - Siam lost - for owner of Battambang
+	id = holhis_siam.5
+	title = holhis_siam.5.t
+	desc = holhis_siam.5.d
+	
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	is_triggered_only = yes
+	
+	option = { #Ignore
+		name = holhis_siam.5.a
+				
+		army_experience = 25
+		add_war_support = 0.1
+		add_stability = 0.075
+		
+		add_opinion_modifier = {
+			target = SIA
+			modifier = embargo
+		}
+		SIA = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = embargo
+			}
+		}
+		set_country_flag = FRA_won_thai_war
+		set_global_flag = flag_france_ignores_siam
+
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	option = { #War!
+		name = holhis_siam.5.b
+		
+		army_experience = 25
+		add_state_claim = 1042
+		add_state_claim = 1050
+		add_state_claim = 1047
+		add_state_claim = 1041
+		
+		if = {
+			limit = {
+				is_subject = no
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SIA
+			}
+			else = {
+				every_country = {
+					limit = {
+						has_subject = ROOT
+					}
+					create_wargoal = {
+						type = puppet_wargoal_focus
+						target = SIA
+					}
+				}
+			}
+		}
+		
+		add_opinion_modifier = {
+			target = SIA
+			modifier = embargo
+		}
+		
+		SIA = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = embargo
+			}
+		}
+		
+		set_country_flag = FRA_won_thai_war
+		set_global_flag = flag_france_retaliates_against_siam
+
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.25
+				any_enemy_country = {
+					is_major = yes
+				}
+			}
+			modifier = {
+				factor = 0.5
+				compare_autonomy_state < autonomy_dominion
+			}
+			modifier = {
+				factor = 0.5
+				SIA = {
+					has_added_tension_amount < 5
+				}
+			}
+			modifier = {
+				factor = 10
+				SIA = {
+					has_added_tension_amount > 6
+				}
+			}
+			modifier = {
+				factor = 0
+				original_tag = FRA
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}
+
+country_event = { #Siam 6 - Siam launches attack on Shan
+	id = holhis_siam.6
+	title = holhis_siam.6.t
+	desc = holhis_siam.6.d
+	
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	is_triggered_only = yes
+
+	option = {
+		name = holhis_siam.6.a
+	}
+}
+
+country_event = { #Siam 7 - Siam won - for Siam
+	id = holhis_siam.7
+	title = holhis_siam.7.t
+	desc = holhis_siam.7.d
+	
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	is_triggered_only = yes
+
+	option = {
+		name = holhis_siam.7.a
+		
+		transfer_state = 993
+
+		add_war_support = 0.025
+
+		army_experience = 10
+	}
+}
+
+country_event = { #Siam 8 - Siam won - for owner of Shan
+	id = holhis_siam.8
+	title = holhis_siam.8.t
+	desc = holhis_siam.8.d
+	
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	is_triggered_only = yes
+	
+	option = { #Ignore
+		name = holhis_siam.8.a
+				
+		army_experience = 10
+
+		add_political_power = 50
+		
+		add_opinion_modifier = {
+			target = SIA
+			modifier = embargo
+		}
+		
+		SIA = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = embargo
+			}
+		}
+		
+		set_global_flag = flag_raj_ignores_siam
+
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	option = { #War!
+		name = holhis_siam.8.b
+		
+		army_experience = 25
+
+		add_war_support = 0.05
+		
+		if = {
+			limit = {
+				is_subject = no
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SIA
+			}
+			else = {
+				every_country = {
+					limit = {
+						has_subject = ROOT
+					}
+					create_wargoal = {
+						type = puppet_wargoal_focus
+						target = SIA
+					}
+				}
+			}
+		}
+
+		add_state_claim = 993
+		add_state_claim = 869
+		
+		add_opinion_modifier = {
+			target = SIA
+			modifier = embargo
+		}
+		
+		SIA = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = embargo
+			}
+		}
+		
+		set_global_flag = flag_raj_retaliates_against_siam
+
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.25
+				any_enemy_country = {
+					is_major = yes
+				}
+			}
+			modifier = {
+				factor = 0.5
+				SIA = {
+					has_added_tension_amount < 5
+				}
+			}
+			modifier = {
+				factor = 10
+				SIA = {
+					has_added_tension_amount > 6
+				}
+			}
+			modifier = {
+				factor = 2
+				compare_autonomy_state > autonomy_colony
+			}
+		}
+	}
+}
+
+country_event = { #Siam 9 - Siam lost - for Siam
+	id = holhis_siam.9
+	title = holhis_siam.9.t
+	desc = holhis_siam.9.d
+	
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	is_triggered_only = yes
+
+	option = { #Ah well
+		name = holhis_siam.9.a
+
+		add_war_support = -0.05
+		add_stability = -0.05
+		army_experience = 10
+
+		if = {
+			limit = {
+				has_government = fascism
+			}
+			add_popularity = {
+				ideology = fascism 
+				popularity = -0.2
+			}
+		}
+		if = {
+			limit = {
+				has_government = neutrality
+			}
+			add_popularity = {
+				ideology = neutrality 
+				popularity = -0.2
+			}
+		}
+	}
+}
+
+country_event = { #Siam 10 - Siam lost - for owner of Shan
+	id = holhis_siam.10
+	title = holhis_siam.10.t
+	desc = holhis_siam.10.d
+	
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	is_triggered_only = yes
+	
+	option = { #Ignore
+		name = holhis_siam.10.a
+				
+		army_experience = 25
+		add_war_support = 0.1
+		add_stability = 0.075
+		
+		add_opinion_modifier = {
+			target = SIA
+			modifier = embargo
+		}
+		SIA = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = embargo
+			}
+		}
+		set_country_flag = RAJ_won_thai_war
+		set_global_flag = flag_raj_ignores_siam
+
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	option = { #War!
+		name = holhis_siam.10.b
+		
+		army_experience = 25
+
+		add_state_claim = 869
+		
+		if = {
+			limit = {
+				is_subject = no
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SIA
+			}
+			else = {
+				every_country = {
+					limit = {
+						has_subject = ROOT
+					}
+					create_wargoal = {
+						type = puppet_wargoal_focus
+						target = SIA
+					}
+				}
+			}
+		}
+		
+		add_opinion_modifier = {
+			target = SIA
+			modifier = embargo
+		}
+		
+		SIA = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = embargo
+			}
+		}
+		
+		set_country_flag = RAJ_won_thai_war
+		set_global_flag = flag_raj_retaliates_against_siam
+
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.25
+				any_enemy_country = {
+					is_major = yes
+				}
+			}
+			modifier = {
+				factor = 0.5
+				compare_autonomy_state < autonomy_dominion
+			}
+			modifier = {
+				factor = 0.5
+				SIA = {
+					has_added_tension_amount < 5
+				}
+			}
+			modifier = {
+				factor = 10
+				SIA = {
+					has_added_tension_amount > 6
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Siam 11 - 1938 Crisis
+	id = holhis_siam.11
+	title = holhis_siam.11.t
+	desc = holhis_siam.11.d
+	
+	picture = GFX_report_event_election_vote
+
+	
+	is_triggered_only = no
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = SIA
+		date > 1938.11.10
+		has_start_date < 1936.01.02
+	}
+	mean_time_to_happen = { days = 2 }
+
+	option = { #Phahon wins (lol)
+		name = holhis_siam.11.a
+
+		add_war_support = -0.05
+		add_stability = -0.2
+		add_political_power = -120
+		add_popularity = {
+			ideology = fascism 
+			popularity = 0.4
+		}
+
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	option = { #Phibun wins
+		name = holhis_siam.11.b
+
+		add_stability = 0.1
+		army_experience = 20
+		add_popularity = {
+			ideology = fascism 
+			popularity = 0.5
+		}
+		set_politics = {
+			ruling_party = fascism
+			last_election = "1938.11.10"
+			election_frequency = 48
+			elections_allowed = no
+		}
+		SIA_plaek_phibunsongkhram = {
+			add_skill_level = 1
+			add_defense = 1
+			add_logistics = 1
+			promote_leader = yes
+		}
+		SIA_phraya_phahon = {
+			demote_leader = yes
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}
+
+country_event = { #Siam 12 - Ascendancy of Rama VIII
+	id = holhis_siam.12
+	title = holhis_siam.12.t
+	desc = holhis_siam.12.d
+	
+	picture = GFX_report_event_sia_rama_viii
+	
+	is_triggered_only = no
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = SIA
+		date > 1943.09.20
+		NOT = {
+			has_government = communism
+		}
+	}
+
+	option = { #Long Live the King!
+		name = holhis_siam.11.a
+		swap_ideas = {
+			remove_idea = SIA_rama_viii
+			add_idea = SIA_rama_viii_king
+		}
+	}
+}
+
+country_event = { #Siam 13 - Siam launches attack on Kedah
+	id = holhis_siam.13
+	title = holhis_siam.13.t
+	desc = holhis_siam.13.d
+	
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	is_triggered_only = yes
+
+	option = {
+		name = holhis_siam.13.a
+	}
+}
+
+country_event = { #Siam 14 - Siam won - for Siam
+	id = holhis_siam.14
+	title = holhis_siam.14.t
+	desc = holhis_siam.14.d
+	
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	is_triggered_only = yes
+
+	option = {
+		name = holhis_siam.14.a
+		
+		transfer_state = 1036
+
+		add_war_support = 0.025
+		army_experience = 10
+	}
+}
+
+country_event = { #Siam 15 - Siam won - for owner of Kedah
+	id = holhis_siam.15
+	title = holhis_siam.15.t
+	desc = holhis_siam.15.d
+	
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	is_triggered_only = yes
+	
+	option = { #Ignore
+		name = holhis_siam.15.a
+				
+		army_experience = 10
+
+		add_political_power = 50
+		
+		add_opinion_modifier = {
+			target = SIA
+			modifier = embargo
+		}
+		
+		SIA = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = embargo
+			}
+		}
+		
+		set_global_flag = flag_mal_ignores_siam
+
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	option = { #War!
+		name = holhis_siam.15.b
+		
+		army_experience = 25
+
+		add_war_support = 0.05
+		
+		if = {
+			limit = {
+				is_subject = no
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SIA
+			}
+			else = {
+				every_country = {
+					limit = {
+						has_subject = ROOT
+					}
+					create_wargoal = {
+						type = puppet_wargoal_focus
+						target = SIA
+					}
+				}
+			}
+		}
+
+		add_state_claim = 1036
+		add_state_claim = 724
+		
+		add_opinion_modifier = {
+			target = SIA
+			modifier = embargo
+		}
+		
+		SIA = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = embargo
+			}
+		}
+		
+		set_global_flag = flag_mal_retaliates_against_siam
+
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.25
+				any_enemy_country = {
+					is_major = yes
+				}
+			}
+			modifier = {
+				factor = 2
+				compare_autonomy_state > autonomy_colony
+			}
+			modifier = {
+				factor = 0.5
+				SIA = {
+					has_added_tension_amount < 5
+				}
+			}
+			modifier = {
+				factor = 10
+				SIA = {
+					has_added_tension_amount > 6
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Siam 16 - Siam lost - for Siam
+	id = holhis_siam.16
+	title = holhis_siam.16.t
+	desc = holhis_siam.16.d
+	
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	is_triggered_only = yes
+
+	option = { #Ah well
+		name = holhis_siam.16.a
+
+		add_war_support = -0.05
+		add_stability = -0.05
+		army_experience = 10
+
+		if = {
+			limit = {
+				has_government = fascism
+			}
+			add_popularity = {
+				ideology = fascism 
+				popularity = -0.2
+			}
+		}
+		if = {
+			limit = {
+				has_government = neutrality
+			}
+			add_popularity = {
+				ideology = neutrality 
+				popularity = -0.2
+			}
+		}
+	}
+}
+
+country_event = { #Siam 17 - Siam lost - for owner of Kedah
+	id = holhis_siam.17
+	title = holhis_siam.17.t
+	desc = holhis_siam.17.d
+	
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	is_triggered_only = yes
+	
+	option = { #Ignore
+		name = holhis_siam.17.a
+				
+		army_experience = 25
+		add_war_support = 0.1
+		add_stability = 0.075
+		
+		add_opinion_modifier = {
+			target = SIA
+			modifier = embargo
+		}
+		SIA = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = embargo
+			}
+		}
+		set_country_flag = MAL_won_thai_war
+		set_global_flag = flag_mal_ignores_siam
+
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	option = { #War!
+		name = holhis_siam.17.b
+		
+		army_experience = 25
+
+		add_state_claim = 724
+		add_state_claim = 955
+		
+		if = {
+			limit = {
+				is_subject = no
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SIA
+			}
+			else = {
+				every_country = {
+					limit = {
+						has_subject = ROOT
+					}
+					create_wargoal = {
+						type = puppet_wargoal_focus
+						target = SIA
+					}
+				}
+			}
+		}
+		
+		add_opinion_modifier = {
+			target = SIA
+			modifier = embargo
+		}
+		
+		SIA = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = embargo
+			}
+		}
+		
+		set_country_flag = MAL_won_thai_war
+		set_global_flag = flag_mal_retaliates_against_siam
+
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.25
+				any_enemy_country = {
+					is_major = yes
+				}
+			}
+			modifier = {
+				factor = 0.5
+				compare_autonomy_state < autonomy_dominion
+			}
+			modifier = {
+				factor = 0.5
+				SIA = {
+					has_added_tension_amount < 5
+				}
+			}
+			modifier = {
+				factor = 10
+				SIA = {
+					has_added_tension_amount > 6
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Siam 18 - Siam launches attack on Phnom Penh
+	id = holhis_siam.18
+	title = holhis_siam.18.t
+	desc = holhis_siam.18.d
+	
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	is_triggered_only = yes
+
+	option = {
+		name = holhis_siam.18.a
+	}
+}
+
+country_event = { #Siam 19 - Siam won - for Siam
+	id = holhis_siam.19
+	title = holhis_siam.19.t
+	desc = holhis_siam.19.d
+	
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	is_triggered_only = yes
+
+	option = {
+		name = holhis_siam.19.a
+		
+		transfer_state = 741
+
+		add_war_support = 0.05
+
+		army_experience = 10
+	}
+}
+
+country_event = { #Siam 20 - Siam won - for owner of Phnom Penh
+	id = holhis_siam.20
+	title = holhis_siam.20.t
+	desc = holhis_siam.20.d
+	
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	is_triggered_only = yes
+	
+	option = { #Ignore
+		name = holhis_siam.20.a
+				
+		army_experience = 10
+
+		add_political_power = 50
+		
+		add_opinion_modifier = {
+			target = SIA
+			modifier = embargo
+		}
+		
+		SIA = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = embargo
+			}
+		}
+		
+		set_global_flag = flag_france_ignores_siam
+
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	option = { #War!
+		name = holhis_siam.20.b
+		
+		army_experience = 10
+		add_state_claim = 741
+		add_war_support = 0.05
+		
+		if = {
+			limit = {
+				is_subject = no
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SIA
+			}
+			else = {
+				every_country = {
+					limit = {
+						has_subject = ROOT
+					}
+					create_wargoal = {
+						type = puppet_wargoal_focus
+						target = SIA
+					}
+				}
+			}
+		}
+		
+		add_opinion_modifier = {
+			target = SIA
+			modifier = embargo
+		}
+		
+		SIA = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = embargo
+			}
+		}
+		
+		set_global_flag = flag_france_retaliates_against_siam
+
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.25
+				any_enemy_country = {
+					is_major = yes
+				}
+			}
+			modifier = {
+				factor = 0.5
+				compare_autonomy_state < autonomy_dominion
+			}
+			modifier = {
+				factor = 0.5
+				SIA = {
+					has_added_tension_amount < 5
+				}
+			}
+			modifier = {
+				factor = 10
+				SIA = {
+					has_added_tension_amount > 6
+				}
+			}
+			modifier = {
+				factor = 0
+				original_tag = FRA
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}
+
+country_event = { #Siam 21 - Siam lost - for Siam
+	id = holhis_siam.21
+	title = holhis_siam.21.t
+	desc = holhis_siam.21.d
+	
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	is_triggered_only = yes
+
+	option = { #Ah well
+		name = holhis_siam.21.a
+
+		add_war_support = -0.05
+		add_stability = -0.05
+		army_experience = 10
+
+		if = {
+			limit = {
+				has_government = fascism
+			}
+			add_popularity = {
+				ideology = fascism 
+				popularity = -0.2
+			}
+		}
+		if = {
+			limit = {
+				has_government = neutrality
+			}
+			add_popularity = {
+				ideology = neutrality 
+				popularity = -0.2
+			}
+		}
+	}
+}
+
+country_event = { #Siam 22 - Siam lost - for owner of Phnom Penh
+	id = holhis_siam.22
+	title = holhis_siam.22.t
+	desc = holhis_siam.22.d
+	
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	is_triggered_only = yes
+	
+	option = { #Ignore
+		name = holhis_siam.22.a
+		
+		army_experience = 25
+		add_war_support = 0.05
+		add_stability = 0.075
+		
+		add_opinion_modifier = {
+			target = SIA
+			modifier = embargo
+		}
+		SIA = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = embargo
+			}
+		}
+		set_country_flag = FRA_won_thai_war
+		set_global_flag = flag_france_ignores_siam
+
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	option = { #War!
+		name = holhis_siam.22.b
+		
+		army_experience = 25
+		add_state_claim = 1042
+		add_state_claim = 1047
+		add_state_claim = 957
+		
+		if = {
+			limit = {
+				is_subject = no
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SIA
+			}
+			else = {
+				every_country = {
+					limit = {
+						has_subject = ROOT
+					}
+					create_wargoal = {
+						type = puppet_wargoal_focus
+						target = SIA
+					}
+				}
+			}
+		}
+		
+		add_opinion_modifier = {
+			target = SIA
+			modifier = embargo
+		}
+		
+		SIA = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = embargo
+			}
+		}
+		
+		set_country_flag = FRA_won_thai_war
+		set_global_flag = flag_france_retaliates_against_siam
+
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.25
+				any_enemy_country = {
+					is_major = yes
+				}
+			}
+			modifier = {
+				factor = 0.5
+				compare_autonomy_state < autonomy_dominion
+			}
+			modifier = {
+				factor = 0.5
+				SIA = {
+					has_added_tension_amount < 5
+				}
+			}
+			modifier = {
+				factor = 10
+				SIA = {
+					has_added_tension_amount > 6
+				}
+			}
+			modifier = {
+				factor = 0
+				original_tag = FRA
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}
+
+country_event = { #Siam 23 - Siam launches attack on Vientiane
+	id = holhis_siam.23
+	title = holhis_siam.23.t
+	desc = holhis_siam.23.d
+	
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	is_triggered_only = yes
+
+	option = {
+		name = holhis_siam.23.a
+	}
+}
+
+country_event = { #Siam 24 - Siam won - for Siam
+	id = holhis_siam.24
+	title = holhis_siam.24.t
+	desc = holhis_siam.24.d
+	
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	is_triggered_only = yes
+
+	option = {
+		name = holhis_siam.24.a
+		
+		transfer_state = 670
+
+		add_war_support = 0.05
+
+		army_experience = 15
+	}
+}
+
+country_event = { #Siam 25 - Siam won - for owner of Vientiane
+	id = holhis_siam.25
+	title = holhis_siam.25.t
+	desc = holhis_siam.25.d
+	
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	is_triggered_only = yes
+	
+	option = { #Ignore
+		name = holhis_siam.25.a
+				
+		army_experience = 10
+
+		add_political_power = 25
+		
+		add_opinion_modifier = {
+			target = SIA
+			modifier = embargo
+		}
+		
+		SIA = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = embargo
+			}
+		}
+		
+		set_global_flag = flag_france_ignores_siam
+
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	option = { #War!
+		name = holhis_siam.25.b
+		
+		army_experience = 25
+		add_state_claim = 670
+		add_state_claim = 1050
+		add_war_support = 0.05
+		
+		if = {
+			limit = {
+				is_subject = no
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SIA
+			}
+			else = {
+				every_country = {
+					limit = {
+						has_subject = ROOT
+					}
+					create_wargoal = {
+						type = puppet_wargoal_focus
+						target = SIA
+					}
+				}
+			}
+		}
+		
+		add_opinion_modifier = {
+			target = SIA
+			modifier = embargo
+		}
+		
+		SIA = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = embargo
+			}
+		}
+		
+		set_global_flag = flag_france_retaliates_against_siam
+
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.25
+				any_enemy_country = {
+					is_major = yes
+				}
+			}
+			modifier = {
+				factor = 0.5
+				compare_autonomy_state < autonomy_dominion
+			}
+			modifier = {
+				factor = 0.5
+				SIA = {
+					has_added_tension_amount < 5
+				}
+			}
+			modifier = {
+				factor = 10
+				SIA = {
+					has_added_tension_amount > 6
+				}
+			}
+			modifier = {
+				factor = 0
+				original_tag = FRA
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}
+
+country_event = { #Siam 26 - Siam lost - for Siam
+	id = holhis_siam.26
+	title = holhis_siam.26.t
+	desc = holhis_siam.26.d
+	
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	is_triggered_only = yes
+
+	option = { #Ah well
+		name = holhis_siam.26.a
+
+		add_war_support = -0.05
+		add_stability = -0.05
+		army_experience = 10
+
+		if = {
+			limit = {
+				has_government = fascism
+			}
+			add_popularity = {
+				ideology = fascism 
+				popularity = -0.2
+			}
+		}
+		if = {
+			limit = {
+				has_government = neutrality
+			}
+			add_popularity = {
+				ideology = neutrality 
+				popularity = -0.2
+			}
+		}
+	}
+}
+
+country_event = { #Siam 27 - Siam lost - for owner of Vientiane
+	id = holhis_siam.27
+	title = holhis_siam.27.t
+	desc = holhis_siam.27.d
+	
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	is_triggered_only = yes
+	
+	option = { #Ignore
+		name = holhis_siam.27.a
+				
+		army_experience = 25
+		add_war_support = 0.05
+		add_stability = 0.075
+		
+		add_opinion_modifier = {
+			target = SIA
+			modifier = embargo
+		}
+		SIA = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = embargo
+			}
+		}
+		set_country_flag = FRA_won_thai_war
+		set_global_flag = flag_france_ignores_siam
+
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	option = { #War!
+		name = holhis_siam.27.b
+		
+		army_experience = 25
+		add_state_claim = 1050
+		add_state_claim = 1041
+		
+		if = {
+			limit = {
+				is_subject = no
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SIA
+			}
+			else = {
+				every_country = {
+					limit = {
+						has_subject = ROOT
+					}
+					create_wargoal = {
+						type = puppet_wargoal_focus
+						target = SIA
+					}
+				}
+			}
+		}
+		
+		add_opinion_modifier = {
+			target = SIA
+			modifier = embargo
+		}
+		
+		SIA = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = embargo
+			}
+		}
+		
+		set_country_flag = FRA_won_thai_war
+		set_global_flag = flag_france_retaliates_against_siam
+
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.25
+				any_enemy_country = {
+					is_major = yes
+				}
+			}
+			modifier = {
+				factor = 0.5
+				compare_autonomy_state < autonomy_dominion
+			}
+			modifier = {
+				factor = 0.5
+				SIA = {
+					has_added_tension_amount < 5
+				}
+			}
+			modifier = {
+				factor = 10
+				SIA = {
+					has_added_tension_amount > 6
+				}
+			}
+			modifier = {
+				factor = 0
+				original_tag = FRA
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}
+
+country_event = { #Siam 28 - Siam launches attack on Tennaserim
+	id = holhis_siam.28
+	title = holhis_siam.28.t
+	desc = holhis_siam.28.d
+	
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	is_triggered_only = yes
+
+	option = {
+		name = holhis_siam.28.a
+	}
+}
+
+country_event = { #Siam 29 - Siam won - for Siam
+	id = holhis_siam.29
+	title = holhis_siam.29.t
+	desc = holhis_siam.29.d
+	
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	is_triggered_only = yes
+
+	option = {
+		name = holhis_siam.29.a
+		
+		transfer_state = 994
+
+		add_war_support = 0.05
+
+		army_experience = 10
+	}
+}
+
+country_event = { #Siam 30 - Siam won - for owner of Tennaserim
+	id = holhis_siam.30
+	title = holhis_siam.30.t
+	desc = holhis_siam.30.d
+	
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	is_triggered_only = yes
+	
+	option = { #Ignore
+		name = holhis_siam.30.a
+				
+		army_experience = 10
+
+		add_political_power = 25
+		
+		add_opinion_modifier = {
+			target = SIA
+			modifier = embargo
+		}
+		
+		SIA = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = embargo
+			}
+		}
+		
+		set_global_flag = flag_raj_ignores_siam
+
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	option = { #War!
+		name = holhis_siam.30.b
+		
+		army_experience = 25
+
+		add_war_support = 0.05
+		
+		if = {
+			limit = {
+				is_subject = no
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SIA
+			}
+			else = {
+				every_country = {
+					limit = {
+						has_subject = ROOT
+					}
+					create_wargoal = {
+						type = puppet_wargoal_focus
+						target = SIA
+					}
+				}
+			}
+		}
+
+		add_state_claim = 993
+		add_state_claim = 994
+		
+		add_opinion_modifier = {
+			target = SIA
+			modifier = embargo
+		}
+		
+		SIA = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = embargo
+			}
+		}
+		
+		set_global_flag = flag_raj_retaliates_against_siam
+
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.25
+				any_enemy_country = {
+					is_major = yes
+				}
+			}
+			modifier = {
+				factor = 0.5
+				SIA = {
+					has_added_tension_amount < 5
+				}
+			}
+			modifier = {
+				factor = 10
+				SIA = {
+					has_added_tension_amount > 6
+				}
+			}
+			modifier = {
+				factor = 2
+				compare_autonomy_state > autonomy_colony
+			}
+		}
+	}
+}
+
+country_event = { #Siam 31 - Siam lost - for Siam
+	id = holhis_siam.31
+	title = holhis_siam.31.t
+	desc = holhis_siam.31.d
+	
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	is_triggered_only = yes
+
+	option = { #Ah well
+		name = holhis_siam.31.a
+
+		add_war_support = -0.05
+		add_stability = -0.05
+		army_experience = 10
+
+		if = {
+			limit = {
+				has_government = fascism
+			}
+			add_popularity = {
+				ideology = fascism 
+				popularity = -0.2
+			}
+		}
+		if = {
+			limit = {
+				has_government = neutrality
+			}
+			add_popularity = {
+				ideology = neutrality 
+				popularity = -0.2
+			}
+		}
+	}
+}
+
+country_event = { #Siam 32 - Siam lost - for owner of Tennaserim
+	id = holhis_siam.32
+	title = holhis_siam.32.t
+	desc = holhis_siam.32.d
+	
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	is_triggered_only = yes
+	
+	option = { #Ignore
+		name = holhis_siam.32.a
+				
+		army_experience = 25
+		add_war_support = 0.05
+		add_stability = 0.075
+		
+		add_opinion_modifier = {
+			target = SIA
+			modifier = embargo
+		}
+		SIA = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = embargo
+			}
+		}
+		set_country_flag = RAJ_won_thai_war
+		set_global_flag = flag_raj_ignores_siam
+
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	option = { #War!
+		name = holhis_siam.32.b
+		
+		army_experience = 25
+
+		add_state_claim = 869
+		add_state_claim = 993
+		
+		if = {
+			limit = {
+				is_subject = no
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SIA
+			}
+			else = {
+				every_country = {
+					limit = {
+						has_subject = ROOT
+					}
+					create_wargoal = {
+						type = puppet_wargoal_focus
+						target = SIA
+					}
+				}
+			}
+		}
+		
+		add_opinion_modifier = {
+			target = SIA
+			modifier = embargo
+		}
+		
+		SIA = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = embargo
+			}
+		}
+		
+		set_country_flag = RAJ_won_thai_war
+		set_global_flag = flag_raj_retaliates_against_siam
+
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.25
+				any_enemy_country = {
+					is_major = yes
+				}
+			}
+			modifier = {
+				factor = 0.5
+				compare_autonomy_state < autonomy_dominion
+			}
+			modifier = {
+				factor = 0.5
+				SIA = {
+					has_added_tension_amount < 5
+				}
+			}
+			modifier = {
+				factor = 10
+				SIA = {
+					has_added_tension_amount > 6
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Siam 33 - Siam launches attack on Kelantan
+	id = holhis_siam.33
+	title = holhis_siam.33.t
+	desc = holhis_siam.33.d
+	
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	is_triggered_only = yes
+
+	option = {
+		name = holhis_siam.33.a
+	}
+}
+
+country_event = { #Siam 34 - Siam won - for Siam
+	id = holhis_siam.34
+	title = holhis_siam.34.t
+	desc = holhis_siam.34.d
+	
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	is_triggered_only = yes
+
+	option = {
+		name = holhis_siam.34.a
+		
+		transfer_state = 1035
+
+		add_war_support = 0.075
+		army_experience = 10
+	}
+}
+
+country_event = { #Siam 35 - Siam won - for owner of Kelantan
+	id = holhis_siam.35
+	title = holhis_siam.35.t
+	desc = holhis_siam.35.d
+	
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	is_triggered_only = yes
+	
+	option = { #Ignore
+		name = holhis_siam.35.a
+				
+		army_experience = 10
+
+		add_political_power = 25
+		
+		add_opinion_modifier = {
+			target = SIA
+			modifier = embargo
+		}
+		
+		SIA = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = embargo
+			}
+		}
+		
+		set_global_flag = flag_mal_ignores_siam
+
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	option = { #War!
+		name = holhis_siam.35.b
+		
+		army_experience = 25
+
+		add_war_support = 0.05
+		
+		if = {
+			limit = {
+				is_subject = no
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SIA
+			}
+			else = {
+				every_country = {
+					limit = {
+						has_subject = ROOT
+					}
+					create_wargoal = {
+						type = puppet_wargoal_focus
+						target = SIA
+					}
+				}
+			}
+		}
+
+		add_state_claim = 1035
+		add_state_claim = 1036
+		
+		add_opinion_modifier = {
+			target = SIA
+			modifier = embargo
+		}
+		
+		SIA = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = embargo
+			}
+		}
+		
+		set_global_flag = flag_mal_retaliates_against_siam
+
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.25
+				any_enemy_country = {
+					is_major = yes
+				}
+			}
+			modifier = {
+				factor = 2
+				compare_autonomy_state > autonomy_colony
+			}
+			modifier = {
+				factor = 0.5
+				SIA = {
+					has_added_tension_amount < 5
+				}
+			}
+			modifier = {
+				factor = 10
+				SIA = {
+					has_added_tension_amount > 6
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Siam 36 - Siam lost - for Siam
+	id = holhis_siam.36
+	title = holhis_siam.36.t
+	desc = holhis_siam.36.d
+	
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	is_triggered_only = yes
+
+	option = { #Ah well
+		name = holhis_siam.36.a
+
+		add_war_support = -0.05
+		add_stability = -0.05
+		army_experience = 10
+
+		if = {
+			limit = {
+				has_government = fascism
+			}
+			add_popularity = {
+				ideology = fascism 
+				popularity = -0.2
+			}
+		}
+		if = {
+			limit = {
+				has_government = neutrality
+			}
+			add_popularity = {
+				ideology = neutrality 
+				popularity = -0.2
+			}
+		}
+	}
+}
+
+country_event = { #Siam 37 - Siam lost - for owner of Kelantan
+	id = holhis_siam.37
+	title = holhis_siam.37.t
+	desc = holhis_siam.37.d
+	
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	is_triggered_only = yes
+	
+	option = { #Ignore
+		name = holhis_siam.37.a
+				
+		army_experience = 25
+		add_war_support = 0.05
+		add_stability = 0.075
+		
+		add_opinion_modifier = {
+			target = SIA
+			modifier = embargo
+		}
+		SIA = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = embargo
+			}
+		}
+		set_country_flag = MAL_won_thai_war
+		set_global_flag = flag_mal_ignores_siam
+
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	option = { #War!
+		name = holhis_siam.37.b
+		
+		army_experience = 15
+
+		add_state_claim = 724
+		add_state_claim = 1036
+		
+		if = {
+			limit = {
+				is_subject = no
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SIA
+			}
+			else = {
+				every_country = {
+					limit = {
+						has_subject = ROOT
+					}
+					create_wargoal = {
+						type = puppet_wargoal_focus
+						target = SIA
+					}
+				}
+			}
+		}
+		
+		add_opinion_modifier = {
+			target = SIA
+			modifier = embargo
+		}
+		
+		SIA = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = embargo
+			}
+		}
+		
+		set_country_flag = MAL_won_thai_war
+		set_global_flag = flag_mal_retaliates_against_siam
+
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.25
+				any_enemy_country = {
+					is_major = yes
+				}
+			}
+			modifier = {
+				factor = 0.5
+				compare_autonomy_state < autonomy_dominion
+			}
+			modifier = {
+				factor = 0.5
+				SIA = {
+					has_added_tension_amount < 5
+				}
+			}
+			modifier = {
+				factor = 10
+				SIA = {
+					has_added_tension_amount > 6
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Siam 38 - Siam ponders peace in exchange of Eastern Territories
+
+	id = holhis_siam.38
+	title = holhis_siam.38.t
+	desc = holhis_siam.38.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	trigger = {
+		tag = SIA
+		has_war = yes
+		any_enemy_country = {
+			owns_state = 286
+		}
+		surrender_progress > 0.25
+		has_civil_war = no
+		is_in_faction = no
+		NOT = { has_country_flag = SIA_surrender_east_flag }
+	}
+
+	mean_time_to_happen = { days = 14 }
+
+	fire_only_once = yes
+
+	#Surrender and offer territory
+	option = {
+		name = holhis_siam.38.a
+		ai_chance = {
+			base = 8
+		}
+		hidden_effect = {
+			random_other_country = {
+				limit = {
+					has_war_with = SIA
+					OR = {
+						owns_state = 670
+						owns_state = 741
+					}
+				}
+				save_event_target_as = SIA_eastern_enemy
+			}
+		}
+		event_target:SIA_eastern_enemy = {
+			country_event = { id = holhis_siam.39 hours = 2 }
+		}
+		custom_effect_tooltip = holhis_siam.38.a_tt
+		effect_tooltip = {
+			event_target:SIA_eastern_enemy = {
+				white_peace = {
+					tag = SIA
+				} 
+			}
+			### TRANSFER STATES
+			#BATTAMBANG
+			#UDON THANI, if this is the first attempt and Battambang hasn't conquered, cede Udon Thani
+			every_state = {
+				limit = {
+					is_claimed_by = event_target:SIA_eastern_enemy
+				}
+				event_target:SIA_eastern_enemy = {
+					transfer_state = PREV
+				}
+			}
+		}
+		set_country_flag = SIA_surrender_east_flag
+	}
+
+	#Never give up!
+	option = {
+		name = holhis_siam.38.b
+		ai_chance = {
+			base = 2
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}
+
+country_event = { #Siam 39 - The attacker wins - Accept concessions or not
+	id = holhis_siam.39
+	title = holhis_siam.39.t
+	desc = holhis_siam.39.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	is_triggered_only = yes
+
+	#Accept surrender
+	option = {
+		name = holhis_siam.39.a
+		ai_chance = {
+			base = 9
+		}
+		white_peace = SIA
+
+		### TRANSFER STATES ###
+		#BATTAMBANG
+		if = {
+			limit = {
+				FROM = { owns_state = 1042 }
+			}
+			transfer_state = 1042
+		}
+
+		#CHAMPASSAK
+		if = {
+			limit = {
+				FROM = { owns_state = 1047 }
+			}
+			transfer_state = 1047
+		}
+
+		#XAIGNABOULI
+		if = {
+			limit = {
+				FROM = { owns_state = 1050 }
+			}
+			transfer_state = 1050
+		}
+
+		#UDON THANI, cede this only if Thailand didn't own all above three
+		if = {
+			limit = {
+				FROM = {
+					AND = {
+						NOT = { owns_state = 1042 }
+						NOT = { owns_state = 1047 }
+						NOT = { owns_state = 1050 }
+					}
+					owns_state = 1041
+				}
+			}
+			transfer_state = 1041
+		}
+		add_political_power = 50
+	}
+
+	#Take it all
+	option = {
+		name = holhis_siam.39.b
+		ai_chance = {
+			base = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		SIA = { country_event = { id = holhis_siam.40 } }
+	}
+}
+
+country_event = { #Siam 40 - Our enemy wants to conquer us
+	id = holhis_siam.40
+	title = holhis_siam.40.t
+	desc = holhis_siam.40.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	is_triggered_only = yes
+
+	option = {
+		name = holhis_siam.40.a
+	}
+}
+
+country_event = { #Siam 41 - Siam ponders peace in exchange of Northern Territories
+	id = holhis_siam.41
+	title = holhis_siam.41.t
+	desc = holhis_siam.41.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	trigger = {
+		tag = SIA
+		has_war = yes
+		any_enemy_country = {
+			owns_state = 288
+		}
+		surrender_progress > 0.25
+		has_civil_war = no
+		is_in_faction = no
+		NOT = { has_country_flag = SIA_surrender_north_flag }
+	}
+
+	mean_time_to_happen = { days = 14 }
+
+	fire_only_once = yes
+
+	#Surrender and offer territory
+	option = {
+		name = holhis_siam.41.a
+		ai_chance = {
+			base = 8
+		}
+		hidden_effect = {
+			random_other_country = {
+				limit = {
+					has_war_with = SIA
+					owns_state = 288
+				}
+				save_event_target_as = SIA_northern_enemy
+			}
+		}
+		event_target:SIA_northern_enemy = {
+			country_event = { id = holhis_siam.42 hours = 2 }
+		}
+		custom_effect_tooltip = holhis_siam.41.a_tt
+		effect_tooltip = {
+			event_target:SIA_northern_enemy = {
+				white_peace = {
+					tag = SIA
+				} 
+			}
+			### TRANSFER STATES
+			#SHAN
+			#LANNA, if this is the first attempt and Battambang hasn't conquered, cede Udon Thani
+			every_state = {
+				limit = {
+					is_claimed_by = event_target:SIA_northern_enemy
+				}
+				event_target:SIA_northern_enemy = {
+					transfer_state = PREV
+				}
+			}
+		}
+		set_country_flag = SIA_surrender_east_flag
+	}
+
+	#Never give up!
+	option = {
+		name = holhis_siam.38.b
+		ai_chance = {
+			base = 2
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}
+
+country_event = { #Siam 42 - The attacker wins - Accept concessions or not
+	id = holhis_siam.42
+	title = holhis_siam.42.t
+	desc = holhis_siam.42.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	is_triggered_only = yes
+
+	#Accept surrender
+	option = {
+		name = holhis_siam.42.a
+		ai_chance = {
+			base = 9
+		}
+		white_peace = SIA
+
+		### TRANSFER STATES ###
+		#SHAN
+		if = {
+			limit = {
+				FROM = { owns_state = 993 }
+			}
+			transfer_state = 993
+		}
+
+		#LANNA, cede this only if Thailand didn't own all above three
+		if = {
+			limit = {
+				FROM = {
+					NOT = { owns_state = 993 }
+					owns_state = 869
+				}
+			}
+			transfer_state = 869
+		}
+		add_political_power = 50
+	}
+
+	#Take it all
+	option = {
+		name = holhis_siam.42.b
+		ai_chance = {
+			base = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}			
+		}
+		SIA = { country_event = { id = holhis_siam.40 } }
+	}
+}
+
+country_event = { #Siam 43 - Our enemy wants to conquer us
+	id = holhis_siam.43
+	title = holhis_siam.43.t
+	desc = holhis_siam.43.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	is_triggered_only = yes
+
+	option = {
+		name = holhis_siam.43.a
+	}
+}
+
+country_event = { #Siam 44 - Siam ponders peace in exchange of Southern Territories
+
+	id = holhis_siam.44
+	title = holhis_siam.44.t
+	desc = holhis_siam.44.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	trigger = {
+		tag = SIA
+		has_war = yes
+		any_enemy_country = {
+			owns_state = 1035
+		}
+		surrender_progress > 0.25
+		has_civil_war = no
+		is_in_faction = no
+		NOT = { has_country_flag = SIA_surrender_south_flag }
+	}
+
+	mean_time_to_happen = { days = 14 }
+
+	fire_only_once = yes
+
+	#Surrender and offer territory
+	option = {
+		name = holhis_siam.44.a
+		ai_chance = {
+			base = 8
+		}
+		hidden_effect = {
+			random_other_country = {
+				limit = {
+					has_war_with = SIA
+					owns_state = 1035
+				}
+				save_event_target_as = SIA_southern_enemy
+			}
+		}
+		event_target:SIA_southern_enemy = {
+			country_event = { id = holhis_siam.45 hours = 2 }
+		}
+		custom_effect_tooltip = holhis_siam.44.a_tt
+		effect_tooltip = {
+			random_other_country = {
+				limit = {
+					has_war_with = SIA
+					owns_state = 1035
+				}
+				save_event_target_as = SIA_southern_enemy
+			}
+			event_target:SIA_southern_enemy = {
+				white_peace = {
+					tag = SIA 
+					message = SIA_agree_peace 
+				}
+			}
+			### TRANSFER STATES
+			#KEDAH
+			#NORTHERN MALAYA, if this is the first attempt and Kedah hasn't conquered, cede Pattani
+			every_state = {
+				limit = {
+					is_claimed_by = event_target:SIA_southern_enemy
+				}
+				event_target:SIA_southern_enemy = {
+					transfer_state = PREV
+				}
+			}
+		}
+		set_country_flag = SIA_surrender_south_flag
+	}
+
+	#Never give up!
+	option = {
+		name = holhis_siam.44.b
+		ai_chance = {
+			base = 2
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}
+
+country_event = { #Siam 45 - The attacker wins - Accept concessions or not
+	id = holhis_siam.45
+	title = holhis_siam.45.t
+	desc = holhis_siam.45.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	is_triggered_only = yes
+
+	#Accept surrender
+	option = {
+		name = holhis_siam.45.a
+		ai_chance = {
+			base = 9
+		}
+		white_peace = SIA
+
+		### TRANSFER STATES ###
+		#KEDAH
+		if = {
+			limit = {
+				FROM = { owns_state = 1036 }
+			}
+			transfer_state = 1036
+		}
+
+		#KELANTAN
+		if = {
+			limit = {
+				FROM = { owns_state = 1035 }
+			}
+			transfer_state = 1035
+		}
+
+		#PATTANI, cede this only if Thailand didn't own all above two
+		if = {
+			limit = {
+				FROM = {
+					AND = {
+						NOT = { owns_state = 1036 }
+						NOT = { owns_state = 1035 }
+					}
+					owns_state = 724
+				}
+			}
+			transfer_state = 724
+		}
+		add_political_power = 50
+	}
+
+	#Take it all
+	option = {
+		name = holhis_siam.45.b
+		ai_chance = {
+			base = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}			
+		}
+		SIA = { country_event = { id = holhis_siam.46 } }
+	}
+}
+
+country_event = { #Siam 46 - Our enemy wants to conquer us
+	id = holhis_siam.46
+	title = holhis_siam.46.t
+	desc = holhis_siam.46.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	is_triggered_only = yes
+
+	option = {
+		name = holhis_siam.46.a
+	}
+}

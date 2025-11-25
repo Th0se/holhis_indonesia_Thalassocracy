@@ -1,0 +1,172 @@
+ideas = {
+	country = {
+
+		idea_SIA_army_of_siam = {
+			picture = MEX_politicised_army_2
+			allowed_civil_war = {
+				always = yes
+			}
+			allowed = {
+				original_tag = SIA
+				NOT = {
+					has_government = communism
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				supply_consumption_factor = -0.1
+				supply_node_range = 0.15
+			}
+		}
+
+		SIA_rama_viii = {
+			allowed = {
+				original_tag = SIA
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			picture = siam_ananda_mahidol
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+				NOT = {
+					any_other_country = {
+						original_tag = SIA
+						has_government = democratic 
+						NOT = {
+							tag = ROOT
+						}
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+			traits = { popular_figurehead2 }
+		}
+
+		SIA_rama_viii_king = {
+			
+			allowed = {
+				original_tag = SIA
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			picture = siam_ananda_mahidol_king
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+				NOT = {
+					any_other_country = {
+						original_tag = SIA
+						has_government = democratic 
+						NOT = {
+							tag = ROOT
+						}
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+			traits = { popular_figurehead }
+		}
+
+		ASEAN_agrarian_society_1 = {
+
+			picture = generic_agrarian_society
+
+			allowed = {
+				is_asean_state = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.15
+				conscription_factor = -0.3
+				industrial_capacity_factory	= -0.1
+				research_speed_factor = -0.15
+				monthly_population = -0.1
+				production_speed_buildings_factor = -0.1
+			}
+		}
+
+		ASEAN_agrarian_society_2 = {
+
+			picture = generic_agrarian_society
+
+			allowed = {
+				is_asean_state = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.1
+				conscription_factor = -0.25
+				industrial_capacity_factory	= -0.05
+				research_speed_factor = -0.1
+				monthly_population = -0.05
+				production_speed_buildings_factor = -0.05
+			}
+		}
+
+		ASEAN_agrarian_society_3 = {
+
+			picture = LIT_invested_in_farms
+
+			allowed = {
+				is_asean_state = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				conscription_factor = -0.15
+				research_speed_factor = -0.05
+			}
+		}
+
+		ASEAN_agrarian_society_4 = {
+
+			picture = LIT_invested_in_farms
+
+			allowed = {
+				is_asean_state = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription_factor = -0.05
+			}
+		}
+	}
+}

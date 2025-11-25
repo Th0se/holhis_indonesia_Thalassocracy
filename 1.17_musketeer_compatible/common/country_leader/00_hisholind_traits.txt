@@ -1,0 +1,826 @@
+leader_traits = {
+
+	#################################################
+	# Dutch East Indies/Indonesian character traits #
+	#################################################
+
+	strongman_indies = { #Governor General Bonifacius Cornelis de Jonge
+		random = no
+
+		political_power_factor = 0.05
+		democratic_drift = -0.01
+		communism_drift = -0.02
+		communism_acceptance = -50
+	}
+
+	binnenlands_bestuurder = { #AWL Tjarda, BB means Domestic Administrator
+		random = no
+		sprite = 13
+
+		war_support_factor = -0.05
+		political_power_factor = 0.05
+		stability_factor = 0.1
+	}
+
+	skilled_negotiator = { #HJ van Mook
+		random = no
+		sprite = 13
+
+		autonomy_gain = 0.5
+		trade_opinion_factor = 0.25
+		political_advisor_cost_factor = -0.1
+	}
+
+	sultan_of_yogyakarta_8 = { #Hamengkubuwono VIII
+		random = no
+		sprite = 13
+
+		stability_factor = 0.05
+		global_building_slots_factor = 0.05
+	}
+
+	sultan_of_yogyakarta_9 = { #Hamengkubuwono IX
+		random = no
+		sprite = 13
+
+		political_power_factor = 0.05
+		global_building_slots_factor = 0.1
+	}
+
+	independent_journalist = { #SK Trimurti
+		random = no
+		sprite = 13
+
+		autonomy_gain = 0.5
+		fascism_drift = -0.05
+	}
+
+	nasakomist_1 = { #pro-fash
+		sprite = 13
+		random = no
+
+		fascism_drift = 0.1
+		communism_drift = 0.1
+		democratic_drift = 0.1
+		party_popularity_stability_factor = 0.1
+		max_command_power = 20
+	}
+
+	nasakomist_2 = { #antifa
+		sprite = 13
+		random = no
+
+		neutrality_drift = 0.1
+		communism_drift = 0.1
+		democratic_drift = 0.1
+		party_popularity_stability_factor = 0.1
+		max_command_power = 20
+	}
+
+	poetra_sang_fadjar = { #resistance leader Soekarno
+		sprite = 13
+		random = no
+
+		surrender_limit = 0.15
+		out_of_supply_factor = -0.06
+		army_core_attack_factor = 0.15
+		army_core_defence_factor = 0.15
+		max_command_power = 30
+	}
+
+	overzealous_idealist = { #President Soekarno
+		sprite = 13
+		random = no
+
+		political_power_factor = 0.125
+		stability_weekly = -0.001
+		max_command_power = 20
+	}
+
+	vice_president_hatta = { #Mohammad Hatta
+		sprite = 13
+		random = no
+		
+		stability_weekly = 0.0125
+		democratic_drift = 0.1
+		production_factory_max_efficiency_factor = 0.05
+
+	}
+
+	vice_president_sjahrir = { #Sutan Syahrir
+		sprite = 13
+		random = no
+		
+		stability_weekly = 0.0125
+		fascism_drift = -0.1
+		democratic_acceptance = 40
+	}
+
+	trained_commando = { #Westerling
+		sprite = 13
+		random = no
+		
+		special_forces_cap = 0.3
+		special_forces_attack_factor = 0.1
+	    special_forces_defence_factor = 0.1
+	}
+
+	knil_veteran = { #Becking
+		sprite = 13
+		random = no
+
+		max_command_power = 20
+		war_support_factor = 0.05
+		army_morale_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	indonesian_expertise = { #Van Der Plas
+		sprite = 13
+		random = no
+
+		resistance_growth_on_our_occupied_states = 0.25
+		compliance_growth_on_our_occupied_states = -0.1
+		operative_slot = 1
+		intel_network_gain_factor = 0.1
+		agency_upgrade_time = -0.1
+		navy_intel_factor = 0.1
+	}
+
+	indonesian_expertise_no_lar = { #Van Der Plas
+		sprite = 13
+		random = no
+
+		resistance_growth_on_our_occupied_states = 0.25
+		compliance_growth_on_our_occupied_states = -0.1
+		decryption_factor = 0.1
+		encryption_factor = 0.1
+	}
+
+	indologist = { #Abdulkadir Wijoyoatmojo
+		sprite = 13
+		random = no
+
+		exiled_government_weekly_manpower = 500
+		legitimacy_gain_factor = 0.2
+		foreign_subversive_activites = -0.2
+	}
+
+	balinese_noble = { #Tjokorda Gde Raka Soekawati
+		sprite = 13
+		random = no
+
+		compliance_growth = 0.05
+		drift_defence_factor = 0.05
+		political_power_gain = -0.05
+	}
+
+	java_bode_rightwing = { #Henri Carel Zentgraaff
+		sprite = 13
+		random = no
+
+		drift_defence_factor = 0.05
+		party_popularity_stability_factor = 0.1
+		neutrality_drift = 0.07
+		fascism_drift = 0.03
+	}
+
+	hou_zee_editor = { #Henri Carel Zentgraaff fascist
+		sprite = 13
+		random = no
+
+		drift_defence_factor = 0.05
+		party_popularity_stability_factor = 0.1
+		neutrality_drift = 0.02
+		fascism_drift = 0.08
+	}
+
+	minahasan_autonomist = { #GSSJ Ratulangi
+		sprite = 13
+		random = no
+
+		autonomy_gain = 0.1
+		political_power_gain = -0.05
+		consumer_goods_factor = -0.07
+	}
+
+	pasundan_representative = { #Oto Iskandar di Nata
+		sprite = 13
+		random = no
+
+		autonomy_gain = 0.1
+		neutrality_drift = 0.02
+		democratic_drift = 0.03
+		drift_defence_factor = 0.05
+	}
+
+	moluccan_representative = { #Johannes Latuharhary
+		sprite = 13
+		random = no
+
+		autonomy_gain = 0.1
+		neutrality_drift = 0.01
+		democratic_drift = 0.04
+		drift_defence_factor = 0.05
+	}
+
+	javanese_bestuurder = { #Soetardjo
+		sprite = 13
+		random = no
+
+		political_power_gain = -0.05
+		neutrality_drift = 0.05
+		production_factory_start_efficiency_factor = 0.05
+	}
+
+	the_man_from_gianjar = { #Ida Anak Agoeng
+		sprite = 13
+		random = no
+
+		political_power_gain = -0.05
+		neutrality_drift = 0.05
+		improve_relations_maintain_cost_factor = -0.25
+		trade_opinion_factor = 0.075
+	}
+
+	coi_hart = { #Director of Economic Affairs - GHC Hart (weakened version)
+		sprite = 10
+		random = no
+
+		production_speed_industrial_complex_factor = 0.08
+		production_speed_infrastructure_factor = 0.08
+		production_speed_rail_way_factor = 0.08
+		production_speed_synthetic_refinery_factor = 0.08
+	}
+
+	coi_mook = { #Director of Economic Affairs - Van Mook (Stuwgroep)
+		sprite = 10
+		random = no
+
+		autonomy_gain = 0.4
+		political_power_factor = -0.05
+		production_speed_industrial_complex_factor = 0.1
+		production_speed_infrastructure_factor = 0.1
+		production_speed_rail_way_factor = 0.1
+	}
+
+	coi_verboom = { #Director of Economic Affairs - Jan Verboom (Vaderlandsche Club)
+		sprite = 10
+		random = no
+
+		autonomy_gain = -0.1
+		political_power_factor = 0.05
+		stability_factor = 0.05
+		production_speed_industrial_complex_factor = 0.1
+		production_speed_infrastructure_factor = 0.1
+		production_speed_rail_way_factor = 0.1
+	}
+
+	conservative_amongst_radicals = { #Leader Soetomo
+		random = no
+		
+		drift_defence_factor = 0.1
+		stability_factor = 0.05
+		democratic_drift = 0.08
+		neutrality_drift = 0.02
+		political_power_factor = 0.05
+	}
+
+	conservative_amongst_radicals_f = { #Leader Fascist Soetomo
+		random = no
+		sprite = 13
+		
+		drift_defence_factor = -0.05
+		stability_factor = 0.05
+		fascism_drift = 0.08
+		neutrality_drift = 0.02
+		political_power_factor = 0.05
+	}
+
+	parindra_leader = { #Advisor Soetomo
+		sprite = 13
+		random = no
+
+		autonomy_gain = 0.5
+		democratic_drift = 0.07
+		neutrality_drift = 0.03
+		drift_defence_factor = 0.05
+		political_power_cost = 0.05
+	}
+
+	volksraad_thamrin = { #Mohammad Husni Thamrin
+		sprite = 13
+		random = no
+
+		autonomy_gain = 0.3
+		democratic_drift = 0.08
+		neutrality_drift = 0.02
+	}
+
+	volksraad_hoog = { #Frederick de Hoog
+		sprite = 13
+		random = no
+
+		autonomy_gain = 0.1
+		neutrality_drift = 0.08
+		democratic_drift = 0.02
+	}
+
+	volksraad_blaauw = { #Paul Alex Blaauw
+		sprite = 13
+		random = no
+
+		autonomy_gain = 0.1
+		neutrality_drift = 0.07
+		democratic_drift = 0.03
+	}
+
+	volksraad_chinese = { #Hok Hoei Kan
+		sprite = 13
+		random = no
+
+		autonomy_gain = 0.2
+		democratic_drift = 0.05
+		neutrality_drift = 0.05
+	}
+
+	colonial_reformer = { #Ranneft stays
+		random = no
+		sprite = 13
+
+		political_power_cost = -0.15
+		stability_weekly = 0.005
+	}
+
+	colonial_reformer2 = { #Visman regular
+		random = no
+		sprite = 13
+
+		political_power_cost = -0.1
+		stability_weekly = 0.003
+	}
+
+	raad_indie_ranneft = { #VP-Indie Meyer Ranneft
+		sprite = 13
+		random = no
+
+		stability_factor = 0.05
+		autonomy_gain = 0.1
+		democratic_drift = 0.05
+		neutrality_drift = 0.05
+	}
+
+	raad_indie_bussche = { #VP-Indie Cornelis Bussche
+		sprite = 13
+		random = no
+
+		stability_factor = 0.05
+		autonomy_gain = 0.1
+		democratic_drift = 0.02
+		neutrality_drift = 0.08
+	}
+
+	raad_indie_spit = { #VP-Indie Henricus Spit
+		sprite = 13
+		random = no
+
+		war_support_factor = 0.05
+		democratic_drift = 0.02
+		neutrality_drift = 0.08
+		autonomy_gain = 0.1
+	}
+
+	raad_indie_jonkman = { #VP-Indie Jan Jonkman
+		sprite = 13
+		random = no
+
+		autonomy_gain = 0.2
+		democratic_drift = 0.06
+		neutrality_drift = 0.04
+	}
+
+	raad_indie_mook = { #VP-Indie Van Mook
+		sprite = 13
+		random = no
+
+		autonomy_gain = 0.3
+		democratic_drift = 0.08
+		neutrality_drift = 0.02
+	}
+
+	raad_indie_visman = { #VP-Indie Visman
+		sprite = 13
+		random = no
+
+		autonomy_gain = 0.2
+		democratic_drift = 0.04
+		neutrality_drift = 0.06
+	}
+
+	red_armament = { #Amir Sjarifoeddin Harahap
+		sprite = 10
+		random = no
+
+		production_speed_arms_factory_factor = 0.08
+		production_speed_dockyard_factor = 0.08
+		production_speed_fuel_silo_factor = 0.08
+		communism_drift = 0.06
+	}
+
+	lieutenant_govgen_van_mook = {
+		sprite = 13
+		random = no
+
+		autonomy_gain = 0.5
+		conscription_factor = 0.2
+		political_power_factor = 0.05
+		stability_factor = -0.05
+	}
+
+	doubtful_loyalty = { #Van Mook exiled Govgen
+		random = no
+		
+		autonomy_gain = 0.5
+		legitimacy_gain_factor = -0.5
+		political_power_gain = -0.1
+	}
+
+	questionable_loyalty = { #Van Mook exiled Govgen -> Approach Americans
+		random = no
+		
+		autonomy_gain = 0.25
+		legitimacy_gain_factor = -0.25
+		political_power_gain = -0.05
+	}
+
+	indies_nationalist = { #Ernest Douwes Dekker
+		sprite = 13
+		random = no
+		
+		political_power_gain = -0.05
+		stability_factor = -0.05
+		autonomy_gain = 0.2
+		compliance_gain = 0.05
+	}
+
+	indies_nationalist_leader = { #President Douwes Dekker
+		random = no
+		
+		political_power_gain = -0.05
+		stability_factor = 0.05
+		compliance_gain = 0.05
+
+	}
+
+	tamansiswa_educationer = { #Ki Hadjar Dewantara
+		sprite = 13
+		random = no
+
+		political_power_gain = -0.05
+		research_speed_factor = 0.075
+		autonomy_gain = 0.2
+	}
+
+	progressive_doctor = { #Tjipto Mangoenkoesoemo
+		sprite = 13
+		random = no
+
+		political_power_gain = -0.05
+		monthly_population = 0.08
+		democratic_drift = 0.02
+	}
+
+	former_railroad_union_leader = { #Semaoen
+		random = no
+		sprite = 10
+
+		communism_drift = 0.08
+		consumer_goods_factor = -0.04
+		production_speed_rail_way_factor = 0.08
+		production_speed_supply_node_factor = 0.08
+	}
+
+	shadow_of_tjokroaminoto = { #Democratic Abikoesno
+		sprite = 13
+		random = no
+
+		democratic_drift = 0.08
+		neutrality_drift = 0.02
+		stability_factor = 0.1
+		resistance_growth_on_our_occupied_states = 0.1
+	}
+
+	shadow_of_tjokroaminoto_n = { #Nonaligned Abikoesno
+		sprite = 13
+		random = no
+
+		democratic_drift = 0.02
+		neutrality_drift = 0.08
+		stability_factor = 0.1
+		resistance_growth_on_our_occupied_states = 0.1
+	}
+
+	shadow_of_tjokroaminoto_f = { #Fascist Abikoesno
+		sprite = 13
+		random = no
+
+		neutrality_drift = 0.02
+		fascism_drift = 0.08
+		stability_factor = 0.1
+		resistance_growth_on_our_occupied_states = 0.1
+	}
+
+	psii_leader = { #Advisor Abikoesno
+		sprite = 13
+		random = no
+
+		autonomy_gain = 0.4
+		democratic_drift = 0.08
+		neutrality_drift = 0.02
+		political_power_cost = 0.05
+		stability_factor = 0.05
+		resistance_growth_on_our_occupied_states = 0.05
+	}
+
+	defender_of_islamic_workers = { #Soekiman
+		random = no
+		sprite = 10
+
+		consumer_goods_expected_value = 0.05
+		line_change_production_efficiency_factor = 0.05
+		resistance_growth_on_our_occupied_states = 0.05
+	}
+
+	islamist_scholar = { #Kartosoewirjo
+		random = no
+		sprite = 13
+		
+		political_power_factor = 0.1
+		fascism_drift = 0.05
+		conscription_factor = 0.05
+		war_support_factor = 0.05
+	}
+
+	de_stuwgroep_trait = { #Mook, Jonkman, and Van Der Plas
+		random = no
+
+		political_power_factor = -0.1
+		autonomy_gain = 0.2
+		production_speed_industrial_complex_factor = 0.06
+		production_speed_infrastructure_factor = 0.06
+		improve_relations_maintain_cost_factor = -0.25
+		drift_defence_factor = 0.1
+		resistance_growth_on_our_occupied_states = 0.15
+		compliance_growth_on_our_occupied_states = -0.06
+		political_advisor_cost_factor = -0.05
+	}
+
+	indische_partij_trait = {
+		random = no
+
+		political_power_factor = -0.1
+		stability_factor = -0.03
+		research_speed_factor = 0.05
+		monthly_population = 0.05
+		compliance_gain = 0.03
+		autonomy_gain = 0.2
+		democratic_drift = 0.01
+	}
+
+	pni_group_trait = { #Soekarno, Hatta, and Sjahrir
+		random = no
+
+		autonomy_gain = 0.5
+		max_command_power = 15
+		trade_laws_cost_factor = -0.2
+		economy_cost_factor = -0.2
+		consumer_goods_expected_value = -0.05
+	}
+
+	psii_group_trait = { #Abikoesno, Salim, and Soekiman
+		random = no
+
+		autonomy_gain = 0.3
+		democratic_drift = 0.08
+		neutrality_drift = 0.02
+		political_power_factor = -0.1
+		stability_factor = 0.05
+		improve_relations_maintain_cost_factor = -0.33
+		trade_opinion_factor = 0.33
+		consumer_goods_expected_value = 0.03
+		line_change_production_efficiency_factor = 0.03
+		resistance_growth_on_our_occupied_states = 0.1
+	}
+
+	gapi_trait = { #Thamrin, Abikoesno, and Amir
+		random = no
+
+		autonomy_gain = 0.8
+		political_power_factor = -0.1
+		stability_factor = 0.05
+		communism_drift = 0.03
+		democratic_drift = 0.1
+		neutrality_drift = 0.02
+		production_speed_arms_factory_factor = 0.05
+		production_speed_dockyard_factor = 0.05
+		production_speed_fuel_silo_factor = 0.05
+	}
+
+	##########################
+	# Other character traits #
+	##########################
+
+	raj_of_sarawak = { #Charles Vyner Brooke
+		sprite = 13
+		random = no
+
+		autonomy_gain = 0.2
+		neutrality_drift = 0.07
+		democratic_drift = 0.03
+	}
+
+	negeri_sembilan_monarch = { #Tuanku Abdul Rahman
+		sprite = 13
+		random = no
+
+		autonomy_gain = 0.5
+		neutrality_drift = 0.04
+		democratic_drift = 0.06
+		political_power_factor = -0.05
+	}
+
+	marshal_of_thailand = { #Plaek Phibunsongkhram
+		sprite = 18
+		random = no
+
+		fascism_drift = 0.06
+		neutrality_drift = 0.04
+		political_power_factor = -0.05
+		ai_focus_aggressive_factor = 0.1
+		justify_war_goal_time = -0.05
+	}
+
+	secular_nationalist = { #Jawaharlal Nehru
+		sprite = 12
+		random = no
+
+		war_support_factor = -0.05
+		research_speed_factor = 0.05
+		stability_factor = 0.05
+		democratic_drift = 0.01
+	}
+
+	staunch_integralist = { #Vallabhbhai Patel
+		sprite = 13
+
+		non_core_manpower = 0.02
+		compliance_gain = 0.05
+		political_power_factor = -0.05
+	}
+
+	regional_autonomist = {
+		sprite = 13
+
+		political_power_factor = -0.05
+		global_building_slots_factor = 0.1
+	}
+
+	reactionary_professor = { #Frederik Gerretson
+		sprite = 13
+
+		subjects_autonomy_gain = -0.1
+		neutrality_drift = 0.05
+		fascism_drift = 0.05
+		political_power_factor = 0.15
+	}
+
+	justice_official = {
+		sprite = 13
+		random = no
+
+		political_power_factor = 0.05
+		improve_relations_maintain_cost_factor = -0.4
+		resistance_decay = 0.025
+	}
+
+	socialist_democrat = {
+		sprite = 13
+
+		communism_drift = 0.06
+		democratic_drift = 0.04
+		stability_factor = 0.05
+		political_power_factor = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	dislikes_japan = {
+		random = no
+
+		ai_strategy = {
+			type = antagonize
+			id = "JAP"
+			value = 200
+		}
+	}
+
+	cautious_japan = {
+		random = no
+		
+		ai_strategy = {
+			type = alliance
+			id = "JAP"
+			value = -200
+		}
+	}
+
+	dislikes_stalin = {
+		random = no
+
+		ai_strategy = {
+			type = antagonize
+			id = "SOS"
+			value = 200
+		}
+	}
+
+	agricultural_modernizer = {
+		sprite = 10
+
+		global_building_slots_factor = 0.1
+	}
+
+	german_planter = { #Hewel
+		sprite = 10
+		random = no
+
+		fascism_acceptance = 65
+		fascism_drift = 0.07
+		neutrality_drift = 0.03
+		consumer_goods_expected_value = -0.05
+		supply_consumption_factor = -0.02
+	}
+
+	italophile = {
+		random = no
+
+		ai_strategy = {
+			type = alliance
+			id = "ITA"
+			value = 200
+		}
+	}
+
+	GER_diplomat = {
+		sprite = 13
+
+		improve_relations_maintain_cost_factor = -0.2
+		opinion_gain_monthly_factor = 0.1
+		trade_opinion_factor = 0.1
+	}
+
+	propaganda_novice = {
+		sprite = 13
+
+		improve_relations_maintain_cost_factor = -0.33
+		war_support_factor = 0.05
+	}
+
+	aircraft_architect = {
+		random = no
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		equipment_bonus = {
+			small_plane_airframe = {
+				reliability = -0.1 build_cost_ic = -0.15
+			}
+			cv_small_plane_airframe = {
+				reliability = -0.1 build_cost_ic = -0.15
+			}
+		}
+	}
+
+	minister_public_works = {
+		sprite = 13
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		production_speed_infrastructure_factor = 0.1
+		production_speed_rail_way_factor = 0.1
+		land_reinforce_rate = 0.01
+	}
+
+	#################
+	# End of addons #
+	#################
+}

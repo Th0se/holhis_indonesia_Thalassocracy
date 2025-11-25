@@ -1,0 +1,32 @@
+﻿capital = 983 #Sulu
+
+set_research_slots = 2
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	basic_destroyer = 1
+	transport = 1
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1934.4.26"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 10
+	fascism = 10
+	communism = 30
+	neutrality = 50
+}
+
+set_convoys = 30
+set_stability = 0.46
+set_war_support = 0.35
+
+add_ideas = {
+	ASEAN_agrarian_society_2
+}

@@ -1,0 +1,61 @@
+#########################################################################
+# OPINION MODIFIERS
+##########################################################################
+# value
+# min_trust
+# max_trust
+# decay
+# months/years/days = timer
+# trade = yes/no
+
+opinion_modifiers = {
+	
+	INS_foreign_policies = {
+		value = -30
+	}
+
+	INS_hate_japan = {
+		value = -100
+	}
+
+	INS_hate_japan_trade = {
+		trade = yes
+		value = -100
+	}
+
+	INS_trade_eng = {
+		trade = yes
+		value = 50
+		days = 90
+	}
+
+	INS_trade_usa = {
+		trade = yes
+		value = 50
+		days = 90
+	}
+
+	INS_trade_jap = {
+		trade = yes
+		value = 50
+		days = 90
+	}
+
+	INS_trade_jap_long = {
+		trade = yes
+		value = 100
+	}
+
+	INS_trade_hol_long = {
+		trade = yes
+		value = 200
+	}
+
+	INS_cutting_ties = {
+		value = -75
+	}
+
+	INS_STATUE_MODIFIER = {
+		value = -75
+	}
+}	

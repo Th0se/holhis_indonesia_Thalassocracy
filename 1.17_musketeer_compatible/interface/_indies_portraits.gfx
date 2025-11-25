@@ -1,0 +1,16 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_Southeast_Asia_Generic_land_1"
+		texturefile = "gfx/leaders/Indies/portrait_indies_generic_1.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Southeast_Asia_Generic_land_1_small"
+		texturefile = "gfx/interface/ideas/idea_indies_generic_1.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Southeast_Asia_Generic_navy_1"
+		texturefile = "gfx/leaders/Indies/portrait_indies_generic_navy_1.dds"
+	}
+			
+}

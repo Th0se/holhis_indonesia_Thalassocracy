@@ -1,0 +1,1115 @@
+focus_tree = {
+	id = japanese_indonesian_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = INJ
+		}
+	}
+	
+	default = no
+
+	initial_show_position = {
+		focus = INJ_new_dawn
+	}
+
+	continuous_focus_position = { x = 55 y = 1000 }
+
+
+#	modifier = {
+#		factor = 0
+#		is_historical_focus_on = yes
+#		date < 1939.1.1
+#	}
+
+#	focus = {
+#		id = INJ_
+#		icon = GFX_
+#		prerequisite = { focus = INS_ }
+#		mutually_exclusive = { focus = INS_ }
+#		
+#		relative_position_id = INS_
+#		x = 
+#		y =
+#
+#		cost = 10
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#
+#		available = {
+#
+#		}
+#		
+#		bypass = {
+#
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
+#
+#		complete_tooltip = {
+#
+#		}
+#
+#		completion_reward = {
+#
+#		}
+#	}
+
+	focus = {
+		id = INJ_new_dawn
+		icon = GFX_focus_jap_manchurian_project
+
+		cost = 5
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.075
+		}
+	}
+
+	focus = {
+		id = INJ_ban_nationalism
+		icon = GFX_focus_INS_crush_nationalism
+		prerequisite = { focus = INJ_new_dawn }
+		mutually_exclusive = { focus = INJ_allow_nationalism }
+
+		relative_position_id = INJ_new_dawn
+		x = -1
+		y = 1
+
+		cost = 5
+
+		available = {
+		}
+
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.075
+		}
+	}
+
+	focus = {
+		id = INJ_allow_nationalism
+		icon = GFX_focus_indonesia_stands
+		prerequisite = { focus = INJ_new_dawn }
+		mutually_exclusive = { focus = INJ_ban_nationalism }
+
+		relative_position_id = INJ_new_dawn
+		x = 1
+		y = 1
+
+		cost = 5
+
+		available = {
+		}
+
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.075
+		}
+	}
+
+	focus = {
+		id = INJ_binnenland_bestuur
+		icon = GFX_hol_political_effort
+		prerequisite = { focus = INJ_ban_nationalism focus = INJ_allow_nationalism }
+		mutually_exclusive = { focus = INJ_indonesian_intellectuals }
+
+		relative_position_id = INJ_new_dawn
+		x = -1
+		y = 2
+
+		cost = 10
+
+		available = {
+		}
+
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = INJ_indonesian_intellectuals
+		icon = GFX_focus_generic_befriend_indonesia
+		prerequisite = { focus = INJ_ban_nationalism focus = INJ_allow_nationalism }
+		mutually_exclusive = { focus = INJ_binnenland_bestuur }
+
+		relative_position_id = INJ_new_dawn
+		x = 1
+		y = 2
+
+		cost = 10
+
+		available = {
+		}
+
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = INJ_promote_shintoism
+		icon = GFX_focus_jap_spiritual_mobilization
+		mutually_exclusive = { focus = INJ_utilize_islamists }
+		prerequisite = { focus = INJ_indonesian_intellectuals focus = INJ_binnenland_bestuur }
+
+		relative_position_id = INJ_binnenland_bestuur
+		x = 0
+		y = 1
+
+		cost = 5
+
+		available = {
+		}
+
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_ideas = INS_state_sponsored_shintoism
+		}
+	}
+
+	focus = {
+		id = INJ_utilize_islamists
+		icon = GFX_focus_TUR_loosen_the_laws_on_secularism
+		mutually_exclusive = { focus = INJ_promote_shintoism }
+		prerequisite = { focus = INJ_indonesian_intellectuals focus = INJ_binnenland_bestuur }
+
+		relative_position_id = INJ_indonesian_intellectuals
+		x = 0
+		y = 1
+
+		cost = 5
+
+		available = {
+		}
+
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = INJ_tenno_heika_banzai
+		icon = GFX_focus_jap_pacific_guardian
+		mutually_exclusive = { focus = INJ_assert_our_rights }
+
+		relative_position_id = INJ_new_dawn
+		x = -1
+		y = 5
+
+		cost = 10
+
+		available = {
+		}
+
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = INJ_commit_hakko_ichiu
+		icon = GFX_focus_jap_manchurian_project
+		prerequisite = { focus = INJ_tenno_heika_banzai }
+
+		relative_position_id = INJ_tenno_heika_banzai
+		x = -1
+		y = 1
+
+		cost = 10
+
+		available = {
+		}
+		
+
+		bypass = {
+
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = INS_asian_liberation
+		}
+	}
+
+	focus = {
+		id = INJ_asrama_indonesia_merdeka
+		icon = GFX_focus_HOL_freedom
+		prerequisite = { focus = INJ_tenno_heika_banzai focus = INJ_assert_our_rights }
+
+		relative_position_id = INJ_tenno_heika_banzai
+		x = 1
+		y = 1
+
+		cost = 5
+
+		available = {
+		}
+
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = INJ_preparatory_commitee
+		icon = GFX_focus_HOL_freedom
+		prerequisite = { focus = INJ_asrama_indonesia_merdeka }
+
+		relative_position_id = INJ_asrama_indonesia_merdeka
+		x = 0
+		y = 1
+
+		cost = 5
+
+		available = {
+		}
+
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = INJ_assert_our_rights
+		icon = GFX_focus_HOL_freedom
+		mutually_exclusive = { focus = INJ_tenno_heika_banzai }
+
+		relative_position_id = INJ_new_dawn
+		x = 1
+		y = 5
+
+		cost = 10
+
+		available = {
+		}
+
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = INJ_rebuild_industry
+		icon = GFX_goal_generic_production2
+
+		relative_position_id = INJ_new_dawn
+		x = 8
+		y = 0
+
+		cost = 5
+
+		available = {
+		}
+
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.075
+		}
+	}
+
+	focus = {
+		id = INJ_invite_zaibatsus
+		icon = GFX_focus_jap_zaibatsu
+		prerequisite = { focus = INJ_rebuild_industry }
+
+		relative_position_id = INJ_rebuild_industry
+		x = 0
+		y = 1
+
+		cost = 5
+
+		available = {
+		}
+
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.075
+		}
+	}
+
+	focus = {
+		id = INJ_extraction_focus
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = INJ_invite_zaibatsus }
+		mutually_exclusive = { focus = INJ_welfare_focus }
+
+		relative_position_id = INJ_invite_zaibatsus
+		x = -1
+		y = 1
+
+		cost = 5
+
+		available = {
+			has_tech = excavation2
+		}
+
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.075
+		}
+	}
+
+	focus = {
+		id = INJ_oil_fields
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = INJ_extraction_focus }
+		
+		relative_position_id = INJ_extraction_focus
+		x = -2
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
+		}
+
+		available = {
+			has_full_control_of_state = 334
+			has_full_control_of_state = 672
+		}
+		
+
+		bypass = {
+
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = INS_bpm_shell
+		}
+	}
+
+	focus = {
+		id = INJ_mining_companies
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = INJ_extraction_focus }
+		
+		relative_position_id = INJ_extraction_focus
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
+		}
+
+		available = {
+			has_tech = excavation1
+		}
+		
+
+		bypass = {
+
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = INS_mining_companies
+		}
+	}
+
+	focus = {
+		id = INJ_welfare_focus
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = INJ_invite_zaibatsus }
+		mutually_exclusive = { focus = INJ_extraction_focus }
+
+		relative_position_id = INJ_invite_zaibatsus
+		x = 1
+		y = 1
+
+		cost = 5
+
+		available = {
+		}
+
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.075
+		}
+	}
+
+	focus = {
+		id = INJ_rebuild_schools
+		icon = GFX_hol_comresearch
+		prerequisite = { focus = INJ_welfare_focus }
+
+		relative_position_id = INJ_welfare_focus
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			num_of_factories > 19
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = INJ_focus_on_the_war
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = INJ_rebuild_schools }
+		
+		relative_position_id = INJ_rebuild_schools
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_war = yes
+		}
+		
+
+		bypass = {
+
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = INJ
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = INJ
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			army_experience = 15
+		}
+	}
+
+	focus = {
+		id = INJ_state_weapons
+		icon = GFX_focus_SOV_organize_wreckers
+		prerequisite = { focus = INJ_focus_on_the_war }
+		
+		relative_position_id = INJ_focus_on_the_war
+		x = -1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_war = yes
+			arms_factory > 11
+		}
+
+		bypass = {
+
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = INS_state_weapons
+		}
+	}
+
+	focus = {
+		id = INJ_cut_down_forests
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = INJ_focus_on_the_war }
+		
+		relative_position_id = INJ_focus_on_the_war
+		x = 1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
+		}
+
+		available = {
+			has_full_control_of_state = 334
+			has_full_control_of_state = 672
+			has_full_control_of_state = 667
+			has_full_control_of_state = 738
+			has_full_control_of_state = 673
+			has_full_control_of_state = 669
+		}
+
+		bypass = {
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_resource = {
+				type = rubber
+				amount = -5
+				state = 334
+			}
+			334 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			add_resource = {
+				type = rubber
+				amount = -10
+				state = 672
+			}
+			672 = {
+				add_extra_state_shared_building_slots = 3
+			}
+			add_resource = {
+				type = rubber
+				amount = -3
+				state = 667
+			}
+			667 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			738 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			add_resource = {
+				type = rubber
+				amount = -5
+				state = 673
+			}
+			673 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			669 = {
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+
+	focus = {
+		id = INJ_farming_subsidies
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = INJ_cut_down_forests }
+		mutually_exclusive = { focus = INJ_rapid_industry }
+		
+		relative_position_id = INJ_cut_down_forests
+		x = -1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
+		}
+
+		available = {
+			industrial_complex > 11
+		}
+		
+
+		bypass = {
+
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = INS_farm_funds
+		}
+	}
+
+	focus = {
+		id = INJ_room_for_farms
+		icon = GFX_focus_generic_concessions
+		prerequisite = { focus = INJ_farming_subsidies }
+		
+		relative_position_id = INJ_farming_subsidies
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
+		}
+
+		available = {
+		
+		}
+		
+
+		bypass = {
+
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = INS_room_for_farms	
+		}
+	}
+
+	focus = {
+		id = INJ_rapid_industry
+		icon = GFX_focus_generic_industry_3
+		prerequisite = { focus = INJ_cut_down_forests }
+		mutually_exclusive = { focus = INJ_farming_subsidies }
+		
+		relative_position_id = INJ_cut_down_forests
+		x = 1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
+		}
+
+		available = {
+			industrial_complex > 11
+		}
+		
+
+		bypass = {
+
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = INS_rapid_industrialization
+		}
+	}
+
+	focus = {
+		id = INJ_rapid_dockyards
+		icon = GFX_focus_generic_refit_civilian_ships
+		prerequisite = { focus = INJ_rapid_industry }
+		
+		relative_position_id = INJ_rapid_industry
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+
+		bypass = {
+
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = INS_rapid_dockyards
+		}
+	}
+
+	focus = {
+		id = INJ_new_armed_forces
+		icon = GFX_goal_generic_army_doctrines
+
+		relative_position_id = INJ_new_dawn
+		x = -7
+		y = 0
+
+		cost = 5
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_ideas = INS_knil_incompetence_locals_1
+		}
+	}
+
+	focus = {
+		id = INJ_indonesian_navy
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = INJ_new_armed_forces }
+
+		relative_position_id = INJ_new_armed_forces
+		x = -2
+		y = 1
+
+		cost = 5
+
+		available = {
+		}
+
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.075
+		}
+	}
+
+	focus = {
+		id = INJ_JAP_naval_cooperation
+		icon = GFX_focus_ETH_an_ethiopian_navy_in_exile
+		prerequisite = { focus = INJ_indonesian_navy }
+
+		relative_position_id = INJ_indonesian_navy
+		x = -1
+		y = 1
+
+		cost = 10
+
+		available = {
+			is_in_faction_with = JAP
+		}
+		
+
+		bypass = {
+
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			JAP = {
+				add_to_tech_sharing_group = INS_JAP_naval_cooperation_idea
+			}
+			INJ = {
+				add_to_tech_sharing_group = INS_JAP_naval_cooperation_idea
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					is_core_of = INJ
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = INJ_indonesian_army
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = INJ_new_armed_forces }
+
+		relative_position_id = INJ_new_armed_forces
+		x = 0
+		y = 1
+
+		cost = 5
+
+		available = {
+		}
+
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.075
+		}
+	}
+
+	focus = {
+		id = INJ_train_indonesian_officers
+		icon = GFX_focus_INS_officers
+		prerequisite = { focus = INJ_indonesian_army }
+
+		relative_position_id = INJ_indonesian_army
+		x = 0
+		y = 1
+
+		cost = 5
+
+		available = {
+		}
+
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			add_corps_commander_role = {
+				character = INS_soedirman
+				traits = { defensive_doctrine unyielding_defender jungle_rat guerilla_fighter }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 1
+				logistics_skill = 2
+			}
+			add_advisor_role = {
+				character = INS_soedirman
+				advisor = {
+					slot = high_command
+					idea_token = INS_soedirman
+					ledger = army
+					traits = {
+						army_infantry_1
+					}
+					cost = 50
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = INJ_indonesian_airforce
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = INJ_new_armed_forces }
+
+		relative_position_id = INJ_new_armed_forces
+		x = 2
+		y = 1
+
+		cost = 5
+
+		available = {
+		}
+
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.075
+		}
+	}
+}

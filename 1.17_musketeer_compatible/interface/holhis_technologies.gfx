@@ -1,0 +1,232 @@
+spriteTypes = {
+
+	spriteType = {
+		name = GFX_INS_basic_light_tank
+		texturefile = gfx/interface/technologies/hol_basic_light_tank.dds
+	}
+
+	spriteType = {
+		name = GFX_INS_imp_light_tank
+		texturefile = gfx/interface/technologies/hol_imp_light_tank.dds
+	}
+
+	spriteType = {
+		name = GFX_INS_adv_light_tank
+		texturefile = gfx/interface/technologies/hol_adv_light_tank.dds
+	}
+
+	spriteType = {
+		name = GFX_INS_basic_medium_tank
+		texturefile = gfx/interface/technologies/hol_basic_medium_tank.dds
+	}
+
+	spriteType = {
+		name = GFX_INS_imp_medium_tank
+		texturefile = gfx/interface/technologies/hol_imp_medium_tank.dds
+	}
+
+	spriteType = {
+		name = GFX_INS_adv_medium_tank
+		texturefile = gfx/interface/technologies/hol_adv_medium_tank.dds
+	}
+
+	spriteType = {
+		name = GFX_INS_basic_heavy_tank
+		texturefile = gfx/interface/technologies/hol_basic_heavy_tank.dds
+	}
+
+	spriteType = {
+		name = GFX_INS_imp_heavy_tank
+		texturefile = gfx/interface/technologies/hol_imp_heavy_tank.dds
+	}
+
+	spriteType = {
+		name = GFX_INS_adv_heavy_tank
+		texturefile = gfx/interface/technologies/hol_adv_heavy_tank.dds
+	}
+	
+	SpriteType = {
+		name = "GFX_INS_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/hol_basic_equipment.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_INS_heavy_fighter1_medium"
+		texturefile = "gfx/interface/technologies/hol_heavy_fighter_equipment_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_INS_heavy_fighter2_medium"
+		texturefile = "gfx/interface/technologies/hol_heavy_fighter_equipment_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_INS_heavy_fighter3_medium"
+		texturefile = "gfx/interface/technologies/hol_heavy_fighter3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_INS_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/hol_infantry_equipment_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_INS_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/hol_infantry_equipment_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_INS_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/hol_infantry_equipment_3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_INS_motorised_equipment_medium"
+		texturefile = "gfx/interface/technologies/hol_motorized_equipment.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_INS_motorized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/hol_motorized_equipment.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_INS_motorised_infantry_medium"
+		texturefile = "gfx/interface/technologies/hol_motorized_equipment.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_INS_naval_bomber1_medium"
+		texturefile = "gfx/interface/technologies/hol_nav_bomber_equipment_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_INS_naval_bomber2_medium"
+		texturefile = "gfx/interface/technologies/hol_nav_bomber_equipment_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_INS_naval_bomber3_medium"
+		texturefile = "gfx/interface/technologies/usa_naval_bomber_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_INS_early_bomber_medium"
+		texturefile = "gfx/interface/technologies/hol_tac_bomber_equipment_0.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_INS_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/hol_tac_bomber_equipment_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_INS_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/hol_tac_bomber_equipment_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_INS_tactical_bomber3_medium"
+		texturefile = "gfx/interface/technologies/USA_tactical_bomber3.dds"
+	}
+	SpriteType = {
+		name = "GFX_INS_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/hol_strategic_bomber1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_INS_strategic_bomber2_medium"
+		texturefile = "gfx/interface/technologies/hol_strategic_bomber2.dds"
+	}
+	SpriteType = {
+		name = "GFX_INS_strategic_bomber3_medium"
+		texturefile = "gfx/interface/technologies/hol_strategic_bomber3.dds"
+	}			
+	SpriteType = {
+		name = "GFX_INS_early_fighter_medium"
+		texturefile = "gfx/interface/technologies/hol_fighter_equipment_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_INS_fighter1_medium"
+		texturefile = "gfx/interface/technologies/hol_fighter_equipment_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_INS_fighter2_medium"
+		texturefile = "gfx/interface/technologies/USA_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_INS_fighter3_medium"
+		texturefile = "gfx/interface/technologies/USA_fighter3.dds"
+	}
+	SpriteType = {
+		name = "GFX_INS_CAS1_medium"
+		texturefile = "gfx/interface/technologies/hol_cas1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_INS_CAS2_medium"
+		texturefile = "gfx/interface/technologies/hol_cas2.dds"
+	}
+	SpriteType = {
+		name = "GFX_INS_CAS3_medium"
+		texturefile = "gfx/interface/technologies/USA_CAS3.dds"
+	}
+	SpriteType = {
+		name = "GFX_INS_basic_light_tank_medium"
+		texturefile = "gfx/interface/technologies/hol_basic_light_tank.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_INS_improved_light_tank_medium"
+		texturefile = "gfx/interface/technologies/hol_imp_light_tank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_INS_advanced_light_tank_medium"
+		texturefile = "gfx/interface/technologies/hol_adv_light_tank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_INS_basic_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/hol_basic_medium_tank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_INS_improved_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/hol_imp_medium_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_INS_advanced_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/hol_adv_medium_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_INS_main_battle_tank_medium"
+		texturefile = "gfx/interface/technologies/hol_main_battle_tank.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_INS_basic_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/hol_basic_heavy_tank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_INS_improved_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/hol_imp_heavy_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_INS_advanced_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/hol_adv_heavy_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_INS_super_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/hol_superheavy_tank.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_INS_heavy_fighter_equipment3_medium"
+		texturefile = "gfx/interface/technologies/hol_heavy_fighter_equipment_3.dds"
+	}
+}

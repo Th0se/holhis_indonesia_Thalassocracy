@@ -1,0 +1,27 @@
+state={
+	id=669
+	name="STATE_669"
+
+	history = {
+		owner = INS
+		add_core_of = PPA
+		victory_points = {
+			12371 1 
+		}
+		buildings = {
+			infrastructure = 1
+			12371 = {
+				naval_base = 2
+			}
+		}
+	}
+
+	provinces = { #11 from 28 provs
+		1546 4509 4552 7529 7542 7570 10369 10396 10436 10990 12371 
+	}
+
+	manpower = 116740
+	buildings_max_level_factor = 1.000
+	state_category = rural
+	local_supplies=1.000
+}
