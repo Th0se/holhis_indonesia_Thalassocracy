@@ -1,0 +1,889 @@
+capital = 335 #Jakarta
+
+oob = "INS_1936"
+
+set_research_slots = 2
+			
+add_equipment_to_stockpile = {
+	type = train_equipment
+	amount = 3
+	producer = GER
+}
+
+set_stability = 0.38
+set_war_support = 0.42
+
+# Starting tech
+# clone of Holland
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+	tech_trucks = 1
+	fuel_silos = 1
+}
+
+if = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+	set_air_oob = "INS_1936_air_bba"
+	set_technology = {
+		aa_lmg = 1
+		engines_1 = 1
+		aircraft_construction = 1
+		iw_small_airframe = 1
+		iw_medium_airframe = 1
+		early_bombs = 1
+	}
+	else = {
+		set_air_oob = "INS_1936_air_legacy"
+		set_technology = {
+			early_fighter = 1
+		}
+	}
+}
+
+set_technology = {
+	early_ship_hull_submarine = 1
+	basic_ship_hull_submarine = 1
+	early_ship_hull_light = 1
+	basic_ship_hull_light = 1
+	early_ship_hull_cruiser = 1
+	basic_battery = 1
+	basic_torpedo = 1
+	basic_depth_charges = 1
+	coastal_defense_ships = 1
+	mtg_transport = 1
+}
+
+set_convoys = 100
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1935.11.14"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 20
+	fascism = 15
+	communism = 15
+	neutrality = 50
+}
+
+recruit_character = INS_bonifacius_de_jonge
+recruit_character = INS_a_t_van_starkenborgh_stachouwer
+recruit_character = INS_anton_van_der_laaken
+recruit_character = INS_cc_pki
+recruit_character = INS_soetomo
+recruit_character = INS_meyer_ranneft
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	recruit_character = INS_gijsbertus_vonk
+}
+
+recruit_character = INS_george_hart
+recruit_character = INS_hoogstraten
+recruit_character = INS_ignatius_kasimo
+recruit_character = INS_jan_verboom
+
+recruit_character = INS_group_partai_nasional
+recruit_character = INS_soekarno
+recruit_character = INS_mohammad_hatta
+recruit_character = INS_soetan_sjahrir
+recruit_character = INS_hamengkoeboewono_ninth
+recruit_character = INS_tan_malaka
+recruit_character = INS_moesso_moenawar
+recruit_character = INS_amir_sjarifoeddin
+recruit_character = INS_semaoen
+recruit_character = INS_alimin
+
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	recruit_character = INS_dipa_nusantara
+	recruit_character = INS_leon_trotsky
+}
+
+recruit_character = INS_group_indische_partij
+recruit_character = INS_ernest_douwes_dekker
+recruit_character = INS_tjipto_mangoenkoesoemo
+recruit_character = INS_kh_dewantara
+recruit_character = INS_group_gapi
+recruit_character = INS_margono_djojohadikoesoemo
+recruit_character = INS_mohammad_hoesni_thamrin
+recruit_character = INS_mohammad_hoesni_thamrin_volksraad
+recruit_character = INS_soekardjo_wirjopranoto
+recruit_character = INS_soepomo
+recruit_character = INS_soetardjo_kartohadikoesoemo
+recruit_character = INS_oto_iskandar_di_nata
+recruit_character = INS_johannes_latuharhary
+recruit_character = INS_mohammad_jamin
+recruit_character = INS_cornelis_bussche
+recruit_character = INS_frederik_de_hoog
+recruit_character = INS_paul_alex_blaauw
+recruit_character = INS_henri_zentgraaff
+recruit_character = INS_jan_hogewind
+recruit_character = GER_walther_hewel
+recruit_character = INS_frans_visman
+recruit_character = INS_henricus_spit
+
+recruit_character = INS_group_stuwgroep
+recruit_character = INS_hubertus_van_mook
+recruit_character = INS_jan_jonkman
+recruit_character = INS_charles_van_der_plas
+recruit_character = INS_nicolaas_blom
+
+recruit_character = INS_hamengkoeboewono_eighth
+recruit_character = INS_mangkoenegara_seventh
+
+recruit_character = INS_wesseling
+recruit_character = INS_murk_boerstra
+recruit_character = INS_tjalling
+recruit_character = INS_maurer
+recruit_character = INS_berenschot
+recruit_character = INS_pesman
+recruit_character = INS_statius_muller
+recruit_character = INS_overakker
+recruit_character = INS_bakkers
+recruit_character = INS_simon_spoor
+recruit_character = INS_maarten_van_dulm
+recruit_character = INS_ferwerda
+recruit_character = INS_johan_van_staveren
+recruit_character = HOL_conrad_helfrich
+recruit_character = INS_jan_hilgers
+recruit_character = INS_laurens_walraven
+recruit_character = INS_oerip_soemohardjo
+recruit_character = INS_abdoel_haris_nasoetion
+recruit_character = INS_rhemrev
+
+recruit_character = INS_beumer
+recruit_character = INS_elshout
+recruit_character = INS_aleid_van_tricht
+recruit_character = INS_hein_ter_poorten
+recruit_character = INS_pierre_cox
+recruit_character = INS_van_rees
+recruit_character = INS_hendrik_uhl
+recruit_character = INS_jacob_zomer
+recruit_character = INS_ilgen
+recruit_character = INS_pieter_koenraad
+recruit_character = INS_soeharto
+recruit_character = INS_gatot_soebroto
+recruit_character = INS_group_partai_sarekat_islam
+
+recruit_character = INS_abikoesno_tjokrosoejoso
+recruit_character = INS_soekiman_wirjosandjojo
+
+recruit_character = INS_agoes_salim
+recruit_character = INS_sekarmadji_maridjan
+recruit_character = INS_sardjono
+
+recruit_character = INS_roehana_koeddoes
+recruit_character = INS_sk_trimoerti
+recruit_character = INS_hermann_rosenow
+recruit_character = INS_mas_pardi
+recruit_character = INS_soebijakto
+recruit_character = INS_mohammad_nazir
+recruit_character = INS_wardiman
+recruit_character = INS_soerjadarma
+recruit_character = INS_soedirman
+recruit_character = INS_samuel_ratulangi
+recruit_character = INS_soekawati
+recruit_character = INS_thomas_najoan
+recruit_character = INS_didi_kartasasmita
+
+recruit_character = INS_karel_soepit
+recruit_character = INS_abdoelkadir_widjojoatmodjo
+recruit_character = INS_achmad_soebardjo
+recruit_character = INS_adnan_gani
+recruit_character = INS_sjafroeddin_prawiranegara
+recruit_character = INS_ferdinand_loembantobing
+recruit_character = INS_bernard_lapian
+recruit_character = INS_iwa_koesoemasoemantri
+recruit_character = INS_ida_anak_agoeng
+
+add_ideas = {
+	INS_meyer_ranneft
+	INS_malaise_1
+	INS_nationalism_suppressed
+	INS_reforms
+	INS_knil_incompetence_1
+	INS_navy_1
+	INS_airforce_1
+	INS_princely_states_normal
+	INS_agrarian_society_1
+	INS_imperial_burden_1
+	INS_japanese_investment_1
+}
+
+add_opinion_modifier = {
+	target = JAP
+	modifier = INS_trade_jap_long
+}
+
+#Jailed characters
+INS_mohammad_hatta = {
+	set_character_flag = INS_imprisoned_flag
+}
+INS_soekarno = {
+	set_character_flag = INS_imprisoned_flag
+}
+INS_soetan_sjahrir = {
+	set_character_flag = INS_imprisoned_flag
+}
+INS_tjipto_mangoenkoesoemo = {
+	set_character_flag = INS_imprisoned_flag
+}
+INS_iwa_koesoemasoemantri = {
+	set_character_flag = INS_imprisoned_flag
+}
+INS_alimin = {
+	set_character_flag = INS_imprisoned_flag
+}
+INS_sardjono = {
+	set_character_flag = INS_imprisoned_flag
+}
+
+#Underage characters
+INS_sk_trimoerti = {
+	set_character_flag = INS_underage_flag
+}
+
+#Exiled characters
+INS_moesso_moenawar = {
+	set_character_flag = INS_exiled_flag
+}
+INS_semaoen = {
+	set_character_flag = INS_exiled_flag
+}
+INS_tan_malaka = {
+	set_character_flag = INS_exiled_flag
+}
+
+#PKI members
+INS_moesso_moenawar = {
+	set_character_flag = INS_pki_member_flag
+}
+INS_semaoen = {
+	set_character_flag = INS_pki_member_flag
+}
+INS_alimin = {
+	set_character_flag = INS_pki_member_flag
+}
+INS_sardjono = {
+	set_character_flag = INS_pki_member_flag
+}
+INS_tan_malaka = {
+	set_character_flag = INS_pki_member_flag
+}
+
+#Gerindo members
+INS_amir_sjarifoeddin = {
+	set_character_flag = INS_gerindo_member_flag
+}
+INS_mohammad_jamin = {
+	set_character_flag = INS_gerindo_member_flag
+}
+INS_adnan_gani = {
+	set_character_flag = INS_gerindo_member_flag
+}
+INS_dipa_nusantara = {
+	set_character_flag = INS_gerindo_member_flag
+}
+
+#Stuwgroep members
+INS_group_stuwgroep = {
+	set_character_flag = INS_stuwgroep_member_flag
+}
+INS_hubertus_van_mook = {
+	set_character_flag = INS_stuwgroep_member_flag
+}
+INS_jan_jonkman = {
+	set_character_flag = INS_stuwgroep_member_flag
+}
+INS_charles_van_der_plas = {
+	set_character_flag = INS_stuwgroep_member_flag
+}
+
+#PNI members
+INS_group_partai_nasional = {
+	set_character_flag = INS_pni_member_flag
+}
+INS_mohammad_hatta = {
+	set_character_flag = INS_pni_member_flag
+}
+INS_soekarno = {
+	set_character_flag = INS_pni_member_flag
+}
+INS_soetan_sjahrir = {
+	set_character_flag = INS_pni_member_flag
+}
+INS_iwa_koesoemasoemantri = {
+	set_character_flag = INS_pni_member_flag
+}
+
+#Parindra members
+INS_soetomo = {
+	set_character_flag = INS_parindra_member_flag
+}
+INS_mohammad_hoesni_thamrin = {
+	set_character_flag = INS_parindra_member_flag
+}
+INS_soekardjo_wirjopranoto = {
+	set_character_flag = INS_parindra_member_flag
+}
+
+#PSII members
+INS_group_partai_sarekat_islam = {
+	set_character_flag = INS_psii_member_flag
+}
+INS_abikoesno_tjokrosoejoso = {
+	set_character_flag = INS_psii_member_flag
+}
+INS_agoes_salim = {
+	set_character_flag = INS_psii_member_flag
+}
+INS_soekiman_wirjosandjojo = {
+	set_character_flag = INS_psii_member_flag
+}
+INS_sjafroeddin_prawiranegara = {
+	set_character_flag = INS_psii_member_flag
+}
+INS_sekarmadji_maridjan = {
+	set_character_flag = INS_psii_member_flag
+}
+
+#Indische Partij members
+INS_group_indische_partij = {
+	set_character_flag = INS_nip_member_flag
+}
+INS_ernest_douwes_dekker = {
+	set_character_flag = INS_nip_member_flag
+}
+INS_tjipto_mangoenkoesoemo = {
+	set_character_flag = INS_nip_member_flag
+}
+INS_kh_dewantara = {
+	set_character_flag = INS_nip_member_flag
+}
+
+#NSB-OI members
+INS_anton_van_der_laaken = {
+	set_character_flag = INS_nsboi_member_flag
+}
+INS_rhemrev = {
+	set_character_flag = INS_nsboi_member_flag
+}
+
+#PVBB members
+INS_abdoelkadir_widjojoatmodjo = {
+	set_character_flag = INS_ppbb_member_flag
+}
+INS_soetardjo_kartohadikoesoemo = {
+	set_character_flag = INS_ppbb_member_flag
+}
+
+#Indonesian officers
+INS_oerip_soemohardjo = {
+	set_character_flag = INS_indonesian_officer_flag
+}
+INS_didi_kartasasmita = {
+	set_character_flag = INS_indonesian_officer_flag
+}
+INS_gatot_soebroto = {
+	set_character_flag = INS_indonesian_officer_flag
+}
+INS_soedirman = {
+	set_character_flag = INS_indonesian_officer_flag
+}
+INS_abdoel_haris_nasoetion = {
+	set_character_flag = INS_indonesian_officer_flag
+}
+INS_soeharto = {
+	set_character_flag = INS_indonesian_officer_flag
+}
+INS_mas_pardi = {
+	set_character_flag = INS_indonesian_officer_flag
+}
+INS_soebijakto = {
+	set_character_flag = INS_indonesian_officer_flag
+}
+INS_mohammad_nazir = {
+	set_character_flag = INS_indonesian_officer_flag
+}
+INS_soerjadarma = {
+	set_character_flag = INS_indonesian_officer_flag
+}
+
+#Dutch officers
+INS_maurer = {
+	set_character_flag = INS_dutch_officer_flag
+}
+INS_berenschot = {
+	set_character_flag = INS_dutch_officer_flag
+}
+INS_hein_ter_poorten = {
+	set_character_flag = INS_dutch_officer_flag
+}
+INS_pesman = {
+	set_character_flag = INS_dutch_officer_flag
+}
+INS_pierre_cox = {
+	set_character_flag = INS_dutch_officer_flag
+}
+INS_van_rees = {
+	set_character_flag = INS_dutch_officer_flag
+}
+INS_hendrik_uhl = {
+	set_character_flag = INS_dutch_officer_flag
+}
+INS_statius_muller = {
+	set_character_flag = INS_dutch_officer_flag
+}
+INS_overakker = {
+	set_character_flag = INS_dutch_officer_flag
+}
+INS_bakkers = {
+	set_character_flag = INS_dutch_officer_flag
+}
+INS_simon_spoor = {
+	set_character_flag = INS_dutch_officer_flag
+}
+INS_maarten_van_dulm = {
+	set_character_flag = INS_dutch_officer_flag
+}
+INS_ferwerda = {
+	set_character_flag = INS_dutch_officer_flag
+}
+INS_pieter_koenraad = {
+	set_character_flag = INS_dutch_officer_flag
+}
+HOL_conrad_helfrich = {
+	set_character_flag = INS_dutch_officer_flag
+}
+INS_ilgen = {
+	set_character_flag = INS_dutch_officer_flag
+}
+INS_jacob_zomer = {
+	set_character_flag = INS_dutch_officer_flag
+}
+
+1047 = { #Atjeh
+	start_resistance = yes
+	set_compliance = 32
+	set_resistance = 30
+	set_garrison_strength = 1.0
+}
+1057 = { #SW Papua
+	start_resistance = yes
+	set_compliance = 16
+	set_resistance = 20
+	set_garrison_strength = 0.75
+}
+669 = { #NW Papua
+	start_resistance = yes
+	set_compliance = 20
+	set_resistance = 15
+	set_garrison_strength = 0.75
+}
+1056 = { #Volgekop
+	start_resistance = yes
+	set_compliance = 10
+	set_resistance = 25
+	set_garrison_strength = 0.8
+}
+
+create_dynamic_country = {
+	original_tag = INS
+	set_country_flag = INS_INJ_flag
+	set_politics = {
+		ruling_party = neutrality
+	}
+	set_cosmetic_tag = INJ
+	set_research_slots = 3
+	reserve_dynamic_country = yes
+
+	set_popularities = {
+		democratic = 10
+		fascism = 35
+		communism = 10
+		neutrality = 45
+	}
+}
+
+set_cosmetic_tag = INS_HOL # Netherlands East Indies
+
+672 = { #Northern Sumatra (anything outside Medan)
+	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
+}
+
+1051 = { #Western Java
+	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
+}
+
+1052 = { #East Java (pretty much everything outside Soerabaja)
+	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
+}
+
+673 = { #Southern Sulawesi
+	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
+}
+
+# Submarines #
+create_equipment_variant = {
+	name = "O9 Class"					# represents O9-15, K XI-XIII subs
+	type = ship_hull_submarine_1
+	name_group = HOL_SS_OCLASS
+	parent_version = 0
+	modules = {
+		fixed_ship_torpedo_slot = ship_torpedo_sub_1
+		fixed_ship_engine_slot = sub_ship_engine_2
+		rear_1_custom_slot = empty
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Van Ghent Class"			
+	type = ship_hull_light_2
+	name_group = HOL_DD_HISTORICAL
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_light_battery_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = light_ship_engine_1
+		fixed_ship_torpedo_slot = ship_torpedo_1
+		mid_1_custom_slot = ship_mine_layer_1
+		rear_1_custom_slot = ship_depth_charge_1
+	}
+}
+# Light Cruisers #
+create_equipment_variant = {
+	name = "Java Class"
+	type = ship_hull_cruiser_1
+	name_group = HOL_CL_HISTORICAL
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_light_medium_battery_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = cruiser_ship_engine_1
+		mid_1_custom_slot = empty
+		mid_2_custom_slot = ship_light_medium_battery_1
+		rear_1_custom_slot = ship_airplane_launcher_1
+	}
+	obsolete = yes
+}
+
+1939.1.1 = {
+	set_party_name = {
+		ideology = neutrality
+		long_name = INS_neutrality_party_volksraad_long
+		name = INS_neutrality_party_volksraad
+	}
+	set_party_name = {
+		ideology = democratic
+		long_name = INS_democratic_party_united_front_long
+		name = INS_democratic_party_united_front
+	}
+	set_party_name = {
+		ideology = communism
+		long_name = INS_communism_party_volksraad_long
+		name = INS_communism_party_volksraad
+	}
+	set_party_name = {
+		ideology = fascism
+		long_name = INS_pni_long
+		name = INS_pni
+	}
+	
+	add_country_leader_role = {
+		character = INS_soekarno
+		country_leader = {
+			expire = "1965.1.1"
+			ideology = fascism_ideology
+			traits = {
+				nationalist_symbol
+			}
+		}
+		promote_leader = yes
+	}
+	add_country_leader_role = {
+		character = INS_mohammad_hoesni_thamrin
+		country_leader = {
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+				
+			}
+		}
+		promote_leader = yes
+	}
+	INS_soekarno = {
+		remove_country_leader_role = {
+			ideology = socialism
+		}
+	}
+	INS = {
+		add_autonomy_ratio = {
+			value = 0.25
+		}
+	}
+
+	add_political_power = 1030
+	add_command_power = 100
+
+	promote_character = INS_a_t_van_starkenborgh_stachouwer
+	retire_character = INS_bonifacius_de_jonge
+	retire_character = INS_wesseling
+	retire_character = INS_beumer
+	retire_character = INS_murk_boerstra
+	retire_character = INS_maarten_van_dulm
+	retire_character = INS_hamengkoeboewono_eighth
+	retire_character = INS_meyer_ranneft
+	retire_character = INS_george_hart
+	retire_character = INS_soetomo
+	retire_character = INS_frederik_de_hoog
+
+	INS = {
+		GER_walther_hewel = {
+			add_trait = {
+				slot = political_advisor
+				trait = GER_diplomat
+			}
+			remove_trait = {
+				slot = political_advisor
+				trait = german_planter
+			}
+			set_nationality = GER
+		}
+	}
+	INS_elshout = {
+		remove_unit_leader_role = yes
+	}
+	INS_berenschot = {
+		promote_leader = yes
+	}
+	INS_hubertus_van_mook = {
+		clr_character_flag = INS_stuwgroep_flag
+	}
+	INS_jan_jonkman = {
+		clr_character_flag = INS_stuwgroep_flag
+	}
+	remove_advisor_role = {
+		character = INS_hubertus_van_mook
+		slot = political_advisor
+	}
+	add_advisor_role = {
+		character = INS_hubertus_van_mook
+		advisor = {
+			slot = political_advisor
+			idea_token = INS_hubertus_van_mook
+			traits = {
+				coi_mook
+			}
+			cost = 150
+		}
+	}
+
+	add_to_variable = {
+		var = INS_agriculture_upgrade
+		value = 4
+	}
+
+	add_to_variable = {
+		var = INS_JAP_trade
+		value = 5
+	}
+
+	remove_ideas = {
+		INS_agrarian_society_1
+		INS_japanese_investment_1
+	}
+
+	add_ideas = {
+		limited_conscription
+		INS_japanese_investment_3
+		INS_agrarian_society_2
+		INS_henricus_spit
+		INS_hubertus_van_mook
+		INS_paul_alex_blaauw
+	}
+
+	set_country_flag = INS_de_jonge_resigned
+	set_country_flag = INS_against_soetardjo_flag
+	set_country_flag = INS_education_1_done_flag
+	set_country_flag = INS_agriculture_1_done_flag
+	set_country_flag = INS_transmigration_1_done_flag
+	set_country_flag = INS_agrarian_reforms_1_flag
+	set_country_flag = INSJAP_trade_agreement_1
+	set_country_flag = INSJAP_trade_agreement_2
+	set_country_flag = INS_soetomo_passed
+	set_country_flag = INS_hoog_death_flag
+	set_country_flag = INS_wesseling_retired_flag
+	set_country_flag = INS_gerindo_allowed_flag
+	set_country_flag = INS_merbaboe_quits_flag
+
+	set_variable = {
+		var = INS_education_upgrade
+		value = 2
+	}
+	set_variable = {
+		var = INS_irrigation_upgrade
+		value = 1
+	}
+	set_variable = {
+		var = INS_transmigration_upgrade
+		value = 3
+	}
+	set_variable = {
+		var = INS_agriculture_upgrade
+		value = 6
+	}
+
+	oob = "INS_1939" #straight copy of INS 1936
+
+	complete_national_focus = INS_continue_reform
+	complete_national_focus = INS_address_military_issues
+	complete_national_focus = INS_increase_military_training
+	complete_national_focus = INS_trust_on_the_east
+	complete_national_focus = INS_reform_the_knil
+	complete_national_focus = INS_pave_the_way_for_a_navy
+	complete_national_focus = INS_expand_the_airforce
+	complete_national_focus = INS_improve_dutch_relations
+	complete_national_focus = INS_reinstate_ethical_policies
+	complete_national_focus = INS_upheld_status_quo
+	complete_national_focus = INS_dutch_engineers
+	complete_national_focus = INS_invite_foreign_investors
+	complete_national_focus = INS_strict_neutrality_china_war
+	complete_national_focus = INS_more_knil_funds
+	complete_national_focus = INS_air_defense
+	complete_national_focus = INS_flexible_navy
+	complete_national_focus = INS_expand_bandoeng_university
+	complete_national_focus = INS_address_malaise
+	complete_national_focus = INS_limit_exports
+	complete_national_focus = INS_self_sufficient_weapon_production
+	complete_national_focus = INS_expand_javan_railroads
+	complete_national_focus = INS_copy_dutch_navair
+
+	set_technology = {
+		tech_engineers = 1
+		motorised_infantry = 1
+		fighter1 = 1
+		tactical_bomber1 = 1
+		naval_bomber1 = 1
+		gw_artillery = 1
+		interwar_artillery = 1
+		interwar_antitank = 1
+		infantry_weapons1 = 1
+		infantry_weapons2 = 1
+		support_weapons = 1
+		marines = 1
+		basic_train = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		cavity_magnatron = 1
+		mechanical_computing = 1
+		computing_machine = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		oil_processing = 1
+		fuel_refining = 1
+		fuel_refining2 = 1
+		construction1 = 1
+		construction2 = 1
+		construction3 = 1
+		concentrated_industry = 1
+		concentrated_industry2 = 1
+		concentrated_industry3 = 1
+	}
+	set_technology = {
+		basic_ship_hull_submarine = 1
+		basic_ship_hull_light = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+	}
+
+	if = {
+		limit = {
+			NOT = {
+				has_dlc = "No Step Back"
+			}
+		}
+		set_technology = {
+			gwtank = 1
+			basic_light_tank = 1
+		}
+	}
+
+	if = {
+		limit = {
+			has_dlc = "No Step Back"
+		}
+		set_technology = {
+			gwtank_chassis = 1
+			basic_light_tank_chassis = 1
+		}
+	}
+
+	if = {
+		limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "INS_1939_air_bba"
+		set_technology = {
+			engines_2 = 1
+			basic_medium_airframe = 1
+			basic_small_airframe = 1
+			aa_cannon_1 = 1
+			early_bombs = 1
+		}
+		else = {
+			set_air_oob = "INS_1939_air_legacy"
+			set_technology = {
+				fighter1 = 1
+				tactical_bomber1 = 1
+				naval_bomber1 = 1
+			}
+		}
+	}
+
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1935.11.14"
+		election_frequency = 48
+		elections_allowed = no
+	}
+
+	set_popularities = {
+		democratic = 40
+		fascism = 5
+		communism = 15
+		neutrality = 40
+	}
+
+	modify_timed_idea = {
+		idea = INS_dutch_engineers
+		days = -641
+	}
+}

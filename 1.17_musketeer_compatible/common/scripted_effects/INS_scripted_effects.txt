@@ -1,0 +1,965 @@
+INS_nationalize_ideas = { #Independent Indonesia seizes assets from the Dutch upon start of the revolution
+	if = {
+		limit = {
+			NOT = { has_dlc = "Arms Against Tyranny" }
+			has_idea = INS_artilerie_inrichtingen
+		}
+		swap_ideas = {
+			remove_idea = INS_artilerie_inrichtingen
+			add_idea = INS_pabrik_sendjata_mesioe
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { has_dlc = "Arms Against Tyranny" }
+			has_idea = INS_ai_bandoeng_improved
+		}
+		swap_ideas = {
+			remove_idea = INS_ai_bandoeng_improved
+			add_idea = INS_psm_improved
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { has_dlc = "Arms Against Tyranny" }
+			has_idea = INS_gouvernmentsmarine
+		}
+		swap_ideas = {
+			remove_idea = INS_gouvernmentsmarine
+			add_idea = INS_pelni
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = INS_aniem
+		}
+		swap_ideas = {
+			remove_idea = INS_aniem
+			add_idea = INS_perusahaan_listrik_negara
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = INS_bank_java
+		}
+		swap_ideas = {
+			remove_idea = INS_bank_java
+			add_idea = INS_bank_indonesia
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = INS_bpm_shell
+		}
+		swap_ideas = {
+			remove_idea = INS_bpm_shell
+			add_idea = INS_permina
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = INS_bpm_improved
+		}
+		swap_ideas = {
+			remove_idea = INS_bpm_improved
+			add_idea = INS_permina_improved
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { has_dlc = "Arms Against Tyranny" }
+			has_idea = INS_soerabaja_dm
+		}
+		swap_ideas = {
+			remove_idea = INS_soerabaja_dm
+			add_idea = INS_pal_soerabaja
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = { has_dlc = "Arms Against Tyranny" }
+			has_idea = INS_soerabaja_dm_improved
+		}
+		swap_ideas = {
+			remove_idea = INS_soerabaja_dm_improved
+			add_idea = INS_pal_soerabaja_improved
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = INS_sstw
+		}
+		swap_ideas = {
+			remove_idea = INS_sstw
+			add_idea = INS_dkai
+		}
+	}
+}
+
+upgrade_develop_modif = {
+	if = {
+		limit = {
+			has_dynamic_modifier = { modifier = early_develop_modif_west }
+		}
+		add_dynamic_modifier = { modifier = advanced_develop_modif_west }
+		remove_dynamic_modifier = { modifier = early_develop_modif_west } 
+	}
+	else_if = {
+		limit = {
+			has_dynamic_modifier = { modifier = early_develop_modif_middle }
+		}
+		add_dynamic_modifier = { modifier = advanced_develop_modif_middle }
+		remove_dynamic_modifier = { modifier = early_develop_modif_middle }
+	}
+	else_if = {
+		limit = {
+			has_dynamic_modifier = { modifier = early_develop_modif_east }
+		}
+		add_dynamic_modifier = { modifier = advanced_develop_modif_east }
+		remove_dynamic_modifier = { modifier = early_develop_modif_east }
+	}
+}
+
+upgrade_state_category = {
+	if = {
+		limit = {
+			has_state_category = tiny_island
+			OR = {
+				has_dynamic_modifier = { modifier = advanced_develop_modif_west }
+				has_dynamic_modifier = { modifier = advanced_develop_modif_middle }
+				has_dynamic_modifier = { modifier = advanced_develop_modif_east }
+			}
+		}
+		set_state_category = small_island
+		remove_dynamic_modifier = { modifier = advanced_develop_modif_west }
+		remove_dynamic_modifier = { modifier = advanced_develop_modif_middle }
+		remove_dynamic_modifier = { modifier = advanced_develop_modif_east }
+	}
+	else_if = {
+		limit = {
+			has_state_category = pastoral
+			OR = {
+				has_dynamic_modifier = { modifier = advanced_develop_modif_west }
+				has_dynamic_modifier = { modifier = advanced_develop_modif_middle }
+				has_dynamic_modifier = { modifier = advanced_develop_modif_east }
+			}
+		}
+		set_state_category = rural
+		remove_dynamic_modifier = { modifier = advanced_develop_modif_west }
+		remove_dynamic_modifier = { modifier = advanced_develop_modif_middle }
+		remove_dynamic_modifier = { modifier = advanced_develop_modif_east }
+	}
+	else_if = {
+		limit = {
+			has_state_category = small_island
+			OR = {
+				has_dynamic_modifier = { modifier = advanced_develop_modif_west }
+				has_dynamic_modifier = { modifier = advanced_develop_modif_middle }
+				has_dynamic_modifier = { modifier = advanced_develop_modif_east }
+			}
+		}
+		set_state_category = rural
+		remove_dynamic_modifier = { modifier = advanced_develop_modif_west }
+		remove_dynamic_modifier = { modifier = advanced_develop_modif_middle }
+		remove_dynamic_modifier = { modifier = advanced_develop_modif_east }
+	}
+	else_if = {
+		limit = {
+			has_state_category = rural
+			OR = {
+				has_dynamic_modifier = { modifier = advanced_develop_modif_west }
+				has_dynamic_modifier = { modifier = advanced_develop_modif_middle }
+				has_dynamic_modifier = { modifier = advanced_develop_modif_east }
+			}
+		}
+		set_state_category = town
+		remove_dynamic_modifier = { modifier = advanced_develop_modif_west }
+		remove_dynamic_modifier = { modifier = advanced_develop_modif_middle }
+		remove_dynamic_modifier = { modifier = advanced_develop_modif_east }
+	}
+	else_if = {
+		limit = {
+			has_state_category = town
+			
+			OR = {
+				has_dynamic_modifier = { modifier = advanced_develop_modif_west }
+				has_dynamic_modifier = { modifier = advanced_develop_modif_middle }
+				has_dynamic_modifier = { modifier = advanced_develop_modif_east }
+			}
+		}
+		set_state_category = large_town
+		remove_dynamic_modifier = { modifier = advanced_develop_modif_west }
+		remove_dynamic_modifier = { modifier = advanced_develop_modif_middle }
+		remove_dynamic_modifier = { modifier = advanced_develop_modif_east }
+	}
+	else_if = {
+		limit = {
+			has_state_category = large_town
+			
+			OR = {
+				has_dynamic_modifier = { modifier = advanced_develop_modif_west }
+				has_dynamic_modifier = { modifier = advanced_develop_modif_middle }
+				has_dynamic_modifier = { modifier = advanced_develop_modif_east }
+			}
+		}
+		set_state_category = city
+		remove_dynamic_modifier = { modifier = advanced_develop_modif_west }
+		remove_dynamic_modifier = { modifier = advanced_develop_modif_middle }
+		remove_dynamic_modifier = { modifier = advanced_develop_modif_east }
+	}
+	else_if = {
+		limit = {
+			has_dynamic_modifier = { modifier = early_develop_modif_west }
+			
+		}
+		add_extra_state_shared_building_slots = 2
+		remove_dynamic_modifier = { modifier = early_develop_modif_west }
+	}
+	else_if = {
+		limit = {
+			has_dynamic_modifier = { modifier = early_develop_modif_middle }
+			
+		}
+		add_extra_state_shared_building_slots = 2
+		remove_dynamic_modifier = { modifier = early_develop_modif_middle }
+	}
+	else_if = {
+		limit = {
+			has_dynamic_modifier = { modifier = early_develop_modif_east }
+			
+		}
+		add_extra_state_shared_building_slots = 2
+		remove_dynamic_modifier = { modifier = early_develop_modif_east }
+	}
+}
+
+TAG_get_support = { #Saving the current party popularities before autonomy status changes
+	set_variable = { TAG_communism_status_quo = party_popularity_100@communism }
+	set_variable = { TAG_democratic_status_quo = party_popularity_100@democratic }
+	set_variable = { TAG_fascist_status_quo = party_popularity_100@fascism }
+	set_variable = { TAG_neutrality_status_quo = party_popularity_100@neutrality }
+}
+
+TAG_status_quo_com = { #Keep the parties popularities as before when changing autonomy status
+	set_politics = { 
+		ruling_party = communism
+		elections_allowed = yes
+	}
+	set_popularities = {
+		communism = TAG_communism_status_quo
+		democratic = TAG_democratic_status_quo
+		fascism = TAG_fascism_status_quo
+		neutrality = TAG_neutrality_status_quo
+	}
+}
+
+TAG_status_quo_dem = {
+	set_politics = { 
+		ruling_party = democratic
+		elections_allowed = yes
+	}
+	set_popularities = {
+		communism = TAG_communism_status_quo
+		democratic = TAG_democratic_status_quo
+		fascism = TAG_fascism_status_quo
+		neutrality = TAG_neutrality_status_quo
+	}
+}
+
+TAG_status_quo_fas = {
+	set_politics = { 
+		ruling_party = fascism
+		elections_allowed = no
+	}
+	set_popularities = {
+		communism = TAG_communism_status_quo
+		democratic = TAG_democratic_status_quo
+		fascism = TAG_fascism_status_quo
+		neutrality = TAG_neutrality_status_quo
+	}
+}
+
+TAG_status_quo_neu = {
+	set_politics = { 
+		ruling_party = neutrality
+		elections_allowed = no
+	}
+	set_popularities = {
+		communism = TAG_communism_status_quo
+		democratic = TAG_democratic_status_quo
+		fascism = TAG_fascism_status_quo
+		neutrality = TAG_neutrality_status_quo
+	}
+}
+
+INS_malaise_step_down = {
+	if = {
+		limit = {
+			NOT = {
+				OR = {
+					has_idea = INS_malaise_4
+					has_idea = INS_malaise_3
+					has_idea = INS_malaise_2
+					has_idea = INS_malaise_1
+				}
+			}
+		}
+		#Makes the tooltip clearer if player looks at the effect early in the game
+		add_political_power = 100
+	}
+	if = {
+		limit = { has_idea = INS_malaise_4 }
+		#Makes the tooltip clearer if player looks at the effect early in the game
+		remove_ideas = INS_malaise_4
+	}
+	if = {
+		limit = { has_idea = INS_malaise_3 }
+		swap_ideas = {
+			remove_idea = INS_malaise_3
+			add_idea = INS_malaise_4
+		}
+	}
+	if = {
+		limit = { has_idea = INS_malaise_2 }
+		swap_ideas = {
+			remove_idea = INS_malaise_2
+			add_idea = INS_malaise_3
+		}
+	}
+	if = {
+		limit = { has_idea = INS_malaise_1 }
+		swap_ideas = {
+			remove_idea = INS_malaise_1
+			add_idea = INS_malaise_2
+		}
+	}
+}
+
+INS_burden_step_down = {
+	if = {
+		limit = {
+			NOT = {
+				OR = {
+					has_idea = INS_imperial_burden_3
+					has_idea = INS_imperial_burden_2
+					has_idea = INS_imperial_burden_1
+				}
+			}
+		}
+		#Makes the tooltip clearer if player looks at the effect early in the game
+		add_political_power = 100
+	}
+	if = {
+		limit = { has_idea = INS_imperial_burden_3 }
+		#Makes the tooltip clearer if player looks at the effect early in the game
+		remove_ideas = INS_imperial_burden_3
+	}
+	if = {
+		limit = { has_idea = INS_imperial_burden_2 }
+		swap_ideas = {
+			remove_idea = INS_imperial_burden_2
+			add_idea = INS_imperial_burden_3
+		}
+	}
+	if = {
+		limit = { has_idea = INS_imperial_burden_1 }
+		swap_ideas = {
+			remove_idea = INS_imperial_burden_1
+			add_idea = INS_imperial_burden_2
+		}
+	}
+}
+
+HOL_burden_step_down = {
+	if = {
+		limit = {
+			NOT = {
+				OR = {
+					has_idea = HOL_indies_burden_sharing_3
+					has_idea = HOL_indies_burden_sharing_2
+					has_idea = HOL_indies_burden_sharing_1
+				}
+			}
+		}
+		#Makes the tooltip clearer if player looks at the effect early in the game
+		add_political_power = 50
+	}
+	if = {
+		limit = { has_idea = HOL_indies_burden_sharing_3 }
+		#Makes the tooltip clearer if player looks at the effect early in the game
+		remove_ideas = HOL_indies_burden_sharing_3
+	}
+	if = {
+		limit = { has_idea = HOL_indies_burden_sharing_2 }
+		swap_ideas = {
+			remove_idea = HOL_indies_burden_sharing_2
+			add_idea = HOL_indies_burden_sharing_3
+		}
+	}
+	if = {
+		limit = { has_idea = HOL_indies_burden_sharing_1 }
+		swap_ideas = {
+			remove_idea = HOL_indies_burden_sharing_1
+			add_idea = HOL_indies_burden_sharing_2
+		}
+	}
+}
+
+INS_copy_indies_spirit = {
+	if = {
+		limit = {
+			INS = {
+				has_idea = INS_knil_incompetence_1
+			}
+		}
+		add_ideas = INS_knil_incompetence_1
+	}
+	if = {
+		limit = {
+			INS = {
+				has_idea = INS_knil_incompetence_2
+			}
+		}
+		add_ideas = INS_knil_incompetence_2
+	}
+	if = {
+		limit = {
+			INS = {
+				has_idea = INS_knil_incompetence_parades_1
+			}
+		}
+		add_ideas = INS_knil_incompetence_parades_1
+	}
+	if = {
+		limit = {
+			INS = {
+				has_idea = INS_knil_incompetence_parades_2
+			}
+		}
+		add_ideas = INS_knil_incompetence_parades_2
+	}
+	if = {
+		limit = {
+			INS = {
+				has_idea = INS_knil_incompetence_parades_3
+			}
+		}
+		add_ideas = INS_knil_incompetence_parades_3
+	}
+	if = {
+		limit = {
+			INS = {
+				has_idea = INS_knil_incompetence_locals_1
+			}
+		}
+		add_ideas = INS_knil_incompetence_locals_1
+	}
+	if = {
+		limit = {
+			INS = {
+				has_idea = INS_knil_incompetence_locals_2
+			}
+		}
+		add_ideas = INS_knil_incompetence_locals_2
+	}
+	if = {
+		limit = {
+			INS = {
+				has_idea = INS_knil_incompetence_locals_3
+			}
+		}
+		add_ideas = INS_knil_incompetence_locals_3
+	}
+	if = {
+		limit = {
+			INS = {
+				has_idea = INS_malaise_1
+			}
+		}
+		add_ideas = INS_malaise_1
+	}
+	if = {
+		limit = {
+			INS = {
+				has_idea = INS_malaise_2
+			}
+		}
+		add_ideas = INS_malaise_2
+	}
+	if = {
+		limit = {
+			INS = {
+				has_idea = INS_malaise_3
+			}
+		}
+		add_ideas = INS_malaise_3
+	}
+	if = {
+		limit = {
+			INS = {
+				has_idea = INS_malaise_4
+			}
+		}
+		add_ideas = INS_malaise_4
+	}
+	if = {
+		limit = {
+			INS = {
+				has_idea = INS_agrarian_society_1
+			}
+		}
+		add_ideas = INS_agrarian_society_1
+	}
+	if = {
+		limit = {
+			INS = {
+				has_idea = INS_navy_1
+			}
+		}
+		add_ideas = INS_navy_1
+	}
+	if = {
+		limit = {
+			INS = {
+				has_idea = INS_navy_2
+			}
+		}
+		add_ideas = INS_navy_2
+	}
+	if = {
+		limit = {
+			INS = {
+				has_idea = INS_navy_3_green
+			}
+		}
+		add_ideas = INS_navy_3_green
+	}
+	if = {
+		limit = {
+			INS = {
+				has_idea = INS_navy_3_blue
+			}
+		}
+		add_ideas = INS_navy_3_blue
+	}
+	if = {
+		limit = {
+			INS = {
+				has_idea = INS_airforce_1
+			}
+		}
+		add_ideas = INS_airforce_1
+	}
+	if = {
+		limit = {
+			INS = {
+				has_idea = INS_airforce_1
+			}
+		}
+		add_ideas = INS_airforce_1
+	}
+	if = {
+		limit = {
+			INS = {
+				has_idea = INS_airforce_2
+			}
+		}
+		add_ideas = INS_airforce_2
+	}
+	if = {
+		limit = {
+			INS = {
+				has_idea = INS_airforce_3_offense
+			}
+		}
+		add_ideas = INS_airforce_3_offense
+	}
+	if = {
+		limit = {
+			INS = {
+				has_idea = INS_airforce_3_defense
+			}
+		}
+		add_ideas = INS_airforce_3_defense
+	}
+}
+
+#Important to put LOWEST first
+
+#Change name of States and VPs when appropriate. Expected to be used inside on_state_control_changed. FROM.FROM is state / ROOT is new controller / FROM is former controller
+INS_change_names = {
+	if = { # Batavia / Djajakarta / Djakarta
+		limit = {
+			FROM.FROM = {
+				state = 335 #Batavia
+			}
+		}
+		if = { #Controlled by Japan
+			limit = {
+				ROOT = {
+					OR = {
+						tag = JAP
+						tag = IDN
+					}
+				}
+			}
+			set_province_name = {
+				id = 7381
+				name = VICTORY_POINTS_7381_INS
+			}
+			set_province_name = {
+				id = 4406
+				name = VICTORY_POINTS_4406_INS
+			}
+			FROM.FROM = {
+				set_state_name = STATE_335_INS
+			}
+		}
+		else_if = { #OTHER CONTROLLER
+			limit = {
+				FROM = { tag = DEI }
+			}
+			FROM.FROM = { reset_state_name = yes }
+			reset_province_name = 7381
+			reset_province_name = 4406
+		}
+	}
+	else_if = { # East Timor / Portuguese Timor
+		limit = {
+			FROM.FROM = {
+				state = 721 #East Timor
+			}
+		}
+		if = { #Island gets united
+			limit = {
+				ROOT = {
+					controls_state = 721
+					controls_state = 1026
+				}
+			}
+			FROM.FROM = {
+				set_state_name = STATE_721_TLS
+			}
+		}
+		else_if = { #OTHER CONTROLLER
+			limit = {
+				FROM = {
+					original_tag = POR
+					NOT = {
+						controls_state = 721
+					}
+				}
+			}
+			FROM.FROM = { reset_state_name = yes }
+		}
+	}
+	else_if = { # West Timor / Dutch Timor
+		limit = {
+			FROM.FROM = {
+				state = 1026 #Dutch Timor
+			}
+		}
+		if = { #Timor gets united
+			limit = {
+				ROOT = {
+					controls_state = 721
+					controls_state = 1026
+				}
+			}
+			FROM.FROM = {
+				set_state_name = STATE_1026_TLS
+			}
+		}
+		else_if = { #Timor gets divided
+			limit = {
+				FROM = {
+					OR = {
+						tag = DEI
+						original_tag = HOL
+					}
+					NOT = {
+						controls_state = 721
+					}
+				}
+			}
+			FROM.FROM = { reset_state_name = yes }
+		}
+	}
+	else_if = { # Hollandia / Numbai
+		limit = {
+			FROM.FROM = {
+				state = 669 #Northwestern Papua
+			}
+		}
+		if = { #Controlled by Indonesia/Papua
+			limit = {
+				ROOT = {
+					OR = {
+						original_tag = PPA
+						original_tag = PNG
+						AND = {
+							tag = IDN
+							NOT = {
+								has_country_leader = {
+									name = "Soekarno"
+									ruling_only = yes
+								}
+							}
+						}
+					}
+				}
+			}
+			set_province_name = {
+				id = 12371
+				name = PPA_VICTORY_POINTS_12371
+			}
+			FROM.FROM = {
+				set_state_name = STATE_669_PNG
+			}
+		}
+		if = { #Controlled by Soekarno
+			limit = {
+				ROOT = {
+					tag = IDN
+					has_country_leader = {
+						name = "Soekarno"
+						ruling_only = yes
+					}
+				}
+			}
+			set_province_name = {
+				id = 12371
+				name = VICTORY_POINTS_12371_INS
+			}
+			FROM.FROM = {
+				set_state_name = STATE_669_PNG
+			}
+		}
+		else_if = { #OTHER CONTROLLER
+			limit = {
+				FROM = { tag = DEI }
+			}
+			FROM.FROM = {
+				reset_state_name = yes
+			}
+			reset_province_name = 12371
+		}
+	}
+	else_if = { # Vogelkop / Domberai
+		limit = {
+			FROM.FROM = {
+				state = 1028 #Northwestern Papua
+			}
+		}
+		if = { #Controlled by Indonesia/Papua
+			limit = {
+				ROOT = {
+					OR = {
+						original_tag = PPA
+						original_tag = PNG
+						tag = IDN
+					}
+				}
+			}
+			FROM.FROM = {
+				set_state_name = PPA_STATE_1028
+			}
+		}
+		else_if = { #OTHER CONTROLLER
+			limit = {
+				FROM = { tag = DEI }
+			}
+			FROM.FROM = {
+				reset_state_name = yes
+			}
+		}
+	}
+	else_if = { # Southwestern Papua
+		limit = {
+			FROM.FROM = {
+				state = 1029 #Southwestern Papua
+			}
+		}
+		if = { #Controlled by Indonesia/Papua
+			limit = {
+				ROOT = {
+					OR = {
+						original_tag = PPA
+						original_tag = PNG
+						tag = IDN
+					}
+				}
+			}
+			set_province_name = {
+				id = 1602
+				name = PPA_VICTORY_POINTS_1602
+			}
+			FROM.FROM = {
+				set_state_name = PPA_STATE_1029
+			}
+		}
+		else_if = { #OTHER CONTROLLER
+			limit = {
+				FROM = { tag = DEI }
+			}
+			FROM.FROM = {
+				reset_state_name = yes
+			}
+			reset_province_name = 1602
+		}
+	}
+	else_if = { # Moluccas
+		limit = {
+			FROM.FROM = {
+				state = 668 #Moluccas
+			}
+		}
+		if = { #Controlled by Indonesia/Papua
+			limit = {
+				ROOT = {
+					OR = {
+						tag = IDN
+						original_tag = MLK
+					}
+				}
+			}
+			set_province_name = {
+				id = 1574
+				name = VICTORY_POINTS_1574_INS
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					original_tag = POR
+				}
+			}
+			set_province_name = {
+				id = 1574
+				name = POR_VICTORY_POINTS_1574
+			}
+		}
+		else_if = { #OTHER CONTROLLER
+			limit = {
+				FROM = { tag = DEI }
+			}
+			reset_province_name = 1574
+		}
+	}
+	else_if = { # Brunei
+		limit = {
+			FROM.FROM = {
+				state = 333 #Brunei
+			}
+		}
+		if = { #Controlled by Indonesia/Malaysia
+			limit = {
+				ROOT = {
+					OR = {
+						tag = IDN
+						AND = {
+							original_tag = MAL
+							is_subject = no
+						}
+					}
+				}
+			}
+			set_province_name = {
+				id = 7387
+				name = INS_VICTORY_POINTS_7387
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					original_tag = BRN
+				}
+			}
+			set_province_name = {
+				id = 7387
+				name = BRN_VICTORY_POINTS_7387
+			}
+		}
+		else_if = { #OTHER CONTROLLER
+			limit = {
+				FROM = {
+					OR = {
+						AND = {
+							original_tag = MAL
+							is_subject_of = ENG
+						}
+						original_tag = ENG
+					}
+				}
+			}
+			reset_province_name = 7387
+		}
+	}
+	else_if = { # Singapore/Singapura
+		limit = {
+			FROM.FROM = {
+				state = 336 #Singapore
+			}
+		}
+		if = { #Controlled by Indonesia/Malaysia
+			limit = {
+				ROOT = {
+					OR = {
+						tag = IDN
+						AND = {
+							original_tag = MAL
+							is_subject = no
+						}
+						original_tag = BRN
+					}
+				}
+			}
+			set_province_name = {
+				id = 12299
+				name = VICTORY_POINTS_12299_MAL
+			}
+			FROM.FROM = {
+				set_state_name = STATE_336_MAL
+			}
+		}
+		if = { #Controlled by Japan
+			limit = {
+				ROOT = {
+					original_tag = JAP
+				}
+			}
+			set_province_name = {
+				id = 12299
+				name = VICTORY_POINTS_12299_JAP
+			}
+			FROM.FROM = {
+				set_state_name = STATE_336_JAP
+			}
+		}
+		else_if = { #OTHER CONTROLLER
+			limit = {
+				FROM = {
+					OR = {
+						AND = {
+							original_tag = MAL
+							is_subject_of = ENG
+						}
+						original_tag = ENG
+					}
+				}
+			}
+			FROM.FROM = {
+				reset_state_name = yes
+			}
+			reset_province_name = 12299
+		}
+	}
+}
+
+play_sorakbergembira_effect = {
+	hidden_effect = { play_song = "sorakbergembira" } 
+}
+
+play_nirom_speech_effect = {
+	hidden_effect = { play_song = "niromclosingspeech" }  
+}

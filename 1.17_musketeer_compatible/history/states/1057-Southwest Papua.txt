@@ -4,7 +4,7 @@ state={
 
 	history = {
 		owner = INS
-		add_core_of = PPA
+		add_core_of = WPG
 		victory_points = {
 			10505 2 
 		}

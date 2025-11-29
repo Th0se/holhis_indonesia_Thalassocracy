@@ -475,7 +475,7 @@
  STATE_333:0 "Sarawak"
  STATE_334:1 "Eastern Kalimantan"
  STATE_335:0 "Batavia"
- STATE_336:0 "Pahang"
+ STATE_336:0 "Central Malaya"
  STATE_337:0 "Faroe Islands"
  STATE_338:0 "Gloucestershire"
  STATE_339:0 "Izmir"
@@ -1288,3 +1288,4 @@
  STATE_1074:0 "Xaignabouli"
  STATE_1075:0 "Luang Prabang"
  STATE_1076:0 "Kachin"
+ 

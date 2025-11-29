@@ -9,7 +9,7 @@ state={
 		owner = INS
 		add_core_of = INS
 		add_core_of = EIS
-		add_core_of = TIM
+		add_core_of = TML
 		victory_points = {
 			1355 1 
 		}

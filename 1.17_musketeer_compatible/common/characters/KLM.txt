@@ -1,0 +1,48 @@
+characters = {
+	KLM_ahmad_tajuddin_waddien = {
+		name = KLM_ahmad_tajuddin_waddien
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Onn_Jaafar
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire="1953.3.1.1"
+			id=-1
+		}
+	}
+	INS_mohammad_jusuf_alqadri = {
+		name = INS_mohammad_jusuf_alqadri
+		portraits = {
+			civilian = {
+				large = GFX_portrait_kalimantan_mohammad_jusuf_alqadri
+			}
+			army = {
+				small = GFX_idea_indonesia_joesoef_alkadrie
+			}
+		}
+	}
+	INS_hamid_mohammad_alqadri = {
+		name = INS_hamid_mohammad_alqadri
+		portraits = {
+			civilian = {
+				large = GFX_portrait_kalimantan_sjarif_hamid_alqadri
+			}
+			army = {
+				small = GFX_idea_indonesia_hamid_alkadrie
+			}
+		}
+	}
+	INS_mohammad_noor = {
+		name = INS_mohammad_noor
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Onn_Jaafar
+			}
+			army = {
+				small = GFX_idea_indonesia_joesoef_alkadrie
+			}
+		}
+	}
+}

@@ -1,0 +1,134 @@
+characters = {
+
+	ATJ_daoed_beoereoeh = {
+		name = ATJ_daoed_beoereoeh
+		portraits = {
+			civilian = {
+				large = GFX_portrait_aceh_daud_beureueh
+			}
+			army = {
+				small = GFX_idea_aceh_daud_beureueh
+			}
+		}
+		country_leader = {
+			desc = INS_daoed_beoereoeh_desc
+			ideology = fascism_ideology
+			traits = {
+			}
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		field_marshal = {
+			traits = { scavenger jungle_rat }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+
+	ATJ_toeankoe_radja_ibrahim = {
+		name = ATJ_toeankoe_radja_ibrahim
+		portraits = {
+			civilian = {
+				large = GFX_portrait_aceh_tuanku_ibrahim
+			}
+			army = {
+				small = GFX_idea_aceh_tuanku_radja_ibrahim
+			}
+		}
+		country_leader = {
+			desc = INS_tuanku_radja_ibrahim_desc
+			ideology = despotism
+			traits = {
+			}
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = INS_toeankoe_radja_ibrahim
+			allowed = {
+				original_tag = INS
+			}
+			available = {
+				if = {
+					limit = {
+						tag = INS
+					}
+					has_completed_focus = INS_reestablish_royal_houses
+				}
+			}
+			visible = {
+				has_country_flag = INS_de_jonge_resigned
+			}
+			traits = {
+				atjeh_prince
+			}
+			on_add = {
+				1017 = {
+					add_dynamic_modifier = {
+						modifier = INS_atjeh_ibrahim_modifier
+					}
+				}
+			}
+			on_remove = {
+				1017 = {
+					remove_dynamic_modifier = {
+						modifier = INS_atjeh_ibrahim_modifier
+					}
+				}
+			}
+			cost = 135
+		}
+	}
+
+	ATJ_abdoelxarim = {
+		name = ATJ_abdoelxarim
+		country_leader = {
+			desc = ATJ_abdoelxarim
+			ideology = leninism
+			traits = {
+				JUNO_revolutionary_writer
+			}
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+
+	ATJ_natar_zainuddin = {
+		name = ATJ_natar_zainuddin
+		advisor = {
+			slot = political_advisor
+			idea_token = ATJ_natar_zainuddin
+			allowed = {
+				OR = {
+					original_tag = INS
+					tag = ATJ
+				}
+				has_dlc = "Man the Guns"
+			}
+			available = {
+				is_subject = no
+				NOT = {
+					has_government = fascism
+				}
+				if = {
+					limit = {
+						has_character_flag = INS_imprisoned_flag
+					}
+					NOT = {
+						has_character_flag = INS_imprisoned_flag
+					}
+				}
+			}
+			visible = {
+			}
+			traits = {
+				revolutionary_author
+			}
+		}
+	}
+}

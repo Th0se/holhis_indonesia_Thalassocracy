@@ -13,6 +13,7 @@ recruit_character = MAL_charles_brooke
 
 # Starting tech
 # clone of UK
+
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -75,43 +76,19 @@ if = {
 	}
 }
 
-if = {
-	limit = {
-		not = { has_dlc = "Man the Guns" }
-	}
-	set_technology = {
-		early_submarine = 1
-		early_destroyer = 1
-		basic_destroyer = 1
-		early_light_cruiser = 1
-		early_heavy_cruiser = 1
-		early_battleship = 1
-		early_battlecruiser = 1
-		early_carrier = 1
-	}
+set_technology = {
+	early_ship_hull_submarine = 1
+	early_ship_hull_light = 1
+	basic_ship_hull_light = 1
+	early_ship_hull_cruiser = 1
+	early_ship_hull_heavy = 1
+	early_ship_hull_carrier = 1
+	basic_battery = 1
 }
 
-if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	set_technology = {
-		early_ship_hull_submarine = 1
-		early_ship_hull_light = 1
-		basic_ship_hull_light = 1
-		early_ship_hull_cruiser = 1
-		early_ship_hull_heavy = 1
-		early_ship_hull_carrier = 1
-		basic_battery = 1
-	}
-}
 set_convoys = 40
 
-if = {
-	limit = { has_dlc = "Together for Victory" }
-
-	add_to_tech_sharing_group = commonwealth_research
-}
+add_to_tech_sharing_group = commonwealth_research
 
 set_politics = {
 	ruling_party = neutrality
@@ -133,11 +110,11 @@ add_ideas = {
 
 set_cosmetic_tag = MAL_UK # British Malaya
 
-951 = { #Johor
+1058 = { #Johor
 	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
 }
 
-952 = { #Malaya
+336 = { #Malaya
 	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
 }
 
