@@ -1,0 +1,50 @@
+﻿### Air Wings
+air_wings = {
+	# Luchtvaartafdeling
+	7 = {
+		fighter_equipment_1 = {				# 2 Fighter Group -- Fokker D.XXI
+			owner = "HOL"
+			amount = 60
+		}
+	}
+
+	# Militaire Luchtvaart van het Koninklijk Nederlands-Indisch Leger (ML-KNIL) #
+	335 = {																#  Tjililitan, Batavia
+		fighter_equipment_1 = {				# Fighter Group -- H-75A Hawks, CW-21 Interceptors
+			owner = "HOL"
+			creator = "USA"
+			amount = 24
+		}
+		tac_bomber_equipment_1 = {			# Bomber Group -- Martin WH-3 (US B-10 Bolos, upgraded)
+			owner = "HOL"
+			creator = "USA"
+			amount = 15
+		}
+		tac_bomber_equipment_1 = {			# Bomber Group -- Martin WH-1/2s (US B-10 Bolos)
+			owner = "HOL"
+			creator = "USA"
+			amount = 27
+		}
+		CAS_equipment_1 = {		
+			owner = "HOL" 
+			amount = 8
+		}
+		tac_bomber_equipment_0 = {
+			owner = "HOL"
+			amount = 16
+		}
+	}
+}
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_1
+			creator = "HOL"
+		}
+		requested_factories = 1
+		progress = 0.44
+		efficiency = 100
+	}
+}

@@ -1,0 +1,291 @@
+INS_category_volksraad = {
+	icon = generic_foreign_policy
+	
+	picture = GFX_decision_cat_picture_volksraad
+
+	allowed = {
+		original_tag = INS
+	}
+	
+	priority = {
+		base = 12
+	}
+
+	visible = {
+		NOT = {
+			has_completed_focus = INS_discourage_democratic_reforms
+		}
+	}
+}
+
+INS_category_national_projects = {
+
+	icon = SOV_soviet_academy_of_sciences
+
+	allowed = {
+		original_tag = INS
+	}
+	
+	priority = {
+		base = 11
+	}
+}
+
+INS_category_invite_foreign_investors = {
+	icon = hol_obtain_foreign_colonial_investments
+	
+	picture = GFX_decision_cat_picture_government_in_exile
+
+	allowed = {
+		original_tag = INS
+	}
+	
+	priority = {
+		base = 10
+	}
+
+	visible = {
+		has_completed_focus = INS_invite_foreign_investors
+	}
+}
+
+INS_category_ethical_policies = {
+	icon = generic_democracy
+
+	picture = GFX_decision_cat_picture_chi_political_support
+	
+	allowed = {
+		original_tag = INS
+	}
+	
+	priority = {
+		base = 9
+	}
+
+	visible = {
+		NOT = {
+			has_completed_focus = INS_proclaim_the_empire
+		}
+		OR = {
+			has_completed_focus = INS_reinstate_ethical_policies
+			has_completed_focus = INS_new_schools
+		}
+	}
+}
+
+INS_category_new_capital = {
+	icon = SOV_soviet_academy_of_sciences
+	
+	allowed = {
+		original_tag = INS
+	}
+	
+	priority = {
+		base = 8
+	}
+
+	visible = {
+		has_completed_focus = INS_move_capital
+	}
+}
+
+INS_category_evacuation = {
+	icon = hol_secret_staff_talks
+	
+	allowed = {
+		original_tag = INS
+	}
+	
+	priority = {
+		base = 8
+	}
+
+	visible = {
+		has_completed_focus = INS_build_exile_port
+	}
+}
+
+INS_category_japanese_occupation = {
+	icon = generic_independence
+	
+	picture = GFX_decision_cat_picture_chi_infiltration
+
+	allowed = {
+		original_tag = INS
+	}
+}
+
+INS_category_armament_procurement = {
+
+	icon = generic_arms_trade
+
+	priority = {
+		base = 8
+	}
+
+	allowed = {
+		original_tag = INS
+	}
+
+	visible_when_empty = yes
+
+	visible = {
+		OR = {
+			has_completed_focus = INS_procure_western_armaments
+			has_completed_focus = INS_fight_abroad
+		}
+	}
+}
+
+INS_category_netherlands_indies_intelligence_service = {
+	
+	icon = eng_propaganda_campaigns
+
+	priority = {
+		base = 9
+	}
+
+	allowed = {
+		original_tag = INS
+	}
+
+	visible = {
+		has_completed_focus = INS_evacuation
+	}
+}
+
+INS_category_civil_war_decisions = {
+	icon = generic_independence
+
+	priority = {
+		base = 8
+	}
+	
+	picture = GFX_decision_cat_picture_chi_political_support
+
+	allowed = {
+		original_tag = INS
+	}
+
+	visible = {
+		has_completed_focus = INS_discourage_democratic_reforms
+		NOT = {
+			has_global_flag = INS_civil_war_end
+		}
+	}
+}
+
+INS_category_civil_war_missions = {
+	icon = generic_independence
+
+	priority = {
+		base = 8
+	}
+	
+	picture = GFX_decision_cat_picture_SWI_military_readiness_decisions
+
+	allowed = {
+		original_tag = INS
+	}
+
+	visible = {
+		has_completed_focus = INS_discourage_democratic_reforms
+		NOT = {
+			has_global_flag = INS_civil_war_end
+		}
+	}
+}
+
+INS_category_pki_decisions = {
+
+	icon = generic_independence
+	
+	priority = {
+		base = 11
+	}
+
+	allowed = {
+		original_tag = INS
+	}
+
+	visible = {
+	}
+}
+
+INS_rename = {
+	icon = generic_political_actions
+	
+	allowed = {
+		original_tag = INS
+	}
+}
+
+INS_category_national_defence = {
+	icon = army_reform
+
+	allowed = {
+		original_tag = INS
+	}
+}
+
+INS_pacification_campaigns = {
+	
+	icon = hol_war_on_pacifism
+
+	priority = {
+		base = 11
+	}
+
+	allowed = {
+		original_tag = INS
+	}
+
+	visible = {
+		has_completed_focus = INS_repacification_east_indies
+	}
+
+	visible_when_empty = yes
+}
+
+ASEAN_malacca_strait_security = {
+
+	icon = GFX_decision_category_ITA_colonial_management
+	
+	picture = GFX_decision_cat_picture_malacca
+
+	priority = {
+		base = 11
+	}
+
+	allowed = {
+		NOT = {
+			is_asean_state = yes
+		}
+	}
+
+	visible = {
+		OR = {
+			336 = {
+				owner = {
+					original_tag = MAL
+					is_subject_of = ROOT
+					has_full_control_of_state = PREV
+				}
+			}
+			333 = {
+				owner = {
+					original_tag = MAL
+					is_subject_of = ROOT
+					has_full_control_of_state = PREV
+				}
+			}
+			333 = {
+				owner = {
+					original_tag = KLM
+					is_subject_of = ROOT
+					has_full_control_of_state = PREV
+				}
+			}
+		}
+	}
+}

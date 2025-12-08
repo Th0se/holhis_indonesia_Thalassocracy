@@ -266,19 +266,19 @@ characters = {
 		}
 	}
 
-	INS_soekarno = {
-		name = INS_soekarno
+	INS_sukarno = {
+		name = INS_sukarno
 		portraits = {
 			civilian = {
-				large = GFX_portrait_indonesia_soekarno
+				large = GFX_portrait_indonesia_sukarno
 			}
 			army = {
-				small = GFX_idea_indonesia_soekarno_jailed
+				small = GFX_idea_indonesia_sukarno_jailed
 			}
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = INS_soekarno
+			idea_token = INS_sukarno
 			allowed = {
 				original_tag = INS
 			}
@@ -299,7 +299,7 @@ characters = {
 			visible = {
 				NOT = {
 					has_country_leader = {
-						name = "Soekarno"
+						name = "Sukarno"
 						ruling_only = yes
 					}
 				}
@@ -448,20 +448,20 @@ characters = {
 		}
 	}
 
-	INS_moesso_moenawar = {
-		name = INS_moesso_moenawar
+	INS_muso_munawar = {
+		name = INS_muso_munawar
 		portraits = {
 			civilian = {
-				large = GFX_portrait_indonesia_moesso_moenawar
+				large = GFX_portrait_indonesia_muso_munawar
 			}
 			army = {
-				large = GFX_portrait_indonesia_moesso_moenawar
-				small = GFX_idea_indonesia_moesso_moenawar
+				large = GFX_portrait_indonesia_muso_munawar
+				small = GFX_idea_indonesia_muso_munawar
 			}
 		}
 		country_leader = {
 			ideology = stalinism
-			desc = INS_moesso_moenawar_desc
+			desc = INS_muso_munawar_desc
 			traits = {
 				staunch_stalinist
 			}
@@ -470,7 +470,7 @@ characters = {
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = INS_moesso_moenawar
+			idea_token = INS_muso_munawar
 			allowed = {
 				original_tag = INS
 				has_dlc = "Man the Guns"
@@ -492,7 +492,7 @@ characters = {
 			visible = {
 				NOT = {
 					has_country_leader = {
-						name = "Moesso Moenawar"
+						name = "Muso Munawar"
 						ruling_only = yes
 					}
 				}
@@ -503,15 +503,15 @@ characters = {
 		}
 	}
 
-	INS_amir_sjarifoeddin = {
-		name = INS_amir_sjarifoeddin
+	INS_amir_syarifuddin = {
+		name = INS_amir_syarifuddin
 		portraits = {
 			civilian = {
-				large = GFX_portrait_indonesia_amir_sjarifoeddin
+				large = GFX_portrait_indonesia_amir_syarifuddin
 			}
 			army = {
 				large = GFX_portrait_indonesia_amir_army
-				small = GFX_idea_indonesia_amir_sjarifoeddin
+				small = GFX_idea_indonesia_amir_syarifuddin
 			}
 		}
 		country_leader = {
@@ -519,13 +519,13 @@ characters = {
 			traits = {
 				patriotic_socialist
 			}
-			desc = INS_amir_sjarifoeddin_desc
+			desc = INS_amir_syarifuddin_desc
 			expire = "1965.1.1.1"
 			id = -1
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = INS_amir_sjarifoeddin
+			idea_token = INS_amir_syarifuddin
 			allowed = {
 				OR = {
 					original_tag = INS
@@ -580,7 +580,7 @@ characters = {
 				}
 				NOT = {
 					has_country_leader = {
-						name = "Amir Sjarifoeddin Harahap"
+						name = "Amir Sjarifuddin Harahap"
 						ruling_only = yes
 					}
 				}
@@ -631,18 +631,18 @@ characters = {
 		}
 	}
 
-	INS_soetomo = {
-		name = INS_soetomo
+	INS_sutomo = {
+		name = INS_sutomo
 		portraits = {
 			civilian = {
-				large = GFX_portrait_indonesia_soetomo
+				large = GFX_portrait_indonesia_sutomo
 			}
 			army = {
-				small = GFX_idea_indonesia_soetomo
+				small = GFX_idea_indonesia_sutomo
 			}
 		}
 		country_leader = {
-			desc = INS_soetomo_desc
+			desc = INS_sutomo_desc
 			ideology = conservatism
 			traits = {
 				conservative_amongst_radicals
@@ -652,7 +652,7 @@ characters = {
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = INS_soetomo
+			idea_token = INS_sutomo
 			allowed = {
 				original_tag = INS
 			}
@@ -679,7 +679,7 @@ characters = {
 				}
 				NOT = {
 					has_country_leader = {
-						name = "Soetomo"
+						name = "Sutomo"
 						ruling_only = yes 
 					}
 				}
@@ -690,7 +690,7 @@ characters = {
 				}
 				NOT = {
 					has_country_leader = {
-						name = "Soetomo"
+						name = "Sutomo"
 						ruling_only = yes 
 					}
 				}
@@ -702,7 +702,7 @@ characters = {
 				base = 20
 				modifier = {
 					has_country_leader = {
-						name = "Soekarno"
+						name = "Sukarno"
 						ruling_only = yes 
 					}
 					factor = 10
@@ -711,8 +711,8 @@ characters = {
 		}
 	}
 
-	INS_mohammad_hoesni_thamrin = {
-		name = INS_mohammad_hoesni_thamrin
+	INS_mohammad_husni_thamrin = {
+		name = INS_mohammad_husni_thamrin
 		portraits = {
 			civilian = {
 				large = GFX_portrait_indonesia_thamrin
@@ -723,11 +723,12 @@ characters = {
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = INS_mohammad_hoesni_thamrin
+			idea_token = INS_mohammad_husni_thamrin
 			allowed = {
 				original_tag = INS
 			}
 			available = {
+				has_completed_focus = INS_expel_the_colonials
 				if = {
 					limit = {
 						has_completed_focus = INS_break_the_chains
@@ -738,7 +739,7 @@ characters = {
 				}
 				NOT = {
 					has_country_leader = {
-						name = "Mohammad Hoesni Thamrin"
+						name = "Mohammad Husni Thamrin"
 						ruling_only = yes 
 					}
 				}
@@ -766,7 +767,7 @@ characters = {
 				}
 				NOT = {
 					has_country_leader = {
-						name = "Mohammad Hoesni Thamrin"
+						name = "Mohammad Husni Thamrin"
 						ruling_only = yes 
 					}
 				}
@@ -777,8 +778,8 @@ characters = {
 		}
 	}
 
-	INS_mohammad_hoesni_thamrin_volksraad = {
-		name = INS_mohammad_hoesni_thamrin
+	INS_mohammad_husni_thamrin_volksraad = {
+		name = INS_mohammad_husni_thamrin
 		portraits = {
 			army = {
 				small = GFX_idea_indonesia_thamrin
@@ -786,7 +787,7 @@ characters = {
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = INS_mohammad_hoesni_thamrin_volksraad
+			idea_token = INS_mohammad_husni_thamrin_volksraad
 			allowed = {
 				original_tag = INS
 			}
@@ -797,7 +798,7 @@ characters = {
 				}
 				NOT = {
 					has_country_leader = {
-						name = "Mohammad Hoesni Thamrin"
+						name = "Mohammad Husni Thamrin"
 						ruling_only = yes 
 					}
 				}
@@ -827,7 +828,7 @@ characters = {
 				}
 				NOT = {
 					has_country_leader = {
-						name = "Mohammad Hoesni Thamrin"
+						name = "Mohammad Husni Thamrin"
 						ruling_only = yes 
 					}
 				}
@@ -852,19 +853,19 @@ characters = {
 		}
 	}
 
-	INS_soekardjo_wirjopranoto = {
-		name = INS_soekardjo_wirjopranoto
+	INS_sukarjo_wiryopranoto = {
+		name = INS_sukarjo_wiryopranoto
 		portraits = {
 			civilian = {
-				large = GFX_portrait_indonesia_soekardjo
+				large = GFX_portrait_indonesia_sukarjo
 			}
 			army = {
-				small = GFX_idea_indonesia_soekardjo
+				small = GFX_idea_indonesia_sukarjo
 			}
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = INS_soekardjo
+			idea_token = INS_sukarjo
 			allowed = {
 				original_tag = INS
 			}
@@ -932,7 +933,7 @@ characters = {
 				base = 20
 				modifier = {
 					has_country_leader = {
-						name = "Soekarno"
+						name = "Sukarno"
 						ruling_only = yes 
 					}
 					factor = 10
@@ -941,19 +942,19 @@ characters = {
 		}
 	}
 
-	INS_abikoesno_tjokrosoejoso = {
-		name = INS_abikoesno_tjokrosoejoso
+	INS_abikusno_cokrosuyoso = {
+		name = INS_abikusno_cokrosuyoso
 		portraits = {
 			civilian = {
-				large = GFX_portrait_indonesia_abikoesno
+				large = GFX_portrait_indonesia_abikusno
 			}
 			army = {
-				small = GFX_idea_indonesia_abikoesno
+				small = GFX_idea_indonesia_abikusno
 			}
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = INS_abikoesno_tjokrosoejoso
+			idea_token = INS_abikusno_cokrosuyoso
 			allowed = {
 				original_tag = INS
 			}
@@ -977,7 +978,7 @@ characters = {
 				}
 				NOT = {
 					has_country_leader = {
-						name = "Abikoesno Tjokrosoejoso"
+						name = "Abikusno Cokrosuyoso"
 						ruling_only = yes 
 					}
 				}
@@ -1003,16 +1004,16 @@ characters = {
 
 	#ADVISORS ONLY
 
-	INS_abdoelkadir_widjojoatmodjo = {
-		name = INS_abdoelkadir_widjojoatmodjo
+	INS_abdulkadir_wijoyoatmojo = {
+		name = INS_abdulkadir_wijoyoatmojo
 		portraits = {
 			army = {
-				small = GFX_idea_indonesia_abdoelkadir
+				small = GFX_idea_indonesia_abdulkadir
 			}
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = INS_abdoelkadir_widjojoatmodjo
+			idea_token = INS_abdulkadir_wijoyoatmojo
 			allowed = {
 				original_tag = INS
 				has_dlc = "Man the Guns"
@@ -1057,16 +1058,16 @@ characters = {
 		}
 	}
 
-	INS_achmad_soebardjo = {
-		name = INS_achmad_soebardjo
+	INS_achmad_subarjo = {
+		name = INS_achmad_subarjo
 		portraits = {
 			army = {
-				small = GFX_idea_indonesia_achmad_soebardjo
+				small = GFX_idea_indonesia_achmad_subarjo
 			}
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = INS_achmad_soebardjo
+			idea_token = INS_achmad_subarjo
 			allowed = {
 				OR = {
 					original_tag = INS
@@ -1133,7 +1134,7 @@ characters = {
 					}
 				}
 				has_country_leader = {
-					name = "Amir Sjarifoeddin Harahap"
+					name = "Amir Sjarifuddin Harahap"
 					ruling_only = yes
 				}
 			}
@@ -1144,19 +1145,19 @@ characters = {
 		}
 	}
 
-	INS_agoes_salim = {
-		name = INS_agoes_salim
+	INS_agus_salim = {
+		name = INS_agus_salim
 		portraits = {
 			army = {
-				small = GFX_idea_indonesia_agoes_salim
+				small = GFX_idea_indonesia_agus_salim
 			}
 			civilian = {
-				large = GFX_portrait_indonesia_agoes_salim
+				large = GFX_portrait_indonesia_agus_salim
 			}
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = INS_agoes_salim
+			idea_token = INS_agus_salim
 			allowed = {
 				original_tag = INS
 				has_dlc = "Man the Guns"
@@ -1664,21 +1665,21 @@ characters = {
 		}
 	}
 
-	INS_hamengkoeboewono_eighth = {
-		name = INS_hamengkoeboewono_eighth
+	INS_hamengkubuwono_eighth = {
+		name = INS_hamengkubuwono_eighth
 		portraits = {
 			army = {
-				small = GFX_idea_indonesia_hamengkoeboewono_eighth
-				large = GFX_portrait_indonesia_hamengkoeboewono_eighth_army
+				small = GFX_idea_indonesia_hamengkubuwono_eighth
+				large = GFX_portrait_indonesia_hamengkubuwono_eighth_army
 			}
 			civilian = {
-				small = GFX_idea_indonesia_hamengkoeboewono_eighth
-				large = GFX_portrait_indonesia_hamengkoeboewono_eighth
+				small = GFX_idea_indonesia_hamengkubuwono_eighth
+				large = GFX_portrait_indonesia_hamengkubuwono_eighth
 			}
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = INS_hamengkoeboewono_eighth
+			idea_token = INS_hamengkubuwono_eighth
 			allowed = {
 				original_tag = INS
 				has_dlc = "Man the Guns"
@@ -1692,7 +1693,7 @@ characters = {
 					has_completed_focus = INS_reestablish_royal_houses
 					has_completed_focus = INS_merdeka
 				}
-				controls_state = 1020
+				controls_state = 1051
 			}
 			visible = {
 				OR = {
@@ -1701,12 +1702,12 @@ characters = {
 						has_country_flag = INS_de_jonge_resigned
 					}
 					has_country_leader = {
-						name = "Soekarno"
+						name = "Sukarno"
 						ruling_only = yes
 					}
 				}
 				NOT = {
-					has_country_flag = INS_hamengkoeboewono_viii_passed
+					has_country_flag = INS_hamengkubuwono_viii_passed
 				}
 			}
 			traits = {
@@ -1715,21 +1716,21 @@ characters = {
 		}
 	}
 	
-	INS_hamengkoeboewono_ninth = {
-		name = INS_hamengkoeboewono_ninth
+	INS_hamengkubuwono_ninth = {
+		name = INS_hamengkubuwono_ninth
 		portraits = {
 			army = {
-				small = GFX_idea_indonesia_hamengkoeboewono_ninth
-				large = GFX_portrait_indonesia_hamengkoeboewono_ninth_army
+				small = GFX_idea_indonesia_hamengkubuwono_ninth
+				large = GFX_portrait_indonesia_hamengkubuwono_ninth_army
 			}
 			civilian = {
-				small = GFX_idea_indonesia_hamengkoeboewono_ninth
-				large = GFX_portrait_indonesia_hamengkoeboewono_ninth
+				small = GFX_idea_indonesia_hamengkubuwono_ninth
+				large = GFX_portrait_indonesia_hamengkubuwono_ninth
 			}
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = INS_hamengkoeboewono_ninth
+			idea_token = INS_hamengkubuwono_ninth
 			allowed = {
 				original_tag = INS
 				has_dlc = "Man the Guns"
@@ -1746,10 +1747,10 @@ characters = {
 					has_completed_focus = INS_reestablish_royal_houses
 					has_completed_focus = INS_merdeka
 				}
-				controls_state = 1020
+				controls_state = 1051
 			}
 			visible = {
-				has_country_flag = INS_hamengkoeboewono_viii_passed
+				has_country_flag = INS_hamengkubuwono_viii_passed
 				OR = {
 					AND = {
 						has_completed_focus = INS_challenge_dutch_elitism
@@ -1905,16 +1906,16 @@ characters = {
 		}
 	}
 
-	INS_ida_anak_agoeng = {
-		name = INS_ida_anak_agoeng
+	INS_ida_anak_agung = {
+		name = INS_ida_anak_agung
 		portraits = {
 			army = {
-				small = GFX_idea_indonesia_ida_anak_agoeng
+				small = GFX_idea_indonesia_ida_anak_agung
 			}
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = INS_ida_anak_agoeng
+			idea_token = INS_ida_anak_agung
 			allowed = {
 				OR = {
 					original_tag = INS
@@ -1942,7 +1943,7 @@ characters = {
 				date > 1946.7.24
 			}
 			traits = {
-				the_man_from_gianjar
+				the_man_from_gianyar
 			}
 			cost = 135
 		}
@@ -2011,8 +2012,8 @@ characters = {
 		}
 	}
 
-	INS_iwa_koesoemasoemantri = {
-		name = INS_iwa_koesoemasoemantri
+	INS_iwa_kusumasumantri = {
+		name = INS_iwa_kusumasumantri
 		portraits = {
 			army = {
 				small = GFX_idea_indonesia_iwa_jailed
@@ -2020,7 +2021,7 @@ characters = {
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = INS_iwa_koesoemasoemantri
+			idea_token = INS_iwa_kusumasumantri
 			allowed = {
 				original_tag = INS
 				has_dlc = "Man the Guns"
@@ -2233,7 +2234,7 @@ characters = {
 					limit = { tag = INS }
 					OR = {
 						has_completed_focus = INS_indies_nation
-						has_completed_focus = INS_support_soetardjo
+						has_completed_focus = INS_support_sutarjo
 						has_completed_focus = INS_expel_the_colonials
 					}
 				}
@@ -2307,17 +2308,17 @@ characters = {
 		}
 	}
 
-	INS_mangkoenegara_seventh = {
-		name = INS_mangkoenegara_seventh
+	INS_mangkunegara_seventh = {
+		name = INS_mangkunegara_seventh
 		portraits = {
 			army = {
-				small = GFX_idea_indonesia_mangkoenegara_seventh_army
+				small = GFX_idea_indonesia_mangkunegara_seventh_army
 			}
 		}
 	}
 
-	INS_margono_djojohadikoesoemo = {
-		name = INS_margono_djojohadikoesoemo
+	INS_margono_joyohadikusumo = {
+		name = INS_margono_joyohadikusumo
 		portraits = {
 			army = {
 				small = GFX_idea_indonesia_margono
@@ -2325,7 +2326,7 @@ characters = {
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = INS_margono_djojohadikoesoemo
+			idea_token = INS_margono_joyohadikusumo
 			allowed = {
 				original_tag = INS
 			}
@@ -2381,16 +2382,16 @@ characters = {
 		}
 	}
 
-	INS_mohammad_jamin = {
-		name = INS_mohammad_jamin
+	INS_mohammad_yamin = {
+		name = INS_mohammad_yamin
 		portraits = {
 			army = {
-				small = GFX_idea_indonesia_mohammad_jamin
+				small = GFX_idea_indonesia_mohammad_yamin
 			}
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = INS_mohammad_jamin
+			idea_token = INS_mohammad_yamin
 			allowed = {
 				OR = {
 					original_tag = INS
@@ -2454,7 +2455,7 @@ characters = {
 					}
 					OR = {
 						has_completed_focus = INS_reform_bb
-						has_completed_focus = INS_support_soetardjo
+						has_completed_focus = INS_support_sutarjo
 						has_completed_focus = INS_upheld_status_quo
 					}
 				}
@@ -2483,7 +2484,7 @@ characters = {
 			available = {
 				OR = {
 					has_completed_focus = INS_indies_nation
-					has_completed_focus = INS_support_soetardjo
+					has_completed_focus = INS_support_sutarjo
 					has_completed_focus = INS_expel_the_colonials
 				}
 			}
@@ -2494,14 +2495,14 @@ characters = {
 				pasundan_representative
 			}
 			on_add = {
-				1020 = {
+				1051 = {
 					add_dynamic_modifier = {
 						modifier = INS_west_java_di_nata_modifier
 					}
 				}
 			}
 			on_remove = {
-				1020 = {
+				1051 = {
 					remove_dynamic_modifier = {
 						modifier = INS_west_java_di_nata_modifier
 					}
@@ -2574,17 +2575,17 @@ characters = {
 		}
 	}
 
-	INS_roehana_koeddoes = {
-		name = INS_roehana_koeddoes
+	INS_ruhana_kuddus = {
+		name = INS_ruhana_kuddus
 		gender = female
 		portraits = {
 			army = {
-				small = GFX_idea_indonesia_roehana_koeddoes
+				small = GFX_idea_indonesia_ruhana_kuddus
 			}
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = INS_roehana_koeddoes
+			idea_token = INS_ruhana_kuddus
 			allowed = {
 				original_tag = INS
 			}
@@ -2672,7 +2673,7 @@ characters = {
 					}
 					OR = {
 						has_completed_focus = INS_indies_nation
-						has_completed_focus = INS_support_soetardjo
+						has_completed_focus = INS_support_sutarjo
 					}
 				}
 			}
@@ -2683,14 +2684,14 @@ characters = {
 				minahasan_autonomist
 			}
 			on_add = {
-				1025 = {
+				1054 = {
 					add_dynamic_modifier = {
 						modifier = INS_north_sulawesi_ratulangi_modifier
 					}
 				}
 			}
 			on_remove = {
-				1025 = {
+				1054 = {
 					remove_dynamic_modifier = {
 						modifier = INS_north_sulawesi_ratulangi_modifier
 					}
@@ -2700,19 +2701,19 @@ characters = {
 		}
 	}
 
-	INS_sardjono = {
-		name = INS_sardjono
+	INS_sarjono = {
+		name = INS_sarjono
 		portraits = {
 			civilian = {
-				large = GFX_portrait_indonesia_sardjono
+				large = GFX_portrait_indonesia_sarjono
 			}
 			army = {
-				small = GFX_idea_indonesia_sardjono_jailed
+				small = GFX_idea_indonesia_sarjono_jailed
 			}
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = INS_sardjono
+			idea_token = INS_sarjono
 			allowed = {
 				original_tag = INS
 			}
@@ -2733,7 +2734,7 @@ characters = {
 			visible = {
 				NOT = {
 					has_country_leader = {
-						name = "Sardjono"
+						name = "Sarjono"
 						ruling_only = yes
 					}
 				}
@@ -2744,19 +2745,19 @@ characters = {
 		}
 	}
 
-	INS_sekarmadji_maridjan = {
-		name = INS_sekarmadji_maridjan
+	INS_sekarmaji_marijan = {
+		name = INS_sekarmaji_marijan
 		portraits = {
 			army = {
-				small = GFX_idea_indonesia_sekarmadji_maridjan
+				small = GFX_idea_indonesia_sekarmaji_marijan
 			}
 			civilian = {
-				large = GFX_portrait_indonesia_sekarmadji_maridjan
+				large = GFX_portrait_indonesia_sekarmaji_marijan
 			}
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = INS_sekarmadji_maridjan
+			idea_token = INS_sekarmaji_marijan
 			allowed = {
 				original_tag = INS
 			}
@@ -2779,16 +2780,16 @@ characters = {
 		}
 	}
 
-	INS_semaoen = {
-		name = INS_semaoen
+	INS_semaun = {
+		name = INS_semaun
 		portraits = {
 			army = {
-				small = GFX_idea_indonesia_semaoen
+				small = GFX_idea_indonesia_semaun
 			}
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = INS_semaoen
+			idea_token = INS_semaun
 			allowed = {
 				original_tag = INS
 			}
@@ -2815,7 +2816,7 @@ characters = {
 							has_idea_with_trait = lieutenant_of_industry
 							AND = {
 								has_idea_with_trait = captain_of_industry
-								NOT = { has_idea = INS_semaoen }
+								NOT = { has_idea = INS_semaun }
 							}
 							custom_trigger_tooltip = {
 								tooltip = INS_has_coi_trait_tt
@@ -2846,16 +2847,16 @@ characters = {
 		}
 	}
 
-	INS_soekiman_wirjosandjojo = {
-		name = INS_soekiman_wirjosandjojo
+	INS_sukiman_wiryosanjoyo = {
+		name = INS_sukiman_wiryosanjoyo
 		portraits = {
 			army = {
-				small = GFX_idea_indonesia_soekiman
+				small = GFX_idea_indonesia_sukiman
 			}
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = INS_soekiman_wirjosandjojo
+			idea_token = INS_sukiman_wiryosanjoyo
 			allowed = {
 				original_tag = INS
 				has_dlc = "Man the Guns"
@@ -2886,7 +2887,7 @@ characters = {
 				base = 20
 				modifier = {
 					has_country_leader = {
-						name = "Abikoesno Tjokrosoejoso"
+						name = "Abikusno Cokrosuyoso"
 						ruling_only = yes 
 					}
 					factor = 10
@@ -2895,19 +2896,19 @@ characters = {
 		}
 	}
 
-	INS_soepomo = {
-		name = INS_soepomo
+	INS_supomo = {
+		name = INS_supomo
 		portraits = {
 			civilian = {
-				large = GFX_portrait_indonesia_soepomo
+				large = GFX_portrait_indonesia_supomo
 			}
 			army = {
-				small = GFX_idea_indonesia_soepomo
+				small = GFX_idea_indonesia_supomo
 			}
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = INS_soepomo
+			idea_token = INS_supomo
 			allowed = {
 				original_tag = INS
 				has_dlc = "Man the Guns"
@@ -2916,7 +2917,7 @@ characters = {
 				has_country_flag = INS_de_jonge_resigned
 				NOT = {
 					has_country_leader = {
-						name = "Soepomo"
+						name = "Supomo"
 						ruling_only = yes 
 					}
 				}
@@ -2940,7 +2941,7 @@ characters = {
 				}
 				NOT = {
 					has_country_leader = {
-						name = "Soepomo"
+						name = "Supomo"
 						ruling_only = yes 
 					}
 				}
@@ -2952,7 +2953,7 @@ characters = {
 				base = 20
 				modifier = {
 					has_country_leader = {
-						name = "Soekarno"
+						name = "Sukarno"
 						ruling_only = yes 
 					}
 					factor = 10
@@ -2961,19 +2962,19 @@ characters = {
 		}
 	}
 
-	INS_soekawati = {
-		name = INS_soekawati
+	INS_sukawati = {
+		name = INS_sukawati
 		portraits = {
 			civilian = {
-				large = GFX_portrait_indonesia_soekawati
+				large = GFX_portrait_indonesia_sukawati
 			}
 			army = {
-				small = GFX_idea_indonesia_soekawati
+				small = GFX_idea_indonesia_sukawati
 			}
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = INS_soekawati
+			idea_token = INS_sukawati
 			allowed = {
 				OR = {
 					original_tag = INS
@@ -3005,19 +3006,19 @@ characters = {
 		}
 	}
 
-	INS_soetan_sjahrir = {
-		name = INS_soetan_sjahrir
+	INS_sutan_syahrir = {
+		name = INS_sutan_syahrir
 		portraits = {
 			civilian = {
-				large = GFX_portrait_indonesia_sjahrir
+				large = GFX_portrait_indonesia_syahrir
 			}
 			army = {
-				small = GFX_idea_indonesia_sjahrir_jailed
+				small = GFX_idea_indonesia_syahrir_jailed
 			}
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = INS_soetan_sjahrir
+			idea_token = INS_sutan_syahrir
 			allowed = {
 				OR = {
 					original_tag = INS
@@ -3050,21 +3051,21 @@ characters = {
 		}
 	}
 
-	INS_soetardjo_kartohadikoesoemo = {
-		name = INS_soetardjo_kartohadikoesoemo
+	INS_sutarjo_kartohadikusumo = {
+		name = INS_sutarjo_kartohadikusumo
 		portraits = {
 			army = {
-				small = GFX_idea_indonesia_soetardjo
+				small = GFX_idea_indonesia_sutarjo
 			}
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = INS_soetardjo_kartohadikoesoemo
+			idea_token = INS_sutarjo_kartohadikusumo
 			allowed = {
 				original_tag = INS
 			}
 			available = {
-				has_completed_focus = INS_support_soetardjo
+				has_completed_focus = INS_support_sutarjo
 				NOT = {
 					has_government = fascism
 				}
@@ -3076,16 +3077,16 @@ characters = {
 				javanese_bestuurder
 			}
 			on_add = {
-				1020 = {
+				1051 = {
 					add_dynamic_modifier = {
-						modifier = INS_central_java_soetardjo_modifier
+						modifier = INS_central_java_sutarjo_modifier
 					}
 				}
 			}
 			on_remove = {
-				1020 = {
+				1051 = {
 					remove_dynamic_modifier = {
-						modifier = INS_central_java_soetardjo_modifier
+						modifier = INS_central_java_sutarjo_modifier
 					}
 				}
 			}
@@ -3093,17 +3094,17 @@ characters = {
 		}
 	}
 
-	INS_sk_trimoerti = {
-		name = INS_sk_trimoerti
+	INS_sk_trimurti = {
+		name = INS_sk_trimurti
 		gender = female
 		portraits = {
 			army = {
-				small = GFX_idea_indonesia_sk_trimoerti
+				small = GFX_idea_indonesia_sk_trimurti
 			}
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = INS_sk_trimoerti
+			idea_token = INS_sk_trimurti
 			allowed = {
 				original_tag = INS
 				has_dlc = "Man the Guns"
@@ -3127,16 +3128,16 @@ characters = {
 		}
 	}
 
-	INS_sjafroeddin_prawiranegara = {
-		name = INS_sjafroeddin_prawiranegara
+	INS_syafruddin_prawiranegara = {
+		name = INS_syafruddin_prawiranegara
 		portraits = {
 			army = {
-				small = GFX_idea_indonesia_sjafroeddin
+				small = GFX_idea_indonesia_syafruddin
 			}
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = INS_sjafroeddin_prawiranegara
+			idea_token = INS_syafruddin_prawiranegara
 			allowed = {
 				OR = {
 					original_tag = INS
@@ -3170,8 +3171,8 @@ characters = {
 		}
 	}
 
-	INS_karel_soepit = {
-		name = INS_karel_soepit
+	INS_karel_supit = {
+		name = INS_karel_supit
 		portraits = {
 			civilian = {
 				large = "GFX_Portrait_Asia_Generic_navy_1"
@@ -3187,14 +3188,14 @@ characters = {
 		}
 	}
 
-	INS_thomas_najoan = {
-		name = INS_thomas_najoan
+	INS_thomas_nayoan = {
+		name = INS_thomas_nayoan
 		portraits = {
 			civilian = {
-				large = GFX_portrait_indonesia_thomas_najoan
+				large = GFX_portrait_indonesia_thomas_nayoan
 			}
 			army = {
-				small = GFX_idea_indonesia_thomas_najoan_jailed
+				small = GFX_idea_indonesia_thomas_nayoan_jailed
 			}
 		}
 		country_leader = {
@@ -3207,16 +3208,16 @@ characters = {
 		}
 	}
 
-	INS_tjipto_mangoenkoesoemo = {
-		name = INS_tjipto_mangoenkoesoemo
+	INS_cipto_mangunkusumo = {
+		name = INS_cipto_mangunkusumo
 		portraits = {
 			army = {
-				small = GFX_idea_indonesia_tjipto_jailed
+				small = GFX_idea_indonesia_cipto_jailed
 			}
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = INS_tjipto_mangoenkoesoemo
+			idea_token = INS_cipto_mangunkusumo
 			allowed = {
 				original_tag = INS
 			}
@@ -3324,8 +3325,8 @@ characters = {
 		}
 	}
 
-	INS_ferdinand_loembantobing = {
-		name = INS_ferdinand_loembantobing
+	INS_ferdinand_lumbantobing = {
+		name = INS_ferdinand_lumbantobing
 		portraits = {
 			army = {
 				small = GFX_idea_indonesia_ferdinand_lumbantobing
@@ -3378,17 +3379,17 @@ characters = {
 				}
 				NOT = {
 					OR = {
-						has_idea = INS_mohammad_hoesni_thamrin
-						has_idea = INS_amir_sjarifoeddin
-						has_idea = INS_abikoesno_tjokrosoejoso
+						has_idea = INS_mohammad_husni_thamrin
+						has_idea = INS_amir_syarifuddin
+						has_idea = INS_abikusno_cokrosuyoso
 					}
 				}
 				NOT = {
 					OR = {
-						INS_amir_sjarifoeddin = {
+						INS_amir_syarifuddin = {
 							has_character_flag = INS_imprisoned_flag
 						}
-						INS_mohammad_hoesni_thamrin = {
+						INS_mohammad_husni_thamrin = {
 							has_character_flag = INS_imprisoned_flag
 						}
 					}
@@ -3430,12 +3431,12 @@ characters = {
 				NOT = {
 					OR = {
 						has_idea = INS_ernest_douwes_dekker_minister
-						has_idea = INS_tjipto_mangoenkoesoemo
+						has_idea = INS_cipto_mangunkusumo
 						has_idea = INS_kh_dewantara
 					}
 				}
 				NOT = {
-					INS_tjipto_mangoenkoesoemo = {
+					INS_cipto_mangunkusumo = {
 						has_character_flag = INS_imprisoned_flag
 					}
 				}
@@ -3444,7 +3445,7 @@ characters = {
 				NOT = {
 					OR = {
 						has_idea = INS_ernest_douwes_dekker_minister
-						has_idea = INS_tjipto_mangoenkoesoemo
+						has_idea = INS_cipto_mangunkusumo
 						has_idea = INS_kh_dewantara
 					}
 				}
@@ -3479,18 +3480,18 @@ characters = {
 				}
 				NOT = {
 					OR = {
-						has_idea = INS_soekarno
+						has_idea = INS_sukarno
 						has_idea = INS_mohammad_hatta
-						has_idea = INS_soetan_sjahrir
+						has_idea = INS_sutan_syahrir
 					}
 					OR = {
-						INS_soekarno = {
+						INS_sukarno = {
 							has_character_flag = INS_imprisoned_flag
 						}
 						INS_mohammad_hatta = {
 							has_character_flag = INS_imprisoned_flag
 						}
-						INS_soetan_sjahrir = {
+						INS_sutan_syahrir = {
 							has_character_flag = INS_imprisoned_flag
 						}
 					}
@@ -3499,9 +3500,9 @@ characters = {
 			visible = {
 				NOT = {
 					OR = {
-						has_idea = INS_soekarno
+						has_idea = INS_sukarno
 						has_idea = INS_mohammad_hatta
-						has_idea = INS_soetan_sjahrir
+						has_idea = INS_sutan_syahrir
 					}
 				}
 			}
@@ -3539,9 +3540,9 @@ characters = {
 				}
 				NOT = {
 					OR = {
-						has_idea = INS_abikoesno_tjokrosoejoso
-						has_idea = INS_soekiman_wirjosandjojo
-						has_idea = INS_agoes_salim
+						has_idea = INS_abikusno_cokrosuyoso
+						has_idea = INS_sukiman_wirjosanjojo
+						has_idea = INS_agus_salim
 					}
 				}
 			}
@@ -4427,32 +4428,32 @@ characters = {
 
 	#ARMY LEADERS - Indonesia
 
-	INS_oerip_soemohardjo = {
-		name = INS_oerip_soemohardjo
+	INS_urip_sumoharjo = {
+		name = INS_urip_sumoharjo
 		portraits = {
 			army = {
-				large = GFX_portrait_indonesia_oerip
-				small = GFX_idea_indonesia_oerip
+				large = GFX_portrait_indonesia_urip
+				small = GFX_idea_indonesia_urip
 			}
 		}
 	}
 
-	INS_soedirman = {
-		name = INS_soedirman
+	INS_sudirman = {
+		name = INS_sudirman
 		portraits = {
 			army = {
-				large = GFX_portrait_indonesia_soedirman
-				small = GFX_idea_indonesia_soedirman
+				large = GFX_portrait_indonesia_sudirman
+				small = GFX_idea_indonesia_sudirman
 			}
 		}
 	}
 
-	INS_abdoel_haris_nasoetion = {
-		name = INS_abdoel_haris_nasoetion
+	INS_abdul_haris_nasution = {
+		name = INS_abdul_haris_nasution
 		portraits = {
 			army = {
-				large = GFX_portrait_indonesia_abdoel_haris_nasoetion
-				small = GFX_idea_indonesia_abdoel_haris_nasoetion
+				large = GFX_portrait_indonesia_abdul_haris_nasution
+				small = GFX_idea_indonesia_abdul_haris_nasution
 			}
 		}
 	}
@@ -4467,32 +4468,32 @@ characters = {
 		}
 	}
 
-	INS_gatot_soebroto = {
-		name = INS_gatot_soebroto
+	INS_gatot_subroto = {
+		name = INS_gatot_subroto
 		portraits = {
 			army = {
-				large = GFX_portrait_indonesia_soebroto
-				small = GFX_idea_indonesia_soebroto
+				large = GFX_portrait_indonesia_subroto
+				small = GFX_idea_indonesia_subroto
 			}
 		}
 	}
 
-	INS_tb_simatoepang = {
-		name = INS_tb_simatoepang
+	INS_tb_simatupang = {
+		name = INS_tb_simatupang
 		portraits = {
 			army = {
-				large = GFX_portrait_indonesia_simatoepang
-				small = GFX_idea_indonesia_simatoepang
+				large = GFX_portrait_indonesia_simatupang
+				small = GFX_idea_indonesia_simatupang
 			}
 		}
 	}
 
-	INS_soeharto = {
-		name = INS_soeharto
+	INS_suharto = {
+		name = INS_suharto
 		portraits = {
 			army = {
-				large = GFX_portrait_indonesia_soeharto
-				small = GFX_idea_indonesia_soeharto
+				large = GFX_portrait_indonesia_suharto
+				small = GFX_idea_indonesia_suharto
 			}
 		}
 	}
@@ -4517,21 +4518,21 @@ characters = {
 		}
 	}
 
-	INS_soebijakto = {
-		name = INS_soebijakto
+	INS_subijakto = {
+		name = INS_subijakto
 		portraits = {
 			army = {
-				large = GFX_portrait_indonesia_soebijakto
-				small = GFX_idea_indonesia_soebijakto
+				large = GFX_portrait_indonesia_subijakto
+				small = GFX_idea_indonesia_subijakto
 			}
 		}
 	}
 
-	INS_soerjadarma = {
-		name = INS_soerjadarma
+	INS_surjadarma = {
+		name = INS_surjadarma
 		portraits = {
 			army = {
-				small = GFX_idea_indonesia_soerjadarma
+				small = GFX_idea_indonesia_surjadarma
 			}
 		}
 	}

@@ -1,7 +1,7 @@
 characters = {
 
-	ATJ_daoed_beoereoeh = {
-		name = ATJ_daoed_beoereoeh
+	ATJ_daud_beureuh = {
+		name = ATJ_daud_beureuh
 		portraits = {
 			civilian = {
 				large = GFX_portrait_aceh_daud_beureueh
@@ -11,7 +11,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			desc = INS_daoed_beoereoeh_desc
+			desc = INS_daud_beureuh_desc
 			ideology = fascism_ideology
 			traits = {
 			}
@@ -29,18 +29,18 @@ characters = {
 		}
 	}
 
-	ATJ_toeankoe_radja_ibrahim = {
-		name = ATJ_toeankoe_radja_ibrahim
+	ATJ_tuanku_raja_ibrahim = {
+		name = ATJ_tuanku_raja_ibrahim
 		portraits = {
 			civilian = {
 				large = GFX_portrait_aceh_tuanku_ibrahim
 			}
 			army = {
-				small = GFX_idea_aceh_tuanku_radja_ibrahim
+				small = GFX_idea_aceh_tuanku_raja_ibrahim
 			}
 		}
 		country_leader = {
-			desc = INS_tuanku_radja_ibrahim_desc
+			desc = INS_tuanku_raja_ibrahim_desc
 			ideology = despotism
 			traits = {
 			}
@@ -49,7 +49,7 @@ characters = {
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = INS_toeankoe_radja_ibrahim
+			idea_token = INS_tuanku_raja_ibrahim
 			allowed = {
 				original_tag = INS
 			}
@@ -85,10 +85,10 @@ characters = {
 		}
 	}
 
-	ATJ_abdoelxarim = {
-		name = ATJ_abdoelxarim
+	ATJ_abdulxarim = {
+		name = ATJ_abdulxarim
 		country_leader = {
-			desc = ATJ_abdoelxarim
+			desc = ATJ_abdulxarim
 			ideology = leninism
 			traits = {
 				JUNO_revolutionary_writer

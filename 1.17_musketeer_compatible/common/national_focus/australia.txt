@@ -1686,12 +1686,19 @@
 		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		completion_reward = {
+			
+			add_mastery_bonus = {
+				name = AST_protect_overseas_commerce
+				bonus = 0.1
+				days = 120
+				track = screens
+			}
+
 			add_doctrine_cost_reduction = {
 				name = AST_protect_overseas_commerce
 				cost_reduction = 0.25
 				uses = 2
-				category = fleet_in_being_tree
-				category = convoy_defense_tree
+				category = naval_doctrine
 			}
 		}
 	}
@@ -1725,11 +1732,19 @@
 		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		completion_reward = {
+			
+			add_mastery_bonus = {
+				name = AST_fly_the_jolly_roger
+				bonus = 0.1
+				days = 120
+				track = submarines
+			}
+
 			add_doctrine_cost_reduction = {
 				name = AST_fly_the_jolly_roger
 				cost_reduction = 0.25
-				uses = 2
-				category = submarine_doctrine
+				uses = 1
+				category = naval_doctrine
 			}
 		}
 	}

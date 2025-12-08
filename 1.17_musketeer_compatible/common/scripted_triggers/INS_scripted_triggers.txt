@@ -151,7 +151,7 @@ INS_political_grouping_allowed = {
 			}
 			INS = {
 				OR = {
-					has_completed_focus = INS_support_soetardjo
+					has_completed_focus = INS_support_sutarjo
 					has_completed_focus = INS_reform_bb
 				}
 			}

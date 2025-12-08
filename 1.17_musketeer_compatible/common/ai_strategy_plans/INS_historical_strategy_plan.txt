@@ -1,0 +1,122 @@
+INS_colony_historical = {
+	name = "Van Gemiste Kansen"
+	desc = "The Raad van Indie would accept any appointed governor-general and proceeded to rebound from the Malaise first before undergo any military reforms"
+
+	allowed = {
+		original_tag = INS
+	}
+	enable = {
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = INS_ai_behavior
+					option = DEFAULT
+				}
+			}
+			has_country_flag = INS_AI_RANDOM_COLONY_HISTORICAL 
+			has_game_rule = {
+				rule = INS_ai_behavior
+				option = COLONY_HISTORICAL
+			}
+			AND = {
+				has_game_rule = {
+					rule = INS_ai_behavior
+					option = COLONY_HISTORICAL
+				}
+				INS = {
+					has_war = no
+				}
+			}
+		}
+	}
+	abort = {
+		AND = {
+			is_historical_focus_on = no
+			has_game_rule = {
+				rule = INS_ai_behavior 
+				option = DEFAULT
+			}
+		}
+		OR = {
+			HOL = { has_completed_focus = HOL_legacy_of_the_de_zeven_provincien_mutiny }
+			INS = {
+				has_war = yes
+			}
+		}
+	}
+
+	ai_national_focuses = { #Tjarda inaugurated in 37 weeks, 14 July 1937 is 80 weeks, 23 August 1939 is 190 weeks, 15 May 1940 is 228 weeks, 1 October 1941 is 300 weeks
+		INS_continue_reform 					#5
+		INS_address_military_issues				#10 = 15
+		INS_pave_the_way_for_a_navy				#10 = 25
+		INS_increase_military_training			#10 = 35
+		INS_trust_on_the_east					#10 = 45
+		INS_improve_dutch_relations				#10 = 55 #week 3 1937
+		INS_expand_the_airforce					#10 = 65
+		INS_reinstate_ethical_policies			#10 = 75
+		INS_upheld_status_quo					#5 = 80
+		INS_dutch_engineers						#10 = 90
+		INS_address_malaise						#5 = 95
+		INS_reform_the_knil						#10 = 105 #week 2 1938
+		INS_limit_exports						#5 = 110
+		INS_invite_foreign_investors			#10 = 120
+		INS_strict_neutrality_china_war			#5 = 125
+		INS_more_knil_funds						#10 = 135
+		INS_flexible_navy						#10 = 145
+		INS_self_sufficient_weapon_production	#10 = 155 #week 51 1938
+		INS_expand_javan_railroads				#7,5 = 162,5 #week 6 1939
+		INS_expand_javan_dockyards				#10 = 172,5
+		INS_expand_sumatran_industry			#7,5 = 180
+		INS_increase_sufficiency				#10 = 190
+		INS_end_malaise							#10 = 200 #potential historical break, switch to war strategy
+		INS_import_dutch_designs				#10 = 210 #week 2 1940
+		INS_knil_leadership_reforms				#10 = 220
+		INS_invite_queen_wilhelmina				#10 = 230
+		INS_expand_merchant_fleet				#5 = 235
+		INS_develop_east						#5 = 240
+		INS_expand_bandung_university			#10 = 250 #1 October 1940
+		INS_move_capital						#10 = 260
+		INS_air_defense							#10 = 270
+		INS_develop_center						#5 = 275
+		INS_new_east_towns						#5 = 280
+		INS_further_develop_center				#8 = 288
+		INS_further_develop_east				#8 = 296
+		INS_finalize_develop_east				#10 = 306
+		INS_indonesian_high_command				#10 = 316 #week 3 1942
+		INS_new_schools							#10 = 326
+		INS_indonesian_research_divisions		#10 = 336
+
+	}
+	
+	research = {
+		industry = 20.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+		dd_tech = 5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+		captain_of_industry = 5
+		war_industrialist = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}

@@ -12,14 +12,14 @@ characters = {
 			id=-1
 		}
 	}
-	INS_mohammad_jusuf_alqadri = {
-		name = INS_mohammad_jusuf_alqadri
+	INS_mohammad_yusuf_alqadri = {
+		name = INS_mohammad_yusuf_alqadri
 		portraits = {
 			civilian = {
-				large = GFX_portrait_kalimantan_mohammad_jusuf_alqadri
+				large = GFX_portrait_kalimantan_mohammad_yusuf_alqadri
 			}
 			army = {
-				small = GFX_idea_indonesia_joesoef_alkadrie
+				small = GFX_idea_indonesia_yusuf_alkadrie
 			}
 		}
 	}
@@ -27,7 +27,7 @@ characters = {
 		name = INS_hamid_mohammad_alqadri
 		portraits = {
 			civilian = {
-				large = GFX_portrait_kalimantan_sjarif_hamid_alqadri
+				large = GFX_portrait_kalimantan_syarif_hamid_alqadri
 			}
 			army = {
 				small = GFX_idea_indonesia_hamid_alkadrie

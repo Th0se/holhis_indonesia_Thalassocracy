@@ -1,0 +1,314 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+
+INS_acf_organization = {
+	include = generic_medium_tank_organization
+	icon = GFX_idea_INS_acf
+	allowed = { 
+		tag = INS
+	}
+	available = {
+		owner = {
+			has_completed_focus = INS_invite_foreign_investors
+			USA = {
+				NOT = {
+					has_war_with = INS
+					has_opinion = { target = INS value < -10 }
+				}
+			}
+		}
+	}
+}
+
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+INS_surabaya_dm_organization = {
+	include = generic_raider_ship_organization
+	icon = GFX_idea_nsm_amsterdam
+	allowed = {
+		tag = INS
+		has_dlc = "Arms Against Tyranny"
+	}
+	available = {
+		owner = {
+			controls_state = 1052
+			if = {
+				limit = {
+					OR = {
+						has_completed_focus = INS_expel_the_colonials
+						has_completed_focus = INS_merdeka
+						has_completed_focus = INS_break_the_chains
+					}
+				}
+				has_country_flag = INS_nationalize_surabaya_dm_flag
+			}
+		}
+	}
+}
+
+INS_govmarine_organization = {
+	include = generic_escort_ship_organization
+	icon = GFX_idea_INS_govmarine
+	allowed = { 
+		tag = INS
+		has_dlc = "Arms Against Tyranny"
+	}
+	available = {
+		owner = {
+			has_completed_focus = INS_expand_merchant_fleet
+			controls_state = 335
+		}
+	}
+    equipment_type = {  
+        screen_ship
+        convoy_1
+    }
+	visible = {
+		owner = {
+			if = {
+				limit = {
+					OR = {
+						has_completed_focus = INS_expel_the_colonials
+						has_completed_focus = INS_merdeka
+						has_completed_focus = INS_break_the_chains
+					}
+				}
+				has_country_flag = INS_nationalize_govmarine_flag
+			}
+		}
+	}
+}
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+
+INS_fokker_organization = {
+	include = generic_general_aircraft_organization
+	icon = GFX_idea_fokker
+	allowed = {
+		tag = INS
+		has_dlc = "Arms Against Tyranny"
+	}
+	available = {
+		owner = {
+			has_completed_focus = INS_copy_dutch_navair
+			OR = {
+				is_subject_of = HOL
+				is_in_faction_with = HOL
+			}
+		}
+	}
+}
+
+INS_koolhoven_organization = {
+	include = generic_medium_aircraft_organization
+	icon = GFX_idea_koolhoven
+	allowed = {
+		tag = INS
+		has_dlc = "Arms Against Tyranny"
+	}
+	available = {
+		owner = {
+			controls_state = 1051
+			has_completed_focus = INS_expand_the_airforce
+			OR = {
+				is_subject_of = HOL
+				is_in_faction_with = HOL
+			}
+		}
+	}
+	visible = {
+		owner = {
+			NOT = {
+				OR = {
+					has_completed_focus = INS_expel_the_colonials
+					has_completed_focus = INS_merdeka
+					has_completed_focus = INS_break_the_chains
+				}
+			}
+		}
+	}
+}
+
+INS_nakajima_organization = {
+	include = generic_heavy_aircraft_organization
+	icon = GFX_idea_nakajima
+	allowed = {
+		tag = INS
+		has_dlc = "Arms Against Tyranny"
+	}
+	available = {
+		owner = {
+			NOT = {
+				has_war_with = JAP
+			}
+			has_completed_focus = INS_invite_foreign_investors
+			has_country_flag = INSJAP_trade_agreement_1
+		}
+	}
+}
+
+INS_ptdi_organization = {
+	include = generic_light_aircraft_organization
+	icon = INS_ptdi
+	allowed = {
+		tag = INS
+		has_dlc = "Arms Against Tyranny"
+	}
+	available = {
+		owner = {
+			is_subject = no
+			controls_state = 1051
+		}
+	}
+	visible = {
+		owner = {
+			OR = {
+				has_completed_focus = INS_air_offense
+				has_completed_focus = INS_air_defense
+			}
+			NOT = { 
+				OR = {
+					has_completed_focus = INS_make_use_nsboi
+					is_subject_of = HOL
+					is_subject_of = GER
+				}
+			}
+		}
+	}
+}
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+
+INS_daf_organization = {
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_HOL_daf
+	allowed = {
+		tag = INS
+		has_dlc = "Arms Against Tyranny"
+	}
+	available = {
+		owner = {
+			has_completed_focus = INS_continue_reform
+			NOT = {
+				has_government = communism
+			}
+		}
+	}
+}
+
+INS_gm_java_organization = {
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_usa_general_motors
+	allowed = {
+		tag = INS
+		has_dlc = "Arms Against Tyranny"
+	}
+	available = {
+		owner = {
+			controls_state = 335
+			has_completed_focus = INS_invite_foreign_investors
+			NOT = {
+				has_war_with = USA
+			}
+			USA = {
+				controls_state = 393
+				NOT = {
+					has_war_with = INS
+					has_opinion = { target = INS value < -10 }
+				}
+			}
+		}
+	}
+}
+
+INS_toyota_organization = {
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_INS_toyota
+	allowed = {
+		tag = INS
+		has_dlc = "Arms Against Tyranny"
+	}
+	available = {
+		owner = {
+			NOT = {
+				has_war_with = JAP
+			}
+			compare_autonomy_state > autonomy_colony
+			has_completed_focus = INS_invite_foreign_investors
+			OR = {
+				has_idea = INS_japanese_investment_1
+				has_idea = INS_japanese_investment_2
+				has_idea = INS_japanese_investment_3
+			}
+		}
+	}
+	visible = {
+		owner = {
+			OR = {
+				has_completed_focus = INS_invite_foreign_investors
+				has_completed_focus = INS_commit_hakko_ichiu
+				has_completed_focus = INJ_invite_zaibatsus
+			}
+		}
+	}
+}
+
+INS_artillerie_inrichtingen_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_artillerie_inrichtingen
+	allowed = {
+		tag = INS
+		has_dlc = "Arms Against Tyranny"
+	}
+	available = {
+		owner = {
+			controls_state = 1051
+		}
+	}
+	visible = {
+		owner = {
+			if = {
+				limit = {
+					OR = {
+						has_completed_focus = INS_expel_the_colonials
+						has_completed_focus = INS_merdeka
+						has_completed_focus = INS_break_the_chains
+					}
+				}
+				has_country_flag = INS_nationalize_artillerie_inrichtingen_flag
+			}
+		}
+	}
+}

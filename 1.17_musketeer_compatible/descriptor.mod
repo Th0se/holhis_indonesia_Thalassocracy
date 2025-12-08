@@ -1,9 +1,13 @@
-version="1.7"
+version="1.7.0"
 tags={
-	"Map"
 	"Alternative History"
-	"National Focuses"
+	"Events"
 	"Historical"
+	"Map"
+	"National Focuses"
+	"Fixes"
+	"Graphics"
 }
-name="East Indies Reworked"
-supported_version="1.17.0"
+name="Hollandia Historica: Indonesia Tanah Air BETA"
+supported_version="1.17.*"
+remote_file_id="2958871345"

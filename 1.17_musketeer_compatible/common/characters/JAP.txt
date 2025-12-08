@@ -1809,6 +1809,25 @@ characters = {
 
 	}
 
+	JAP_harada_kumakichi = {
+		name=JAP_harada_kumakichi
+		portraits={
+			army={
+				large=GFX_portrait_Winston_Tyron
+				small=GFX_idea_JAP_generic_land_1
+			}
+		}
+		corps_commander={
+			traits={ old_guard politically_connected JAP_samurai_lineage }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
 	# Isoroku Yamamoto
 	JAP_isoroku_yamamoto = {
 

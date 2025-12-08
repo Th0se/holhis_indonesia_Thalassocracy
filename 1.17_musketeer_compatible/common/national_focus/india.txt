@@ -1421,7 +1421,7 @@ focus_tree = {
 					limit = {
 						has_tech = basic_ship_hull_cruiser
 						has_tech = basic_torpedo
-						has_tech = basic_medium_battery
+						has_tech = basic_heavy_battery
 					}
 					create_equipment_variant = {
 						name = "Delhi Class"
@@ -1469,7 +1469,7 @@ focus_tree = {
 						set_technology = { 
 							basic_ship_hull_cruiser = 1 
 							basic_torpedo = 1
-							basic_medium_battery = 1
+							basic_heavy_battery = 1
 						}
 						navy_experience = 50
 						custom_effect_tooltip = RAJ_navy_funding_effect
@@ -2193,7 +2193,7 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = mountain_guns_tt
-			hidden_effect = { set_technology = { mountain_gun = 1 } }
+			hidden_effect = { set_technology = { mountain_gun = 1 popup = no } }
 		}
 	}
 
@@ -2926,8 +2926,22 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			custom_effect_tooltip = available_theorist
-			show_ideas_tooltip = RAJ_homi_j_bhabha
+			if = {
+				limit = {
+					RAJ_homi_j_bhabha = {
+						has_scientist_level = {
+							specialization = specialization_nuclear
+							level < 5
+						}
+					}
+				}
+				RAJ_homi_j_bhabha = {
+					add_scientist_level = {
+						specialization = specialization_nuclear
+						level = 1
+					}
+				}
+			}
 		}
 	}
 
@@ -3216,7 +3230,7 @@ focus_tree = {
 				bonus = 1.5
 				uses = 1
 				category = dd_tech
-				category = cl_tech
+				category = ca_tech
 			}
 		}
 	}

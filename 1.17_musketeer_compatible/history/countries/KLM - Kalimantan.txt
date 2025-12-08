@@ -1,4 +1,4 @@
-﻿capital = 333 #Brunei Town
+﻿capital = 1050 #Pontianak
 
 oob = "KLM_1936"
 
@@ -11,8 +11,6 @@ set_technology = {
 	basic_destroyer = 1
 	transport = 1
 }
-
-set_cosmetic_tag = BRN #Brunei
 
 set_politics = {
 	ruling_party = neutrality
@@ -36,7 +34,7 @@ set_convoys = 30
 set_stability = 0.46
 set_war_support = 0.35
 
-recruit_character = INS_mohammad_jusuf_alqadri
+recruit_character = INS_mohammad_yusuf_alqadri
 recruit_character = INS_hamid_mohammad_alqadri
 recruit_character = INS_mohammad_noor
 recruit_character = KLM_ahmad_tajuddin_waddien

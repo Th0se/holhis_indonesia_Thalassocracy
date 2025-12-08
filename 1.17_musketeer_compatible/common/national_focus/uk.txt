@@ -1695,7 +1695,7 @@ focus_tree = {
 				name = ENG_secure_the_imperial_shipping_routes
 				bonus = 1.0
 				uses = 2
-				category = cl_tech
+				category = ca_tech
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = ENG_secure_the_imperial_shipping_routes
@@ -5624,7 +5624,7 @@ focus_tree = {
 		prerequisite = { focus = uk_colonial_focus }
 		
 		available = {
-			336 = {
+			1021 = {
 				CONTROLLER = {
 					OR = {
 						tag = ENG
@@ -5651,7 +5651,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		bypass = {
-			336 = {
+			1021 = {
 				free_building_slots = {
 					building = dockyard
 					size < 1
@@ -5684,7 +5684,7 @@ focus_tree = {
 				}
 				add_ideas = ENG_fortify_the_empire_1
 			}
-			336 = {
+			1021 = {
 				if = {
 					limit = {
 						CONTROLLER = {
@@ -5975,7 +5975,7 @@ focus_tree = {
 					is_asean_state = yes
 					is_in_faction_with = ENG
 				}
-				has_full_control_of_state = 336
+				has_full_control_of_state = 1021
 			}
 		}
 		bypass = {
@@ -6054,7 +6054,7 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			336 = {
+			1021 = {
 				CONTROLLER = {
 					OR = {
 						tag = ENG
@@ -6072,11 +6072,11 @@ focus_tree = {
 
 		completion_reward = { 
 			navy_experience = 25
-			336 = {
+			1021 = {
 				add_extra_state_shared_building_slots = 1
 				IF = {
 					limit = {
-						336 = {
+						1021 = {
 							free_building_slots = {
 								building = coastal_bunker
 								size > 2
@@ -6120,7 +6120,7 @@ focus_tree = {
 			factor = 1
 		}	
 		available = {
-			336 = {
+			1021 = {
 				CONTROLLER = {
 					OR = {
 						tag = ENG
@@ -6134,7 +6134,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		bypass = {
-			336 = {
+			1021 = {
 				free_building_slots = {
 					building = anti_air_building
 					size < 2
@@ -6148,11 +6148,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			336 = {
+			1021 = {
 				add_extra_state_shared_building_slots = 1
 				IF = {
 					limit = {
-						336 = {
+						1021 = {
 							free_building_slots = {
 								building = bunker
 								size > 3
@@ -6169,7 +6169,7 @@ focus_tree = {
 				}
 				IF = {
 					limit = {
-						336 = {
+						1021 = {
 							free_building_slots = {
 								building = anti_air_building
 								size > 1
@@ -8573,8 +8573,21 @@ focus_tree = {
 			}
 		}	
 		completion_reward = {
+
+			IF = {
+				limit = {
+					is_faction_leader = yes
+					has_dlc = "No Compromise, No Surrender"
+				}
+				add_faction_goal_slot = {
+					category  = medium_term 
+					value = 1 
+				}
+				add_faction_goal = faction_goal_imperial_glory
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
 			# Singapore
-			336 = {
+			1021 = {
 				if = {
 					limit = {
 						OR = {
@@ -11857,7 +11870,6 @@ focus_tree = {
 				bonus = 1.0
 				uses = 1
 				category = dd_tech
-				category = cl_tech
 				category = ca_tech
 				category = bb_tech
 				category = cv_tech

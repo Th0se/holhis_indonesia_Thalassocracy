@@ -783,11 +783,11 @@ country_event = {
 		if = {
 			limit = {
 				INS = {
-					has_idea = INS_hamengkoeboewono_ninth
+					has_idea = INS_hamengkubuwono_ninth
 				}
 			}
 			INS = {
-				INS_hamengkoeboewono_ninth = {
+				INS_hamengkubuwono_ninth = {
 					set_nationality = HOL
 				}
 			}
@@ -1088,7 +1088,7 @@ country_event = {
 		}
 		effect_tooltip = {
 			JAP = { #Java, Sumatra, Lesser Sunda, Borneo, and South Sulawesi
-				transfer_state = 1017 #Atjeh
+				transfer_state = 1017 #Aceh
 				transfer_state = 672 #North Sumatra
 				transfer_state = 1018 #South Sumatra
 				transfer_state = 1019 #Riau Islands
@@ -3721,7 +3721,7 @@ country_event = { # 82 - Second Indonesian Uprising - NSB Path - for Indies
 	title = mtg_netherlands.82.t
 	desc = mtg_netherlands.82.d
 
-	picture = GFX_report_event_ins_soekarno_speech
+	picture = GFX_report_event_ins_sukarno_speech
 
 	is_triggered_only = yes
 
@@ -3783,12 +3783,12 @@ country_event = { # 82 - Second Indonesian Uprising - NSB Path - for Indies
 				}
 				set_cosmetic_tag = INS
 				INS = {
-					INS_soekarno = {
+					INS_sukarno = {
 						set_nationality = event_target:INA
 						clr_character_flag = INS_imprisoned_flag
 						set_portraits = {
 							army = {
-								small = GFX_idea_indonesia_soekarno
+								small = GFX_idea_indonesia_sukarno
 							}
 						}
 					}
@@ -3801,56 +3801,63 @@ country_event = { # 82 - Second Indonesian Uprising - NSB Path - for Indies
 							}
 						}
 					}
-					INS_soetan_sjahrir = {
+					INS_sutan_syahrir = {
 						set_nationality = event_target:INA
 						clr_character_flag = INS_imprisoned_flag
 						set_portraits = {
 							army = {
-								small = GFX_idea_indonesia_sjahrir
+								small = GFX_idea_indonesia_syahrir
 							}
 						}
 					}
-					INS_agoes_salim = {
+					INS_agus_salim = {
 						set_nationality = event_target:INA
 					}
-					INS_oerip_soemohardjo = {
+					INS_urip_sumoharjo = {
 						set_nationality = event_target:INA
 					}
 					INS_tan_malaka = {
 						set_nationality = event_target:INA
 					}
-					INS_amir_sjarifoeddin = {
+					INS_amir_syarifuddin = {
 						set_nationality = event_target:INA
 					}
 					INS_adnan_gani = {
 						set_nationality = event_target:INA
 					}
-					INS_mohammad_jamin = {
+					INS_mohammad_yamin = {
 						set_nationality = event_target:INA
 					}
 					INS_samuel_ratulangi = {
 						set_nationality = event_target:INA
 					}
-					INS_thomas_najoan = {
+					INS_thomas_nayoan = {
 						set_nationality = event_target:INA
 					}
-					INS_soekawati = {
+					INS_sukawati = {
 						set_nationality = event_target:INA
 					}
 				}
-				INS_soekarno= {
+				INS_sukarno= {
 					add_country_leader_role = {
 						country_leader = {
 							expire = "1965.1.1"
 							ideology = socialism
 							traits = {
-								poetra_sang_fadjar
+								putra_sang_fajar
 							}
 						}
 						promote_leader = yes
 					}
 				}
-				load_focus_tree = indonesian_focus
+				load_focus_tree = { tree = east_indies_focus keep_completed = no }
+				unlock_national_focus = INS_discourage_democratic_reforms
+				unlock_national_focus = INS_revive_spirit_1926
+				unlock_national_focus = INS_secret_weapon_production
+				unlock_national_focus = INS_support_nationalists
+				unlock_national_focus = INS_the_youth_is_the_future
+				unlock_national_focus = INS_befriend_japan
+				unlock_national_focus = INS_expel_the_colonials
 				INS = {
 					transfer_units_fraction = {
 						target = event_target:INA
@@ -3862,7 +3869,7 @@ country_event = { # 82 - Second Indonesian Uprising - NSB Path - for Indies
 					}
 				}
 				add_corps_commander_role = {
-					character = INS_oerip_soemohardjo
+					character = INS_urip_sumoharjo
 					traits = { defensive_doctrine unyielding_defender jungle_rat guerilla_fighter }
 					skill = 2
 					attack_skill = 2
@@ -3871,10 +3878,10 @@ country_event = { # 82 - Second Indonesian Uprising - NSB Path - for Indies
 					logistics_skill = 2
 				}
 				add_advisor_role = {
-					character = INS_oerip_soemohardjo
+					character = INS_urip_sumoharjo
 					advisor = {
 						slot = high_command
-						idea_token = INS_oerip_soemohardjo
+						idea_token = INS_urip_sumoharjo
 						ledger = army
 						traits = {
 							army_logistics_1
@@ -3950,32 +3957,39 @@ country_event = { # 82 - Second Indonesian Uprising - NSB Path - for Indies
 				}
 				set_cosmetic_tag = INS
 				INS = {
-					INS_soekarno = {
+					INS_sukarno = {
 						set_nationality = event_target:INA	
 					}
 					INS_mohammad_hatta = {
 						set_nationality = event_target:INA	
 					}
-					INS_soetan_sjahrir = {
+					INS_sutan_syahrir = {
 						set_nationality = event_target:INA	
 					}
-					INS_agoes_salim = {
+					INS_agus_salim = {
 						set_nationality = event_target:INA	
 					}
 				}
-				INS_soekarno= {
+				INS_sukarno= {
 					add_country_leader_role = {
 						country_leader = {
 							expire = "1965.1.1"
 							ideology = socialism
 							traits = {
-								poetra_sang_fadjar
+								putra_sang_fajar
 							}
 						}
 						promote_leader = yes
 					}
 				}
-				load_focus_tree = indonesian_focus
+				load_focus_tree = { tree = east_indies_focus keep_completed = no }
+				unlock_national_focus = INS_discourage_democratic_reforms
+				unlock_national_focus = INS_revive_spirit_1926
+				unlock_national_focus = INS_secret_weapon_production
+				unlock_national_focus = INS_support_nationalists
+				unlock_national_focus = INS_the_youth_is_the_future
+				unlock_national_focus = INS_befriend_japan
+				unlock_national_focus = INS_expel_the_colonials
 				INS = {
 					transfer_units_fraction = {
 						target = event_target:INA
@@ -4002,7 +4016,7 @@ country_event = { # 83 - Second Indonesian Uprising - NSB Path - for Netherlands
 	title = mtg_netherlands.83.t
 	desc = mtg_netherlands.83.d
 
-	picture = GFX_report_event_ins_soekarno_speech
+	picture = GFX_report_event_ins_sukarno_speech
 
 	is_triggered_only = yes
 
@@ -4015,7 +4029,7 @@ country_event = { # 83 - Second Indonesian Uprising - NSB Path - for Netherlands
 	}
 }
 
-country_event = { # 84 - America embargoes Japan
+country_event = { # 84 - America embargus Japan
 	id = mtg_netherlands.84
 	title = mtg_netherlands.84.t
 	desc = mtg_netherlands.84.d
@@ -4214,7 +4228,7 @@ country_event = { #Juliana 3 - A successful performance (for HOL)
 	id = holhis_juliana.3
 	title = holhis_juliana.3.t
 	desc = holhis_juliana.3.d
-	picture = GFX_report_event_ins_noeroel_dance
+	picture = GFX_report_event_ins_nurul_dance
 
 	fire_only_once = yes
 	
@@ -4251,7 +4265,7 @@ country_event = { #Juliana 4 - A successful performance (for INS)
 	id = holhis_juliana.4
 	title = holhis_juliana.4.t
 	desc = holhis_juliana.4.d
-	picture = GFX_report_event_ins_noeroel_dance
+	picture = GFX_report_event_ins_nurul_dance
 
 	fire_only_once = yes
 	

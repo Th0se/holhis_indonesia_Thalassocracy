@@ -1935,10 +1935,10 @@ ideas = {
 
 			available = {
 				OR = {
-					controls_state = 1017 #Atjeh
+					controls_state = 1047 #Aceh
 					controls_state = 672 #N Sumatra
-					controls_state = 1020 #W Java
-					controls_state = 1021 #E Java
+					controls_state = 1051 #W Java
+					controls_state = 1052 #E Java
 				}
 			}
 
@@ -3153,7 +3153,7 @@ ideas = {
 			}
 		}
 
-		INS_soerja_wirawan = {
+		INS_surja_wirawan = {
 
 			allowed = {
 				always = no
@@ -4469,9 +4469,9 @@ ideas = {
 			}
 		}
 
-		INS_tuanku_radja_ibrahim_indonesia = {
+		INS_tuanku_raja_ibrahim_indonesia = {
 
-			name = ATJ_toeankoe_radja_ibrahim
+			name = ATJ_tuanku_raja_ibrahim
 
 			modifier = {
 				compliance_growth = 0.05
@@ -4689,7 +4689,7 @@ ideas = {
 
 			available = {
 				is_subject = no
-				controls_state = 1020
+				controls_state = 1051 #West Java
 				OR = {
 					has_completed_focus = INS_air_offense
 					has_completed_focus = INS_air_defense
@@ -4721,14 +4721,14 @@ ideas = {
 			traits = { light_aircraft_manufacturer }
 		}
 
-		INS_nv_merbaboe = {
+		INS_nv_merbabu = {
 			
-			picture = INS_nv_merbaboe
+			picture = INS_nv_merbabu
 
 			available = {
-				has_country_flag = INS_merbaboe_established_flag
+				has_country_flag = INS_merbabu_established_flag
 				NOT = {
-					has_country_flag = INS_merbaboe_quits_flag
+					has_country_flag = INS_merbabu_quits_flag
 				}
 			}
 			
@@ -4828,7 +4828,7 @@ ideas = {
 
 		designer = yes
 
-		INS_soerabaja_dm = {
+		INS_surabaya_dm = {
 
 			allowed = {
 				original_tag = INS
@@ -4842,11 +4842,11 @@ ideas = {
 				NOT = {
 					has_government = communism
 				}
-				controls_state = 1021
+				controls_state = 1052 #East Java
 				has_completed_focus = INS_pave_the_way_for_a_navy
 			}
 
-			picture = GFX_idea_INS_soerabaja_dm
+			picture = GFX_idea_INS_surabaya_dm
 
 			visible = {
 				NOT = {
@@ -4869,7 +4869,7 @@ ideas = {
 			traits = { raiding_fleet_naval_manufacturer }
 		}
 
-		INS_soerabaja_dm_improved = {
+		INS_surabaya_dm_improved = {
 
 			allowed = {
 				original_tag = INS
@@ -4879,17 +4879,17 @@ ideas = {
 				always = yes
 			}
 
-			name = INS_soerabaja_dm
+			name = INS_surabaya_dm
 
 			available = {
 				NOT = {
 					has_government = communism
 				}
-				controls_state = 1021
+				controls_state = 1052 #East Java
 				has_completed_focus = INS_expand_javan_dockyards
 			}
 
-			picture = GFX_idea_INS_soerabaja_dm_improved
+			picture = GFX_idea_INS_surabaya_dm_improved
 
 			visible = {
 				has_completed_focus = INS_expand_javan_dockyards
@@ -4922,7 +4922,7 @@ ideas = {
 			}
 		}
 
-		INS_pal_soerabaja = {
+		INS_pal_surabaya = {
 
 			allowed = {
 				original_tag = INS
@@ -4934,11 +4934,11 @@ ideas = {
 
 			available = {
 				is_subject = no
-				controls_state = 1021
+				controls_state = 1052
 				has_completed_focus = INS_pave_the_way_for_a_navy
 			}
 
-			picture = INS_pal_soerabaja
+			picture = INS_pal_surabaya
 
 			visible = {
 				NOT = { 
@@ -4958,7 +4958,7 @@ ideas = {
 			traits = { raiding_fleet_naval_manufacturer }
 		}
 
-		INS_pal_soerabaja_improved = {
+		INS_pal_surabaya_improved = {
 
 			allowed = {
 				original_tag = INS
@@ -4970,12 +4970,12 @@ ideas = {
 
 			available = {
 				is_subject = no
-				controls_state = 1021
+				controls_state = 1052
 			}
 
-			name = INS_pal_soerabaja
+			name = INS_pal_surabaya
 
-			picture = INS_pal_soerabaja
+			picture = INS_pal_surabaya
 
 			visible = {
 				has_completed_focus = INS_expand_javan_dockyards
@@ -5230,7 +5230,7 @@ ideas = {
 				NOT = {
 					has_government = communism
 				}
-				controls_state = 1020
+				controls_state = 1051
 			}
 
 			picture = artillerie_inrichtingen
@@ -5256,7 +5256,7 @@ ideas = {
 			}
 		}
 
-		INS_ai_bandoeng_improved = {
+		INS_ai_bandung_improved = {
 
 			allowed = {
 				original_tag = INS
@@ -5266,7 +5266,7 @@ ideas = {
 				NOT = {
 					has_government = communism
 				}
-				controls_state = 1020
+				controls_state = 1051
 			}
 
 			name = INS_artilerie_inrichtingen
@@ -5294,7 +5294,7 @@ ideas = {
 			}
 		}
 
-		INS_pabrik_sendjata_mesioe = {
+		INS_pabrik_senjata_mesiu = {
 
 			allowed = {
 				original_tag = INS
@@ -5302,7 +5302,7 @@ ideas = {
 
 			available = {
 				is_subject = no
-				controls_state = 1020
+				controls_state = 1051
 			}
 
 			picture = INS_psm
@@ -5336,10 +5336,10 @@ ideas = {
 
 			available = {
 				is_subject = no
-				controls_state = 1020
+				controls_state = 1051
 			}
 
-			name = INS_pabrik_sendjata_mesioe
+			name = INS_pabrik_senjata_mesiu
 
 			picture = INS_psm
 
@@ -5544,7 +5544,7 @@ ideas = {
 			}
 
 			available = {
-				controls_state = 1021
+				controls_state = 1052
 				NOT = {
 					has_government = fascism
 				}
@@ -5614,7 +5614,7 @@ ideas = {
 
 			available = {
 				has_completed_focus = INS_expand_javan_railroads
-				controls_state = 1020
+				controls_state = 1051
 			}
 
 			allowed = {
@@ -5759,7 +5759,7 @@ ideas = {
 
 			available = {
 				is_in_faction_with = JAP
-				controls_state = 1021
+				controls_state = 1052
 			}
 
 			visible = {

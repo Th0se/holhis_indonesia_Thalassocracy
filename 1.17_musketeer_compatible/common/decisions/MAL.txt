@@ -1,0 +1,742 @@
+political_actions = {
+
+	MAL_integrate_sabah = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = MAL
+		}
+
+		cost = 75
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 3
+			1024 = {
+				is_fully_controlled_by = ROOT
+				compliance > 70
+				infrastructure > 2
+				industrial_complex > 0
+			}
+		}
+
+		visible = {
+			1024 = { #Sabah
+				NOT = {
+					is_core_of = ROOT
+				}
+			}
+		}
+
+		days_remove = 180
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		complete_effect = {
+			add_stability = -0.1
+		}
+
+		remove_effect = {
+			1024 = {
+				add_core_of = MAL
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	MAL_integrate_sarawak = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = MAL
+		}
+
+		cost = 75
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+			333 = {
+				is_fully_controlled_by = ROOT
+				compliance > 70
+				infrastructure > 3
+				industrial_complex > 0
+			}
+		}
+
+		visible = {
+			333 = { #Sarawak
+				NOT = {
+					is_core_of = ROOT
+				}
+			}
+		}
+
+		days_remove = 180
+
+		modifier = {
+			civilian_factory_use = 4
+		}
+
+		complete_effect = {
+			add_stability = -0.1
+		}
+
+		remove_effect = {
+			333 = {
+				add_core_of = MAL
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	ASEAN_upgrade_agrarian_society = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			is_asean_state = yes
+		}
+
+		available = {
+			industrial_complex > 4
+			if = {
+				limit = {
+					has_idea = ASEAN_agrarian_society_1
+				}
+				amount_research_slots > 2
+				else_if = {
+					limit = {
+						has_idea = ASEAN_agrarian_society_2
+					}
+					amount_research_slots > 3
+				}
+				else_if = {
+					limit = {
+						has_idea = ASEAN_agrarian_society_3
+					}
+					amount_research_slots > 4
+					is_subject = no
+				}
+			}
+		}
+
+		visible = {
+			OR = {
+				has_idea = ASEAN_agrarian_society_1
+				has_idea = ASEAN_agrarian_society_2
+				has_idea = ASEAN_agrarian_society_3
+			}
+		}
+
+		days_remove = 360
+
+		modifier = {
+			civilian_factory_use = 4
+			stability_weekly = -0.00056
+		}
+
+		complete_effect = {
+			set_country_flag = ASEAN_agrarian_reform_enacted
+		}
+
+		remove_effect = {
+			clr_country_flag = ASEAN_agrarian_reform_enacted
+			if = {
+				limit = {
+					has_idea = ASEAN_agrarian_society_1
+				}
+				swap_ideas = {
+					remove_idea = ASEAN_agrarian_society_1
+					add_idea = ASEAN_agrarian_society_2
+				}
+			}
+			if = {
+				limit = {
+					has_idea = ASEAN_agrarian_society_2
+				}
+				swap_ideas = {
+					remove_idea = ASEAN_agrarian_society_2
+					add_idea = ASEAN_agrarian_society_3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = ASEAN_agrarian_society_3
+				}
+				remove_ideas = ASEAN_agrarian_society_3
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}
+
+ASEAN_malacca_strait_security = {
+
+	ASEAN_handover_hadyai_to_MAL = {
+
+		cost = 25
+
+		fire_only_once = yes
+
+		highlight_states = {
+			highlight_state_targets = { state = 724 } 
+		}
+
+		icon = GFX_decision_infiltrate_state
+
+		allowed = {
+			is_asean_state = no
+			336 = { #Singapore
+				owner = {
+					original_tag = MAL
+					is_subject_of = ROOT
+					has_full_control_of_state = PREV
+				}
+			}
+		}
+
+		available = {
+			OR = {
+				ROOT = {
+					controls_state = 724 # Northern Malaya
+				}
+				any_country = {
+					is_subject_of = ROOT
+					controls_state = 724 # Northern Malaya
+				}
+			}
+		}
+
+		days_remove = 28
+
+		remove_effect = {
+
+			# Northern Malaya
+			MAL = {
+				transfer_state = 724
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	ASEAN_handover_atjeh_to_MAL = {
+
+		cost = 25
+
+		fire_only_once = yes
+
+		icon = GFX_decision_infiltrate_state
+
+		highlight_states = {
+			highlight_state_targets = { state = 1047 } 
+		}
+
+		allowed = {
+			is_asean_state = no
+			336 = { #Malaya
+				owner = {
+					original_tag = MAL
+					is_subject_of = ROOT
+					has_full_control_of_state = PREV
+				}
+			}
+		}
+
+		available = {
+			OR = {
+				ROOT = {
+					controls_state = 1047 # Atjeh
+				}
+				any_country = {
+					is_subject_of = ROOT
+					controls_state = 1047 # Atjeh
+				}
+			}
+		}
+
+		visible = {
+			1047 = {
+				owner = {
+					check_variable = { FROM.num_owned_states > 1 }
+				}
+			}
+		}
+
+		days_remove = 28
+
+		remove_effect = {
+
+			# Atjeh
+			MAL = {
+				transfer_state = 1047
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	ASEAN_handover_medan_to_MAL = {
+
+		cost = 50
+
+		fire_only_once = yes
+
+		icon = GFX_decision_infiltrate_state
+
+		highlight_states = {
+			highlight_state_targets = { state = 672 } 
+		}
+
+		allowed = {
+			is_asean_state = no
+			336 = { #Malaya
+				owner = {
+					original_tag = MAL
+					is_subject_of = ROOT
+					has_full_control_of_state = PREV
+				}
+			}
+		}
+
+		available = {
+			OR = {
+				ROOT = {
+					controls_state = 672 # Northern Sumatra
+				}
+				any_country = {
+					is_subject_of = ROOT
+					controls_state = 672 # Northern Sumatra
+				}
+			}
+		}
+
+		visible = {
+			672 = {
+				owner = {
+					check_variable = { FROM.num_owned_states > 1 }
+				}
+			}
+		}
+
+		days_remove = 28
+
+		remove_effect = {
+
+			# Northern Sumatra
+			MAL = {
+				transfer_state = 672
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	ASEAN_handover_riouw_to_MAL = {
+
+		cost = 25
+
+		fire_only_once = yes
+
+		icon = GFX_decision_infiltrate_state
+
+		highlight_states = {
+			highlight_state_targets = { state = 1049 } 
+		}
+
+		allowed = {
+			is_asean_state = no
+			336 = { #Malaya
+				owner = {
+					original_tag = MAL
+					is_subject_of = ROOT
+					has_full_control_of_state = PREV
+				}
+			}
+		}
+
+		available = {
+			OR = {
+				ROOT = {
+					controls_state = 1049 # Riau Islands
+				}
+				any_country = {
+					is_subject_of = ROOT
+					controls_state = 1049 # Riau Islands
+				}
+			}
+		}
+
+		visible = {
+			1049 = {
+				owner = {
+					check_variable = { FROM.num_owned_states > 1 }
+				}
+			}
+		}
+
+		days_remove = 28
+
+		remove_effect = {
+
+			# Riau Islands
+			MAL = {
+				transfer_state = 1049
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	ASEAN_handover_palembang_to_MAL = {
+
+		cost = 40
+
+		fire_only_once = yes
+
+		icon = GFX_decision_infiltrate_state
+
+		highlight_states = {
+			highlight_state_targets = { state = 1048 } 
+		}
+
+		allowed = {
+			is_asean_state = no
+			336 = { #Malaya
+				owner = {
+					original_tag = MAL
+					is_subject_of = ROOT
+					has_full_control_of_state = PREV
+				}
+			}
+		}
+
+		available = {
+			OR = {
+				ROOT = {
+					controls_state = 1048 # Southern Sumatra
+				}
+				any_country = {
+					is_subject_of = ROOT
+					controls_state = 1048 # Southern Sumatra
+				}
+			}
+		}
+
+		visible = {
+			1048 = {
+				owner = {
+					check_variable = { FROM.num_owned_states > 1 }
+				}
+			}
+		}
+
+		days_remove = 28
+
+		remove_effect = {
+
+			# Southern Sumatra
+			MAL = {
+				transfer_state = 1048
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	ASEAN_handover_pontianak_to_MAL = {
+
+		cost = 40
+
+		fire_only_once = yes
+
+		icon = GFX_decision_infiltrate_state
+
+		highlight_states = {
+			highlight_state_targets = { state = 1050 } 
+		}
+
+		allowed = {
+			is_asean_state = no
+			333 = {
+				owner = {
+					original_tag = MAL
+					is_subject_of = ROOT
+					has_full_control_of_state = PREV
+				}
+			}
+		}
+
+		available = {
+			OR = {
+				ROOT = {
+					controls_state = 1050 # Western Kalimantan
+				}
+				any_country = {
+					is_subject_of = ROOT
+					controls_state = 1050 # Western Kalimantan
+				}
+			}
+		}
+
+		visible = {
+			1050 = {
+				owner = {
+					check_variable = { FROM.num_owned_states > 1 }
+				}
+			}
+		}
+
+		days_remove = 28
+
+		remove_effect = {
+
+			# Western Kalimantan
+			MAL = {
+				transfer_state = 1050
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	ASEAN_handover_balikpapan_to_MAL = {
+
+		cost = 40
+
+		fire_only_once = yes
+
+		icon = GFX_decision_infiltrate_state
+
+		highlight_states = {
+			highlight_state_targets = { state = 334 } 
+		}
+
+		allowed = {
+			is_asean_state = no
+			333 = {
+				owner = {
+					original_tag = MAL
+					is_subject_of = ROOT
+					has_full_control_of_state = PREV
+				}
+			}
+		}
+
+		available = {
+			OR = {
+				ROOT = {
+					controls_state = 334 # Eastern Kalimantan
+				}
+				any_country = {
+					is_subject_of = ROOT
+					controls_state = 334 # Eastern Kalimantan
+				}
+			}
+		}
+
+		visible = {
+			334 = {
+				owner = {
+					check_variable = { FROM.num_owned_states > 1 }
+				}
+			}
+		}
+
+		days_remove = 28
+
+		remove_effect = {
+
+			# Eastern Kalimantan
+			MAL = {
+				transfer_state = 334
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	ASEAN_handover_pontianak_to_BRN = {
+
+		cost = 25
+
+		fire_only_once = yes
+
+		icon = GFX_decision_infiltrate_state
+
+		highlight_states = {
+			highlight_state_targets = { state = 1050 } 
+		}
+
+		allowed = {
+			is_asean_state = no
+			333 = {
+				owner = {
+					original_tag = BRN
+					is_subject_of = ROOT
+					has_full_control_of_state = PREV
+				}
+			}
+		}
+
+		available = {
+			OR = {
+				ROOT = {
+					controls_state = 1050 # Western Kalimantan
+				}
+				any_country = {
+					is_subject_of = ROOT
+					controls_state = 1050 # Western Kalimantan
+				}
+			}
+		}
+
+		visible = {
+			BRN = {
+				exists = yes
+			}
+			1050 = {
+				owner = {
+					check_variable = { FROM.num_owned_states > 1 }
+				}
+			}
+		}
+
+		days_remove = 28
+
+		remove_effect = {
+
+			# Western Kalimantan
+			BRN = {
+				transfer_state = 1050
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	ASEAN_handover_balikpapan_to_BRN = {
+
+		cost = 25
+
+		fire_only_once = yes
+
+		icon = GFX_decision_infiltrate_state
+
+		highlight_states = {
+			highlight_state_targets = { state = 334 } 
+		}
+
+		allowed = {
+			is_asean_state = no
+			333 = {
+				owner = {
+					original_tag = BRN
+					is_subject_of = ROOT
+					has_full_control_of_state = PREV
+				}
+			}
+		}
+
+		available = {
+			OR = {
+				ROOT = {
+					controls_state = 334 # Eastern Kalimantan
+				}
+				any_country = {
+					is_subject_of = ROOT
+					controls_state = 334 # Eastern Kalimantan
+				}
+			}
+		}
+
+		visible = {
+			BRN = {
+				exists = yes
+			}
+			334 = {
+				owner = {
+					check_variable = { FROM.num_owned_states > 1 }
+				}
+			}
+		}
+
+		days_remove = 28
+
+		remove_effect = {
+
+			# Eastern Kalimantan
+			BRN = {
+				transfer_state = 334
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 200
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}

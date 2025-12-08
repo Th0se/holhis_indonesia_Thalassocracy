@@ -60,8 +60,9 @@ recruit_character = BRM_myat_phaya_lat
 	set_technology = {
 
 		#doctrines
-		grand_battle_plan = 1
-		trench_warfare = 1
+		#grand_battle_plan = 1
+		set_grand_doctrine = grand_battleplan
+		set_grand_doctrine = new_fleet_in_being
 
 		#electronics
 		electronic_mechanical_engineering = 1

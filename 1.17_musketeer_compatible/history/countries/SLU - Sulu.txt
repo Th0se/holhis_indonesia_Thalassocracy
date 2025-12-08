@@ -1,4 +1,4 @@
-﻿capital = 948 #Sulu
+﻿capital = 1025 #Zamboanga
 
 set_research_slots = 2
 
@@ -23,7 +23,7 @@ set_popularities = {
 	neutrality = 50
 }
 
-set_convoys = 30
+set_convoys = 8
 set_stability = 0.46
 set_war_support = 0.35
 

@@ -422,7 +422,7 @@ focus_tree = {
 					has_full_control_of_state = PREV
 				}
 			}
-			1025 = {
+			1054 = {
 				controller = {
 					OR = {
 						tag = ROOT
@@ -431,7 +431,7 @@ focus_tree = {
 					has_full_control_of_state = PREV
 				}
 			}
-			1027 = {
+			1055 = {
 				controller = {
 					OR = {
 						tag = ROOT
@@ -478,14 +478,14 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			1025 = {
+			1054 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
 			}
-			1027 = {
+			1055 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -541,7 +541,7 @@ focus_tree = {
 					has_full_control_of_state = PREV
 				}
 			}
-			1020 = {
+			1051 = {
 				controller = {
 					OR = {
 						tag = ROOT
@@ -550,7 +550,7 @@ focus_tree = {
 					has_full_control_of_state = PREV
 				}
 			}
-			1021 = {
+			1052 = {
 				controller = {
 					OR = {
 						tag = ROOT
@@ -591,7 +591,7 @@ focus_tree = {
 					add_extra_state_shared_building_slots = 1
 				}
 			}
-			1020 = {
+			1051 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -599,7 +599,7 @@ focus_tree = {
 				}
 				if = {
 					limit = {
-						1020 = {
+						1051 = {
 							free_building_slots = {
 								building = industrial_complex
 								size > 1
@@ -610,10 +610,10 @@ focus_tree = {
 					add_extra_state_shared_building_slots = 1
 				}
 			}
-			1021 = {
+			1052 = {
 				if = {
 					limit = {
-						1021 = {
+						1052 = {
 							free_building_slots = {
 								building = industrial_complex
 								size > 1
@@ -637,8 +637,8 @@ focus_tree = {
 					INS = {
 						is_subject_of = HOL
 						has_full_control_of_state = 335
-						has_full_control_of_state = 1020
-						has_full_control_of_state = 1021
+						has_full_control_of_state = 1051
+						has_full_control_of_state = 1052
 					}
 				}
 				INS = {
@@ -650,16 +650,16 @@ focus_tree = {
 				else_if = {
 					limit = {
 						has_full_control_of_state = 335
-						has_full_control_of_state = 1020
-						has_full_control_of_state = 1021
+						has_full_control_of_state = 1051
+						has_full_control_of_state = 1052
 					}
 					335 = {
 						add_compliance = 5
 					}
-					1020 = {
+					1051 = {
 						add_compliance = 5
 					}
-					1021 = {
+					1052 = {
 						add_compliance = 5
 					}
 				}
@@ -679,7 +679,7 @@ focus_tree = {
 					has_full_control_of_state = PREV
 				}
 			}
-			1021 = {
+			1052 = {
 				controller = {
 					OR = {
 						tag = ROOT
@@ -722,7 +722,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			1021 = {
+			1052 = {
 				add_building_construction = {
 					type = coastal_bunker
 					level = 3
@@ -749,7 +749,7 @@ focus_tree = {
 					INS = {
 						is_subject_of = HOL
 						has_full_control_of_state = 335
-						has_full_control_of_state = 1021
+						has_full_control_of_state = 1052
 					}
 				}
 				INS = {
@@ -761,12 +761,12 @@ focus_tree = {
 				else_if = {
 					limit = {
 						has_full_control_of_state = 335
-						has_full_control_of_state = 1021
+						has_full_control_of_state = 1052
 					}
 					335 = {
 						add_compliance = 5
 					}
-					1021 = {
+					1052 = {
 						add_compliance = 5
 					}
 				}
@@ -777,7 +777,7 @@ focus_tree = {
 	focus = {
 		id = HOL_the_foundations_of_defense
 		available = {
-			1021 = {
+			1052 = {
 				controller = {
 					OR = {
 						tag = ROOT
@@ -819,7 +819,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = HOL_the_foundations_of_defense
-			1021 = {
+			1052 = {
 				custom_effect_tooltip = HOL_the_foundations_of_defense_tt
 				hidden_effect = {
 					add_building_construction = {
@@ -844,7 +844,7 @@ focus_tree = {
 	focus = {
 		id = HOL_sumatra
 		available = {
-			1017 = {
+			1047 = {
 				controller = {
 					OR = {
 						tag = ROOT
@@ -862,7 +862,7 @@ focus_tree = {
 					has_full_control_of_state = PREV
 				}
 			}
-			1018 = {
+			1048 = {
 				controller = {
 					OR = {
 						tag = ROOT
@@ -891,7 +891,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			1017 = {
+			1047 = {
 				add_compliance = 5
 				add_building_construction = {
 					type = infrastructure
@@ -919,7 +919,7 @@ focus_tree = {
 					}
 				}
 			}
-			1018 = {
+			1048 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -927,7 +927,7 @@ focus_tree = {
 				}
 				if = {
 					limit = {
-						1018 = {
+						1048 = {
 							free_building_slots = {
 								building = industrial_complex
 								size > 0
@@ -972,9 +972,9 @@ focus_tree = {
 				limit = {
 					INS = {
 						is_subject_of = HOL
-						has_full_control_of_state = 1017
+						has_full_control_of_state = 1047
 						has_full_control_of_state = 672
-						has_full_control_of_state = 1018
+						has_full_control_of_state = 1048
 					}
 				}
 				INS = {
@@ -985,17 +985,17 @@ focus_tree = {
 				}
 				else_if = {
 					limit = {
-						has_full_control_of_state = 1017
+						has_full_control_of_state = 1047
 						has_full_control_of_state = 672
-						has_full_control_of_state = 1018
+						has_full_control_of_state = 1048
 					}
-					1017 = {
+					1047 = {
 						add_compliance = 5
 					}
 					672 = {
 						add_compliance = 5
 					}
-					1018 = {
+					1048 = {
 						add_compliance = 5
 					}
 				}
@@ -1006,7 +1006,7 @@ focus_tree = {
 	focus = {
 		id = HOL_borneo_and_celebes
 		available = {
-			1022 = {
+			1050 = {
 				controller = {
 					OR = {
 						tag = ROOT
@@ -1024,7 +1024,7 @@ focus_tree = {
 					has_full_control_of_state = PREV
 				}
 			}
-			1025 = {
+			1054 = {
 				controller = {
 					OR = {
 						tag = ROOT
@@ -1060,7 +1060,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			1022 = {
+			1050 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -1068,7 +1068,7 @@ focus_tree = {
 				}
 				if = {
 					limit = {
-						1022 = {
+						1050 = {
 							free_building_slots = {
 								building = industrial_complex
 								size > 0
@@ -1117,7 +1117,7 @@ focus_tree = {
 					add_extra_state_shared_building_slots = 1
 				}
 			}
-			1025 = {
+			1054 = {
 				if = {
 					limit = {
 						673 = {
@@ -1144,8 +1144,8 @@ focus_tree = {
 					INS = {
 						is_subject_of = HOL
 						has_full_control_of_state = 334
-						has_full_control_of_state = 1022
-						has_full_control_of_state = 1025
+						has_full_control_of_state = 1050
+						has_full_control_of_state = 1054
 						has_full_control_of_state = 673
 					}
 				}
@@ -1158,17 +1158,17 @@ focus_tree = {
 				else_if = {
 					limit = {
 						has_full_control_of_state = 334
-						has_full_control_of_state = 1022
-						has_full_control_of_state = 1025
+						has_full_control_of_state = 1050
+						has_full_control_of_state = 1054
 						has_full_control_of_state = 673
 					}
 					334 = {
 						add_compliance = 5
 					}
-					1022 = {
+					1050 = {
 						add_compliance = 5
 					}
-					1025 = {
+					1054 = {
 						add_compliance = 5
 					}
 					673 = {
@@ -1203,7 +1203,7 @@ focus_tree = {
 						has_full_control_of_state = PREV
 					}
 				}
-				1026 = {
+				1053 = {
 					controller = {
 						OR = {
 							tag = ROOT
@@ -1212,7 +1212,7 @@ focus_tree = {
 						has_full_control_of_state = PREV
 					}
 				}
-				1027 = {
+				1055 = {
 					controller = {
 						OR = {
 							tag = ROOT
@@ -1248,7 +1248,7 @@ focus_tree = {
 						has_full_control_of_state = PREV
 					}
 				}
-				1028 = {
+				1056 = {
 					controller = {
 						OR = {
 							tag = ROOT
@@ -1257,7 +1257,7 @@ focus_tree = {
 						has_full_control_of_state = PREV
 					}
 				}
-				1029 = {
+				1057 = {
 					controller = {
 						OR = {
 							tag = ROOT
@@ -1313,7 +1313,7 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					1026 = {
+					1053 = {
 						controller = {
 							OR = {
 								tag = ROOT
@@ -1323,7 +1323,7 @@ focus_tree = {
 						}
 					}
 				}
-				1026 = {
+				1053 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 1
@@ -1333,7 +1333,7 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					1027 = {
+					1055 = {
 						controller = {
 							OR = {
 								tag = ROOT
@@ -1343,7 +1343,7 @@ focus_tree = {
 						}
 					}
 				}
-				1027 = {
+				1055 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 1
@@ -1351,7 +1351,7 @@ focus_tree = {
 					}
 					if = {
 						limit = {
-							1027 = {
+							1055 = {
 								free_building_slots = {
 									building = industrial_complex
 									size > 0
@@ -1462,7 +1462,7 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					1028 = {
+					1056 = {
 						controller = {
 							OR = {
 								tag = ROOT
@@ -1472,7 +1472,7 @@ focus_tree = {
 						}
 					}
 				}
-				1028 = {
+				1056 = {
 					add_compliance = 5
 					add_building_construction = {
 						type = infrastructure
@@ -1481,7 +1481,7 @@ focus_tree = {
 					}
 					if = {
 						limit = {
-							1028 = {
+							1056 = {
 								free_building_slots = {
 									building = industrial_complex
 									size > 0
@@ -1495,7 +1495,7 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					1029 = {
+					1057 = {
 						controller = {
 							OR = {
 								tag = ROOT
@@ -1505,7 +1505,7 @@ focus_tree = {
 						}
 					}
 				}
-				1029 = {
+				1057 = {
 					add_compliance = 5
 					add_building_construction = {
 						type = infrastructure
@@ -1514,7 +1514,7 @@ focus_tree = {
 					}
 					if = {
 						limit = {
-							1029 = {
+							1057 = {
 								free_building_slots = {
 									building = industrial_complex
 									size > 0
@@ -1531,13 +1531,13 @@ focus_tree = {
 					INS = {
 						is_subject_of = HOL
 						has_full_control_of_state = 667
-						has_full_control_of_state = 1026
-						has_full_control_of_state = 1027
+						has_full_control_of_state = 1053
+						has_full_control_of_state = 1055
 						has_full_control_of_state = 668
 						has_full_control_of_state = 738
 						has_full_control_of_state = 669
-						has_full_control_of_state = 1028
-						has_full_control_of_state = 1029
+						has_full_control_of_state = 1056
+						has_full_control_of_state = 1057
 					}
 				}
 				INS = {
@@ -1550,7 +1550,7 @@ focus_tree = {
 					limit = {
 						MLK = {
 							is_subject_of = HOL
-							has_full_control_of_state = 1027
+							has_full_control_of_state = 1055
 							has_full_control_of_state = 668
 							has_full_control_of_state = 738
 						}
@@ -1564,14 +1564,14 @@ focus_tree = {
 				}
 				else_if = {
 					limit = {
-						PPA = {
+						WPG = {
 							is_subject_of = HOL
 							has_full_control_of_state = 669
-							has_full_control_of_state = 1028
-							has_full_control_of_state = 1029
+							has_full_control_of_state = 1056
+							has_full_control_of_state = 1057
 						}
 					}
-					PPA = {
+					WPG = {
 						add_autonomy_ratio = {
 							value = -0.03
 							localization = HOL_the_grote_oost
@@ -1581,21 +1581,21 @@ focus_tree = {
 				else_if = {
 					limit = {
 						has_full_control_of_state = 667
-						has_full_control_of_state = 1026
-						has_full_control_of_state = 1027
+						has_full_control_of_state = 1053
+						has_full_control_of_state = 1055
 						has_full_control_of_state = 668
 						has_full_control_of_state = 738
 						has_full_control_of_state = 669
-						has_full_control_of_state = 1028
-						has_full_control_of_state = 1029
+						has_full_control_of_state = 1056
+						has_full_control_of_state = 1057
 					}
 					667 = {
 						add_compliance = 5
 					}
-					1026 = {
+					1053 = {
 						add_compliance = 5
 					}
-					1027 = {
+					1055 = {
 						add_compliance = 5
 					}
 					668 = {
@@ -1607,10 +1607,10 @@ focus_tree = {
 					669 = {
 						add_compliance = 5
 					}
-					1028 = {
+					1056 = {
 						add_compliance = 5
 					}
-					1029 = {
+					1057 = {
 						add_compliance = 5
 					}
 				}
@@ -1630,31 +1630,31 @@ focus_tree = {
 						tag = ROOT
 						AND = {
 							is_subject_of = ROOT
-							NOT = { original_tag = PPA }
+							NOT = { original_tag = WPG }
 						}
 					}
 					has_full_control_of_state = PREV
 				}
 			}
-			1028 = {
+			1056 = {
 				controller = {
 					OR = {
 						tag = ROOT
 						AND = {
 							is_subject_of = ROOT
-							NOT = { original_tag = PPA }
+							NOT = { original_tag = WPG }
 						}
 					}
 					has_full_control_of_state = PREV
 				}
 			}
-			1029 = {
+			1057 = {
 				controller = {
 					OR = {
 						tag = ROOT
 						AND = {
 							is_subject_of = ROOT
-							NOT = { original_tag = PPA }
+							NOT = { original_tag = WPG }
 						}
 					}
 					has_full_control_of_state = PREV
@@ -1670,23 +1670,23 @@ focus_tree = {
 					controller = {
 						AND = {
 							is_subject_of = ROOT
-							NOT = { original_tag = PPA }
+							NOT = { original_tag = WPG }
 						}
 					}
 				}
-				1028 = {
+				1056 = {
 					controller = {
 						AND = {
 							is_subject_of = ROOT
-							NOT = { original_tag = PPA }
+							NOT = { original_tag = WPG }
 						}
 					}
 				}
-				1029 = {
+				1057 = {
 					controller = {
 						AND = {
 							is_subject_of = ROOT
-							NOT = { original_tag = PPA }
+							NOT = { original_tag = WPG }
 						}
 					}
 				}
@@ -1712,19 +1712,19 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			PPA = {
+			WPG = {
 				transfer_state = 669
-				transfer_state = 1028
-				transfer_state = 1029
+				transfer_state = 1056
+				transfer_state = 1057
 				if = {
 					limit = {
 						HOL = {
-							owns_state = 1029
-							has_full_control_of_state = 1029
+							owns_state = 1057
+							has_full_control_of_state = 1057
 						}
 					}
-					transfer_state = 1029
-					add_state_core = 1029
+					transfer_state = 1057
+					add_state_core = 1057
 				}
 				if = {
 					limit = {
@@ -1739,12 +1739,12 @@ focus_tree = {
 			}
 			HOL = {
 				set_autonomy = {
-					target = PPA
+					target = WPG
 					autonomous_state = autonomy_puppet
 				}
 			}
 			hidden_effect = {
-				PPA = {
+				WPG = {
 					set_politics = {
 						ruling_party = neutrality
 						last_election = "1935.11.14"
@@ -1758,7 +1758,7 @@ focus_tree = {
 						neutrality = 50
 					}
 					promote_character = {
-						character = PPA_eechoud
+						character = WPG_eechoud
 						ideology = despotism
 					}
 				}
@@ -1871,7 +1871,7 @@ focus_tree = {
 
 		available = {
 			has_full_control_of_state = 335
-			1020 = {
+			1051 = {
 				controller = {
 					OR = {
 						tag = ROOT
@@ -1880,7 +1880,7 @@ focus_tree = {
 					has_full_control_of_state = PREV
 				}
 			}
-			1021 = {
+			1052 = {
 				controller = {
 					OR = {
 						tag = ROOT
@@ -1923,7 +1923,7 @@ focus_tree = {
 					}
 				}
 			}
-			1020 = {
+			1051 = {
 				if = {
 					limit = {
 						335 = {
@@ -1942,7 +1942,7 @@ focus_tree = {
 					}
 				}
 			}
-			1021 = {
+			1052 = {
 				if = {
 					limit = {
 						335 = {
@@ -1986,10 +1986,10 @@ focus_tree = {
 				335 = {
 					add_dynamic_modifier = { modifier = INS_expand_recruitment }
 				}
-				1025 = {
+				1054 = {
 					add_dynamic_modifier = { modifier = INS_expand_recruitment }
 				}
-				1027 = {
+				1055 = {
 					add_dynamic_modifier = { modifier = INS_expand_recruitment }
 				}
 				668 = {
@@ -2001,10 +2001,10 @@ focus_tree = {
 				669 = {
 					add_dynamic_modifier = { modifier = INS_expand_recruitment }
 				}
-				1028 = {
+				1056 = {
 					add_dynamic_modifier = { modifier = INS_expand_recruitment }
 				}
-				1029 = {
+				1057 = {
 					add_dynamic_modifier = { modifier = INS_expand_recruitment }
 				}
 			}
@@ -2199,7 +2199,7 @@ focus_tree = {
 	focus = {
 		id = HOL_the_east_indies_war_machine
 		available = {
-			1020 = {
+			1051 = {
 				controller = {
 					OR = {
 						tag = ROOT
@@ -2208,7 +2208,7 @@ focus_tree = {
 					has_full_control_of_state = PREV
 				}
 			}
-			1021 = {
+			1052 = {
 				controller = {
 					OR = {
 						tag = ROOT
@@ -2251,10 +2251,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			1020 = {
+			1051 = {
 				if = {
 					limit = {
-						1020 = {
+						1051 = {
 							free_building_slots = {
 								building = arms_factory
 								size > 0
@@ -2270,10 +2270,10 @@ focus_tree = {
 					}
 				}
 			}
-			1021 = {
+			1052 = {
 				if = {
 					limit = {
-						1021 = {
+						1052 = {
 							free_building_slots = {
 								building = arms_factory
 								size > 0
@@ -2336,7 +2336,7 @@ focus_tree = {
 	focus = {
 		id = HOL_prepare_for_our_return
 		available = {
-			1021 = {
+			1052 = {
 				controller = {
 					OR = {
 						tag = ROOT
@@ -2371,10 +2371,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			1021 = {
+			1052 = {
 				if = {
 					limit = {
-						1021 = {
+						1052 = {
 							free_building_slots = {
 								building = dockyard
 								size > 0
@@ -4264,7 +4264,7 @@ focus_tree = {
 					has_full_control_of_state = PREV
 				}
 			}
-			1027 = {
+			1055 = {
 				controller = {
 					OR = {
 						tag = ROOT
@@ -4347,7 +4347,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			1027 = {			
+			1055 = {			
 				add_building_construction = {
 					type = air_base
 					level = 1
@@ -4577,7 +4577,6 @@ focus_tree = {
 				bonus = 1
 				ahead_reduction = 2
 				uses = 2
-				category = cl_tech
 				category = ca_tech
 			}
 		}
@@ -5083,7 +5082,7 @@ focus_tree = {
 		y = 1
 
 		available = {
-			1026 = {
+			1053 = {
 				controller = {
 					OR = {
 						tag = ROOT
@@ -5114,7 +5113,7 @@ focus_tree = {
 				limit = {
 					INS = {
 						exists = yes
-						has_full_control_of_state = 1026
+						has_full_control_of_state = 1053
 					}
 				}
 				INS = {
@@ -5122,7 +5121,7 @@ focus_tree = {
 				}
 				else_if = {
 					limit = {
-						has_full_control_of_state = 1026
+						has_full_control_of_state = 1053
 					}
 					add_state_claim = 721
 				}
@@ -5150,7 +5149,7 @@ focus_tree = {
 						has_full_control_of_state = 871
 						has_full_control_of_state = 520
 						has_full_control_of_state = 519
-						has_full_control_of_state = 1029
+						has_full_control_of_state = 1057
 						has_full_control_of_state = 523
 					}
 				}
@@ -5163,7 +5162,7 @@ focus_tree = {
 			has_full_control_of_state = 871
 			has_full_control_of_state = 520
 			has_full_control_of_state = 519
-			has_full_control_of_state = 1029
+			has_full_control_of_state = 1057
 			has_full_control_of_state = 523
 		}
 
@@ -5185,7 +5184,7 @@ focus_tree = {
 			add_state_claim = 871
 			add_state_claim = 520
 			add_state_claim = 519
-			add_state_claim = 1029
+			add_state_claim = 1057
 			add_state_claim = 523
 			create_wargoal = {
 			    type = take_state_focus
@@ -6282,7 +6281,7 @@ focus_tree = {
 						334 = { is_fully_controlled_by = HOL }
 						667 = { is_fully_controlled_by = HOL }
 						673 = { is_fully_controlled_by = HOL }
-						1027 = { is_fully_controlled_by = HOL }
+						1055 = { is_fully_controlled_by = HOL }
 						668 = { is_fully_controlled_by = HOL }
 						738 = { is_fully_controlled_by = HOL }
 						669 = { is_fully_controlled_by = HOL }
@@ -6300,7 +6299,7 @@ focus_tree = {
 						334 = { is_fully_controlled_by = INS }
 						667 = { is_fully_controlled_by = INS }
 						673 = { is_fully_controlled_by = INS }
-						1027 = { is_fully_controlled_by = INS }
+						1055 = { is_fully_controlled_by = INS }
 						668 = { is_fully_controlled_by = INS }
 						738 = { is_fully_controlled_by = INS }
 						669 = { is_fully_controlled_by = INS }
@@ -6324,7 +6323,7 @@ focus_tree = {
 						is_owned_by = HOL
 					}
 					any_state = {
-						is_core_of = PPA
+						is_core_of = WPG
 						is_owned_by = HOL
 					}
 					695 = { is_owned_by = HOL }
@@ -6338,7 +6337,7 @@ focus_tree = {
 					INS = { is_subject_of = HOL }
 					ATJ = { is_subject_of = HOL }
 					MLK = { is_subject_of = HOL }
-					PPA = { is_subject_of = HOL }
+					WPG = { is_subject_of = HOL }
 				}
 			}
 		}
@@ -6363,7 +6362,7 @@ focus_tree = {
 					334 = { is_fully_controlled_by = HOL }
 					667 = { is_fully_controlled_by = HOL }
 					673 = { is_fully_controlled_by = HOL }
-					1027 = { is_fully_controlled_by = HOL }
+					1055 = { is_fully_controlled_by = HOL }
 					668 = { is_fully_controlled_by = HOL }
 					738 = { is_fully_controlled_by = HOL }
 					669 = { is_fully_controlled_by = HOL }
@@ -6401,7 +6400,7 @@ focus_tree = {
 					334 = { is_fully_controlled_by = INS }
 					667 = { is_fully_controlled_by = INS }
 					673 = { is_fully_controlled_by = INS }
-					1027 = { is_fully_controlled_by = INS }
+					1055 = { is_fully_controlled_by = INS }
 					668 = { is_fully_controlled_by = INS }
 					738 = { is_fully_controlled_by = INS }
 					669 = { is_fully_controlled_by = INS }
@@ -6438,22 +6437,22 @@ focus_tree = {
 						    target = MLK
 						    autonomy_state = autonomy_dominion
 						}
-						release = PPA
+						release = WPG
 						set_autonomy = {
-						    target = PPA
+						    target = WPG
 						    autonomy_state = autonomy_dominion
 						}
 					}
 					335 = {
 						add_manpower = -35000
 					}
-					1020 = {
+					1051 = {
 						add_manpower = -30000
 					}
-					1021 = {
+					1052 = {
 						add_manpower = -25000
 					}
-					1027 = {
+					1055 = {
 						add_manpower = -7500
 					}
 					668 = {
@@ -6462,10 +6461,10 @@ focus_tree = {
 					669 = {
 						add_manpower = -10000
 					}
-					1028 = {
+					1056 = {
 						add_manpower = -5000
 					}
-					1029 = {
+					1057 = {
 						add_manpower = -5000
 					}
 					672 = {
@@ -6473,8 +6472,8 @@ focus_tree = {
 					}
 				}
 			}
-			335 = { set_state_name = "Djajakarta" }
-			set_province_name = { id = 7381 name = "Djajakarta" }
+			335 = { set_state_name = "Jayakarta" }
+			set_province_name = { id = 7381 name = "Jayakarta" }
 			set_province_name = { id = 4406 name = "Bogor" }
 			set_province_name = { id = 12371 name = "Numbay" }
 			if = {
@@ -8142,7 +8141,7 @@ focus_tree = {
 					has_full_control_of_state = PREV
 				}
 			}
-			1021 = {
+			1052 = {
 				controller = {
 					OR = {
 						tag = ROOT
@@ -8199,10 +8198,10 @@ focus_tree = {
 					}
 				}
 			}
-			1021 = {
+			1052 = {
 				if = {
 					limit = {
-						1021 = {
+						1052 = {
 							free_building_slots = {
 								building = dockyard
 								size > 0

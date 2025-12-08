@@ -8,8 +8,8 @@ set_technology = {
 set_research_slots = 2
 set_stability = 0.6
 
-recruit_character = PPA_rumagesan
-recruit_character = PPA_eechoud
+recruit_character = WPG_rumagesan
+recruit_character = WPG_eechoud
 
 add_ideas = {
 	ASEAN_agrarian_society_1

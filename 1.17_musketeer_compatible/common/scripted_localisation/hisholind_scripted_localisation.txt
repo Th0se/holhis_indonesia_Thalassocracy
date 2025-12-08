@@ -329,7 +329,7 @@ defined_text = { # Country
 	text = {
 		trigger = {
 			original_tag = INS
-			has_country_flag = INS_soetardjo_petition_begin
+			has_country_flag = INS_sutarjo_petition_begin
 		}
 		localization_key = INS_DUTCH_INDOS
 	}
@@ -343,7 +343,7 @@ defined_text = { # Country
 	text = {
 		trigger = {
 			original_tag = INS
-			has_country_flag = INS_soetardjo_petition_begin
+			has_country_flag = INS_sutarjo_petition_begin
 		}
 		localization_key = INS_DUTCH_INDOS_DESC
 	}
@@ -466,9 +466,9 @@ defined_text = {
 }
 
 defined_text = {
-	name = getinsbandoengunivname
+	name = getinsbandungunivname
 	text = {
-		localization_key = INS_BANDOENG_THB
+		localization_key = INS_BANDUNG_THB
 	}
 	text = {
 		trigger = {
@@ -481,7 +481,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = INS_BANDOENG_ITB
+		localization_key = INS_BANDUNG_ITB
 	}
 }
 
@@ -634,7 +634,7 @@ defined_text = {
 defined_text = {
 	name = getinsfreenationalists
 	text = {
-		localization_key = INS_FREE_SOEKARNO
+		localization_key = INS_FREE_SUKARNO
 	}
 	text = {
 		trigger = {
@@ -648,7 +648,7 @@ defined_text = {
 defined_text = {
 	name = getinsfreenationalistsdesc
 	text = {
-		localization_key = INS_FREE_SOEKARNO_DESC
+		localization_key = INS_FREE_SUKARNO_DESC
 	}
 	text = {
 		trigger = {
@@ -725,7 +725,7 @@ defined_text = {
 			original_tag = INS
 			NOT = { is_subject_of = HOL }
 		}
-		localization_key = INS_pabrik_sendjata_mesioe
+		localization_key = INS_pabrik_senjata_mesiu
 	}
 }
 
@@ -754,7 +754,7 @@ defined_text = { # Country
 				has_completed_focus = INS_proclaim_the_empire
 			}
 		}
-		localization_key = INS_soerabaja_dm
+		localization_key = INS_surabaya_dm
 	}
 	text = {
 		trigger = {
@@ -767,7 +767,7 @@ defined_text = { # Country
 				}
 			}
 		}
-		localization_key = INS_pal_soerabaja
+		localization_key = INS_pal_surabaya
 	}
 }
 
@@ -903,9 +903,9 @@ defined_text = { # Country
 	}
 	text = {
 		trigger = {
-			has_country_flag = INS_choose_bandoeng
+			has_country_flag = INS_choose_bandung
 		}
-		localization_key = INS_bandoeng_tt
+		localization_key = INS_bandung_tt
 	}
 	text = {
 		trigger = {

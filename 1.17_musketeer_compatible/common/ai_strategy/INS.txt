@@ -334,7 +334,7 @@ INS_accept_USA_access = {
 				}
 			}
 			JAP = {
-				has_completed_focus = JAP_strike_south_doctrine
+				has_completed_focus = JAP_strike_the_southern_road
 			}
 		}
 		NOT = {

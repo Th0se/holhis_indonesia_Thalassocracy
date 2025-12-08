@@ -1,0 +1,256 @@
+#	Example:
+# 
+#	example_dynamic_modifier = {
+#		icon = "GFX_idea_unknown" # optional, will show up in guis if icon is specified
+#		enable = { always = yes } #optional, the modifier won't apply if not enabled
+#		remove_trigger = { always = no } #optional, will remove the modifier if true
+#       attacker_modifier = no  # if yes this modifier will also be read in combat for 
+#                               # people engaging in the combat even if not in the state
+#
+#		# list of modifiers
+#		fuel_cost = 321
+#		max_fuel = var_max_fuel # will be taken from a variable
+#	}
+#
+#
+#	In a script file:
+#
+#	effect = {
+#		add_dynamic_modifier = {
+#			modifier = example_dynamic_modifier
+#			scope = GER # optional, if you specify this your dynamic modifier scoped to this scope (root is the effect scope)
+#			days = 14 # optional, will be removed after this many days passes
+#		}
+#	}
+#
+#	can be added to countries, states or unit leaders
+#	will only updated daily, unless forced by force_update_dynamic_modifier effect
+
+INS_expand_recruitment = {
+	enable = { always = yes } 
+
+	icon = GFX_volunteers
+
+	local_non_core_manpower = 0.25
+}
+
+INS_pacification = {
+	enable = { always = yes } 
+
+	icon = GFX_modifiers_generic_fascist_corporatism
+
+	local_non_core_manpower = 0.25
+	local_factories = 0.4
+	local_resources_factor = 0.35
+	monthly_population = -0.2
+	resistance_target = -0.05
+	resistance_decay = 0.1
+	compliance_growth = 0.05
+}
+
+early_develop_modif_west = {
+	enable = { always = yes }
+
+	icon = GFX_modifier_basic_development
+
+	local_building_slots_factor = 0.4
+	state_production_speed_infrastructure_factor = 0.2
+}
+
+advanced_develop_modif_west = {
+	enable = { always = yes }
+
+	icon = GFX_modifier_advanced_development
+
+	local_building_slots_factor = 0.6
+	state_production_speed_infrastructure_factor = 0.25
+	state_production_speed_buildings_factor = 0.3
+	
+}
+
+early_develop_modif_middle = {
+	enable = { always = yes }
+
+	icon = GFX_modifier_basic_development
+
+	local_building_slots_factor = 0.5
+	state_production_speed_infrastructure_factor = 0.25
+	
+}
+
+advanced_develop_modif_middle = {
+	enable = { always = yes }
+
+	icon = GFX_modifier_advanced_development
+
+	local_building_slots_factor = 0.8
+	state_production_speed_infrastructure_factor = 0.3
+	state_production_speed_buildings_factor = 0.35
+	
+}
+
+early_develop_modif_east = {
+	enable = { always = yes }
+
+	icon = GFX_modifier_basic_development
+
+	local_building_slots_factor = 0.6
+	state_production_speed_infrastructure_factor = 0.3
+	
+}
+
+advanced_develop_modif_east = {
+	enable = { always = yes }
+
+	icon = GFX_modifier_advanced_development
+
+	local_building_slots_factor = 1
+	state_production_speed_infrastructure_factor = 0.4
+	state_production_speed_buildings_factor = 0.5
+	
+}
+
+dense_rural_infrastructure = { #State Modifier
+	enable = { always = yes }
+	remove_trigger = {
+		ROOT = {
+			OR = {
+				AND = {
+					infrastructure > 3
+					industrial_complex > 0
+				}
+				infrastructure > 4
+			}
+		}
+	}
+
+	icon = GFX_modifiers_SOV_civilian_labor_in_defense
+	
+	local_non_core_supply_impact_factor = 0.35
+}
+
+INS_west_java_di_nata_modifier = { #State Modifier
+	enable = { always = yes }
+
+	icon = GFX_modifier_regional_west_java
+	
+	recruitable_population_factor = 0.07
+	local_building_slots_factor = 0.05
+	state_production_speed_buildings_factor = 0.1
+	army_speed_factor_for_controller = 0.1
+	local_org_regain = 0.1
+	army_defence_factor = 0.25
+	local_supplies = 0.075
+}
+
+INS_central_java_sutarjo_modifier = { #State Modifier
+	enable = { always = yes }
+
+	icon = GFX_modifier_regional_central_java
+	
+	recruitable_population_factor = 0.05
+	local_building_slots_factor = 0.1
+	state_production_speed_buildings_factor = 0.05
+	army_speed_factor_for_controller = 0.1
+	local_org_regain = 0.1
+	army_defence_factor = 0.25
+	local_supplies = 0.075
+}
+
+INS_north_sulawesi_ratulangi_modifier = { #State Modifier
+	enable = { always = yes }
+
+	icon = GFX_modifier_regional_north_sulawesi
+	
+	recruitable_population_factor = 0.1
+	local_building_slots_factor = 0.2
+	state_production_speed_buildings_factor = 0.1
+	army_speed_factor_for_controller = 0.1
+	local_org_regain = 0.1
+	army_defence_factor = 0.5
+	local_supplies = 0.08
+}
+
+INS_west_kalimantan_alkadrie_modifier = { #State Modifier
+	enable = { always = yes }
+
+	icon = GFX_modifier_basic_development
+	
+	recruitable_population_factor = 0.05
+	local_building_slots_factor = 0.1
+	state_production_speed_buildings_factor = 0.05
+	army_speed_factor_for_controller = 0.1
+	local_org_regain = 0.15
+	army_defence_factor = 1.25
+	local_supplies = 0.08
+}
+
+INS_batavia_thamrin_modifier = { #State Modifier
+	enable = { always = yes }
+
+	icon = GFX_modifier_regional_batavia
+	
+	recruitable_population_factor = 0.1
+	local_building_slots_factor = 0.15
+	state_production_speed_buildings_factor = 0.1
+	army_speed_factor_for_controller = 0.1
+	local_org_regain = 0.1
+	army_defence_factor = 0.3
+	local_supplies = 0.075
+}
+
+INS_mollucas_latuharhary_modifier = { #State Modifier
+	enable = { always = yes }
+
+	icon = GFX_modifier_regional_moluccas
+	
+	recruitable_population_factor = 0.15
+	local_building_slots_factor = 0.2
+	state_production_speed_buildings_factor = 0.12
+	army_speed_factor_for_controller = 0.12
+	local_org_regain = 0.1
+	army_defence_factor = 0.5
+	local_supplies = 0.1
+}
+
+INS_atjeh_ibrahim_modifier = { #State Modifier
+	enable = { always = yes }
+
+	icon = GFX_modifier_regional_atjeh
+	
+	recruitable_population_factor = 0.1
+	local_building_slots_factor = 0.2
+	state_production_speed_buildings_factor = 0.12
+	compliance_gain = 0.05
+	local_supplies = 0.1
+	state_production_speed_rail_way_factor = 0.2
+}
+
+MAL_sarawak_brooke_modifier = { #State Modifier
+	enable = { always = yes }
+
+	icon = GFX_modifier_regional_sarawak
+	
+	recruitable_population_factor = 0.15
+	local_building_slots_factor = 0.2
+	state_production_speed_buildings_factor = 0.2
+	army_speed_factor_for_controller = 0.15
+	local_org_regain = 0.1
+	army_defence_factor = 0.5
+	local_supplies = 0.01
+	compliance_gain = 0.05
+}
+
+MAL_tuanku_sembilan_modifier = { #State Modifier
+	enable = { always = yes }
+
+	icon = GFX_modifier_regional_negeri_sembilan
+	
+	recruitable_population_factor = 0.1
+	local_building_slots_factor = 0.15
+	state_production_speed_buildings_factor = 0.15
+	army_speed_factor_for_controller = 0.15
+	local_org_regain = 0.1
+	army_defence_factor = 0.4
+	local_supplies = 0.01
+}

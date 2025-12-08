@@ -1,0 +1,618 @@
+INS_colony_war = {
+	name = "Staat van Oorlog en van Beleg"
+	desc = "We has been thrown at war, we must survive the storm now and support the Dutch by any means!"
+
+	allowed = {
+		original_tag = INS
+	}
+	enable = {
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = INS_ai_behavior
+					option = DEFAULT
+				}
+			}
+			has_country_flag = INS_AI_RANDOM_COLONY_HISTORICAL 
+			has_game_rule = {
+				rule = INS_ai_behavior
+				option = COLONY_HISTORICAL
+			}
+		}
+		INS = {
+			is_subject = yes
+			has_war = yes
+		}
+	}
+
+	abort = {
+		AND = {
+			is_historical_focus_on = yes
+			has_game_rule = {
+				rule = INS_ai_behavior 
+				option = DEFAULT
+			}
+		}
+		OR = {
+			INS = {
+				is_subject = yes
+				has_war = no
+			}
+			INS = {
+				OR = {
+					AND = {
+						has_war_with = JAP
+						naval_strength_ratio = {
+							tag = JAP
+							ratio < 0.4
+						}
+					}
+					AND = {
+						has_war_with = USA
+						naval_strength_ratio = {
+							tag = USA
+							ratio < 0.4
+						}
+					}
+					AND = {
+						has_war_with = ENG
+						naval_strength_ratio = {
+							tag = ENG
+							ratio < 0.4
+						}
+					}
+				}
+				surrender_progress > 0
+			}
+		}
+	}
+
+	ai_national_focuses = { #23 August 1939 is 190 weeks, 15 May 1940 is 228 weeks, 1 October 1941 is 300 weeks, 1943 is 365 weeks, 1944 is 417 weeks 
+		INS_continue_reform						#5
+		INS_address_military_issues				#10 = 15
+		INS_pave_the_way_for_a_navy				#10 = 25
+		INS_increase_military_training			#10 = 35
+		INS_trust_on_the_east					#10 = 45
+		INS_improve_dutch_relations				#10 = 55 #week 3 1937
+		INS_expand_the_airforce					#10 = 65
+		INS_reinstate_ethical_policies			#10 = 75
+		INS_upheld_status_quo					#5 = 80
+		INS_dutch_engineers						#10 = 90
+		INS_address_malaise						#5 = 95
+		INS_reform_the_knil						#10 = 105 #week 2 1938
+		INS_limit_exports						#5 = 110
+		INS_invite_foreign_investors			#10 = 120
+		INS_strict_neutrality_china_war			#5 = 125
+		INS_more_knil_funds						#10 = 135
+		INS_flexible_navy						#10 = 145
+		INS_self_sufficient_weapon_production	#10 = 155 #week 51 1938
+		INS_expand_javan_railroads				#7,5 = 162,5 #week 6 1939
+		INS_expand_javan_dockyards				#10 = 172,5
+		INS_expand_sumatran_industry			#7,5 = 180
+		INS_increase_sufficiency				#10 = 190
+		INS_end_malaise							#10 = 200 #potential historical break, switch to war strategy
+		INS_quantity_over_quality				#10 = 210 #week 2 1940
+		INS_staat_van_oorlog_en_van_beleg		#5 = 215
+		INS_strict_hierarchy					#10 = 225
+		INS_air_defense							#10 = 235
+		INS_expand_javan_dockyards				#10 = 245
+		INS_resources_for_our_cause				#10 = 255
+		INS_through_pen_and_paper				#10 = 265
+		INS_home_defence						#10 = 275
+		INS_air_offense							#10 = 285
+		INS_expand_bandung_university			#10 = 295 #September 1941
+		INS_field_our_own_wolfpack				#10 = 305
+		INS_indonesian_high_command				#10 = 315 #week 7 1942
+		INS_joint_excersises					#10 = 340
+		INS_procure_western_armaments			#5 = 345
+		INS_fighter_focus						#10 = 355
+		INS_finalize_develop_east				#10 = 365
+		INS_cas_bombers							#10
+		INS_aviation_effort						#10
+		INS_expand_airbases						#10 =
+	}
+	
+	research = {
+		industry = 20.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+		dd_tech = 5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+		captain_of_industry = 5
+		war_industrialist = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+}
+
+INS_colony_exile = {
+	name = "The Fight Abroad"
+	desc = "With Japan/America/Britain are against us, we are hopelessly outmatched. We must evacuate ourselves for the time being"
+
+	allowed = {
+		original_tag = INS
+		has_dlc = "Man the Guns"
+	}
+
+	enable = {
+		OR = {
+			has_country_flag = INS_AI_RANDOM_COLONY_ALTERNATE
+			has_game_rule = {
+				rule = INS_ai_behavior
+				option = COLONY_ALTERNATE
+			}
+			INS = {
+				is_subject = yes
+				OR = {
+					AND = {
+						has_war_with = JAP
+						naval_strength_ratio = {
+							tag = JAP
+							ratio < 0.4
+						}
+					}
+					AND = {
+						has_war_with = USA
+						naval_strength_ratio = {
+							tag = USA
+							ratio < 0.4
+						}
+					}
+					AND = {
+						has_war_with = ENG
+						naval_strength_ratio = {
+							tag = ENG
+							ratio < 0.4
+						}
+					}
+				}
+				surrender_progress > 0
+			}
+		}
+	}
+
+	abort = {
+		
+	}
+
+	ai_national_focuses = { #23 August 1939 is 190 weeks, 15 May 1940 is 228 weeks, 1 October 1941 is 300 weeks, 1943 is 365 weeks, 1944 is 417 weeks 
+		INS_continue_reform						#5
+		INS_address_military_issues				#10 = 15
+		INS_pave_the_way_for_a_navy				#10 = 25
+		INS_increase_military_training			#10 = 35
+		INS_trust_on_the_east					#10 = 45
+		INS_improve_dutch_relations				#10 = 55 #week 3 1937
+		INS_expand_the_airforce					#10 = 65
+		INS_reinstate_ethical_policies			#10 = 75
+		INS_upheld_status_quo					#5 = 80
+		INS_dutch_engineers						#10 = 90
+		INS_address_malaise						#5 = 95
+		INS_reform_the_knil						#10 = 105 #week 2 1938
+		INS_limit_exports						#5 = 110
+		INS_invite_foreign_investors			#10 = 120
+		INS_strict_neutrality_china_war			#5 = 125
+		INS_more_knil_funds						#10 = 135
+		INS_flexible_navy						#10 = 145
+		INS_self_sufficient_weapon_production	#10 = 155 #week 51 1938
+		INS_expand_javan_railroads				#7,5 = 162,5 #week 6 1939
+		INS_expand_javan_dockyards				#10 = 172,5
+		INS_expand_sumatran_industry			#7,5 = 180
+		INS_increase_sufficiency				#10 = 190
+		INS_end_malaise							#10 = 200 #potential historical break, switch to war strategy
+		INS_quantity_over_quality				#10 = 210 #week 2 1940
+		INS_staat_van_oorlog_en_van_beleg		#5 = 215
+		INS_strict_hierarchy					#10 = 225
+		INS_air_defense							#10 = 235
+		INS_expand_javan_dockyards				#10 = 245
+		INS_resources_for_our_cause				#10 = 255
+		INS_through_pen_and_paper				#10 = 265
+		INS_home_defence						#10 = 275
+		INS_air_offense							#10 = 285
+		INS_expand_bandung_university			#10 = 295 #September 1941
+		INS_field_our_own_wolfpack				#10 = 305
+		INS_indonesian_high_command				#10 = 315 #week 7 1942
+		INS_prepare_flight						#5 = 320 #March 1942
+		INS_build_exile_port					#5 = 325
+		INS_evacuation							#5 = 330
+		INS_joint_excersises					#10 = 340
+		INS_procure_western_armaments			#5 = 345
+		INS_fighter_focus						#10 = 355
+		INS_finalize_develop_east				#10 = 365
+		INS_fight_abroad						#5 =
+		INS_cas_bombers							#10
+		INS_separate_services					#5 =
+		INS_appease_americans					#5 =
+		INS_promote_cause						#10 =
+		INS_aviation_effort						#10
+		INS_support_pki_exile					#5 =
+		INS_relay_news_focus					#5 =
+		INS_expand_airbases						#10 =
+		INS_stepping_stone						#5 =
+		INS_homecoming							#5 = 
+	}
+	
+	research = {
+		industry = 20.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+		dd_tech = 5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+		captain_of_industry = 5
+		war_industrialist = 5
+	}
+}
+
+INS_colony_alternate = {
+	name = "Federalization of the Indies"
+	desc = "The Raad van Indie would push for their own representative to be appointed first before proceeding to balance the economic revival, political reforms, and military modernization"
+
+	allowed = {
+		original_tag = INS
+		has_dlc = "Together for Victory"
+	}
+
+	enable = {
+		OR = {
+			has_country_flag = INS_AI_RANDOM_COLONY_ALTERNATE
+			has_game_rule = {
+				rule = INS_ai_behavior
+				option = COLONY_ALTERNATE
+			}
+		}
+	}
+
+	abort = {
+		
+	}
+
+	ai_national_focuses = { #23 August 1939 is 190 weeks + 100 weeks to 23 July 1941
+		INS_continue_reform						#5
+		INS_address_military_issues				#10 = 15
+		INS_increase_military_training			#10 = 25
+		INS_trust_on_the_east					#10 = 35
+		INS_reform_the_knil						#10 = 45
+		INS_pave_the_way_for_a_navy				#10 = 55
+		INS_expand_the_airforce					#10 = 65
+		INS_challenge_dutch_elitism				#10 = 75
+		INS_reinstate_ethical_policies			#10 = 85
+		INS_reinstate_stuwgroep					#10 = 95
+		INS_invite_foreign_investors			#10 = 105
+		INS_more_knil_funds						#10 = 115
+		INS_quantity_over_quality 				#10 = 135
+		INS_strict_hierarchy 					#10 = 145
+		INS_address_malaise 					#5 = 150
+		INS_limit_exports 						#5 = 155
+		INS_self_sufficient_weapon_production 	#10 = 165
+		INS_expand_javan_railroads 				#10 = 175
+		INS_expand_bandung_university 			#10 = 185
+		INS_expand_sumatran_industry			#10 = 195
+		INS_increase_sufficiency 				#10 = 205
+		INS_end_malaise 						#10 = 215
+		INS_move_capital 						#10 = 225
+		INS_reestablish_royal_houses	 		#5 = 230
+		INS_expand_javan_dockyards 				#10 = 240
+		INS_reform_bb				 			#10 = 250
+		INS_indies_nation		 				#10 = 260
+		INS_procure_western_armaments 			#5 = 265
+		INS_home_defence 						#10 = 275
+		INS_joint_excersises 					#10 = 285
+		INS_emerald_equator 					#5 = 290
+		INS_strive_for_internal_stability 		#5 = 295
+		INS_nusantara_accord	 				#5 = 300
+	}
+
+	research = {
+		industry = 20.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+		dd_tech = 5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+		captain_of_industry = 5
+		war_industrialist = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+}
+
+INS_parindra_lead = {
+	name = "Thamrin's Second Chance"
+	desc = "The banished Parindra would try to protect the country from the fascist menaces!"
+
+	allowed = {
+		original_tag = INS
+		has_dlc = "Together for Victory"
+	}
+	enable = {
+		OR = {
+			has_country_flag = INS_AI_RANDOM_NATIONALIST_INS_LEAD
+			has_game_rule = {
+				rule = INS_ai_behavior
+				option = NATIONALIST_INS_LEAD
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = { #23 August 1939 is 190 weeks + 100 weeks to 23 July 1941
+		INS_discourage_democratic_reforms		#10
+		INS_revive_spirit_1926					#10 = 20
+		INS_secret_weapon_production			#10 = 30
+		INS_support_nationalists				#5  = 35
+		INS_address_military_issues				#10
+		INS_increase_military_training			#10 = 25
+		INS_start_drafting_locals
+		
+		INS_trust_on_the_east					#10 = 35
+		INS_reform_the_knil						#10 = 45
+		INS_pave_the_way_for_a_navy				#10 = 55
+		INS_expand_the_airforce					#10 = 65
+		INS_challenge_dutch_elitism				#10 = 75
+		INS_reinstate_ethical_policies			#10 = 85
+		INS_reinstate_stuwgroep					#10 = 95
+		INS_invite_foreign_investors			#10 = 105
+		INS_more_knil_funds						#10 = 115
+		INS_quantity_over_quality 				#10 = 135
+		INS_strict_hierarchy 					#10 = 145
+		INS_address_malaise 					#5 = 150
+		INS_limit_exports 						#5 = 155
+		INS_self_sufficient_weapon_production 	#10 = 165
+		INS_expand_javan_railroads 				#10 = 175
+		INS_expand_bandung_university 			#10 = 185
+		INS_expand_sumatran_industry			#10 = 195
+		INS_increase_sufficiency 				#10 = 205
+		INS_end_malaise 						#10 = 215
+		INS_move_capital 						#10 = 225
+		INS_staat_van_oorlog_en_van_beleg 		#5 = 230
+		INS_expand_javan_dockyards 				#10 = 240
+		INS_resources_for_our_cause 			#10 = 250
+		INS_through_pen_and_paper 				#10 = 260
+		INS_procure_western_armaments 			#5 = 265
+		INS_home_defence 						#10 = 275
+		INS_joint_excersises 					#10 = 285
+		INS_prepare_flight 						#5 = 290
+		INS_build_exile_port 					#5 = 295
+		INS_intelligence_exchange 				#5 = 300
+	}
+
+	research = {
+		industry = 20.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+		dd_tech = 5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+		captain_of_industry = 5
+		war_industrialist = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+}
+
+INS_fascist_lead = {
+	name = "The Empire of Two Oceans"
+	desc = "De Jonge has had it enough"
+
+	allowed = {
+		original_tag = INS
+		has_dlc = "Together for Victory"
+	}
+	enable = {
+		OR = {
+			has_country_flag = INS_AI_RANDOM_FASCIST_INS_INDEPENDENT
+			has_game_rule = {
+				rule = INS_ai_behavior
+				option = FASCIST_INS_INDEPENDENT
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+	}
+
+	research = {
+		industry = 20.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+		dd_tech = 5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+		captain_of_industry = 5
+		war_industrialist = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+}
+
+INS_communist_lead = {
+	name = "The Second Indonesian Revolution"
+	desc = "Amir Syarifuddin rises up"
+
+	allowed = {
+		original_tag = INS
+		has_dlc = "Together for Victory"
+	}
+	enable = {
+		OR = {
+			has_country_flag = INS_AI_RANDOM_COMMUNIST_INS_LEAD
+			has_game_rule = {
+				rule = INS_ai_behavior
+				option = COMMUNIST_INS_LEAD
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {	
+	}
+
+	research = {
+		industry = 20.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+		dd_tech = 5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+		captain_of_industry = 5
+		war_industrialist = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+}
+
+INS_nationalist_lead = {
+	name = "The Indonesian Nationalist Revolution"
+	desc = "Hatta and Syahrir broke Sukarno out of Ende and proceeds to PNI-ed all over the East Indies"
+
+	allowed = {
+		original_tag = INS
+		has_dlc = "Waking the Tiger"
+		has_dlc = "Together for Victory"
+	}
+	enable = {
+		OR = {
+			has_country_flag = INS_AI_RANDOM_NATIONALIST_INS_LEAD
+			has_game_rule = {
+				rule = INS_ai_behavior
+				option = NATIONALIST_INS_LEAD
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {	
+	}
+
+	research = {
+		industry = 20.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+		dd_tech = 5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+		captain_of_industry = 5
+		war_industrialist = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+}

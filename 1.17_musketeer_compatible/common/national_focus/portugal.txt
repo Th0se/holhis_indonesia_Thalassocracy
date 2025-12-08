@@ -2322,11 +2322,19 @@ focus_tree = {
 		cost = 10
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = { 	
+
+			add_mastery_bonus = {
+				name = POR_submarine_effort
+				bonus = 0.1
+				days = 240
+				grand_doctrine = new_convoy_raiding
+				track = submarines
+			}
 			add_doctrine_cost_reduction = {
 				name = POR_submarine_effort
-				cost_reduction = 0.5
-				uses = 1
-				category = cat_trade_interdiction
+			    cost_reduction = 0.2
+			    uses = 1
+			    category = naval_doctrine			   
 			}
 
 			add_tech_bonus = {
@@ -2523,11 +2531,13 @@ focus_tree = {
 				uses = 2
 				category = bb_tech		
 			}
-			add_doctrine_cost_reduction = {
+
+			add_mastery_bonus = {
 				name = POR_battleship_effort
-				cost_reduction = 0.5
-				uses = 1
-				category = cat_fleet_in_being		
+				bonus = 0.2
+				days = 240
+				grand_doctrine = new_fleet_in_being
+				track = capital_ships
 			}
 		}
 	}
@@ -2554,12 +2564,14 @@ focus_tree = {
 				uses = 2
 				category = cv_tech		
 			}
-			add_doctrine_cost_reduction = {
-  				name = POR_carrier_effort
-  				cost_reduction = 0.5
-  				uses = 1
-  				category = base_strike_main
-  			}
+
+			add_mastery_bonus = {
+				name = POR_carrier_effort
+				bonus = 0.2
+				days = 240
+				grand_doctrine = new_base_strike
+				track = carriers
+			}
 		}
 	}
 
@@ -3895,7 +3907,18 @@ focus_tree = {
 		relative_position_id = POR_the_iberian_socialist_union
 		cost = 10
 		completion_reward = {
-			create_faction = POR_popular_front_bloc
+			IF = {
+				limit = {
+					has_dlc = "No Compromise, No Surrender"
+				}
+				set_rule = { can_create_factions = yes }
+				create_faction_from_template = faction_template_POR_popular_front_bloc
+				add_faction_initiative = 1
+			}
+			ELSE = {
+				set_rule = { can_create_factions = yes }
+				create_faction_from_template = faction_template_POR_popular_front_bloc
+			}
 			every_other_country = {
 				limit = {
 					capital_scope = { is_on_continent = europe }
@@ -4441,6 +4464,9 @@ focus_tree = {
 					NOT = { is_in_faction_with = ROOT } 
 				}
 			}
+			729 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
 		}
 
 		bypass = {		
@@ -4829,7 +4855,7 @@ focus_tree = {
 		y = 2
 
 		relative_position_id = POR_allow_free_elections
-		cost = 10
+		cost = 5
 		completion_reward = { 	
 			if = {
 				limit = { 
@@ -5632,7 +5658,18 @@ focus_tree = {
 		available = {
 			JAP = {
 				exists = yes
-				NOT = { has_war_with = ROOT }
+				NOT = {
+					has_war_with = ROOT
+					is_ally_with = ROOT
+				}
+			}
+			OR = {
+				729 = {
+					is_controlled_by_ROOT_or_subject = yes
+				}
+				721 = {
+					is_controlled_by_ROOT_or_subject = yes
+				}
 			}
 		}
 
@@ -5812,7 +5849,7 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = POR_camisas_azuis
-		cost = 10
+		cost = 5
 		completion_reward = { 	
 			GER = {
 				country_event = { id = generic.2 hours = 4 }
@@ -5862,6 +5899,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY}
 		completion_reward = { 	
 			add_ideas = POR_the_fifth_empire
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			remove_ideas = POR_unstable_republic
 			if = {
 				limit = { is_in_faction = yes }
@@ -5882,6 +5921,8 @@ focus_tree = {
 					modifier = embargo
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			set_cosmetic_tag = POR_empire
 		}
 	}
@@ -5897,6 +5938,7 @@ focus_tree = {
 						controls_state = 594
 						controls_state = 325
 						controls_state = 613
+						controls_state = 1035
 						controls_state = 622
 						controls_state = 604
 						controls_state = 615
@@ -6103,6 +6145,14 @@ focus_tree = {
 				exists = yes
 				NOT = { is_in_faction_with = ROOT }
 			}
+			OR = {
+				729 = {
+					is_controlled_by_ROOT_or_subject = yes
+				}
+				721 = {
+					is_controlled_by_ROOT_or_subject = yes
+				}
+			}
 		}
 
 		bypass = {		
@@ -6281,7 +6331,7 @@ focus_tree = {
 				}
 			}
 			random_country = {
-				limit = { controls_state = 985 }
+				limit = { controls_state = 1053 }
 				ROOT = {
 					add_ai_strategy = {
 						type = prepare_for_war
@@ -6301,7 +6351,7 @@ focus_tree = {
 				}
 			}
 			random_country = {
-				limit = { controls_state = 984 }
+				limit = { controls_state = 1055 }
 				ROOT = {
 					add_ai_strategy = {
 						type = prepare_for_war
@@ -6319,9 +6369,9 @@ focus_tree = {
 		bypass = {
 			owns_state = 336
 			owns_state = 667
-			owns_state = 985
+			owns_state = 1053
 			owns_state = 668
-			owns_state = 984
+			owns_state = 1055
 		}
 
 		prerequisite = { focus = POR_mapa_cor_de_rosa }
@@ -6334,9 +6384,9 @@ focus_tree = {
 		completion_reward = { 
 			add_state_claim = 336 # Malacca
 			add_state_claim = 667 # Lesser Sunda
-			add_state_claim = 985 # Dutch Timor
+			add_state_claim = 1053 # Dutch Timor
 			add_state_claim = 668 # Mollucas
-			add_state_claim = 984 # North Moluccas
+			add_state_claim = 1055 # North Moluccas
 
 			hidden_effect = {
 				random_country = {
@@ -6360,7 +6410,7 @@ focus_tree = {
 					}
 				}
 				random_country = {
-					limit = { controls_state = 985 }
+					limit = { controls_state = 1053 }
 					ROOT = {
 						add_ai_strategy = {
 							type = declare_war
@@ -6380,7 +6430,7 @@ focus_tree = {
 					}
 				}
 				random_country = {
-					limit = { controls_state = 984 }
+					limit = { controls_state = 1055 }
 					ROOT = {
 						add_ai_strategy = {
 							type = declare_war
@@ -6794,7 +6844,7 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = POR_join_the_carlist_fight
-		cost = 10
+		cost = 5
 		completion_reward = {
 			SPB = { 
 				country_event = { id = lar_portugal_royal_iberian_alliance.1 hours = 6 }

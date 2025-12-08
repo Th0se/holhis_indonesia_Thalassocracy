@@ -194,8 +194,8 @@ news_event = { #6 - Fall of Manado
 	major = yes
 	
 	trigger = {
-		1025 = { is_owned_by = INS }
-		1025 = { is_controlled_by = JAP }
+		1054 = { is_owned_by = INS }
+		1054 = { is_controlled_by = JAP }
 		JAP = {
 			has_war_with = INS
 		}
@@ -243,25 +243,25 @@ news_event = { #6 - Fall of Manado
 	}
 }
 
-news_event = { #7 - Fall of Bandoeng
+news_event = { #7 - Fall of Bandung
 	id = holhisind_news.7
 	title = holhisind_news.7.t
 	desc = holhisind_news.7.d
-	picture = GFX_event_ins_japan_bandoeng
+	picture = GFX_event_ins_japan_bandung
 	
 	major = yes
 	
 	trigger = {
-		1020 = { is_owned_by = INS }
-		1020 = { is_controlled_by = JAP }
+		1051 = { is_owned_by = INS }
+		1051 = { is_controlled_by = JAP }
 		JAP = {
 			has_war_with = INS
 		}
-		NOT = { has_global_flag = fall_of_bandoeng_jap }
+		NOT = { has_global_flag = fall_of_bandung_jap }
 	}
 	
 	immediate = {
-		set_global_flag = fall_of_bandoeng_jap
+		set_global_flag = fall_of_bandung_jap
 	}
 	
 	mean_time_to_happen = {
@@ -772,7 +772,7 @@ country_event = { #10 - Opening of FLW
 country_event = { #11 - Hamengkubuwono Eighth's passing
 	id = holhis_indonesia.11
 	title = holhis_indonesia.11.t
-	picture = GFX_report_event_ins_hamengkoeboewono_ninth_coronation
+	picture = GFX_report_event_ins_hamengkubuwono_ninth_coronation
 
 	desc = {
 		text = holhis_indonesia.11.d_1
@@ -788,7 +788,7 @@ country_event = { #11 - Hamengkubuwono Eighth's passing
 				NOT = { has_idea = INS_hubertus_van_mook }
 				NOT = {
 					has_country_leader = {
-						name = "Soekarno"
+						name = "Sukarno"
 						ruling_only = yes
 					}
 				}
@@ -800,7 +800,7 @@ country_event = { #11 - Hamengkubuwono Eighth's passing
 		text = holhis_indonesia.11.d_3
 		trigger = {
 			has_country_leader = {
-				name = "Soekarno"
+				name = "Sukarno"
 				ruling_only = yes
 			}
 		}
@@ -825,20 +825,20 @@ country_event = { #11 - Hamengkubuwono Eighth's passing
 		name = holhis_indonesia.11.a
 		if = {
 			limit = {
-				has_idea = INS_hamengkoeboewono_eighth
+				has_idea = INS_hamengkubuwono_eighth
 			}
-			set_country_flag = INS_hamengkoeboewono_invited_flag
-			remove_ideas = INS_hamengkoeboewono_eighth
-			add_ideas = INS_hamengkoeboewono_ninth
+			set_country_flag = INS_hamengkubuwono_invited_flag
+			remove_ideas = INS_hamengkubuwono_eighth
+			add_ideas = INS_hamengkubuwono_ninth
 		}
-		retire_character = INS_hamengkoeboewono_eighth
-		set_country_flag = INS_hamengkoeboewono_viii_passed
+		retire_character = INS_hamengkubuwono_eighth
+		set_country_flag = INS_hamengkubuwono_viii_passed
 		if = {
 			limit = {
 				has_completed_focus = INS_reestablish_royal_houses
 			}
 			add_corps_commander_role = {
-				character = INS_hamengkoeboewono_ninth
+				character = INS_hamengkubuwono_ninth
 				traits = { politically_connected }
 				skill = 1
 				attack_skill = 1
@@ -848,7 +848,7 @@ country_event = { #11 - Hamengkubuwono Eighth's passing
 			}
 		}
 		hidden_effect = {
-			1018 = {
+			1048 = {
 				add_manpower = -1
 			}
 		}
@@ -882,7 +882,7 @@ country_event = { #12 - INS new capital
 			has_completed_focus = INS_revive_spirit_1926
 			NOT = {
 				has_country_leader = {
-					character = INS_soekarno
+					character = INS_sukarno
 					ruling_only = yes
 				}
 			}
@@ -893,7 +893,7 @@ country_event = { #12 - INS new capital
 		text = holhis_indonesia.12.d_3
 		trigger = {
 			has_country_leader = {
-				character = INS_soekarno
+				character = INS_sukarno
 				ruling_only = yes
 			}
 		}
@@ -917,9 +917,9 @@ country_event = { #12 - INS new capital
 		}
 	}
 
-	option = { #Bandoeng
+	option = { #Bandung
 		name = holhis_indonesia.12.b
-		set_country_flag = INS_choose_bandoeng
+		set_country_flag = INS_choose_bandung
 		hidden_effect = {
 			add_ideas = INS_build_capital_1
 		}
@@ -936,7 +936,7 @@ country_event = { #12 - INS new capital
 		}
 	}
 
-	option = { #Bandjarmasin
+	option = { #Banjarmasin
 		name = holhis_indonesia.12.c
 		set_country_flag = INS_choose_banjarmasin
 		custom_effect_tooltip = holhis_indonesia_capital_furnished_tt
@@ -971,7 +971,7 @@ country_event = { #12 - INS new capital
 		trigger = {
 			has_completed_focus = INS_develop_center
 			has_country_leader = {
-				character = INS_soekarno
+				character = INS_sukarno
 				ruling_only = yes
 			}
 			industrial_complex > 15
@@ -981,7 +981,7 @@ country_event = { #12 - INS new capital
 			modifier = {
 				add = 1000
 				has_country_leader = {
-					character = INS_soekarno
+					character = INS_sukarno
 					ruling_only = yes
 				}
 			}
@@ -1004,14 +1004,14 @@ country_event = { #12 - INS new capital
 country_event = { #13 - New Capital Finished
 	id = holhis_indonesia.13
 	title = holhis_indonesia.13.t
-	picture = GFX_report_event_ins_bandoeng
+	picture = GFX_report_event_ins_bandung
 
 	desc = {
 		text = holhis_indonesia.13.d_1
 		trigger = {
 			original_tag = INS
 			has_country_leader = {
-				character = INS_soekarno
+				character = INS_sukarno
 				ruling_only = yes
 			}
 		}
@@ -1060,10 +1060,10 @@ country_event = { #13 - New Capital Finished
 		}
 		else_if = {
 			limit = {
-				has_country_flag = INS_choose_bandoeng
+				has_country_flag = INS_choose_bandung
 			}
 			add_stability = 0.05
-			set_capital = { state = 1020 }
+			set_capital = { state = 1051 }
 		}
 		else_if = {
 			limit = {
@@ -1084,23 +1084,23 @@ country_event = { #13 - New Capital Finished
 				has_country_flag = INS_choose_palangkaraya
 			}
 			add_stability = 0.05
-			set_capital = { state = 1022 }
+			set_capital = { state = 1050 }
 		}
 		else_if = {
 			limit = {
 				has_country_flag = INS_choose_palembang
 			}
 			add_stability = 0.05
-			set_capital = { state = 1018 }
+			set_capital = { state = 1048 }
 		}
 		else_if = {
 			limit = {
 				original_tag = HOL
 			}
-			set_capital = { state = 1020 }
+			set_capital = { state = 1051 }
 			hidden_effect = {
 				INS = {
-					set_capital = { state = 1020 }
+					set_capital = { state = 1051 }
 				}
 			}
 		}
@@ -1137,21 +1137,21 @@ country_event = { #14 - Indonesian Election
 		}
 	}
 
-	option = { #Soekarno
+	option = { #Sukarno
 		name = holhis_indonesia.14.a
 		trigger = {
 			has_completed_focus = INS_free_nationalists
 			NOT = {
-				has_country_flag = INS_minister_soekarno
+				has_country_flag = INS_minister_sukarno
 			}
 			NOT = {
-				has_country_flag = INS_soekarno_is_dead
+				has_country_flag = INS_sukarno_is_dead
 			}
 		}
 		add_country_leader_role = {
-			character = INS_soekarno
+			character = INS_sukarno
 			country_leader = {
-				desc = INS_soekarno_desc
+				desc = INS_sukarno_desc
 				expire = "1965.1.1"
 				ideology = populism
 				traits = {
@@ -1183,9 +1183,9 @@ country_event = { #14 - Indonesian Election
 		set_cosmetic_tag = INS
 		hidden_effect = {
 			add_country_leader_role = {
-				character = INS_mohammad_hoesni_thamrin
+				character = INS_mohammad_husni_thamrin
 				country_leader = {
-					desc = INS_mohammad_hoesni_thamrin_desc
+					desc = INS_mohammad_husni_thamrin_desc
 					expire = "1965.1.1"
 					ideology = fascism_ideology
 					traits = {
@@ -1195,7 +1195,7 @@ country_event = { #14 - Indonesian Election
 				promote_leader = yes
 			}
 			set_cosmetic_tag = INS_GAPI
-			set_country_flag = INS_minister_soekarno
+			set_country_flag = INS_minister_sukarno
 			country_event = { id = holhis_indonesia.14 days = 1826 }
 		}
 	}
@@ -1239,9 +1239,9 @@ country_event = { #14 - Indonesian Election
 		set_cosmetic_tag = INS
 		hidden_effect = {
 			add_country_leader_role = {
-				character = INS_mohammad_hoesni_thamrin
+				character = INS_mohammad_husni_thamrin
 				country_leader = {
-					desc = INS_mohammad_hoesni_thamrin_desc
+					desc = INS_mohammad_husni_thamrin_desc
 					expire = "1965.1.1"
 					ideology = fascism_ideology
 					traits = {
@@ -1298,9 +1298,9 @@ country_event = { #14 - Indonesian Election
 		}
 		hidden_effect = {
 			add_country_leader_role = {
-				character = INS_mohammad_hoesni_thamrin
+				character = INS_mohammad_husni_thamrin
 				country_leader = {
-					desc = INS_mohammad_hoesni_thamrin_desc
+					desc = INS_mohammad_husni_thamrin_desc
 					expire = "1965.1.1"
 					ideology = fascism_ideology
 					traits = {
@@ -1323,9 +1323,9 @@ country_event = { #14 - Indonesian Election
 			}
 		}
 		add_country_leader_role = {
-			character = INS_mohammad_hoesni_thamrin
+			character = INS_mohammad_husni_thamrin
 			country_leader = {
-				desc = INS_mohammad_hoesni_thamrin_desc
+				desc = INS_mohammad_husni_thamrin_desc
 				expire = "1965.1.1"
 				ideology = conservatism
 				traits = {
@@ -1353,13 +1353,13 @@ country_event = { #14 - Indonesian Election
 		set_cosmetic_tag = INS
 		hidden_effect = {
 			add_country_leader_role = {
-				character = INS_abikoesno_tjokrosoejoso
+				character = INS_abikusno_cokrosuyoso
 				country_leader = {
-					desc = INS_abikoesno_tjokrosoejoso_desc
+					desc = INS_abikusno_cokrosuyoso_desc
 					expire = "1965.1.1"
 					ideology = rexism
 					traits = {
-						shadow_of_tjokroaminoto_f
+						shadow_of_cokroaminoto_f
 					}
 				}
 				promote_leader = yes
@@ -1375,22 +1375,22 @@ country_event = { #14 - Indonesian Election
 		}
 	}
 
-	option = { #Abikoesno
+	option = { #Abikusno
 		name = holhis_indonesia.14.f
 		trigger = {
 			has_completed_focus = INS_invite_psii
 			NOT = {
-				has_country_flag = INS_minister_abikoesno
+				has_country_flag = INS_minister_abikusno
 			}
 		}
 		add_country_leader_role = {
-			character = INS_abikoesno_tjokrosoejoso
+			character = INS_abikusno_cokrosuyoso
 			country_leader = {
-				desc = INS_abikoesno_tjokrosoejoso_desc
+				desc = INS_abikusno_cokrosuyoso_desc
 				expire = "1965.1.1"
 				ideology = conservatism
 				traits = {
-					shadow_of_tjokroaminoto
+					shadow_of_cokroaminoto
 				}
 			}
 			promote_leader = yes
@@ -1413,9 +1413,9 @@ country_event = { #14 - Indonesian Election
 		set_cosmetic_tag = INS_ISLAM
 		hidden_effect = {
 			add_country_leader_role = {
-				character = INS_mohammad_hoesni_thamrin
+				character = INS_mohammad_husni_thamrin
 				country_leader = {
-					desc = INS_mohammad_hoesni_thamrin_desc
+					desc = INS_mohammad_husni_thamrin_desc
 					expire = "1965.1.1"
 					ideology = fascism_ideology
 					traits = {
@@ -1424,7 +1424,7 @@ country_event = { #14 - Indonesian Election
 				}
 				promote_leader = yes
 			}
-			set_country_flag = INS_minister_abikoesno
+			set_country_flag = INS_minister_abikusno
 			country_event = { id = holhis_indonesia.14 days = 1826 }
 		}
 	}
@@ -1462,9 +1462,9 @@ country_event = { #14 - Indonesian Election
 		}
 		hidden_effect = {
 			add_country_leader_role = {
-				character = INS_mohammad_hoesni_thamrin
+				character = INS_mohammad_husni_thamrin
 				country_leader = {
-					desc = INS_mohammad_hoesni_thamrin_desc
+					desc = INS_mohammad_husni_thamrin_desc
 					expire = "1965.1.1"
 					ideology = fascism_ideology
 					traits = {
@@ -1479,7 +1479,7 @@ country_event = { #14 - Indonesian Election
 	}
 }
 
-country_event = { #15 - Boerstra Retires
+country_event = { #15 - Burstra Retires
 	id = holhis_indonesia.15
 	title = holhis_indonesia.15.t
 	desc = holhis_indonesia.15.d
@@ -1493,7 +1493,7 @@ country_event = { #15 - Boerstra Retires
 		date > 1939.06.27
 		has_start_date < 1936.01.02
 		AND = {
-			has_character = INS_murk_boerstra
+			has_character = INS_murk_burstra
 			OR = {
 				has_character = INS_berenschot
 				AND = {
@@ -1512,7 +1512,7 @@ country_event = { #15 - Boerstra Retires
 		trigger = {
 			has_character = INS_aleid_van_tricht
 		}
-		retire_character = INS_murk_boerstra
+		retire_character = INS_murk_burstra
 		INS_aleid_van_tricht = {
 			promote_leader = yes
 			add_skill_level = 1
@@ -1533,7 +1533,7 @@ country_event = { #15 - Boerstra Retires
 		trigger = {
 			has_character = INS_berenschot
 		}
-		retire_character = INS_murk_boerstra
+		retire_character = INS_murk_burstra
 		INS_berenschot = {
 			promote_leader = yes
 			add_skill_level = 1
@@ -1557,7 +1557,7 @@ country_event = { #15 - Boerstra Retires
 				has_completed_focus = INS_reform_the_knil
 			}
 		}
-		retire_character = INS_murk_boerstra
+		retire_character = INS_murk_burstra
 		INS_hein_ter_poorten = {
 			promote_leader = yes
 			add_skill_level = 1
@@ -1874,8 +1874,8 @@ country_event = { #17 - Chindo Riots
 			mission = INS_mission_japanese_aid
 			days = 105
 		}
-		remove_ideas = INS_nv_merbaboe
-		set_country_flag = INS_merbaboe_quits_flag
+		remove_ideas = INS_nv_merbabu
+		set_country_flag = INS_merbabu_quits_flag
 
 		ai_chance = {
 			base = 80
@@ -1887,7 +1887,7 @@ country_event = { #17 - Chindo Riots
 	}
 }
 
-country_event = { #20 - Mangkoenegara VII's passing
+country_event = { #20 - Mangkunegara VII's passing
 	id = holhis_indonesia.20
 	title = holhis_indonesia.20.t
 	picture = GFX_report_event_ins_mangkunegara_seventh
@@ -1921,13 +1921,13 @@ country_event = { #20 - Mangkoenegara VII's passing
 		name = holhis_indonesia.20.a
 		if = {
 			limit = {
-				has_idea = INS_mangkoenegara_seventh
+				has_idea = INS_mangkunegara_seventh
 			}
-			remove_ideas = INS_mangkoenegara_seventh
+			remove_ideas = INS_mangkunegara_seventh
 		}
-		set_country_flag = INS_mangkoenegara_vii_passed
+		set_country_flag = INS_mangkunegara_vii_passed
 		hidden_effect = {
-			1018 = {
+			1048 = {
 				add_manpower = -1
 			}
 		}
@@ -2446,11 +2446,11 @@ country_event = { #30 - Question of Education
 	}
 }
 
-country_event = { #49 - Dr. Soetomo's passing
+country_event = { #49 - Dr. Sutomo's passing
 	id = holhis_indonesia.49
 	title = holhis_indonesia.49.t
 	desc = holhis_indonesia.49.d
-	picture = GFX_report_event_ins_soetomo
+	picture = GFX_report_event_ins_sutomo
 
 	fire_only_once = yes
 
@@ -2475,7 +2475,7 @@ country_event = { #49 - Dr. Soetomo's passing
 				has_government = neutrality
 			}
 			add_country_leader_role = {
-				character = INS_mohammad_hoesni_thamrin
+				character = INS_mohammad_husni_thamrin
 				promote_leader = yes
 				country_leader = {
 					ideology = conservatism
@@ -2489,7 +2489,7 @@ country_event = { #49 - Dr. Soetomo's passing
 				NOT = { has_government = neutrality }
 			}
 			add_country_leader_role = {
-				character = INS_mohammad_hoesni_thamrin
+				character = INS_mohammad_husni_thamrin
 				promote_leader = yes
 				country_leader = {
 					ideology = fascism_ideology
@@ -2500,18 +2500,18 @@ country_event = { #49 - Dr. Soetomo's passing
 		}
 		if = {
 			limit = {
-				has_idea = INS_soetomo
+				has_idea = INS_sutomo
 				OR = {
 					has_completed_focus = INS_challenge_dutch_elitism
 					has_completed_focus = INS_appease_nationalists
 				}
 			}
-			remove_ideas = INS_soetomo
-			add_ideas = INS_mohammad_hoesni_thamrin
+			remove_ideas = INS_sutomo
+			add_ideas = INS_mohammad_husni_thamrin
 		}
-		retire_character = INS_soetomo
+		retire_character = INS_sutomo
 		hidden_effect = {
-			set_country_flag = INS_soetomo_passed
+			set_country_flag = INS_sutomo_passed
 			335 = {
 				add_manpower = -1
 			}
@@ -2534,7 +2534,7 @@ country_event = { #49 - Dr. Soetomo's passing
 				has_government = neutrality
 			}
 			add_country_leader_role = {
-				character = INS_mohammad_hoesni_thamrin
+				character = INS_mohammad_husni_thamrin
 				promote_leader = yes
 				country_leader = {
 					ideology = conservatism
@@ -2548,7 +2548,7 @@ country_event = { #49 - Dr. Soetomo's passing
 				NOT = { has_government = neutrality }
 			}
 			add_country_leader_role = {
-				character = INS_mohammad_hoesni_thamrin
+				character = INS_mohammad_husni_thamrin
 				promote_leader = yes
 				country_leader = {
 					ideology = fascism_ideology
@@ -2559,18 +2559,18 @@ country_event = { #49 - Dr. Soetomo's passing
 		}
 		if = {
 			limit = {
-				has_idea = INS_soetomo
+				has_idea = INS_sutomo
 				OR = {
 					has_completed_focus = INS_challenge_dutch_elitism
 					has_completed_focus = INS_appease_nationalists
 				}
 			}
-			remove_ideas = INS_soetomo
-			add_ideas = INS_mohammad_hoesni_thamrin
+			remove_ideas = INS_sutomo
+			add_ideas = INS_mohammad_husni_thamrin
 		}
-		retire_character = INS_soetomo
+		retire_character = INS_sutomo
 		hidden_effect = {
-			set_country_flag = INS_soetomo_passed
+			set_country_flag = INS_sutomo_passed
 			335 = {
 				add_manpower = -1
 			}
@@ -2593,7 +2593,7 @@ country_event = { #50 - Escape of Thomas Najoan
 		original_tag = INS
 		has_government = neutrality
 		date > 1941.11.01
-		INS_thomas_najoan = {
+		INS_thomas_nayoan = {
 			has_character_flag = INS_imprisoned_flag
 		}
 	}
@@ -2626,7 +2626,7 @@ country_event = { #51 - One of them is dead
     option = { #Continue the search
 		name = holhis_indonesia.51.a
 		add_political_power = -5
-		1029 = {
+		1057 = {
 			add_manpower = -1
 		}
 		ai_chance = {
@@ -2635,7 +2635,7 @@ country_event = { #51 - One of them is dead
 		hidden_effect = {
 			random_list = {
 				33 = { #they got away, eaten by crocodile or smth else idk
-					1029 = {
+					1057 = {
 						add_manpower = -2
 					}
 				}
@@ -2661,7 +2661,7 @@ country_event = { #52 - The rest are captured
 		name = holhis_indonesia.52.a
 		add_stability = 0.02
 		add_political_power = 10
-		set_country_flag = INS_najoan_alive
+		set_country_flag = INS_nayoan_alive
 		ai_chance = {
 			base = 100
 		}
@@ -2673,8 +2673,8 @@ country_event = { #52 - The rest are captured
 			ideology = communism 
 			popularity = -0.05
 		}
-		retire_character = INS_thomas_najoan
-		1029 = {
+		retire_character = INS_thomas_nayoan
+		1057 = {
 			add_manpower = -2
 		}
 		ai_chance = {
@@ -2693,8 +2693,8 @@ country_event = { #53 - The rest are shot dead
     option = { #Continue the search
 		name = holhis_indonesia.53.a
 		add_stability = -0.01
-		retire_character = INS_thomas_najoan
-		1029 = {
+		retire_character = INS_thomas_nayoan
+		1057 = {
 			add_manpower = -2
 		}
 		ai_chance = {
@@ -2979,9 +2979,9 @@ country_event = { #Navair 1 - Asking the Dutch to transfer the East Indies Fleet
 
 	is_triggered_only = yes
 
-	option = { #1 heavy cruiser + 2 light cruisers + 8 destroyers + 8 submarines. Soerabaja + De Ruyter + Van Galen + Prins van Oranje + 09 Class
+	option = { #1 heavy cruiser + 2 light cruisers + 8 destroyers + 8 submarines. Surabaja + De Ruyter + Van Galen + Prins van Oranje + 09 Class
 		name = holhis_navair.1.a
-		transfer_ship = { prefer_name = "HrMs Soerabaja" type = heavy_cruiser target = DEI }
+		transfer_ship = { prefer_name = "HrMs Surabaja" type = heavy_cruiser target = DEI }
 		transfer_ship = { prefer_name = "HrMs Java" type = light_cruiser target = DEI }
 		transfer_ship = { prefer_name = "HrMs De Ruyter" type = light_cruiser target = DEI }
 		transfer_ship = { prefer_name = "HrMs Kortenaer" type = destroyer target = DEI }
@@ -3115,7 +3115,7 @@ country_event = { #Navair 1 - Asking the Dutch to transfer the East Indies Fleet
 	}
 }
 
-country_event = { #Navair 2 - The Dutch gives Soerabaja (De Zeven Provincien) to us
+country_event = { #Navair 2 - The Dutch gives Surabaja (De Zeven Provincien) to us
 	id = holhis_navair.2
 	title = holhis_navair.2.t
 	desc = holhis_navair.2.d
@@ -3125,7 +3125,7 @@ country_event = { #Navair 2 - The Dutch gives Soerabaja (De Zeven Provincien) to
 
 	fire_only_once = no
 
-	option = { #Soerabaja + De Ruyter + Van Galen + Prins van Oranje + 09 Class
+	option = { #Surabaja + De Ruyter + Van Galen + Prins van Oranje + 09 Class
 		name = holhis_navair.2.a
 		navy_experience = 10
 		add_doctrine_cost_reduction = {
@@ -3145,7 +3145,7 @@ country_event = { #Navair 2 - The Dutch gives Soerabaja (De Zeven Provincien) to
 			basic_cruiser_armor_scheme = 1
 		}
 		create_equipment_variant = {
-			name = "Soerabaja Class"				# represents Soerabaja (De Zeven Provinciën) and Jacob van Heemskerck 
+			name = "Surabaja Class"				# represents Surabaja (De Zeven Provinciën) and Jacob van Heemskerck 
 			type = ship_hull_cruiser_coastal_defense_ship
 			name_group = HOL_CA_HISTORICAL
 			parent_version = 0
@@ -3257,7 +3257,7 @@ country_event = { #Navair 3 - The Dutch gives Java and less
 			basic_cruiser_armor_scheme = 1
 		}
 		create_equipment_variant = {
-			name = "Soerabaja Class"				# represents Soerabaja (De Zeven Provinciën) and Jacob van Heemskerck 
+			name = "Surabaja Class"				# represents Surabaja (De Zeven Provinciën) and Jacob van Heemskerck 
 			type = ship_hull_cruiser_coastal_defense_ship
 			name_group = HOL_CA_HISTORICAL
 			parent_version = 0
@@ -3649,7 +3649,7 @@ country_event = { #Navair 6 - They give us xp
 	}
 }
 
-country_event = { #Navair 7 - KKH protested, seize NV Merbaboe?
+country_event = { #Navair 7 - KKH protested, seize NV Merbabu?
 	id = holhis_navair.7
 	title = holhis_navair.7.t
 	desc = holhis_navair.7.d
@@ -3658,14 +3658,14 @@ country_event = { #Navair 7 - KKH protested, seize NV Merbaboe?
 
 	option = { #Leave them be
 		name = holhis_navair.7.a
-		remove_ideas = INS_nv_merbaboe
-		set_country_flag = INS_merbaboe_quits_flag
+		remove_ideas = INS_nv_merbabu
+		set_country_flag = INS_merbabu_quits_flag
 	}
 
 	option = { #Nationalize it
 		name = holhis_navair.7.b
 		add_political_power = -150
-		set_country_flag = INS_seize_merbaboe_flag
+		set_country_flag = INS_seize_merbabu_flag
 	}
 }
 
@@ -4106,7 +4106,7 @@ country_event = { #SWPA 7 - request access to Timor success or granted land for 
 		INS = {
 			add_political_power = 100
 			give_resource_rights = { receiver = FROM state = 721 }
-			give_resource_rights = { receiver = FROM state = 1026 }
+			give_resource_rights = { receiver = FROM state = 1053 }
 		}
 		add_opinion_modifier = {
 			target = FROM
@@ -4557,10 +4557,10 @@ country_event = { #SWPA 10 - Decolonization of Southeast Asia
 		}
 		if = {
 			limit = {
-				has_full_control_of_state = 1044
+				has_full_control_of_state = 1069
 			}
 			VIN = {
-				transfer_state = 1044
+				transfer_state = 1069
 				set_country_flag = INS_marked_for_asian_league_flag
 			}
 			if = {
@@ -4582,10 +4582,10 @@ country_event = { #SWPA 10 - Decolonization of Southeast Asia
 		}
 		if = {
 			limit = {
-				has_full_control_of_state = 1045
+				has_full_control_of_state = 1070
 			}
 			VIN = {
-				transfer_state = 1045
+				transfer_state = 1070
 				set_country_flag = INS_marked_for_asian_league_flag
 			}
 			if = {
@@ -4607,10 +4607,10 @@ country_event = { #SWPA 10 - Decolonization of Southeast Asia
 		}
 		if = {
 			limit = {
-				has_full_control_of_state = 1044
+				has_full_control_of_state = 1069
 			}
 			VIN = {
-				transfer_state = 1044
+				transfer_state = 1069
 				set_country_flag = INS_marked_for_asian_league_flag
 			}
 			if = {
@@ -4657,10 +4657,10 @@ country_event = { #SWPA 10 - Decolonization of Southeast Asia
 		}
 		if = {
 			limit = {
-				has_full_control_of_state = 1044
+				has_full_control_of_state = 1069
 			}
 			VIN = {
-				transfer_state = 1044
+				transfer_state = 1069
 				set_country_flag = INS_marked_for_asian_league_flag
 			}
 			if = {
@@ -4675,6 +4675,31 @@ country_event = { #SWPA 10 - Decolonization of Southeast Asia
 				else = {
 					set_autonomy = {
 						target = VIN
+						autonomy_state = autonomy_dominion
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_full_control_of_state = 1068
+			}
+			CHM = {
+				transfer_state = 1068
+				set_country_flag = INS_marked_for_asian_league_flag
+			}
+			if = {
+				limit = {
+					has_government = democratic
+					has_dlc = "Man the Guns"
+				}
+				set_autonomy = {
+					target = CHM
+					autonomy_state = autonomy_supervised_state
+				}
+				else = {
+					set_autonomy = {
+						target = CHM
 						autonomy_state = autonomy_dominion
 					}
 				}
@@ -4707,10 +4732,10 @@ country_event = { #SWPA 10 - Decolonization of Southeast Asia
 		}
 		if = {
 			limit = {
-				has_full_control_of_state = 1043
+				has_full_control_of_state = 1067
 			}
 			CAM = {
-				transfer_state = 1043
+				transfer_state = 1067
 				set_country_flag = INS_marked_for_asian_league_flag
 			}
 			if = {
@@ -4732,10 +4757,10 @@ country_event = { #SWPA 10 - Decolonization of Southeast Asia
 		}
 		if = {
 			limit = {
-				has_full_control_of_state = 1042
+				has_full_control_of_state = 1066
 			}
 			CAM = {
-				transfer_state = 1042
+				transfer_state = 1066
 				set_country_flag = INS_marked_for_asian_league_flag
 			}
 			if = {
@@ -4782,10 +4807,10 @@ country_event = { #SWPA 10 - Decolonization of Southeast Asia
 		}
 		if = {
 			limit = {
-				has_full_control_of_state = 1049
+				has_full_control_of_state = 1073
 			}
 			LAO = {
-				transfer_state = 1049
+				transfer_state = 1073
 				set_country_flag = INS_marked_for_asian_league_flag
 			}
 			if = {
@@ -4807,10 +4832,10 @@ country_event = { #SWPA 10 - Decolonization of Southeast Asia
 		}
 		if = {
 			limit = {
-				has_full_control_of_state = 1051
+				has_full_control_of_state = 1075
 			}
 			LAO = {
-				transfer_state = 1051
+				transfer_state = 1075
 				set_country_flag = INS_marked_for_asian_league_flag
 			}
 			if = {
@@ -4832,10 +4857,10 @@ country_event = { #SWPA 10 - Decolonization of Southeast Asia
 		}
 		if = {
 			limit = {
-				has_full_control_of_state = 1050
+				has_full_control_of_state = 1074
 			}
 			LAO = {
-				transfer_state = 1050
+				transfer_state = 1074
 				set_country_flag = INS_marked_for_asian_league_flag
 			}
 			if = {
@@ -4857,10 +4882,10 @@ country_event = { #SWPA 10 - Decolonization of Southeast Asia
 		}
 		if = {
 			limit = {
-				has_full_control_of_state = 1048
+				has_full_control_of_state = 1072
 			}
 			LAO = {
-				transfer_state = 1048
+				transfer_state = 1072
 				set_country_flag = INS_marked_for_asian_league_flag
 			}
 			if = {
@@ -4975,8 +5000,8 @@ country_event = { #290 - Hidden effect to setup the historical Japanese occupati
 					is_on_continent = asia
 					NOT = { state = 334 } #Balikpapan
 					NOT = { state = 672 } #Medan
-					NOT = { state = 1021 } #Soerabaja
-					NOT = { state = 1025 } #Manado
+					NOT = { state = 1052 } #Surabaja
+					NOT = { state = 1054 } #Manado
 					is_owned_by = ROOT
 					is_controlled_by = PREV
 				}
@@ -5098,24 +5123,24 @@ country_event = { #Japindo 1 - Japan setting up Indonesian occupation
 						is_core_of = INS
 						NOT = {
 							OR = {
-								state = 1025
+								state = 1054
 								state = 668
-								state = 1027
+								state = 1055
 								state = 738
 								state = 669
-								state = 1028
-								state = 1029
-								state = 1026
+								state = 1056
+								state = 1057
+								state = 1053
 								state = 721 #in case Indonesia got East Timor
 								state = 979 #ditto with Northeast Papua
 								state = 523 #ditto with Southeast Papua
-								state = 1023 #ditto with Sarawak
-								state = 1024 #ditto with Sabah
 								state = 333 #ditto with Brunei
-								state = 1033 #Johor
-								state = 1034 #Malaya
-								state = 1036 #Kedah
-								state = 1035 #Kelantan
+								state = 1024 #ditto with Sabah
+								state = 1023 #ditto with Sarawak
+								state = 1058 #Johor
+								state = 336 #Malaya
+								state = 1060 #Kedah
+								state = 1059 #Kelantan
 							}
 						}
 						CONTROLLER = { 
@@ -5216,7 +5241,7 @@ country_event = { #Japindo 1 - Japan setting up Indonesian occupation
 					}
 				}
 				INS = {
-					INS_mohammad_hoesni_thamrin = {
+					INS_mohammad_husni_thamrin = {
 						set_nationality = INJ
 					}
 				}
@@ -5225,23 +5250,23 @@ country_event = { #Japindo 1 - Japan setting up Indonesian occupation
 				if = {
 					limit = {
 						NOT = {
-							has_country_flag = INS_soekarno_is_dead
+							has_country_flag = INS_sukarno_is_dead
 						}
 					}
-					INS_soekarno = {
+					INS_sukarno = {
 						set_nationality = INJ
 					}
 				}
 				INS_mohammad_hatta = {
 					set_nationality = INJ
 				}
-				INS_soeharto = {
+				INS_suharto = {
 					set_nationality = INJ
 				}
-				INS_soedirman = {
+				INS_sudirman = {
 					set_nationality = INJ
 				}
-				INS_gatot_soebroto = {
+				INS_gatot_subroto = {
 					set_nationality = INJ
 				}
 				INS_mas_pardi = {
@@ -5272,24 +5297,24 @@ country_event = { #Japindo 1 - Japan setting up Indonesian occupation
 			NOT = { has_dlc = "Waking the Tiger" }
 		}
 		if = {
-			limit = { 1025 = { owner = { original_tag = INS } } }
-			set_state_controller = 1025
+			limit = { 1054 = { owner = { original_tag = INS } } }
+			set_state_controller = 1054
 		}
 		if = {
 			limit = { 668 = { owner = { original_tag = INS } } }
 			set_state_controller = 668
 		}
 		if = {
-			limit = { 1027 = { owner = { original_tag = INS } } }
-			set_state_controller = 1027
+			limit = { 1055 = { owner = { original_tag = INS } } }
+			set_state_controller = 1055
 		}
 		if = {
 			limit = { 669 = { owner = { original_tag = INS } } }
 			set_state_controller = 669
 		}
 		if = {
-			limit = { 1028 = { owner = { original_tag = INS } } }
-			set_state_controller = 1028
+			limit = { 1056 = { owner = { original_tag = INS } } }
+			set_state_controller = 1056
 		}
 		INS = {
 			add_ideas = INS_defeatism
@@ -5344,24 +5369,24 @@ country_event = { #Japindo 1 - Japan setting up Indonesian occupation
 						is_core_of = INS
 						NOT = {
 							OR = {
-								state = 1025 #Menado
+								state = 1054 #Menado
 								state = 668 #Maluku
-								state = 1027 #North Maluku
+								state = 1055 #North Maluku
 								state = 738 #Aru
 								state = 669 #Northwest Papua
-								state = 1028 #Vogelkop
-								state = 1029 #Southwest Papua
-								state = 1026 #Dutch Timor
+								state = 1056 #Vogelkop
+								state = 1057 #Southwest Papua
+								state = 1053 #Dutch Timor
 								state = 721 #in case Indonesia got East Timor
 								state = 979 #ditto with Northeast Papua
 								state = 523 #ditto with Southeast Papua
-								state = 1023 #ditto with Sarawak
-								state = 1024 #ditto with Sabah
 								state = 333 #ditto with Brunei
-								state = 1033 #Johor
-								state = 1034 #Malaya
-								state = 1036 #Kedah
-								state = 1035 #Kelantan
+								state = 1024 #ditto with Sabah
+								state = 1023 #ditto with Sarawak
+								state = 1058 #Johor
+								state = 336 #Malaya
+								state = 1060 #Kedah
+								state = 1059 #Kelantan
 							}
 						}
 						CONTROLLER = { 
@@ -5458,7 +5483,7 @@ country_event = { #Japindo 1 - Japan setting up Indonesian occupation
 					}
 				}
 				INS = {
-					INS_mohammad_hoesni_thamrin = {
+					INS_mohammad_husni_thamrin = {
 						set_nationality = INJ
 					}
 				}
@@ -5467,23 +5492,23 @@ country_event = { #Japindo 1 - Japan setting up Indonesian occupation
 				if = {
 					limit = {
 						NOT = {
-							has_country_flag = INS_soekarno_is_dead
+							has_country_flag = INS_sukarno_is_dead
 						}
 					}
-					INS_soekarno = {
+					INS_sukarno = {
 						set_nationality = INJ
 					}
 				}
 				INS_mohammad_hatta = {
 					set_nationality = INJ
 				}
-				INS_soeharto = {
+				INS_suharto = {
 					set_nationality = INJ
 				}
-				INS_soedirman = {
+				INS_sudirman = {
 					set_nationality = INJ
 				}
-				INS_gatot_soebroto = {
+				INS_gatot_subroto = {
 					set_nationality = INJ
 				}
 				INS_mas_pardi = {
@@ -5594,7 +5619,7 @@ country_event = { #Nationalists 1 - Transfer of Mohammad Hatta
 		set_country_flag = INS_hatta_banda
 		add_political_power = 5
 		hidden_effect = {
-			1029 = {
+			1057 = {
 				add_manpower = -1
 			}
 			668 = {
@@ -5609,10 +5634,10 @@ country_event = { #Nationalists 1 - Transfer of Mohammad Hatta
 		add_stability = 0.01
 		add_political_power = -15
 		hidden_effect = {
-			1029 = {
+			1057 = {
 				add_manpower = -1
 			}
-			1018 = {
+			1048 = {
 				add_manpower = 1
 			}
 		}
@@ -5620,17 +5645,17 @@ country_event = { #Nationalists 1 - Transfer of Mohammad Hatta
 
 	option = { #Keep him there
 		name = holhis_nationalists.1.c
-		set_country_flag = INS_hatta_digoel
+		set_country_flag = INS_hatta_digul
 		add_stability = -0.05
 		add_political_power = 15
 	}
 }
 
-country_event = { #Nationalists 2 - Transfer of Soetan Sjahrir
+country_event = { #Nationalists 2 - Transfer of Sutan Sjahrir
 	id = holhis_nationalists.2
 	title = holhis_nationalists.2.t
 	desc = holhis_nationalists.2.d
-	picture = GFX_report_event_ins_sjahrir_prisoner
+	picture = GFX_report_event_ins_syahrir_prisoner
 
 	is_triggered_only = no
 	fire_only_once = yes
@@ -5639,7 +5664,7 @@ country_event = { #Nationalists 2 - Transfer of Soetan Sjahrir
 		original_tag = INS
 		date > 1936.02.07
 		has_start_date < 1936.01.02
-		INS_soetan_sjahrir = {
+		INS_sutan_syahrir = {
 			has_character_flag = INS_imprisoned_flag
 		}
 	}
@@ -5648,10 +5673,10 @@ country_event = { #Nationalists 2 - Transfer of Soetan Sjahrir
 	
 	option = { #Move him to Banda
 		name = holhis_nationalists.2.a
-		set_country_flag = INS_sjahrir_banda
+		set_country_flag = INS_syahrir_banda
 		add_political_power = 5
 		hidden_effect = {
-			1029 = {
+			1057 = {
 				add_manpower = -1
 			}
 			668 = {
@@ -5662,14 +5687,14 @@ country_event = { #Nationalists 2 - Transfer of Soetan Sjahrir
 
 	option = { #Move him to Bangka
 		name = holhis_nationalists.2.b
-		set_country_flag = INS_sjahrir_bangka
+		set_country_flag = INS_syahrir_bangka
 		add_stability = 0.01
 		add_political_power = -15
 		hidden_effect = {
-			1029 = {
+			1057 = {
 				add_manpower = -1
 			}
-			1018 = {
+			1048 = {
 				add_manpower = 1
 			}
 		}
@@ -5677,17 +5702,17 @@ country_event = { #Nationalists 2 - Transfer of Soetan Sjahrir
 
 	option = { #Keep him there
 		name = holhis_nationalists.2.c
-		set_country_flag = INS_sjahrir_digoel
+		set_country_flag = INS_syahrir_digul
 		add_stability = -0.05
 		add_political_power = 15
 	}
 }
 
-country_event = { #Nationalists 3 - Soekarno got malaria
+country_event = { #Nationalists 3 - Sukarno got malaria
 	id = holhis_nationalists.3
 	title = holhis_nationalists.3.t
 	desc = holhis_nationalists.3.desc
-	picture = GFX_report_event_ins_soekarno_prosecuted
+	picture = GFX_report_event_ins_sukarno_prosecuted
 
 	is_triggered_only = no
 	fire_only_once = yes
@@ -5697,38 +5722,38 @@ country_event = { #Nationalists 3 - Soekarno got malaria
 		date > 1938.02.07
 		has_start_date < 1936.01.02
 		has_completed_focus = INS_continue_reform
-		INS_soekarno = {
+		INS_sukarno = {
 			has_character_flag = INS_imprisoned_flag
 		}
 	}
 	
 	mean_time_to_happen = { days = 2 }
 
-	option = { #Move him to Bengkoeloe
+	option = { #Move him to Bengkulu
 		name = holhis_nationalists.3.a
-		set_country_flag = INS_soekarno_bengkoeloe
+		set_country_flag = INS_sukarno_bengkulu
 		add_stability = 0.03
 		add_political_power = 10
 		hidden_effect = {
 			667 = {
 				add_manpower = -4
 			}
-			1018 = {
+			1048 = {
 				add_manpower = 4
 			}
 		}
 	}
 	
-	option = { #Move him to Soekaboemi
+	option = { #Move him to Sukabumi
 		name = holhis_nationalists.3.b
-		set_country_flag = INS_soekarno_soekaboemi
+		set_country_flag = INS_sukarno_sukabumi
 		add_stability = 0.05
 		add_political_power = -20
 		hidden_effect = {
 			667 = {
 				add_manpower = -4
 			}
-			1020 = {
+			1051 = {
 				add_manpower = 4
 			}
 		}
@@ -5736,7 +5761,7 @@ country_event = { #Nationalists 3 - Soekarno got malaria
 
 	option = { #Keep him there
 		name = holhis_nationalists.3.c
-		set_country_flag = INS_soekarno_ende
+		set_country_flag = INS_sukarno_ende
 		add_stability = -0.05
 		add_political_power = 25
 		hidden_effect = {
@@ -5745,7 +5770,7 @@ country_event = { #Nationalists 3 - Soekarno got malaria
 					country_event = { id = holhis_nationalists.7 days = 28  }
 				}
 				66 = {
-					#Soekarno got well by himself
+					#Sukarno got well by himself
 				}
 			}
 		}
@@ -5758,16 +5783,16 @@ country_event = { #Nationalists 3 - Soekarno got malaria
 			667 = {
 				add_manpower = -4
 			}
-			1020 = {
+			1051 = {
 				add_manpower = 4
 			}
 			INS = {
-				INS_soekarno = {
+				INS_sukarno = {
 					clr_character_flag = INS_imprisoned_flag
 					set_character_flag = SOV_exiled_flag
 					set_portraits = {
 						army = {
-							small = GFX_idea_indonesia_soekarno
+							small = GFX_idea_indonesia_sukarno
 						}
 					}
 				}
@@ -5780,7 +5805,7 @@ country_event = { #Nationalists 4 - PNI Uprising
 	id = holhis_nationalists.4
 	title = holhis_nationalists.4.t
 	desc = holhis_nationalists.4.d
-	picture = GFX_report_event_ins_soekarno_speech
+	picture = GFX_report_event_ins_sukarno_speech
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -5822,17 +5847,17 @@ country_event = { #Nationalists 4 - PNI Uprising
 						state = 672
 						state = 335
 						state = 334
-						state = 1025
+						state = 1054
 						state = 669
-						state = 1026
+						state = 1053
 						state = 668
 					}
 				}
 				set_state_flag = INS_dutch_holdouts
 			}
 			INS = {
-				set_capital = { state = 1021 }
-				INS_sk_trimoerti = {
+				set_capital = { state = 1052 }
+				INS_sk_trimurti = {
 					add_trait = {
 						slot = political_advisor
 						trait = liberal_journalist
@@ -5869,10 +5894,10 @@ country_event = { #Nationalists 4 - PNI Uprising
 				elections_allowed = yes
 			}
 			INS = {
-				INS_soekarno = {
+				INS_sukarno = {
 					clr_character_flag = SOV_exiled_flag
 				}
-				INS_sk_trimoerti = {
+				INS_sk_trimurti = {
 					effect_tooltip = {
 						swap_country_leader_traits = {
 							remove = independent_journalist
@@ -6034,9 +6059,9 @@ country_event = { #Nationalists 4 - PNI Uprising
 		name = holhis_nationalists.4.a
 		custom_effect_tooltip = INS_NATREV_aggressor_tt
 		add_country_leader_role = {
-			character = INS_soekarno
+			character = INS_sukarno
 			country_leader = {
-				desc = INS_soekarno_desc
+				desc = INS_sukarno_desc
 				expire = "1965.1.1"
 				ideology = centrism
 				traits = {
@@ -6070,13 +6095,13 @@ country_event = { #Nationalists 4 - PNI Uprising
 				name = INS_neutrality_party_islam
 			}
 			add_country_leader_role = {
-				character = INS_abikoesno_tjokrosoejoso
+				character = INS_abikusno_cokrosuyoso
 				country_leader = {
-					desc = INS_abikoesno_tjokrosoejoso_desc
+					desc = INS_abikusno_cokrosuyoso_desc
 					expire = "1965.1.1"
 					ideology = rexism
 					traits = {
-						shadow_of_tjokroaminoto_f
+						shadow_of_cokroaminoto_f
 					}
 				}
 				promote_leader = yes
@@ -6095,12 +6120,12 @@ country_event = { #Nationalists 4 - PNI Uprising
 			if = {
 				limit = {
 					NOT = {
-						has_country_flag = INS_oerip_general
+						has_country_flag = INS_urip_general
 					}
 				}
-				set_country_flag = INS_oerip_general
+				set_country_flag = INS_urip_general
 				add_corps_commander_role = {
-					character = INS_oerip_soemohardjo
+					character = INS_urip_sumoharjo
 					traits = { unyielding_defender jungle_rat guerilla_fighter inflexible_strategist }
 					skill = 2
 					attack_skill = 2
@@ -6109,10 +6134,10 @@ country_event = { #Nationalists 4 - PNI Uprising
 					logistics_skill = 2
 				}
 				add_advisor_role = {
-					character = INS_oerip_soemohardjo
+					character = INS_urip_sumoharjo
 					advisor = {
 						slot = high_command
-						idea_token = INS_oerip_soemohardjo
+						idea_token = INS_urip_sumoharjo
 						traits = {
 							army_logistics_2
 						}
@@ -6128,7 +6153,7 @@ country_event = { #Nationalists 4 - PNI Uprising
 				}
 				set_country_flag = INS_gatot_general
 				add_corps_commander_role = {
-					character = INS_gatot_soebroto
+					character = INS_gatot_subroto
 					traits = { defensive_doctrine jungle_rat }
 					skill = 1
 					attack_skill = 1
@@ -6137,10 +6162,10 @@ country_event = { #Nationalists 4 - PNI Uprising
 					logistics_skill = 2
 				}
 				add_advisor_role = {
-					character = INS_gatot_soebroto
+					character = INS_gatot_subroto
 					advisor = {
 						slot = army_chief
-						idea_token = INS_gatot_soebroto
+						idea_token = INS_gatot_subroto
 						ledger = army
 						traits = {
 							army_chief_defensive_1
@@ -6209,14 +6234,14 @@ country_event = { #Nationalists 4 - PNI Uprising
 			if = {
 				limit = {
 					NOT = {
-						has_country_flag = INS_soerjadarma_officer_flag
+						has_country_flag = INS_suryadarma_officer_flag
 					}
 				}
 				add_advisor_role = {
-					character = INS_soerjadarma
+					character = INS_suryadarma
 					advisor = {
 						slot = air_chief
-						idea_token = INS_soerjadarma
+						idea_token = INS_suryadarma
 						ledger = air
 						traits = {
 							air_chief_night_operations_1
@@ -6224,7 +6249,7 @@ country_event = { #Nationalists 4 - PNI Uprising
 						cost = 100
 					}
 				}
-				set_country_flag = INS_soerjadarma_officer_flag
+				set_country_flag = INS_suryadarma_officer_flag
 			}
 		}
 		ai_chance = {
@@ -6260,8 +6285,8 @@ country_event = { #Nationalists 5 - Notification to the Dutch
 		name = holhis_nationalists.5.d
 		HOL = {
 			transfer_state = 669
-			transfer_state = 1028
-			transfer_state = 1029
+			transfer_state = 1056
+			transfer_state = 1057
 			set_country_flag = HOL_seized_papua_flag
 		}
 		ai_chance = {
@@ -6280,7 +6305,7 @@ country_event = { #Nationalists 5 - Notification to the Dutch
 		name = holhis_nationalists.5.b
 		HOL = {
 			transfer_state = 669
-			transfer_state = 1029
+			transfer_state = 1057
 			declare_war_on = {
 				target = INS
 				type = puppet_wargoal_focus
@@ -6302,7 +6327,7 @@ country_event = { #Nationalists 5 - Notification to the Dutch
 		name = holhis_nationalists.5.c
 		HOL = {
 			transfer_state = 669
-			transfer_state = 1029
+			transfer_state = 1057
 			declare_war_on = {
 				target = INS
 				type = puppet_wargoal_focus
@@ -6336,7 +6361,7 @@ country_event = { #Nationalists 6 - End of the Revolution
 
 	immediate = {
 		hidden_effect = {
-			set_capital = { state = 1020 }
+			set_capital = { state = 1051 }
 			if = {
 				limit = {
 					has_completed_focus = INS_secret_weapon_production
@@ -6350,7 +6375,7 @@ country_event = { #Nationalists 6 - End of the Revolution
 						instant_build = yes
 					}
 				}
-				1018 = {
+				1048 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = arms_factory
@@ -6381,19 +6406,19 @@ country_event = { #Nationalists 6 - End of the Revolution
 	}
 }
 
-country_event = { #Nationalists 7 - Death of Soekarno
+country_event = { #Nationalists 7 - Death of Sukarno
 	id = holhis_nationalists.7
 	title = holhis_nationalists.7.t
 	desc = holhis_nationalists.7.d
-	picture = GFX_report_event_ins_soekarno_prosecuted
+	picture = GFX_report_event_ins_sukarno_prosecuted
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = { #We messed up
 		name = holhis_nationalists.7.a
-		retire_character = INS_soekarno
-		set_country_flag = INS_soekarno_is_dead
+		retire_character = INS_sukarno
+		set_country_flag = INS_sukarno_is_dead
 		add_stability = -0.30
 		add_popularity = {
 			ideology = neutrality
@@ -6426,19 +6451,19 @@ country_event = { #Nationalists 8 - Dispatcher for uprisings
 			random_list = {
 				75 = { } # Nothing happens 
 				# the "Western" Front
-				15 = { # Atjeh uprising
+				15 = { # Aceh uprising
 					modifier = {
 						add = INS_civil_war_weeks
 						always = yes
 					}
 					modifier = {
-						factor = 1.5 # To keep Atjeh uprising always slightly more likely than the others
+						factor = 1.5 # To keep Aceh uprising always slightly more likely than the others
 						always = yes
 					}
 					modifier = {
 						factor = 0
 						OR = { 
-							has_country_flag = atj_uprising_flag
+							has_country_flag = ac_uprising_flag
 							ATJ = { exists = yes }
 						}
 					}
@@ -6484,11 +6509,11 @@ country_event = { #Commies 1 - Who shall lead PKI? 3rd PKI National Congress - 1
 	}
 
 	immediate = {
-		INS_moesso_moenawar = { clr_character_flag = INS_exiled_flag }
-		INS_semaoen = { clr_character_flag = INS_exiled_flag }
+		INS_muso_munawar = { clr_character_flag = INS_exiled_flag }
+		INS_semaun = { clr_character_flag = INS_exiled_flag }
 		INS_tan_malaka = { clr_character_flag = INS_exiled_flag }
 		hidden_effect = {
-			INS_semaoen = {
+			INS_semaun = {
 				add_trait = {
 					slot = political_advisor
 					trait = captain_of_industry
@@ -6512,9 +6537,9 @@ country_event = { #Commies 1 - Who shall lead PKI? 3rd PKI National Congress - 1
 			}
 			set_cosmetic_tag = INS_RED3
 		}
-		promote_character = INS_moesso_moenawar
+		promote_character = INS_muso_munawar
 		add_war_support = 0.075
-		INS_amir_sjarifoeddin = {
+		INS_amir_syarifuddin = {
 			add_trait = {
 				slot = political_advisor
 				trait = war_industrialist
@@ -6528,7 +6553,7 @@ country_event = { #Commies 1 - Who shall lead PKI? 3rd PKI National Congress - 1
 		}
 		remove_ideas = INS_gerindo_militias_positive
 		add_field_marshal_role = {
-			character = INS_moesso_moenawar
+			character = INS_muso_munawar
 			traits = { politically_connected }
 			skill = 1
 			attack_skill = 2
@@ -6538,7 +6563,7 @@ country_event = { #Commies 1 - Who shall lead PKI? 3rd PKI National Congress - 1
 			legacy_id = -1
 		}
 		hidden_effect = {
-			INS_moesso_moenawar = {
+			INS_muso_munawar = {
 				set_character_flag = INS_first_term_flag
 			}
 			country_event = { id = holhis_commies.35 days = 1825 }
@@ -6555,7 +6580,7 @@ country_event = { #Commies 1 - Who shall lead PKI? 3rd PKI National Congress - 1
 		}
 		promote_character = INS_tan_malaka
 		add_stability = 0.075
-		INS_amir_sjarifoeddin = {
+		INS_amir_syarifuddin = {
 			add_trait = {
 				slot = political_advisor
 				trait = war_industrialist
@@ -6593,18 +6618,18 @@ country_event = { #Commies 1 - Who shall lead PKI? 3rd PKI National Congress - 1
 	
 	option = { #Amir
 		name = holhis_commies.1.c
-		promote_character = INS_amir_sjarifoeddin
+		promote_character = INS_amir_syarifuddin
 		add_popularity = {
 			ideology = communism 
 			popularity = 0.1
 		}
-		INS_amir_sjarifoeddin = {
+		INS_amir_syarifuddin = {
 			promote_leader = yes
 			add_skill_level = 1
 			add_logistics = 1
 			add_planning = 1
 		}
-		INS_amir_sjarifoeddin = {
+		INS_amir_syarifuddin = {
 			hidden_effect = {
 				add_trait = {
 					slot = political_advisor
@@ -6617,7 +6642,7 @@ country_event = { #Commies 1 - Who shall lead PKI? 3rd PKI National Congress - 1
 			}
 		}
 		hidden_effect = {
-			INS_amir_sjarifoeddin = {
+			INS_amir_syarifuddin = {
 				set_character_flag = INS_first_term_flag
 			}
 			country_event = { id = holhis_commies.35 days = 1825 }
@@ -6677,7 +6702,7 @@ country_event = { #Commies 2 - Question of Religion
 					instant_build = yes
 				}
 			}
-			1018 = {
+			1048 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
@@ -6810,7 +6835,7 @@ country_event = { #Commies 5 - Failed
 		create_wargoal = {
 			type = take_state_focus
 			target = FROM
-			generator = { 286 1044 1045 1046 671 741 1042 670 1048 }
+			generator = { 286 1069 1068 1070 1017 671 741 1066 670 1072 }
 		}
 		ai_chance = { base = 25 }
 	}
@@ -6840,7 +6865,7 @@ country_event = { #Commies 60 - Event dispatcher for Malayan Revolution
 						has_opinion = { target = INS value > 49 }
 					}
 				}
-				KLM = {
+				BRN = {
 					transfer_state = 333
 					transfer_state = 1023
 					transfer_state = 1024
@@ -6881,7 +6906,7 @@ country_event = { #Commies 60 - Event dispatcher for Malayan Revolution
 				}
 				every_state = {
 					limit = {
-						is_core_of = KLM
+						is_core_of = BRN
 					}
 					add_compliance = -30
 					add_resistance = 65
@@ -6923,10 +6948,10 @@ country_event = { #Commies 6 - event for Malaya that Northern Borneo has split
 		name = holhis_commies.6.b
 		MAL = {
 			declare_war_on = {
-				target = KLM
+				target = BRN
 				type = civil_war
 			}
-			add_civil_war_target = KLM
+			add_civil_war_target = BRN
 		}
 		ai_chance = {
 			base = 40
@@ -6942,17 +6967,12 @@ country_event = { #Commies 7 - Malayan Revolution Succees
 	fire_only_once = yes
 	is_triggered_only = yes
 
-	option = { #Move in
+	option = { #Puppet them
 		name = holhis_commies.7.a
 		ai_chance = { factor = 200 }
-		KLM = {
-			every_unit_leader = {
-				set_nationality = INS
-			}
-		}
-		annex_country = {
-		    target = KLM
-			transfer_troops = yes
+		set_autonomy = {
+			target = BRN
+			autonomy_state = autonomy_puppet
 		}
 		if = {
 			limit = {
@@ -6992,17 +7012,17 @@ country_event = { #Commies 7 - Malayan Revolution Succees
 		name = holhis_commies.7.b
 		add_ai_strategy = {
 			type = alliance
-			id = "KLM"
+			id = "BRN"
 			value = 200
 		}
-		KLM = {
+		BRN = {
 			add_ai_strategy = {
 				type = alliance
 				id = "INS"
 				value = 200
 			}
 		}
-		add_to_faction = KLM
+		add_to_faction = BRN
 		add_named_threat = { threat = 1 name = INS_MAL_REV }
 		if = {
 			limit = {
@@ -7134,7 +7154,7 @@ country_event = { #Commies 10 - Malaya's master threatens us
 		FROM = {
 			create_wargoal = {
 				type = take_state_focus
-				target = INS
+				target = BRN
 				generator = { 333 1023 1024 }
 			}
 		}
@@ -7212,8 +7232,8 @@ country_event = { #Commies 11 - Communist Uprising
 						state = 672
 						state = 335
 						state = 334
-						state = 1025
-						state = 1026
+						state = 1054
+						state = 1053
 						state = 669
 						state = 668
 					}
@@ -7231,20 +7251,20 @@ country_event = { #Commies 11 - Communist Uprising
 					target = JAP
 					modifier = INS_trade_jap_long
 				}
-				set_capital = { state = 1021 }
-				INS_iwa_koesoemasoemantri = {
+				set_capital = { state = 1052 }
+				INS_iwa_kusumasumantri = {
 					clr_character_flag = INS_imprisoned_flag
 					set_portraits = {
 						army = {
-							small = GFX_idea_indonesia_iwa_koesoemasoemantri
+							small = GFX_idea_indonesia_iwa_kusumasumantri
 						}
 					}
 				}
-				INS_tjipto_mangoenkoesoemo = {
+				INS_cipto_mangunkusumo = {
 					clr_character_flag = INS_imprisoned_flag
 					set_portraits = {
 						army = {
-							small = GFX_idea_indonesia_tjipto_mangoenkoesoemo
+							small = GFX_idea_indonesia_cipto_mangunkusumo
 						}
 					}
 				}
@@ -7256,15 +7276,15 @@ country_event = { #Commies 11 - Communist Uprising
 						}
 					}
 				}
-				INS_soetan_sjahrir = {
+				INS_sutan_syahrir = {
 					clr_character_flag = INS_imprisoned_flag
 					set_portraits = {
 						army = {
-							small = GFX_idea_indonesia_sjahrir
+							small = GFX_idea_indonesia_syahrir
 						}
 					}
 				}
-				INS_sk_trimoerti = {
+				INS_sk_trimurti = {
 					add_trait = {
 						slot = political_advisor
 						trait = liberal_journalist
@@ -7568,13 +7588,13 @@ country_event = { #Commies 11 - Communist Uprising
 			if = {
 				limit = {
 					NOT = {
-						has_country_flag = INS_soetomo_passed
+						has_country_flag = INS_sutomo_passed
 					}
 				}
 				add_country_leader_role = {
-					character = INS_soetomo
+					character = INS_sutomo
 					country_leader = {
-						desc = INS_soetomo_desc
+						desc = INS_sutomo_desc
 						expire = "1965.1.1"
 						ideology = fascism_ideology
 						traits = {
@@ -7583,7 +7603,7 @@ country_event = { #Commies 11 - Communist Uprising
 					}
 					promote_leader = yes
 				}
-				INS_soetomo = {
+				INS_sutomo = {
 					add_trait = {
 						slot = political_advisor
 						trait = conservative_amongst_radicals_f
@@ -7596,12 +7616,12 @@ country_event = { #Commies 11 - Communist Uprising
 			}
 			if = {
 				limit = {
-					has_country_flag = INS_soetomo_passed
+					has_country_flag = INS_sutomo_passed
 				}
 				add_country_leader_role = {
-					character = INS_mohammad_hoesni_thamrin
+					character = INS_mohammad_husni_thamrin
 					country_leader = {
-						desc = INS_mohammad_hoesni_thamrin_desc
+						desc = INS_mohammad_husni_thamrin_desc
 						expire = "1965.1.1"
 						ideology = fascism_ideology
 						traits = {
@@ -7617,13 +7637,13 @@ country_event = { #Commies 11 - Communist Uprising
 				name = INS_neutrality_party_islam
 			}
 			add_country_leader_role = {
-				character = INS_abikoesno_tjokrosoejoso
+				character = INS_abikusno_cokrosuyoso
 				country_leader = {
-					desc = INS_abikoesno_tjokrosoejoso_desc
+					desc = INS_abikusno_cokrosuyoso_desc
 					expire = "1965.1.1"
 					ideology = moderatism
 					traits = {
-						shadow_of_tjokroaminoto_n
+						shadow_of_cokroaminoto_n
 					}
 				}
 				promote_leader = yes
@@ -7635,17 +7655,17 @@ country_event = { #Commies 11 - Communist Uprising
 			}
 			if = {
 				limit = {
-					has_completed_focus = INS_liberate_soekarno
+					has_completed_focus = INS_liberate_sukarno
 				}
 				INS = {
-					INS_soekarno = {
+					INS_sukarno = {
 						clr_character_flag = SOV_exiled_flag
 					}
 				}
 				add_country_leader_role = {
-					character = INS_soekarno
+					character = INS_sukarno
 					country_leader = {
-						desc = INS_soekarno_desc
+						desc = INS_sukarno_desc
 						expire = "1971.1.1"
 						ideology = socialism
 						traits = {
@@ -7658,7 +7678,7 @@ country_event = { #Commies 11 - Communist Uprising
 			if = {
 				limit = {
 					NOT = {
-						has_completed_focus = INS_liberate_soekarno
+						has_completed_focus = INS_liberate_sukarno
 					}
 				}
 				add_country_leader_role = {
@@ -7677,12 +7697,12 @@ country_event = { #Commies 11 - Communist Uprising
 			if = {
 				limit = {
 					NOT = {
-						has_country_flag = INS_oerip_general
+						has_country_flag = INS_urip_general
 					}
 				}
-				set_country_flag = INS_oerip_general
+				set_country_flag = INS_urip_general
 				add_corps_commander_role = {
-					character = INS_oerip_soemohardjo
+					character = INS_urip_sumoharjo
 					traits = { unyielding_defender jungle_rat guerilla_fighter inflexible_strategist }
 					skill = 2
 					attack_skill = 2
@@ -7691,10 +7711,10 @@ country_event = { #Commies 11 - Communist Uprising
 					logistics_skill = 2
 				}
 				add_advisor_role = {
-					character = INS_oerip_soemohardjo
+					character = INS_urip_sumoharjo
 					advisor = {
 						slot = high_command
-						idea_token = INS_oerip_soemohardjo
+						idea_token = INS_urip_sumoharjo
 						traits = {
 							army_logistics_2
 						}
@@ -7710,7 +7730,7 @@ country_event = { #Commies 11 - Communist Uprising
 				}
 				set_country_flag = INS_gatot_general
 				add_corps_commander_role = {
-					character = INS_gatot_soebroto
+					character = INS_gatot_subroto
 					traits = { defensive_doctrine jungle_rat }
 					skill = 1
 					attack_skill = 1
@@ -7719,10 +7739,10 @@ country_event = { #Commies 11 - Communist Uprising
 					logistics_skill = 2
 				}
 				add_advisor_role = {
-					character = INS_gatot_soebroto
+					character = INS_gatot_subroto
 					advisor = {
 						slot = army_chief
-						idea_token = INS_gatot_soebroto
+						idea_token = INS_gatot_subroto
 						ledger = army
 						traits = {
 							army_chief_defensive_1
@@ -7732,7 +7752,7 @@ country_event = { #Commies 11 - Communist Uprising
 				}
 			}
 			add_corps_commander_role = {
-				character = INS_amir_sjarifoeddin
+				character = INS_amir_syarifuddin
 				traits = { logistics_wizard }
 				skill = 1
 				attack_skill = 1
@@ -7800,14 +7820,14 @@ country_event = { #Commies 11 - Communist Uprising
 			if = {
 				limit = {
 					NOT = {
-						has_country_flag = INS_soerjadarma_officer_flag
+						has_country_flag = INS_suryadarma_officer_flag
 					}
 				}
 				add_advisor_role = {
-					character = INS_soerjadarma
+					character = INS_suryadarma
 					advisor = {
 						slot = air_chief
-						idea_token = INS_soerjadarma
+						idea_token = INS_suryadarma
 						ledger = air
 						traits = {
 							air_chief_night_operations_1
@@ -7815,7 +7835,7 @@ country_event = { #Commies 11 - Communist Uprising
 						cost = 100
 					}
 				}
-				set_country_flag = INS_soerjadarma_officer_flag
+				set_country_flag = INS_suryadarma_officer_flag
 			}
 		}
 	}
@@ -7848,8 +7868,8 @@ country_event = { #Commies 12 - Notification to the Dutch
 		name = holhis_commies.12.d
 		HOL = {
 			transfer_state = 669
-			transfer_state = 1028
-			transfer_state = 1029
+			transfer_state = 1056
+			transfer_state = 1057
 			set_country_flag = HOL_seized_papua_flag
 		}
 		ai_chance = {
@@ -7868,7 +7888,7 @@ country_event = { #Commies 12 - Notification to the Dutch
 		name = holhis_commies.12.b
 		HOL = {
 			transfer_state = 669
-			transfer_state = 1029
+			transfer_state = 1057
 			declare_war_on = {
 				target = INS
 				type = puppet_wargoal_focus
@@ -7890,7 +7910,7 @@ country_event = { #Commies 12 - Notification to the Dutch
 		name = holhis_commies.12.c
 		HOL = {
 			transfer_state = 669
-			transfer_state = 1029
+			transfer_state = 1057
 			declare_war_on = {
 				target = INS
 				type = puppet_wargoal_focus
@@ -7924,7 +7944,7 @@ country_event = { #Commies 13 - End of the Revolution
 
 	immediate = {
 		hidden_effect = {
-			set_capital = { state = 1021 }
+			set_capital = { state = 1052 }
 			if = {
 				limit = {
 					has_completed_focus = INS_secret_weapon_production
@@ -8102,7 +8122,7 @@ country_event = { #Commies 16 - Faction leader demanded us to reorient our party
 			}
 			set_cosmetic_tag = INS_RED3
 		}
-		promote_character = INS_moesso_moenawar
+		promote_character = INS_muso_munawar
 		add_popularity = {
 			ideology = communism
 			popularity = -0.1
@@ -9205,11 +9225,11 @@ country_event = { #Commies 29 - Enforce Decolonization event - release or else!!
 				any_state = {
 					is_owned_by = THIS
 					is_fully_controlled_by = THIS
-					is_core_of = KLM
+					is_core_of = BRN
 				}
 			}
-			release = KLM
-			KLM = {
+			release = BRN
+			BRN = {
 				if = {
 					limit = {
 						NOT = {
@@ -9229,11 +9249,11 @@ country_event = { #Commies 29 - Enforce Decolonization event - release or else!!
 				any_state = {
 					is_owned_by = THIS
 					is_fully_controlled_by = THIS
-					is_core_of = TIM
+					is_core_of = TML
 				}
 			}
-			release = TIM
-			TIM = {
+			release = TML
+			TML = {
 				if = {
 					limit = {
 						NOT = {
@@ -9666,14 +9686,14 @@ country_event = { #Commies 35 - 4th PKI National Congress - 1940-1945
 	option = { #Muso - First Term
 		name = holhis_commies.35.a
 		trigger = {
-			INS_moesso_moenawar = {
+			INS_muso_munawar = {
 				NOT = { has_character_flag = INS_first_term_flag }
 			}
 		}
 		if = {
 			limit = {
 				has_country_leader = {
-					name = "Moesso Moenawar"
+					name = "Muso Munawar"
 					ruling_only = yes
 				}
 			}
@@ -9688,10 +9708,10 @@ country_event = { #Commies 35 - 4th PKI National Congress - 1940-1945
 			}
 			set_cosmetic_tag = INS_RED3
 		}
-		promote_character = INS_moesso_moenawar
+		promote_character = INS_muso_munawar
 		add_war_support = 0.075
 		add_field_marshal_role = {
-			character = INS_moesso_moenawar
+			character = INS_muso_munawar
 			traits = { politically_connected }
 			skill = 1
 			attack_skill = 2
@@ -9707,7 +9727,7 @@ country_event = { #Commies 35 - 4th PKI National Congress - 1940-1945
 			remove_ideas = INS_gerindo_militias_positive
 		}
 		hidden_effect = {
-			INS_moesso_moenawar = {
+			INS_muso_munawar = {
 				set_character_flag = INS_first_term_flag
 			}
 			country_event = { id = holhis_commies.36 days = 1825 }
@@ -9717,7 +9737,7 @@ country_event = { #Commies 35 - 4th PKI National Congress - 1940-1945
 	option = { #Muso - Second Term
 		name = holhis_commies.35.b
 		trigger = {
-			INS_moesso_moenawar = {
+			INS_muso_munawar = {
 				has_character_flag = INS_first_term_flag
 			}
 		}
@@ -9725,7 +9745,7 @@ country_event = { #Commies 35 - 4th PKI National Congress - 1940-1945
 		if = {
 			limit = {
 				has_country_leader = {
-					name = "Moesso Moenawar"
+					name = "Muso Munawar"
 					ruling_only = yes
 				}
 			}
@@ -9741,7 +9761,7 @@ country_event = { #Commies 35 - 4th PKI National Congress - 1940-1945
 			remove_ideas = INS_gerindo_militias_positive
 		}
 		hidden_effect = {
-			INS_moesso_moenawar = {
+			INS_muso_munawar = {
 				set_character_flag = INS_second_term_flag
 			}
 			country_event = { id = holhis_commies.36 days = 1825 }
@@ -9848,7 +9868,7 @@ country_event = { #Commies 35 - 4th PKI National Congress - 1940-1945
 	option = { #Amir - First term
 		name = holhis_commies.35.e
 		trigger = {
-			INS_amir_sjarifoeddin = {
+			INS_amir_syarifuddin = {
 				NOT = { has_character_flag = INS_first_term_flag }
 			}
 		}
@@ -9856,7 +9876,7 @@ country_event = { #Commies 35 - 4th PKI National Congress - 1940-1945
 		if = {
 			limit = {
 				has_country_leader = {
-					name = "Amir Sjarifoeddin Harahap"
+					name = "Amir Sjarifuddin Harahap"
 					ruling_only = yes
 				}
 			}
@@ -9865,7 +9885,7 @@ country_event = { #Commies 35 - 4th PKI National Congress - 1940-1945
 				add_war_support = 0.05
 			}
 		}
-		promote_character = INS_amir_sjarifoeddin
+		promote_character = INS_amir_syarifuddin
 		if = {
 			limit = {
 				NOT = {
@@ -9875,7 +9895,7 @@ country_event = { #Commies 35 - 4th PKI National Congress - 1940-1945
 			add_ideas = INS_gerindo_militias_positive
 		}
 		hidden_effect = {
-			INS_amir_sjarifoeddin = {
+			INS_amir_syarifuddin = {
 				set_character_flag = INS_first_term_flag
 			}
 			country_event = { id = holhis_commies.36 days = 1825 }
@@ -9885,7 +9905,7 @@ country_event = { #Commies 35 - 4th PKI National Congress - 1940-1945
 	option = { #Amir - Second term
 		name = holhis_commies.35.f
 		trigger = {
-			INS_amir_sjarifoeddin = {
+			INS_amir_syarifuddin = {
 				has_character_flag = INS_first_term_flag
 			}
 		}
@@ -9893,7 +9913,7 @@ country_event = { #Commies 35 - 4th PKI National Congress - 1940-1945
 		if = {
 			limit = {
 				has_country_leader = {
-					name = "Amir Sjarifoeddin Harahap"
+					name = "Amir Sjarifuddin Harahap"
 					ruling_only = yes
 				}
 			}
@@ -9911,7 +9931,7 @@ country_event = { #Commies 35 - 4th PKI National Congress - 1940-1945
 			add_ideas = INS_gerindo_militias_positive
 		}
 		hidden_effect = {
-			INS_amir_sjarifoeddin = {
+			INS_amir_syarifuddin = {
 				set_character_flag = INS_second_term_flag
 			}
 			country_event = { id = holhis_commies.36 days = 1825 }
@@ -9956,7 +9976,7 @@ country_event = { #Commies 36 - 5th PKI National Congress - 1945-1950
 	option = { #Muso - First Term
 		name = holhis_commies.36.a
 		trigger = {
-			INS_moesso_moenawar = {
+			INS_muso_munawar = {
 				NOT = {
 					OR = {
 						has_character_flag = INS_first_term_flag
@@ -9969,7 +9989,7 @@ country_event = { #Commies 36 - 5th PKI National Congress - 1945-1950
 		if = {
 			limit = {
 				has_country_leader = {
-					name = "Moesso Moenawar"
+					name = "Muso Munawar"
 					ruling_only = yes
 				}
 			}
@@ -9984,10 +10004,10 @@ country_event = { #Commies 36 - 5th PKI National Congress - 1945-1950
 			}
 			set_cosmetic_tag = INS_RED3
 		}
-		promote_character = INS_moesso_moenawar
+		promote_character = INS_muso_munawar
 		add_war_support = 0.075
 		add_field_marshal_role = {
-			character = INS_moesso_moenawar
+			character = INS_muso_munawar
 			traits = { politically_connected }
 			skill = 1
 			attack_skill = 2
@@ -10003,7 +10023,7 @@ country_event = { #Commies 36 - 5th PKI National Congress - 1945-1950
 			remove_ideas = INS_gerindo_militias_positive
 		}
 		hidden_effect = {
-			INS_moesso_moenawar = {
+			INS_muso_munawar = {
 				set_character_flag = INS_first_term_flag
 			}
 			country_event = { id = holhis_commies.37 days = 1825 }
@@ -10013,7 +10033,7 @@ country_event = { #Commies 36 - 5th PKI National Congress - 1945-1950
 	option = { #Muso - Second Term
 		name = holhis_commies.36.b
 		trigger = {
-			INS_moesso_moenawar = {
+			INS_muso_munawar = {
 				NOT = { has_character_flag = INS_second_term_flag }
 			}
 		}
@@ -10021,7 +10041,7 @@ country_event = { #Commies 36 - 5th PKI National Congress - 1945-1950
 		if = {
 			limit = {
 				has_country_leader = {
-					name = "Moesso Moenawar"
+					name = "Muso Munawar"
 					ruling_only = yes
 				}
 			}
@@ -10037,7 +10057,7 @@ country_event = { #Commies 36 - 5th PKI National Congress - 1945-1950
 			remove_ideas = INS_gerindo_militias_positive
 		}
 		hidden_effect = {
-			INS_moesso_moenawar = {
+			INS_muso_munawar = {
 				set_character_flag = INS_second_term_flag
 			}
 			country_event = { id = holhis_commies.37 days = 1825 }
@@ -10149,7 +10169,7 @@ country_event = { #Commies 36 - 5th PKI National Congress - 1945-1950
 	option = { #Amir - First term
 		name = holhis_commies.36.e
 		trigger = {
-			INS_amir_sjarifoeddin = {
+			INS_amir_syarifuddin = {
 				NOT = {
 					OR = {
 						has_character_flag = INS_first_term_flag
@@ -10162,7 +10182,7 @@ country_event = { #Commies 36 - 5th PKI National Congress - 1945-1950
 		if = {
 			limit = {
 				has_country_leader = {
-					name = "Amir Sjarifoeddin Harahap"
+					name = "Amir Sjarifuddin Harahap"
 					ruling_only = yes
 				}
 			}
@@ -10171,9 +10191,9 @@ country_event = { #Commies 36 - 5th PKI National Congress - 1945-1950
 				add_war_support = 0.05
 			}
 		}
-		promote_character = INS_amir_sjarifoeddin
+		promote_character = INS_amir_syarifuddin
 		hidden_effect = {
-			INS_amir_sjarifoeddin = {
+			INS_amir_syarifuddin = {
 				set_character_flag = INS_first_term_flag
 			}
 			country_event = { id = holhis_commies.37 days = 1825 }
@@ -10183,7 +10203,7 @@ country_event = { #Commies 36 - 5th PKI National Congress - 1945-1950
 	option = { #Amir - Second term
 		name = holhis_commies.36.f
 		trigger = {
-			INS_amir_sjarifoeddin = {
+			INS_amir_syarifuddin = {
 				NOT = { has_character_flag = INS_second_term_flag }
 			}
 		}
@@ -10191,7 +10211,7 @@ country_event = { #Commies 36 - 5th PKI National Congress - 1945-1950
 		if = {
 			limit = {
 				has_country_leader = {
-					name = "Amir Sjarifoeddin Harahap"
+					name = "Amir Sjarifuddin Harahap"
 					ruling_only = yes
 				}
 			}
@@ -10201,7 +10221,7 @@ country_event = { #Commies 36 - 5th PKI National Congress - 1945-1950
 			}
 		}
 		hidden_effect = {
-			INS_amir_sjarifoeddin = {
+			INS_amir_syarifuddin = {
 				set_character_flag = INS_second_term_flag
 			}
 			country_event = { id = holhis_commies.37 days = 1825 }
@@ -10250,7 +10270,7 @@ country_event = { #Commies 37 - 6th PKI National Congress - 1950-1955
 	option = { #Muso - First Term
 		name = holhis_commies.37.a
 		trigger = {
-			INS_moesso_moenawar = {
+			INS_muso_munawar = {
 				NOT = {
 					OR = {
 						has_character_flag = INS_first_term_flag
@@ -10263,7 +10283,7 @@ country_event = { #Commies 37 - 6th PKI National Congress - 1950-1955
 		if = {
 			limit = {
 				has_country_leader = {
-					name = "Moesso Moenawar"
+					name = "Muso Munawar"
 					ruling_only = yes
 				}
 			}
@@ -10278,10 +10298,10 @@ country_event = { #Commies 37 - 6th PKI National Congress - 1950-1955
 			}
 			set_cosmetic_tag = INS_RED3
 		}
-		promote_character = INS_moesso_moenawar
+		promote_character = INS_muso_munawar
 		add_war_support = 0.075
 		add_field_marshal_role = {
-			character = INS_moesso_moenawar
+			character = INS_muso_munawar
 			traits = { politically_connected }
 			skill = 1
 			attack_skill = 2
@@ -10297,7 +10317,7 @@ country_event = { #Commies 37 - 6th PKI National Congress - 1950-1955
 			remove_ideas = INS_gerindo_militias_positive
 		}
 		hidden_effect = {
-			INS_moesso_moenawar = {
+			INS_muso_munawar = {
 				set_character_flag = INS_first_term_flag
 			}
 			country_event = { id = holhis_commies.38 days = 1825 }
@@ -10307,7 +10327,7 @@ country_event = { #Commies 37 - 6th PKI National Congress - 1950-1955
 	option = { #Muso - Second Term
 		name = holhis_commies.37.b
 		trigger = {
-			INS_moesso_moenawar = {
+			INS_muso_munawar = {
 				NOT = { has_character_flag = INS_second_term_flag }
 			}
 		}
@@ -10315,7 +10335,7 @@ country_event = { #Commies 37 - 6th PKI National Congress - 1950-1955
 		if = {
 			limit = {
 				has_country_leader = {
-					name = "Moesso Moenawar"
+					name = "Muso Munawar"
 					ruling_only = yes
 				}
 			}
@@ -10331,7 +10351,7 @@ country_event = { #Commies 37 - 6th PKI National Congress - 1950-1955
 			remove_ideas = INS_gerindo_militias_positive
 		}
 		hidden_effect = {
-			INS_moesso_moenawar = {
+			INS_muso_munawar = {
 				set_character_flag = INS_second_term_flag
 			}
 			country_event = { id = holhis_commies.38 days = 1825 }
@@ -10443,7 +10463,7 @@ country_event = { #Commies 37 - 6th PKI National Congress - 1950-1955
 	option = { #Amir - First term
 		name = holhis_commies.37.e
 		trigger = {
-			INS_amir_sjarifoeddin = {
+			INS_amir_syarifuddin = {
 				NOT = {
 					OR = {
 						has_character_flag = INS_first_term_flag
@@ -10456,7 +10476,7 @@ country_event = { #Commies 37 - 6th PKI National Congress - 1950-1955
 		if = {
 			limit = {
 				has_country_leader = {
-					name = "Amir Sjarifoeddin Harahap"
+					name = "Amir Sjarifuddin Harahap"
 					ruling_only = yes
 				}
 			}
@@ -10465,9 +10485,9 @@ country_event = { #Commies 37 - 6th PKI National Congress - 1950-1955
 				add_war_support = 0.05
 			}
 		}
-		promote_character = INS_amir_sjarifoeddin
+		promote_character = INS_amir_syarifuddin
 		hidden_effect = {
-			INS_amir_sjarifoeddin = {
+			INS_amir_syarifuddin = {
 				set_character_flag = INS_first_term_flag
 			}
 			country_event = { id = holhis_commies.38 days = 1825 }
@@ -10477,7 +10497,7 @@ country_event = { #Commies 37 - 6th PKI National Congress - 1950-1955
 	option = { #Amir - Second term
 		name = holhis_commies.37.f
 		trigger = {
-			INS_amir_sjarifoeddin = {
+			INS_amir_syarifuddin = {
 				NOT = { has_character_flag = INS_second_term_flag }
 			}
 		}
@@ -10485,7 +10505,7 @@ country_event = { #Commies 37 - 6th PKI National Congress - 1950-1955
 		if = {
 			limit = {
 				has_country_leader = {
-					name = "Amir Sjarifoeddin Harahap"
+					name = "Amir Sjarifuddin Harahap"
 					ruling_only = yes
 				}
 			}
@@ -10495,7 +10515,7 @@ country_event = { #Commies 37 - 6th PKI National Congress - 1950-1955
 			}
 		}
 		hidden_effect = {
-			INS_amir_sjarifoeddin = {
+			INS_amir_syarifuddin = {
 				set_character_flag = INS_second_term_flag
 			}
 			country_event = { id = holhis_commies.38 days = 1825 }
@@ -10554,7 +10574,7 @@ country_event = { #Commies 38 - 7th PKI National Congress - 1955-1960
 	option = { #Muso - First Term
 		name = holhis_commies.38.a
 		trigger = {
-			INS_moesso_moenawar = {
+			INS_muso_munawar = {
 				NOT = {
 					OR = {
 						has_character_flag = INS_first_term_flag
@@ -10568,7 +10588,7 @@ country_event = { #Commies 38 - 7th PKI National Congress - 1955-1960
 		if = {
 			limit = {
 				has_country_leader = {
-					name = "Moesso Moenawar"
+					name = "Muso Munawar"
 					ruling_only = yes
 				}
 			}
@@ -10583,10 +10603,10 @@ country_event = { #Commies 38 - 7th PKI National Congress - 1955-1960
 			}
 			set_cosmetic_tag = INS_RED3
 		}
-		promote_character = INS_moesso_moenawar
+		promote_character = INS_muso_munawar
 		add_war_support = 0.075
 		add_field_marshal_role = {
-			character = INS_moesso_moenawar
+			character = INS_muso_munawar
 			traits = { politically_connected }
 			skill = 1
 			attack_skill = 2
@@ -10602,7 +10622,7 @@ country_event = { #Commies 38 - 7th PKI National Congress - 1955-1960
 			remove_ideas = INS_gerindo_militias_positive
 		}
 		hidden_effect = {
-			INS_moesso_moenawar = {
+			INS_muso_munawar = {
 				set_character_flag = INS_first_term_flag
 			}
 		}
@@ -10611,7 +10631,7 @@ country_event = { #Commies 38 - 7th PKI National Congress - 1955-1960
 	option = { #Muso - Second Term
 		name = holhis_commies.38.b
 		trigger = {
-			INS_moesso_moenawar = {
+			INS_muso_munawar = {
 				NOT = { has_character_flag = INS_second_term_flag }
 			}
 			date < 1957.07.01
@@ -10620,7 +10640,7 @@ country_event = { #Commies 38 - 7th PKI National Congress - 1955-1960
 		if = {
 			limit = {
 				has_country_leader = {
-					name = "Moesso Moenawar"
+					name = "Muso Munawar"
 					ruling_only = yes
 				}
 			}
@@ -10636,7 +10656,7 @@ country_event = { #Commies 38 - 7th PKI National Congress - 1955-1960
 			remove_ideas = INS_gerindo_militias_positive
 		}
 		hidden_effect = {
-			INS_moesso_moenawar = {
+			INS_muso_munawar = {
 				set_character_flag = INS_second_term_flag
 			}
 		}
@@ -10748,7 +10768,7 @@ country_event = { #Commies 38 - 7th PKI National Congress - 1955-1960
 	option = { #Amir - First term
 		name = holhis_commies.38.e
 		trigger = {
-			INS_amir_sjarifoeddin = {
+			INS_amir_syarifuddin = {
 				NOT = {
 					OR = {
 						has_character_flag = INS_first_term_flag
@@ -10761,7 +10781,7 @@ country_event = { #Commies 38 - 7th PKI National Congress - 1955-1960
 		if = {
 			limit = {
 				has_country_leader = {
-					name = "Amir Sjarifoeddin Harahap"
+					name = "Amir Sjarifuddin Harahap"
 					ruling_only = yes
 				}
 			}
@@ -10770,7 +10790,7 @@ country_event = { #Commies 38 - 7th PKI National Congress - 1955-1960
 				add_war_support = 0.05
 			}
 		}
-		promote_character = INS_amir_sjarifoeddin
+		promote_character = INS_amir_syarifuddin
 		if = {
 			limit = {
 				NOT = {
@@ -10780,7 +10800,7 @@ country_event = { #Commies 38 - 7th PKI National Congress - 1955-1960
 			add_ideas = INS_gerindo_militias_positive
 		}
 		hidden_effect = {
-			INS_amir_sjarifoeddin = {
+			INS_amir_syarifuddin = {
 				set_character_flag = INS_first_term_flag
 			}
 		}
@@ -10789,7 +10809,7 @@ country_event = { #Commies 38 - 7th PKI National Congress - 1955-1960
 	option = { #Amir - Second term
 		name = holhis_commies.38.f
 		trigger = {
-			INS_amir_sjarifoeddin = {
+			INS_amir_syarifuddin = {
 				NOT = { has_character_flag = INS_second_term_flag }
 			}
 		}
@@ -10797,7 +10817,7 @@ country_event = { #Commies 38 - 7th PKI National Congress - 1955-1960
 		if = {
 			limit = {
 				has_country_leader = {
-					name = "Amir Sjarifoeddin Harahap"
+					name = "Amir Sjarifuddin Harahap"
 					ruling_only = yes
 				}
 			}
@@ -10815,7 +10835,7 @@ country_event = { #Commies 38 - 7th PKI National Congress - 1955-1960
 			add_ideas = INS_gerindo_militias_positive
 		}
 		hidden_effect = {
-			INS_amir_sjarifoeddin = {
+			INS_amir_syarifuddin = {
 				set_character_flag = INS_second_term_flag
 			}
 		}
@@ -11395,7 +11415,7 @@ country_event = { #Gerindo 1 - Formation of Gerindo
 	id = holhis_gerindo.1
 	title = holhis_gerindo.1.t
 	desc = holhis_gerindo.1.d
-	picture = GFX_report_event_ins_amir_sjarifoeddin
+	picture = GFX_report_event_ins_amir_syarifuddin
 
 	fire_only_once = yes
 
@@ -11432,7 +11452,7 @@ country_event = { #Gerindo 1 - Formation of Gerindo
 			long_name = INS_communism_party_volksraad_long
 			name = INS_communism_party_volksraad
 		}
-		INS_amir_sjarifoeddin = {
+		INS_amir_syarifuddin = {
 			promote_character = yes
 		}
 		set_country_flag = INS_gerindo_allowed_flag
@@ -11452,7 +11472,7 @@ country_event = { #Gerindo 2 - Formation of Gerindo (alt)
 	id = holhis_gerindo.2
 	title = holhis_gerindo.2.t
 	desc = holhis_gerindo.2.d
-	picture = GFX_report_event_ins_amir_sjarifoeddin
+	picture = GFX_report_event_ins_amir_syarifuddin
 
 	fire_only_once = yes
 
@@ -11542,7 +11562,7 @@ country_event = { #Islamists 1 - PSII protested against PII
 	is_triggered_only = no
 
 	trigger = {
-		has_idea = INS_soekiman_wirjosandjojo
+		has_idea = INS_sukiman_wiryosanjoyo
 		NOT = {
 			OR = {
 				has_country_flag = INS_psii_banned_flag
@@ -11560,7 +11580,7 @@ country_event = { #Islamists 1 - PSII protested against PII
 		add_stability = -0.075
 	}
 
-	option = { #Dismiss Soekiman
+	option = { #Dismiss Sukiman
 		name = holhis_islamists.1.b
 		set_country_flag = INS_pii_banned_flag
 		add_stability = -0.02
@@ -11585,14 +11605,14 @@ country_event = { #Islamists 2 - PII protested against PSII
 
 	trigger = {
 		OR = {
-			has_idea = INS_abikoesno_tjokrosoejoso
-			has_idea = INS_agoes_salim
+			has_idea = INS_abikusno_cokrosuyoso
+			has_idea = INS_agus_salim
 		}
 	}
 
 	mean_time_to_happen = { days = 7 }
 
-	option = { #Dismiss Soekiman
+	option = { #Dismiss Sukiman
 		name = holhis_islamists.2.a
 		set_country_flag = INS_pii_banned_flag
 		add_stability = -0.01
@@ -11752,19 +11772,19 @@ country_event = { #NSB 5 - NSB Uprising
 	immediate = {
 		hidden_effect = {
 			INS = {
-				INS_soekarno = {
+				INS_sukarno = {
 					clr_character_flag = INS_imprisoned_flag
 					set_portraits = {
 						army = {
-							small = GFX_idea_indonesia_soekarno
+							small = GFX_idea_indonesia_sukarno
 						}
 					}
 				}
-				INS_tjipto_mangoenkoesoemo = {
+				INS_cipto_mangunkusumo = {
 					clr_character_flag = INS_imprisoned_flag
 					set_portraits = {
 						army = {
-							small = GFX_idea_indonesia_tjipto_mangoenkoeseomo
+							small = GFX_idea_indonesia_cipto_mangunkuseomo
 						}
 					}
 				}
@@ -11776,11 +11796,11 @@ country_event = { #NSB 5 - NSB Uprising
 						}
 					}
 				}
-				INS_soetan_sjahrir = {
+				INS_sutan_syahrir = {
 					clr_character_flag = INS_imprisoned_flag
 					set_portraits = {
 						army = {
-							small = GFX_idea_indonesia_sjahrir
+							small = GFX_idea_indonesia_syahrir
 						}
 					}
 				}
@@ -11823,16 +11843,16 @@ country_event = { #NSB 5 - NSB Uprising
 				limit = {
 					is_owned_by = INS
 					OR = {
-						state = 1017 #Atjeh
-						state = 1018 #Palembang
-						state = 1019 #Batam
-						state = 1020 #Bandoeng
-						state = 1021 #Soerabaja
-						state = 1022 #Pontianak
+						state = 1047 #Aceh
+						state = 1048 #Palembang
+						state = 1049 #Batam
+						state = 1050 #Bandung
+						state = 1051 #Surabaja
+						state = 1052 #Pontianak
 						state = 673 #Makassar
-						state = 1027 #Ternate
-						state = 1028 #Sorong
-						state = 1029 #Merauke
+						state = 1055 #Ternate
+						state = 1056 #Sorong
+						state = 1057 #Merauke
 					}
 				}
 				set_state_flag = INS_indonesian_holdouts
@@ -11872,22 +11892,22 @@ country_event = { #NSB 5 - NSB Uprising
 				}
 			}
 			INS = {
-				INS_tjipto_mangoenkoesoemo = {
+				INS_cipto_mangunkusumo = {
 					set_nationality = event_target:democratic_ins_civil_war
 				}
 				INS_mohammad_hatta = {
 					set_nationality = event_target:democratic_ins_civil_war
 				}
-				INS_soetan_sjahrir = {
+				INS_sutan_syahrir = {
 					set_nationality = event_target:democratic_ins_civil_war
 				}
-				INS_soedirman = {
+				INS_sudirman = {
 					set_nationality = event_target:democratic_ins_civil_war
 				}
-				INS_oerip_soemohardjo = {
+				INS_urip_sumoharjo = {
 					set_nationality = event_target:democratic_ins_civil_war
 				}
-				INS_sk_trimoerti = {
+				INS_sk_trimurti = {
 					set_nationality = event_target:democratic_ins_civil_war
 				}
 				INS_mas_pardi = {
@@ -11949,9 +11969,9 @@ country_event = { #NSB 5 - NSB Uprising
 			event_target:democratic_ins_civil_war = {
 				if = {
 					limit = {
-						has_full_control_of_state = 1021
+						has_full_control_of_state = 1052
 					}
-				set_capital = { state = 1021 }
+				set_capital = { state = 1052 }
 				}
 			}
 			event_target:democratic_ins_civil_war = {
@@ -11985,7 +12005,7 @@ country_event = { #NSB 5 - NSB Uprising
 					}
 				}
 				add_corps_commander_role = {
-					character = INS_oerip_soemohardjo
+					character = INS_urip_sumoharjo
 					traits = { unyielding_defender jungle_rat guerilla_fighter inflexible_strategist }
 					skill = 2
 					attack_skill = 2
@@ -11994,10 +12014,10 @@ country_event = { #NSB 5 - NSB Uprising
 					logistics_skill = 2
 				}
 				add_advisor_role = {
-					character = INS_oerip_soemohardjo
+					character = INS_urip_sumoharjo
 					advisor = {
 						slot = high_command
-						idea_token = INS_oerip_soemohardjo
+						idea_token = INS_urip_sumoharjo
 						traits = {
 							army_logistics_2
 						}
@@ -12005,7 +12025,7 @@ country_event = { #NSB 5 - NSB Uprising
 					}
 				}
 				add_corps_commander_role = {
-					character = INS_gatot_soebroto
+					character = INS_gatot_subroto
 					traits = { defensive_doctrine jungle_rat }
 					skill = 1
 					attack_skill = 1
@@ -12014,10 +12034,10 @@ country_event = { #NSB 5 - NSB Uprising
 					logistics_skill = 2
 				}
 				add_advisor_role = {
-					character = INS_gatot_soebroto
+					character = INS_gatot_subroto
 					advisor = {
 						slot = army_chief
-						idea_token = INS_gatot_soebroto
+						idea_token = INS_gatot_subroto
 						ledger = army
 						traits = {
 							army_chief_defensive_1
@@ -12085,14 +12105,14 @@ country_event = { #NSB 5 - NSB Uprising
 				if = {
 					limit = {
 						NOT = {
-							has_country_flag = INS_soerjadarma_officer_flag
+							has_country_flag = INS_suryadarma_officer_flag
 						}
 					}
 					add_advisor_role = {
-						character = INS_soerjadarma
+						character = INS_suryadarma
 						advisor = {
 							slot = air_chief
-							idea_token = INS_soerjadarma
+							idea_token = INS_suryadarma
 							ledger = air
 							traits = {
 								air_chief_night_operations_1
@@ -12100,7 +12120,7 @@ country_event = { #NSB 5 - NSB Uprising
 							cost = 100
 						}
 					}
-					set_country_flag = INS_soerjadarma_officer_flag
+					set_country_flag = INS_suryadarma_officer_flag
 				}
 			}
 		}
@@ -12209,8 +12229,8 @@ country_event = { #NSB 6 - Notification to the Dutch
 		name = holhis_nsb.6.d
 		HOL = {
 			transfer_state = 669
-			transfer_state = 1028
-			transfer_state = 1029
+			transfer_state = 1056
+			transfer_state = 1057
 			set_country_flag = HOL_seized_papua_flag
 		}
 		ai_chance = {
@@ -12229,7 +12249,7 @@ country_event = { #NSB 6 - Notification to the Dutch
 		name = holhis_nsb.6.b
 		HOL = {
 			transfer_state = 669
-			transfer_state = 1029
+			transfer_state = 1057
 			declare_war_on = {
 				target = INS
 				type = puppet_wargoal_focus
@@ -12251,7 +12271,7 @@ country_event = { #NSB 6 - Notification to the Dutch
 		name = holhis_nsb.6.c
 		HOL = {
 			transfer_state = 669
-			transfer_state = 1029
+			transfer_state = 1057
 			declare_war_on = {
 				target = INS
 				type = puppet_wargoal_focus
@@ -12302,7 +12322,7 @@ country_event = { #NSB 7 - Crackdown successful
 					NOT = {
 						OR = {
 							is_core_of = ATJ
-							is_core_of = PPA
+							is_core_of = WPG
 							is_core_of = MLK
 						}
 					}
@@ -12560,7 +12580,7 @@ country_event = { #Volskraad 1 - Petition in Motion
 	option = {
 		name = holhis_volksraad.1.a
 		hidden_effect = {
-			set_country_flag = INS_soetardjo_petition_begin
+			set_country_flag = INS_sutarjo_petition_begin
 		}
 		ai_chance = {
 			base = 100
@@ -12572,7 +12592,7 @@ country_event = { #Volskraad 2 - Petition signed by Indonesians
 	id = holhis_volksraad.2
 	title = holhis_volksraad.2.t
 	desc = holhis_volksraad.2.d
-	picture = GFX_report_event_ins_volksraad_soetardjo
+	picture = GFX_report_event_ins_volksraad_sutarjo
 
 	is_triggered_only = no
 	fire_only_once = yes
@@ -12581,7 +12601,7 @@ country_event = { #Volskraad 2 - Petition signed by Indonesians
 		original_tag = INS
 		date > 1936.09.30
 		has_start_date < 1936.01.02
-		has_country_flag = INS_soetardjo_petition_begin
+		has_country_flag = INS_sutarjo_petition_begin
 	}
 
 	mean_time_to_happen = { days = 1 }
@@ -12589,7 +12609,7 @@ country_event = { #Volskraad 2 - Petition signed by Indonesians
 	option = {
 		name = holhis_volksraad.2.a #Against
 		add_political_power = 25
-		set_country_flag = INS_against_soetardjo_flag
+		set_country_flag = INS_against_sutarjo_flag
 		ai_chance = {
 			base = 20
 			modifier = {
@@ -12610,7 +12630,7 @@ country_event = { #Volskraad 2 - Petition signed by Indonesians
 	option = {
 		name = holhis_volksraad.2.b #Support
 		add_stability = -0.05
-		set_country_flag = INS_support_soetardjo_flag
+		set_country_flag = INS_support_sutarjo_flag
 		ai_chance = {
 			base = 20
 			modifier = {
@@ -12853,21 +12873,21 @@ country_event = { #Volksraad 6 - Formation of GAPI
 		add_ideas = INS_group_gapi
 		if = {
 			limit = {
-				has_idea = INS_mohammad_hoesni_thamrin
+				has_idea = INS_mohammad_husni_thamrin
 			}
-			remove_ideas = INS_mohammad_hoesni_thamrin
+			remove_ideas = INS_mohammad_husni_thamrin
 		}
 		if = {
 			limit = {
-				has_idea = INS_amir_sjarifoeddin
+				has_idea = INS_amir_syarifuddin
 			}
-			remove_ideas = INS_amir_sjarifoeddin
+			remove_ideas = INS_amir_syarifuddin
 		}
 		if = {
 			limit = {
-				has_idea = INS_abikoesno_tjokrosoejoso
+				has_idea = INS_abikusno_cokrosuyoso
 			}
-			remove_ideas = INS_abikoesno_tjokrosoejoso
+			remove_ideas = INS_abikusno_cokrosuyoso
 		}
 		add_stability = 0.05
 		add_political_power = -100
@@ -12942,7 +12962,7 @@ country_event = { #Volskraad 8 - Staat van Oorlog en van Beleg
 
 	trigger = {
 		original_tag = INS
-		has_country_flag = INS_against_soetardjo_flag
+		has_country_flag = INS_against_sutarjo_flag
 		has_country_flag = INS_gapi_formed_flag
 		has_completed_focus = INS_staat_van_oorlog_en_van_beleg
 		HOL = {
@@ -13072,8 +13092,8 @@ country_event = { #Volskraad 10 - Parindra Uprising
 						state = 672
 						state = 335
 						state = 334
-						state = 1025
-						state = 1026
+						state = 1054
+						state = 1053
 						state = 669
 						state = 668
 					}
@@ -13081,8 +13101,8 @@ country_event = { #Volskraad 10 - Parindra Uprising
 				set_state_flag = INS_dutch_holdouts
 			}
 			INS = {
-				set_capital = { state = 1021 }
-				INS_sk_trimoerti = {
+				set_capital = { state = 1052 }
+				INS_sk_trimurti = {
 					add_trait = {
 						slot = political_advisor
 						trait = liberal_journalist
@@ -13369,13 +13389,13 @@ country_event = { #Volskraad 10 - Parindra Uprising
 				name = INS_neutrality_party_islam
 			}
 			add_country_leader_role = {
-				character = INS_abikoesno_tjokrosoejoso
+				character = INS_abikusno_cokrosuyoso
 				country_leader = {
-					desc = INS_abikoesno_tjokrosoejoso_desc
+					desc = INS_abikusno_cokrosuyoso_desc
 					expire = "1965.1.1"
 					ideology = rexism
 					traits = {
-						shadow_of_tjokroaminoto_f
+						shadow_of_cokroaminoto_f
 					}
 				}
 				promote_leader = yes
@@ -13386,9 +13406,9 @@ country_event = { #Volskraad 10 - Parindra Uprising
 				name = INS_pni
 			}
 			add_country_leader_role = {
-				character = INS_soekarno
+				character = INS_sukarno
 				country_leader = {
-					desc = INS_soekarno_desc
+					desc = INS_sukarno_desc
 					expire = "1965.1.1"
 					ideology = centrism
 					traits = {
@@ -13411,12 +13431,12 @@ country_event = { #Volskraad 10 - Parindra Uprising
 			if = {
 				limit = {
 					NOT = {
-						has_country_flag = INS_oerip_general
+						has_country_flag = INS_urip_general
 					}
 				}
-				set_country_flag = INS_oerip_general
+				set_country_flag = INS_urip_general
 				add_corps_commander_role = {
-					character = INS_oerip_soemohardjo
+					character = INS_urip_sumoharjo
 					traits = { unyielding_defender jungle_rat guerilla_fighter inflexible_strategist }
 					skill = 2
 					attack_skill = 2
@@ -13425,10 +13445,10 @@ country_event = { #Volskraad 10 - Parindra Uprising
 					logistics_skill = 2
 				}
 				add_advisor_role = {
-					character = INS_oerip_soemohardjo
+					character = INS_urip_sumoharjo
 					advisor = {
 						slot = high_command
-						idea_token = INS_oerip_soemohardjo
+						idea_token = INS_urip_sumoharjo
 						traits = {
 							army_logistics_2
 						}
@@ -13444,7 +13464,7 @@ country_event = { #Volskraad 10 - Parindra Uprising
 				}
 				set_country_flag = INS_gatot_general
 				add_corps_commander_role = {
-					character = INS_gatot_soebroto
+					character = INS_gatot_subroto
 					traits = { defensive_doctrine jungle_rat }
 					skill = 1
 					attack_skill = 1
@@ -13453,10 +13473,10 @@ country_event = { #Volskraad 10 - Parindra Uprising
 					logistics_skill = 2
 				}
 				add_advisor_role = {
-					character = INS_gatot_soebroto
+					character = INS_gatot_subroto
 					advisor = {
 						slot = army_chief
-						idea_token = INS_gatot_soebroto
+						idea_token = INS_gatot_subroto
 						ledger = army
 						traits = {
 							army_chief_defensive_1
@@ -13525,14 +13545,14 @@ country_event = { #Volskraad 10 - Parindra Uprising
 			if = {
 				limit = {
 					NOT = {
-						has_country_flag = INS_soerjadarma_officer_flag
+						has_country_flag = INS_suryadarma_officer_flag
 					}
 				}
 				add_advisor_role = {
-					character = INS_soerjadarma
+					character = INS_suryadarma
 					advisor = {
 						slot = air_chief
-						idea_token = INS_soerjadarma
+						idea_token = INS_suryadarma
 						ledger = air
 						traits = {
 							air_chief_night_operations_1
@@ -13540,7 +13560,7 @@ country_event = { #Volskraad 10 - Parindra Uprising
 						cost = 100
 					}
 				}
-				set_country_flag = INS_soerjadarma_officer_flag
+				set_country_flag = INS_suryadarma_officer_flag
 			}
 		}
 	}
@@ -13573,8 +13593,8 @@ country_event = { #Volksraad 11 - Notification to the Dutch
 		name = holhis_volksraad.11.d
 		HOL = {
 			transfer_state = 669
-			transfer_state = 1028
-			transfer_state = 1029
+			transfer_state = 1056
+			transfer_state = 1057
 			set_country_flag = HOL_seized_papua_flag
 		}
 		ai_chance = {
@@ -13597,7 +13617,7 @@ country_event = { #Volksraad 11 - Notification to the Dutch
 				type = puppet_wargoal_focus
 			}
 			transfer_state = 669
-			transfer_state = 1029
+			transfer_state = 1057
 		}
 		ai_chance = {
 			base = 30
@@ -13647,7 +13667,7 @@ country_event = { #Volksraad 12 - End of the Revolution
 
 	immediate = {
 		hidden_effect = {
-			set_capital = { state = 1021 }
+			set_capital = { state = 1052 }
 			if = {
 				limit = {
 					has_completed_focus = INS_secret_weapon_production
@@ -13661,7 +13681,7 @@ country_event = { #Volksraad 12 - End of the Revolution
 						instant_build = yes
 					}
 				}
-				1018 = {
+				1048 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = arms_factory
@@ -13769,11 +13789,11 @@ country_event = { #Volksraad 13 - Pressure onto Siam
 	}
 }
 
-country_event = { #Volksraad 14 - Dr. Soetomo's passing in Parindrist Indonesia
+country_event = { #Volksraad 14 - Dr. Sutomo's passing in Parindrist Indonesia
 	id = holhis_volksraad.14
 	title = holhis_volksraad.14.t
 	desc = holhis_volksraad.14.d
-	picture = GFX_report_event_ins_soetomo
+	picture = GFX_report_event_ins_sutomo
 
 	fire_only_once = yes
 
@@ -13784,7 +13804,7 @@ country_event = { #Volksraad 14 - Dr. Soetomo's passing in Parindrist Indonesia
 		date > 1938.3.31
 		has_start_date < 1936.01.02
 		NOT = {
-			has_country_flag = INS_soetomo_passed
+			has_country_flag = INS_sutomo_passed
 		}
 	}
 
@@ -13792,7 +13812,7 @@ country_event = { #Volksraad 14 - Dr. Soetomo's passing in Parindrist Indonesia
 
 	immediate = {
 		hidden_effect = {
-			set_country_flag = INS_soetomo_passed
+			set_country_flag = INS_sutomo_passed
 			335 = {
 				add_manpower = -1
 			}
@@ -13813,7 +13833,7 @@ country_event = { #Volksraad 14 - Dr. Soetomo's passing in Parindrist Indonesia
 				traits = { indies_nationalist_leader }
 			}
 		}
-		retire_character = INS_soetomo
+		retire_character = INS_sutomo
 		ai_chance = {
 			base = 20
 		}
@@ -13822,7 +13842,7 @@ country_event = { #Volksraad 14 - Dr. Soetomo's passing in Parindrist Indonesia
 	option = { #Thamrin
 		name = holhis_volksraad.14.b
 		add_country_leader_role = {
-			character = INS_mohammad_hoesni_thamrin
+			character = INS_mohammad_husni_thamrin
 			promote_leader = yes
 			country_leader = {
 				ideology = conservatism
@@ -13830,7 +13850,7 @@ country_event = { #Volksraad 14 - Dr. Soetomo's passing in Parindrist Indonesia
 				traits = { cautious_japan devoted_corporatist }
 			}
 		}
-		retire_character = INS_soetomo
+		retire_character = INS_sutomo
 		ai_chance = {
 			base = 30
 		}
@@ -14087,7 +14107,7 @@ country_event = { #Volksraad 16 - Amir forms Barisan Gerindo
 	option = { #Bring Amir for questioning
 		name = holhis_volksraad.16.a
 		clr_country_flag = INS_gerindo_allowed_flag
-		INS_amir_sjarifoeddin = {
+		INS_amir_syarifuddin = {
 			set_character_flag = INS_imprisoned_flag
 			set_portraits = {
 				civilian = {
@@ -14130,11 +14150,11 @@ country_event = { #Volksraad 17 - Tabrani-Thamrin Scandal
 
 	immediate = {
 		hidden_effect = {
-			INS_amir_sjarifoeddin = {
+			INS_amir_syarifuddin = {
 				clr_character_flag = INS_imprisoned_flag
 				set_portraits = {
 					civilian = {
-						small = GFX_idea_indonesia_amir_sjarifoeddin
+						small = GFX_idea_indonesia_amir_syarifuddin
 					}
 				}
 			}
@@ -14145,9 +14165,9 @@ country_event = { #Volksraad 17 - Tabrani-Thamrin Scandal
 		name = holhis_volksraad.17.a
 		if = {
 			limit = {
-				has_idea = INS_mohammad_hoesni_thamrin
+				has_idea = INS_mohammad_husni_thamrin
 			}
-			remove_ideas = INS_mohammad_hoesni_thamrin
+			remove_ideas = INS_mohammad_husni_thamrin
 			add_war_support = -0.05
 			add_popularity = {
 				ideology = democratic 
@@ -14166,7 +14186,7 @@ country_event = { #Volksraad 17 - Tabrani-Thamrin Scandal
 			value = 0.05
 		}
 		hidden_effect = {
-			INS_mohammad_hoesni_thamrin = {
+			INS_mohammad_husni_thamrin = {
 				set_character_flag = INS_imprisoned_flag
 				set_portraits = {
 					army = {
@@ -14286,11 +14306,11 @@ country_event = { #Volksraad 19 - Thamrin died in prison
 
 	option = { #Goddamit
 		name = holhis_volksraad.19.a
-		retire_character = INS_mohammad_hoesni_thamrin
+		retire_character = INS_mohammad_husni_thamrin
 		add_country_leader_role = {
-			character = INS_soekardjo_wirjopranoto
+			character = INS_sukarjo_wiryopranoto
 			country_leader = {
-				desc = INS_soekardjo_wirjopranoto_desc
+				desc = INS_sukarjo_wiryopranoto_desc
 				expire = "1965.1.1"
 				ideology = conservatism
 				traits = {
@@ -14318,11 +14338,11 @@ country_event = { #Volksraad 20 - Thamrin died in his house
 
 	option = { #Goddamit
 		name = holhis_volksraad.20.a
-		retire_character = INS_mohammad_hoesni_thamrin
+		retire_character = INS_mohammad_husni_thamrin
 		add_country_leader_role = {
-			character = INS_soekardjo_wirjopranoto
+			character = INS_sukarjo_wiryopranoto
 			country_leader = {
-				desc = INS_soekardjo_wirjopranoto_desc
+				desc = INS_sukarjo_wiryopranoto_desc
 				expire = "1965.1.1"
 				ideology = conservatism
 				traits = {
@@ -14349,7 +14369,7 @@ country_event = { #Volksraad 21 - Thamrin recovers
 	fire_only_once = yes
 
 	immediate = {
-		INS_mohammad_hoesni_thamrin = {
+		INS_mohammad_husni_thamrin = {
 			clr_character_flag = INS_imprisoned_flag
 			set_portraits = {
 				army = {
@@ -14449,8 +14469,8 @@ country_event = { #Round Table 2 - Conference - Dutch Side
 		name = holhis_roundtable.2.b
 		trigger = {
 			controls_state = 669
-			controls_state = 1028
-			controls_state = 1029
+			controls_state = 1056
+			controls_state = 1057
 		}
 		custom_effect_tooltip = INS_NATREV_two_third_handover_tt
 		INS = {
@@ -14495,8 +14515,8 @@ country_event = { #Round Table 4 - Dutch asks for Papua
 		}
 		ROOT = {
 			transfer_state = 669
-			transfer_state = 1028
-			transfer_state = 1029
+			transfer_state = 1056
+			transfer_state = 1057
 		}
 		hidden_effect = {
 			set_truce = {
@@ -15099,7 +15119,7 @@ country_event = { #Sabotage 1 - Military Factory damaged
 	option = {
 		name = holhis_sabotage.1.a #okay
 		random_owned_state = {
-			prioritize = { 1020 1021 }
+			prioritize = { 1051 1052 }
 			limit = {
 				arms_factory > 0
 			}
@@ -15131,7 +15151,7 @@ country_event = { #Sabotage 2 - Civilian Factory sabotaged
 	option = {
 		name = holhis_sabotage.1.a #okay
 		random_owned_state = {
-			prioritize = { 1020 1021 }
+			prioritize = { 1051 1052 }
 			limit = {
 				industrial_complex > 0
 			}
@@ -15163,7 +15183,7 @@ country_event = { #Sabotage 3 - Bridge blown
 	option = {
 		name = holhis_sabotage.1.a #okay
 		random_owned_state = {
-			prioritize = { 1020 1021 }
+			prioritize = { 1051 1052 }
 			damage_building = {
 				type = infrastructure
 				damage = 1
@@ -15422,7 +15442,7 @@ country_event = { #Aging 1 - Syahrir
 				}
 			}
 		}
-		INS_soetan_sjahrir = {
+		INS_sutan_syahrir = {
 			has_trait = silent_mule
 		}
 	}
@@ -15432,11 +15452,11 @@ country_event = { #Aging 1 - Syahrir
 	immediate = {
 		if = {
 			limit = {
-				has_idea = INS_soetan_sjahrir
+				has_idea = INS_sutan_syahrir
 			}
-			set_country_flag = INS_sjahrir_stays
+			set_country_flag = INS_syahrir_stays
 		}
-		INS_soetan_sjahrir = {
+		INS_sutan_syahrir = {
 			effect_tooltip = {
 				swap_country_leader_traits = {
 					remove = silent_mule
@@ -15456,9 +15476,9 @@ country_event = { #Aging 1 - Syahrir
 		}
 		if = {
 			limit = {
-				has_country_flag = INS_sjahrir_stays
+				has_country_flag = INS_syahrir_stays
 			}
-			activate_advisor = INS_soetan_sjahrir
+			activate_advisor = INS_sutan_syahrir
 		}
 	}
 }
@@ -15570,7 +15590,7 @@ country_event = { #Aging 3 - IJ Kasimo
 	}
 }
 
-country_event = { #Aging 4 - Abdoel Haris Nasoetion
+country_event = { #Aging 4 - Abdul Haris Nasution
 	id = holhis_aging.4
 	title = holhis_aging.4.t
 	desc = holhis_aging.4.d
@@ -15594,7 +15614,7 @@ country_event = { #Aging 4 - Abdoel Haris Nasoetion
 	option = {
 		name = holhis_aging.4.a
 		add_corps_commander_role = {
-			character = INS_abdoel_haris_nasoetion
+			character = INS_abdul_haris_nasution
 			traits = { logistics_wizard infantry_officer guerilla_fighter }
 			skill = 1
 			attack_skill = 1
@@ -15603,10 +15623,10 @@ country_event = { #Aging 4 - Abdoel Haris Nasoetion
 			logistics_skill = 2
 		}
 		add_advisor_role = {
-			character = INS_abdoel_haris_nasoetion
+			character = INS_abdul_haris_nasution
 			advisor = {
 				slot = army_chief
-				idea_token = INS_abdoel_haris_nasoetion
+				idea_token = INS_abdul_haris_nasution
 				ledger = army
 				traits = {
 					army_logistics_1
@@ -15663,7 +15683,7 @@ country_event = { #Aging 5 - Didi Kartasasmita
 	}
 }
 
-country_event = { #Aging 6 - Soeharto
+country_event = { #Aging 6 - suharto
 	id = holhis_aging.6
 	title = holhis_aging.6.t
 	desc = holhis_aging.6.d
@@ -15683,7 +15703,7 @@ country_event = { #Aging 6 - Soeharto
 	option = {
 		name = holhis_aging.6.a
 		add_corps_commander_role = {
-			character = INS_soeharto
+			character = INS_suharto
 			traits = { infantry_officer logistics_wizard }
 			skill = 1
 			attack_skill = 2
@@ -15692,10 +15712,10 @@ country_event = { #Aging 6 - Soeharto
 			logistics_skill = 1
 		}
 		add_advisor_role = {
-			character = INS_soeharto
+			character = INS_suharto
 			advisor = {
 				slot = army_chief
-				idea_token = INS_soeharto
+				idea_token = INS_suharto
 				ledger = army
 				traits = {
 					army_infantry_1
@@ -16913,7 +16933,7 @@ country_event = { #Aging 19 - Uhl
 	}
 }
 
-country_event = { #Aging 20 - Soebijakto
+country_event = { #Aging 20 - subijakto
 	id = holhis_aging.20
 	title = holhis_aging.20.t
 	desc = holhis_aging.20.d
@@ -16937,7 +16957,7 @@ country_event = { #Aging 20 - Soebijakto
 	option = {
 		name = holhis_aging.20.a
 		add_naval_commander_role = {
-			character = INS_soebijakto
+			character = INS_subijakto
 			traits = { fleet_protector }
 			skill = 1
 			attack_skill = 1
@@ -16947,10 +16967,10 @@ country_event = { #Aging 20 - Soebijakto
 			legacy_id = -1
 		}
 		add_advisor_role = {
-			character = INS_soebijakto
+			character = INS_subijakto
 			advisor = {
 				slot = navy_chief
-				idea_token = INS_soebijakto
+				idea_token = INS_subijakto
 				ledger = navy
 				traits = {
 					navy_chief_decisive_battle_1
@@ -17009,7 +17029,7 @@ country_event = { #Aging 21 - Nazir
 	}
 }
 
-country_event = { #Aging 22 - Soerjadarma
+country_event = { #Aging 22 - Surjadarma
 	id = holhis_aging.22
 	title = holhis_aging.22.t
 	desc = holhis_aging.22.d
@@ -17029,17 +17049,17 @@ country_event = { #Aging 22 - Soerjadarma
 			has_completed_focus = INS_air_defense
 		}
 		NOT = {
-			has_country_flag = INS_soerjadarma_officer_flag
+			has_country_flag = INS_suryadarma_officer_flag
 		}
 	}
 
 	option = {
 		name = holhis_aging.22.a
 		add_advisor_role = {
-			character = INS_soerjadarma
+			character = INS_suryadarma
 			advisor = {
 				slot = air_chief
-				idea_token = INS_soerjadarma
+				idea_token = INS_suryadarma
 				ledger = air
 				traits = {
 					air_chief_night_operations_2
@@ -17047,7 +17067,7 @@ country_event = { #Aging 22 - Soerjadarma
 				cost = 100
 			}
 		}
-		set_country_flag = INS_soerjadarma_officer_flag
+		set_country_flag = INS_suryadarma_officer_flag
 	}
 }
 

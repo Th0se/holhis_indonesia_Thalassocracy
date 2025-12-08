@@ -122,6 +122,18 @@ check_has_focus_tree_to_switch_to_fascism = {
 			has_dlc = "Gotterdammerung"
 		}
 	}
+	NOT = {
+		AND = {
+			original_tag = PHI
+			has_dlc =  "No Compromise, No Surrender"
+		}
+	}
+	NOT = {
+		AND = {
+			original_tag = CHI
+			has_dlc =  "No Compromise, No Surrender"
+		}
+	}
 }
 
 check_has_focus_tree_to_switch_to_democratic = {
@@ -152,6 +164,18 @@ check_has_focus_tree_to_switch_to_democratic = {
 		AND = {
 			tag = GER
 			has_dlc = "Waking the Tiger"
+		}
+	}
+	NOT = {
+		AND = {
+			original_tag = PHI
+			has_dlc =  "No Compromise, No Surrender"
+		}
+	}
+	NOT = {
+		AND = {
+			original_tag = CHI 
+			has_dlc =  "No Compromise, No Surrender"
 		}
 	}
 }
@@ -220,6 +244,12 @@ check_has_focus_tree_to_switch_to_communism = {
 		AND = {
 			original_tag = GER
 			has_dlc =  "Gotterdammerung"
+		}
+	}
+	NOT = {
+		AND = {
+			original_tag = PHI
+			has_dlc =  "No Compromise, No Surrender"
 		}
 	}
 }
@@ -309,49 +339,6 @@ has_naval_treaty_trigger = {
 		has_idea = MTG_naval_treaty_cheating
 		has_idea = MTG_naval_treaty_adherent_reduced
 		has_idea = MTG_naval_treaty_cheating_reduced
-	}
-}
-
-ai_air_doctrine_tier_1_trigger = {
-	OR = {
-		has_tech = naval_strike_tactics
-		has_tech = direct_ground_support
-		has_tech = low_echelon_support
-	}
-}
-
-ai_air_doctrine_tier_2_trigger = {
-	OR = {
-		has_tech = multialtitude_flying
-		has_tech = hunt_and_destroy
-		has_tech = operational_destruction
-	}
-}
-ai_air_doctrine_tier_3_trigger = {
-	OR = {
-		has_tech = flying_fortress
-		has_tech = naval_strike_torpedo_tactics
-		has_tech = infiltration_bombing
-	}
-}
-
-ai_land_doctrine_tier_1_trigger = {
-	OR = {
-		has_tech = elastic_defence
-		has_tech = mobile_defence
-		has_tech = grand_assault
-		has_tech = defence_in_depth
-	}
-}
-
-ai_land_doctrine_tier_2_trigger = {
-	OR = {
-		has_tech = kampfgruppe
-		has_tech = mechanised_offensive
-		has_tech = branch_interoperation
-		has_tech = infiltration_assault
-		has_tech = vast_offensives
-		has_tech = large_front_offensive
 	}
 }
 
@@ -638,16 +625,27 @@ enemy_has_equal_or_better_radar_tech_trigger = {
 }
 
 is_available_to_collaboration_government = { # occupied_countries.1 should be updated along with this
-	NOT = {
-		AND = {
-			FROM = { original_tag = YUG }
+	is_subject = no
+	if = {
+		limit = {
 			original_tag = ITA
 		}
-		AND = {
-			FROM = { original_tag = DNZ }
+		NOT = { FROM = { original_tag = YUG } }
+	}
+
+	if = {
+		limit = {
 			original_tag = POL
 		}
-		TUR_cannot_form_kurdish_collaboration_government = yes
+		NOT = { FROM = { original_tag = DNZ } }
+	}
+	if = {
+		limit = {
+			original_tag = TUR
+		}
+		NOT = { FROM = { original_tag = KUR } }
+	}
+	NOT = {
 		any_country_with_original_tag = {
 			original_tag_to_check = FROM
 			is_puppet_of = PREV # if already created one do not create another
@@ -795,7 +793,6 @@ state_is_in_the_mediterranean_sea = {
 			state = 22
 			state = 21
 			state = 851
-			state = 911
 			state = 735
 			state = 162
 			state = 2
@@ -1051,6 +1048,10 @@ state_has_any_resource = {
 			resource = chromium
 			amount > 0
 		}
+		has_resources_amount = {
+			resource = coal
+			amount > 0
+		}
 	}
 }
 
@@ -1132,9 +1133,25 @@ is_unlikely_country_tag = {
 		tag = THU
 		tag = HES
 		tag = RHI
+		tag = RNG 
+		tag = PSR 
+		tag = GXC
+		tag = YUN
+		tag = SHX
+		tag = XSM
+		tag = SIK
+		tag = GDC
+		tag = SND
+		tag = SIC
+		tag = NXM
+		tag = GSM
+		tag = XIC
+		tag = KHM
+		tag = KUM
+		tag = HBC
 		tag = KLM #Kalimantan / Brunei
-		tag = PPA #Papua
-		tag = TIM #Timor
+		tag = WPG #Papua
+		tag = TML #Timor
 		tag = EIS
 		tag = SLU
 	}
@@ -1491,3 +1508,13 @@ is_allied_seller_trigger = {
 	}
 }
 
+should_play_south_american_music = {
+	capital_scope = { is_on_continent = south_america }
+}
+
+check_allow_alternate_political_events = {
+	OR = {
+		original_tag = PHI
+		#
+	}
+}

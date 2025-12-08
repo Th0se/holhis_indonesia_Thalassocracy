@@ -6,16 +6,16 @@ INS_nationalize_ideas = { #Independent Indonesia seizes assets from the Dutch up
 		}
 		swap_ideas = {
 			remove_idea = INS_artilerie_inrichtingen
-			add_idea = INS_pabrik_sendjata_mesioe
+			add_idea = INS_pabrik_senjata_mesiu
 		}
 	}
 	else_if = {
 		limit = {
 			NOT = { has_dlc = "Arms Against Tyranny" }
-			has_idea = INS_ai_bandoeng_improved
+			has_idea = INS_ai_bandung_improved
 		}
 		swap_ideas = {
-			remove_idea = INS_ai_bandoeng_improved
+			remove_idea = INS_ai_bandung_improved
 			add_idea = INS_psm_improved
 		}
 	}
@@ -68,21 +68,21 @@ INS_nationalize_ideas = { #Independent Indonesia seizes assets from the Dutch up
 	else_if = {
 		limit = {
 			NOT = { has_dlc = "Arms Against Tyranny" }
-			has_idea = INS_soerabaja_dm
+			has_idea = INS_surabaya_dm
 		}
 		swap_ideas = {
-			remove_idea = INS_soerabaja_dm
-			add_idea = INS_pal_soerabaja
+			remove_idea = INS_surabaya_dm
+			add_idea = INS_pal_surabaya
 		}
 	}
 	else_if = {
 		limit = {
 			NOT = { has_dlc = "Arms Against Tyranny" }
-			has_idea = INS_soerabaja_dm_improved
+			has_idea = INS_surabaya_dm_improved
 		}
 		swap_ideas = {
-			remove_idea = INS_soerabaja_dm_improved
-			add_idea = INS_pal_soerabaja_improved
+			remove_idea = INS_surabaya_dm_improved
+			add_idea = INS_pal_surabaya_improved
 		}
 	}
 	else_if = {
@@ -588,7 +588,7 @@ INS_copy_indies_spirit = {
 
 #Change name of States and VPs when appropriate. Expected to be used inside on_state_control_changed. FROM.FROM is state / ROOT is new controller / FROM is former controller
 INS_change_names = {
-	if = { # Batavia / Djajakarta / Djakarta
+	if = { # Batavia / Jayakarta / Jakarta
 		limit = {
 			FROM.FROM = {
 				state = 335 #Batavia
@@ -634,7 +634,7 @@ INS_change_names = {
 			limit = {
 				ROOT = {
 					controls_state = 721
-					controls_state = 1026
+					controls_state = 1053
 				}
 			}
 			FROM.FROM = {
@@ -656,18 +656,18 @@ INS_change_names = {
 	else_if = { # West Timor / Dutch Timor
 		limit = {
 			FROM.FROM = {
-				state = 1026 #Dutch Timor
+				state = 1053 #Dutch Timor
 			}
 		}
 		if = { #Timor gets united
 			limit = {
 				ROOT = {
 					controls_state = 721
-					controls_state = 1026
+					controls_state = 1053
 				}
 			}
 			FROM.FROM = {
-				set_state_name = STATE_1026_TLS
+				set_state_name = STATE_1053_TLS
 			}
 		}
 		else_if = { #Timor gets divided
@@ -701,7 +701,7 @@ INS_change_names = {
 							tag = IDN
 							NOT = {
 								has_country_leader = {
-									name = "Soekarno"
+									name = "Sukarno"
 									ruling_only = yes
 								}
 							}
@@ -717,12 +717,12 @@ INS_change_names = {
 				set_state_name = STATE_669_PNG
 			}
 		}
-		if = { #Controlled by Soekarno
+		if = { #Controlled by Sukarno
 			limit = {
 				ROOT = {
 					tag = IDN
 					has_country_leader = {
-						name = "Soekarno"
+						name = "Sukarno"
 						ruling_only = yes
 					}
 				}
@@ -748,7 +748,7 @@ INS_change_names = {
 	else_if = { # Vogelkop / Domberai
 		limit = {
 			FROM.FROM = {
-				state = 1028 #Northwestern Papua
+				state = 1056 #Northwestern Papua
 			}
 		}
 		if = { #Controlled by Indonesia/Papua
@@ -762,7 +762,7 @@ INS_change_names = {
 				}
 			}
 			FROM.FROM = {
-				set_state_name = PPA_STATE_1028
+				set_state_name = PPA_STATE_1056
 			}
 		}
 		else_if = { #OTHER CONTROLLER
@@ -777,7 +777,7 @@ INS_change_names = {
 	else_if = { # Southwestern Papua
 		limit = {
 			FROM.FROM = {
-				state = 1029 #Southwestern Papua
+				state = 1057 #Southwestern Papua
 			}
 		}
 		if = { #Controlled by Indonesia/Papua
@@ -795,7 +795,7 @@ INS_change_names = {
 				name = PPA_VICTORY_POINTS_1602
 			}
 			FROM.FROM = {
-				set_state_name = PPA_STATE_1029
+				set_state_name = PPA_STATE_1057
 			}
 		}
 		else_if = { #OTHER CONTROLLER
@@ -849,7 +849,7 @@ INS_change_names = {
 	else_if = { # Brunei
 		limit = {
 			FROM.FROM = {
-				state = 333 #Brunei
+				state = 1023 #Brunei
 			}
 		}
 		if = { #Controlled by Indonesia/Malaysia
@@ -898,7 +898,7 @@ INS_change_names = {
 	else_if = { # Singapore/Singapura
 		limit = {
 			FROM.FROM = {
-				state = 336 #Singapore
+				state = 1021 #Singapore
 			}
 		}
 		if = { #Controlled by Indonesia/Malaysia
@@ -919,7 +919,7 @@ INS_change_names = {
 				name = VICTORY_POINTS_12299_MAL
 			}
 			FROM.FROM = {
-				set_state_name = STATE_336_MAL
+				set_state_name = STATE_1021_MAL
 			}
 		}
 		if = { #Controlled by Japan
@@ -933,7 +933,7 @@ INS_change_names = {
 				name = VICTORY_POINTS_12299_JAP
 			}
 			FROM.FROM = {
-				set_state_name = STATE_336_JAP
+				set_state_name = STATE_1021_JAP
 			}
 		}
 		else_if = { #OTHER CONTROLLER

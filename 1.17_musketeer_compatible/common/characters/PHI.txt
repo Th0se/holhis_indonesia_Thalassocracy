@@ -732,6 +732,89 @@ characters={
 
 	}
 
+	### EIR Additions
+	
+	PHI_andres_soriano = {
+		name = PHI_andres_soriano
+		portraits = {
+			civilian = {
+				large = GFX_portrait_phi_andres_soriano
+			}
+			army = {
+				small = GFX_idea_philippines_andres_soriano
+			}
+		}
+		country_leader = {
+			ideology = falangism
+			expire = "1941.1.1.12"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = PHI_andres_soriano
+			allowed = {
+				original_tag = PHI
+			}
+			available = {
+				NOT = {
+					has_idea = PHI_volunteers_to_republicans
+				}
+			}
+			traits = {
+				falangist_industrialist
+			}
+		}
+	}
+
+	PHI_guillermo_capadocia = {
+		name = PHI_guillermo_capadocia
+		portraits = {
+			civilian = {
+				large = GFX_portrait_phi_guillermo_capadocia
+			}
+			army = {
+				small = GFX_idea_philippines_guillermo_capadocia
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = PHI_guillermo_capadocia
+			allowed = {
+				original_tag = PHI
+			}
+			available = {
+				has_completed_focus = PHI_legalize_the_communist_party
+			}
+			traits = {
+				communist_revolutionary
+			}
+		}
+	}
+
+	PHI_gregorio_aglipay = {
+		name = PHI_gregorio_aglipay
+		portraits = {
+			army = {
+				small = GFX_idea_philippines_gregorio_aglipay
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = PHI_gregorio_aglipay
+			allowed = {
+				original_tag = PHI
+			}
+			available = {
+				NOT = {
+					is_subject_of = SPA
+				}
+			}
+			traits = {
+				popular_figurehead 
+			}
+		}
+	}
+
 
 	### Military advisors
 

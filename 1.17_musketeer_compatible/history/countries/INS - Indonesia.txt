@@ -77,7 +77,7 @@ recruit_character = INS_bonifacius_de_jonge
 recruit_character = INS_a_t_van_starkenborgh_stachouwer
 recruit_character = INS_anton_van_der_laaken
 recruit_character = INS_cc_pki
-recruit_character = INS_soetomo
+recruit_character = INS_sutomo
 recruit_character = INS_meyer_ranneft
 
 if = {
@@ -93,14 +93,14 @@ recruit_character = INS_ignatius_kasimo
 recruit_character = INS_jan_verboom
 
 recruit_character = INS_group_partai_nasional
-recruit_character = INS_soekarno
+recruit_character = INS_sukarno
 recruit_character = INS_mohammad_hatta
-recruit_character = INS_soetan_sjahrir
-recruit_character = INS_hamengkoeboewono_ninth
+recruit_character = INS_sutan_syahrir
+recruit_character = INS_hamengkubuwono_ninth
 recruit_character = INS_tan_malaka
-recruit_character = INS_moesso_moenawar
-recruit_character = INS_amir_sjarifoeddin
-recruit_character = INS_semaoen
+recruit_character = INS_muso_munawar
+recruit_character = INS_amir_syarifuddin
+recruit_character = INS_semaun
 recruit_character = INS_alimin
 
 if = {
@@ -113,18 +113,18 @@ if = {
 
 recruit_character = INS_group_indische_partij
 recruit_character = INS_ernest_douwes_dekker
-recruit_character = INS_tjipto_mangoenkoesoemo
+recruit_character = INS_cipto_mangunkusumo
 recruit_character = INS_kh_dewantara
 recruit_character = INS_group_gapi
-recruit_character = INS_margono_djojohadikoesoemo
-recruit_character = INS_mohammad_hoesni_thamrin
-recruit_character = INS_mohammad_hoesni_thamrin_volksraad
-recruit_character = INS_soekardjo_wirjopranoto
-recruit_character = INS_soepomo
-recruit_character = INS_soetardjo_kartohadikoesoemo
+recruit_character = INS_margono_joyohadikusumo
+recruit_character = INS_mohammad_husni_thamrin
+recruit_character = INS_mohammad_husni_thamrin_volksraad
+recruit_character = INS_sukarjo_wiryopranoto
+recruit_character = INS_supomo
+recruit_character = INS_sutarjo_kartohadikusumo
 recruit_character = INS_oto_iskandar_di_nata
 recruit_character = INS_johannes_latuharhary
-recruit_character = INS_mohammad_jamin
+recruit_character = INS_mohammad_yamin
 recruit_character = INS_cornelis_bussche
 recruit_character = INS_frederik_de_hoog
 recruit_character = INS_paul_alex_blaauw
@@ -140,8 +140,8 @@ recruit_character = INS_jan_jonkman
 recruit_character = INS_charles_van_der_plas
 recruit_character = INS_nicolaas_blom
 
-recruit_character = INS_hamengkoeboewono_eighth
-recruit_character = INS_mangkoenegara_seventh
+recruit_character = INS_hamengkubuwono_eighth
+recruit_character = INS_mangkunegara_seventh
 
 recruit_character = INS_wesseling
 recruit_character = INS_murk_boerstra
@@ -159,8 +159,8 @@ recruit_character = INS_johan_van_staveren
 recruit_character = HOL_conrad_helfrich
 recruit_character = INS_jan_hilgers
 recruit_character = INS_laurens_walraven
-recruit_character = INS_oerip_soemohardjo
-recruit_character = INS_abdoel_haris_nasoetion
+recruit_character = INS_urip_sumoharjo
+recruit_character = INS_abdul_haris_nasution
 recruit_character = INS_rhemrev
 
 recruit_character = INS_beumer
@@ -173,40 +173,40 @@ recruit_character = INS_hendrik_uhl
 recruit_character = INS_jacob_zomer
 recruit_character = INS_ilgen
 recruit_character = INS_pieter_koenraad
-recruit_character = INS_soeharto
-recruit_character = INS_gatot_soebroto
+recruit_character = INS_suharto
+recruit_character = INS_gatot_subroto
 recruit_character = INS_group_partai_sarekat_islam
 
-recruit_character = INS_abikoesno_tjokrosoejoso
-recruit_character = INS_soekiman_wirjosandjojo
+recruit_character = INS_abikusno_cokrosuyoso
+recruit_character = INS_sukiman_wiryosanjoyo
 
-recruit_character = INS_agoes_salim
-recruit_character = INS_sekarmadji_maridjan
-recruit_character = INS_sardjono
+recruit_character = INS_agus_salim
+recruit_character = INS_sekarmaji_marijan
+recruit_character = INS_sarjono
 
-recruit_character = INS_roehana_koeddoes
-recruit_character = INS_sk_trimoerti
+recruit_character = INS_ruhana_kuddus
+recruit_character = INS_sk_trimurti
 recruit_character = INS_hermann_rosenow
 recruit_character = INS_mas_pardi
-recruit_character = INS_soebijakto
+recruit_character = INS_subijakto
 recruit_character = INS_mohammad_nazir
 recruit_character = INS_wardiman
-recruit_character = INS_soerjadarma
-recruit_character = INS_soedirman
+recruit_character = INS_surjadarma
+recruit_character = INS_sudirman
 recruit_character = INS_samuel_ratulangi
-recruit_character = INS_soekawati
-recruit_character = INS_thomas_najoan
+recruit_character = INS_sukawati
+recruit_character = INS_thomas_nayoan
 recruit_character = INS_didi_kartasasmita
 
-recruit_character = INS_karel_soepit
-recruit_character = INS_abdoelkadir_widjojoatmodjo
-recruit_character = INS_achmad_soebardjo
+recruit_character = INS_karel_supit
+recruit_character = INS_abdulkadir_wijoyoatmojo
+recruit_character = INS_achmad_subarjo
 recruit_character = INS_adnan_gani
-recruit_character = INS_sjafroeddin_prawiranegara
-recruit_character = INS_ferdinand_loembantobing
+recruit_character = INS_syafruddin_prawiranegara
+recruit_character = INS_ferdinand_lumbantobing
 recruit_character = INS_bernard_lapian
-recruit_character = INS_iwa_koesoemasoemantri
-recruit_character = INS_ida_anak_agoeng
+recruit_character = INS_iwa_kusumasumantri
+recruit_character = INS_ida_anak_agung
 
 add_ideas = {
 	INS_meyer_ranneft
@@ -231,35 +231,35 @@ add_opinion_modifier = {
 INS_mohammad_hatta = {
 	set_character_flag = INS_imprisoned_flag
 }
-INS_soekarno = {
+INS_sukarno = {
 	set_character_flag = INS_imprisoned_flag
 }
-INS_soetan_sjahrir = {
+INS_sutan_syahrir = {
 	set_character_flag = INS_imprisoned_flag
 }
-INS_tjipto_mangoenkoesoemo = {
+INS_cipto_mangunkusumo = {
 	set_character_flag = INS_imprisoned_flag
 }
-INS_iwa_koesoemasoemantri = {
+INS_iwa_kusumasumantri = {
 	set_character_flag = INS_imprisoned_flag
 }
 INS_alimin = {
 	set_character_flag = INS_imprisoned_flag
 }
-INS_sardjono = {
+INS_sarjono = {
 	set_character_flag = INS_imprisoned_flag
 }
 
 #Underage characters
-INS_sk_trimoerti = {
+INS_sk_trimurti = {
 	set_character_flag = INS_underage_flag
 }
 
 #Exiled characters
-INS_moesso_moenawar = {
+INS_muso_munawar = {
 	set_character_flag = INS_exiled_flag
 }
-INS_semaoen = {
+INS_semaun = {
 	set_character_flag = INS_exiled_flag
 }
 INS_tan_malaka = {
@@ -267,16 +267,16 @@ INS_tan_malaka = {
 }
 
 #PKI members
-INS_moesso_moenawar = {
+INS_muso_munawar = {
 	set_character_flag = INS_pki_member_flag
 }
-INS_semaoen = {
+INS_semaun = {
 	set_character_flag = INS_pki_member_flag
 }
 INS_alimin = {
 	set_character_flag = INS_pki_member_flag
 }
-INS_sardjono = {
+INS_sarjono = {
 	set_character_flag = INS_pki_member_flag
 }
 INS_tan_malaka = {
@@ -284,10 +284,10 @@ INS_tan_malaka = {
 }
 
 #Gerindo members
-INS_amir_sjarifoeddin = {
+INS_amir_syarifuddin = {
 	set_character_flag = INS_gerindo_member_flag
 }
-INS_mohammad_jamin = {
+INS_mohammad_yamin = {
 	set_character_flag = INS_gerindo_member_flag
 }
 INS_adnan_gani = {
@@ -318,24 +318,27 @@ INS_group_partai_nasional = {
 INS_mohammad_hatta = {
 	set_character_flag = INS_pni_member_flag
 }
-INS_soekarno = {
+INS_sukarno = {
 	set_character_flag = INS_pni_member_flag
 }
-INS_soetan_sjahrir = {
+INS_sutan_syahrir = {
 	set_character_flag = INS_pni_member_flag
 }
-INS_iwa_koesoemasoemantri = {
+INS_iwa_kusumasumantri = {
 	set_character_flag = INS_pni_member_flag
 }
 
 #Parindra members
-INS_soetomo = {
+INS_sutomo = {
 	set_character_flag = INS_parindra_member_flag
 }
-INS_mohammad_hoesni_thamrin = {
+INS_mohammad_husni_thamrin = {
 	set_character_flag = INS_parindra_member_flag
 }
-INS_soekardjo_wirjopranoto = {
+INS_supomo = {
+	set_character_flag = INS_parindra_member_flag
+}
+INS_sukarjo_wiryopranoto = {
 	set_character_flag = INS_parindra_member_flag
 }
 
@@ -343,19 +346,19 @@ INS_soekardjo_wirjopranoto = {
 INS_group_partai_sarekat_islam = {
 	set_character_flag = INS_psii_member_flag
 }
-INS_abikoesno_tjokrosoejoso = {
+INS_abikusno_cokrosuyoso = {
 	set_character_flag = INS_psii_member_flag
 }
-INS_agoes_salim = {
+INS_agus_salim = {
 	set_character_flag = INS_psii_member_flag
 }
-INS_soekiman_wirjosandjojo = {
+INS_sukiman_wiryosanjoyo = {
 	set_character_flag = INS_psii_member_flag
 }
-INS_sjafroeddin_prawiranegara = {
+INS_syafruddin_prawiranegara = {
 	set_character_flag = INS_psii_member_flag
 }
-INS_sekarmadji_maridjan = {
+INS_sekarmaji_marijan = {
 	set_character_flag = INS_psii_member_flag
 }
 
@@ -366,7 +369,7 @@ INS_group_indische_partij = {
 INS_ernest_douwes_dekker = {
 	set_character_flag = INS_nip_member_flag
 }
-INS_tjipto_mangoenkoesoemo = {
+INS_cipto_mangunkusumo = {
 	set_character_flag = INS_nip_member_flag
 }
 INS_kh_dewantara = {
@@ -382,42 +385,42 @@ INS_rhemrev = {
 }
 
 #PVBB members
-INS_abdoelkadir_widjojoatmodjo = {
+INS_abdulkadir_wijoyoatmojo = {
 	set_character_flag = INS_ppbb_member_flag
 }
-INS_soetardjo_kartohadikoesoemo = {
+INS_sutarjo_kartohadikusumo = {
 	set_character_flag = INS_ppbb_member_flag
 }
 
 #Indonesian officers
-INS_oerip_soemohardjo = {
+INS_urip_sumoharjo = {
 	set_character_flag = INS_indonesian_officer_flag
 }
 INS_didi_kartasasmita = {
 	set_character_flag = INS_indonesian_officer_flag
 }
-INS_gatot_soebroto = {
+INS_gatot_subroto = {
 	set_character_flag = INS_indonesian_officer_flag
 }
-INS_soedirman = {
+INS_sudirman = {
 	set_character_flag = INS_indonesian_officer_flag
 }
-INS_abdoel_haris_nasoetion = {
+INS_abdul_haris_nasution = {
 	set_character_flag = INS_indonesian_officer_flag
 }
-INS_soeharto = {
+INS_suharto = {
 	set_character_flag = INS_indonesian_officer_flag
 }
 INS_mas_pardi = {
 	set_character_flag = INS_indonesian_officer_flag
 }
-INS_soebijakto = {
+INS_subijakto = {
 	set_character_flag = INS_indonesian_officer_flag
 }
 INS_mohammad_nazir = {
 	set_character_flag = INS_indonesian_officer_flag
 }
-INS_soerjadarma = {
+INS_surjadarma = {
 	set_character_flag = INS_indonesian_officer_flag
 }
 
@@ -474,7 +477,7 @@ INS_jacob_zomer = {
 	set_character_flag = INS_dutch_officer_flag
 }
 
-1047 = { #Atjeh
+1047 = { #Aceh
 	start_resistance = yes
 	set_compliance = 32
 	set_resistance = 30
@@ -527,7 +530,7 @@ set_cosmetic_tag = INS_HOL # Netherlands East Indies
 	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
 }
 
-1052 = { #East Java (pretty much everything outside Soerabaja)
+1052 = { #East Java (pretty much everything outside Surabaja)
 	add_dynamic_modifier = { modifier = dense_rural_infrastructure }
 }
 
@@ -606,7 +609,7 @@ create_equipment_variant = {
 	}
 	
 	add_country_leader_role = {
-		character = INS_soekarno
+		character = INS_sukarno
 		country_leader = {
 			expire = "1965.1.1"
 			ideology = fascism_ideology
@@ -617,7 +620,7 @@ create_equipment_variant = {
 		promote_leader = yes
 	}
 	add_country_leader_role = {
-		character = INS_mohammad_hoesni_thamrin
+		character = INS_mohammad_husni_thamrin
 		country_leader = {
 			expire = "1965.1.1"
 			ideology = conservatism
@@ -627,7 +630,7 @@ create_equipment_variant = {
 		}
 		promote_leader = yes
 	}
-	INS_soekarno = {
+	INS_sukarno = {
 		remove_country_leader_role = {
 			ideology = socialism
 		}
@@ -647,10 +650,10 @@ create_equipment_variant = {
 	retire_character = INS_beumer
 	retire_character = INS_murk_boerstra
 	retire_character = INS_maarten_van_dulm
-	retire_character = INS_hamengkoeboewono_eighth
+	retire_character = INS_hamengkubuwono_eighth
 	retire_character = INS_meyer_ranneft
 	retire_character = INS_george_hart
-	retire_character = INS_soetomo
+	retire_character = INS_sutomo
 	retire_character = INS_frederik_de_hoog
 
 	INS = {
@@ -719,18 +722,18 @@ create_equipment_variant = {
 	}
 
 	set_country_flag = INS_de_jonge_resigned
-	set_country_flag = INS_against_soetardjo_flag
+	set_country_flag = INS_against_sutarjo_flag
 	set_country_flag = INS_education_1_done_flag
 	set_country_flag = INS_agriculture_1_done_flag
 	set_country_flag = INS_transmigration_1_done_flag
 	set_country_flag = INS_agrarian_reforms_1_flag
 	set_country_flag = INSJAP_trade_agreement_1
 	set_country_flag = INSJAP_trade_agreement_2
-	set_country_flag = INS_soetomo_passed
+	set_country_flag = INS_sutomo_passed
 	set_country_flag = INS_hoog_death_flag
 	set_country_flag = INS_wesseling_retired_flag
 	set_country_flag = INS_gerindo_allowed_flag
-	set_country_flag = INS_merbaboe_quits_flag
+	set_country_flag = INS_merbabu_quits_flag
 
 	set_variable = {
 		var = INS_education_upgrade
@@ -767,7 +770,7 @@ create_equipment_variant = {
 	complete_national_focus = INS_more_knil_funds
 	complete_national_focus = INS_air_defense
 	complete_national_focus = INS_flexible_navy
-	complete_national_focus = INS_expand_bandoeng_university
+	complete_national_focus = INS_expand_bandung_university
 	complete_national_focus = INS_address_malaise
 	complete_national_focus = INS_limit_exports
 	complete_national_focus = INS_self_sufficient_weapon_production
@@ -790,12 +793,10 @@ create_equipment_variant = {
 		basic_train = 1
 
 		#doctrines
-		air_superiority = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
+		#air_superiority = 1
+		set_grand_doctrine = grand_battleplan
+		set_grand_doctrine = new_fleet_in_being
+		set_grand_doctrine = new_strategic_destruction
 
 		#electronics
 		electronic_mechanical_engineering = 1

@@ -12,7 +12,6 @@
 
 BRM_unit_production = {
 	allowed = {
-		has_dlc = "Together for Victory"
 		original_tag = BRM
 	}
 	enable = {
@@ -155,7 +154,6 @@ BRM_unit_production = {
 
 BRM_area_priority = {
 	allowed = {
-		has_dlc = "Together for Victory"
 		original_tag = BRM
 	}
 	enable = {

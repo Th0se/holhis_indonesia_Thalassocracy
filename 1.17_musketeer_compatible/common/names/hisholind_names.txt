@@ -1,0 +1,200 @@
+### Names generation for aces ###
+# Surnames can be male/female dependent or general. Fe. in Polish some surnames has different endings depending on the gender.
+# Names and Surnames are randomly picked and will sometimes repeat, but will never repeat in combinations for example there will never be generated another "John Smith".
+# Assigning the callsign is random - may be assigned or not. If we use the callsign, it will never be assigned to anyone again. Callsigns are not obligatory to script.
+# Picking up a gender is random, and is influenced by the amount of names scripted.
+
+default = {
+	male = {
+		names = { "John" "Bob" "Lucas" "Marcus" "Alexander" "Alex" "Peter" "Jonas" "Jim" "Johannes"}
+		surnames = { }
+		callsigns = { }
+	}
+	#female = {
+	#	names = { "Juliette" "Anna" }
+	#	surnames = { }
+	#	callsigns = { "Queen Of The Sky" "The Red Princess" }
+	#}
+	surnames = { "Smith" "Jones" "Taylor" "Brown" "Williams" "Wilson" "Evans" "Walker" "White" "Roberts" }
+	callsigns = { "Easy Kill" "The Lightning" "The Devil" "Grasshopper" "Handsome" "Moose" "Mouse" "Pebbles" "Sunshine" Demon}
+}
+
+INS_HOL = {
+	male = {
+		names = { 
+			Adriaan Albert Anthony Antonius Berend Bodo Carsten Christiaan Cornelis Dirk Ferdinand Freek Frits Gerard Godfried Govert Hendrik Henri Jacob Jacobus Jan "Jan Willem" Johan Johannes Laurens Mathias Matthijs Nicolaas Peter Petrus Philippus Pieter Quirinus Sijmen Theodorus Tjerk Willem
+		 }
+	}
+	
+	female = {
+		names = { Coba Corrie Frieda Hannie Helena Ina Jet Joke Miep Reina Truus }
+	}
+
+	surnames = { 
+		Boers "'t Mannetje" Best "Bischoff van Heemskerk" "de Visser" "den Hollander" "den Ouden" "Jacometti" "van den Bent" "van den Briel" "van den Hof" "van der Bijl" "van Helsdingen" "van Liempd" "van Setten" "van Voorst tot Voorst" "van Zinnicq Bergmann" "Wittert van Hoogland" Bosch Bruggink Bruinier Buijs Buurman Carstens "den Breejen" Elias Folmer Giesen Ham Harberts Hilberdink Hoogewerff Hoving Jaapies Janssen Jolles Kaak Kraak Krouwel Kuiper Landzaat Leegstra Lukkien Maas Migchelbrink Reijnierse Rijnders Roelofsen Sandberg Scherpenhuijzen Schippers Steen Tebrunsvelt Varwijk Verhoef Visscher Vos Winkelman
+	}
+}
+
+INS = {
+	male = {
+		names = { Joko Fauzi Prabowo Ali Soemarno Henk Widji Teuku Hadi Azwar Mustafa Zaini Abdul Anak Ida Dewa }
+	}
+	female = {
+		names = { Bunga Diah Dian Siti }
+	}
+	surnames = { Widodo Bowo Subianto Sadikin Sosroatmodjo Ngantung Permatasari Damono Wibowo Thukul Hartinah Gunawan Haryanto Suprianto Sabara Abubakar "Bagus Oka" "Bagus Mantra" }
+	callsigns = { "Kilat" "Elang" "Mohawk" "Raider" "Colibri" "Godham" "Liger" "Condor" "Martin" }
+}
+
+JVA = {
+	male = {
+		names = { Joko Prabowo Ali Soemarno Henk Widji Hadi Azwar Mustafa Abdul }
+	}
+	female = {
+		names = { Diah Siti Sri }
+	}
+	surnames = { Widodo Bowo Subianto Sadikin Sosroatmodjo Ngantung Permatasari Darmono Wibowo Thukul Hartinah Gunawan Haryanto Suprianto Sabara }
+	callsigns = { "Kilat" "Elang" "Mohawk" "Raider" "Colibri" "Godham" "Liger" "Condor" "Martin" }
+}
+
+EIS = {
+	male = {
+		names = { Adrianus Ali "Anak Agung" Darius Dewa Donatus Dominikus Edmund Eliaser Frans Fransiskus Gaspar Gerson Gerald Hendrik "I Gusti" Ida Jan Johannes Viktor }
+	}
+	female = {
+		names = { Diah Siti Yovita }
+	}
+	surnames = { Agung Gerald Hamdzah Karim Laiskodat "Leboe Raja" Majdi Mauloko Monoarfa Nooteboom Paranggi Pareira Poetra Ruiter Seda Sjamsoeddin Taher Woga }
+	callsigns = { "The Black Devil" "Elang" "Godham" "Liger" "Kilat" "Kolibri" "Kondor" "Martin" "Mohawk" "Raider" }
+}
+
+TIM = {
+	male = {
+		names = { Abineno Adrianus Anderias Carlos Clementino Darius Dominikus Edmund Eliaser Frans Fransiskus Gaspar Gerson Hendrik "I Gusti" Ida Jan Johannes Jose Xanana Xaverius Viktor }
+	}
+	female = {
+		names = { Fransiska Yovita }
+	}
+	surnames = { Amaral Belo "da Lopez" Fanggidaej Gusmao Horta Karim Laiskodat "Leboe Raja" Mauloko Nabunome Nooteboom Paranggi Ruiter Saku Taek Tenkudi }
+	callsigns = { "The Black Devil" "Elang" "Godham" "Liger" "Kilat" "Kolibri" "Kondor" "Martin" "Mohawk" "Raider" }
+}
+
+ATJ = {
+	male = {
+		names = { Abdullah Achmad Amiruddin Azwar Daoed Djakfar Hadi Hasan Irwandi Moestafa Njak Said Tengkoe Teoekoe "Teoekoe Njak" Zaini }
+	}
+	female = {
+		names = { Cut Ajie Ahja Meoetia Dhien }
+	}
+	surnames = { Aboebakar Agri "Ali Basjah" Beoereoe'eh Dzakaria Joesoef Kamil Minimi Moechtar Nazar Oemar Razak Soelaiman Sofjans Thajeb "di Tiro" }
+	callsigns = { }
+}
+
+SMT = {
+	male = {
+		names = { Achmad Arcandra Bagir Daoed Dzoelkifli Hasan Hoedarni Ibrahim Joelian Joesril Karim Moeljadi Moechtaroeddin Nadjib Tahir Teoekoe }
+	}
+	female = {
+		names = { Cut Ayie Ahya Meoetia Dhien Moeljani }
+	}
+	surnames = {
+		Batoebara Chalim Damsjik Ginting Goeltom Harahap Hassan Hoetapea Hoetagaloeng Kaban Kanedi Kesoema Loebis Loemban Mahendra Manan Manoelang Mersjah Nababan Nainggolan Napitoepoeloe Nasoetion Paloh Sadino Situmorang Tamboenan Tamsir Tarigan }
+	callsigns = { "" }
+}
+
+KLM = {
+	male = {
+		names = { Achmad Arcandra Awang Bagir Daoed Dzoelkifli Hasan Hoedarni Ibrahim Joelian Joesril Karim Moeljadi Moechtaroeddin Nadjib Tahir Teoekoe }
+	}
+	female = {
+		names = { Cut Ayie Ahya Meoetia Dhien Moeljani }
+	}
+	surnames = {
+		"bin Chalim" "bin Damsjik" "bin Hassan" "bin Jaafar" Kanedi Kesoema Mahendra Mersjah Paloh Sadino Tamsir }
+	callsigns = { "" }
+}
+
+BRN = {
+	male = {
+		names = { Achmad Arcandra Awang Bagir Daoed Dzoelkifli Hasan Hoedarni Ibrahim Joelian Joesril Karim Moeljadi Moechtaroeddin Nadjib Tahir Teoekoe }
+	}
+	female = {
+		names = { Cut Ayie Ahya Meoetia Dhien Moeljani }
+	}
+	surnames = {
+		Bahrin "bin Chalim" "bin Damsjik" "bin Hassan" "bin Ibrahim" "bin Jaafar" Kanedi Kesoema Mahendra Mersjah Paloh Sadino Sulaiman Tamsir Umar }
+	callsigns = { "" }
+}
+
+SLU = {
+	male = {
+		names = { Najib Muhammad Tengku Kadir "Tengku Kadir" Embok Eunos Ibrahim Pak Pandir Rashid Ahmad Nordin Abdul Amin Lokman Yaacob Elyas Mazlan }
+	}
+	female = {
+		names = {
+			Azura Merenui Metetini Miri Moea Moeata Moerani Mohea Nanihi "Nu’utea" Orama Poe Pear Poehina Poenui Poerava Puaiti
+			Puatea Puaura Ranitea Rarahu Raunui Raurii Tahiata Taiana Taina Tania Taurua Tautiare Tehani
+			Tehea Teora Tera Tevai Titaina Titaua Tuianu Tumata Unutea Urarii Vaea Vaiana Vaianu Vaiata Vaihere Vaimiti Vairea
+			Vaite Vaitiare
+		}
+	}
+	surnames = { Razak Yusof Ali Suloh Abdullah Yaacob Sako Maidin Boestamam Aziz Latiff Omar }
+	callsigns = { }
+}
+
+SLW = {
+	male = {
+		names = { Alexander Bague Batti Gilang Kahar Lerby Munafri Nani Rachmad }
+	}
+	female = {
+		names = {  }
+	}
+	surnames = {
+		Bawuo Geroeng Gobel Jasin Kamaroe Kawilarang Lapian Lasoet Masdar Mongisidi Moedzakkar "Pong Baboe" Rantetana Soemoeal Sorring Wartabone }
+	callsigns = { "" }
+}
+
+MLK = {
+	male = {
+		names = { Bodewin Chris Frans "Gerrit Jacobus" Karel Johannes Jonas Matheos Marcus Peter Philo Richard Sebastian }
+	}
+	female = {
+		names = { Martha Monika Vina }
+	}
+	surnames = {
+		Armaiyn Djosan Latuconsina Latuharhary Latuihamallo Latumahina Leimena Manusama Papilaya Pattimura Pelmelay Rehatta Ralahalu Sitanala Soumeru Soumokil Tahalea Tiahahu Tuasalamony Tutuhatunewa Tutupoly Wattimena }
+	callsigns = { "" }
+}
+
+WPG = {
+	male = {
+		names = {
+			Abba Adrian Alexander Barnabas Benkato Boaz Bob Brad Christian David Delvin Dominggus Elisa Erol Felix Francis Frans Freddy Gerald Herman Imanuel Izak Lukas Makali Marco Markus Marthen Matius Michael Moses Nehemia Paias Patrick Paulias Paulus Petrus Stefanus Terens Titus Yairus Yakobus Yohanes Yosia Yustinus
+		}
+	}
+	female = {
+		names = {
+			Amy Beatrix Dame Diana Erika Heather Lara Nitya Raema Ribka Yuliana Yohana
+		}
+	}
+	surnames = {
+		Aiboy Aizue Bai Banggai Bina Bonai Dekker Egerton Enembe Fakdawer Ferre Gene Genia Haluk Heynatz Iba Ijie Imbiri Indey Kaisiepo Kandaimu Kapiyau Karubuy Keiya Kidu Komboy Kompaon Korwa Lam Laws Mandacan Matane Mead Mondo Namaliu Numberi Ottio Pekei Pigome Pini Pruaitch Puhiri Rumbewas Solossa Somare Suebu Temongmere Toua Warijo Waterpauw Wingti Wospakrik
+	}
+	callsigns = { }
+}
+
+MAL = {
+	male = {
+		names = { Najib Muhammad Tengku Kadir "Tengku Kadir" Embok Eunos Ibrahim Pak Pandir Rashid Ahmad Nordin Abdul Amin Lokman Yaacob Elyas Mazlan }
+	}
+	female = {
+		names = {
+			Azura Merenui Metetini Miri Moea Moeata Moerani Mohea Nanihi "Nu’utea" Orama Poe Pear Poehina Poenui Poerava Puaiti 
+			Puatea Puaura Ranitea Rarahu Raunui Raurii Tahiata Taiana Taina Tania Taurua Tautiare Tehani 
+			Tehea Teora Tera Tevai Titaina Titaua Tuianu Tumata Unutea Urarii Vaea Vaiana Vaianu Vaiata Vaihere Vaimiti Vairea 
+			Vaite Vaitiare
+		}
+	}
+	surnames = { Razak Yusof Ali Suloh Abdullah Yaacob Sako Maidin Boestamam Aziz Latiff Omar }
+	callsigns = { }
+}
