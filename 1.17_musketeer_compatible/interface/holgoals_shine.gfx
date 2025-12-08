@@ -33,11 +33,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_focus_INS_approach_sjarifoeddin_shine"
-		texturefile = "gfx/interface/goals/focus_INS_approach_sjarifoeddin.dds"
+		name = "GFX_focus_INS_approach_syarifuddin_shine"
+		texturefile = "gfx/interface/goals/focus_INS_approach_syarifuddin.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_INS_approach_sjarifoeddin.dds"
+			animationmaskfile = "gfx/interface/goals/focus_INS_approach_syarifuddin.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -50,7 +50,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_INS_approach_sjarifoeddin.dds"
+			animationmaskfile = "gfx/interface/goals/focus_INS_approach_syarifuddin.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -193,11 +193,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_focus_INS_support_abdoelkadir_shine"
-		texturefile = "gfx/interface/goals/focus_INS_support_abdoelkadir.dds"
+		name = "GFX_focus_INS_support_abdulkadir_shine"
+		texturefile = "gfx/interface/goals/focus_INS_support_abdulkadir.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_INS_support_abdoelkadir.dds"
+			animationmaskfile = "gfx/interface/goals/focus_INS_support_abdulkadir.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -210,7 +210,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_INS_support_abdoelkadir.dds"
+			animationmaskfile = "gfx/interface/goals/focus_INS_support_abdulkadir.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -225,11 +225,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_focus_INS_support_oerip_shine"
-		texturefile = "gfx/interface/goals/focus_INS_support_oerip.dds"
+		name = "GFX_focus_INS_support_urip_shine"
+		texturefile = "gfx/interface/goals/focus_INS_support_urip.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_INS_support_oerip.dds"
+			animationmaskfile = "gfx/interface/goals/focus_INS_support_urip.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -242,7 +242,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_INS_support_oerip.dds"
+			animationmaskfile = "gfx/interface/goals/focus_INS_support_urip.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -257,11 +257,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_focus_INS_support_soekarno_shine"
-		texturefile = "gfx/interface/goals/focus_INS_support_soekarno.dds"
+		name = "GFX_focus_INS_support_sukarno_shine"
+		texturefile = "gfx/interface/goals/focus_INS_support_sukarno.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_INS_support_soekarno.dds"
+			animationmaskfile = "gfx/interface/goals/focus_INS_support_sukarno.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -274,7 +274,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_INS_support_soekarno.dds"
+			animationmaskfile = "gfx/interface/goals/focus_INS_support_sukarno.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -289,11 +289,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_focus_INS_support_soetardjo_shine"
-		texturefile = "gfx/interface/goals/focus_INS_support_soetardjo.dds"
+		name = "GFX_focus_INS_support_sutarjo_shine"
+		texturefile = "gfx/interface/goals/focus_INS_support_sutarjo.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_INS_support_soetardjo.dds"
+			animationmaskfile = "gfx/interface/goals/focus_INS_support_sutarjo.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -306,7 +306,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_INS_support_soetardjo.dds"
+			animationmaskfile = "gfx/interface/goals/focus_INS_support_sutarjo.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -321,11 +321,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_focus_INS_support_soetomo_shine"
-		texturefile = "gfx/interface/goals/focus_INS_support_soetomo.dds"
+		name = "GFX_focus_INS_support_sutomo_shine"
+		texturefile = "gfx/interface/goals/focus_INS_support_sutomo.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_INS_support_soetomo.dds"
+			animationmaskfile = "gfx/interface/goals/focus_INS_support_sutomo.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -338,7 +338,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_INS_support_soetomo.dds"
+			animationmaskfile = "gfx/interface/goals/focus_INS_support_sutomo.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no

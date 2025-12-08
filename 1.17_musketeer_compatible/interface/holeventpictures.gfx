@@ -71,13 +71,13 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_event_ins_soekarno"
-		texturefile = "gfx/event_pictures/event_ins_soekarno.dds"
+		name = "GFX_event_ins_sukarno"
+		texturefile = "gfx/event_pictures/event_ins_sukarno.dds"
 	}
 
 	spriteType = {
-		name = "GFX_event_ins_soekarno_hatta"
-		texturefile = "gfx/event_pictures/event_ins_soekarno_hatta.dds"
+		name = "GFX_event_ins_sukarno_hatta"
+		texturefile = "gfx/event_pictures/event_ins_sukarno_hatta.dds"
 	}
 
 	spriteType = {
@@ -111,13 +111,13 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_report_event_ins_amir_sjarifoeddin"
-		texturefile = "gfx/event_pictures/report_event_ins_amir_sjarifoeddin.dds"
+		name = "GFX_report_event_ins_amir_syarifuddin"
+		texturefile = "gfx/event_pictures/report_event_ins_amir_syarifuddin.dds"
 	}
 
 	spriteType = {
-		name = "GFX_report_event_ins_bandoeng"
-		texturefile = "gfx/event_pictures/report_event_ins_bandoeng.dds"
+		name = "GFX_report_event_ins_bandung"
+		texturefile = "gfx/event_pictures/report_event_ins_bandung.dds"
 	}
 
 	spriteType = {
@@ -166,8 +166,8 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_report_event_ins_hamengkoeboewono_ninth_coronation"
-		texturefile = "gfx/event_pictures/report_event_ins_hamengkoeboewono_ninth_coronation.dds"
+		name = "GFX_report_event_ins_hamengkubuwono_ninth_coronation"
+		texturefile = "gfx/event_pictures/report_event_ins_hamengkubuwono_ninth_coronation.dds"
 	}
 
 	spriteType = {
@@ -221,8 +221,8 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_report_event_ins_noeroel_dance"
-		texturefile = "gfx/event_pictures/report_event_ins_noeroel_dance.dds"
+		name = "GFX_report_event_ins_nurul_dance"
+		texturefile = "gfx/event_pictures/report_event_ins_nurul_dance.dds"
 	}
 
 	spriteType = {
@@ -301,8 +301,8 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_report_event_ins_sjahrir_prisoner"
-		texturefile = "gfx/event_pictures/report_event_ins_sjahrir_prisoner.dds"
+		name = "GFX_report_event_ins_syahrir_prisoner"
+		texturefile = "gfx/event_pictures/report_event_ins_syahrir_prisoner.dds"
 	}
 
 	spriteType = {
@@ -311,38 +311,38 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_report_event_ins_soekarno_bengkoeloe"
-		texturefile = "gfx/event_pictures/report_event_ins_soekarno_bengkoeloe.dds"
+		name = "GFX_report_event_ins_sukarno_bengkulu"
+		texturefile = "gfx/event_pictures/report_event_ins_sukarno_bengkulu.dds"
 	}
 
 	spriteType = {
-		name = "GFX_report_event_ins_soekarno_ende"
-		texturefile = "gfx/event_pictures/report_event_ins_soekarno_ende.dds"
+		name = "GFX_report_event_ins_sukarno_ende"
+		texturefile = "gfx/event_pictures/report_event_ins_sukarno_ende.dds"
 	}
 
 	spriteType = {
-		name = "GFX_report_event_ins_soekarno_prosecuted"
-		texturefile = "gfx/event_pictures/report_event_ins_soekarno_prosecuted.dds"
+		name = "GFX_report_event_ins_sukarno_prosecuted"
+		texturefile = "gfx/event_pictures/report_event_ins_sukarno_prosecuted.dds"
 	}
 
 	spriteType = {
-		name = "GFX_report_event_ins_soekarno_speech"
-		texturefile = "gfx/event_pictures/report_event_ins_soekarno_speech.dds"
+		name = "GFX_report_event_ins_sukarno_speech"
+		texturefile = "gfx/event_pictures/report_event_ins_sukarno_speech.dds"
 	}
 
 	spriteType = {
-		name = "GFX_report_event_ins_soekarno_tojo"
-		texturefile = "gfx/event_pictures/report_event_ins_soekarno_tojo.dds"
+		name = "GFX_report_event_ins_sukarno_tojo"
+		texturefile = "gfx/event_pictures/report_event_ins_sukarno_tojo.dds"
 	}
 
 	spriteType = {
-		name = "GFX_report_event_ins_soerabaja"
-		texturefile = "gfx/event_pictures/report_event_ins_soerabaja.dds"
+		name = "GFX_report_event_ins_surabaya"
+		texturefile = "gfx/event_pictures/report_event_ins_surabaya.dds"
 	}
 
 	spriteType = {
-		name = "GFX_report_event_ins_soetomo"
-		texturefile = "gfx/event_pictures/report_event_ins_soetomo.dds"
+		name = "GFX_report_event_ins_sutomo"
+		texturefile = "gfx/event_pictures/report_event_ins_sutomo.dds"
 	}
 
 	spriteType = {
@@ -431,8 +431,8 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_report_event_ins_volksraad_soetardjo"
-		texturefile = "gfx/event_pictures/report_event_ins_volksraad_soetardjo.dds"
+		name = "GFX_report_event_ins_volksraad_sutarjo"
+		texturefile = "gfx/event_pictures/report_event_ins_volksraad_sutarjo.dds"
 	}
 
 	spriteType = {
@@ -461,8 +461,8 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_event_ins_japan_bandoeng"
-		texturefile = "gfx/event_pictures/event_ins_japan_bandoeng.dds"
+		name = "GFX_event_ins_japan_bandung"
+		texturefile = "gfx/event_pictures/event_ins_japan_bandung.dds"
 	}
 
 	spriteType = {
@@ -476,8 +476,8 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_event_ins_japan_soerabaja"
-		texturefile = "gfx/event_pictures/event_ins_japan_soerabaja.dds"
+		name = "GFX_event_ins_japan_surabaya"
+		texturefile = "gfx/event_pictures/event_ins_japan_surabaya.dds"
 	}
 
 	spriteType = {

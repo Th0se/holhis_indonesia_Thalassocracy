@@ -132,10 +132,6 @@
  KLM_neutrality_DEF:0 "the Kalimantan Federation"
  KLM_ADJ:0 "Bornean"
 
- BRN:0 "Brunei"
- BRN_DEF:0 "the State of Brunei"
- BRN_ADJ:0 "Bruneian"
-
  EIS_fascism:0 "Realm of Lesser Wallacea"
  EIS_fascism_DEF:0 "the Lesser Wallacean Realm"
  EIS_democratic:0 "State of East Indonesia"

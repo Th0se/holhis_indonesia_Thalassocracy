@@ -41,8 +41,8 @@ spriteTypes = {
 	}
 
 	SpriteType = { 
-		name = "GFX_focus_INS_approach_sjarifoeddin"
-		texturefile = "gfx/interface/goals/focus_INS_approach_sjarifoeddin.dds"
+		name = "GFX_focus_INS_approach_syarifuddin"
+		texturefile = "gfx/interface/goals/focus_INS_approach_syarifuddin.dds"
 	}
 
 	SpriteType = { 
@@ -81,28 +81,28 @@ spriteTypes = {
 	}
 
 	SpriteType = { 
-		name = "GFX_focus_INS_support_abdoelkadir"
-		texturefile = "gfx/interface/goals/focus_INS_support_abdoelkadir.dds"
+		name = "GFX_focus_INS_support_abdulkadir"
+		texturefile = "gfx/interface/goals/focus_INS_support_abdulkadir.dds"
 	}
 
 	SpriteType = { 
-		name = "GFX_focus_INS_support_oerip"
-		texturefile = "gfx/interface/goals/focus_INS_support_oerip.dds"
+		name = "GFX_focus_INS_support_urip"
+		texturefile = "gfx/interface/goals/focus_INS_support_urip.dds"
 	}
 
 	SpriteType = { 
-		name = "GFX_focus_INS_support_soekarno"
-		texturefile = "gfx/interface/goals/focus_INS_support_soekarno.dds"
+		name = "GFX_focus_INS_support_sukarno"
+		texturefile = "gfx/interface/goals/focus_INS_support_sukarno.dds"
 	}
 
 	SpriteType = { 
-		name = "GFX_focus_INS_support_soetardjo"
-		texturefile = "gfx/interface/goals/focus_INS_support_soetardjo.dds"
+		name = "GFX_focus_INS_support_sutarjo"
+		texturefile = "gfx/interface/goals/focus_INS_support_sutarjo.dds"
 	}
 
 	SpriteType = { 
-		name = "GFX_focus_INS_support_soetomo"
-		texturefile = "gfx/interface/goals/focus_INS_support_soetomo.dds"
+		name = "GFX_focus_INS_support_sutomo"
+		texturefile = "gfx/interface/goals/focus_INS_support_sutomo.dds"
 	}
 
 	SpriteType = { 
